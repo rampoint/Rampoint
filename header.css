@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "Batangas";
+    src: url(font/batangas-font-family-fontmirror/Batangas\ Bold\ 700.otf);
+
+}
+
+@font-face{
+    font-family: "Blinker";
+    src: url(font/Blinker/Blinker-SemiBold.ttf);
+}
+
+/*caso queira deixar a header sem margem ctrl c e k  */
+/* *{
+    margin: 0px;
+    padding: 0px;
+} */
+
+
+
+header{
+    display: flex;
+    width: 100%;
+    font-family:'Batangas';
+    align-items: center;
+}
+
+nav{
+    color: black;
+    font-family: "Blinker";
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+
+}

@@ -24,6 +24,10 @@
     src: url(font/Poppins/Poppins-Bold.ttf);
 }
 
+@font-face {
+    font-family: "Poppins-medium";
+    src: url(font/Poppins/Poppins-Medium.ttf);
+}
 
 
 
@@ -135,6 +139,16 @@ nav {
 }
 
 #info-box{
-    font-family: "Poppins-bold";
+    font-family: "Poppins-medium";
     font-size: 20px;
 }
+
+
+.info-box1{
+    font-family: "Poppins-medium";
+    font-size: 20px;
+    margin-right:500px;
+    margin-left:170px;
+    
+}
+

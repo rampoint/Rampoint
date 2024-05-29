@@ -9,6 +9,20 @@
     src: url(font/Blinker/Blinker-SemiBold.ttf);
 }
 
+@font-face{
+    font-family: "Blinker-extrabold" ;
+    src: url(font/Blinker/Blinker-ExtraBold.ttf);
+}
+
+@font-face{
+    font-family: "Poppins-extralight" ;
+    src: url(font/Poppins/Poppins-ExtraLight.ttf);
+}
+
+
+
+
+
 /*caso queira deixar a header sem margem ctrl c e k  */
 /* *{
     margin: 0px;
@@ -17,7 +31,7 @@
 
 
 
-
+/* Header começo */
 header{
     display: flex;
     width: 79%;
@@ -34,3 +48,19 @@ nav{
     width: 100%;
 
 }
+
+/* Header final */
+/* Carrosel começo */
+
+.carrosel{
+    background-color: aqua;    
+    font-size: xx-large;
+}
+
+#h1-carrosel{
+    font-family: 'Blinker-extrabold';
+}
+#p-carrosel{
+    font-family: 'Poppins-extralight';
+}
+

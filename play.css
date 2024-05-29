@@ -1,0 +1,139 @@
+@font-face {
+    font-family: "Batangas";
+    src: url(font/batangas-font-family-fontmirror/Batangas\ Bold\ 700.otf);
+
+}
+
+@font-face {
+    font-family: "Blinker";
+    src: url(font/Blinker/Blinker-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "Blinker-extrabold";
+    src: url(font/Blinker/Blinker-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: "Poppins-extralight";
+    src: url(font/Poppins/Poppins-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: "Poppins-bold";
+    src: url(font/Poppins/Poppins-Bold.ttf);
+}
+
+
+
+
+/*caso queira deixar a header sem margem ctrl c e k  */
+/* *{
+    margin: 0px;
+    padding: 0px;
+} */
+
+body {
+    background-color: #F8F8FF;
+}
+
+/* Header começo */
+header {
+    display: flex;
+    width: 79%;
+    font-family: 'Batangas';
+    margin: auto;
+}
+
+nav {
+    color: black;
+    font-family: "Blinker";
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+
+}
+
+/* Header final */
+
+/* CSS IMAGEM COMEÇO */
+#h1-play{
+    font-family: 'Blinker-extrabold';
+}
+
+#h1-play-image-comecar {
+    font-family: 'Blinker-extrabold';
+    position: absolute;
+    top: 34%;
+    left: 42%;
+     font-size: 115px;
+    transform: translate(-20%, -50%);
+    
+    
+}
+#h1-play-image-vamos {
+    font-family: 'Blinker-extrabold';
+    position: absolute;
+    top: 23%;
+    left: 44%;
+    font-size: 115px;
+    transform: translate(-20%, -50%);
+  
+    
+}
+
+
+#p-play-image-descricao1 {
+    font-family: 'Poppins-bold';
+    position: absolute;
+    top: 54%;
+    left: 41%;
+    transform: translate(-20%, -50%);
+    font-size: 18px;
+  
+}
+
+#p-play-image-descricao2 {
+    font-family: 'Poppins-bold';
+    position: absolute;
+    top: 57%;
+    left: 41%;
+    transform: translate(-20%, -50%);
+    font-size: 18px;
+  
+}
+#p-play-image-descricao3 {
+    font-family: 'Poppins-bold';
+    position: absolute;
+    top: 57%;
+    left: 48%;
+    transform: translate(-20%, -50%);
+    font-size: 18px;
+  
+}
+
+.img-home-apresentacao {
+    margin-left: auto;
+    position: relative;
+
+}
+
+.img-home-apresentacao img {
+    width: 1500px;
+    margin: auto;
+    display: block;
+
+}
+/* CSS IMAGEM FINAL */
+
+#p-informacoes{
+    font-family: "blinker-extrabold";
+    color: #7AD761;
+    font-size: 40px;
+}
+
+#info-box{
+    font-family: "Poppins-bold";
+    font-size: 20px;
+}

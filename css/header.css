@@ -23,9 +23,10 @@ header {
 
 nav {
   color: black;
-  font-family: "Blinker";
+  font-family: "Blinker", sans-serif;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
+  font-weight: 600;
 }

@@ -1,55 +1,146 @@
-@font-face {
-    font-family: "Batangas";
-    src: url(font/batangas-font-family-fontmirror/Batangas\ Bold\ 700.otf);
-
+:root {
+  --branco: #f8f8ff;
+  --verde: #7ad761;
+  --verde-claro: #ecfdf3;
+  --azul: #2a55c2;
+  --cinza-claro: #d9d9d9 opacity(50%);
+  --cinza: #cdcdcd;
+  --preto: #121212;
+  --vermelho: #d40000;
+  --vermelho-claro: #ffeeee;
 }
-
-@font-face {
-    font-family: "Blinker";
-    src: url(font/Blinker/Blinker-SemiBold.ttf);
-}
-
-@font-face {
-    font-family: "Blinker-extrabold";
-    src: url(font/Blinker/Blinker-ExtraBold.ttf);
-}
-
-@font-face {
-    font-family: "Poppins-extralight";
-    src: url(font/Poppins/Poppins-ExtraLight.ttf);
-}
-
-@font-face {
-    font-family: "Poppins-bold";
-    src: url(font/Poppins/Poppins-Bold.ttf);
-}
-
-@font-face {
-    font-family: "Poppins-medium";
-    src: url(font/Poppins/Poppins-Medium.ttf);
-}
-
 
 body {
-    background-color: #F8F8FF;
+  background-color: var(--branco);
 }
 
 /* Header começo */
 header {
-    display: flex;
-    width: 79%;
-    font-family: 'Batangas';
-    margin: auto;
+  display: flex;
+  width: 79%;
+  font-family: "Batangas";
+  margin: auto;
 }
 
 nav {
-    color: black;
-    font-family: "Blinker";
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
-
+  color: black;
+  font-family: "Blinker";
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
 }
 
 /* Header final */
+
+.imagem-fundo {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  height: auto;
+  
+}
+.titulo {
+  font-family: "Blinker", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 65px;
+  color: var(--preto);
+  text-shadow: 0px 4px 7px rgba(0, 0, 0, 20%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 30%;
+  text-align: center;
+}
+
+.texto {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-shadow: 0px 4px 7px rgba(0, 0, 0, 20%);
+  position: absolute;
+  bottom: 15%;
+  right: 10%;
+  transform: translate(-50%, -50%);
+  max-width: 40%;
+  text-align: center;
+}
+
+span {
+  color: var(--azul);
+}
+
+h1 {
+  font-family: "Blinker", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  color: var(--verde);
+}
+
+.textos {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.seta {
+  height: 25px;
+  width: 25px;
+  background-color: var(--branco);
+  border-radius: 50%;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 25%);
+  margin: 0px 0px 0px 100px;
+}
+
+.seta-branca {
+  background-color: var(--azul);
+  height: 45px;
+  width: 45px;
+  position: absolute;
+  bottom: 5%;
+  right: 45%;
+  transform: translate(-50%, -50%);
+}
+
+.componentes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.componentes h3 {
+  font-family: "Blinker", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  color: #ffffff;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.bloco {
+  background-color: var(--azul);
+  color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 100px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: inset 0 0 20px 2px rgba(0, 0, 0, 15%);
+}
+
+.img-componentes {
+  width: 100px;
+  height: 107px;
+}
+
+.img-estrutura {
+  margin-top: 15px;
+  width: 70px;
+  height: 70px;
+}

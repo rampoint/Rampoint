@@ -4,6 +4,7 @@
 
 }
 
+
 @font-face {
     font-family: "Blinker";
     src: url(font/Blinker/Blinker-SemiBold.ttf);
@@ -27,6 +28,11 @@
 @font-face {
     font-family: "Poppins-medium";
     src: url(font/Poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Poppins-light";
+    src: url(font/Poppins/Poppins-Light.ttf);
 }
 
 
@@ -73,8 +79,8 @@ nav {
     left: 42%;
      font-size: 115px;
     transform: translate(-20%, -50%);
-    
-    
+
+
 }
 #h1-play-image-vamos {
     font-family: 'Blinker-extrabold';
@@ -83,8 +89,8 @@ nav {
     left: 44%;
     font-size: 115px;
     transform: translate(-20%, -50%);
-  
-    
+
+
 }
 
 
@@ -95,7 +101,7 @@ nav {
     left: 41%;
     transform: translate(-20%, -50%);
     font-size: 18px;
-  
+
 }
 
 
@@ -106,7 +112,7 @@ nav {
     left: 45%;
     transform: translate(-20%, -50%);
     font-size: 18px;
-  
+
 }
 
 .img-home-apresentacao {
@@ -118,7 +124,7 @@ nav {
 .img-home-apresentacao img {
     width: 1470px;
     margin: auto;
-   
+
 
 }
 /* CSS IMAGEM FINAL */
@@ -130,7 +136,7 @@ nav {
 }
 
 #info-box{
-    font-family: "Poppins-medium";
+    font-family: "Poppins-light";
     font-size: 20px;
 }
 
@@ -140,7 +146,7 @@ nav {
     font-size: 20px;
     margin-right:400px;
     margin-left:170px;
-    
+
 }
 
 /* nossos cupons começo */
@@ -170,3 +176,26 @@ nav {
 
 
 /* nossos cupons final */
+
+/* empresas parceiras começo */
+
+.empresas{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-family: "Poppins-light";
+    justify-content: center;     
+    flex-wrap: wrap;   
+}
+
+#empresa{
+    margin-left: 100px;
+}
+
+
+/* empresas parceiras final */
+
+
+/* qr code começo */
+
+/* qr code final */

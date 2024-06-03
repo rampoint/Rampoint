@@ -1,0 +1,44 @@
+/* Dispositivos móveis pequenos (em pé) */
+@media (max-width: 320px) {
+  /* Estilos aqui */
+}
+
+/* Dispositivos móveis médios (em pé) */
+@media (max-width: 375px) {
+  /* Estilos aqui */
+}
+
+/* Dispositivos móveis grandes (em pé) */
+@media (max-width: 425px) {
+  /* Estilos aqui */
+}
+
+/* Dispositivos móveis em modo paisagem (tela horizontal) */
+@media (max-width: 767px) {
+  /* Estilos aqui */
+}
+
+/* Tablets em modo retrato (tela vertical) */
+@media (max-width: 768px) {
+  /* Estilos aqui */
+}
+
+/* Tablets em modo paisagem (tela horizontal) */
+@media (max-width: 1024px) {
+  /* Estilos aqui */
+}
+
+/* Laptops pequenos */
+@media (max-width: 1280px) {
+  /* Estilos aqui */
+}
+
+/* Laptops e desktops */
+@media (max-width: 1440px) {
+  /* Estilos aqui */
+}
+
+/* Telas grandes */
+@media (max-width: 1920px) {
+  /* Estilos aqui */
+}

@@ -35,6 +35,11 @@
     src: url(font/Poppins/Poppins-Light.ttf);
 }
 
+@font-face {
+    font-family: "Poppins-semibold";
+    src: url(font/Poppins/Poppins-SemiBold.ttf);
+}
+
 
 
 /*caso queira deixar a header sem margem ctrl c e k  */
@@ -68,7 +73,7 @@ nav {
 /* Header final */
 
 /* CSS IMAGEM COMEÇO */
-#h1-play{
+#h1-play {
     font-family: 'Blinker-extrabold';
 }
 
@@ -77,11 +82,12 @@ nav {
     position: absolute;
     top: 34%;
     left: 42%;
-     font-size: 115px;
+    font-size: 115px;
     transform: translate(-20%, -50%);
 
 
 }
+
 #h1-play-image-vamos {
     font-family: 'Blinker-extrabold';
     position: absolute;
@@ -127,36 +133,37 @@ nav {
 
 
 }
+
 /* CSS IMAGEM FINAL */
 
-#p-informacoes{
+#p-informacoes {
     font-family: "blinker-extrabold";
     color: #7AD761;
     font-size: 40px;
 }
 
-#info-box{
+#info-box {
     font-family: "Poppins-light";
     font-size: 20px;
 }
 
 
-.info-box1{
+.info-box1 {
     font-family: "Poppins-medium";
     font-size: 20px;
-    margin-right:400px;
-    margin-left:170px;
+    margin-right: 400px;
+    margin-left: 170px;
 
 }
 
 /* nossos cupons começo */
 
-.background-wave{
+.background-wave {
     width: 100%;
     height: 100%;
 }
 
-#ra-dourada{
+#ra-dourada {
     background-color: #2A55C2;
     width: 230px;
     height: 260px;
@@ -166,7 +173,7 @@ nav {
     text-align: center;
 }
 
-#ra-dourada img{
+#ra-dourada img {
     height: 255px;
     width: 263px;
     border: solid 1px green;
@@ -179,16 +186,16 @@ nav {
 
 /* empresas parceiras começo */
 
-.empresas{
+.empresas {
     display: flex;
     text-align: center;
     align-items: center;
     font-family: "Poppins-light";
-    justify-content: center;     
-    flex-wrap: wrap;   
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-#empresa{
+#empresa {
     margin-left: 100px;
 }
 
@@ -197,5 +204,43 @@ nav {
 
 
 /* qr code começo */
+.qrcode-box {
+    display: flex;
+    font-family: "Poppins-semibold";
+    background-color: #D9D9D9;
+    text-align: center;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 30px;
+    filter: drop-shadow(5px 5px 4px #8e8e8e);
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.qrcode-box button {
+    font-family: "Poppins-bold";
+    border-radius: 30px;
+    box-shadow: 1px;
+    font-size: medium;
+    padding: 5px 20px 5px 20px;
+    color: white;
+    background-color: #2A55C2;
+    border: solid #2A55C2;
+}
+
+#gerar-button {
+    background-color: #7AD761;
+    border: solid #7AD761;
+}
+
+.qrcode-box input{
+    border-radius: 30px;
+    box-shadow:4px;
+    border: solid  #F8F8FF;
+    filter: drop-shadow(5px 5px 4px #8e8e8e);
+}
+
+
 
 /* qr code final */

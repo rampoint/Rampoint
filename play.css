@@ -199,18 +199,48 @@ nav {
 
 /* qr code começo */
 .qrcode-box {
-    display: flex;
+    display: grid;
     font-family: "Poppins-semibold";
-    background-color: #D9D9D9;
+    background-color: #f5f2f2;
     text-align: center;
-    height: fit-content;
-    width: fit-content;
     border-radius: 30px;
-    filter: drop-shadow(5px 5px 4px #8e8e8e);
+    filter: drop-shadow(5px 5px 4px #e7e3e3);
     margin: auto;
+    gap: 5px;
+    grid-template-areas: 
+    'codigo-aqui codigo-aqui'
+    'imgqrcode down-salvar'
+    ;
+    width: fit-content;
+    height: fit-content;
+    padding: 50px;
     justify-content: center;
     align-items: center;
 }
+
+.codigo-aqui {
+    grid-area: codigo-aqui;
+    justify-content: space-around;
+}
+
+.codigo-aqui button{
+    margin-left: 60px;
+}
+
+
+.imgqrcode{
+    grid-area: imgqrcode;
+}
+.down-salvar{
+    grid-area: 'down-salvar';
+
+}
+
+.qrcode-box div{
+
+    margin: 10px 10px 10px 10px;    
+}
+
 
 .qrcode-box button {
     font-family: "Poppins-bold";
@@ -233,8 +263,12 @@ nav {
     box-shadow:4px;
     border: solid  #F8F8FF;
     filter: drop-shadow(5px 5px 4px #8e8e8e);
-}
+    padding: 5px 100px 5px 115px;
 
+}
+.qrcode-box p{
+    padding: 0px 100px 0px 100px;
+}
 
 
 /* qr code final */

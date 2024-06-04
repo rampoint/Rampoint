@@ -1,0 +1,199 @@
+:root {
+  /* paleta principal */
+  --branco: #f8f8ff;
+  --verde: #7ad761;
+  --verde-claro: #ecfdf3;
+  --azul: #2a55c2;
+  --cinza-claro: #d9d9d9;
+  --cinza: #cdcdcd;
+  --preto: #121212;
+  --vermelho: #d40000;
+  --vermelho-claro: #ffeeee;
+}
+
+body {
+  background-color: var(--branco);
+}
+
+.imagem-fundo {
+  width: 100%;
+  height: auto;
+}
+
+.titulo {
+  font-family: "Blinker", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 65px;
+  color: var(--preto);
+  text-shadow: 0px 4px 7px rgba(0, 0, 0, 20%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 30%;
+  text-align: center;
+}
+
+.texto {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-shadow: 0px 4px 7px rgba(0, 0, 0, 20%);
+  position: absolute;
+  bottom: 15%;
+  right: 10%;
+  transform: translate(-50%, -50%);
+  max-width: 40%;
+  text-align: center;
+}
+
+span {
+  color: var(--azul);
+}
+
+.seta-branca {
+  background-color: var(--azul);
+  height: 45px;
+  width: 45px;
+  position: absolute;
+  bottom: 5%;
+  right: 45%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+h1 {
+  font-family: "Blinker", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  color: var(--verde);
+}
+
+.textos {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.form-conteiner {
+  background-color: var(--cinza-claro);
+  border-radius: 35px;
+  width: 750px;
+  height: 250px;
+  display: flex;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 5%);
+}
+
+.form-grupo {
+  flex-direction: row;
+}
+
+label {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+input {
+  background-color: var(--branco);
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  height: 30px;
+  width: 200px;
+  margin-top: 5px;
+}
+
+.btn-lupa {
+  background-color: var(--azul);
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 25%);
+  cursor: pointer;
+}
+
+h2 {
+  font-family: "Blinker", sans-serif;
+  font-weight: 800;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+section span {
+  color: var(--preto);
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.imagem-ecoponto {
+  border-radius: 35px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 25%);
+}
+
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.descartes {
+  display: flex;
+  flex-direction: row;
+}
+
+.descartes p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.area {
+  width: 145px;
+  height: 158px;
+  border-radius: 30px;
+  box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 15%);
+}
+
+.area-madeira {
+  background-color: #c67dff;
+}
+
+.area-madeira p {
+  color: #7b2bbe;
+}
+
+.area-pneu {
+  background-color: #46c4ff;
+}
+
+.area-pneu p {
+  color: #0076ac;
+}
+
+.area-reciclavel {
+  background-color: var(--verde);
+}
+
+.area-reciclavel p {
+  color: #499136;
+}
+
+.area-metal {
+  background-color: #FEE333;
+}
+
+.area-metal p {
+  color: #F89701;
+}
+
+.area-eletronico {
+  background-color: #E10531;
+}
+
+.area-eletronico p {
+  color: #6B0015;
+}

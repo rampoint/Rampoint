@@ -43,11 +43,17 @@
 
 
 /*caso queira deixar a header sem margem ctrl c e k  */
-/* *{
+     *{
     margin: 0px;
     padding: 0px;
-} */
+} 
 
+.conteiner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
 body {
     background-color: #F8F8FF;
 }
@@ -58,6 +64,7 @@ header {
     width: 79%;
     font-family: 'Batangas';
     margin: auto;
+    margin-top: 30px;
 }
 
 nav {
@@ -79,7 +86,7 @@ nav {
 
 #h1-play-image-comecar {
     font-family: 'Blinker-extrabold';
-    position: absolute;
+   
     top: 34%;
     left: 42%;
     font-size: 115px;
@@ -88,50 +95,36 @@ nav {
 
 }
 
-#h1-play-image-vamos {
+#h1-play-image {
     font-family: 'Blinker-extrabold';
-    position: absolute;
-    top: 23%;
-    left: 44%;
     font-size: 115px;
-    transform: translate(-20%, -50%);
-
+    
 
 }
-
-
-#p-play-image-descricao1 {
+#p-play-image-descricao {
     font-family: 'Poppins-bold';
-    position: absolute;
-    top: 54%;
-    left: 41%;
-    transform: translate(-20%, -50%);
+    
     font-size: 18px;
 
 }
-
-
-#p-play-image-descricao2 {
-    font-family: 'Poppins-bold';
-    position: absolute;
-    top: 57%;
-    left: 45%;
-    transform: translate(-20%, -50%);
-    font-size: 18px;
-
-}
-
-.img-home-apresentacao {
-    margin-left: auto;
-    position: relative;
-    text-align: center;
-}
-
 .img-home-apresentacao img {
-    width: 1470px;
-    margin: auto;
+    width: 1500px;
+}
+.img-home-apresentacao {
+    display: flex;    
+    text-align: center;
+    position: relative;
+    justify-content: center;
 
-
+}
+.mensagem-apresentacao{
+    display: flex;
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    flex-wrap: wrap;
+    flex-direction: column  ;
+    
 }
 
 /* CSS IMAGEM FINAL */

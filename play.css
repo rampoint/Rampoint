@@ -93,18 +93,19 @@ nav {
 
 .scroll-ball{
     background-color: #2A55C2;
-    padding: 23px;
+    padding: 1.5%;
     clip-path: circle();
     height: 100%;
-    position: absolute;
-    top:50%;
-    left: 50%;
+    margin: auto;
+    margin-bottom: 80px;
+    
 }
+
+
 
 #background{
     position: relative;
     width: 100%;
-    
 }
 
 
@@ -115,6 +116,7 @@ nav {
     font-family: "blinker-extrabold";
     color: #7AD761;
     font-size: 40px;
+    margin-bottom: 20px;
 }
 
 #info-box {
@@ -128,6 +130,7 @@ nav {
     font-size: 20px;
     margin-right: 400px;
     margin-left: 170px;
+   
 
 }
 
@@ -172,7 +175,7 @@ nav {
 }
 
 #empresa {
-    margin-left: 100px;
+    margin: 60px;
 }
 
 
@@ -188,7 +191,7 @@ nav {
     border-radius: 30px;
     filter: drop-shadow(5px 5px 4px #e7e3e3);
     margin: auto;
-    padding: 50px;
+    padding: 20px;
     flex-direction: column;
 
 }
@@ -202,14 +205,11 @@ nav {
     margin-left: 60px;
 }
 
-
-/* .imgqrcode{
-
+.qrcode-salvar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.down-salvar{
-
-
-} */
 
 .qrcode-box div {
 

@@ -43,17 +43,18 @@
 
 
 /*caso queira deixar a header sem margem ctrl c e k  */
-     *{
+* {
     margin: 0px;
     padding: 0px;
-} 
+}
 
-.conteiner{
+.conteiner {
     display: flex;
     flex-direction: column;
     justify-content: center;
-   
+
 }
+
 body {
     background-color: #F8F8FF;
 }
@@ -80,54 +81,33 @@ nav {
 /* Header final */
 
 /* CSS IMAGEM COMEÇO */
-#h1-play {
-    font-family: 'Blinker-extrabold';
-}
-
-#h1-play-image-comecar {
-    font-family: 'Blinker-extrabold';
-   
-    top: 34%;
-    left: 42%;
-    font-size: 115px;
-    transform: translate(-20%, -50%);
 
 
-}
-
-#h1-play-image {
-    font-family: 'Blinker-extrabold';
-    font-size: 115px;
-    
-
-}
-#p-play-image-descricao {
-    font-family: 'Poppins-bold';
-    
-    font-size: 18px;
-
-}
-.img-home-apresentacao img {
-    width: auto;
-    height: auto;
-}
 
 .img-home-apresentacao {
-    display: flex;    
-    text-align: center;
-    position: relative;
-    justify-content: center;
-
-}
-.mensagem-apresentacao{
     display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.scroll-ball{
+    background-color: #2A55C2;
+    padding: 23px;
+    clip-path: circle();
+    height: 100%;
     position: absolute;
-    top: 20%;
-    left: 35%;
-    flex-wrap: wrap;
-    flex-direction: column  ;
+    top:50%;
+    left: 50%;
+}
+
+#background{
+    position: relative;
+    width: 100%;
     
 }
+
+
 
 /* CSS IMAGEM FINAL */
 
@@ -201,7 +181,7 @@ nav {
 
 /* qr code começo */
 .qrcode-box {
-    display:flex;
+    display: flex;
     font-family: "Poppins-semibold";
     background-color: #D9D9D9;
     text-align: center;
@@ -210,15 +190,15 @@ nav {
     margin: auto;
     padding: 50px;
     flex-direction: column;
-    
+
 }
 
 .codigo-aqui {
-    
+
     justify-content: space-around;
 }
 
-.codigo-aqui button{
+.codigo-aqui button {
     margin-left: 60px;
 }
 
@@ -231,9 +211,9 @@ nav {
 
 } */
 
-.qrcode-box div{
+.qrcode-box div {
 
-    margin: 10px 10px 10px 10px;    
+    margin: 10px 10px 10px 10px;
 }
 
 
@@ -253,15 +233,16 @@ nav {
     border: solid #7AD761;
 }
 
-.qrcode-box input{
+.qrcode-box input {
     border-radius: 30px;
-    box-shadow:4px;
-    border: solid  #F8F8FF;
+    box-shadow: 4px;
+    border: solid #F8F8FF;
     filter: drop-shadow(5px 5px 4px #8e8e8e);
     padding: 5px 100px 5px 115px;
 
 }
-.qrcode-box p{
+
+.qrcode-box p {
     padding: 0px 100px 0px 100px;
 }
 

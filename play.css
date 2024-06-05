@@ -108,7 +108,8 @@ nav {
 
 }
 .img-home-apresentacao img {
-    width: 1500px;
+    width: auto;
+    height: auto;
 }
 
 .img-home-apresentacao {
@@ -199,27 +200,20 @@ nav {
 
 /* qr code começo */
 .qrcode-box {
-    display: grid;
+    display:flex;
     font-family: "Poppins-semibold";
-    background-color: #f5f2f2;
+    background-color: #D9D9D9;
     text-align: center;
     border-radius: 30px;
     filter: drop-shadow(5px 5px 4px #e7e3e3);
     margin: auto;
-    gap: 5px;
-    grid-template-areas: 
-    'codigo-aqui codigo-aqui'
-    'imgqrcode down-salvar'
-    ;
-    width: fit-content;
-    height: fit-content;
     padding: 50px;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    
 }
 
 .codigo-aqui {
-    grid-area: codigo-aqui;
+    
     justify-content: space-around;
 }
 
@@ -228,13 +222,13 @@ nav {
 }
 
 
-.imgqrcode{
-    grid-area: imgqrcode;
-}
-.down-salvar{
-    grid-area: 'down-salvar';
+/* .imgqrcode{
 
 }
+.down-salvar{
+
+
+} */
 
 .qrcode-box div{
 

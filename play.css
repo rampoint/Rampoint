@@ -133,8 +133,8 @@ nav {
     margin-right: 400px;
     margin-left: 170px;
     margin-top: 50px;
-   
-
+    display: flex;
+    flex-direction: column;
 }
 
 /* nossos cupons começo */
@@ -250,8 +250,17 @@ nav {
 }
 qr code final*/
 
+/* 
+conquistas começo */
 
-#conquistas{
-    margin-top: 10px;
+.medalhas{
+    text-align: center;
 }
+
+
+
+
+
+/* 
+conquistas finais */
 

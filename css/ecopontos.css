@@ -123,6 +123,8 @@ h1 {
   height: 250px;
   display: flex;
   box-shadow: 4px 4px 5px rgba(0, 0, 0, 5%);
+  display: grid;
+  
 }
 
 .form-grupo {
@@ -155,8 +157,8 @@ input {
 }
 
 h2 {
-  font-family: "Blinker", sans-serif;
-  font-weight: 800;
+  font-family: "Blinker";
+
 }
 
 p {
@@ -173,6 +175,7 @@ section span {
 .imagem-ecoponto {
   border-radius: 35px;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 25%);
+  width: auto;
 }
 
 h3 {
@@ -256,3 +259,21 @@ h3 {
   justify-content: center;
   padding: 10px;
 }
+
+.conteiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: baseline;
+}
+
+  .local-resposta{
+    display: flex;
+    width: fit-content;
+  }
+
+  .informacoes{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }

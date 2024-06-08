@@ -43,43 +43,7 @@
 
 
 /*caso queira deixar a header sem margem ctrl c e k  */
-* {
-    margin: 0px;
-    padding: 0px;
-}
 
-.conteiner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-}
-
-body {
-    background-color: #F8F8FF;
-}
-
-
-/* Header começo */
-header {
-    display: flex;
-    width: 79%;
-    font-family: 'Batangas';
-    margin: auto;
-    margin-top: 30px;
-}
-
-nav {
-    color: black;
-    font-family: "Blinker";
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
-
-}
-
-/* Header final */
 
 /* CSS IMAGEM COMEÇO */
 
@@ -94,12 +58,13 @@ nav {
 }
 
 .scroll-ball{
+    position: relative;
     background-color: #2A55C2;
     padding: 1.5%;
     clip-path: circle();
     height: 100%;
     margin: auto;
-    margin-bottom: 80px;
+    
     
 }
 
@@ -127,15 +92,18 @@ nav {
 }
 
 
+
+
 .info-box1 {
     font-family: "Poppins-medium";
     font-size: 20px;
-    margin-right: 400px;
-    margin-left: 170px;
-    margin-top: 50px;
+    margin: auto;
+    width: 900px;
     display: flex;
     flex-direction: column;
 }
+
+
 
 /* nossos cupons começo */
 
@@ -172,17 +140,54 @@ nav {
     display: flex;
     text-align: center;
     align-items: center;
-    font-family: "Poppins-light";
     justify-content: center;
     flex-wrap: wrap;
+    margin: 60px;
+    
 }
 
 #empresa {
-    margin: 60px;
+    text-align: center;
+    margin: 40px;
+    background: #C0D2FF;
+    border-radius: 30px;
+    width: 243px;
+    height: 270px;
+}
+
+.info-empresas{
+position: relative;
+margin-left: 10px;
+margin-right: 10px;
+bottom: 50px;
+    
+}
+#empresa img {
+    position: relative;
+    bottom: 80px;
+}
+
+#empresa p{
+    font-family: "Poppins-medium";
+    color:#112E78;
+}
+
+#empresa h1{
+    font-family: "Poppins-bold";
+    color:#112E78;
+    font-size: large;
+}
+
+/* empresas parceiras final */
+
+
+
+
+.medalhas{
+    text-align: center;
 }
 
 
-/* empresas parceiras final */
 
 
 /* qr code começo 
@@ -252,15 +257,6 @@ qr code final*/
 
 /* 
 conquistas começo */
-
-.medalhas{
-    text-align: center;
-}
-
-
-
-
-
 /* 
 conquistas finais */
 

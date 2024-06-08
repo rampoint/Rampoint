@@ -1,49 +1,184 @@
 @font-face {
-    font-family: "Batangas";
-    src: url(font/batangas-font-family-fontmirror/Batangas\ Bold\ 700.otf);
-  }
-  
-  @font-face {
-    font-family: "Blinker";
-    src: url(font/Blinker/Blinker-SemiBold.ttf);
-  }
-  
-  @font-face {
-    font-family: "Blinker-extrabold";
-    src: url(font/Blinker/Blinker-ExtraBold.ttf);
-  }
-  
-  @font-face {
-    font-family: "Poppins-extralight";
-    src: url(font/Poppins/Poppins-ExtraLight.ttf);
-  }
-  
-  @font-face {
-    font-family: "Poppins-bold";
-    src: url(font/Poppins/Poppins-Bold.ttf);
-  }
-  
-  @font-face {
-    font-family: "Poppins-medium";
-    src: url(font/Poppins/Poppins-Medium.ttf);
-  }
-  
-  @font-face {
-    font-family: "Poppins-light";
-    src: url(font/Poppins/Poppins-Light.ttf);
-  }
-  
-  @font-face {
-    font-family: "Poppins-semibold";
-    src: url(font/Poppins/Poppins-SemiBold.ttf);
-  }
+  font-family: "Batangas";
+  src: url(font/batangas-font-family-fontmirror/Batangas\ Bold\ 700.otf);
+}
+
+@font-face {
+  font-family: "Blinker";
+  src: url(font/Blinker/Blinker-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "Blinker-extrabold";
+  src: url(font/Blinker/Blinker-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: "Poppins-extralight";
+  src: url(font/Poppins/Poppins-ExtraLight.ttf);
+}
+
+@font-face {
+  font-family: "Poppins-bold";
+  src: url(font/Poppins/Poppins-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Poppins-medium";
+  src: url(font/Poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Poppins-light";
+  src: url(font/Poppins/Poppins-Light.ttf);
+}
+
+@font-face {
+  font-family: "Poppins-semibold";
+  src: url(font/Poppins/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "Poppins-extrabold";
+  src: url(font/Poppins/Poppins-ExtraBold.ttf);
+}
+
+* {
+  margin: 0 auto;
+}
 
 :root {
-    --azul: #2a55c2;
-    --preto: #121212;
-  }
-  
+  --azul: #2a55c2;
+  --azul-claro: #46c4ff;
+  --preto: #121212;
+  --branco: #f8f8ff;
+  --cinza: #cdcdcd;
+}
+
+body,
+h2,
+h3,
+a,
+p,
+li,
+.btn-enviar {
+  color: var(--branco);
+}
+
+body {
+  background-color: var(--branco);
+}
+
+h2 {
+  font-family: "Blinker-extrabold";
+  margin-top: 30px;
+}
+
+p {
+  font-family: "Poppins-semibold";
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+h3,
+.btn-enviar {
+  font-family: "Poppins-extrabold";
+}
+
+.container .vitoria-regia {
+  position: absolute;
+  top: -100px;
+  right: 70px;
+}
+
+.logoBranca {
+  width: 140px;
+}
+
+.btn-enviar {
+  background-color: var(--azul-claro);
+  border: none;
+  border-radius: 15px;
+  width: 80px;
+  height: 30px;
+}
 
 .container {
-    background-color: var(--azul);
+  background-color: var(--azul);
+  width: 100%;
+  height: auto;
+  padding: 40px 0px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+}
+
+.container .logo {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+
+.logoBranca {
+  width: 130px;
+  height: auto;
+}
+
+.container .email {
+  margin-top: 20px;
+}
+
+.container input[type="email"] {
+  background-color: var(--branco);
+  padding: 10px;
+  border: none;
+  border-radius: 30px;
+  width: 400px;
+  height: 20px;
+  max-width: 80%;
+  margin-right: 10px;
+  font-family: "Poppins-bold";
+  color: var(--cinza);
+}
+
+input:focus {
+  outline: none;
+}
+
+.container button {
+  height: 40px;
+  padding: 10px 20px;
+  border: none;
+  font-family: "Poppins-extrabold";
+  border-radius: 30px;
+  background-color: var(--azul-claro);
+  color: var(--branco);
+  cursor: pointer;
+}
+.container .redes-sociais {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 55px;
+  max-width: 70%;
+}
+.container .redes-sociais div {
+  text-align: left;
+}
+.container .redes-sociais h3 {
+  margin-bottom: 10px;
+}
+.container .redes-sociais ul {
+  list-style-type: none;
+  padding: 0;
+}
+.container .redes-sociais li {
+  margin-bottom: 5px;
+}
+.container .redes-sociais a {
+  color: var(--branco);
+  text-decoration: none;
+  font-family: "Poppins-semibold";
+}
+.container .redes-sociais a:hover {
+  text-decoration: underline;
 }

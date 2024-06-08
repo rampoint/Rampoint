@@ -17,7 +17,12 @@
 }
 
 @font-face {
-  font-family: "Blinker";
+  font-family: "Blinker-regular";
+  src: url(font/Blinker/Blinker-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Blinker-semibold";
   src: url(font/Blinker/Blinker-SemiBold.ttf);
 }
 
@@ -51,6 +56,27 @@
   src: url(font/Poppins/Poppins-SemiBold.ttf);
 }
 
+@font-face {
+  font-family: "Poppins-extrabold";
+  src: url(font/Poppins/Poppins-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: "Poppins-black";
+  src: url(font/Poppins/Poppins-Black.ttf);
+}
+
+.ram {
+  font-family: "Batangas";
+  color: #3dd715;
+  margin-left: 12px;
+}
+
+.point {
+  font-family: "Batangas";
+  color: var(--preto);
+}
+
 body {
   background-color: var(--branco);
 }
@@ -60,32 +86,37 @@ body {
   height: auto;
 }
 
-.titulo {
-  font-family: "Blinker", sans-serif;
+/* .titulo {
+  font-family: "Blinker-regular", sans-serif;
   font-weight: 800;
   font-style: normal;
   font-size: 65px;
   color: var(--preto);
-  text-shadow: 0px 4px 7px rgba(0, 0, 0, 20%);
+  text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.3);
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: 30%;
   text-align: center;
+  line-height: 65px;
 }
 
 .texto {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-style: normal;
-  text-shadow: 0px 4px 7px rgba(0, 0, 0, 20%);
+  text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.3);
   position: absolute;
-  bottom: 15%;
-  right: 10%;
+  bottom: 20%;
+  right: 15%;
   transform: translate(-50%, -50%);
-  max-width: 40%;
+  max-width: 35%;
   text-align: center;
+} 
+
+.texto span {
+  color: #499136;
 }
 
 span {
@@ -94,23 +125,37 @@ span {
 
 .seta-branca {
   background-color: var(--azul);
-  height: 45px;
-  width: 45px;
+  height: 50px;
+  width: 50px;
   position: absolute;
   bottom: 5%;
-  right: 45%;
-  transform: translate(-50%, -50%);
+  right: 50%;
+  transform: translate(50%, 50%);
   border-radius: 50%;
 }
 
-h1 {
+.seta-branca img {
+  width: 10px;
+  height: auto;
+}
+*/
+
+.info-box {
+  margin-left: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.titulo1 {
   font-family: "Blinker", sans-serif;
   font-weight: 800;
   font-style: normal;
   color: var(--verde);
+  margin-top: 50px;
+  margin-bottom: 0;
 }
 
-.textos {
+.texto1 {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -123,6 +168,8 @@ h1 {
   height: 250px;
   display: flex;
   box-shadow: 4px 4px 5px rgba(0, 0, 0, 5%);
+  margin-top: 20px;
+  margin-left: 350px;
 }
 
 .form-grupo {
@@ -154,30 +201,67 @@ input {
   cursor: pointer;
 }
 
-h2 {
-  font-family: "Blinker", sans-serif;
+.card p {
+  font-family: "Poppins", sans-serif;
+  margin: 0px 0px 10px 0px;
+}
+
+.telefone, .endereco {
+  font-family: "Poppins", sans-serif;
   font-weight: 800;
-}
-
-p {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-}
-
-section span {
-  color: var(--preto);
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-}
-
-.imagem-ecoponto {
-  border-radius: 35px;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 25%);
 }
 
 h3 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
+  margin-left: 300px;
+}
+
+.card {
+  max-width: 750px;
+  width: 100%;
+  margin-left: 350px;
+  margin-top: 15px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.imagem-ecoponto {
+  margin-right: 20px;
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 25%);
+}
+
+.card-content {
+  flex: 1;
+}
+
+.info-ecoponto {
+  font-family: "Blinker", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  margin: 0;  
+}
+
+.nome-ecoponto{
+  font-family: "Blinker", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  margin: 0;
+}
+
+.card-content p {
+  margin: 5px 0;
+  max-width: 90%;
+  margin-top: 15px;
+}
+
+.numero {
+  text-decoration: underline;
+  margin-top: 10px;
 }
 
 .descartes {
@@ -200,14 +284,27 @@ h3 {
   height: 80px;
 }
 
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+}
+
 .card-wrapper {
-  width: 100px;
-  height: 100px;
-  border-radius: 20px;
-  padding: 20px;
+  width: 140px;
+  height: 150px;
   text-align: center;
   margin: 20px 10px;
-  box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 15%);
+  box-shadow: rgba(0, 0, 0, 0.12) 5px -3px 7px 2px inset;
+  border-radius: 20px;
+}
+
+.card-wrapper p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  margin-top: 15px;
+  margin: bottom 10px;
 }
 
 .area-madeira {
@@ -248,11 +345,4 @@ h3 {
 
 .area-eletronico p {
   color: #6b0015;
-}
-
-.cards {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 10px;
 }

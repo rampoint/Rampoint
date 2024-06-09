@@ -3,7 +3,7 @@
   --verde: #7ad761;
   --verde-claro: #ecfdf3;
   --azul: #2a55c2;
-  --cinza-claro: #d9d9d9 opacity(50%);
+  --cinza-claro: rgba(217, 217, 217, 0.5);
   --cinza: #cdcdcd;
   --preto: #121212;
   --vermelho: #d40000;
@@ -12,44 +12,48 @@
 
 @font-face {
   font-family: "Batangas";
-  src: url(font/batangas-font-family-fontmirror/Batangas\ Bold\ 700.otf);
-
+  src: url(../font/batangas-font-family-fontmirror/Batangas\ Bold\ 700.otf);
 }
-
 
 @font-face {
   font-family: "Blinker";
-  src: url(font/Blinker/Blinker-SemiBold.ttf);
+  src: url(../font/Blinker/Blinker-SemiBold.ttf);
 }
 
 @font-face {
   font-family: "Blinker-extrabold";
-  src: url(font/Blinker/Blinker-ExtraBold.ttf);
+  src: url(../font/Blinker/Blinker-ExtraBold.ttf);
 }
 
 @font-face {
   font-family: "Poppins-extralight";
-  src: url(font/Poppins/Poppins-ExtraLight.ttf);
+  src: url(../font/Poppins/Poppins-ExtraLight.ttf);
 }
 
 @font-face {
   font-family: "Poppins-bold";
-  src: url(font/Poppins/Poppins-Bold.ttf);
+  src: url(../font/Poppins/Poppins-Bold.ttf);
 }
 
 @font-face {
   font-family: "Poppins-medium";
-  src: url(font/Poppins/Poppins-Medium.ttf);
+  src: url(../font/Poppins/Poppins-Medium.ttf);
 }
 
 @font-face {
   font-family: "Poppins-light";
-  src: url(font/Poppins/Poppins-Light.ttf);
+  src: url(../font/Poppins/Poppins-Light.ttf);
 }
 
 @font-face {
   font-family: "Poppins-semibold";
-  src: url(font/Poppins/Poppins-SemiBold.ttf);
+  src: url(../font/Poppins/Poppins-SemiBold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -82,11 +86,13 @@ nav {
 
 .imagem-fundo {
   display: flex;
-  align-items: center;
-  width: 80%;
-  height: auto;
-  
+  justify-content: center;
 }
+
+.imagem-inicial {
+  margin-top: 70px;
+}
+
 .titulo {
   font-family: "Blinker", sans-serif;
   font-weight: 800;
@@ -116,20 +122,36 @@ nav {
 }
 
 span {
+  font-family: "Blinker-extrabold";
   color: var(--azul);
+  text-transform: uppercase;
+  font-size: 18px;
 }
 
-h1 {
+.titulo1 {
   font-family: "Blinker", sans-serif;
   font-weight: 800;
   font-style: normal;
   color: var(--verde);
+  margin-left: 250px;
+}
+
+.titulo-principal {
+  margin-top: 150px;
+}
+
+.titulo-secundario {
+  margin-top: 65px;
 }
 
 .textos {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
+  margin-left: 250px;
+  max-width: 70%;
+  margin-top: 10px;
+  color: var(--preto);
 }
 
 .seta {
@@ -151,44 +173,68 @@ h1 {
   transform: translate(-50%, -50%);
 }
 
-.componentes {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 65px;
-}
-
-.componentes h3 {
-  font-family: "Blinker", sans-serif;
-  font-weight: 800;
-  font-style: normal;
-  color: #ffffff;
-  text-align: center;
+.accordion {
+  width: 600px;
   margin: 0 auto;
+  margin-top: 50px;
 }
 
-.bloco {
-  background-color: var(--azul);
-  color: #fff;
-  border-radius: 10px;
-  padding: 20px;
-  text-align: center;
-  width: 100px;
-  height: 120px;
+.accordion-item {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.accordion-header {
+  height: 80px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  box-shadow: inset 0 0 20px 2px rgba(0, 0, 0, 15%);
+  padding: 10px;
+  background-color: var(--cinza-claro);
+  cursor: pointer;
 }
 
-.img-componentes {
-  width: 100px;
-  height: 115px;
+.accordion-header img.icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
 }
 
-.img-estrutura {
-  margin-top: 15px;
+.internos {
   width: 70px;
-  height: 70px;
+  height: auto;
+}
+
+.accordion-header .arrow-icon {
+  margin-left: auto;
+  transition: transform 0.3s ease;
+}
+
+.accordion-button {
+  font-family: "Blinker-extrabold";
+  color: var(--azul);
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: bold;
+  flex-grow: 1;
+  text-align: left;
+  cursor: pointer;
+}
+
+.accordion-collapse {
+  display: none;
+  padding: 10px;
+  background-color: var(--cinza-claro);
+}
+
+.accordion-body {
+  padding: 10px;
+  color: var(--preto);
+}
+
+.accordion-header.active .arrow-icon {
+  transform: rotate(180deg);
 }

@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7eb7045707.js" crossorigin="anonymous"></script>
     <title>Materiais</title>
     <link rel="stylesheet" href="./css/materiais.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/footer.css">
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Blinker:wght@300;400;600;700;800&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -31,45 +33,108 @@
             </nav>
         </header>
 
+        <div class="imagem-fundo">
+            <img src="./img/imagem-fundo.svg" class="imagem-inicial" alt="">
+        </div>
 
-        <img src="./img/imagem-fundo.svg" class="imagem-fundo">
-        <h1 class="titulo">SAIBA SOBRE HARDWARE</h1>
-        <p class="texto">Potencialize seus eletrônicos em oportunidades! Doe, acumule <span>Ramcoins</span> e troque por
-            cupons incríveis.</p>
-
-            <img src="./img/seta-branca.svg" class="seta seta-branca" alt="">
-
-        <h1>o que é?</h1>
+        <h1 class="titulo1 titulo-principal">O que é?</h1>
         <p class="textos">Hardware são os componentes físicos de um dispositivo ou sistema computacional, incluindo
             placas
             de circuito,
             processadores, memória, discos rígidos, entre outros. É tudo o que você pode tocar em um computador ou
             dispositivo eletrônico.</p>
 
-        <h1>periféricos e componentes</h1>
-        <p class="textos">Aprenda sobre os componentes do seu computador, como identificar problemas em cada um deles e
-            o
-            quanto valem.
-            Tudo o que você doar é útil para a gente!</p>
+        <h1 class="titulo1 titulo-secundario">Periféricos e componentes</h1>
+        <p class="textos">Aprenda sobre os componentes do seu computador, como identificar problemas em cada um deles e o quanto valem. Tudo o que você doar é útil para a gente!</p>
 
-        <div class="componentes">
-            <div class="bloco">
-                <h3>INTERNOS</h3>
-                <img src="./img/internos.svg" class="img-componentes" alt="Ícone Internos">
-                <img src="./img/seta.svg" class="seta" alt="Ícone seta">
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <img src="./img/internos.svg" alt="Internos Icon" class="internos">
+                    <button class="accordion-button" data-target="#collapseOne">INTERNOS</button>
+                    <i class="fas fa-chevron-down arrow-icon" style="color: #2a55c2;"></i>
+                </div>
+                <div id="collapseOne" class="accordion-collapse">
+                    <div class="accordion-body">
+                        <li><a href=""></a>Placa-Mãe</li>
+                        <li><a href=""></a>Memória RAM</li>
+                        <li><a href=""></a>Unidade de Armazenamento (HDD/SSD)</li>
+                        <li><a href=""></a>Placa de Vídeo (GPU)</li>
+                        <li><a href=""></a>Fonte de Alimentação (PSU)</li>
+                    </div>
+                </div>
             </div>
-            <div class="bloco">
-                <h3>PERIFÉRICOS</h3>
-                <img src="./img/perifericos.svg" class="img-componentes" alt="Ícone Periféricos">
-                <img src="./img/seta.svg" class="seta" alt="Ícone seta">
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <img src="./img/perifericos.svg" alt="Periféricos Icon" class="icon">
+                    <button class="accordion-button" data-target="#collapseTwo">PERIFÉRICOS</button>
+                    <i class="fas fa-chevron-down arrow-icon" style="color: #2a55c2;"></i>
+                </div>
+                <div id="collapseTwo" class="accordion-collapse">
+                    <div class="accordion-body">
+                        <li><a href=""></a>Monitor</li>
+                        <li><a href=""></a>Teclado</li>
+                        <li><a href=""></a>Mouse</li>
+                        <li><a href=""></a>Impressora</li>
+                        <li><a href=""></a>Alto-falantes</li>
+                    </div>
+                </div>
             </div>
-            <div class="bloco">
-                <h3>ESTRUTURA</h3>
-                <img src="./img/estrutura.svg" class="img-estrutura" alt="Ícone Estrutura">
-                <img src="./img/seta.svg" class="seta" alt="Ícone seta">
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <img src="./img/estrutura.svg" alt="Estrutura Icon" class="icon">
+                    <button class="accordion-button" data-target="#collapseThree">ESTRUTURA</button>
+                    <i class="fas fa-chevron-down arrow-icon" style="color: #2a55c2;"></i>
+                </div>
+                <div id="collapseThree" class="accordion-collapse">
+                    <div class="accordion-body">
+                        <li><a href=""></a>Gabinete</li>
+                        <li><a href=""></a>Estrutura do Gabinete</li>
+                        <li><a href=""></a>Baias de Drive</li>
+                        <li><a href=""></a>Slots de Expansão</li>
+                        <li><a href=""></a>Organização de Cabos</li>
+                        <li><a href=""></a>Ventoinhas</li>
+                        <li><a href=""></a>Dissipadores</li>
+                        <li><a href=""></a>Filtros de Poeira</li>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <footer class="container">
+                <div class="flor">
+                    <img src="./img/vitoria-regia.svg" class="vitoria-regia" alt="Imagem Vitória-régia">
+                </div>
+                <h2>Quer ser nosso parceiro?</h2>
+                <p>Envie-nos seu email!</p>
+                <div class="email">
+                    <input type="email" placeholder="Insira seu email aqui">
+                    <button>Enviar</button>
+                </div>
+                <div class="redes-sociais">
+                    <div>
+                        <h3>REDES SOCIAIS</h3>
+                        <ul>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Tiktok</a></li>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Linkedln</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>CONTATO</h3>
+                        <p>Email: rampointofc@gmail.com</p>
+                        <p>Telefone: (11) 93350-6834</p>
+                    </div>
+                </div>
+                <div class="logo">
+                    <img src="./img/logoBranca.svg" class="logoBranca" alt="Imagem Logo branca 'rampoint'">
+                    <img src="./img/logoBranca-extenso.svg" class="logoBranca-small" alt="">
+                </div>
+        </footer>
     </div>
+
+    <script src="menuAccordion.js"></script>
 </body>
 
 </html>

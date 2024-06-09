@@ -1,0 +1,93 @@
+@font-face {
+    font-family: "Blinker-extrabold";
+    src: url(../font/Blinker/Blinker-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: "Poppins-regular";
+    src: url(../font/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Poppins-semibold";
+    src: url(../font/Poppins/Poppins-SemiBold.ttf);
+}
+
+:root {
+    --azul: #2A55C2;
+    --laranja: #F89701;
+    --verde-escuro: #499136;
+    --verde: #7AD761;
+}
+
+.imagem-fundo {
+   display: flex;
+   justify-content: center;
+}
+
+.card-header {
+  text-align: center;
+  padding: 30px 60px 0;  
+}
+
+h2 {
+    padding-bottom: 10px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 60px;
+}
+ 
+.card-wrapper {
+    width: 300px;
+    padding: 50px;
+    text-align: center;
+    margin-top: 30px;
+} 
+
+.terra {
+    font-family: "Blinker-extrabold", sans-serif;
+    color: var(--azul);
+}
+
+.reciclagem {
+    font-family: "Blinker-extrabold", sans-serif;
+    color: var(--laranja);
+}
+
+.img-reciclagem {
+    margin-top: 35px;
+}
+
+.folha {
+    font-family: "Blinker-extrabold", sans-serif;
+    color: var(--verde-escuro);
+}
+
+h1 {
+    font-family: "Blinker-extrabold", sans-serif;
+    color: var(--verde);
+}
+
+.titulo1, .texto1, .titulo2, .texto2 {
+    margin-left: 150px;
+}
+
+.texto1, .texto2 {
+    max-width: 40%;
+}
+
+p {
+    font-family: "Poppins-regular";
+}
+
+span {
+    font-family: "Poppins-semibold";
+}
+
+.objetivo {
+    display: grid;
+}

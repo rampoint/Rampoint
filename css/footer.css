@@ -44,7 +44,8 @@
 }
 
 .conteiner-footer * {
-    margin: 0 auto; 
+    margin: 0 auto;
+    
 }
 
 :root {
@@ -64,12 +65,12 @@
   }
   
   
-  h2 {
+  .conteiner-footer h2 {
     font-family: "Blinker-extrabold";
     margin-top: 30px;
   }
   
-  p {
+  .conteiner-footer p {
     font-family: "Poppins-semibold";
     margin-top: 10px;
     margin-bottom: 20px;
@@ -80,11 +81,13 @@
     font-family: "Poppins-extrabold";
   }
   
-  .conteiner-footer .vitoria-regia {
+ 
+
+  /* .conteiner-footer .vitoria-regia {
     position: absolute;
     top: 3300px;
     right: 70px;
-  }
+  } */
   
   .logoBranca {
     width: 140px;

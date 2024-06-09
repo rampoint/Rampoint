@@ -2,6 +2,7 @@
   .container {
     width: 320px;
     height: auto;
+    position: none;
   }
 
   .flor img {
@@ -50,14 +51,23 @@
     margin-left: 10px;
   }
 
-  .container .redes-sociais {
+  .container .descricao-footer {
+    margin-top: 0;
     display: block;
   }
 
-  .redes-sociais {
+  .descricao-footer {
     flex-direction: column;
     justify-content: center;
     margin-top: 40px;
+    max-width: 100%;
+  }
+
+  .geral, .contato {
+    margin: 70px;
+  }
+
+  .endereco {
     max-width: 100%;
   }
 
@@ -77,7 +87,9 @@
 
 @media (max-width: 500px) {
   .container .logo {
+    margin: 0;
     bottom: 20px;
+    flex-direction: column;
   }
 
   .flor img {
@@ -108,4 +120,19 @@
   p {
     margin-bottom: 10px;
   }
+}
+
+@media (max-width: 1000px) {
+  .descricao-footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    max-width: 100%;
+  }
+
+
+  .copyright {
+    margin-left: 80px;
+  }
+
 }

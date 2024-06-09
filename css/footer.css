@@ -1,51 +1,51 @@
 @font-face {
   font-family: "Batangas";
-  src: url(font/batangas-font-family-fontmirror/Batangas\ Bold\ 700.otf);
+  src: url(../font/batangas-font-family-fontmirror/Batangas\ Bold\ 700.otf);
 }
 
 @font-face {
   font-family: "Blinker-semibold";
-  src: url(font/Blinker/Blinker-SemiBold.ttf);
+  src: url(../font/Blinker/Blinker-SemiBold.ttf);
 }
 
 @font-face {
   font-family: "Blinker-extrabold";
-  src: url(font/Blinker/Blinker-ExtraBold.ttf);
+  src: url(../font/Blinker/Blinker-ExtraBold.ttf);
 }
 
 @font-face {
   font-family: "Poppins-extralight";
-  src: url(font/Poppins/Poppins-ExtraLight.ttf);
+  src: url(../font/Poppins/Poppins-ExtraLight.ttf);
 }
 
 @font-face {
   font-family: "Poppins-bold";
-  src: url(font/Poppins/Poppins-Bold.ttf);
+  src: url(../font/Poppins/Poppins-Bold.ttf);
 }
 
 @font-face {
   font-family: "Poppins-medium";
-  src: url(font/Poppins/Poppins-Medium.ttf);
+  src: url(../font/Poppins/Poppins-Medium.ttf);
 }
 
 @font-face {
   font-family: "Poppins-light";
-  src: url(font/Poppins/Poppins-Light.ttf);
+  src: url(../font/Poppins/Poppins-Light.ttf);
 }
 
 @font-face {
   font-family: "Poppins-semibold";
-  src: url(font/Poppins/Poppins-SemiBold.ttf);
+  src: url(../font/Poppins/Poppins-SemiBold.ttf);
 }
 
 @font-face {
   font-family: "Poppins-extrabold";
-  src: url(font/Poppins/Poppins-ExtraBold.ttf);
+  src: url(../font/Poppins/Poppins-ExtraBold.ttf);
 }
 
-/* * {
+* {
   margin: 0 auto;
-} */
+}
 
 :root {
   --azul: #2a55c2;
@@ -64,7 +64,6 @@ li,
   color: var(--branco);
 }
 
-
 h2 {
   font-family: "Blinker-extrabold", sans-serif;
   margin-top: 30px;
@@ -73,7 +72,7 @@ h2 {
 p {
   font-family: "Poppins-semibold", sans-serif;
   margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 h3,
@@ -113,6 +112,8 @@ h3,
   position: absolute;
   left: 20px;
   bottom: 20px;
+  display: flex;
+  flex-direction: row;
 }
 
 .logoBranca {
@@ -158,36 +159,63 @@ input:focus {
   cursor: pointer;
 }
 
-.container .redes-sociais {
+.container .descricao-footer {
   display: flex;
   justify-content: space-between;
   margin-top: 55px;
-  max-width: 70%;
 }
 
-.container .redes-sociais div {
+.container .descricao-footer div {
   text-align: left;
 }
 
-.container .redes-sociais h3 {
+.container .descricao-footer h3 {
   margin-bottom: 10px;
 }
 
-.container .redes-sociais ul {
+.container .descricao-footer ul {
   list-style-type: none;
   padding: 0;
 }
 
-.container .redes-sociais li {
+.container .descricao-footer li {
   margin-bottom: 5px;
 }
 
-.container .redes-sociais a {
+.container .descricao-footer a {
   color: var(--branco);
   text-decoration: none;
   font-family: "Poppins-semibold";
 }
 
-.container .redes-sociais a:hover {
+.container .descricao-footer a:hover {
   text-decoration: underline;
+}
+
+.descricao-footer span {
+  font-family: "Poppins-bold";
+}
+
+.descricao-footer p {
+  font-family: "Poppins-medium";
+}
+
+.copyright {
+  margin-top: 50px;
+  margin-left: 475px;
+}
+
+.geral {
+  margin-left: 300px;
+  margin-right: 100px;
+}
+
+.redes-sociais {
+  margin-right: 100px;
+  margin-left: 70px;
+}
+
+.endereco {
+  margin-left: 0;
+  max-width: 53%;
 }

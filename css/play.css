@@ -45,6 +45,8 @@
 /*caso queira deixar a header sem margem ctrl c e k  */
 
 
+
+
 /* CSS IMAGEM COMEÇO */
 
 
@@ -54,23 +56,23 @@
     text-align: center;
     justify-content: center;
     flex-direction: column;
-   
+
 }
 
-.scroll-ball{
+.scroll-ball {
     position: relative;
     background-color: #2A55C2;
     padding: 1.5%;
     clip-path: circle();
     height: 100%;
     margin: auto;
-    
-    
+    bottom: 250px;
+
 }
 
 
 
-#background{
+#background {
     position: relative;
     width: 100%;
 }
@@ -143,7 +145,7 @@
     justify-content: center;
     flex-wrap: wrap;
     margin: 60px;
-    
+
 }
 
 #empresa {
@@ -155,26 +157,27 @@
     height: 270px;
 }
 
-.info-empresas{
-position: relative;
-margin-left: 10px;
-margin-right: 10px;
-bottom: 50px;
-    
+.info-empresas {
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+    bottom: 50px;
+
 }
+
 #empresa img {
     position: relative;
     bottom: 80px;
 }
 
-#empresa p{
+#empresa p {
     font-family: "Poppins-medium";
-    color:#112E78;
+    color: #112E78;
 }
 
-#empresa h1{
+#empresa h1 {
     font-family: "Poppins-bold";
-    color:#112E78;
+    color: #112E78;
     font-size: large;
 }
 
@@ -183,7 +186,7 @@ bottom: 50px;
 
 
 
-.medalhas{
+.medalhas {
     text-align: center;
 }
 
@@ -259,4 +262,3 @@ qr code final*/
 conquistas começo */
 /* 
 conquistas finais */
-

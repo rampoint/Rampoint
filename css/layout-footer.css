@@ -92,6 +92,10 @@
 }
 
 @media (max-width: 800px) {
+  .flor img {
+    visibility: hidden;
+  }
+  
   .logoBranca {
     display: none;
   }

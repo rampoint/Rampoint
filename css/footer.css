@@ -4,7 +4,7 @@
 }
 
 @font-face {
-  font-family: "Blinker";
+  font-family: "Blinker-semibold";
   src: url(font/Blinker/Blinker-SemiBold.ttf);
 }
 
@@ -43,9 +43,9 @@
   src: url(font/Poppins/Poppins-ExtraBold.ttf);
 }
 
-* {
+/* * {
   margin: 0 auto;
-}
+} */
 
 :root {
   --azul: #2a55c2;
@@ -58,31 +58,27 @@
 body,
 h2,
 h3,
-a,
 p,
 li,
 .btn-enviar {
   color: var(--branco);
 }
 
-body {
-  background-color: var(--branco);
-}
 
 h2 {
-  font-family: "Blinker-extrabold";
+  font-family: "Blinker-extrabold", sans-serif;
   margin-top: 30px;
 }
 
 p {
-  font-family: "Poppins-semibold";
+  font-family: "Poppins-semibold", sans-serif;
   margin-top: 10px;
   margin-bottom: 20px;
 }
 
 h3,
 .btn-enviar {
-  font-family: "Poppins-extrabold";
+  font-family: "Poppins-extrabold", sans-serif;
 }
 
 .container .vitoria-regia {

@@ -1,37 +1,38 @@
-* {
-    margin: 0px;
-    padding: 0px;
-}
-
-.conteiner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-}
-
-body {
-    background-color: #F8F8FF;
-}
-
-
-/* Header começo */
-header {
+@font-face {
+    font-family: "Batangas";
+    src: url(../font/batangas-font-family-fontmirror/Batangas\ Bold\ 700.otf);
+  }
+  
+  @font-face {
+    font-family: "Blinker";
+    src: url(font/Blinker/Blinker-SemiBold.ttf);
+  }
+  
+  /*caso queira deixar a header sem margem ctrl c e k  */
+  /* *{
+        margin: 0px;
+        padding: 0px;
+    } */
+  
+  header {
     display: flex;
     width: 79%;
-    font-family: 'Batangas';
+    font-family: "Batangas";
     margin: auto;
-    margin-top: 30px;
-}
-
-nav {
+  }
+  
+  nav {
     color: black;
-    font-family: "Blinker";
+    font-family: "Blinker", sans-serif;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
-
-}
-
-/* Header final */
+    font-weight: 700;
+  }
+  
+  a,
+  a:visited {
+    color: var(--preto);
+    text-decoration: none;
+  }

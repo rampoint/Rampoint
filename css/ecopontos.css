@@ -53,7 +53,7 @@
 
 @font-face {
   font-family: "Poppins-semibold";
-  src: url(font/Poppins/Poppins-SemiBold.ttf);
+  src: url(font/Poppins/Poppins-SemiBold.tff);
 }
 
 @font-face {
@@ -64,6 +64,12 @@
 @font-face {
   font-family: "Poppins-black";
   src: url(font/Poppins/Poppins-Black.ttf);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+
 }
 
 .ram {
@@ -141,9 +147,11 @@ span {
 */
 
 .info-box {
-  margin-left: 300px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .titulo1 {
@@ -153,22 +161,25 @@ span {
   color: var(--verde);
   margin-top: 50px;
   margin-bottom: 0;
+  
 }
 
 .texto1 {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
-}
+  color: #121212;
+  }
 
 .form-conteiner {
   background-color: var(--cinza-claro);
   border-radius: 35px;
-  width: 750px;
-  height: 250px;
+  width: fit-content;
+  padding: 100px;
   display: flex;
   box-shadow: 4px 4px 5px rgba(0, 0, 0, 5%);
-  display: grid;
+  margin: auto;
+
   
 }
 
@@ -371,3 +382,8 @@ h3 {
     justify-content: center;
     flex-direction: column;
   }
+
+    .cep-form-grupo p{
+    
+      font-family: "Poppins-semibold" ;
+    }

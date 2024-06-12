@@ -1,0 +1,290 @@
+@font-face {
+    font-family: "Batangas";
+    src: url(font/batangas-font-family-fontmirror/Batangas\ Bold\ 700.otf);
+
+}
+
+
+@font-face {
+    font-family: "Blinker";
+    src: url(font/Blinker/Blinker-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "Blinker-extrabold";
+    src: url(font/Blinker/Blinker-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: "Poppins-extralight";
+    src: url(font/Poppins/Poppins-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: "Poppins-bold";
+    src: url(font/Poppins/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Poppins-medium";
+    src: url(font/Poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Poppins-light";
+    src: url(font/Poppins/Poppins-Light.ttf);
+}
+
+@font-face {
+    font-family: "Poppins-semibold";
+    src: url(font/Poppins/Poppins-SemiBold.ttf);
+}
+
+
+
+/*caso queira deixar a header sem margem ctrl c e k  */
+
+
+
+
+/* CSS IMAGEM COMEÇO */
+
+.img-home-apresentacao {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.scroll-ball {
+    position: relative;
+    background-color: #2A55C2;
+    padding: 1.5%;
+    clip-path: circle();
+    height: 100%;
+    margin: auto;
+    bottom: 250px;
+
+}
+
+
+
+#background {
+    position: relative;
+    width: 100%;
+}
+
+
+
+/* CSS IMAGEM FINAL */
+
+#p-informacoes {
+    font-family: "blinker-extrabold";
+    color: #7AD761;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#info-box {
+    font-family: "Poppins-light";
+    font-size: 20px;
+}
+
+
+
+
+.info-box1 {
+    font-family: "Poppins-medium";
+    font-size: 20px;
+    margin: auto;
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    
+}
+
+
+
+/* nossos cupons começo */
+
+.info-box1-cupom {
+    font-family: "Poppins-medium";
+    font-size: 20px;
+    margin: auto;
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    background-image: url("/img/wave.svg");
+
+
+}
+#medalha {
+    background-color: #2A55C2;
+    width: 230px;
+    height: 260px;
+    border-radius: 30px;
+    font-family: "Blinker-extrabold";
+    font-size: small;
+    text-align: center;
+    margin: 60px 70px 0px 0px;
+    box-shadow: inset 1px 1px 1px 1px #143587;
+    
+}
+.medalhas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+#medalha img,h1{
+    margin-top: 20px;
+}
+
+#bola{
+    position: relative;
+    bottom: 60px;
+    left: 80px;
+}
+
+
+
+
+
+
+
+/* nossos cupons final */
+
+/* empresas parceiras começo */
+
+.empresas {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 60px;
+
+}
+
+#empresa {
+    text-align: center;
+    margin: 40px;
+    background: #C0D2FF;
+    border-radius: 30px;
+    width: 243px;
+    height: 280px;
+}
+
+.info-empresas {
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+    bottom: 70px;
+
+}
+
+#empresa img {
+    position: relative;
+    bottom: 80px;
+}
+
+#empresa p {
+    font-family: "Poppins-medium";
+    color: #112E78;
+}
+
+#empresa h1 {
+    font-family: "Poppins-bold";
+    color: #112E78;
+    font-size: large;
+}
+
+/* empresas parceiras final */
+
+
+
+
+.Conquistas{
+    text-align: center;
+    margin-bottom: 50px;
+    
+}
+
+
+
+
+
+/* qr code começo 
+.qrcode-box {
+    display: flex;
+    font-family: "Poppins-semibold";
+    background-color: #D9D9D9;
+    text-align: center;
+    border-radius: 30px;
+    filter: drop-shadow(5px 5px 4px #e7e3e3);
+    margin: auto;
+    padding: 20px;
+    flex-direction: column;
+
+}
+
+.codigo-aqui {
+
+    justify-content: space-around;
+}
+
+.codigo-aqui button {
+    margin-left: 60px;
+}
+
+.qrcode-salvar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qrcode-box div {
+
+    margin: 10px 10px 10px 10px;
+}
+
+
+.qrcode-box button {
+    font-family: "Poppins-bold";
+    border-radius: 30px;
+    box-shadow: 1px;
+    font-size: medium;
+    padding: 5px 20px 5px 20px;
+    color: white;
+    background-color: #2A55C2;
+    border: solid #2A55C2;
+}
+
+#gerar-button {
+    background-color: #7AD761;
+    border: solid #7AD761;
+}
+
+.qrcode-box input {
+    border-radius: 30px;
+    box-shadow: 4px;
+    border: solid #F8F8FF;
+    filter: drop-shadow(5px 5px 4px #8e8e8e);
+    padding: 5px 100px 5px 115px;
+
+}
+
+.qrcode-box p {
+    padding: 0px 100px 0px 100px;
+}
+qr code final*/
+
+/* 
+conquistas começo */
+/* 
+conquistas finais */

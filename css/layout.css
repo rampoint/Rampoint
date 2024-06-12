@@ -26,7 +26,7 @@
 /* Tablets em modo paisagem (tela horizontal) */
 @media (max-width: 1024px) {
   /* Estilos aqui */
-    .info-box1{
+    .info-box{
         width: auto;
         text-align: center;
     }

@@ -147,11 +147,12 @@ span {
 */
 
 .info-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
+   font-family: "Poppins-medium";
+    font-size: 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
 }
 
 .titulo1 {
@@ -171,25 +172,48 @@ span {
   color: #121212;
   }
 
+/* colocando endereco começo */
+
 .form-conteiner {
   background-color: var(--cinza-claro);
   border-radius: 35px;
   width: fit-content;
-  padding: 100px;
-  display: flex;
   box-shadow: 4px 4px 5px rgba(0, 0, 0, 5%);
   margin: auto;
+  display: flex;
+  padding: 20px;
+}
 
+.form-conteiner form{
+  display: grid;
+  grid-template-areas:
+  'cep rua'
+  'bairro botao'
+}
+
+#cep{
+  grid-area: 'cep';
   
 }
 
-.form-grupo {
-  flex-direction: row;
+#rua{
+  grid-area: 'rua';
+  margin-bottom: 30px;
+  padding-right: 100px;
+}
+
+#bairro{
+  grid-area: 'bairro';
 }
 
 label {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
+  color: #121212;
+}
+.form-conteiner ::-webkit-input-placeholder{
+  font-family: "Poppins", sans-serif;
+  padding-left: 20px;
 }
 
 input {
@@ -208,9 +232,12 @@ input {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 25%);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 25%); 
   cursor: pointer;
+  grid-area: 'botao';
 }
+
+/* colocar endereco final */
 
 .card p {
   font-family: "Poppins", sans-serif;
@@ -231,15 +258,21 @@ h3 {
 .card {
   max-width: 750px;
   width: 100%;
-  margin-left: 350px;
-  margin-top: 15px;
+  margin: auto;
   padding: 0;
   display: flex;
   align-items: center;
 }
 
+.card h1 {
+  color: #121212;
+}
+
+.card p {
+  color: #121212;
+}
+
 .imagem-ecoponto {
-  margin-right: 20px;
   width: 300px;
   height: auto;
   border-radius: 20px;
@@ -369,7 +402,7 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: baseline;
+  justify-content: center;
 }
 
   .local-resposta{
@@ -382,8 +415,3 @@ h3 {
     justify-content: center;
     flex-direction: column;
   }
-
-    .cep-form-grupo p{
-    
-      font-family: "Poppins-semibold" ;
-    }

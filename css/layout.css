@@ -26,6 +26,10 @@
 /* Tablets em modo paisagem (tela horizontal) */
 @media (max-width: 1024px) {
   /* Estilos aqui */
+    .info-box1{
+        width: auto;
+        text-align: center;
+    }
 }
 
 /* Laptops pequenos */

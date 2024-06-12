@@ -25,11 +25,11 @@
             <nav>
                 <a href="">HOME</a>
                 <a href="">PLAY</aa>
-                <a href="">ECOPONTOS</a>
-                <a href="">MATERIAIS</a>
-                <a href="">QR CODE</a>
-                <a href="">FALE CONOSCO</a>
-                <img src="img/perfil.svg" alt="perfil">
+                    <a href="">ECOPONTOS</a>
+                    <a href="">MATERIAIS</a>
+                    <a href="">QR CODE</a>
+                    <a href="">FALE CONOSCO</a>
+                    <img src="img/perfil.svg" alt="perfil">
             </nav>
         </header>
     </div>
@@ -38,22 +38,25 @@
     <div class="info-box">
         <h1 class="h1-info">Os mais próximos de você</h1>
         <p class="p-info">Coloque seu endereço para mostrarmos os ecopontos mais próximos de você!</p>
-    <div class="form-conteiner">
-        <form>
+        <div class="form-conteiner">
+
             <div class="cep-form">
-                <label for="cep">CEP:</label><br>
-                <input placeholder="Insira seu CEP aqui" type="text" id="cep" name="cep">
-                <label for="rua">Rua:</label><br>
-                <input placeholder="Insira sua rua aqui" type="text" id="rua" name="rua">
+                <div class="cep">
+                    <p>CEP:</p>
+                    <input placeholder="Insira seu CEP aqui" type="text" id="cep" name="cep">
+                </div>
+                <div class="rua">
+                    <p>Rua:</p>
+                    <input placeholder="Insira sua rua aqui" type="text" id="rua" name="rua">
+                </div>
             </div>
-            <div class="bairro-form-bairro">
-                <label for="bairro">Bairro:</label><br>     
+            <div class="bairro-form">
+                <p>Bairro:</p>
                 <input placeholder="Insira seu bairro aqui" type="text" id="bairro" name="bairro">
+                <button type="submit" class="btn-lupa"><img src="./img/lupa.svg" alt=""></button>
             </div>
-            <button type="submit" class="btn-lupa"><img src="./img/lupa.svg" alt=""></button>
-        </form>
+        </div>
     </div>
-</div>
 
     <div class="card">
         <div class="card-content">
@@ -113,4 +116,5 @@
         </div>
     </section>
 </body>
+
 </html>

@@ -180,15 +180,19 @@ span {
   background-color: var(--cinza-claro);
   border-radius: 35px;
   box-shadow: 4px 4px 5px rgba(0, 0, 0, 5%);
-  margin: auto;
   display: flex;
   padding: 20px;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
-.form-conteiner form{
- display: flex;
- flex-direction: column;
+.cep-form{
+  display: flex;
+  
 }
+
 
 #cep{
   grid-area: 'cep';
@@ -197,18 +201,19 @@ span {
 
 #rua{
   grid-area: 'rua';
-  margin-bottom: 30px;
   padding-right: 100px;
 }
 
 #bairro{
   grid-area: 'bairro';
+  padding-right: 400px;
 }
 
-label {
+.form-conteiner p {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   color: #121212;
+  margin: 0;
 }
 .form-conteiner ::-webkit-input-placeholder{
   font-family: "Poppins", sans-serif;
@@ -220,9 +225,9 @@ input {
   border-radius: 30px;
   border: none;
   outline: none;
-  height: 30px;
+  height: 40px;
   width: 200px;
-  margin-top: 5px;
+  
 }
 
 .btn-lupa {

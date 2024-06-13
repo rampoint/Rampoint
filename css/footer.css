@@ -66,11 +66,13 @@ li,
 
 h2 {
   font-family: "Blinker-extrabold", sans-serif;
+  font-size: 22px;
   margin-top: 30px;
 }
 
 p {
   font-family: "Poppins-semibold", sans-serif;
+  font-size: 14px;
   margin-top: 10px;
   margin-bottom: 5px;
 }
@@ -78,6 +80,7 @@ p {
 h3,
 .btn-enviar {
   font-family: "Poppins-extrabold", sans-serif;
+  font-size: 18px;
 }
 
 .container .vitoria-regia {
@@ -87,7 +90,8 @@ h3,
 }
 
 .logoBranca {
-  width: 140px;
+  width: 100px;
+  height: auto;
 }
 
 .btn-enviar {
@@ -116,11 +120,6 @@ h3,
   flex-direction: row;
 }
 
-.logoBranca {
-  width: 130px;
-  height: auto;
-}
-
 .logoBranca-small {
   display: none;
   width: 140px;
@@ -137,7 +136,7 @@ h3,
   border: none;
   border-radius: 30px;
   width: 400px;
-  height: 30px;
+  height: 20px;
   max-width: 80%;
   margin-right: 10px;
   font-family: "Poppins-bold";
@@ -179,6 +178,7 @@ input:focus {
 }
 
 .container .descricao-footer li {
+  font-size: 15px;
   margin-bottom: 5px;
 }
 
@@ -202,7 +202,7 @@ input:focus {
 
 .copyright {
   margin-top: 50px;
-  margin-left: 475px;
+  margin-left: 30rem;
 }
 
 .geral {

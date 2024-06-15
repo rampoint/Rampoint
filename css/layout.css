@@ -1,7 +1,6 @@
 @media (max-width:1050px) {
     
     header{
-        background-color: aqua;
         display: flex;
         justify-content: space-between;   
     }

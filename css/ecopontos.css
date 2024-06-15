@@ -183,27 +183,44 @@ span {
   margin: auto;
   display: flex;
   padding: 20px;
+  width: 100%;
 }
-
+ 
 .form-conteiner form{
  display: flex;
  flex-direction: column;
+ margin-bottom: 20px;
+} 
+
+.cep-rua{
+  display: flex;
+  margin-left: 15px;
+}
+
+.bairro-form{
+  margin-left: 15px;
 }
 
 #cep{
   grid-area: 'cep';
-  
+  padding-right: 100px;
 }
 
 #rua{
   grid-area: 'rua';
   margin-bottom: 30px;
-  padding-right: 100px;
+  padding-right: 300px;
+}
+
+.rua-form{
+  margin-left: 60px;
 }
 
 #bairro{
   grid-area: 'bairro';
+  padding-right: 550px;
 }
+
 
 label {
   font-family: "Poppins", sans-serif;
@@ -220,7 +237,7 @@ input {
   border-radius: 30px;
   border: none;
   outline: none;
-  height: 30px;
+  height: 35px;
   width: 200px;
   margin-top: 5px;
 }
@@ -233,7 +250,8 @@ input {
   border-radius: 50%;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 25%); 
   cursor: pointer;
-  grid-area: 'botao';
+  position: relative;
+  margin-left: 30px;
 }
 
 /* colocar endereco final */

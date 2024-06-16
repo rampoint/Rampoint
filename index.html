@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/ram-redondo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Login e cadastro</title>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form>
+                <h1 class="titulo">Cadastro</h1>
+                <input type="text" placeholder="Nome">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Senha">
+                <button>Cadastrar</button>
+                <div class="social-icons">
+                    <a href="#" class="icon"><img src="./img/google-Icon.svg" alt="Ícone Google"></a>
+                    <a href="#" class="icon"><img src="./img/facebook-icon.svg" alt="Ícone Facebook"></a>
+                    <a href="#" class="icon"><img src="./img/linkedln-icon.svg" alt="Ícone Linkedln"></a>
+                </div>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form>
+                <h1 class="titulo">Login</h1>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Senha">
+                <a href="#">Esqueceu sua senha?</a>
+                <button>Entrar</button>
+                <div class="social-icons">
+                    <a href="#" class="icon"><img src="./img/google-Icon.svg" alt="Ícone Google"></a>
+                    <a href="#" class="icon"><img src="./img/facebook-icon.svg" alt="Ícone Facebook"></a>
+                    <a href="#" class="icon"><img src="./img/linkedln-icon.svg" alt="Ícone Linkedln"></a>
+                </div>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <img src="./img/vitoria-regia.svg" alt="Imagem Vitória-régia">
+                    <h2>Bem vindo, Ramigo!</h2>
+                    <p>Você já possui uma conta?</p>
+                    <button class="hidden" id="login">Entrar</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <img src="./img/vitoria-regia.svg" alt="Imagem Vitória-régia">
+                    <h2>Olá, Ramigo!</h2>
+                    <p>Você ainda não possui uma conta?</p>
+                    <button class="hidden" id="register">Cadastrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

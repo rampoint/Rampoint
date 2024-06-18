@@ -14,9 +14,49 @@
         <div class="form-container sign-up">
             <form>
                 <h1 class="titulo">Cadastro</h1>
-                <input type="text" placeholder="Nome">
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Senha">
+                <div class="nome">
+                    <label for="">Nome</label>
+                    <input type="text">
+                </div>
+
+                <div class="email">
+                    <label for="">Email</label>
+                    <input type="email">
+                </div>
+
+                <div class="telefone">
+                    <label for="">Telefone</label>
+                    <select name="telefone" id="telefone">
+                        <option value=""></option>
+                    </select>
+                    <input type="tel" name="" id="">
+                </div>
+
+                <div class="grupo">
+                    <div class="genero">
+                        <label for="">Gênero</label>
+                        <select name="genero" id="genero">
+                            <option value="">Feminino</option>
+                            <option value="">Masculino</option>
+                            <option value="">Prefiro não informar</option>
+                        </select>
+                    </div>
+
+                    <div class="nascimento">
+                        <label for="">Nascimento</label>
+                        <input type="date"> <img src="./img/calendario-icon.svg" alt="Ícone calendário">
+                    </div>
+                </div>
+
+                <div class="senha">
+                    <label for="">Senha:</label>
+                    <input type="password">
+                </div>
+                <div class="senha">
+                    <label for="">Confirmar senha:</label>
+                    <input type="password">
+                </div>
+
                 <button>Cadastrar</button>
                 <div class="social-icons">
                     <a href="#" class="icon"><img src="./img/google-Icon.svg" alt="Ícone Google"></a>
@@ -28,8 +68,15 @@
         <div class="form-container sign-in">
             <form>
                 <h1 class="titulo">Login</h1>
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Senha">
+                <div class="email">
+                    <label for="">Email</label>
+                    <input type="email">
+                </div>
+
+                <div class="senha">
+                    <label for="">Senha</label>
+                    <input type="password">
+                </div>
                 <a href="#">Esqueceu sua senha?</a>
                 <button>Entrar</button>
                 <div class="social-icons">

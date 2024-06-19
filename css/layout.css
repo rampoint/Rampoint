@@ -13,6 +13,16 @@
   /* Estilos aqui */
 }
 
+/* quebrando a linha da imagem */
+
+@media (max-width:670px){
+  .card{
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+  }
+
+}
 /* Dispositivos móveis em modo paisagem (tela horizontal) */
 @media (max-width: 767px) {
   /* Estilos aqui */
@@ -21,6 +31,66 @@
 /* Tablets em modo retrato (tela vertical) */
 @media (max-width: 768px) {
   /* Estilos aqui */
+
+.form-conteiner {
+  background-color: var(--cinza-claro);
+  border-radius: 35px;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 5%);
+  margin: auto;
+  display: flex;
+  padding: 20px;
+  width:auto;
+}
+
+  .form-conteiner form{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+   } 
+
+  .cep-rua{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .bairro-form{
+    margin-left: 0px;
+  }
+  
+  #cep{
+    grid-area: 'cep';
+    padding-right: 50px;
+    margin-bottom: 0px;
+  }
+  
+  #rua{
+    grid-area: 'rua';
+    margin-bottom: 0px;
+    padding-right: 50px;
+  }
+  
+  .rua-form{
+    margin-left: 0px;
+    
+  }
+  
+  #bairro{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    grid-area: 'bairro';
+    padding: auto;
+    padding-right: 50px;
+
+  }
+
+  label{
+    float: left;
+  }
 }
 
 /* Tablets em modo paisagem (tela horizontal) */
@@ -30,6 +100,9 @@
         width: auto;
         text-align: center;
     }
+
+
+    
 }
 
 /* Laptops pequenos */

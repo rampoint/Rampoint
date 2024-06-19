@@ -186,30 +186,47 @@ span {
   width: 100%;
   align-items: center;
   justify-content: center;
+  width: 100%;
+}
+ 
+.form-conteiner form{
+ display: flex;
+ flex-direction: column;
+ margin-bottom: 20px;
+} 
+
+.cep-rua{
+  display: flex;
+  margin-left: 15px;
 }
 
-.cep-form{
-  display: flex;
-  
+.bairro-form{
+  margin-left: 15px;
 }
 
 
 #cep{
   grid-area: 'cep';
-  
+  padding-right: 100px;
 }
 
 #rua{
   grid-area: 'rua';
-  padding-right: 100px;
+  margin-bottom: 30px;
+  padding-right: 300px;
+}
+
+.rua-form{
+  margin-left: 60px;
 }
 
 #bairro{
   grid-area: 'bairro';
-  padding-right: 400px;
+  padding-right: 550px;
 }
 
-.form-conteiner p {
+
+label {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   color: #121212;
@@ -225,7 +242,7 @@ input {
   border-radius: 30px;
   border: none;
   outline: none;
-  height: 40px;
+  height: 35px;
   width: 200px;
   
 }
@@ -238,7 +255,8 @@ input {
   border-radius: 50%;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 25%); 
   cursor: pointer;
-  grid-area: 'botao';
+  position: relative;
+  margin-left: 30px;
 }
 
 /* colocar endereco final */
@@ -266,6 +284,7 @@ h3 {
   padding: 0;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .card h1 {

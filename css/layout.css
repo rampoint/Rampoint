@@ -40,6 +40,7 @@
   display: flex;
   padding: 20px;
   width:auto;
+  
 }
 
   .form-conteiner form{
@@ -100,6 +101,12 @@
         width: auto;
         text-align: center;
     }
+
+    .form-conteiner{
+      text-align: left;
+    }
+
+    
 
 
     

@@ -47,13 +47,17 @@ h2 {
   font-family: "Blinker-extrabold";
 }
 
-h1 {
-  margin-bottom: 30px;
+.titulo {
+  color: var(--azul);
   text-transform: uppercase;
 }
 
-.titulo {
-  color: var(--azul);
+.cadastro {
+  margin-bottom: 10px;
+}
+
+.login {
+  margin-bottom: 30px;
 }
 
 label,
@@ -79,7 +83,7 @@ p {
   overflow: hidden;
   width: 768px;
   max-width: 100%;
-  min-height: 480px;
+  min-height: 510px;
 }
 
 .container p {
@@ -104,7 +108,7 @@ p {
   border-radius: 20px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  margin-top: 10px;
+  margin-top: 20px;
   cursor: pointer;
 }
 
@@ -126,12 +130,22 @@ p {
   height: 100%;
 }
 
-.container input,
-select {
+.container input {
   background-color: var(--cinza);
   border: none;
   margin: 8px 0;
-  padding: 8px 10px;
+  padding: 5px 10px;
+  font-size: 13px;
+  border-radius: 20px;
+  width: 100%;
+  outline: none;
+}
+
+#genero {
+  background-color: var(--cinza);
+  border: none;
+  margin: 8px 0;
+  padding: 5px 10px;
   font-size: 13px;
   border-radius: 20px;
   width: 100%;
@@ -285,15 +299,24 @@ select {
 .nascimento,
 .senha {
   width: 100%;
+  gap: 5px;
 }
 
-.telefone {
+.grupo-telefone {
   display: flex;
   flex-direction: row;
+  gap: 5px;
 }
 
 #telefone {
-  width: 10%;
+  width: 30%;
+  background-color: var(--cinza);
+  border: none;
+  margin: 8px 0;
+  padding: 5px 10px;
+  font-size: 13px;
+  border-radius: 20px;
+  outline: none;
 }
 
 .genero,
@@ -301,7 +324,18 @@ select {
   width: 50%;
 }
 
+.genero,
+#telefone,
+option {
+  font-family: "Poppins-semibold";
+}
+
 .grupo {
   display: flex;
   flex-direction: row;
+  gap: 5px;
+}
+
+#data::-webkit-calendar-picker-indicator {
+  background: url("./img/calendario-icon.svg") no-repeat;
 }

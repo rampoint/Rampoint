@@ -13,23 +13,29 @@
     <div class="container" id="container">
         <div class="form-container sign-up">
             <form>
-                <h1 class="titulo">Cadastro</h1>
-                <div class="nome">
-                    <label for="">Nome</label>
-                    <input type="text">
+                <h1 class="titulo cadastro">Cadastro</h1>
+                <div class="grupo">
+                    <div class="nome">
+                        <label for="">Nome</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="email">
+                        <label for="">Email</label>
+                        <input type="email">
+                    </div>
                 </div>
 
-                <div class="email">
-                    <label for="">Email</label>
-                    <input type="email">
-                </div>
 
                 <div class="telefone">
                     <label for="">Telefone</label>
-                    <select name="telefone" id="telefone">
-                        <option value=""></option>
-                    </select>
-                    <input type="tel" name="" id="">
+                    <div class="grupo-telefone">
+                        <select name="telefone" id="telefone">
+                            <option value="">+55</option>
+                        </select>
+
+                        <input type="tel" name="" id="">
+                    </div>
                 </div>
 
                 <div class="grupo">
@@ -44,18 +50,21 @@
 
                     <div class="nascimento">
                         <label for="">Nascimento</label>
-                        <input type="date"> <img src="./img/calendario-icon.svg" alt="Ícone calendário">
+                        <input type="date" id="data">
                     </div>
                 </div>
 
-                <div class="senha">
-                    <label for="">Senha:</label>
-                    <input type="password">
+                <div class="grupo">
+                    <div class="senha">
+                        <label for="">Senha</label>
+                        <input type="password">
+                    </div>
+                    <div class="senha">
+                        <label for="">Confirmar senha</label>
+                        <input type="password">
+                    </div>
                 </div>
-                <div class="senha">
-                    <label for="">Confirmar senha:</label>
-                    <input type="password">
-                </div>
+
 
                 <button>Cadastrar</button>
                 <div class="social-icons">
@@ -67,7 +76,7 @@
         </div>
         <div class="form-container sign-in">
             <form>
-                <h1 class="titulo">Login</h1>
+                <h1 class="titulo login">Login</h1>
                 <div class="email">
                     <label for="">Email</label>
                     <input type="email">

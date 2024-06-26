@@ -266,3 +266,269 @@ label {
     background-color: var(--cinza-claro);
     color: var(--preto);
 }
+
+/* colocando endereco começo */
+
+.form-conteiner {
+  background-color: var(--cinza-claro);
+  border-radius: 35px;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 5%);
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+ 
+.form-conteiner form{
+ display: flex;
+ flex-direction: column;
+ margin-bottom: 20px;
+} 
+
+.cep-rua{
+  display: flex;
+  margin-left: 15px;
+}
+
+.bairro-form{
+  margin-left: 15px;
+}
+
+
+#cep{
+  grid-area: 'cep';
+  padding-right: 100px;
+}
+
+#rua{
+  grid-area: 'rua';
+  margin-bottom: 30px;
+  padding-right: 300px;
+}
+
+.rua-form{
+  margin-left: 60px;
+}
+
+#bairro{
+  grid-area: 'bairro';
+  padding-right: 550px;
+}
+
+
+label {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #121212;
+  margin: 0;
+}
+.form-conteiner ::-webkit-input-placeholder{
+  font-family: "Poppins", sans-serif;
+  padding-left: 20px;
+}
+
+input {
+  background-color: var(--branco);
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  height: 35px;
+  width: 200px;
+  
+}
+
+.btn-lupa {
+  background-color: var(--azul);
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 25%); 
+  cursor: pointer;
+  position: relative;
+  margin-left: 30px;
+}
+
+/* colocar endereco final */
+
+.card p {
+  font-family: "Poppins", sans-serif;
+  margin: 0px 0px 10px 0px;
+}
+
+.telefone, .endereco {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+}
+
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  margin-left: 300px;
+}
+
+.card {
+  max-width: 750px;
+  width: 100%;
+  margin: auto;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card h1 {
+  color: #121212;
+}
+
+.card p {
+  color: #121212;
+}
+
+.imagem-ecoponto {
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 25%);
+}
+
+.card-content {
+  flex: 1;
+}
+
+.info-ecoponto {
+  font-family: "Blinker", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  margin: 0;  
+}
+
+.nome-ecoponto{
+  font-family: "Blinker", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  margin: 0;
+}
+
+.card-content p {
+  margin: 5px 0;
+  max-width: 90%;
+  margin-top: 15px;
+}
+
+.numero {
+  text-decoration: underline;
+  margin-top: 10px;
+}
+
+.descartes {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin: auto;
+  text-align: center;
+}
+
+.descartes p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.descarte img {
+  width: 90px;
+  height: 80px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+.card-wrapper {
+  width: 140px;
+  height: 150px;
+  text-align: center;
+  margin: 20px 10px;
+  box-shadow: rgba(0, 0, 0, 0.12) 5px -3px 7px 2px inset;
+  border-radius: 20px;
+}
+
+.card-wrapper p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  margin-top: 15px;
+  margin: bottom 10px;
+}
+
+.area-madeira {
+  background-color: #c67dff;
+}
+
+.area-madeira p {
+  color: #7b2bbe;
+}
+
+.area-pneu {
+  background-color: #46c4ff;
+}
+
+.area-pneu p {
+  color: #0076ac;
+}
+
+.area-reciclavel {
+  background-color: var(--verde);
+}
+
+.area-reciclavel p {
+  color: #499136;
+}
+
+.area-metal {
+  background-color: #fee333;
+}
+
+.area-metal p {
+  color: #f89701;
+}
+
+.area-eletronico {
+  background-color: #e10531;
+}
+
+.area-eletronico p {
+  color: #6b0015;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+}
+
+.conteiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+  .local-resposta{
+    display: flex;
+    width: fit-content;
+  }
+
+  .informacoes{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }

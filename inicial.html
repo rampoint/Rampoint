@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/inicial.css">
+    <link rel="stylesheet" href="/css/layout.css">
     <link rel="shortcut icon" href="img/rostoCirculo.svg" type="image/x-icon">
     <title>Página Inicial</title>
 </head>
@@ -62,39 +63,88 @@
                 </p>
             </div>
         </div>
-
-        <h1 class="titulo3">Gere seu QR CODE</h1>
-        <p class="texto3">Para resgatar seu cupom, gere o QRCODE para apresentar nas lojas, utilizando o código enviado
-            no seu email.</p>
-
-        <div class="conteiner-form">
-            <form action="">
-                <div class="box-codigo">
-                    <label class="">Coloque seu código aqui:</label>
-                    <input type="number" name="codigo" id="codigo">
-                    <button type="submit" class="btn-concluido">Concluído</button>
+       
+        <div class="info-box">
+            <h1 class="h1-info">Os mais próximos de você</h1>
+            <p class="p-info">Coloque seu endereço para mostrarmos os ecopontos mais próximos de você!</p>
+            <div class="form-conteiner">
+                <form>
+                    <div class="cep-rua">
+                        <div class="cep-form">
+                            <label for="cep">CEP:</label><br>
+                            <input placeholder="Insira seu CEP aqui" type="text" id="cep" name="cep">
+                        </div>
+                        <div class="rua-form">
+                            <label for="rua">Rua:</label><br>
+                            <input placeholder="Insira sua rua aqui" type="text" id="rua" name="rua">
+                        </div>
+                    </div>
+                    <div class="bairro-form">
+                        <label for="bairro">Bairro:</label><br>
+                        <input placeholder="Insira seu bairro aqui" type="text" id="bairro" name="bairro">
+                    <button type="submit" class="btn-lupa"><img src="./img/lupa.svg" alt=""></button>
                 </div>
-
-                <div class="box-pontos">
-                    <label for="">Inserir pontos:</label>
-                    <input type="number" name="pontos" id="pontos" placeholder="Total: 2000">
-                </div>
-
-                <label for="">Escolha a loja parceira:</label>
-                <div class="dropdown">
-                    <input type="text" class="textBox" readonly>
-                    <div class="option">
-                        <div onclick="show('Loja 1')">Loja 1</div>
-                        <div onclick="show('Loja 2')">Loja 2</div>
-                        <div onclick="show('Loja 3')">Loja 3</div>
+                </form>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-content">
+                <h1 class="info-ecoponto">Ecoponto</h1>
+                <h1 class="nome-ecoponto">Prefeitura de Barueri</h1>
+                <p><span class="endereco">Endereço:</span> Av. Iracema, 620 - Jardim Iracema, Barueri - SP, 06440-010</p>
+                <p><span class="telefone">Telefone:</span> <span class="numero">(11) 93938-3945</span></p>
+            </div><img src="./img/ecoponto.svg" class="imagem-ecoponto" alt="Imagem do Ecoponto de Barueri">
+        </div>
+    
+        <h3>Descarte disponível:</h3>
+        <section class="cards">
+            <div class="card-wrapper area-madeira">
+                <div class="card-group">
+                    <div class="card-text">
+                        <p>Madeira</p>
+                        <img src="./img/icon-madeira.svg" alt="">
+                        </img>
                     </div>
                 </div>
-
-                <img src="./img/qrcode.svg" class="qrCode" alt="Imagem QRCODE">
-                <button type="button" class="btn-download">Download</button>
-                <button type="button" class="btn-salvar">Salvar</button>
-            </form>
-        </div>
+            </div>
+            <div class="card-wrapper area-pneu">
+                <div class="card-group">
+                    <div class="card-text">
+                        <p>Pneu</p>
+                        <img src="./img/icon-pneu.svg" alt="">
+                        </img>
+                    </div>
+                </div>
+            </div>
+            <div class="card-wrapper area-reciclavel">
+                <div class="card-group">
+                    <div class="card-text">
+                        <p>Reciclável</p>
+                        <img src="./img/icon-reciclavel.svg" alt="">
+                        </img>
+                    </div>
+                </div>
+            </div>
+            <div class="card-wrapper area-metal">
+                <div class="card-group">
+                    <div class="card-text">
+                        <p>Metal</p>
+                        <img src="./img/icon-metal.svg" alt="">
+                        </img>
+                    </div>
+                </div>
+            </div>
+            <div class="card-wrapper area-eletronico">
+                <div class="card-group">
+                    <div class="card-text">
+                        <p>Eletrônico</p>
+                        <img src="./img/icon-eletronico.svg" alt="">
+                        </img>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 </body>
 

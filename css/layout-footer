@@ -1,0 +1,107 @@
+@media (max-width: 320px) {
+  .container {
+    width: 320px;
+    height: auto;
+  }
+
+  .flor img {
+    visibility: hidden;
+  }
+
+  h2 {
+    margin: 0;
+  }
+
+  h3 {
+    margin-top: 15px;
+  }
+
+  .email {
+    width: 200px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+  }
+
+  .logoBranca-small {
+    width: 150px;
+  }
+
+  .container .logo {
+    width: 80px;
+  }
+}
+
+@media (max-width: 375px) {
+  .flor img {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 425px) {
+  .flor img {
+    visibility: hidden;
+  }
+
+  .email {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+  }
+
+  .container .redes-sociais {
+    display: block;
+  }
+
+  .redes-sociais {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40px;
+    max-width: 100%;
+  }
+
+  .container button {
+    margin-right: 10px;
+  }
+
+  .logoBranca-small {
+    width: 150px;
+  }
+
+  h3 {
+    margin-top: 15px;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .container .logo {
+    bottom: 20px;
+  }
+
+  .flor img {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 540px) {
+  .flor img {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 800px) {
+  .logoBranca {
+    display: none;
+  }
+
+  .logoBranca-small {
+    display: block;
+    width: 150px;
+  }
+
+  p {
+    margin-bottom: 10px;
+  }
+}

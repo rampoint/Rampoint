@@ -1,38 +1,48 @@
 @font-face {
-    font-family: "Batangas";
-    src: url(../font/batangas-font-family-fontmirror/Batangas\ Bold\ 700.otf);
-  }
-  
-  @font-face {
-    font-family: "Blinker";
-    src: url(font/Blinker/Blinker-SemiBold.ttf);
-  }
-  
-  /*caso queira deixar a header sem margem ctrl c e k  */
-  /* *{
-        margin: 0px;
-        padding: 0px;
-    } */
-  
-  header {
-    display: flex;
-    width: 79%;
-    font-family: "Batangas";
-    margin: auto;
-  }
-  
-  nav {
-    color: black;
-    font-family: "Blinker", sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
-    font-weight: 700;
-  }
-  
-  a,
-  a:visited {
-    color: var(--preto);
-    text-decoration: none;
-  }
+  font-family: "Batangas";
+  src: url(../font/batangas-font-family-fontmirror/Batangas\ Bold\ 700.otf);
+}
+
+@font-face {
+  font-family: "Blinker-semibold";
+  src: url(../font/Blinker/Blinker-SemiBold.ttf);
+}
+
+/*caso queira deixar a header sem margem ctrl c e k  */
+/* *{
+      margin: 0px;
+      padding: 0px;
+  } */
+
+header {
+  display: flex;
+  width: 79%;
+  margin: 20px auto;
+}
+
+nav {
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  font-weight: 700;
+}
+
+.ram {
+  font-family: "Batangas";
+  color: #3dd715;
+  margin-left: 12px;
+}
+
+.point {
+  font-family: "Batangas";
+  color: #121212;
+}
+
+a,
+a:visited {
+  font-family: "Blinker-semibold";
+  color: #121212;
+  text-decoration: none;
+}

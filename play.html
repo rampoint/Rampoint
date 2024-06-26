@@ -1,94 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="./css/play.css">
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="shortcut icon" href="./img/rostoCirculo.svg" type="image/x-icon">
+    <title>Página Play</title>
 </head>
 
 <body>
     <div class="conteiner">
         <header>
             <img src="img/ram.svg" alt="Sapo Ram">
-            <h1 style="color: #3DD715; margin-left: 12px;">ram</h1>
-            <h1>point.</h1>
+            <h1 class="ram">ram</h1>
+            <h1 class="point">point.</h1>
             <nav>
-                <a href="">HOME</p>
-                <a href="">PLAY</p>
-                <a href="">ECOPONTOS</p>
-                <a href="">MATERIAIS</p>
-                <a href="">QR CODE</p>
-                <a href="">FALE CONOSCO</p>
+                <a href="">HOME</a>
+                <a href="">PLAY</a>
+                <a href="">ECOPONTOS</a>
+                <a href="">MATERIAIS</a>
+                <a href="">QR CODE</a>
+                <a href="">FALE CONOSCO</a>
                 <img src="img/perfil.svg" alt="perfil">
             </nav>
         </header>
+
         <div class="imagem-fundo">
             <img src="./img/imagem-fundo.svg" class="imagem-inicial" alt="">
         </div>
+
         <div class="informacoes">
             <div class="info-box1">
-                <p id="p-informacoes">como funciona ?</p>
+                <h1 id="p-informacoes">Como funciona?</h1>
                 <p id="info-box">Os eletrônicos que você doar em nossa unidade, vai ser analisado e transformado em
-                    RAMCOINS, ou seja moedas de acumulação valendo cupons íncriveis que estão disponíveis para utilizar
-                    em nossas lojas parceiras e garantir seu desconto exclusivo!</p>
+                    <span>RAMCOINS</span>, ou seja moedas de acumulação valendo <span>cupons</span> íncriveis que estão
+                    disponíveis para utilizar
+                    em nossas lojas parceiras e garantir <span>seu desconto exclusivo</span>!
+                </p>
             </div>
         </div>
-    </div>
 
-    <div class="info-box1">
-        <p id="p-informacoes">Conquistas</p>
-        <p id="info-box">Realize nossos desafios e conquiste nossas medalhas RAMCRÍVEIS!</p>
-    </div>
-    <div class="Conquistas">
-        <img src="img/salto tecnologico.svg" alt="medalha salto"><br>
-        <img src="img/coracao generoso.svg" alt="medalha coracao"><br>
-        <img src="img/explosao eletronica.svg" alt=" medalha explosao"><br>
-        <img src="img/engrenagem solidaria.svg" alt="medalha solidaria"><br>
-        <img src="img/raio da esoerança.svg" alt="medalha esperança">
-    </div>
+        <div class="informacoes">
 
+            <div class="info-box1">
+                <h1 class="titulo">nossos cupons</h1>
+                <p>Veja sobre nossos cupons <span>RAMTÁSTICOS</span> disponíveis para você.</p>
 
-
-    <footer class="conteiner-footer">
-        <div class="flor">
-            <img src="img/vitoria-regia.svg" alt="">
-        </div>
-        <h2 id="textos-footer">Quer ser nosso parceiro?</h2>
-        <p id="textos-footer">Envie-nos seu email!</p>
-        <div class="email">
-            <input type="email" placeholder="Insira seu email aqui">
-            <button>Enviar</button>
-        </div>
-        <div class="redes-sociais">
-            <div>
-                <h3 id="textos-footer">REDES SOCIAIS</h3>
-                <ul>
-                    <li id="textos-footer"><a href="#">Instagram</a></li>
-                    <li id="textos-footer"><a href="#">Tiktok</a></li>
-                    <li id="textos-footer"><a href="#">Facebook</a></li>
-                    <li id="textos-footer"><a href="#">Linkedln</a></li>
-                </ul>
+                <div class="flex-container">
+                    <div class="item1">
+                        <h3>RÃ DOURADA</h3>
+                        <img src="./img/cupom-dourada.svg" alt="Imagem cupom 'Rã Dourada'">
+                    </div>
+                    <div class="item2">
+                        <h3>RÃ DE VIDRO</h3>
+                        <img src="./img/cupom-vidro.svg" alt="Imagem cupom 'Rã de Vidro'">
+                    </div>
+                    <div class="item3">
+                        <h3>RÃ GOLIAS</h3>
+                        <img src="./img/cupom-golias.svg" alt="Imagem cupom 'Rã Golias'">
+                    </div>
+                </div>
             </div>
-            <div>
-                <h3 id="textos-footer">CONTATO</h3>
-                <p id="textos-footer">Email: rampointofc@gmail.com</p>
-                <p id="textos-footer">Telefone: (11) 93350-6834</p>
+
+            <!-- <div class="header">
+                <div>
+                    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                        <defs>
+                            <path id="gentle-wave"
+                                d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                        </defs>
+                        <g class="parallax">
+                            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(192, 210, 255, 1)" />
+                            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(192, 210, 255, 0.5)" />
+                            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(192, 210, 255, 1)" />
+                            <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(192, 210, 255, 0.2)" />
+                        </g>
+                    </svg>
+                </div>
+            </div> -->
+        </div>
+
+
+        <div class="info-box1">
+            <h1 id="p-informacoes">Conquistas</h1>
+            <p id="info-box">Realize nossos desafios e conquiste nossas medalhas RAMCRÍVEIS!</p>
+        </div>
+        <div class="Conquistas">
+            <img src="img/salto tecnologico.svg" alt="medalha salto"><br>
+            <img src="img/coracao generoso.svg" alt="medalha coracao"><br>
+            <img src="img/explosao eletronica.svg" alt=" medalha explosao"><br>
+            <img src="img/engrenagem solidaria.svg" alt="medalha solidaria"><br>
+            <img src="img/raio da esoerança.svg" alt="medalha esperança">
+        </div>
+
+
+
+        <footer class="conteiner-footer">
+            <div class="flor">
+                <img src="img/vitoria-regia.svg" alt="">
             </div>
-        </div>
-        <div class="logo">
-            <img src="img/logoBranca.svg" class="logoBranca" alt="Imagem Logo branca 'rampoint'">
-            <img src="img/logoBranca-extenso.svg" class="logoBranca-small" alt="">
-        </div>
-    </footer>
 
+            <h2 id="textos-footer">Quer ser nosso parceiro?</h2>
 
+            <p id="textos-footer">Envie-nos seu email!</p>
+
+            <div class="email">
+                <input type="email" placeholder="Insira seu email aqui">
+                <button>Enviar</button>
+            </div>
+
+            <div class="redes-sociais">
+                <div>
+                    <h3 id="textos-footer">REDES SOCIAIS</h3>
+                    <ul>
+                        <li id="textos-footer"><a href="#">Instagram</a></li>
+                        <li id="textos-footer"><a href="#">Tiktok</a></li>
+                        <li id="textos-footer"><a href="#">Facebook</a></li>
+                        <li id="textos-footer"><a href="#">Linkedln</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 id="textos-footer">CONTATO</h3>
+                    <p id="textos-footer">Email: rampointofc@gmail.com</p>
+                    <p id="textos-footer">Telefone: (11) 93350-6834</p>
+                </div>
+
+            </div>
+            <div class="logo">
+                <img src="img/logoBranca.svg" class="logoBranca" alt="Imagem Logo branca 'rampoint'">
+                <img src="img/logoBranca-extenso.svg" class="logoBranca-small" alt="">
+            </div>
+        </footer>
     </div>
-
 </body>
 
 </html>

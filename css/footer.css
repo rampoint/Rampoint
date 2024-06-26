@@ -77,10 +77,11 @@ p {
   margin-bottom: 5px;
 }
 
-#geral, #redes_sociais, #contato,
-.btn-enviar {
+#geral, #redes_sociais, #contato {
   font-family: "Poppins-extrabold";
   font-size: 18px;
+  margin-left: 10px;
+  margin-bottom: 30px;
 }
 
 .container-footer .vitoria-regia {
@@ -104,10 +105,10 @@ p {
 
 .container-footer {
   background-color: var(--azul);
-  width: 100vw;
+  width: 100%;
   height: 50vh;
   padding: 20px 0px 80px 0px;
-  margin: auto;
+  margin-top: 150px;
   text-align: center;
   position: relative;
   bottom: 0;
@@ -119,6 +120,7 @@ p {
   bottom: 20px;
   display: flex;
   flex-direction: row;
+  width: 100%;
 }
 
 .logoBranca-small {
@@ -166,7 +168,7 @@ input:focus {
 }
 
 .container-footer .descricao-footer div {
-  text-align: left;
+  text-align: center;
 }
 
 #geral {
@@ -176,6 +178,7 @@ input:focus {
 .container-footer .descricao-footer ul {
   list-style-type: none;
   padding: 0;
+  
 }
 
 .container-footer .descricao-footer li {
@@ -204,20 +207,21 @@ input:focus {
 
 .copyright {
   margin-top: 50px;
-  margin-left: 30rem;
+  margin-left: 50%;
 }
 
-.geral {
-  margin-left: 180px;
-  margin-right: 100px;
-}
 
 .redes-sociais {
-  margin-right: 100px;
-  margin-left: 70px;
+  text-align: center;
 }
 
 .endereco {
-  margin-left: 0;
-  max-width: 53%;
+  width: 200px;
 }
+
+::placeholder {
+  font-family: "Poppins-bold";
+  color: var(--cinza);
+  padding-left: 5px;
+}
+

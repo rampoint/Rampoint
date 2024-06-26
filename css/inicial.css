@@ -17,6 +17,60 @@
   font-family: "Poppins-bold";
   src: url(../font/Poppins/Poppins-Bold.ttf);
 }
+@font-face {
+  font-family: "Batangas";
+  src: url(font/batangas-font-family-fontmirror/Batangas\ Bold\ 700.otf);
+}
+
+@font-face {
+  font-family: "Blinker-regular";
+  src: url(font/Blinker/Blinker-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Blinker-semibold";
+  src: url(../font/Blinker/Blinker-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "Blinker-extrabold";
+  src: url(../font/Blinker/Blinker-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: "Poppins-extralight";
+  src: url(../font/Poppins/Poppins-ExtraLight.ttf);
+}
+
+@font-face {
+  font-family: "Poppins-bold";
+  src: url(../font/Poppins/Poppins-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Poppins-medium";
+  src: url(../font/Poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Poppins-light";
+  src: url(../font/Poppins/Poppins-Light.ttf);
+}
+
+@font-face {
+  font-family: "Poppins-semibold";
+  src: url(../font/Poppins/Poppins-SemiBold.tff);
+}
+
+@font-face {
+  font-family: "Poppins-extrabold";
+  src: url(../font/Poppins/Poppins-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: "Poppins-black";
+  src: url(../font/Poppins/Poppins-Black.ttf);
+}
 
 :root {
   --branco: #f8f8ff;
@@ -28,6 +82,13 @@
   --verde: #7ad761;
   --cinza-claro: rgba(217, 217, 217, 0.5);
 }
+
+*{
+  margin: 0;
+  padding: 0;
+
+}
+
 
 body {
   color: var(--branco);
@@ -108,6 +169,7 @@ span {
   grid-template-areas:
     "texto texto imagem"
     "ram texto-ram texto-ram";
+    margin-bottom: 90px;
 }
 
 .texto {
@@ -135,6 +197,31 @@ span {
   grid-area: texto-ram;
 }
 
+
+
+/* form sem meme */
+.info-box {
+  font-family: "Poppins-medium", sans-serif;
+  font-size: 20px;
+  margin: auto;
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.h1-info {
+  font-family: "Blinker-extrabold", sans-serif;
+  color: #7AD761;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.p-info {
+  font-family: "Poppins-light";
+  font-size: 20px;
+  color: #121212;
+}
 .conteiner-form {
   display: flex;
   flex-direction: row;
@@ -286,6 +373,7 @@ label {
  display: flex;
  flex-direction: column;
  margin-bottom: 20px;
+
 } 
 
 .cep-rua{
@@ -306,7 +394,7 @@ label {
 #rua{
   grid-area: 'rua';
   margin-bottom: 30px;
-  padding-right: 300px;
+  padding-right: 180px;
 }
 
 .rua-form{
@@ -328,6 +416,7 @@ label {
 .form-conteiner ::-webkit-input-placeholder{
   font-family: "Poppins", sans-serif;
   padding-left: 20px;
+  color: #121212;
 }
 
 input {

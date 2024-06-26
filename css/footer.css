@@ -1,0 +1,223 @@
+@font-face {
+  font-family: "Batangas";
+  src: url(../font/batangas-font-family-fontmirror/Batangas\ Bold\ 700.otf);
+}
+
+@font-face {
+  font-family: "Blinker-semibold";
+  src: url(../font/Blinker/Blinker-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "Blinker-extrabold";
+  src: url(../font/Blinker/Blinker-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: "Poppins-extralight";
+  src: url(../font/Poppins/Poppins-ExtraLight.ttf);
+}
+
+@font-face {
+  font-family: "Poppins-bold";
+  src: url(../font/Poppins/Poppins-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Poppins-medium";
+  src: url(../font/Poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Poppins-light";
+  src: url(../font/Poppins/Poppins-Light.ttf);
+}
+
+@font-face {
+  font-family: "Poppins-semibold";
+  src: url(../font/Poppins/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "Poppins-extrabold";
+  src: url(../font/Poppins/Poppins-ExtraBold.ttf);
+}
+
+* {
+  margin: 0 auto;
+}
+
+:root {
+  --azul: #2a55c2;
+  --azul-claro: #46c4ff;
+  --preto: #121212;
+  --branco: #f8f8ff;
+  --cinza: #cdcdcd;
+}
+
+body,
+h2,
+#geral,
+p,
+li,
+.btn-enviar {
+  color: var(--branco);
+}
+
+h2 {
+  font-family: "Blinker-extrabold";
+  font-size: 22px;
+  margin-top: 30px;
+}
+
+p {
+  font-family: "Poppins-semibold";
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+#geral, #redes_sociais, #contato,
+.btn-enviar {
+  font-family: "Poppins-extrabold";
+  font-size: 18px;
+}
+
+.container-footer .vitoria-regia {
+  position: absolute;
+  top: -100px;
+  right: 70px;
+}
+
+.logoBranca {
+  width: 100px;
+  height: auto;
+}
+
+.btn-enviar {
+  background-color: var(--azul-claro);
+  border: none;
+  border-radius: 15px;
+  width: 80px;
+  height: 30px;
+}
+
+.container-footer {
+  background-color: var(--azul);
+  width: 100vw;
+  height: 50vh;
+  padding: 20px 0px 80px 0px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+}
+
+.container-footer .logo {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.logoBranca-small {
+  display: none;
+  width: 140px;
+  height: auto;
+}
+
+.container-footer .email {
+  margin-top: 20px;
+}
+
+.container-footer input[type="email"] {
+  background-color: var(--branco);
+  padding: 10px;
+  border: none;
+  border-radius: 30px;
+  width: 400px;
+  height: 20px;
+  max-width: 80%;
+  margin-right: 10px;
+  font-family: "Poppins-bold";
+  color: var(--cinza);
+}
+
+input:focus {
+  outline: none;
+}
+
+.container-footer button {
+  height: 40px;
+  padding: 10px 20px;
+  border: none;
+  font-family: "Poppins-extrabold";
+  border-radius: 30px;
+  background-color: var(--azul-claro);
+  color: var(--branco);
+  cursor: pointer;
+}
+
+.container-footer .descricao-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 55px;
+}
+
+.container-footer .descricao-footer div {
+  text-align: left;
+}
+
+#geral {
+  margin-bottom: 10px;
+}
+
+.container-footer .descricao-footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.container-footer .descricao-footer li {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.container-footer .descricao-footer a {
+  color: var(--branco);
+  text-decoration: none;
+  font-family: "Poppins-semibold";
+}
+
+.container-footer .descricao-footer a:hover {
+  text-decoration: underline;
+}
+
+.contato span {
+  font-family: "Poppins-bold";
+  color: var(--branco);
+}
+
+.descricao-footer p {
+  font-family: "Poppins-medium";
+}
+
+.copyright {
+  margin-top: 50px;
+  margin-left: 30rem;
+}
+
+.geral {
+  margin-left: 180px;
+  margin-right: 100px;
+}
+
+.redes-sociais {
+  margin-right: 100px;
+  margin-left: 70px;
+}
+
+.endereco {
+  margin-left: 0;
+  max-width: 53%;
+}

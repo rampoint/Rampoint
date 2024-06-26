@@ -83,12 +83,10 @@
   --cinza-claro: rgba(217, 217, 217, 0.5);
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
-
 }
-
 
 body {
   color: var(--branco);
@@ -99,28 +97,30 @@ body {
   justify-content: center;
 }
 
-.card-header {
-  text-align: center;
-  padding: 30px 60px 0;
-}
-
 h2 {
   padding-bottom: 10px;
 }
-
 
 h1 {
   font-family: "Blinker-extrabold", sans-serif;
   color: var(--verde);
 }
 
-.titulo1,
 .texto1,
-.titulo2,
 .texto2,
 .titulo3,
 .texto3 {
   margin-left: 150px;
+  color: var(--preto);
+  font-family: "Poppins-regular";
+}
+
+.titulo1 {
+  margin: 150px 0 15px 150px;
+}
+
+.titulo2 {
+  margin: 50px 0 0 150px;
 }
 
 .titulo3 {
@@ -156,11 +156,13 @@ span {
 .div1 {
   grid-area: 1 / 1 / 2 / 2;
 }
+
 .div2 {
   grid-area: 1 / 2 / 2 / 3;
 }
 
 .container-grid {
+  margin-top: 50px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 0fr;
@@ -169,7 +171,6 @@ span {
   grid-template-areas:
     "texto texto imagem"
     "ram texto-ram texto-ram";
-    margin-bottom: 90px;
 }
 
 .texto {
@@ -197,12 +198,9 @@ span {
   grid-area: texto-ram;
 }
 
-
-
 /* form sem meme */
 .info-box {
   font-family: "Poppins-medium", sans-serif;
-  font-size: 20px;
   margin: auto;
   width: 900px;
   display: flex;
@@ -212,16 +210,16 @@ span {
 
 .h1-info {
   font-family: "Blinker-extrabold", sans-serif;
-  color: #7AD761;
-  font-size: 40px;
+  color: var(--verde);
   margin-bottom: 20px;
 }
 
 .p-info {
-  font-family: "Poppins-light";
-  font-size: 20px;
-  color: #121212;
+  font-family: "Poppins-regular";
+  color: var(--preto);
+  margin-bottom: 20px;
 }
+
 .conteiner-form {
   display: flex;
   flex-direction: row;
@@ -229,19 +227,11 @@ span {
 }
 
 form {
-  background-color: var(--cinza-claro);
   width: 730px;
   height: auto;
   border-radius: 30px;
   margin-top: 30px;
 } 
-
-label {
-  font-family: "Poppins-semibold", sans-serif;
-  margin-top: 30px;
-  margin-left: 40px;
-  margin-bottom: 10px;
-}
 
 .box-codigo,
 .box-pontos {
@@ -293,71 +283,71 @@ label {
 }
 
 .dropdown {
-    position: relative;
-    margin-top: 10px;
-    width: 340px;
-    height: 40px;
+  position: relative;
+  margin-top: 10px;
+  width: 340px;
+  height: 40px;
 }
 
 .dropdown::before {
-    content: '';
-    position: absolute;
-    right: -70px;
-    top: 8px;
-    z-index: 1000;
-    width: 8px;
-    height: 8px;
-    border: 2px solid var(--azul);
-    border-top: 1px solid var(--cinza-claro);
-    border-right: 1px solid var(--cinza-claro);
-    transform: rotate(-45deg);
-    transition: 0.5s;
-    pointer-events: none;
-} 
+  content: "";
+  position: absolute;
+  right: -70px;
+  top: 8px;
+  z-index: 1000;
+  width: 8px;
+  height: 8px;
+  border: 2px solid var(--azul);
+  border-top: 1px solid var(--cinza-claro);
+  border-right: 1px solid var(--cinza-claro);
+  transform: rotate(-45deg);
+  transition: 0.5s;
+  pointer-events: none;
+}
 
 .dropdown.active::before {
-    top: 25px;
-    transform: rotate(-225deg);
+  top: 25px;
+  transform: rotate(-225deg);
 }
 
 .dropdown input {
-    position: absolute;
-    top: 0;
-    left: 40px;
-    width: 340px;
-    height: 30px;
-    cursor: pointer;
-    background-color: var(--branco);
-    border: none;
-    outline: none;
-    border-radius: 20px;
+  position: absolute;
+  top: 0;
+  left: 40px;
+  width: 340px;
+  height: 30px;
+  cursor: pointer;
+  background-color: var(--branco);
+  border: none;
+  outline: none;
+  border-radius: 20px;
 }
 
 .dropdown .option {
-    position: absolute;
-    top: 40px;
-    left: 40px;
-    width: 340px;
-    background-color: var(--branco);
-    border-radius: 15px;
-    overflow: hidden;
-    /* display: none; */
-} 
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  width: 340px;
+  background-color: var(--branco);
+  border-radius: 15px;
+  overflow: hidden;
+  /* display: none; */
+}
 
 .dropdown .option div {
-    padding: 12px 20px;
-    cursor: pointer;
+  padding: 12px 20px;
+  cursor: pointer;
 }
 
 .dropdown .option div:hover {
-    background-color: var(--cinza-claro);
-    color: var(--preto);
+  background-color: var(--cinza-claro);
+  color: var(--preto);
 }
 
 /* colocando endereco começo */
 
 .form-conteiner {
-  background-color:rgba(217, 217, 217, 0.5);
+  background-color: rgba(217, 217, 217, 0.5);
   border-radius: 35px;
   display: flex;
   padding: 20px;
@@ -367,53 +357,50 @@ label {
   justify-content: center;
   width: 100%;
 }
- 
-.form-conteiner form{
- display: flex;
- flex-direction: column;
- margin-bottom: 20px;
- background-color:rgba(217, 217, 217, 0.5);
- width:100%;
-} 
 
-.cep-rua{
+.form-conteiner form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+.cep-rua {
   display: flex;
   margin-left: 15px;
 }
 
-.bairro-form{
+.bairro-form {
   margin-left: 15px;
 }
 
-
-#cep{
-  grid-area: 'cep';
+#cep {
+  grid-area: "cep";
   padding-right: 100px;
 }
 
-#rua{
-  grid-area: 'rua';
+#rua {
+  grid-area: "rua";
   margin-bottom: 30px;
   padding-right: 180px;
 }
 
-.rua-form{
+.rua-form {
   margin-left: 60px;
 }
 
-#bairro{
-  grid-area: 'bairro';
+#bairro {
+  grid-area: "bairro";
   padding-right: 550px;
 }
 
-
 label {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
+  font-family: "Poppins-semibold", sans-serif;
   color: #121212;
   margin: 0;
 }
-.form-conteiner ::-webkit-input-placeholder{
+
+.form-conteiner ::-webkit-input-placeholder {
   font-family: "Poppins", sans-serif;
   padding-left: 20px;
   color: #121212;
@@ -426,7 +413,6 @@ input {
   outline: none;
   height: 35px;
   width: 200px;
-  
 }
 
 .btn-lupa {
@@ -435,7 +421,7 @@ input {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 25%); 
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 25%);
   cursor: pointer;
   position: relative;
   margin-left: 30px;
@@ -448,8 +434,9 @@ input {
   margin: 0px 0px 10px 0px;
 }
 
-.telefone, .endereco {
-  font-family: "Poppins", sans-serif;
+.telefone,
+.endereco {
+  font-family: "Poppins-bold", sans-serif;
   font-weight: 800;
 }
 
@@ -462,7 +449,7 @@ h3 {
 .card {
   max-width: 750px;
   width: 100%;
-  margin: auto;
+  margin: 35px auto;
   padding: 0;
   display: flex;
   align-items: center;
@@ -489,16 +476,12 @@ h3 {
 }
 
 .info-ecoponto {
-  font-family: "Blinker", sans-serif;
-  font-weight: 800;
-  font-style: normal;
-  margin: 0;  
+  font-family: "Blinker-extrabold", sans-serif;
+  margin: 0;
 }
 
-.nome-ecoponto{
-  font-family: "Blinker", sans-serif;
-  font-weight: 800;
-  font-style: normal;
+.nome-ecoponto {
+  font-family: "Blinker-extrabold", sans-serif;
   margin: 0;
 }
 
@@ -555,7 +538,6 @@ h3 {
   font-weight: 900;
   margin-top: 15px;
   margin-bottom: 10px;
-  
 }
 
 .area-madeira {
@@ -612,13 +594,13 @@ h3 {
   justify-content: center;
 }
 
-  .local-resposta{
-    display: flex;
-    width: fit-content;
-  }
+.local-resposta {
+  display: flex;
+  width: fit-content;
+}
 
-  .informacoes{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
+.informacoes {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}

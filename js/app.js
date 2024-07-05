@@ -1,6 +1,10 @@
 function mudarCor(){
     var accordion = document.getElementById("accordion-header");
+    var accordionText =  document.getElementById("internos")
 
-    accordion.style.background = "#2a55c2";
-    accordion.style.textDecoration = "#fffff"
+if(accordion.style.backgroundColor = "#f8f8ff"){
+    accordion.style.backgroundColor = "#2a55c2";
+    accordionText.style.color = "#f8f8ff"
+}
+
 }

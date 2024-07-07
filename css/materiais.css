@@ -191,7 +191,7 @@ span {
   display: flex;
   align-items: center;
   padding: 10px;
-  background-color: var(--cinza-claro);
+  background-color: rgba(217, 217, 217, 0.5);
   cursor: pointer;
 }
 

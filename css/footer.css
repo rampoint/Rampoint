@@ -85,7 +85,7 @@
   
   .footer-container .vitoria-regia {
     position: absolute;
-    bottom: 35px;
+    bottom: 70px;
     right: 70px;
   }
   
@@ -106,18 +106,18 @@
     background-color: var(--azul);
     width: 100%;
     height: auto;
-    padding: 20px 0px 80px 0px;
+    padding: 20px 0px 20px 0px;
     text-align: center;
     bottom: 0;
   }
   
   .footer-container .logo {
-    
     left: 20px;
     bottom: 20px;
     display: flex;
-    flex-direction: row;
-    border: solid;
+    text-align: end;
+    position: absolute;
+    bottom: -260px;
   }
   
   .logoBranca-small {
@@ -160,8 +160,11 @@
   
   .footer-container .descricao-footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 55px;
+    align-items: center;
+    text-align: center;
+    
   }
   
   .footer-container .descricao-footer div {
@@ -202,20 +205,21 @@
   
   .copyright {
     margin-top: 50px;
-    margin-left: 30rem;
   }
   
   .geral {
-    margin-left: 300px;
     margin-right: 100px;
   }
   
   .redes-sociais {
-    margin-right: 100px;
     margin-left: 70px;
   }
   
   .endereco {
     margin-left: 0;
     max-width: 53%;
+  }
+
+  .contato{
+    width: fit-content;
   }

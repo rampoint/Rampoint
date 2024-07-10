@@ -75,6 +75,7 @@
     font-size: 14px;
     margin-top: 10px;
     margin-bottom: 5px;
+    
   }
   
   h3,
@@ -115,9 +116,9 @@
     left: 20px;
     bottom: 20px;
     display: flex;
-    text-align: end;
     position: absolute;
     bottom: -260px;
+    
   }
   
   .logoBranca-small {
@@ -160,11 +161,10 @@
   
   .footer-container .descricao-footer {
     display: flex;
-    justify-content: space-around;
     margin-top: 55px;
+    justify-content:space-around;
     align-items: center;
-    text-align: center;
-    
+
   }
   
   .footer-container .descricao-footer div {
@@ -209,17 +209,15 @@
   
   .geral {
     margin-right: 100px;
+    margin: 0px;
   }
   
   .redes-sociais {
-    margin-left: 70px;
+    margin: 0px;
   }
   
-  .endereco {
-    margin-left: 0;
-    max-width: 53%;
-  }
 
-  .contato{
-    width: fit-content;
-  }
+.contato{
+  margin: 0px;
+  width: 270px;
+}

@@ -1,0 +1,240 @@
+@font-face {
+  font-family: "Batangas";
+  src: url(../font/batangas-font-family-fontmirror/Batangas\ Bold\ 700.otf);
+}
+
+@font-face {
+  font-family: "Blinker-semibold";
+  src: url(../font/Blinker/Blinker-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "Poppins-bold";
+  src: url(../font/Poppins/Poppins-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Poppins-medium";
+  src: url(../font/Poppins/Poppins-Medium.ttf);
+}
+
+:root {
+  --branco: #f8f8ff;
+  --azul: #2a55c2;
+  --preto: #121212;
+  --azul-claro: rgba(42, 85, 194, 0.5);
+  --laranja: #f89701;
+  --verde-escuro: #499136;
+  --verde: #7ad761;
+  --cinza-claro: rgba(217, 217, 217, 0.5);
+}
+
+/* 
+* {
+  margin: 0px;
+  padding: 0px;
+} 
+*/
+
+.ram {
+  font-family: "Batangas";
+  color: #3dd715;
+  margin-left: 12px;
+}
+
+.point {
+  font-family: "Batangas";
+  color: #121212;
+}
+
+.conteiner {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  font-family: "Batangas";
+  margin: 20px 50px 30px 50px;
+  align-items: center;
+  justify-content: center;
+  width: 75%;
+}
+
+nav {
+  color: black;
+  font-family: "Blinker-semibold";
+  display: flex;
+  align-items: baseline;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+a,
+a:visited {
+  color: var(--preto);
+  text-decoration: none;
+  transition: color 0.5s ease-out 1ms;
+}
+
+a:hover {
+  color: var(--azul);
+  text-decoration-line: underline;
+}
+
+.titulo {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+#drop {
+  width: 30px;
+  display: none;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  display: block;
+  font-family: "Blinker";
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+
+/* modal sem perfil */
+
+.modalBtn {
+  border: none;
+  cursor: pointer;
+  background-color: unset;
+}
+
+.modal-sem-perfil {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  right: -300px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  /* background-color: rgba(0, 0, 0, 0.4); */
+}
+
+.content-sem-perfil {
+  background-color: var(--verde);
+  margin-top: 4em;
+  margin-left: 65em;
+  padding: 0;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  width: 15em;
+  height: 18em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.fundo {
+  background-color: var(--branco);
+  width: 15em;
+  height: 16em;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  text-align: center;
+}
+
+.grupo {
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
+.perfil,
+.texto-perfil {
+  font-family: "Poppins-bold";
+}
+
+.cadastro,
+.login {
+  font-family: "Poppins-medium";
+}
+
+.cadastro {
+  color: var(--preto);
+  text-decoration: none;
+}
+
+.cadastro:hover{
+  color: var(--preto);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.login {
+  color: var(--azul);
+  text-decoration: none;
+}
+
+.login:hover{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.perfil {
+  color: var(--branco);
+  padding: 0;
+  margin: 10px 0 20px 0;
+}
+
+.texto-perfil {
+  color: #676767;
+}
+
+.linha {
+  width: 13em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.35);
+  margin: 10px 0;
+}

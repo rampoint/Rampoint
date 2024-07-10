@@ -1,0 +1,17 @@
+@media (max-width: 1050px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+  nav {
+    display: none;
+  }
+  #perfil {
+    float: left;
+    display: none;
+  }
+
+  #drop {
+    display: block;
+  }
+}

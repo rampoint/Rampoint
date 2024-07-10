@@ -4,12 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/cores.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/header/header.css">
+    <link rel="stylesheet" href="./css/header/layout-header.css">
+    <link rel="stylesheet" href="./css/footer/footer.css">
+    <link rel="stylesheet" href="./css/footer/layout_footer.css">
+
     <link rel="stylesheet" href="./css/inicial.css">
     <link rel="stylesheet" href="/css/layout.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="./css/layout_footer.css">
-
     <link rel="shortcut icon" href="img/rostoCirculo.svg" type="image/x-icon">
     <title>Página Inicial</title>
 </head>
@@ -27,8 +30,38 @@
                 <a href="">MATERIAIS</a>
                 <a href="">QR CODE</a>
                 <a href="">FALE CONOSCO</a>
-                <img src="img/perfil.svg" alt="perfil">
             </nav>
+
+            <!-- modal sem perfil -->
+            <div class="modal-sem-perfil">
+                <div class="content-sem-perfil">
+                    <p class="perfil">Perfil</p>
+
+                    <img src="./img/user.svg" id="foto-perfil" alt="Foto de perfil">
+                    <div class="fundo">
+                        <p class="texto-perfil">Sem login</p>
+                        <div class="grupo">
+                            <div class="linha"></div>
+                            <a class="cadastro">Cadastrar-se</a>
+                            <div class="linha"></div>
+                            <a class="login">Fazer login</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="modalBtn"><img id="perfil" src="img/perfil.svg" alt="perfil"></button>
+            <!-- modal sem perfil -->
+
+            <!-- <div class="dropdown">
+
+                <img class="dropbtn" id="drop" src="img/heroicons-outline_menu.svg" alt="drop">
+                <div class="dropdown-content">
+                    <a href="">Link 1</a>
+                    <a href="">Link 2</a>
+                    <a href="">Link 3</a>
+                </div>
+            </div> -->
         </header>
 
         <div class="imagem-fundo">
@@ -145,7 +178,7 @@
             </div>
         </section>
     </div>
- 
+
     <footer class="container-footer">
         <div class="flor">
             <img src="./img/vitoria-regia.svg" class="vitoria-regia" alt="Imagem Vitória-régia">
@@ -189,6 +222,8 @@
             <p class="copyright">Copyright &copy; 2024 Rampoint</p>
         </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>

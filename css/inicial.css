@@ -282,7 +282,7 @@ form {
   height: 30px;
 }
 
-.dropdown {
+/* .dropdown {
   position: relative;
   margin-top: 10px;
   width: 340px;
@@ -331,7 +331,7 @@ form {
   background-color: var(--branco);
   border-radius: 15px;
   overflow: hidden;
-  /* display: none; */
+  display: none;
 }
 
 .dropdown .option div {
@@ -342,7 +342,7 @@ form {
 .dropdown .option div:hover {
   background-color: var(--cinza-claro);
   color: var(--preto);
-}
+} */
 
 /* colocando endereco começo */
 

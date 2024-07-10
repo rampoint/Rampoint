@@ -1,0 +1,42 @@
+header {
+    display: flex;
+    font-family: "Batangas";
+    margin: 10px 50px 0px 50px;
+    align-items:center;
+    justify-content:center;
+  }
+  
+  nav {
+    color: black;
+    font-family: "Blinker", sans-serif;
+    display: flex;
+    align-items:baseline;
+    justify-content:space-evenly;
+    width: 100%;
+    font-weight: 700;
+    margin-top: 20px;
+  }
+  
+  
+  a,
+  a:visited {
+    color: var(--preto);
+    text-decoration: none;
+    transition: color 0.5s ease-out 1ms
+  }
+
+  
+  a:hover{
+    color: var(--azul);
+    text-decoration-line: underline;  
+  }
+
+  .titulo{
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  #drop{
+    width: 30px;
+    display: none;
+  }

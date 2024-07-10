@@ -1,44 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/cores.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/layout.css">
 </head>
+
 <body>
-    <script>
-        
-    </script>
     <div class="conteiner">
-    <header>
-        <div class="titulo">
-        <img src="img/ram.svg" alt="Sapo Ram">
-        <h1 style="color: #3DD715; margin-left: 12px;">ram</h1>
-        <h1>point.</h1>
-    </div>
-        <nav>
-            <a href="">HOME</p>
-            <a href="">PLAY</p>
-            <a href="">ECOPONTOS</p>
-            <a href="">MATERIAIS</p>
-            <a href="">QR CODE</p>
-            <a href="">FALE CONOSCO</p>
-        </nav>
-        <img id="perfil" src="img/perfil.svg" alt="perfil">
-        <div class="dropdown">
-            
-            <img class="dropbtn" id="drop" src="img/heroicons-outline_menu.svg" alt="drop">
-            <div class="dropdown-content">
-              <a href="">Link 1</a>
-              <a href="">Link 2</a>
-              <a href="">Link 3</a>
+        <header>
+            <div class="titulo">
+                <img src="img/ram.svg" id="sapo-ram" alt="Sapo Ram">
+                <h1 style="color: #3DD715; margin-left: 12px;">ram</h1>
+                <h1>point.</h1>
             </div>
-          </div>
-        
-        
-    </header>
-</div>
+            <nav>
+                <a href="">HOME</a>
+                <a href="">PLAY</a>
+                <a href="">ECOPONTOS</a>
+                <a href="">MATERIAIS</a>
+                <a href="">QR CODE</a>
+                <a href="">FALE CONOSCO</a>
+            </nav>
+
+            <!-- modal sem perfil -->
+            <div class="modal-sem-perfil">
+                <div class="content-sem-perfil">
+                    <p class="perfil">Perfil</p>
+
+                    <div class="fundo">
+                        <img src="./img/user.svg" id="foto-perfil" alt="Foto de perfil">
+                        <p class="texto-perfil">Sem login</p>
+                        <div class="grupo">
+                            <div class="linha"></div>
+                            <a class="cadastro">Cadastrar-se</a>
+                            <div class="linha"></div>
+                            <a class="login">Fazer login</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="modalBtn"><img id="perfil" src="img/perfil.svg" alt="perfil"></button>
+            <!-- modal sem perfil -->
+
+            <div class="dropdown">
+
+                <img class="dropbtn" id="drop" src="img/heroicons-outline_menu.svg" alt="drop">
+                <div class="dropdown-content">
+                    <a href="">Link 1</a>
+                    <a href="">Link 2</a>
+                    <a href="">Link 3</a>
+                </div>
+            </div>
+
+            <!-- modal com perfil -->
+            <!-- <div class="modal-com-perfil">
+                <div class="content-com-perfil">
+                    <p class="perfil">Perfil</p>
+
+                    <div class="fundo">
+                        <img src="./img/user.svg" id="foto-perfil" alt="Foto de perfil">
+                        <p class="texto-perfil">Sem login</p>
+                        <div class="grupo">
+                            <div class="linha"></div>
+                            <a class="cadastro">Cadastrar-se</a>
+                            <div class="linha"></div>
+                            <a class="login">Fazer login</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="modalBtn"><img id="perfil" src="img/perfil.svg" alt="perfil"></button> -->
+            <!-- modal com perfil -->
+
+        </header>
+    </div>
+
+    <script src="modal.js"></script>
 </body>
+
 </html>

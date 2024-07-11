@@ -1,36 +1,11 @@
 @font-face {
-  font-family: "Batangas";
-  src: url(../font/batangas-font-family-fontmirror/Batangas\ Bold\ 700.otf);
-}
-
-@font-face {
-  font-family: "Blinker";
-  src: url(../font/Blinker/Blinker-SemiBold.ttf);
-}
-
-@font-face {
   font-family: "Blinker-extrabold";
   src: url(../font/Blinker/Blinker-ExtraBold.ttf);
 }
 
 @font-face {
-  font-family: "Poppins-extralight";
-  src: url(../font/Poppins/Poppins-ExtraLight.ttf);
-}
-
-@font-face {
   font-family: "Poppins-bold";
   src: url(../font/Poppins/Poppins-Bold.ttf);
-}
-
-@font-face {
-  font-family: "Poppins-medium";
-  src: url(../font/Poppins/Poppins-Medium.ttf);
-}
-
-@font-face {
-  font-family: "Poppins-light";
-  src: url(../font/Poppins/Poppins-Light.ttf);
 }
 
 @font-face {

@@ -1,22 +1,35 @@
 :root {
   --branco: #f8f8ff;
-  --verde: #7ad761;
-  --verde-claro: #ecfdf3;
   --azul: #2a55c2;
-  --cinza-claro: rgba(217, 217, 217, 0.5);
-  --cinza: #cdcdcd;
   --preto: #121212;
-  --vermelho: #d40000;
-  --vermelho-claro: #ffeeee;
+  --azul-claro: rgba(42, 85, 194, 0.5);
+  --laranja: #f89701;
+  --verde-escuro: #499136;
+  --verde: #7ad761;
+  --cinza-claro: rgba(217, 217, 217, 0.5);
 }
+
+/* Batangas */
 
 @font-face {
   font-family: "Batangas";
   src: url(../font/batangas-font-family-fontmirror/Batangas\ Bold\ 700.otf);
 }
 
+/* Blinker */
+
 @font-face {
-  font-family: "Blinker";
+  font-family: "Blinker-black";
+  src: url(../font/Blinker/Blinker-Black.ttf);
+}
+
+@font-face {
+  font-family: "Blinker-bold";
+  src: url(../font/Blinker/Blinker-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Blinker-semibold";
   src: url(../font/Blinker/Blinker-SemiBold.ttf);
 }
 
@@ -26,8 +39,15 @@
 }
 
 @font-face {
-  font-family: "Poppins-extralight";
-  src: url(../font/Poppins/Poppins-ExtraLight.ttf);
+  font-family: "Blinker-regular";
+  src: url(../font/Blinker/Blinker-Regular.ttf);
+}
+
+/* Poppins */
+
+@font-face {
+  font-family: "Poppins-black";
+  src: url(../font/Poppins/Poppins-Black.ttf);
 }
 
 @font-face {
@@ -36,13 +56,18 @@
 }
 
 @font-face {
+  font-family: "Poppins-extrabold";
+  src: url(../font/Poppins/Poppins-ExtraBold.ttf);
+}
+
+@font-face {
   font-family: "Poppins-medium";
   src: url(../font/Poppins/Poppins-Medium.ttf);
 }
 
 @font-face {
-  font-family: "Poppins-light";
-  src: url(../font/Poppins/Poppins-Light.ttf);
+  font-family: "Poppins-regular";
+  src: url(../font/Poppins/Poppins-Medium.ttf);
 }
 
 @font-face {
@@ -68,21 +93,22 @@ header {
   margin: auto;
 }
 
-a, a:visited {
+a,
+a:visited {
   color: var(--preto);
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 nav {
-  color: black;
-  font-family: "Blinker";
+  color: var(--preto);
+  font-family: "Blinker-semibold";
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
 }
-
 /* Header final */
+
 
 .imagem-fundo {
   display: flex;
@@ -93,10 +119,8 @@ nav {
   margin-top: 70px;
 }
 
-.titulo {
-  font-family: "Blinker", sans-serif;
-  font-weight: 800;
-  font-style: normal;
+/* .titulo-inicial {
+  font-family: "Blinker-extrabold";
   font-size: 65px;
   color: var(--preto);
   text-shadow: 0px 4px 7px rgba(0, 0, 0, 20%);
@@ -106,12 +130,10 @@ nav {
   transform: translate(-50%, -50%);
   max-width: 30%;
   text-align: center;
-}
+} */
 
 .texto {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+  font-family: "Poppins-regular";
   text-shadow: 0px 4px 7px rgba(0, 0, 0, 20%);
   position: absolute;
   bottom: 15%;
@@ -128,10 +150,8 @@ span {
   font-size: 18px;
 }
 
-.titulo1 {
-  font-family: "Blinker", sans-serif;
-  font-weight: 800;
-  font-style: normal;
+.titulo {
+  font-family: "Blinker-extrabold";
   color: var(--verde);
   margin-left: 250px;
 }
@@ -145,42 +165,35 @@ span {
 }
 
 .textos {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  font-family: "Poppins-regular";
   margin-left: 250px;
   max-width: 70%;
   margin-top: 10px;
   color: var(--preto);
 }
 
-.seta {
-  height: 25px;
-  width: 25px;
-  background-color: var(--branco);
-  border-radius: 50%;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 25%);
-  margin: 0px 0px 0px 100px;
+/* accordion  */
+
+.materiais {
+  font-family: "Poppins-semibold";
+  list-style: none;
+  margin: 10px auto;
+  cursor: pointer;
 }
 
-.seta-branca {
-  background-color: var(--azul);
-  height: 45px;
-  width: 45px;
-  position: absolute;
-  bottom: 5%;
-  right: 45%;
-  transform: translate(-50%, -50%);
+hr {
+  border: 1px solid rgba(42, 85, 194, 0.2);
 }
 
 .accordion {
   width: 600px;
   margin: 0 auto;
   margin-top: 50px;
+  margin-bottom: 30px;
 }
 
 .accordion-item {
-  border: 1px solid #ccc;
+  border: 1px solid var(--azul);
   border-radius: 5px;
   margin-bottom: 10px;
   overflow: hidden;
@@ -191,7 +204,7 @@ span {
   display: flex;
   align-items: center;
   padding: 10px;
-  background-color: rgba(217, 217, 217, 0.5);
+  background-color: var(--branco);
   cursor: pointer;
 }
 
@@ -202,12 +215,14 @@ span {
 }
 
 .internos {
-  width: 70px;
+  width: 50px;
   height: auto;
+  margin-right: 10px;
 }
 
 .accordion-header .arrow-icon {
   margin-left: auto;
+  margin-right: 10px;
   transition: transform 0.3s ease;
 }
 
@@ -227,7 +242,7 @@ span {
 .accordion-collapse {
   display: none;
   padding: 10px;
-  background-color: var(--cinza-claro);
+  background-color: var(--branco);
 }
 
 .accordion-body {

@@ -1,120 +1,65 @@
-/* começo blinker
+/* Batangas */
 
-.blinker-light {
-  font-family: "Blinker", sans-serif;
-  font-weight: 300;
-  font-style: normal;
+@font-face {
+  font-family: "Batangas";
+  src: url(../font/batangas-font-family-fontmirror/Batangas\ Bold\ 700.otf);
 }
 
-.blinker-regular {
-  font-family: "Blinker", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+/* Blinker */
+
+@font-face {
+  font-family: "Blinker-black";
+  src: url(../font/Blinker/Blinker-Black.ttf);
 }
 
-.blinker-semibold {
-  font-family: "Blinker", sans-serif;
-  font-weight: 600;
-  font-style: normal;
+@font-face {
+  font-family: "Blinker-bold";
+  src: url(../font/Blinker/Blinker-Bold.ttf);
 }
 
-.blinker-bold {
-  font-family: "Blinker", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+@font-face {
+  font-family: "Blinker-semibold";
+  src: url(../font/Blinker/Blinker-SemiBold.ttf);
 }
 
-.blinker-extrabold {
-  font-family: "Blinker", sans-serif;
-  font-weight: 800;
-  font-style: normal;
+@font-face {
+  font-family: "Blinker-extrabold";
+  src: url(../font/Blinker/Blinker-ExtraBold.ttf);
 }
 
- FINAL blinker */
-
-
-/* começo poppins
-.poppins-light {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-style: normal;
+@font-face {
+  font-family: "Blinker-regular";
+  src: url(../font/Blinker/Blinker-Regular.ttf);
 }
 
-.poppins-regular {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+/* Poppins */
+
+@font-face {
+  font-family: "Poppins-black";
+  src: url(../font/Poppins/Poppins-Black.ttf);
 }
 
-.poppins-medium {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: normal;
+@font-face {
+  font-family: "Poppins-bold";
+  src: url(../font/Poppins/Poppins-Bold.ttf);
 }
 
-.poppins-semibold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: normal;
+@font-face {
+  font-family: "Poppins-extrabold";
+  src: url(../font/Poppins/Poppins-ExtraBold.ttf);
 }
 
-.poppins-bold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+@font-face {
+  font-family: "Poppins-medium";
+  src: url(../font/Poppins/Poppins-Medium.ttf);
 }
 
-.poppins-extrabold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  font-style: normal;
+@font-face {
+  font-family: "Poppins-regular";
+  src: url(../font/Poppins/Poppins-Medium.ttf);
 }
 
-.poppins-black {
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
-  font-style: normal;
+@font-face {
+  font-family: "Poppins-semibold";
+  src: url(../font/Poppins/Poppins-SemiBold.ttf);
 }
-
-.poppins-light-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.poppins-regular-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.poppins-medium-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: italic;
-}
-
-.poppins-semibold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: italic;
-}
-
-.poppins-bold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
-.poppins-extrabold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  font-style: italic;
-}
-
-.poppins-black-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
-  font-style: italic;
-} 
-  final poppins */

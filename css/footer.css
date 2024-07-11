@@ -43,9 +43,7 @@
     src: url(../font/Poppins/Poppins-ExtraBold.ttf);
   }
   
-  * {
-    margin: 0 auto;
-  }
+  
   
   :root {
     --azul: #2a55c2;
@@ -86,7 +84,7 @@
   
   .footer-container .vitoria-regia {
     position: absolute;
-    bottom: 70px;
+    bottom: 20px;
     right: 70px;
   }
   

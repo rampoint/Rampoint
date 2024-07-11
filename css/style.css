@@ -1,0 +1,18 @@
+.conteiner {
+    flex-direction: column;
+    
+  }
+
+  * {
+    margin: 0 auto;
+  }
+
+  #imagem-apresentação{
+    width: 65%;
+    margin: auto;
+    
+  }
+
+  
+
+  

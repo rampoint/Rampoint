@@ -1,16 +1,36 @@
 .conteiner {
     flex-direction: column;
-    
+    display: flex;    
   }
 
   * {
-    margin: 0 auto;
+    margin: 0 ;
   }
 
   #imagem-apresentação{
-    width: 65%;
+    width: 70%;
     margin: auto;
-    
+  }
+
+  .info-box {
+    font-family: "Poppins-medium", sans-serif;
+    margin: auto;
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+  }
+  
+  .h1-info {
+    font-family: "Blinker-extrabold", sans-serif;
+    color: var(--verde);
+    margin-bottom: 20px;
+  }
+  
+  .p-info {
+    font-family: "Poppins-regular";
+    color: var(--preto);
+    margin-bottom: 20px;
   }
 
   

@@ -42,6 +42,12 @@
     .flor img {
       visibility: hidden;
     }
+
+    .email{
+      display: flex;
+      flex-wrap: wrap;
+
+    }
   }
   
   /* Dispositivos móveis grandes (em pé) */
@@ -152,6 +158,12 @@
     #drop{
         display: block;
     }
+
+    .info-box{
+      width: auto;
+      text-align: center;
+      width: 50%;
+  }
     
     
     .descricao-footer {

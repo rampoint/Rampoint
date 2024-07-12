@@ -1,79 +1,6 @@
-:root {
-  --branco: #f8f8ff;
-  --azul: #2a55c2;
-  --preto: #121212;
-  --azul-claro: rgba(42, 85, 194, 0.5);
-  --laranja: #f89701;
-  --verde-escuro: #499136;
-  --verde: #7ad761;
-  --cinza-claro: rgba(217, 217, 217, 0.5);
-}
+@import url(../css/font.css);
 
-/* Batangas */
-
-@font-face {
-  font-family: "Batangas";
-  src: url(../font/batangas-font-family-fontmirror/Batangas\ Bold\ 700.otf);
-}
-
-/* Blinker */
-
-@font-face {
-  font-family: "Blinker-black";
-  src: url(../font/Blinker/Blinker-Black.ttf);
-}
-
-@font-face {
-  font-family: "Blinker-bold";
-  src: url(../font/Blinker/Blinker-Bold.ttf);
-}
-
-@font-face {
-  font-family: "Blinker-semibold";
-  src: url(../font/Blinker/Blinker-SemiBold.ttf);
-}
-
-@font-face {
-  font-family: "Blinker-extrabold";
-  src: url(../font/Blinker/Blinker-ExtraBold.ttf);
-}
-
-@font-face {
-  font-family: "Blinker-regular";
-  src: url(../font/Blinker/Blinker-Regular.ttf);
-}
-
-/* Poppins */
-
-@font-face {
-  font-family: "Poppins-black";
-  src: url(../font/Poppins/Poppins-Black.ttf);
-}
-
-@font-face {
-  font-family: "Poppins-bold";
-  src: url(../font/Poppins/Poppins-Bold.ttf);
-}
-
-@font-face {
-  font-family: "Poppins-extrabold";
-  src: url(../font/Poppins/Poppins-ExtraBold.ttf);
-}
-
-@font-face {
-  font-family: "Poppins-medium";
-  src: url(../font/Poppins/Poppins-Medium.ttf);
-}
-
-@font-face {
-  font-family: "Poppins-regular";
-  src: url(../font/Poppins/Poppins-Medium.ttf);
-}
-
-@font-face {
-  font-family: "Poppins-semibold";
-  src: url(../font/Poppins/Poppins-SemiBold.ttf);
-}
+@import url(../css/cores.css);
 
 * {
   margin: 0;
@@ -84,31 +11,6 @@
 body {
   background-color: var(--branco);
 }
-
-/* Header começo */
-header {
-  display: flex;
-  width: 79%;
-  font-family: "Batangas";
-  margin: auto;
-}
-
-a,
-a:visited {
-  color: var(--preto);
-  text-decoration: none;
-}
-
-nav {
-  color: var(--preto);
-  font-family: "Blinker-semibold";
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 100%;
-}
-/* Header final */
-
 
 .imagem-fundo {
   display: flex;

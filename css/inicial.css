@@ -1,87 +1,6 @@
-@font-face {
-  font-family: "Blinker-extrabold";
-  src: url(../font/Blinker/Blinker-ExtraBold.ttf);
-}
+@import url(../css/font.css);
 
-@font-face {
-  font-family: "Poppins-regular";
-  src: url(../font/Poppins/Poppins-Regular.ttf);
-}
-
-@font-face {
-  font-family: "Poppins-semibold";
-  src: url(../font/Poppins/Poppins-SemiBold.ttf);
-}
-
-@font-face {
-  font-family: "Poppins-bold";
-  src: url(../font/Poppins/Poppins-Bold.ttf);
-}
-@font-face {
-  font-family: "Batangas";
-  src: url(font/batangas-font-family-fontmirror/Batangas\ Bold\ 700.otf);
-}
-
-@font-face {
-  font-family: "Blinker-regular";
-  src: url(font/Blinker/Blinker-Regular.ttf);
-}
-
-@font-face {
-  font-family: "Blinker-semibold";
-  src: url(../font/Blinker/Blinker-SemiBold.ttf);
-}
-
-@font-face {
-  font-family: "Blinker-extrabold";
-  src: url(../font/Blinker/Blinker-ExtraBold.ttf);
-}
-
-@font-face {
-  font-family: "Poppins-extralight";
-  src: url(../font/Poppins/Poppins-ExtraLight.ttf);
-}
-
-@font-face {
-  font-family: "Poppins-bold";
-  src: url(../font/Poppins/Poppins-Bold.ttf);
-}
-
-@font-face {
-  font-family: "Poppins-medium";
-  src: url(../font/Poppins/Poppins-Medium.ttf);
-}
-
-@font-face {
-  font-family: "Poppins-light";
-  src: url(../font/Poppins/Poppins-Light.ttf);
-}
-
-@font-face {
-  font-family: "Poppins-semibold";
-  src: url(../font/Poppins/Poppins-SemiBold.tff);
-}
-
-@font-face {
-  font-family: "Poppins-extrabold";
-  src: url(../font/Poppins/Poppins-ExtraBold.ttf);
-}
-
-@font-face {
-  font-family: "Poppins-black";
-  src: url(../font/Poppins/Poppins-Black.ttf);
-}
-
-:root {
-  --branco: #f8f8ff;
-  --azul: #2a55c2;
-  --preto: #121212;
-  --azul-claro: rgba(42, 85, 194, 0.5);
-  --laranja: #f89701;
-  --verde-escuro: #499136;
-  --verde: #7ad761;
-  --cinza-claro: rgba(217, 217, 217, 0.5);
-}
+@import url(../css/cores.css);
 
 * {
   margin: 0;
@@ -92,52 +11,103 @@ body {
   color: var(--branco);
 }
 
-.imagem-fundo {
-  display: flex;
-  justify-content: center;
-}
-
 h2 {
   padding-bottom: 10px;
 }
 
-h1 {
-  font-family: "Blinker-extrabold", sans-serif;
-  color: var(--verde);
+/* começo da imagem inicial */
+
+.imagem-fundo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  width: 75%;
 }
 
-.texto1,
-.texto2,
-.titulo3,
-.texto3 {
+.inicio {
+  flex-direction: column;
+}
+
+#titulo-inicial {
+  font-family: "Blinker-extrabold";
+  color: var(--preto);
+  font-size: 4.5em;
+  width: 25%;
+  line-height: 0.8em;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+#texto-inicial {
+  font-family: "Poppins-regular";
+  color: var(--preto);
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  width: 75%;
+  font-size: 1em;
+}
+
+.botao {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  gap: 15px;
+}
+
+#cadastro {
+  font-family: "Poppins-bold";
+  font-size: 1em;
+  background-color: var(--verde);
+  color: var(--branco);
+  width: 200px;
+  height: 40px;
+  border: none;
+  border-bottom: 5px solid #499136;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+#login {
+  font-family: "Poppins-bold";
+  font-size: 1em;
+  background-color: var(--azul-claro);
+  color: var(--branco);
+  width: 200px;
+  height: 40px;
+  border: none;
+  border-bottom: 5px solid #0076AC;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+/* final da imagem inicial */
+
+/* começo dos textos */
+#texto1,
+#texto2 {
   margin-left: 150px;
   color: var(--preto);
   font-family: "Poppins-regular";
 }
 
-.titulo1 {
+#titulo1 {
+  font-family: "Blinker-extrabold";
+  color: var(--verde);
   margin: 150px 0 15px 150px;
 }
 
-.titulo2 {
+#titulo2 {
+  font-family: "Blinker-extrabold";
+  color: var(--verde);
   margin: 50px 0 0 150px;
 }
 
-.titulo3 {
-  margin-top: 50px;
-}
-
-.texto1 {
+#texto1 {
   max-width: 55%;
 }
 
-.texto2 {
+#texto2 {
   max-width: 50%;
-}
-
-p {
-  font-family: "Poppins-regular";
-  color: var(--preto);
 }
 
 span {
@@ -198,9 +168,11 @@ span {
   grid-area: texto-ram;
 }
 
+/* final dos textos */
+
 /* form sem meme */
 .info-box {
-  font-family: "Poppins-medium", sans-serif;
+  font-family: "Poppins-medium";
   margin: auto;
   width: 900px;
   display: flex;
@@ -208,13 +180,13 @@ span {
   margin-top: 100px;
 }
 
-.h1-info {
-  font-family: "Blinker-extrabold", sans-serif;
+#h1-info {
+  font-family: "Blinker-extrabold";
   color: var(--verde);
   margin-bottom: 20px;
 }
 
-.p-info {
+#p-info {
   font-family: "Poppins-regular";
   color: var(--preto);
   margin-bottom: 20px;
@@ -231,7 +203,7 @@ form {
   height: auto;
   border-radius: 30px;
   margin-top: 30px;
-} 
+}
 
 .box-codigo,
 .box-pontos {
@@ -255,19 +227,9 @@ form {
   height: auto;
 }
 
-.btn-concluido {
-  font-family: "Poppins-bold";
-  background-color: var(--verde);
-  color: var(--branco);
-  width: 160px;
-  height: 30px;
-  border: none;
-  border-radius: 30px;
-}
-
 ::placeholder {
   font-family: "Poppins-bold";
-  color: var(--azul-claro);
+  color: rgba(42, 85, 194, 0.5);
   padding-left: 5px;
 }
 
@@ -395,13 +357,13 @@ form {
 }
 
 label {
-  font-family: "Poppins-semibold", sans-serif;
+  font-family: "Poppins-semibold";
   color: #121212;
   margin: 0;
 }
 
 .form-conteiner ::-webkit-input-placeholder {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins-regular";
   padding-left: 20px;
   color: #121212;
 }
@@ -430,18 +392,19 @@ input {
 /* colocar endereco final */
 
 .card p {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins-black";
   margin: 0px 0px 10px 0px;
 }
 
-.telefone,
-.endereco {
-  font-family: "Poppins-bold", sans-serif;
+#telefone,
+#endereco {
+  font-family: "Poppins-bold";
   font-weight: 800;
 }
 
 h3 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins-bold";
+  color: var(--preto);
   font-weight: 700;
   margin-left: 300px;
 }
@@ -475,13 +438,13 @@ h3 {
   flex: 1;
 }
 
-.info-ecoponto {
-  font-family: "Blinker-extrabold", sans-serif;
+#info-ecoponto {
+  font-family: "Blinker-extrabold";
   margin: 0;
 }
 
-.nome-ecoponto {
-  font-family: "Blinker-extrabold", sans-serif;
+#nome-ecoponto {
+  font-family: "Blinker-extrabold";
   margin: 0;
 }
 
@@ -505,7 +468,7 @@ h3 {
 }
 
 .descartes p {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins-black";
   font-weight: 900;
   text-transform: uppercase;
   text-align: center;
@@ -534,7 +497,7 @@ h3 {
 }
 
 .card-wrapper p {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins-black";
   font-weight: 900;
   margin-top: 15px;
   margin-bottom: 10px;

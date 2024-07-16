@@ -1,64 +1,17 @@
-@font-face {
-  font-family: "Batangas";
-  src: url(../font/batangas-font-family-fontmirror/Batangas\ Bold\ 700.otf);
-}
+@import url(../css/font.css);
 
-@font-face {
-  font-family: "Blinker-semibold";
-  src: url(../font/Blinker/Blinker-SemiBold.ttf);
-}
+@import url(../css/cores.css);
 
-@font-face {
-  font-family: "Poppins-bold";
-  src: url(../font/Poppins/Poppins-Bold.ttf);
-}
-
-@font-face {
-  font-family: "Poppins-medium";
-  src: url(../font/Poppins/Poppins-Medium.ttf);
-}
-
-:root {
-  --branco: #f8f8ff;
-  --azul: #2a55c2;
-  --preto: #121212;
-  --azul-claro: rgba(42, 85, 194, 0.5);
-  --laranja: #f89701;
-  --verde-escuro: #499136;
-  --verde: #7ad761;
-  --cinza-claro: rgba(217, 217, 217, 0.5);
-}
-
-/* 
-* {
-  margin: 0px;
-  padding: 0px;
-} 
-*/
-
-.ram {
-  font-family: "Batangas";
-  color: #3dd715;
-  margin-left: 12px;
-}
-
-.point {
-  font-family: "Batangas";
-  color: #121212;
-}
-
-.conteiner {
-  display: flex;
-  flex-direction: column;
+h1 {
+  color: var(--preto);
 }
 
 header {
   display: flex;
   font-family: "Batangas";
-  margin: 20px 50px 30px 50px;
+  margin: 20px 50px 50px 50px;
   align-items: center;
   justify-content: center;
-  width: 75%;
 }
 
 nav {
@@ -154,35 +107,40 @@ a:hover {
   width: 100%;
   height: 100%;
   overflow: auto;
-  /* background-color: rgba(0, 0, 0, 0.4); */
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .content-sem-perfil {
   background-color: var(--verde);
-  margin-top: 4em;
-  margin-left: 65em;
+  margin-top: 5em;
+  margin-left: 70em;
   padding: 0;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
   width: 15em;
-  height: 18em;
+  height: 20em;
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 0px 4px 0px 4px rgba(0, 0, 0, 0.5) inset; */
 }
 
 .fundo {
   background-color: var(--branco);
   width: 15em;
-  height: 16em;
-  border-top-left-radius: 50px;
-  border-top-right-radius: 50px;
+  height: 20em;
+  border-top-left-radius: 55px;
+  border-top-right-radius: 55px;
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: -40px;
 }
 
 .grupo {
@@ -207,7 +165,7 @@ a:hover {
   text-decoration: none;
 }
 
-.cadastro:hover{
+.cadastro:hover {
   color: var(--preto);
   text-decoration: none;
   cursor: pointer;
@@ -218,7 +176,7 @@ a:hover {
   text-decoration: none;
 }
 
-.login:hover{
+.login:hover {
   text-decoration: none;
   cursor: pointer;
 }
@@ -237,4 +195,8 @@ a:hover {
   width: 13em;
   border-bottom: 1px solid rgba(0, 0, 0, 0.35);
   margin: 10px 0;
+}
+
+#foto-perfil {
+  position: relative;
 }

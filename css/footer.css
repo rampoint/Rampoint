@@ -1,0 +1,158 @@
+@import url(../css/font.css);
+
+@import url(../css/cores.css);
+
+body,
+h2,
+h3,
+p,
+li,
+.btn-enviar {
+  color: var(--branco);
+}
+
+h2 {
+  font-family: "Blinker-extrabold";
+  font-size: 22px;
+  margin-top: 30px;
+}
+
+p {
+  font-family: "Poppins-semibold";
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+h3,
+.btn-enviar {
+  font-family: "Poppins-extrabold";
+  font-size: 18px;
+}
+
+.footer-container .vitoria-regia {
+  position: absolute;
+  bottom: 20px;
+  right: 70px;
+}
+
+.logoBranca {
+  width: 150px;
+  height: auto;
+}
+
+.btn-enviar {
+  background-color: var(--azul-claro);
+  border: none;
+  border-radius: 15px;
+  width: 80px;
+  height: 30px;
+}
+
+.footer-container {
+  background-color: var(--azul);
+  width: 100%;
+  height: auto;
+  padding: 20px 0px 20px 0px;
+  text-align: center;
+  bottom: 0;
+}
+
+.logoBranca-small {
+  display: none;
+  width: 140px;
+  height: auto;
+}
+
+.footer-container .email {
+  margin-top: 20px;
+}
+
+.footer-container input[type="email"] {
+  background-color: var(--branco);
+  padding: 10px;
+  border: none;
+  border-radius: 30px;
+  width: 400px;
+  height: 20px;
+  max-width: 80%;
+  margin-right: 10px;
+  font-family: "Poppins-bold";
+  color: var(--cinza);
+}
+
+input:focus {
+  outline: none;
+}
+
+.footer-container button {
+  height: 40px;
+  padding: 10px 20px;
+  border: none;
+  font-family: "Poppins-extrabold";
+  border-radius: 30px;
+  background-color: var(--azul-claro);
+  color: var(--branco);
+  cursor: pointer;
+}
+
+.footer-container .descricao-footer {
+  display: flex;
+  margin-top: 55px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer-container .descricao-footer div {
+  text-align: left;
+}
+
+.footer-container .descricao-footer h3 {
+  margin-bottom: 10px;
+}
+
+.footer-container .descricao-footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-container .descricao-footer li {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.footer-container .descricao-footer a {
+  color: var(--branco);
+  text-decoration: none;
+  font-family: "Poppins-semibold";
+}
+
+.footer-container .descricao-footer a:hover {
+  text-decoration: underline;
+}
+
+.descricao-footer span {
+  font-family: "Poppins-bold";
+}
+
+.descricao-footer p {
+  font-family: "Poppins-medium";
+}
+
+.copyright {
+  margin-top: 50px;
+}
+
+.geral {
+  margin-right: 100px;
+  margin: 0px;
+}
+
+.redes-sociais {
+  margin: 0px;
+}
+
+.contato {
+  margin: 0px;
+  width: 270px;
+}

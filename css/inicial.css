@@ -11,6 +11,13 @@ body {
   color: var(--branco);
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 h2 {
   padding-bottom: 10px;
 }
@@ -24,6 +31,10 @@ h2 {
   align-items: center;
   margin-top: 25px;
   width: 75%;
+}
+
+.imagem-inicial {
+  width: 35em;
 }
 
 .inicio {
@@ -151,8 +162,8 @@ span {
   grid-area: imagem;
 }
 
-.medalhas {
-  width: 450px;
+#medalhas {
+  width: 480px;
 }
 
 .ramEmpe {
@@ -548,13 +559,6 @@ h3 {
   flex-direction: row;
   justify-content: center;
   padding: 10px;
-}
-
-.conteiner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .local-resposta {

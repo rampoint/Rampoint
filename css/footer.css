@@ -2,9 +2,7 @@
 
 @import url(../css/cores.css);
 
-body,
 h2,
-h3,
 p,
 li,
 .btn-enviar {
@@ -12,13 +10,13 @@ li,
 }
 
 h2 {
-  font-family: "Blinker-extrabold";
+  font-family: "Blinker-extrabold", sans-serif;
   font-size: 22px;
   margin-top: 30px;
 }
 
 p {
-  font-family: "Poppins-semibold";
+  font-family: "Poppins-semibold", sans-serif;
   font-size: 14px;
   margin-top: 10px;
   margin-bottom: 5px;
@@ -26,7 +24,7 @@ p {
 
 h3,
 .btn-enviar {
-  font-family: "Poppins-extrabold";
+  font-family: "Poppins-extrabold", sans-serif;
   font-size: 18px;
 }
 
@@ -152,7 +150,15 @@ input:focus {
   margin: 0px;
 }
 
+#geral-titulo, #redes_sociais-titulo, #contato-titulo {
+  color: var(--branco);
+}
+
 .contato {
   margin: 0px;
   width: 270px;
+}
+
+#email-span, #telefone-span {
+  color: var(--branco);
 }

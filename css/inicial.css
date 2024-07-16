@@ -7,16 +7,7 @@
 }
 
 body {
-  color: var(--branco);
-}
-
-.container {
-  flex-direction: column;
-  display: flex;
-}
-
-h2 {
-  padding-bottom: 10px;
+  background-color: var(--branco);
 }
 
 /* começo da imagem inicial */
@@ -26,11 +17,11 @@ h2 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 25px;
+  margin: 25px;
 }
 
 .imagem-inicial {
-  width: 35em;
+  width: 30em;
 }
 
 .inicio {
@@ -82,7 +73,7 @@ h2 {
   width: 200px;
   height: 40px;
   border: none;
-  border-bottom: 5px solid #0076AC;
+  border-bottom: 5px solid #0076ac;
   border-radius: 30px;
   cursor: pointer;
 }
@@ -118,9 +109,13 @@ h2 {
 }
 
 span {
-  font-family: "Poppins-semibold";
-  color: var(--preto);
+  font-family: "Poppins-bold";
+  
 }
+
+/* fim dos textos */
+
+/* começo grid */
 
 .parent {
   display: grid;
@@ -175,7 +170,7 @@ span {
   grid-area: texto-ram;
 }
 
-/* final dos textos */
+/* fim grid */
 
 /* form sem meme */
 .info-box {
@@ -229,11 +224,6 @@ form {
   margin-left: 40px;
 }
 
-.qrCode {
-  width: 160px;
-  height: auto;
-}
-
 ::placeholder {
   font-family: "Poppins-bold";
   color: rgba(42, 85, 194, 0.5);
@@ -251,67 +241,7 @@ form {
   height: 30px;
 }
 
-/* .dropdown {
-  position: relative;
-  margin-top: 10px;
-  width: 340px;
-  height: 40px;
-}
-
-.dropdown::before {
-  content: "";
-  position: absolute;
-  right: -70px;
-  top: 8px;
-  z-index: 1000;
-  width: 8px;
-  height: 8px;
-  border: 2px solid var(--azul);
-  border-top: 1px solid var(--cinza-claro);
-  border-right: 1px solid var(--cinza-claro);
-  transform: rotate(-45deg);
-  transition: 0.5s;
-  pointer-events: none;
-}
-
-.dropdown.active::before {
-  top: 25px;
-  transform: rotate(-225deg);
-}
-
-.dropdown input {
-  position: absolute;
-  top: 0;
-  left: 40px;
-  width: 340px;
-  height: 30px;
-  cursor: pointer;
-  background-color: var(--branco);
-  border: none;
-  outline: none;
-  border-radius: 20px;
-}
-
-.dropdown .option {
-  position: absolute;
-  top: 40px;
-  left: 40px;
-  width: 340px;
-  background-color: var(--branco);
-  border-radius: 15px;
-  overflow: hidden;
-  display: none;
-}
-
-.dropdown .option div {
-  padding: 12px 20px;
-  cursor: pointer;
-}
-
-.dropdown .option div:hover {
-  background-color: var(--cinza-claro);
-  color: var(--preto);
-} */
+/* fim form */
 
 /* colocando endereco começo */
 
@@ -398,6 +328,7 @@ input {
 
 /* colocar endereco final */
 
+/* começo cards de descarte */
 .card p {
   font-family: "Poppins-black";
   margin: 0px 0px 10px 0px;
@@ -409,11 +340,10 @@ input {
   font-weight: 800;
 }
 
-h3 {
+#titulo-descarte {
   font-family: "Poppins-bold";
   color: var(--preto);
-  font-weight: 700;
-  margin-left: 300px;
+  margin-left: 350px;
 }
 
 .card {

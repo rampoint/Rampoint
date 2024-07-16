@@ -4,23 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/header/header.css">
-    <link rel="stylesheet" href="./css/header/layout-header.css">
-    <link rel="stylesheet" href="./css/footer/footer.css">
-    <link rel="stylesheet" href="./css/footer/layout_footer.css">
-
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/inicial.css">
-    <link rel="stylesheet" href="/css/layout.css">
-    <link rel="shortcut icon" href="img/rostoCirculo.svg" type="image/x-icon">
+
+    <link rel="shortcut icon" href="./img/rostoCirculo.svg" type="image/x-icon">
     <title>Página Inicial</title>
+
 </head>
 
 <body>
     <div class="container">
         <header>
-            <img src="img/ram.svg" alt="Sapo Ram">
-            <h1 class="ram">ram</h1>
-            <h1 class="point">point.</h1>
+            <div class="titulo">
+                <img src="img/ram.svg" id="sapo-ram" alt="Sapo Ram">
+                <h1 style="color: #3DD715; margin-left: 12px;">ram</h1>
+                <h1>point.</h1>
+            </div>
             <nav>
                 <a href="">HOME</a>
                 <a href="">PLAY</a>
@@ -34,7 +36,6 @@
             <div class="modal-sem-perfil">
                 <div class="content-sem-perfil">
                     <p class="perfil">Perfil</p>
-
                     <img src="./img/user.svg" id="foto-perfil" alt="Foto de perfil">
                     <div class="fundo">
                         <p class="texto-perfil">Sem login</p>
@@ -51,7 +52,7 @@
             <button class="modalBtn"><img id="perfil" src="img/perfil.svg" alt="perfil"></button>
             <!-- modal sem perfil -->
 
-            <!-- <div class="dropdown">
+            <div class="dropdown">
 
                 <img class="dropbtn" id="drop" src="img/heroicons-outline_menu.svg" alt="drop">
                 <div class="dropdown-content">
@@ -59,14 +60,36 @@
                     <a href="">Link 2</a>
                     <a href="">Link 3</a>
                 </div>
-            </div> -->
+            </div>
+
+            <!-- modal com perfil -->
+            <!-- <div class="modal-com-perfil">
+                <div class="content-com-perfil">
+                    <p class="perfil">Perfil</p>
+
+                    <div class="fundo">
+                        <img src="./img/user.svg" id="foto-perfil" alt="Foto de perfil">
+                        <p class="texto-perfil">Sem login</p>
+                        <div class="grupo">
+                            <div class="linha"></div>
+                            <a class="cadastro">Cadastrar-se</a>
+                            <div class="linha"></div>
+                            <a class="login">Fazer login</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="modalBtn"><img id="perfil" src="img/perfil.svg" alt="perfil"></button> -->
+            <!-- modal com perfil -->
+
         </header>
 
         <section class="imagem-fundo">
             <div class="inicio">
                 <h1 id="titulo-inicial">DOE AGORA</h1>
-                <p id="texto-inicial">Faça sua parte e doe um periférico em troca de uma recompensa
-                    <span>RAMTÁSTICA</span>!</p>
+                <p id="texto-inicial">Faça sua parte e doe um periférico em troca de uma
+                    recompensa<span>RAMTÁSTICA</span>!</p>
 
                 <div class="botao">
                     <button id="cadastro">CADASTRE-SE</button>
@@ -86,6 +109,7 @@
                     <span>vitalidade</span> e a integridade do <span>meio ambiente</span>.
                 </p>
             </div>
+
             <div class="imagem-medalha">
                 <img src="./img/medalhas.svg" id="medalhas" alt="Imagem medalhas">
             </div>
@@ -137,7 +161,7 @@
             </div><img src="./img/ecoponto.svg" class="imagem-ecoponto" alt="Imagem do Ecoponto de Barueri">
         </section>
 
-        <h3>Descarte disponível:</h3>
+        <h3 id="titulo-descarte">Descarte disponível:</h3>
         <section class="cards">
             <div class="card-wrapper area-madeira">
                 <div class="card-group">
@@ -185,53 +209,53 @@
                 </div>
             </div>
         </section>
-    </div>
 
-    <footer class="container-footer">
-        <div class="flor">
-            <img src="./img/vitoria-regia.svg" class="vitoria-regia" alt="Imagem Vitória-régia">
-        </div>
-        <h2>Quer ser nosso parceiro?</h2>
-        <p>Envie-nos seu email!</p>
-        <div class="email">
-            <input type="email" placeholder="Insira seu email aqui" style="color: black;">
-            <button>Enviar</button>
-        </div>
-        <div class="descricao-footer">
-            <div class="geral">
-                <h3 id="geral">GERAL</h3>
-                <ul>
-                    <li><a href="#">Sobre Nós</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Política e Privacidade</a></li>
-                    <li><a href="#">Termos e Condições</a></li>
-                </ul>
+        <footer class="footer-container">
+            <h2>Quer ser nosso parceiro?</h2>
+            <p>Envie-nos seu email!</p>
+            <div class="email">
+                <input type="email" placeholder="Insira seu email aqui">
+                <button>Enviar</button>
             </div>
-            <div class="redes-sociais">
-                <h3 id="redes_sociais">REDES SOCIAIS</h3>
-                <ul>
-                    <li><a href="https://www.instagram.com/rampoint_?igsh=MWptbnVwdDAzN3NkNw==">Instagram</a></li>
-                    <li><a href="#">Tiktok</a></li>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Linkedln</a></li>
-                </ul>
+            <div class="descricao-footer">
+                <div class="logo">
+                    <img src="./img/logoBranca.svg" class="logoBranca" alt="Imagem Logo branca 'rampoint'">
+                    <img src="./img/logoBranca-extenso.svg" class="logoBranca-small"
+                        alt="Imagem Logo branca 'rampoint'">
+                </div>
+                <div class="geral">
+                    <h3 id="geral-titulo">GERAL</h3>
+                    <ul>
+                        <li><a href="#">Sobre Nós</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Política e Privacidade</a></li>
+                        <li><a href="#">Termos e Condições</a></li>
+                    </ul>
+                </div>
+                <div class="redes-sociais">
+                    <h3 id="redes_sociais-titulo">REDES SOCIAIS</h3>
+                    <ul>
+                        <li><a href="https://www.instagram.com/rampoint_?igsh=MWptbnVwdDAzN3NkNw==">Instagram</a></li>
+                        <li><a href="#">Tiktok</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Linkedln</a></li>
+                    </ul>
+                </div>
+                <div class="contato">
+                    <h3 id="contato-titulo">CONTATO</h3>
+                    <p><b>Email:</b> rampointofc@gmail.com</p>
+                    <p><span>Telefone:</span> (11) 93350-6834</p>
+                    <p class="endereco"><span>Endereço:</span> Rua João Batista Soares, 440 - Centro, Barueri - SP,
+                        06401-135</p>
+                </div>
             </div>
-            <div class="contato">
-                <h3 id="contato">CONTATO</h3>
-                <p><span>Email:</span> rampointofc@gmail.com</p>
-                <p><span>Telefone:</span> (11) 93350-6834</p>
-                <p class="endereco"><span>Endereço:</span> Rua João Batista Soares, 440 - Centro, Barueri - SP,
-                    06401-135</p>
-            </div>
-        </div>
-        <div class="logo">
-            <img src="./img/logoBranca.svg" class="logoBranca" alt="Imagem Logo branca 'rampoint'">
-            <img src="./img/logoBranca-extenso.svg" class="logoBranca-small" alt="Imagem Logo branca 'rampoint'">
             <p class="copyright">Copyright &copy; 2024 Rampoint</p>
-        </div>
-    </footer>
 
-    <script src="./js/modal.js"></script>
+
+        </footer>
+        <script src="js/modal.js"></script>
+
+    </div>
 </body>
 
 </html>

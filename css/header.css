@@ -2,7 +2,7 @@
 
 @import url(../css/cores.css);
 
-h1 {
+h1{
   color: var(--preto);
 }
 
@@ -12,6 +12,7 @@ header {
   margin: 20px 50px 50px 50px;
   align-items: center;
   justify-content: center;
+
 }
 
 nav {
@@ -165,7 +166,7 @@ a:hover {
   text-decoration: none;
 }
 
-.cadastro:hover {
+.cadastro:hover{
   color: var(--preto);
   text-decoration: none;
   cursor: pointer;
@@ -176,7 +177,7 @@ a:hover {
   text-decoration: none;
 }
 
-.login:hover {
+.login:hover{
   text-decoration: none;
   cursor: pointer;
 }
@@ -197,6 +198,6 @@ a:hover {
   margin: 10px 0;
 }
 
-#foto-perfil {
+ #foto-perfil{
   position: relative;
-}
+} 

@@ -4,20 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/play.css">
-    <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/play.css">
+
     <link rel="shortcut icon" href="./img/rostoCirculo.svg" type="image/x-icon">
     <title>Página Play</title>
+
 </head>
 
 <body>
-    <div class="conteiner">
+    <div class="container">
         <header>
-            <img src="img/ram.svg" alt="Sapo Ram">
-            <h1 class="ram">ram</h1>
-            <h1 class="point">point.</h1>
+            <div class="titulo">
+                <img src="img/ram.svg" id="sapo-ram" alt="Sapo Ram">
+                <h1 style="color: #3DD715; margin-left: 12px;">ram</h1>
+                <h1>point.</h1>
+            </div>
             <nav>
                 <a href="">HOME</a>
                 <a href="">PLAY</a>
@@ -25,148 +30,189 @@
                 <a href="">MATERIAIS</a>
                 <a href="">QR CODE</a>
                 <a href="">FALE CONOSCO</a>
-                <img src="img/perfil.svg" alt="perfil">
             </nav>
+
+            <!-- modal sem perfil -->
+            <div class="modal-sem-perfil">
+                <div class="content-sem-perfil">
+                    <p class="perfil">Perfil</p>
+                    <img src="./img/user.svg" id="foto-perfil" alt="Foto de perfil">
+                    <div class="fundo">
+                        <p class="texto-perfil">Sem login</p>
+                        <div class="grupo">
+                            <div class="linha"></div>
+                            <a class="cadastro">Cadastrar-se</a>
+                            <div class="linha"></div>
+                            <a class="login">Fazer login</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="modalBtn"><img id="perfil" src="img/perfil.svg" alt="perfil"></button>
+            <!-- modal sem perfil -->
+
+            <div class="dropdown">
+
+                <img class="dropbtn" id="drop" src="img/heroicons-outline_menu.svg" alt="drop">
+                <div class="dropdown-content">
+                    <a href="">Link 1</a>
+                    <a href="">Link 2</a>
+                    <a href="">Link 3</a>
+                </div>
+            </div>
+
+            <!-- modal com perfil -->
+            <!-- <div class="modal-com-perfil">
+                <div class="content-com-perfil">
+                    <p class="perfil">Perfil</p>
+
+                    <div class="fundo">
+                        <img src="./img/user.svg" id="foto-perfil" alt="Foto de perfil">
+                        <p class="texto-perfil">Sem login</p>
+                        <div class="grupo">
+                            <div class="linha"></div>
+                            <a class="cadastro">Cadastrar-se</a>
+                            <div class="linha"></div>
+                            <a class="login">Fazer login</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="modalBtn"><img id="perfil" src="img/perfil.svg" alt="perfil"></button> -->
+            <!-- modal com perfil -->
+
         </header>
 
-        <div class="imagem-fundo">
+        <section class="imagem-fundo">
             <img src="./img/imagem-fundo.svg" class="imagem-inicial" alt="">
-        </div>
+            <h1 id="titulo-inicial">VAMOS COMEÇAR?</h1>
+            <p id="texto-inicial"><span id="span-preto">Potencialize seus eletrônicos em oportunidades!</span> Doe,
+                acumule <span id="span-azul">Ramcoins</span> e troque por cupons incríveis.</p>
 
-        <div class="informacoes">
-            <div class="info-box1">
-                <h1 id="p-informacoes">Como funciona?</h1>
-                <p id="info-box">Os eletrônicos que você doar em nossa unidade, vai ser analisado e transformado em
-                    <span>RAMCOINS</span>, ou seja moedas de acumulação valendo <span>cupons</span> íncriveis que estão
-                    disponíveis para utilizar
-                    em nossas lojas parceiras e garantir <span>seu desconto exclusivo</span>!
-                </p>
+            <div class="botao">
+                <button id="btn"><img src="./img/seta.svg" id="seta-branca" alt=""></button>
             </div>
-        </div>
+        </section>
+        <section id="scrollTarget">
+            <h1 id="titulo1">Como funciona?</h1>
+            <p id="texto1">Os eletrônicos que você doar em nossa unidade, vai ser analisado e transformado em
+                <span id="span-preto">RAMCOINS</span>, ou seja moedas de acumulação valendo <span
+                    id="span-preto">cupons</span> íncriveis que estão
+                disponíveis para utilizar
+                em nossas lojas parceiras e garantir <span id="span-preto">seu desconto exclusivo</span>!
+            </p>
+        </section>
 
-        <div class="informacoes">
+        <section class="cupons">
+            <!-- <img src="./img/wave.svg" id="onda" alt=""> -->
+            <h1 id="titulo2">Nossos cupons</h1>
+            <p id="texto2">Veja sobre nossos cupons <span id="span-preto">RAMTÁSTICOS</span> disponíveis para você.</p>
 
-            <div class="info-box1">
-                <h1 class="titulo">nossos cupons</h1>
-                <p>Veja sobre nossos cupons <span>RAMTÁSTICOS</span> disponíveis para você.</p>
-
-                <div class="flex-container">
-                    <div class="item1">
-                        <h3>RÃ DOURADA</h3>
-                        <img src="./img/cupom-dourada.svg" alt="Imagem cupom 'Rã Dourada'">
-                    </div>
-                    <div class="item2">
-                        <h3>RÃ DE VIDRO</h3>
-                        <img src="./img/cupom-vidro.svg" alt="Imagem cupom 'Rã de Vidro'">
-                    </div>
-                    <div class="item3">
-                        <h3>RÃ GOLIAS</h3>
-                        <img src="./img/cupom-golias.svg" alt="Imagem cupom 'Rã Golias'">
-                    </div>
+            <div class="card-cupons">
+                <div class="item1">
+                    <h3 id="titulo-card">RÃ DOURADA</h3>
+                    <img src="./img/cupom-dourado.svg" alt="Imagem cupom 'Rã Dourada'">
+                    <img src="./img/seta-preta.svg" class="btn-cupom" alt="">
+                </div>
+                <div class="item2">
+                    <h3 id="titulo-card">RÃ DE VIDRO</h3>
+                    <img src="./img/cupom-vidro.svg" alt="Imagem cupom 'Rã de Vidro'">
+                    <img src="./img/seta-preta.svg" class="btn-cupom" alt="">
+                </div>
+                <div class="item3">
+                    <h3 id="titulo-card">RÃ GOLIAS</h3>
+                    <img src="./img/cupom-golias.svg" alt="Imagem cupom 'Rã Golias'">
+                    <img src="./img/seta-preta.svg" class="btn-cupom" alt="">
                 </div>
             </div>
+        </section>
 
-            <!-- <div class="header">
-                <div>
-                    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-                        <defs>
-                            <path id="gentle-wave"
-                                d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-                        </defs>
-                        <g class="parallax">
-                            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(192, 210, 255, 1)" />
-                            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(192, 210, 255, 0.5)" />
-                            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(192, 210, 255, 1)" />
-                            <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(192, 210, 255, 0.2)" />
-                        </g>
-                    </svg>
+        <section class="section-empresas">
+            <h1 id="titulo1">Empresas disponíveis</h1>
+            <p id="texto1">Nossas parceiras onde você pode resgatar seus prêmios com os cupons!</p>
+
+            <div id="empresas">
+                <div class="card-empresa">
+                    <img src="./img/magalu.svg" alt="Logo da empresa Magazine Luiza" class="img-empresas">
+                    <p id="titulo-empresas">Magazine Luiza</p>
+                    <p id="endereco-empresas">Av. Vinte e Seis de Março, 187 - Centro, Barueri - SP, 06401-050</p>
                 </div>
-            </div> -->
-        </div>
-
-
-        <div class="info-box1">
-            <h1 id="p-informacoes">Conquistas</h1>
-            <p id="info-box">Realize nossos desafios e conquiste nossas medalhas RAMCRÍVEIS!</p>
-        </div>
-        <div class="Conquistas">
-            <img src="img/salto tecnologico.svg" alt="medalha salto"><br>
-            <img src="img/coracao generoso.svg" alt="medalha coracao"><br>
-            <img src="img/explosao eletronica.svg" alt=" medalha explosao"><br>
-            <img src="img/engrenagem solidaria.svg" alt="medalha solidaria"><br>
-            <img src="img/raio da esoerança.svg" alt="medalha esperança">
-        </div>
-
-
-
-        <footer class="conteiner-footer">
-            <div class="flor">
-                <img src="img/vitoria-regia.svg" alt="">
+                <div class="card-empresa">
+                    <img src="./img/casasBahia.svg" alt="Logo da empresa Casas Bahia" class="img-empresas">
+                    <p id="titulo-empresas">Casas Bahia</p>
+                    <p id="endereco-empresas">Av. Vinte e Seis de Março, 187 - Centro, Barueri - SP, 06401-050</p>
+                </div>
+                <div class="card-empresa">
+                    <img src="./img/techlife.svg" alt="Logo genérica" class="img-empresas">
+                    <p id="titulo-empresas">TechLife Store</p>
+                    <p id="endereco-empresas">Av. Tamboré, 1000, Centro Comercial, Barueri - SP, 06460-000</p>
+                </div>
             </div>
+        </section>
 
-            <h2 id="textos-footer">Quer ser nosso parceiro?</h2>
+        <section class="conquistas">
+            <h1 id="titulo1">Conquistas</h1>
+            <p id="texto1">Realize nossos desafios e conquiste nossas medalhas <span id="span-preto">RAMCRÍVEIS</span>!</p>
 
-            <p id="textos-footer">Envie-nos seu email!</p>
+            <div class="medalhas">
+                <img src="img/salto-tecnologico.svg" alt="medalha salto"><br>
+            <img src="img/coracao-generoso.svg" alt="medalha coracao"><br>
+            <img src="img/explosao-eletronica.svg" alt=" medalha explosao"><br>
+            <img src="img/engrenagem-solidaria.svg" alt="medalha solidaria"><br>
+            <img src="img/raio-esperança.svg" alt="medalha esperança">
+            </div>
+        </section>
 
+
+        <footer class="footer-container">
+            <h2>Quer ser nosso parceiro?</h2>
+            <p>Envie-nos seu email!</p>
             <div class="email">
                 <input type="email" placeholder="Insira seu email aqui">
                 <button>Enviar</button>
             </div>
-
-            <div class="redes-sociais">
-                <div>
-                    <h3 id="textos-footer">REDES SOCIAIS</h3>
+            <div class="descricao-footer">
+                <div class="logo">
+                    <img src="./img/logoBranca.svg" class="logoBranca" alt="Imagem Logo branca 'rampoint'">
+                    <img src="./img/logoBranca-extenso.svg" class="logoBranca-small"
+                        alt="Imagem Logo branca 'rampoint'">
+                </div>
+                <div class="geral">
+                    <h3 id="geral-titulo">GERAL</h3>
                     <ul>
-                        <li id="textos-footer"><a href="#">Instagram</a></li>
-                        <li id="textos-footer"><a href="#">Tiktok</a></li>
-                        <li id="textos-footer"><a href="#">Facebook</a></li>
-                        <li id="textos-footer"><a href="#">Linkedln</a></li>
+                        <li><a href="#">Sobre Nós</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Política e Privacidade</a></li>
+                        <li><a href="#">Termos e Condições</a></li>
                     </ul>
                 </div>
-
-                <div>
-                    <h3 id="textos-footer">CONTATO</h3>
-                    <p id="textos-footer">Email: rampointofc@gmail.com</p>
-                    <p id="textos-footer">Telefone: (11) 93350-6834</p>
+                <div class="redes-sociais">
+                    <h3 id="redes_sociais-titulo">REDES SOCIAIS</h3>
+                    <ul>
+                        <li><a href="https://www.instagram.com/rampoint_?igsh=MWptbnVwdDAzN3NkNw==">Instagram</a></li>
+                        <li><a href="#">Tiktok</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Linkedln</a></li>
+                    </ul>
                 </div>
+                <div class="contato">
+                    <h3 id="contato-titulo">CONTATO</h3>
+                    <p><b>Email:</b> rampointofc@gmail.com</p>
+                    <p><span>Telefone:</span> (11) 93350-6834</p>
+                    <p class="endereco"><span>Endereço:</span> Rua João Batista Soares, 440 - Centro, Barueri - SP,
+                        06401-135</p>
+                </div>
+            </div>
+            <p class="copyright">Copyright &copy; 2024 Rampoint</p>
 
-            </div>
-            <div class="logo">
-                <img src="img/logoBranca.svg" class="logoBranca" alt="Imagem Logo branca 'rampoint'">
-                <img src="img/logoBranca-extenso.svg" class="logoBranca-small" alt="">
-            </div>
+
         </footer>
+        <script src="js/botao.js"></script>
+        <script src="js/modal.js"></script>
+
     </div>
 </body>
 
 </html>
-
-<!-- 
-    <div class="info-box1">
-        <p id="p-informacoes">Conquistas</p>
-        <p id="info-box">Realize nossos desafios e conquiste nossas medalhas <b>RAMCRÍVEIS!</b></p>
-        <div class="medalhas">
-            <img src="img/engrenagem solidaria.svg" alt="">
-            <img src="img/explosao eletronica.svg" alt="">
-            <img src="img/raio da esoerança.svg" alt="">
-            <img src="img/salto tecnologico.svg" alt="">
-            <img src="img/Group 555.svg" alt="">
-        </div>
-    </div> -->
-
-
-<!-- <div class="qrcode-box">
-            <div class="codigo-aqui">
-                <p style="margin-right:300px;">Coloque seu codigo aqui:</p>
-                <input type="text">
-                <button id="gerar-button">gerar</button>
-                <div class="qrcode-salvar">
-                    <div class="imgqrcode"><img src="img/qrcode.svg"></div>
-                    <div class="down-salvar">
-                        <button>Download</button><br><br>
-                        <button>Salvar</button>
-                    </div>
-                </div>
-            </div>
-        </div> -->

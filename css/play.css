@@ -11,403 +11,183 @@ body {
   background-color: #f8f8ff;
 }
 
-/* Header começo */
-
-header {
-  display: flex;
-  width: 79%;
-  font-family: "Batangas";
-  margin: auto;
-}
-
-nav {
-  color: black;
-  font-family: "Blinker";
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 100%;
-}
-
-/* Header final */
-
-/* CSS IMAGEM COMEÇO */
-
-.scroll-ball {
-  position: relative;
-  background-color: #2a55c2;
-  padding: 1.5%;
-  clip-path: circle();
-  height: 100%;
-  margin: auto;
-  bottom: 250px;
-}
-
-#background {
-  position: relative;
-  width: 100%;
-}
-
-/* CSS IMAGEM FINAL */
-
-/* #p-informacoes {
-  font-family: "blinker-extrabold";
-  color: #7ad761;
-  margin-bottom: 20px;
-}
-
-#info-box {
-  font-family: "Poppins-light";
-}
-
-.info-box1 {
-  font-family: "Poppins-medium";
-  margin: auto;
-  width: 900px;
-  display: flex;
-  flex-direction: column;
-  margin-top: 100px;
-} */
-
-/* nossos cupons começo */
-
-.titulo {
-  font-family: "Blinker-extrabold";
-  color: var(--azul);
-  margin: 50px 0 15px 0;
-}
-
-.info-box1-cupom {
-  font-family: "Poppins-medium";
-  margin: auto;
-  width: 900px;
-  display: flex;
-  flex-direction: column;
-  margin-top: 100px;
-  background-image: url("/img/wave.svg");
-}
-
-#medalha {
-  background-color: #2a55c2;
-  width: 230px;
-  height: 260px;
-  border-radius: 30px;
-  font-family: "Blinker-extrabold";
-  text-align: center;
-  margin: 60px 70px 0px 0px;
-  box-shadow: inset 1px 1px 1px 1px #143587;
-}
-
-.medalhas {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-#medalha img {
-  margin-top: 20px;
-}
-
-#bola {
-  position: relative;
-  bottom: 60px;
-  left: 80px;
-}
-
-/* nossos cupons final */
-
-/* empresas parceiras começo */
-
-.empresas {
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 60px;
-}
-
-#empresa {
-  text-align: center;
-  margin: 40px;
-  background: #c0d2ff;
-  border-radius: 30px;
-  width: 243px;
-  height: 280px;
-}
-
-.info-empresas {
-  position: relative;
-  margin-left: 10px;
-  margin-right: 10px;
-  bottom: 70px;
-}
-
-#empresa img {
-  position: relative;
-  bottom: 80px;
-}
-
-#empresa p {
-  font-family: "Poppins-medium";
-  color: #112e78;
-}
-
-#empresa h1 {
-  font-family: "Poppins-bold";
-  color: #112e78;
-}
-
-/* empresas parceiras final */
-
-.Conquistas {
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-/* CSS IMAGEM COMEÇO */
-
 .imagem-fundo {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  margin: 30px auto;
+  align-items: center;
+  margin: 25px;
 }
 
-#h1-play {
+#titulo-inicial {
   font-family: "Blinker-extrabold";
-}
-
-#h1-play-image-comecar {
-  font-family: "Blinker-extrabold";
+  color: var(--preto);
+  font-size: 5em;
+  z-index: 1;
+  width: 25%;
+  line-height: 0.8em;
+  text-align: center;
+  text-shadow: 0px 8px 7px rgba(0, 0, 0, 0.2);
   position: absolute;
-  top: 34%;
-  left: 42%;
-  transform: translate(-20%, -50%);
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-#h1-play-image-vamos {
-  font-family: "Blinker-extrabold";
-  position: absolute;
-  top: 23%;
-  left: 44%;
-  transform: translate(-20%, -50%);
-}
-
-#p-play-image-descricao1 {
-  font-family: "Poppins-bold";
-  position: absolute;
-  top: 54%;
-  left: 41%;
-  transform: translate(-20%, -50%);
-}
-
-#p-play-image-descricao2 {
-  font-family: "Poppins-bold";
-  position: absolute;
-  top: 57%;
-  left: 41%;
-  transform: translate(-20%, -50%);
-}
-
-#p-play-image-descricao3 {
-  font-family: "Poppins-bold";
-  position: absolute;
-  top: 57%;
-  left: 48%;
-  transform: translate(-20%, -50%);
-}
-
-.img-home-apresentacao {
-  margin-left: auto;
-  position: relative;
-}
-
-.img-home-apresentacao img {
-  width: 1500px;
-  margin: auto;
-  display: block;
-}
-/* CSS IMAGEM FINAL */
-
-#p-informacoes {
-  font-family: "blinker-extrabold";
-  color: #7ad761;
-  margin: 85px 0 15px 0;
-}
-
-#info-box {
-  font-family: "Poppins-regular";
-}
-
-span {
+#texto-inicial {
   font-family: "Poppins-semibold";
-  color: var(--pretoreto);
+  color: var(--preto);
+  z-index: 1;
+  width: 35%;
+  line-height: 1em;
+  text-align: center;
+  text-shadow: 0px 8px 7px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.info-box1 {
+#span-preto {
+  font-family: "Poppins-bold";
+  color: var(--preto);
+}
+
+#span-azul {
+  font-family: "Poppins-bold";
+  color: var(--azul);
+}
+
+#btn {
+  background-color: var(--azul);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+#scrollTarget {
+  margin-top: 70px; /* Define o ponto de destino para o scroll */
+}
+
+#titulo1 {
+  font-family: "Blinker-extrabold";
+  color: var(--verde);
+  font-size: 1.7em;
+  margin: 1em 0 0.5em 8em;
+}
+
+#texto1 {
   font-family: "Poppins-regular";
-  margin-right: 500px;
-  margin-left: 170px;
+  color: var(--preto);
+  margin-left: 15.5em;
+  width: 70%;
 }
 
-.flex-container {
+.cupons {
+  margin-top: 5em;
+  /* background-image: url("/img/wave.svg"); */
+}
+
+#titulo2 {
+  font-family: "Blinker-extrabold";
+  color: var(--azul);
+  font-size: 1.7em;
+  margin-left: 8em;
+}
+
+#texto2 {
+  font-family: "Poppins-regular";
+  color: var(--preto);
+  margin-left: 15.5em;
+  width: 50%;
+}
+
+.card-cupons {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   flex-wrap: nowrap;
-  width: 100%;
-  height: 100%;
   padding: 15px;
   gap: 5px;
 }
 
-.flex-container > div {
-  background: var(--azul);
-  border-radius: 15px;
-  padding: 8px;
-}
-
-.flex-container h3 {
+#titulo-card {
   color: var(--branco);
   font-family: "Blinker-extrabold";
   text-align: center;
-  font-size: 22px;
 }
 
-.flex-container img {
-  width: 150px;
-  height: auto;
-  margin-top: 15px;
-}
-
-.item1, .item2, .item3 {
+.item1,
+.item2,
+.item3 {
+  display: flex;
+  flex-direction: column;
   align-self: center;
+  background-color: var(--azul);
+  border-radius: 15px;
+  padding: 10px;
 }
 
-/* qr code começo 
-.qrcode-box {
-    display: flex;
-    font-family: "Poppins-semibold";
-    background-color: #D9D9D9;
-    text-align: center;
-    border-radius: 30px;
-    filter: drop-shadow(5px 5px 4px #e7e3e3);
-    margin: auto;
-    padding: 20px;
-    flex-direction: column;
-
+.btn-cupom {
+  background-color: var(--branco);
+  border: none;
+  border-radius: 25px;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.codigo-aqui {
-
-    justify-content: space-around;
+#empresas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3em;
 }
 
-.codigo-aqui button {
-    margin-left: 60px;
+.card-empresa {
+  background-color: #C0D2FF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 30px;
+  width: 13em;
+  height: 15em;
 }
 
-.qrcode-salvar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.qrcode-box div {
-
-    margin: 10px 10px 10px 10px;
-}
-
-
-.qrcode-box button {
-    font-family: "Poppins-bold";
-    border-radius: 30px;
-    box-shadow: 1px;
-    font-size: medium;
-    padding: 5px 20px 5px 20px;
-    color: white;
-    background-color: #2A55C2;
-    border: solid #2A55C2;
-}
-
-#gerar-button {
-    background-color: #7AD761;
-    border: solid #7AD761;
-}
-
-.qrcode-box input {
-    border-radius: 30px;
-    box-shadow: 4px;
-    border: solid #F8F8FF;
-    filter: drop-shadow(5px 5px 4px #8e8e8e);
-    padding: 5px 100px 5px 115px;
-
-}
-
-.qrcode-box p {
-    padding: 0px 100px 0px 100px;
-}
-qr code final*/
-
-/* 
-conquistas começo */
-/* 
-conquistas finais */
-
-/* onda  */
-/* 
-.waves {
+.img-empresas {
   position: relative;
-  width: 100%;
-  height: 100vh;
-  margin-bottom: -7px;
-  min-height: 100px;
-  max-height: 500px;
 }
 
-.content {
-  position: relative;
-  height: 20vh;
+#titulo-empresas {
+  font-family: "Poppins-bold";
+  color: #112E78;
+}
+
+#endereco-empresas {
+  font-family: "Poppins-medium";
+  color: #112E78;
+  width: 14em;
   text-align: center;
-  background-color: white;
 }
 
-.parallax > use {
-  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+.medalhas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5em;
 }
-.parallax > use:nth-child(1) {
-  animation-delay: -2s;
-  animation-duration: 7s;
-}
-.parallax > use:nth-child(2) {
-  animation-delay: -3s;
-  animation-duration: 10s;
-}
-.parallax > use:nth-child(3) {
-  animation-delay: -4s;
-  animation-duration: 13s;
-}
-.parallax > use:nth-child(4) {
-  animation-delay: -5s;
-  animation-duration: 20s;
-}
-@keyframes move-forever {
-  0% {
-    transform: translate3d(-90px, 0, 0);
-  }
-  100% {
-    transform: translate3d(85px, 0, 0);
-  }
-}
-@media (max-width: 768px) {
-  .waves {
-    height: 40px;
-    min-height: 40px;
-  }
-  .content {
-    height: 30vh;
-  }
-} 
-  */

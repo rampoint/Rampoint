@@ -146,19 +146,13 @@
         display: flex;
         justify-content: space-between;   
     }
-    nav{
-        display: none;
-
-    }
+    
     #perfil{
     float: left;
-    display: none;
+    
     }
 
-    #drop{
-        display: block;
-    }
-
+    
     .info-box{
       width: auto;
       text-align: center;

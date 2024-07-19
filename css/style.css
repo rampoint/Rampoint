@@ -8,8 +8,9 @@
   }
 
   #imagem-apresentação{
-    width: 70%;
-    margin: auto;
+    width: 90%;
+    margin-left:15%;
+    margin-right: 15%;
   }
 
   .info-box {

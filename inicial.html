@@ -26,14 +26,14 @@
             <nav>
                 <a href="">HOME</a>
                 <a href="">PLAY</a>
-                <a href="">ECOPONTOS</a>
+                <a href="#ecopontos">ECOPONTOS</a>
                 <a href="">MATERIAIS</a>
                 <a href="">QR CODE</a>
                 <a href="">FALE CONOSCO</a>
             </nav>
 
-            <!-- modal sem perfil -->
-            <div class="modal-sem-perfil">
+            <!-- Modal sem perfil -->
+            <div class="modal-sem-perfil" id="modalSemPerfil">
                 <div class="content-sem-perfil">
                     <p class="perfil">Perfil</p>
                     <img src="./img/user.svg" id="foto-perfil" alt="Foto de perfil">
@@ -49,8 +49,8 @@
                 </div>
             </div>
 
-            <button class="modalBtn"><img id="perfil" src="img/perfil.svg" alt="perfil"></button>
-            <!-- modal sem perfil -->
+            <button class="modalBtn" id="openModalBtn"><img id="perfil" src="img/perfil.svg" alt="perfil"></button>
+            <!-- Modal sem perfil -->
 
             <div class="dropdown">
 
@@ -127,7 +127,7 @@
             </div>
         </section>
 
-        <section class="info-box">
+        <section id="ecopontos" class="info-box">
             <h1 id="h1-info">Os mais próximos de você</h1>
             <p id="p-info">Coloque seu endereço para mostrarmos os ecopontos mais próximos de você!</p>
             <div class="form-conteiner">
@@ -251,7 +251,8 @@
 
 
         </footer>
-        <script src="js/modal.js"></script>
+        <script src="./js/modal.js"></script>
+        <script src="./js/scroll.js"></script>
 
     </div>
 </body>

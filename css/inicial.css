@@ -178,14 +178,17 @@ span {
 /* fim grid */
 
 /* form sem meme */
+
+/* começo link header ecoponto */
 .info-box {
-  font-family: "Poppins-medium";
   margin: auto;
   width: 900px;
   display: flex;
   flex-direction: column;
   margin-top: 100px;
 }
+
+/* final link header ecoponto */
 
 #h1-info {
   font-family: "Blinker-extrabold";

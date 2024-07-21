@@ -1,0 +1,225 @@
+@import url(../css/font.css);
+
+@import url(../css/cores.css);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f8f8ff;
+}
+
+/* começo imagem inicial */
+
+.imagem-fundo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 25px;
+}
+
+#titulo-inicial {
+  font-family: "Blinker-extrabold";
+  color: var(--preto);
+  font-size: 5em;
+  z-index: 1;
+  width: 25%;
+  line-height: 0.8em;
+  text-align: center;
+  text-shadow: 0px 8px 7px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#texto-inicial {
+  font-family: "Poppins-semibold";
+  color: var(--preto);
+  z-index: 1;
+  width: 35%;
+  line-height: 1.5em;
+  text-align: center;
+  text-shadow: 0px 8px 7px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#span-preto {
+  font-family: "Poppins-bold";
+  color: var(--preto);
+}
+
+#span-azul {
+  font-family: "Poppins-bold";
+  color: var(--azul);
+}
+
+#btn {
+  background-color: var(--azul);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+#scrollTarget {
+  margin-top: 70px; /* Define o ponto de destino para o scroll */
+}
+
+/* final imagem inicial */
+
+/* começo dos textos */
+
+#titulo1 {
+  font-family: "Blinker-extrabold";
+  color: var(--verde);
+  font-size: 1.7em;
+  margin: 1em 0 0.5em 8em;
+}
+
+#texto1 {
+  font-family: "Poppins-regular";
+  color: var(--preto);
+  margin-left: 15.5em;
+  width: 70%;
+}
+
+.cupons {
+  margin-top: 5em;
+  /* background-image: url("/img/wave.svg"); */
+}
+
+#titulo2 {
+  font-family: "Blinker-extrabold";
+  color: var(--azul);
+  font-size: 1.7em;
+  margin-left: 8em;
+}
+
+#texto2 {
+  font-family: "Poppins-regular";
+  color: var(--preto);
+  margin-left: 15.5em;
+  width: 50%;
+}
+
+/* final dos textos */
+
+/* começo dos cards dos cupons */
+
+.card-cupons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 15px;
+  gap: 5px;
+}
+
+#titulo-card {
+  color: var(--branco);
+  font-family: "Blinker-extrabold";
+  font-size: 1.1em;
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+.item1,
+.item2,
+.item3 {
+  background-color: var(--azul);
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.13) inset;
+}
+
+.btn-cupom {
+  background-color: var(--branco);
+  border: none;
+  border-radius: 25px;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-left: 7.5em;
+  margin-top: -1.5em;
+}
+
+/* final dos cards dos cupons */
+
+/* começo dos cards das empresas */
+
+#empresas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5em;
+  flex-wrap: nowrap;
+}
+
+.card-empresa {
+  background-color: #c0d2ff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 15em;
+  height: 6.5em;
+  border-radius: 30px;
+  padding: 10px;
+  margin: 5px;
+}
+
+/*
+
+.img-empresas {
+  position: relative;
+  bottom: 2em;
+}
+*/
+
+#titulo-empresas {
+  font-family: "Poppins-bold";
+  color: #112e78;
+  font-size: 1em;
+}
+
+#endereco-empresas {
+  font-family: "Poppins-medium";
+  color: #112e78;
+  width: 14em;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+/* final dos cards das empresas */
+
+/* começo das medalhas */
+
+.medalhas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5em;
+}
+
+/* final das medalhas */

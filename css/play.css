@@ -11,6 +11,8 @@ body {
   background-color: #f8f8ff;
 }
 
+/* começo imagem inicial */
+
 .imagem-fundo {
   display: flex;
   flex-direction: column;
@@ -76,6 +78,10 @@ body {
   margin-top: 70px; /* Define o ponto de destino para o scroll */
 }
 
+/* final imagem inicial */
+
+/* começo dos textos */
+
 #titulo1 {
   font-family: "Blinker-extrabold";
   color: var(--verde);
@@ -109,6 +115,10 @@ body {
   width: 50%;
 }
 
+/* final dos textos */
+
+/* começo dos cards dos cupons */
+
 .card-cupons {
   display: flex;
   justify-content: center;
@@ -122,18 +132,21 @@ body {
 #titulo-card {
   color: var(--branco);
   font-family: "Blinker-extrabold";
+  font-size: 1.1em;
   text-align: center;
+  margin-bottom: 0.5em;
 }
 
 .item1,
 .item2,
 .item3 {
+  background-color: var(--azul);
   display: flex;
   flex-direction: column;
   align-self: center;
-  background-color: var(--azul);
   border-radius: 15px;
   padding: 10px;
+  box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.13) inset;
 }
 
 .btn-cupom {
@@ -145,44 +158,61 @@ body {
   padding: 5px;
   cursor: pointer;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-left: 7.5em;
+  margin-top: -1.5em;
 }
+
+/* final dos cards dos cupons */
+
+/* começo dos cards das empresas */
 
 #empresas {
   display: flex;
-  align-items: center;
   justify-content: center;
-  margin-top: 3em;
+  align-items: center;
+  margin-top: 5em;
+  flex-wrap: nowrap;
 }
 
 .card-empresa {
-  background-color: #C0D2FF;
+  background-color: #c0d2ff;
+  text-align: center;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 15em;
+  height: 6.5em;
+  border-radius: 30px;
   padding: 10px;
   margin: 5px;
-  border-radius: 30px;
-  width: 13em;
-  height: 15em;
 }
+
+/*
 
 .img-empresas {
   position: relative;
+  bottom: 2em;
 }
+*/
 
 #titulo-empresas {
   font-family: "Poppins-bold";
-  color: #112E78;
+  color: #112e78;
+  font-size: 1em;
 }
 
 #endereco-empresas {
   font-family: "Poppins-medium";
-  color: #112E78;
+  color: #112e78;
   width: 14em;
   text-align: center;
+  font-size: 0.8em;
 }
+
+/* final dos cards das empresas */
+
+/* começo das medalhas */
 
 .medalhas {
   display: flex;
@@ -191,3 +221,5 @@ body {
   justify-content: center;
   margin-bottom: 5em;
 }
+
+/* final das medalhas */

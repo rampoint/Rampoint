@@ -2,30 +2,16 @@
 
 @import url(../css/cores.css);
 
-
-.ram {
-  font-family: "Batangas";
-  color: #3dd715;
-  margin-left: 12px;
-}
-
-.point {
-  font-family: "Batangas";
-  color: #121212;
-}
-
-.conteiner {
-  display: flex;
-  flex-direction: column;
+h1 {
+  color: var(--preto);
 }
 
 header {
   display: flex;
   font-family: "Batangas";
-  margin: 20px 50px 30px 50px;
+  margin: 20px 50px 50px 50px;
   align-items: center;
   justify-content: center;
-  width: 75%;
 }
 
 nav {
@@ -121,35 +107,39 @@ a:hover {
   width: 100%;
   height: 100%;
   overflow: auto;
-  /* background-color: rgba(0, 0, 0, 0.4); */
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .content-sem-perfil {
   background-color: var(--verde);
   margin-top: 4em;
-  margin-left: 65em;
+  margin-left: 73em;
   padding: 0;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
   width: 15em;
-  height: 18em;
+  height: 20em;
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .fundo {
   background-color: var(--branco);
   width: 15em;
-  height: 16em;
-  border-top-left-radius: 50px;
-  border-top-right-radius: 50px;
+  height: 14em;
+  border-top-left-radius: 55px;
+  border-top-right-radius: 55px;
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: -40px;
 }
 
 .grupo {
@@ -162,11 +152,13 @@ a:hover {
 .perfil,
 .texto-perfil {
   font-family: "Poppins-bold";
+  font-size: 0.9em;
 }
 
 .cadastro,
 .login {
   font-family: "Poppins-medium";
+  font-size: 0.9em;
 }
 
 .cadastro {
@@ -174,7 +166,7 @@ a:hover {
   text-decoration: none;
 }
 
-.cadastro:hover{
+.cadastro:hover {
   color: var(--preto);
   text-decoration: none;
   cursor: pointer;
@@ -185,7 +177,7 @@ a:hover {
   text-decoration: none;
 }
 
-.login:hover{
+.login:hover {
   text-decoration: none;
   cursor: pointer;
 }
@@ -193,7 +185,7 @@ a:hover {
 .perfil {
   color: var(--branco);
   padding: 0;
-  margin: 10px 0 20px 0;
+  margin: 15px 0 20px 0;
 }
 
 .texto-perfil {
@@ -204,4 +196,8 @@ a:hover {
   width: 13em;
   border-bottom: 1px solid rgba(0, 0, 0, 0.35);
   margin: 10px 0;
+}
+
+#foto-perfil {
+  position: relative;
 }

@@ -2,46 +2,41 @@
 
 @import url(../css/cores.css);
 
-* {
-  margin: 0 auto;
-}
-
-body,
 h2,
-h3,
 p,
+li,
 .btn-enviar {
   color: var(--branco);
 }
 
-body {
-  background-color: var(--branco);
-}
-
 h2 {
-  font-family: "Blinker-extrabold";
+  font-family: "Blinker-extrabold", sans-serif;
+  font-size: 22px;
   margin-top: 30px;
 }
 
 p {
-  font-family: "Poppins-semibold";
+  font-family: "Poppins-semibold", sans-serif;
+  font-size: 14px;
   margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 h3,
 .btn-enviar {
-  font-family: "Poppins-extrabold";
+  font-family: "Poppins-extrabold", sans-serif;
+  font-size: 18px;
 }
 
-.container .vitoria-regia {
+.footer-container .vitoria-regia {
   position: absolute;
-  top: auto;
+  bottom: 20px;
   right: 70px;
 }
 
 .logoBranca {
-  width: 140px;
+  width: 150px;
+  height: auto;
 }
 
 .btn-enviar {
@@ -52,23 +47,13 @@ h3,
   height: 30px;
 }
 
-.container {
+.footer-container {
   background-color: var(--azul);
   width: 100%;
   height: auto;
-  padding: 20px 0px 80px 0px;
+  padding: 20px 0px 20px 0px;
   text-align: center;
   bottom: 0;
-}
-
-.container .logo {
-  left: -20px;
-  bottom: 20px;
-}
-
-.logoBranca {
-  width: 130px;
-  height: auto;
 }
 
 .logoBranca-small {
@@ -77,17 +62,17 @@ h3,
   height: auto;
 }
 
-.container .email {
+.footer-container .email {
   margin-top: 20px;
 }
 
-.container input[type="email"] {
+.footer-container input[type="email"] {
   background-color: var(--branco);
   padding: 10px;
   border: none;
   border-radius: 30px;
   width: 400px;
-  height: 30px;
+  height: 20px;
   max-width: 80%;
   margin-right: 10px;
   font-family: "Poppins-bold";
@@ -98,7 +83,7 @@ input:focus {
   outline: none;
 }
 
-.container button {
+.footer-container button {
   height: 40px;
   padding: 10px 20px;
   border: none;
@@ -109,36 +94,71 @@ input:focus {
   cursor: pointer;
 }
 
-.container .redes-sociais {
+.footer-container .descricao-footer {
   display: flex;
-  justify-content: space-between;
   margin-top: 55px;
-  max-width: 70%;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.container .redes-sociais div {
+.footer-container .descricao-footer div {
   text-align: left;
 }
 
-.container .redes-sociais h3 {
+.footer-container .descricao-footer h3 {
   margin-bottom: 10px;
 }
 
-.container .redes-sociais ul {
+.footer-container .descricao-footer ul {
   list-style-type: none;
   padding: 0;
 }
 
-.container .redes-sociais li {
+.footer-container .descricao-footer li {
+  font-size: 15px;
   margin-bottom: 5px;
 }
 
-.container .redes-sociais a {
+.footer-container .descricao-footer a {
   color: var(--branco);
   text-decoration: none;
   font-family: "Poppins-semibold";
 }
 
-.container .redes-sociais a:hover {
+.footer-container .descricao-footer a:hover {
   text-decoration: underline;
+}
+
+.descricao-footer span {
+  font-family: "Poppins-bold";
+}
+
+.descricao-footer p {
+  font-family: "Poppins-medium";
+}
+
+.copyright {
+  margin-top: 50px;
+}
+
+.geral {
+  margin-right: 100px;
+  margin: 0px;
+}
+
+.redes-sociais {
+  margin: 0px;
+}
+
+#geral-titulo, #redes_sociais-titulo, #contato-titulo {
+  color: var(--branco);
+}
+
+.contato {
+  margin: 0px;
+  width: 270px;
+}
+
+#email-span, #telefone-span {
+  color: var(--branco);
 }

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/materiais.css">
+
+    <script src="https://kit.fontawesome.com/7eb7045707.js" crossorigin="anonymous"></script>
+
+    <link rel="shortcut icon" href="./img/rostoCirculo.svg" type="image/x-icon">
+    <title>Página Materiais</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="titulo">
+                <img src="img/ram.svg" id="sapo-ram" alt="Sapo Ram">
+                <h1 style="color: #3DD715; margin-left: 12px;">ram</h1>
+                <h1>point.</h1>
+            </div>
+            <nav>
+                <a href="">HOME</a>
+                <a href="">PLAY</a>
+                <a href="">ECOPONTOS</a>
+                <a href="">MATERIAIS</a>
+                <a href="">QR CODE</a>
+                <a href="">FALE CONOSCO</a>
+            </nav>
+
+            <!-- Modal sem perfil -->
+            <div class="modal-sem-perfil" id="modalSemPerfil">
+                <div class="content-sem-perfil">
+                    <p class="perfil">Perfil</p>
+                    <img src="./img/user.svg" id="foto-perfil" alt="Foto de perfil">
+                    <div class="fundo">
+                        <p class="texto-perfil">Sem login</p>
+                        <div class="grupo">
+                            <div class="linha"></div>
+                            <a class="cadastro">Cadastrar-se</a>
+                            <div class="linha"></div>
+                            <a class="login">Fazer login</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="modalBtn" id="openModalBtn"><img id="perfil" src="img/perfil.svg" alt="perfil"></button>
+            <!-- Modal sem perfil -->
+
+            <div class="dropdown">
+
+                <img class="dropbtn" id="drop" src="img/heroicons-outline_menu.svg" alt="drop">
+                <div class="dropdown-content">
+                    <a href="">Link 1</a>
+                    <a href="">Link 2</a>
+                    <a href="">Link 3</a>
+                </div>
+            </div>
+
+            <!-- modal com perfil -->
+            <!-- <div class="modal-com-perfil">
+                <div class="content-com-perfil">
+                    <p class="perfil">Perfil</p>
+
+                    <div class="fundo">
+                        <img src="./img/user.svg" id="foto-perfil" alt="Foto de perfil">
+                        <p class="texto-perfil">Sem login</p>
+                        <div class="grupo">
+                            <div class="linha"></div>
+                            <a class="cadastro">Cadastrar-se</a>
+                            <div class="linha"></div>
+                            <a class="login">Fazer login</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="modalBtn"><img id="perfil" src="img/perfil.svg" alt="perfil"></button> -->
+            <!-- modal com perfil -->
+
+        </header>
+
+        <section class="imagem-fundo">
+            <img src="./img/imagem-fundo.svg" class="imagem-inicial" alt="">
+            <h1 id="titulo-inicial">SAIBA SOBRE HARDWARE</h1>
+            <p id="texto-inicial"> <span id="span-preto">Detecte e Doe:</span> Seja o herói do seu <span
+                    id="span-vermelho">hardware</span>, doando para o ecoponto mais próximo!</p>
+
+            <div class="botao">
+                <button id="btn"><img src="./img/seta.svg" id="seta-branca" alt=""></button>
+            </div>
+        </section>
+
+        <section id="scrollTarget">
+            <h1 id="titulo1">O que é?</h1>
+            <p id="texto1">Hardware são os componentes físicos de um dispositivo ou sistema computacional, incluindo
+                placas de circuito, processadores, memória, discos rígidos, entre outros. É tudo o que você pode tocar
+                em um computador ou dispositivo eletrônico.
+            </p>
+
+            <section class="perifericos">
+                <h1 id="titulo1">Periféricos e componentes</h1>
+                <p id="texto1">Aprenda sobre os componentes do seu computador, como identificar problemas em cada um
+                    deles e o quanto valem. Tudo o que você doar é útil para a gente!
+                </p>
+            </section>
+
+        </section>
+
+        <section class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-header" id="accordion-header" onclick="mudarCorAzul()">
+                    <img src="./img/internos.svg" alt="Internos Icon" class="internos">
+                    <button class="accordion-button" id="internos" data-target="#collapseOne">INTERNOS</button>
+                    <i class="fas fa-chevron-down arrow-icon" style="color: #2a55c2;"></i>
+                </div>
+                <div id="collapseOne" class="accordion-collapse">
+                    <div class="accordion-body">
+                        <li class="materiais"><a href="">Placa de Vídeo (PGU)</a></li>
+                        <hr>
+                        <li class="materiais"><a href="">Placa-mãe</a></li>
+                        <hr>
+                        <li class="materiais"><a href="">Processador (CPU)</a></li>
+                        <hr>
+                        <li class="materiais"><a>Memória RAM</a></li>
+                        <hr>
+                        <li class="materiais"><a>Unidade de Armazenamento (HDD/SSD)</a></li>
+                        <hr>
+                        <li class="materiais"><a>Fonte de Alimentação (PSU)</a></li>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <img src="./img/perifericos.svg" alt="Periféricos Icon" class="icon">
+                    <button class="accordion-button" data-target="#collapseTwo">PERIFÉRICOS</button>
+                    <i class="fas fa-chevron-down arrow-icon" style="color: #2a55c2;"></i>
+                </div>
+                <div id="collapseTwo" class="accordion-collapse">
+                    <div class="accordion-body">
+                        <li class="materiais"><a>Monitor</a></li>
+                        <hr>
+                        <li class="materiais"><a>Teclado</a></li>
+                        <hr>
+                        <li class="materiais"><a>Mouse</a></li>
+                        <hr>
+                        <li class="materiais"><a>Alto-falantes</a></li>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <img src="./img/estrutura.svg" alt="Estrutura Icon" class="icon">
+                    <button class="accordion-button" data-target="#collapseThree">ESTRUTURA (GABINETE)</button>
+                    <i class="fas fa-chevron-down arrow-icon"></i>
+                </div>
+                <div id="collapseThree" class="accordion-collapse">
+                    <div class="accordion-body">
+                        <li class="materiais"><a>Baias de Drive</a></li>
+                        <hr>
+                        <li class="materiais"><a>Slots de Expansão</a></li>
+                        <hr>
+                        <li class="materiais"><a>Organização de Cabos</a></li>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <img src="./img/resfriamento.svg" alt="Resfriamento Icon" class="icon">
+                    <button class="accordion-button" data-target="#collapseFour">RESFRIAMENTO</button>
+                    <i class="fas fa-chevron-down arrow-icon" style="color: #2a55c2;"></i>
+                </div>
+                <div id="collapseFour" class="accordion-collapse">
+                    <div class="accordion-body">
+                        <li class="materiais"><a>Ventoinhas</a></li>
+                        <hr>
+                        <li class="materiais"><a>Dissipadores</a></li>
+                        <hr>
+                        <li class="materiais"><a>Filtros de Poeira</a></li>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <footer class="footer-container">
+            <h2>Quer ser nosso parceiro?</h2>
+            <p>Envie-nos seu email!</p>
+            <div class="email">
+                <input type="email" placeholder="Insira seu email aqui">
+                <button>Enviar</button>
+            </div>
+            <div class="descricao-footer">
+                <div class="logo">
+                    <img src="./img/logoBranca.svg" class="logoBranca" alt="Imagem Logo branca 'rampoint'">
+                    <img src="./img/logoBranca-extenso.svg" class="logoBranca-small"
+                        alt="Imagem Logo branca 'rampoint'">
+                </div>
+                <div class="geral">
+                    <h3 id="geral-titulo">GERAL</h3>
+                    <ul>
+                        <li><a href="#">Sobre Nós</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Política e Privacidade</a></li>
+                        <li><a href="#">Termos e Condições</a></li>
+                    </ul>
+                </div>
+                <div class="redes-sociais">
+                    <h3 id="redes_sociais-titulo">REDES SOCIAIS</h3>
+                    <ul>
+                        <li><a href="https://www.instagram.com/rampoint_?igsh=MWptbnVwdDAzN3NkNw==">Instagram</a></li>
+                        <li><a href="#">Tiktok</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Linkedln</a></li>
+                    </ul>
+                </div>
+                <div class="contato">
+                    <h3 id="contato-titulo">CONTATO</h3>
+                    <p><b>Email:</b> rampointofc@gmail.com</p>
+                    <p><span>Telefone:</span> (11) 93350-6834</p>
+                    <p class="endereco"><span>Endereço:</span> Rua João Batista Soares, 440 - Centro, Barueri - SP,
+                        06401-135</p>
+                </div>
+            </div>
+            <p class="copyright">Copyright &copy; 2024 Rampoint</p>
+
+
+        </footer>
+        <script src="js/botao.js"></script>
+        <script src="js/modal.js"></script>
+        <script src="./js/scroll.js"></script>
+        <script src="./js/menuAccordion.js"></script>
+
+    </div>
+</body>
+
+</html>

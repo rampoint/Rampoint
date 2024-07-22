@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/faq.css">
+
+    <link rel="shortcut icon" href="./img/rostoCirculo.svg" type="image/x-icon">
+    <title>Página Fale Conosco</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="titulo">
+                <img src="img/ram.svg" id="sapo-ram" alt="Sapo Ram">
+                <h1 style="color: #3DD715; margin-left: 12px;">ram</h1>
+                <h1>point.</h1>
+            </div>
+            <nav>
+                <a href="">HOME</a>
+                <a href="">PLAY</a>
+                <a href="">ECOPONTOS</a>
+                <a href="">MATERIAIS</a>
+                <a href="">QR CODE</a>
+                <a href="">FALE CONOSCO</a>
+            </nav>
+
+            <!-- Modal sem perfil -->
+            <div class="modal-sem-perfil" id="modalSemPerfil">
+                <div class="content-sem-perfil">
+                    <p class="perfil">Perfil</p>
+                    <img src="./img/user.svg" id="foto-perfil" alt="Foto de perfil">
+                    <div class="fundo">
+                        <p class="texto-perfil">Sem login</p>
+                        <div class="grupo">
+                            <div class="linha"></div>
+                            <a class="cadastro">Cadastrar-se</a>
+                            <div class="linha"></div>
+                            <a class="login">Fazer login</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="modalBtn" id="openModalBtn"><img id="perfil" src="img/perfil.svg" alt="perfil"></button>
+            <!-- Modal sem perfil -->
+
+            <div class="dropdown">
+
+                <img class="dropbtn" id="drop" src="img/heroicons-outline_menu.svg" alt="drop">
+                <div class="dropdown-content">
+                    <a href="">Link 1</a>
+                    <a href="">Link 2</a>
+                    <a href="">Link 3</a>
+                </div>
+            </div>
+
+            <!-- modal com perfil -->
+            <!-- <div class="modal-com-perfil">
+                <div class="content-com-perfil">
+                    <p class="perfil">Perfil</p>
+
+                    <div class="fundo">
+                        <img src="./img/user.svg" id="foto-perfil" alt="Foto de perfil">
+                        <p class="texto-perfil">Sem login</p>
+                        <div class="grupo">
+                            <div class="linha"></div>
+                            <a class="cadastro">Cadastrar-se</a>
+                            <div class="linha"></div>
+                            <a class="login">Fazer login</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="modalBtn"><img id="perfil" src="img/perfil.svg" alt="perfil"></button> -->
+            <!-- modal com perfil -->
+
+        </header>
+
+        <section class="imagem-fundo">
+            <img src="./img/imagem-fundo.svg" class="imagem-inicial" alt="">
+        </section>
+
+        <section class="campo1">
+            <h1 id="titulo1">Pesquise sua dúvida</h1>
+            <p id="texto1">Tem alguma dúvida? Pesquise aqui!</p>
+            <div class="duvida">
+                <input type="text" id="pesquisa" placeholder="Escreva aqui...">
+                <button id="btn"><img src="./img/lupa.svg" alt=""></button>
+            </div>
+        </section>
+
+        <section class="campo2">
+            <h1 id="titulo1">Perguntas Frequentes</h1>
+            <p id="texto1">Precisa de uma resposta? Você pode encontrar aqui!</p>
+
+            <section class="perguntas">
+                <div class="faq-container">
+                    <div class="faq-sidebar">
+                        <h3 id="titulo2">Filtrar por categoria</h3>
+                        <ul>
+                            <li><a href="#" class="category-link active" data-category="geral">Geral</a></li>
+                            <li><a href="#" class="category-link" data-category="tela-inicial">Tela Inicial</a></li>
+                            <li><a href="#" class="category-link" data-category="play">Play</a></li>
+                            <li><a href="#" class="category-link" data-category="materiais">Materiais</a></li>
+                            <li><a href="#" class="category-link" data-category="perfil">Perfil</a></li>
+                            <li><a href="#" class="category-link" data-category="doacoes-cupons">Doações e Cupons</a>
+                            </li>
+                            <li><a href="#" class="category-link" data-category="problemas-tecnicos">Problemas
+                                    Técnicos</a></li>
+                            <li><a href="#" class="category-link" data-category="politica-privacidade">Política e
+                                    Privacidade</a></li>
+                        </ul>
+                    </div>
+                    <div class="faq-content">
+                        <div class="accordion" id="geral">
+                            <h1 data-category="geral" id="titulo-accordion">Geral</h1>
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h3 id="titulo-pergunta">O que é este site?</h3>
+                                    <span class="arrow-icon"><img src="./img/seta.svg" alt=""></span>
+                                </div>
+                                <div class="accordion-body">
+                                    <p id="texto-pergunta">Nosso site é uma plataforma dedicada à reciclagem de
+                                        eletrônicos. Em troca da doação de seus eletrônicos, você recebe um cupom em QR
+                                        code que pode ser usado em lojas parceiras.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h3 id="titulo-pergunta">Como funciona a troca por cupons?</h3>
+                                    <span class="arrow-icon"><img src="./img/seta.svg" alt=""></span>
+                                </div>
+                                <div class="accordion-body">
+                                    <p id="texto-pergunta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+                                        eveniet sunt, officiis consequatur eos cum earum rem cumque doloribus commodi
+                                        illum debitis exercitationem. Officia doloremque velit optio labore fugiat
+                                        consequuntur!</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h3 id="titulo-pergunta">Quais são os benefícios de usar este serviço?</h3>
+                                    <span class="arrow-icon"><img src="./img/seta.svg" alt=""></span>
+                                </div>
+                                <div class="accordion-body">
+                                    <p id="texto-pergunta">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        Quisquam nihil maiores consequatur! Nihil, incidunt. Aliquam ipsum blanditiis
+                                        eaque doloremque possimus illo qui cum officia esse quam magni quia, ratione
+                                        exercitationem?</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h3 id="titulo-pergunta">Há algum custo para utilizar o ecoponto?</h3>
+                                    <span class="arrow-icon"><img src="./img/seta.svg" alt=""></span>
+                                </div>
+                                <div class="accordion-body">
+                                    <p id="texto-pergunta">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        Quisquam nihil maiores consequatur! Nihil, incidunt. Aliquam ipsum blanditiis
+                                        eaque doloremque possimus illo qui cum officia esse quam magni quia, ratione
+                                        exercitationem?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion" id="tela-inicial" style="display: none;">
+                            <h1 data-category="tela-inicial" id="titulo-accordion">Tela Inicial</h1>
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h3 id="titulo-pergunta">O que devo fazer se não receber meu QR code?</h3>
+                                    <span class="arrow-icon"><img src="./img/seta.svg" alt=""></span>
+                                </div>
+                                <div class="accordion-body">
+                                    <p id="texto-pergunta">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Repudiandae blanditiis, sequi eos aperiam eveniet, quae, ipsa accusantium at
+                                        ipsam nesciunt nemo soluta hic facere quidem quo unde accusamus iusto veniam?
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h3 id="titulo-pergunta">Como faço para gerar meu QR code?</h3>
+                                    <span class="arrow-icon"><img src="./img/seta.svg" alt=""></span>
+                                </div>
+                                <div class="accordion-body">
+                                    <p id="texto-pergunta">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Nobis vero, reiciendis sunt blanditiis rerum id tenetur numquam voluptate
+                                        eligendi mollitia ex accusantium hic expedita, deleniti praesentium nemo? Vitae,
+                                        obcaecati. Eligendi?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion" id="play" style="display: none;">
+                            <h1 data-category="play" id="titulo-accordion">Play</h1>
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h3 id="titulo-pergunta">Como funcionam os cupons, medalhas e moedas?</h3>
+                                    <span class="arrow-icon"><img src="./img/seta.svg" alt=""></span>
+                                </div>
+                                <div class="accordion-body">
+                                    <p id="texto-pergunta">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Cupiditate accusamus nihil eaque tempore, rem optio id vel, culpa magni
+                                        repudiandae deserunt ullam cum in minima inventore aliquam quod quo
+                                        exercitationem?</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h3 id="titulo-pergunta">Quais lojas aceitam os cupons?</h3>
+                                    <span class="arrow-icon"><img src="./img/seta.svg" alt=""></span>
+                                </div>
+                                <div class="accordion-body">
+                                    <p id="texto-pergunta">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Cupiditate accusamus nihil eaque tempore, rem optio id vel, culpa magni
+                                        repudiandae deserunt ullam cum in minima inventore aliquam quod quo
+                                        exercitationem?</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h3 id="titulo-pergunta">Como posso acumular mais moedas?</h3>
+                                    <span class="arrow-icon"><img src="./img/seta.svg" alt=""></span>
+                                </div>
+                                <div class="accordion-body">
+                                    <p id="texto-pergunta">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Cupiditate accusamus nihil eaque tempore, rem optio id vel, culpa magni
+                                        repudiandae deserunt ullam cum in minima inventore aliquam quod quo
+                                        exercitationem?</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h3 id="titulo-pergunta">Como resgato minhas medalhas?</h3>
+                                    <span class="arrow-icon"><img src="./img/seta.svg" alt=""></span>
+                                </div>
+                                <div class="accordion-body">
+                                    <p id="texto-pergunta">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Cupiditate accusamus nihil eaque tempore, rem optio id vel, culpa magni
+                                        repudiandae deserunt ullam cum in minima inventore aliquam quod quo
+                                        exercitationem?</p>
+                                </div>
+                            </div>
+                            <!-- Adicione mais itens de accordion para a categoria "Play" aqui -->
+                        </div>
+                        <div class="accordion" id="materiais" style="display: none;">
+                            <h1 data-category="materiais" id="titulo-accordion">Materiais</h1>
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h3 id="titulo-pergunta">Quais tipos de eletrônicos são aceitos?</h3>
+                                    <span class="arrow-icon"><img src="./img/seta.svg" alt=""></span>
+                                </div>
+                                <div class="accordion-body">
+                                    <p id="texto-pergunta">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Consequuntur, libero cupiditate voluptatibus officia, impedit debitis placeat
+                                        ad, consequatur reprehenderit culpa eos sapiente voluptas excepturi earum labore
+                                        quaerat? Quos, libero vero!</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h3 id="titulo-pergunta">Como posso saber se meu eletrônico é elegível para doação?
+                                    </h3>
+                                    <span class="arrow-icon"><img src="./img/seta.svg" alt=""></span>
+                                </div>
+                                <div class="accordion-body">
+                                    <p id="texto-pergunta">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Voluptas aspernatur a vel labore tempore? Eius distinctio commodi praesentium
+                                        nulla libero inventore soluta velit, ipsa facere perferendis iure itaque rem
+                                        voluptate.</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h3 id="titulo-pergunta">Como posso identificar se um componente está quebrado?</h3>
+                                    <span class="arrow-icon"><img src="./img/seta.svg" alt=""></span>
+                                </div>
+                                <div class="accordion-body">
+                                    <p id="texto-pergunta">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                        Magni odio eius reiciendis soluta ratione nulla voluptatibus ab, placeat
+                                        asperiores aliquid accusantium, nesciunt sunt, velit ipsum. Veniam aliquid natus
+                                        consequuntur eius.</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h3 id="titulo-pergunta">O que devo fazer com eletrônicos que não são aceitos?</h3>
+                                    <span class="arrow-icon"><img src="./img/seta.svg" alt=""></span>
+                                </div>
+                                <div class="accordion-body">
+                                    <p id="texto-pergunta">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Pariatur nisi exercitationem assumenda consequatur reprehenderit rerum corporis,
+                                        modi animi eius placeat voluptates sunt aut tenetur voluptatum culpa libero
+                                        facere repellendus eligendi?</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h3 id="titulo-pergunta">Posso doar componentes avulsos?</h3>
+                                    <span class="arrow-icon"><img src="./img/seta.svg" alt=""></span>
+                                </div>
+                                <div class="accordion-body">
+                                    <p id="texto-pergunta">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Voluptate minus numquam id eveniet ex, repudiandae illum minima commodi
+                                        doloribus distinctio reprehenderit. Nulla magnam natus a sint ratione nam iste
+                                        itaque?</p>
+                                </div>
+                            </div>
+                            <!-- Adicione mais itens de accordion para a categoria "Materiais" aqui -->
+                        </div>
+                        <div class="accordion" id="perfil" style="display: none;">
+                            <h1 data-category="perfil" id="titulo-accordion">Perfil</h1>
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h3 id="titulo-pergunta">Como posso ver minhas medalhas e cupons?</h3>
+                                    <span class="arrow-icon"><img src="./img/seta.svg" alt=""></span>
+                                </div>
+                                <div class="accordion-body">
+                                    <p id="texto-pergunta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
+                                        maxime architecto doloremque animi ea molestiae neque cumque dolorum odio
+                                        pariatur eveniet commodi dicta accusantium dolor? Deserunt asperiores non
+                                        blanditiis possimus?</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h3 id="titulo-pergunta">Como posso resgatar meus cupons?</h3>
+                                    <span class="arrow-icon"><img src="./img/seta.svg" alt=""></span>
+                                </div>
+                                <div class="accordion-body">
+                                    <p id="texto-pergunta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
+                                        maxime architecto doloremque animi ea molestiae neque cumque dolorum odio
+                                        pariatur eveniet commodi dicta accusantium dolor? Deserunt asperiores non
+                                        blanditiis possimus?</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h3 id="titulo-pergunta">Como posso atualizar minhas informações de perfil?</h3>
+                                    <span class="arrow-icon"><img src="./img/seta.svg" alt=""></span>
+                                </div>
+                                <div class="accordion-body">
+                                    <p id="texto-pergunta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
+                                        maxime architecto doloremque animi ea molestiae neque cumque dolorum odio
+                                        pariatur eveniet commodi dicta accusantium dolor? Deserunt asperiores non
+                                        blanditiis possimus?</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h3 id="titulo-pergunta">O que devo fazer se perder o acesso à minha conta?</h3>
+                                    <span class="arrow-icon"><img src="./img/seta.svg" alt=""></span>
+                                </div>
+                                <div class="accordion-body">
+                                    <p id="texto-pergunta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
+                                        maxime architecto doloremque animi ea molestiae neque cumque dolorum odio
+                                        pariatur eveniet commodi dicta accusantium dolor? Deserunt asperiores non
+                                        blanditiis possimus?</p>
+                                </div>
+                            </div>
+                            <!-- Adicione mais itens de accordion para a categoria "Perfil" aqui -->
+                        </div>
+                        <div class="accordion" id="doacoes-cupons" style="display: none;">
+                            <h1 data-category="doacoes-cupons" id="titulo-accordion">Doações e Cupons</h1>
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h3 id="titulo-pergunta">Como faço uma doação?</h3>
+                                    <span class="arrow-icon"><img src="./img/seta.svg" alt=""></span>
+                                </div>
+                                <div class="accordion-body">
+                                    <p id="texto-pergunta">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Explicabo fugit iusto repudiandae neque modi ut placeat voluptatum omnis eum
+                                        voluptates similique voluptatem eligendi natus qui, maiores distinctio delectus
+                                        provident doloremque.</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h3 id="titulo-pergunta">Qual é o valor do cupom que recebo?</h3>
+                                    <span class="arrow-icon"><img src="./img/seta.svg" alt=""></span>
+                                </div>
+                                <div class="accordion-body">
+                                    <p id="texto-pergunta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+                                        ea nemo aut ab reiciendis! Modi culpa doloremque vitae labore quos numquam natus
+                                        quas eius voluptate voluptas similique aliquid, saepe asperiores?</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h3 id="titulo-pergunta">Posso doar mais de um eletrônico por vez?</h3>
+                                    <span class="arrow-icon"><img src="./img/seta.svg" alt=""></span>
+                                </div>
+                                <div class="accordion-body">
+                                    <p id="texto-pergunta">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Aliquid reiciendis sequi ducimus neque laudantium, a tenetur, distinctio
+                                        doloribus minus vel officia, facere excepturi porro libero maxime molestiae
+                                        velit. Dolor, adipisci!</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h3 id="titulo-pergunta">Há um limite para o número de doações que posso fazer?</h3>
+                                    <span class="arrow-icon"><img src="./img/seta.svg" alt=""></span>
+                                </div>
+                                <div class="accordion-body">
+                                    <p id="texto-pergunta">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Aliquid, quasi distinctio ducimus aperiam temporibus labore, voluptatem quam
+                                        dolore vero nam perspiciatis quod, natus numquam nulla! Omnis repellat earum
+                                        minima iusto.</p>
+                                </div>
+                            </div>
+                            <!-- Adicione mais itens de accordion para a categoria "Doações e Cupons" aqui -->
+                        </div>
+                        <div class="accordion" id="problemas-tecnicos" style="display: none;">
+                            <h1 data-category="problemas-tecnicos" id="titulo-accordion">Problemas Técnicos</h1>
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h3 id="titulo-pergunta">Como resolver problemas técnicos?</h3>
+                                    <span class="arrow-icon"><img src="./img/seta.svg" alt=""></span>
+                                </div>
+                                <div class="accordion-body">
+                                    <p id="texto-pergunta">Para resolver problemas técnicos, você precisa...</p>
+                                </div>
+                            </div>
+                            <!-- Adicione mais itens de accordion para a categoria "Problemas Técnicos" aqui -->
+                        </div>
+                        <div class="accordion" id="politica-privacidade" style="display: none;">
+                            <h1 data-category="politica-privacidade" id="titulo-accordion">Política e Privacidade</h1>
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h3 id="titulo-pergunta">Qual é a política de privacidade do site?</h3>
+                                    <span class="arrow-icon"><img src="./img/seta.svg" alt=""></span>
+                                </div>
+                                <div class="accordion-body">
+                                    <p id="texto-pergunta">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Natus deleniti error a, ducimus quidem dolor voluptas ratione totam facere
+                                        laudantium? Consectetur nisi quo necessitatibus sapiente quia nemo ipsam rerum
+                                        eos.</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h3 id="titulo-pergunta">Quais são os termos de uso do serviço?</h3>
+                                    <span class="arrow-icon"><img src="./img/seta.svg" alt=""></span>
+                                </div>
+                                <div class="accordion-body">
+                                    <p id="texto-pergunta">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Natus deleniti error a, ducimus quidem dolor voluptas ratione totam facere
+                                        laudantium? Consectetur nisi quo necessitatibus sapiente quia nemo ipsam rerum
+                                        eos.</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h3 id="titulo-pergunta">Como meus dados são protegidos?</h3>
+                                    <span class="arrow-icon"><img src="./img/seta.svg" alt=""></span>
+                                </div>
+                                <div class="accordion-body">
+                                    <p id="texto-pergunta">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Natus deleniti error a, ducimus quidem dolor voluptas ratione totam facere
+                                        laudantium? Consectetur nisi quo necessitatibus sapiente quia nemo ipsam rerum
+                                        eos.</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h3 id="titulo-pergunta">Quais são os termos de uso do serviço?</h3>
+                                    <span class="arrow-icon"><img src="./img/seta.svg" alt=""></span>
+                                </div>
+                                <div class="accordion-body">
+                                    <p id="texto-pergunta">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Natus deleniti error a, ducimus quidem dolor voluptas ratione totam facere
+                                        laudantium? Consectetur nisi quo necessitatibus sapiente quia nemo ipsam rerum
+                                        eos.</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h3 id="titulo-pergunta">Posso excluir minha conta e dados pessoais?</h3>
+                                    <span class="arrow-icon"><img src="./img/seta.svg" alt=""></span>
+                                </div>
+                                <div class="accordion-body">
+                                    <p id="texto-pergunta">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Natus deleniti error a, ducimus quidem dolor voluptas ratione totam facere
+                                        laudantium? Consectetur nisi quo necessitatibus sapiente quia nemo ipsam rerum
+                                        eos.</p>
+                                </div>
+                            </div>
+                            <!-- Adicione mais itens de accordion para a categoria "Política e Privacidade" aqui -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="campo3">
+                <h1 id="titulo1">Envie seu feedback</h1>
+                <p id="texto1">
+                    Gostou do nosso trabalho? Envie sugestões, críticas ou reclamações para melhorarmos nossa
+                    experiência com você!
+                </p>
+                <div class="container-feedback">
+                    <!-- <img src="./img/ram-sentado.svg" id="ram-sentado" alt="Imagem do mascote 'Ram'"> -->
+                    <form action="" id="formulario-feedback" class="formulario-feedback">
+                        <div class="container-email">
+                            <label for="email" id="campo-email">Seu email</label>
+                            <input type="email" name="email" id="email" placeholder="Insira seu email aqui...">
+                        </div>
+
+                        <div id="bg-feedback">
+                            <label for="feedback" id="campo-feedback">Feedback</label>
+                            <textarea name="feedback" id="feedback" cols="10" rows="15"
+                                placeholder="Escreva sua opinião..."></textarea>
+                        </div>
+
+                        <div id="btn-feedback">
+                            <button type="submit" id="btn-enviar">
+                                <img src="./img/check.svg" alt="">
+                            </button>
+                        </div>
+                    </form>
+                    <img src="./img/ram-sentado.svg" id="ram-sentado" alt="Imagem do mascote 'Ram'">
+                </div>
+            </section>
+
+            <section class="campo4">
+                <h1 id="titulo1">Suporte</h1>
+                <p id="texto1">
+                    Ainda restou dúvidas sem solução? Entre em contato conosco!
+                </p>
+
+                <div class="lista-suporte">
+                    <ul>
+                        <li class="contato-suporte"><span id="span-azul">Email:</span> rampointsupport@gmail.com</li>
+                        <li class="contato-suporte"><span id="span-azul">Telefone:</span> (11) 93350-6834</li>
+                        <li class="contato-suporte"><span id="span-azul">Atendimento Online:</span> Segunda à Sexta das 10h às 18h.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <footer class="footer-container">
+                <h2>Quer ser nosso parceiro?</h2>
+                <p>Envie-nos seu email!</p>
+                <div class="email">
+                    <input type="email" placeholder="Insira seu email aqui">
+                    <button>Enviar</button>
+                </div>
+                <div class="descricao-footer">
+                    <div class="logo">
+                        <img src="./img/logoBranca.svg" class="logoBranca" alt="Imagem Logo branca 'rampoint'">
+                        <img src="./img/logoBranca-extenso.svg" class="logoBranca-small"
+                            alt="Imagem Logo branca 'rampoint'">
+                    </div>
+                    <div class="geral">
+                        <h3 id="geral-titulo">GERAL</h3>
+                        <ul>
+                            <li><a href="#">Sobre Nós</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Política e Privacidade</a></li>
+                            <li><a href="#">Termos e Condições</a></li>
+                        </ul>
+                    </div>
+                    <div class="redes-sociais">
+                        <h3 id="redes_sociais-titulo">REDES SOCIAIS</h3>
+                        <ul>
+                            <li><a href="https://www.instagram.com/rampoint_?igsh=MWptbnVwdDAzN3NkNw==">Instagram</a>
+                            </li>
+                            <li><a href="#">Tiktok</a></li>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Linkedln</a></li>
+                        </ul>
+                    </div>
+                    <div class="contato">
+                        <h3 id="contato-titulo">CONTATO</h3>
+                        <p><b>Email:</b> rampointofc@gmail.com</p>
+                        <p><span>Telefone:</span> (11) 93350-6834</p>
+                        <p class="endereco"><span>Endereço:</span> Rua João Batista Soares, 440 - Centro, Barueri - SP,
+                            06401-135</p>
+                    </div>
+                </div>
+                <p class="copyright">Copyright &copy; 2024 Rampoint</p>
+
+            </footer>
+
+            <script src="./js/modal.js"></script>
+            <script src="./js/scroll.js"></script>
+            <script src="./js/accordion.js"></script>
+</body>
+
+</html>

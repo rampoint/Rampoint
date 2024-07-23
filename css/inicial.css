@@ -143,11 +143,16 @@ span {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 0fr;
   gap: 80px 0px;
-  grid-auto-flow: row;
+  grid-auto-flow:dense;
   grid-template-areas:
     "texto texto imagem"
-    "ram texto-ram texto-ram";
+    "ram texto-ram texto-ram"; 
+    /* display: flex;
+    flex-direction: column; */
+
 }
+
+
 
 .texto {
   grid-area: texto;

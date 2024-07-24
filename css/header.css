@@ -2,19 +2,14 @@
 
 @import url(../css/cores.css);
 
-/* 
-* {
-  margin: 0px;
-  padding: 0px;
-} 
-*/
-
 nav {
   background-color: var(--branco);
-  margin-bottom: 70px;
+  margin-bottom: 0px;
+  
 }
 nav ul {
-  /* width: 100%; */
+  background-color: var(--branco);
+  width: 100%;
   list-style: none;
   display: flex;
   justify-content: space-around;
@@ -22,6 +17,8 @@ nav ul {
   padding-left: 0px;
   margin-left: 15px;
   margin-right: 15px;
+  position: fixed;
+  height: 4em;
 }
 
 #logo-nav {
@@ -35,10 +32,10 @@ nav ul {
 nav li {
   height: 50px;
 }
+
 .sidebar nav a {
   height: 100%;
   padding: 0 30px;
-
   display: flex;
   align-items: center;
   color: var(--branco);
@@ -50,7 +47,7 @@ nav a {
   text-decoration: none;
   display: flex;
   align-items: center;
-  color: var(--preto);
+  color: rgba(0, 0, 0, 0.50);
 }
 
 nav a:visited {
@@ -68,6 +65,7 @@ nav a:hover {
   align-items: center;
   justify-content: center;
 }
+
 #perfil-sidebar {
   display: flex;
   align-items: center;

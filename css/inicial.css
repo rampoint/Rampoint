@@ -17,7 +17,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 25px;
+  margin: 150px 25px 25px 25px;
 }
 
 .imagem-inicial {
@@ -99,16 +99,16 @@ body {
   font-family: "Blinker-extrabold";
   color: var(--verde);
   font-size: 1.5em;
-  margin: 65px 0 0 150px;
+  margin: 95px 0 0 150px;
 }
 
 #texto1 {
-  max-width: 65%;
+  max-width: 70%;
   font-size: 1em;
 }
 
 #texto2 {
-  max-width: 55%;
+  max-width: 65%;
   font-size: 1em;
 }
 
@@ -163,13 +163,9 @@ span {
 }
 
 #medalhas {
-  width: 450px;
-  margin-left: 50px;
-}
-
-.ramEmpe {
-  width: 350px;
-}
+  width: 480px;
+  margin-left: 0px;
+} 
 
 .imagem-ram {
   grid-area: ram;
@@ -199,12 +195,14 @@ span {
   font-family: "Blinker-extrabold";
   color: var(--verde);
   margin-bottom: 20px;
+  font-size: 1.5em;
 }
 
 #p-info {
   font-family: "Poppins-regular";
   color: var(--preto);
   margin-bottom: 20px;
+  font-size: 1em;
 }
 
 .conteiner-form {

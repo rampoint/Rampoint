@@ -1,4 +1,3 @@
-// script para abrir e fechar o modal
 document.addEventListener("DOMContentLoaded", () => {
   const modal = document.getElementById("modalSemPerfil");
   const openModalBtn = document.getElementById("openModalBtn");

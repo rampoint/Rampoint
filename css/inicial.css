@@ -296,6 +296,10 @@ form {
   padding-right: 100px;
 }
 
+#cep::placeholder, #rua::placeholder, #bairro::placeholder {
+  font-family: "Poppins-semibold";
+  color: var(--cinza);
+}
 
 #rua {
   grid-area: "rua";
@@ -320,17 +324,18 @@ label {
 
 .form-conteiner ::-webkit-input-placeholder {
   font-family: "Poppins-regular";
-  padding-left: 20px;
   color: #121212;
 }
 
 input {
   background-color: var(--branco);
-  border-radius: 30px;
+  padding-left: 10px;
   border: none;
-  outline: none;
-  height: 35px;
+  border-radius: 30px;
   width: 200px;
+  height: 35px;
+  max-width: 80%;
+  margin-right: 10px;
 }
 
 .btn-lupa {
@@ -347,7 +352,9 @@ input {
 
 /* colocar endereco final */
 
+
 /* começo cards de descarte */
+
 .card p {
   font-family: "Poppins-black";
   margin: 0px 0px 10px 0px;

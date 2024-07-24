@@ -42,7 +42,7 @@
                     <div class="menus">
                 <li><a href="#">HOME</a></li>
                 <li><a href="#">PLAY</a></li>
-                <li><a href="#">ECOPONTOS</a></li>
+                <li><a href="#ecopontos">ECOPONTOS</a></li>
                 <li><a href="#">MATERIAIS</a></li>
                 <li><a href="#">QR-CODE</a></li>
                 <li><a href="#">FALE CONOSCO</a></li>
@@ -58,7 +58,7 @@
                     <h1 style="color: black;"><b style="color:#7ad761; margin-left: 10px;">ram</b>point.</h1>
                 <li class="hideOnMobile"><a href="#">HOME</a>
                 <li class="hideOnMobile"><a href="#">PLAY</a>
-                <li class="hideOnMobile"><a href="#">ECOPONTOS</a>
+                <li class="hideOnMobile"><a href="#ecopontos">ECOPONTOS</a>
                 <li class="hideOnMobile"><a href="#">MATERIAIS</a>
                 <li class="hideOnMobile"><a href="#">QR-CODE</a>
                 <li class="hideOnMobile"><a href="#">FALE CONOSCO</a>
@@ -169,11 +169,11 @@
                     <form>
                         <div class="cep-rua">
                             <div class="cep-form">
-                                <label for="cep">CEP:</label><br>
+                                <label for="cep">CEP:</label><br><br>
                                 <input placeholder="Insira seu CEP aqui" type="text" id="cep" name="cep">
                             </div>
                             <div class="rua-form">
-                                <label for="rua">Rua:</label><br>
+                                <label for="rua">Rua:</label><br><br>
                                 <input placeholder="Insira sua rua aqui" type="text" id="rua" name="rua">
                             </div>
                         </div>
@@ -190,7 +190,7 @@
                 <div class="card-content">
                     <h1 id="info-ecoponto">Ecoponto</h1>
                     <h1 id="nome-ecoponto">Prefeitura de Barueri</h1>
-                    <p><span id="endereco">Endereço:</span> Av. Iracema, 620 - Jardim Iracema, Barueri - SP, 06440-010
+                    <p id="texto-endereco"><span id="endereco">Endereço:</span> Av. Iracema, 620 - Jardim Iracema, Barueri - SP, 06440-010
                     </p>
                     <p><span id="telefone">Telefone:</span> <span class="numero">(11) 93938-3945</span></p>
                 </div><img src="./img/ecoponto.svg" class="imagem-ecoponto" alt="Imagem do Ecoponto de Barueri">
@@ -288,7 +288,8 @@
 
             </footer>
             <script src="./js/modal.js"></script>
-            <script src="./js/scroll.js"></script>
+            <script src="./js/scroll-modal.js"></script>
+            <script src="./js/scroll-ecopontos.js"></script>
 
         </div>
     </body>

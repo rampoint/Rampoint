@@ -18,10 +18,89 @@ body {
   justify-content: center;
   align-items: center;
   margin: 150px 25px 25px 25px;
+  z-index: -1;
+}
+
+.internos-inicial {
+  position: relative;
+  right: 27em;
+  bottom: 9em;
+}
+
+.brilho-inicial {
+  position: relative;
+  right: 30em;
+  bottom: 1em;
+}
+
+.monitor-inicial {
+  position: relative;
+  right: 30em;
+  top: 10em;
+}
+
+.roxo-inicial {
+  position: relative;
+  right: 14.5em;
+  bottom: 9em;
+}
+
+.brilho-inicial2 {
+  position: relative;
+  right: 19em;
+  top: 7em;
+}
+
+.teclado-inicial {
+  position: relative;
+  right: 23em;
+  top: 10em;
+}
+
+.internos-inicial,
+.monitor-inicial,
+.roxo-inicial,
+.teclado-inicial {
+  animation-name: float;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+@keyframes animate-shadow {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(4deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 .imagem-inicial {
   width: 30em;
+  margin-left: 30em;
 }
 
 .inicio {
@@ -34,6 +113,8 @@ body {
   font-size: 4.5em;
   width: 25%;
   line-height: 0.8em;
+  margin: 0 0 0 4em;
+  margin-left: 4em;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -42,6 +123,7 @@ body {
   color: var(--preto);
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
   width: 75%;
+  margin: 1em 0 1em 18em;
   font-size: 1em;
 }
 
@@ -50,6 +132,7 @@ body {
   flex-direction: column;
   margin-top: 25px;
   gap: 15px;
+  margin-left: 18em;
 }
 
 #cadastro {
@@ -114,7 +197,6 @@ body {
 
 span {
   font-family: "Poppins-bold";
-  
 }
 
 /* fim dos textos */
@@ -143,16 +225,13 @@ span {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 0fr;
   gap: 80px 0px;
-  grid-auto-flow:dense;
+  grid-auto-flow: dense;
   grid-template-areas:
     "texto texto imagem"
-    "ram texto-ram texto-ram"; 
-    /* display: flex;
+    "ram texto-ram texto-ram";
+  /* display: flex;
     flex-direction: column; */
-
 }
-
-
 
 .texto {
   grid-area: texto;
@@ -165,7 +244,7 @@ span {
 #medalhas {
   width: 480px;
   margin-left: 0px;
-} 
+}
 
 .imagem-ram {
   grid-area: ram;
@@ -296,7 +375,9 @@ form {
   padding-right: 100px;
 }
 
-#cep::placeholder, #rua::placeholder, #bairro::placeholder {
+#cep::placeholder,
+#rua::placeholder,
+#bairro::placeholder {
   font-family: "Poppins-semibold";
   color: var(--cinza);
 }
@@ -351,7 +432,6 @@ input {
 }
 
 /* colocar endereco final */
-
 
 /* começo cards de descarte */
 

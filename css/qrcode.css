@@ -56,7 +56,8 @@ body {
 .conteiner {
   flex-direction: column;
   display: flex;
-  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
 }
 
 * {
@@ -100,11 +101,12 @@ body {
   text-align: center;
   border-radius: 30px;
   filter: drop-shadow(5px 5px 4px #e7e3e3);
-  margin: auto;
+  margin-top: 20px;
   flex-direction: column;
   justify-content: center;
-  width: 570px;
-  padding-right:15px;
+  width: 100%;
+  max-width: 600px;
+  min-width: 200px;
   align-items: center;
 }
 
@@ -117,7 +119,8 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content:space-around;   
+  width:100%;
+  justify-content: center;
 }
 
 .codigo-aqui button {
@@ -177,6 +180,11 @@ body {
 
 .colocar,.inserir{
   white-space:nowrap;
+  width:40%;
+}
+
+.colocar p{
+  text-align: right;
 }
 
 .codigo-l2{

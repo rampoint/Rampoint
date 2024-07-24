@@ -2,6 +2,7 @@
 
 @import url(../css/cores.css);
 
+
 h2,
 p,
 li,
@@ -15,7 +16,7 @@ h2 {
   margin-top: 30px;
 }
 
-p {
+footer p {
   font-family: "Poppins-semibold", sans-serif;
   font-size: 14px;
   margin-top: 10px;
@@ -79,7 +80,7 @@ h3,
   color: var(--cinza);
 }
 
-input:focus {
+footer input:focus {
   outline: none;
 }
 

@@ -1,0 +1,414 @@
+@import url(../css/font.css);
+
+@import url(../css/cores.css);
+
+* {
+  margin: 0;
+}
+
+body {
+  background-color: var(--branco);
+}
+
+/* começo da imagem inicial */
+
+.inicio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+#titulo-inicial {
+  font-family: "Blinker-extrabold";
+  color: var(--preto);
+  font-size: 4em;
+  width: 5em;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+#texto-inicial {
+  font-family: "Poppins-regular";
+  color: var(--preto);
+  font-size: 0.9em;
+  width: 22em;
+  text-align: center;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.container-texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.moedas-esquerda {
+  display: flex;
+  flex-direction: row;
+}
+
+#moeda-verde,
+#brilho-verde,
+#moeda-amarela,
+#brilho-amarelo,
+#moeda-azul {
+  animation-name: float;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.shadow {
+  width: 100px;
+  height: 10px;
+  background: #1c1c1c;
+  border-radius: 70%;
+  opacity: 1;
+  filter: blur(3px);
+  animation-name: animate-shadow;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+@keyframes animate-shadow {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(4deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.moeda {
+  display: flex;
+  flex-direction: column;
+}
+
+/* final da imagem inicial */
+
+/* começo campo perfil */
+
+.campo-perfil {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3em auto;
+}
+
+.container-perfil {
+  background-color: var(--cinza-claro);
+  display: flex;
+  flex-direction: row;
+  width: 50em;
+  height: 15em;
+  border-radius: 30px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.nome-usuario {
+  font-family: "Poppins-extrabold";
+  color: var(--preto);
+  font-size: 1.2em;
+  margin: 0;
+  margin-bottom: 0.2em;
+}
+
+.email-usuario {
+  font-family: "Poppins-medium";
+  color: #535252;
+  font-size: 0.9em;
+  margin: 0;
+  margin-bottom: 0.2em;
+}
+
+.emocao-usuario {
+  font-family: "Poppins-extrabold";
+  color: #9c4edc;
+  font-size: 1.2em;
+  margin: 0;
+  margin-top: 0.1em;
+}
+
+.editar-perfil {
+  font-family: "Poppins-semibold";
+  color: var(--preto);
+  transition: none;
+}
+
+.editar-perfil:hover {
+  color: var(--preto);
+  text-decoration: none;
+}
+
+.bloco-perfil {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1em;
+}
+
+.bloco-usuario {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.5em;
+}
+
+.ramcoin {
+  display: flex;
+  flex-direction: row;
+}
+
+.qtd-ramcoin {
+  font-family: "Poppins-extrabold";
+  color: var(--verde);
+  margin-right: 0.5em;
+}
+
+.bloco-ramcoin {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  margin-left: 20em;
+}
+
+/* final campo perfil */
+
+/* começo campo conquistas */
+
+.campo-conquistas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3em auto;
+}
+
+.container-conquistas {
+  background-color: var(--cinza-claro);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50em;
+  height: 35em;
+  border-radius: 30px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+#conquistasButton,
+#cuponsButton {
+  font-family: "Poppins-extrabold";
+  width: 15em;
+  text-align: center;
+}
+
+.titulo-content {
+  font-family: "Poppins-bold";
+  color: var(--preto);
+  font-size: 1em;
+  margin: 1em 3em;
+}
+
+.conjunto-medalhas,
+.conjunto-cupons {
+  display: flex;
+  flex-direction: row;
+  margin: 0.9em 1em 0.5em 1em;
+  padding: 0.5em 0;
+}
+
+.lista-medalhas,
+.lista-cupons {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+/* medalhas */
+.lista-textos {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1em;
+}
+/* ^ medalhas ^ */
+
+/* cupons */
+.lista-textos2 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1em;
+}
+
+.area-excluir {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 1em 1em 0em 16.5em;
+}
+
+.btn-excluir {
+  font-family: "Poppins-bold";
+  color: var(--vermelho);
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.mensagem-cupom {
+  font-family: "Poppins-semibold";
+  color: #333333;
+  margin: 1em 0 0em 0;
+}
+/* ^ cupons ^ */
+
+.titulo-medalha-roxa,
+.titulo-medalha-azul,
+.titulo-cupom-amarelo,
+.titulo-cupom-azul,
+.titulo-cupom-verde {
+  font-family: "Blinker-extrabold";
+  font-size: 1.2em;
+}
+
+.titulo-medalha-roxa,
+.meta-medalha-roxa {
+  color: #6513a9;
+}
+
+.titulo-medalha-azul,
+.meta-medalha-azul {
+  color: #0076ac;
+}
+
+.titulo-cupom-amarelo,
+.porcentagem-cupom-amarelo {
+  color: #f89701;
+}
+
+.titulo-cupom-azul,
+.porcentagem-cupom-azul {
+  color: #00354e;
+}
+
+.titulo-cupom-verde,
+.porcentagem-cupom-verde {
+  color: #417932;
+  width: 165px;
+}
+
+.porcentagem-cupom-amarelo,
+.porcentagem-cupom-azul,
+.porcentagem-cupom-verde {
+  font-family: "Poppins-bold";
+  font-size: 1em;
+}
+
+.meta-medalha-roxa,
+.meta-medalha-azul {
+  font-family: "Poppins-bold";
+  font-size: 0.9em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.meta-medalha-roxa,
+.meta-medalha-azul {
+  position: relative;
+  padding-left: 20px;
+}
+
+.meta-medalha-roxa::before {
+  content: url(../img/brilho-roxo.svg);
+  position: absolute;
+  left: 0;
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+.meta-medalha-azul::before {
+  content: url(../img/brilho-azul.svg);
+  position: absolute;
+  left: 0;
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+#linha {
+  width: 45em;
+  color: rgba(0, 0, 0, 0.35);
+}
+
+.toggle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.toggle-button {
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.toggle-option {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: var(--cinza-claro);
+  color: #858585;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.toggle-option.active {
+  background-color: var(--azul);
+  color: var(--branco);
+}
+
+.toggle-option:first-child {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.toggle-option:last-child {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.content-container {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.content {
+  display: none;
+}
+
+.content.active {
+  display: block;
+}
+
+/* final campo conquistas */

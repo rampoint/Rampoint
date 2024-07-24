@@ -5,7 +5,6 @@
 nav {
   background-color: var(--branco);
   margin-bottom: 0px;
-  
 }
 nav ul {
   background-color: var(--branco);
@@ -19,6 +18,7 @@ nav ul {
   margin-right: 15px;
   position: fixed;
   height: 4em;
+  margin: 0;
 }
 
 #logo-nav {
@@ -47,7 +47,7 @@ nav a {
   text-decoration: none;
   display: flex;
   align-items: center;
-  color: rgba(0, 0, 0, 0.50);
+  color: rgba(0, 0, 0, 0.5);
 }
 
 nav a:visited {

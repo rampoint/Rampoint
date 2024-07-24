@@ -1,6 +1,14 @@
+@import url(../css/cores.css);
+
+
 .conteiner {
     flex-direction: column;
-    display: flex;    
+    display: flex;
+    
+  }
+
+  body{
+    background-color: var(--branco);
   }
 
   * {

@@ -103,23 +103,38 @@ body {
   filter: drop-shadow(5px 5px 4px #e7e3e3);
   margin-top: 20px;
   flex-direction: column;
-  width: 60%;
+  width: 45%;
+  max-width: 800px;
+  min-width: 500px;
   border: solid;
-  justify-content: center;
   align-items: center;
 }
 
 .qrcode-box p {
   color: black;
   font-family: "Poppins-semibold";
+  text-align: left;
 }
 
 .codigo-l1 {
   display: flex;
   align-items: center;
-  
-  
+  justify-content: space-around;
+  width: 100%;
 }
+
+.colocar,
+.inserir {
+  white-space: nowrap;
+  width: fit-content;
+
+}
+
+.codigo-l1 p {
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
 
 .codigo-aqui button {
   margin-left: 60px;
@@ -145,8 +160,37 @@ body {
   border: solid #2A55C2;
 }
 
-.qrcode-salvar button{
+.qrcode-salvar button {
   font-family: "Poppins-semibold"
+}
+
+
+
+.qrcode-box input {
+  border-radius: 30px;
+  box-shadow: 4px;
+  border: solid #F8F8FF;
+  padding: 5px 45px 5px 5px;
+}
+
+#inserir-total::-webkit-input-placeholder {
+  color: #2A55C2;
+  font-family: "Poppins-semibold";
+
+}
+
+
+.codigo-l2 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+
+}
+.codigo-l2 p{
+  margin-bottom: 5px;
+  margin-left: 5px;
 }
 
 #gerar-button {
@@ -155,35 +199,25 @@ body {
   font-family: "Poppins-semibold";
 }
 
-.qrcode-box input {
+
+.codigo-l2 select {
   border-radius: 30px;
   box-shadow: 4px;
   border: solid #F8F8FF;
-  padding: 5px 45px 5px 5px;
-
+  padding: 5px 2px 5px 5px;
+  width: 217px;
+  -webkit-appearance: none;
 }
 
-#inserir-total::-webkit-input-placeholder{ 
-  color:#2A55C2; 
-  font-family: "Poppins-semibold";
-
+.codigo-l2 form {
+  margin-right: 80px;
 }
 
-.qrcode-box p {
-  text-align: left;
-}
-
-.colocar,.inserir{
-  white-space:nowrap;
-  width: fit-content;
-}
-
-.codigo-l2{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content:space-around;
-
+#seta-form{
+  position: relative;
+  left: -28px;
+  bottom: 1px;
+  pointer-events: none;
 }
 
 /* qr code final */

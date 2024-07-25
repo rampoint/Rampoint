@@ -103,10 +103,9 @@ body {
   filter: drop-shadow(5px 5px 4px #e7e3e3);
   margin-top: 20px;
   flex-direction: column;
+  width: 60%;
+  border: solid;
   justify-content: center;
-  width: 100%;
-  max-width: 600px;
-  min-width: 200px;
   align-items: center;
 }
 
@@ -117,10 +116,9 @@ body {
 
 .codigo-l1 {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  width:100%;
-  justify-content: center;
+  
+  
 }
 
 .codigo-aqui button {
@@ -134,10 +132,8 @@ body {
 }
 
 .qrcode-box div {
-
   margin: 10px 10px 10px 10px;
 }
-
 
 .qrcode-box button {
   border-radius: 30px;
@@ -174,17 +170,12 @@ body {
 }
 
 .qrcode-box p {
-  padding: 0px 100px 0px 100px;
+  text-align: left;
 }
-
 
 .colocar,.inserir{
   white-space:nowrap;
-  width:40%;
-}
-
-.colocar p{
-  text-align: right;
+  width: fit-content;
 }
 
 .codigo-l2{

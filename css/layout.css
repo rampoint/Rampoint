@@ -117,7 +117,7 @@
     visibility: hidden;
   }
 
-  p {
+  .footer-container p {
     margin-bottom: 10px;
   }
 

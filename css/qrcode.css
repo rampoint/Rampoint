@@ -2,10 +2,8 @@
 
 @import url(../css/cores.css);
 
-* {
-  margin: 0;
-  padding: 0;
-}
+
+
 
 body {
   background-color: #f8f8ff;
@@ -103,10 +101,10 @@ body {
   filter: drop-shadow(5px 5px 4px #e7e3e3);
   margin-top: 20px;
   flex-direction: column;
-  width: 45%;
+  padding-top: 20px;
+  width: 42%;
   max-width: 800px;
   min-width: 500px;
-  border: solid;
   align-items: center;
 }
 
@@ -142,8 +140,9 @@ body {
 
 .qrcode-salvar {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  width: 100%;
 }
 
 .qrcode-box div {
@@ -170,7 +169,7 @@ body {
   border-radius: 30px;
   box-shadow: 4px;
   border: solid #F8F8FF;
-  padding: 5px 45px 5px 5px;
+  padding: 5px 45px 5px 19px;
 }
 
 #inserir-total::-webkit-input-placeholder {
@@ -197,6 +196,9 @@ body {
   background-color: #7AD761;
   border: solid #7AD761;
   font-family: "Poppins-semibold";
+  margin-top: 25px;
+  margin-right: 65px;
+  padding: 3px 30px 3px 30px;
 }
 
 
@@ -204,20 +206,30 @@ body {
   border-radius: 30px;
   box-shadow: 4px;
   border: solid #F8F8FF;
-  padding: 5px 2px 5px 5px;
+  padding: 10px 45px 7px 110px;
   width: 217px;
   -webkit-appearance: none;
-}
-
-.codigo-l2 form {
-  margin-right: 80px;
+  font-family: "Poppins-bold";
+  
 }
 
 #seta-form{
   position: relative;
   left: -28px;
-  bottom: 1px;
+  top:4px;
   pointer-events: none;
+}
+.select{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  width: 100%;
+}
+#download{
+  padding: 3px 25px 3px 25px;
+}
+#salvar{
+  padding: 3px 40px 3px 40px;
 }
 
 /* qr code final */

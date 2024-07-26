@@ -14,207 +14,296 @@
     <title>Página Sobre nós</title>
 
 </head>
+<script>
+    function showSidebar() {
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+    }
+    function hideSidebar() {
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+    }
+</script>
 
 <body>
-    <div class="container">
-        <header>
-            <div class="titulo">
-                <img src="img/ram.svg" id="sapo-ram" alt="Sapo Ram">
-                <h1 style="color: #3DD715; margin-left: 12px;">ram</h1>
-                <h1>point.</h1>
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg id="fechar" xmlns="http://www.w3.org/2000/svg" height="26"
+                        viewBox="0 96 960 960" width="26">
+                        <path
+                            d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
+                    </svg></a></li>
+            <li id="perfil-sidebar"><img src="img/perfil.svg" alt="" srcset="">
+                <div class="menus">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">PLAY</a></li>
+            <li><a href="#ecopontos">ECOPONTOS</a></li>
+            <li><a href="#">MATERIAIS</a></li>
+            <li><a href="#">QR-CODE</a></li>
+            <li><a href="#">FALE CONOSCO</a></li>
+            <div class="footer-logo">
+                <a id="footer-logo">ram</a>
+                <a id="footer-logo">point.</a>
             </div>
-            <nav>
-                <a href="">HOME</a>
-                <a href="">PLAY</a>
-                <a href="">ECOPONTOS</a>
-                <a href="">MATERIAIS</a>
-                <a href="">QR CODE</a>
-                <a href="">FALE CONOSCO</a>
-            </nav>
-
-            <!-- Modal sem perfil -->
-            <div class="modal-sem-perfil" id="modalSemPerfil">
-                <div class="content-sem-perfil">
-                    <p class="perfil">Perfil</p>
-                    <img src="./img/user.svg" id="foto-perfil" alt="Foto de perfil">
-                    <div class="fundo">
-                        <p class="texto-perfil">Sem login</p>
-                        <div class="grupo">
-                            <div class="linha"></div>
-                            <a class="cadastro">Cadastrar-se</a>
-                            <div class="linha"></div>
-                            <a class="login">Fazer login</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <button class="modalBtn" id="openModalBtn"><img id="perfil" src="img/perfil.svg" alt="perfil"></button>
-            <!-- Modal sem perfil -->
-
-            <div class="dropdown">
-
-                <img class="dropbtn" id="drop" src="img/heroicons-outline_menu.svg" alt="drop">
-                <div class="dropdown-content">
-                    <a href="">Link 1</a>
-                    <a href="">Link 2</a>
-                    <a href="">Link 3</a>
-                </div>
             </div>
 
-            <!-- modal com perfil -->
-            <!-- <div class="modal-com-perfil">
-                <div class="content-com-perfil">
-                    <p class="perfil">Perfil</p>
+        </ul>
+        <ul>
+            <li id="logo-nav"><img src="img/ram.svg" alt="ram">
+                <h1 style="color: black;"><b style="color:#7ad761; margin-left: 10px;">ram</b>point.</h1>
+            <li class="hideOnMobile"><a href="#">HOME</a>
+            <li class="hideOnMobile"><a href="#">PLAY</a>
+            <li class="hideOnMobile"><a href="#ecopontos">ECOPONTOS</a>
+            <li class="hideOnMobile"><a href="#">MATERIAIS</a>
+            <li class="hideOnMobile"><a href="#">QR-CODE</a>
+            <li class="hideOnMobile"><a href="#">FALE CONOSCO</a>
+            <li class="hideOnMobile">
 
-                    <div class="fundo">
+                <!-- Modal sem perfil -->
+                <div class="modal-sem-perfil" id="modalSemPerfil">
+                    <div class="content-sem-perfil">
+                        <p class="perfil">Perfil</p>
                         <img src="./img/user.svg" id="foto-perfil" alt="Foto de perfil">
-                        <p class="texto-perfil">Sem login</p>
-                        <div class="grupo">
-                            <div class="linha"></div>
-                            <a class="cadastro">Cadastrar-se</a>
-                            <div class="linha"></div>
-                            <a class="login">Fazer login</a>
+                        <div class="fundo">
+                            <p class="texto-perfil">Sem login</p>
+                            <div class="grupo">
+                                <hr class="linha">
+                                <a class="cadastro">Cadastrar-se</a>
+                                <hr class="linha">
+                                <a class="login">Fazer login</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <button class="modalBtn"><img id="perfil" src="img/perfil.svg" alt="perfil"></button> -->
-            <!-- modal com perfil -->
+                <button class="modalBtn" id="openModalBtn"><img id="perfil" src="img/perfil.svg" alt="perfil"></button>
+            </li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                        height="26" viewBox="0 96 960 960" width="26">
+                        <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
+                    </svg></a></li>
+        </ul>
 
-        </header>
+        <!-- modal com perfil -->
+        <!-- <div class="modal-com-perfil">
+                        <div class="content-com-perfil">
+                            <p class="perfil">Perfil</p>
+        
+                            <div class="fundo">
+                                <img src="./img/user.svg" id="foto-perfil" alt="Foto de perfil">
+                                <p class="texto-perfil">Sem login</p>
+                                <div class="grupo">
+                                    <hr class="linha"></hr>
+                                    <a class="cadastro">Cadastrar-se</a>
+                                    <hr class="linha"></hr>
+                                    <a class="login">Fazer login</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <button class="modalBtn"><img id="perfil" src="img/perfil.svg" alt="perfil"></button> -->
+        <!-- modal com perfil -->
+    </nav>
+
+    <div class="container">
 
         <section class="imagem-fundo">
-            <img src="./img/imagem-fundo.svg" class="imagem-inicial" alt="">
-    </div>
-    </section>
+            <div class="imagem-inicial">
+                <img src="./img/imagem-fundo.svg" class="img-fundo" alt="">
+                <h1 id="titulo-inicial">SOBRE NÓS</h1>
+                <p id="texto-inicial">Conheça quem está por trás de todo o <span id="span-verde">desenvolvimento</span> da rampoint!
+                </p>
 
-    <section class="campo-empresa">
-        <h1 id="titulo1">Nossa empresa</h1>
-        <p id="texto1">
-            A Rampoint foi fundada no início de 2024 por cinco estudantes de informática para Internet, unidos pelo
-            desejo de promover a sustentabilidade na tecnologia e a preservação ambiental. Inspirados pela falta de
-            iniciativas semelhantes na área de TI, esses jovens desenvolvedores criaram um site inovador que incentiva o
-            descarte correto de computadores. Desde a sua fundação, a Rampoint tem se dedicado a facilitar a doação de
-            equipamentos eletrônicos em troca de cupons de desconto em lojas locais, contribuindo para a conscientização
-            ambiental e a economia circular.
-        </p>
-    </section>
+                <img src="./img/escudo.svg" class="escudo" alt="Ícone escudo">
+                <img src="./img/alvo.svg" class="alvo" alt="Ícone alvo">
+                <img src="./img/lampada.svg" class="lampada" alt="Ícone lâmpada">
+            </div>
 
-    <section class="campo-valores">
-        <div class="fundo-valores">
-            <div class="titulo-principal">
-                <img src="./img/alvo.svg" alt="">
-                <h1 id="titulo2">MISSÃO</h1>
-            </div>
-            <hr id="linha">
+        </section>
 
-            <div class="texto-principal">
-                <p id="texto2">Nossa missão é promover o desenvolvimento sustentável na tecnologia, facilitando o
-                    descarte correto de computadores e equipamentos eletrônicos, enquanto estimulamos a economia local
-                    por meio de incentivos atrativos.</p>
-            </div>
-        </div>
-        <div class="fundo-valores">
-            <div class="titulo-principal">
-                <img src="./img/lampada.svg" alt="">
-                <h1 id="titulo2">VISÃO</h1>
-            </div>
-            <hr id="linha">
+        <section class="campo-empresa">
+            <h1 id="titulo1">Nossa empresa</h1>
+            <p id="texto1">
+                A Rampoint foi fundada no início de 2024 por cinco estudantes de informática para Internet, unidos pelo
+                desejo de promover a sustentabilidade na tecnologia e a preservação ambiental. Inspirados pela falta de
+                iniciativas semelhantes na área de TI, esses jovens desenvolvedores criaram um site inovador que
+                incentiva o
+                descarte correto de computadores. Desde a sua fundação, a Rampoint tem se dedicado a facilitar a doação
+                de
+                equipamentos eletrônicos em troca de cupons de desconto em lojas locais, contribuindo para a
+                conscientização
+                ambiental e a economia circular.
+            </p>
+        </section>
 
-            <div class="texto-principal">
-                <p id="texto2">Ser referência em iniciativas de sustentabilidade no setor de tecnologia, tornando o
-                    descarte correto de eletrônicos uma prática comum e valorizada pela sociedade.</p>
-            </div>
-        </div>
-        <div class="fundo-valores">
-            <div class="titulo-principal">
-                <img src="./img/escudo.svg" alt="">
-                <h1 id="titulo2">VALORES</h1>
-            </div>
-            <hr id="linha">
+        <section class="campo-valores">
+            <div class="fundo-valores">
+                <div class="titulo-principal">
+                    <img src="./img/alvo.svg" alt="">
+                    <h1 id="titulo2">MISSÃO</h1>
+                </div>
+                <hr id="linha">
 
-            <div class="texto-principal">
-                <ul class="lista-valores">
-                    <li id="texto2">
-                        <span id="span-preto">Sustentabilidade:</span> Compromisso com práticas que
-                        preservam o meio ambiente.
-                    </li>
-                    <li id="texto2">
-                        <span id="span-preto">Inovação:</span> Busca constante por soluções inovadoras para problemas
-                        ambientais.
-                    </li>
-                    <li id="texto2">
-                        <span id="span-preto">Responsabilidade:</span> Promover a conscientização sobre o impacto dos
-                        resíduos eletrônicos.
-                    </li>
-                    <li id="texto2">
-                        <span id="span-preto">Colaboração:</span> Trabalhar em conjunto com a comunidade e parceiros
-                        locais para alcançar nossos objetivos.
-                    </li>
-                    <li id="texto2">
-                        <span id="span-preto">Transparência:</span> Manter uma comunicação clara e aberta com nossos
-                        usuários e parceiros
-                    </li>
-                </ul>
+                <div class="texto-principal">
+                    <p id="texto2">Nossa missão é promover o desenvolvimento sustentável na tecnologia, facilitando o
+                        descarte correto de computadores e equipamentos eletrônicos, enquanto estimulamos a economia
+                        local
+                        por meio de incentivos atrativos.</p>
+                </div>
             </div>
-        </div>
-        <hr id="linha2">
-    </section>
+            <div class="fundo-valores">
+                <div class="titulo-principal">
+                    <img src="./img/lampada.svg" alt="">
+                    <h1 id="titulo2">VISÃO</h1>
+                </div>
+                <hr id="linha">
 
-    <section class="campo-equipe">
-        <h1 id="titulo1">Quem somos</h1>
-        <p id="texto1">
-            Somos a Rampoint, uma equipe formada por cinco desenvolvedores apaixonados por tecnologia e sustentabilidade. Como estudantes de informática para Internet, combinamos nossas habilidades técnicas com o desejo de fazer a diferença no mundo. 
-        </p>
-    </section>
-
-
-    <footer class="footer-container">
-        <h2>Quer ser nosso parceiro?</h2>
-        <p>Envie-nos seu email!</p>
-        <div class="email">
-            <input type="email" placeholder="Insira seu email aqui">
-            <button>Enviar</button>
-        </div>
-        <div class="descricao-footer">
-            <div class="logo">
-                <img src="./img/logoBranca.svg" class="logoBranca" alt="Imagem Logo branca 'rampoint'">
-                <img src="./img/logoBranca-extenso.svg" class="logoBranca-small" alt="Imagem Logo branca 'rampoint'">
+                <div class="texto-principal">
+                    <p id="texto2">Ser referência em iniciativas de sustentabilidade no setor de tecnologia, tornando o
+                        descarte correto de eletrônicos uma prática comum e valorizada pela sociedade.</p>
+                </div>
             </div>
-            <div class="geral">
-                <h3 id="geral-titulo">GERAL</h3>
-                <ul>
-                    <li><a href="#">Sobre Nós</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Política e Privacidade</a></li>
-                    <li><a href="#">Termos e Condições</a></li>
-                </ul>
+            <div class="fundo-valores">
+                <div class="titulo-principal">
+                    <img src="./img/escudo.svg" alt="">
+                    <h1 id="titulo2">VALORES</h1>
+                </div>
+                <hr id="linha">
+
+                <div class="texto-principal">
+                    <ul class="lista-valores">
+                        <li id="texto3">
+                            <span id="span-preto">Sustentabilidade:</span> Compromisso com práticas que
+                            preservam o meio ambiente.
+                        </li>
+                        <li id="texto3">
+                            <span id="span-preto">Inovação:</span> Busca constante por soluções inovadoras para
+                            problemas
+                            ambientais.
+                        </li>
+                        <li id="texto3">
+                            <span id="span-preto">Responsabilidade:</span> Promover a conscientização sobre o impacto
+                            dos
+                            resíduos eletrônicos.
+                        </li>
+                        <li id="texto3">
+                            <span id="span-preto">Colaboração:</span> Trabalhar em conjunto com a comunidade e parceiros
+                            locais para alcançar nossos objetivos.
+                        </li>
+                        <li id="texto3">
+                            <span id="span-preto">Transparência:</span> Manter uma comunicação clara e aberta com nossos
+                            usuários e parceiros
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="redes-sociais">
-                <h3 id="redes_sociais-titulo">REDES SOCIAIS</h3>
-                <ul>
-                    <li><a href="https://www.instagram.com/rampoint_?igsh=MWptbnVwdDAzN3NkNw==">Instagram</a></li>
-                    <li><a href="#">Tiktok</a></li>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Linkedln</a></li>
-                </ul>
+            <hr id="linha2">
+        </section>
+
+        <section class="campo-equipe">
+            <h1 id="titulo1">Quem somos</h1>
+            <p id="texto1">
+                Somos a Rampoint, uma equipe formada por cinco desenvolvedores apaixonados por tecnologia e
+                sustentabilidade. Como estudantes de informática para Internet, combinamos nossas habilidades técnicas
+                com o
+                desejo de fazer a diferença no mundo.
+            </p>
+
+            <ul class="lista-equipe">
+                <li class="titulo-integrantes">Nosso time é composto por:</li>
+                <li class="lista-integrantes">Leticia Lemos: Desenvolvedora Front-End</li>
+                <li class="lista-integrantes">Sérgio Gabriel Barbosa: Desenvolvedor Back-End</li>
+                <li class="lista-integrantes">Jennifer Martins: Designer UX/UI</li>
+                <li class="lista-integrantes">Kaique Teixeira: Designer de Apoio</li>
+                <li class="lista-integrantes">Peterson: Suporte Técnico</li>
+            </ul>
+
+            <section class="img-equipe">
+                <p class="mensagem-foto">*imagem da equipe rampoint.</p>
+
+                <img src="./img/Rectangle 290.svg" class="imagem-equipe" alt="Imagem da equipe Rampoint">
+
+                <div class="campo-moods">
+                    <div class="fundo-ram-triste">
+                        <img src="./img/ram-triste.svg" id="ram-triste" alt="Imagem do Ram com o mood(humor) triste">
+                    </div>
+
+                    <div class="fundo-ram-entediado">
+                        <img src="./img/ram-entediado.svg" id="ram-entediado" alt="Imagem do Ram com o mood(humor) entediado">
+                    </div>
+
+                    <div class="fundo-ram-furioso">
+                        <img src="./img/ram-furioso.svg" id="ram-furioso" alt="Imagem do Ram com o mood(humor) furioso">
+                    </div>
+
+                    <div class="fundo-ram-alegre">
+                        <img src="./img/ram-alegre.svg" id="ram-alegre" alt="Imagem do Ram com o mood(humor) alegre">
+                    </div>
+
+                    <div class="fundo-ram-apaixonado">
+                        <img src="./img/ram-apaixonado.svg" id="ram-apaixonado" alt="Imagem do Ram com o mood(humor) apaixonado">
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <footer class="footer-container">
+            <h2>Quer ser nosso parceiro?</h2>
+            <p>Envie-nos seu email!</p>
+            <div class="email">
+                <input type="email" placeholder="Insira seu email aqui">
+                <button>Enviar</button>
             </div>
-            <div class="contato">
-                <h3 id="contato-titulo">CONTATO</h3>
-                <p><b>Email:</b> rampointofc@gmail.com</p>
-                <p><span>Telefone:</span> (11) 93350-6834</p>
-                <p class="endereco"><span>Endereço:</span> Rua João Batista Soares, 440 - Centro, Barueri - SP,
-                    06401-135</p>
+            <div class="descricao-footer">
+                <div class="logo">
+                    <img src="./img/logoBranca.svg" class="logoBranca" alt="Imagem Logo branca 'rampoint'">
+                    <img src="./img/logoBranca-extenso.svg" class="logoBranca-small"
+                        alt="Imagem Logo branca 'rampoint'">
+                </div>
+                <div class="geral">
+                    <h3 id="geral-titulo">GERAL</h3>
+                    <ul>
+                        <li><a href="#">Sobre Nós</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Política e Privacidade</a></li>
+                        <li><a href="#">Termos e Condições</a></li>
+                    </ul>
+                </div>
+                <div class="redes-sociais">
+                    <h3 id="redes_sociais-titulo">REDES SOCIAIS</h3>
+                    <ul>
+                        <li><a href="https://www.instagram.com/rampoint_?igsh=MWptbnVwdDAzN3NkNw==">Instagram</a></li>
+                        <li><a href="#">Tiktok</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Linkedln</a></li>
+                    </ul>
+                </div>
+                <div class="contato">
+                    <h3 id="contato-titulo">CONTATO</h3>
+                    <p><b>Email:</b> rampointofc@gmail.com</p>
+                    <p><span>Telefone:</span> (11) 93350-6834</p>
+                    <p class="endereco"><span>Endereço:</span> Rua João Batista Soares, 440 - Centro, Barueri - SP,
+                        06401-135</p>
+                </div>
             </div>
-        </div>
-        <p class="copyright">Copyright &copy; 2024 Rampoint</p>
+            <p class="copyright">Copyright &copy; 2024 Rampoint</p>
 
 
-    </footer>
-    <script src="./js/modal.js"></script>
-    <script src="./js/scroll.js"></script>
+        </footer>
+        <script src="./js/modal.js"></script>
+        <script src="./js/scroll.js"></script>
 
     </div>
 </body>

@@ -18,7 +18,111 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 25px;
+  height: 35em;
+  width: 100%;
+  position: relative;
+  top: 5em;
+}
+
+.img-fundo {
+  margin-top: 23em;
+}
+
+.imagem-inicial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 35em;
+  width: 80em;
+}
+
+#titulo-inicial {
+  font-family: "Blinker-extrabold";
+  color: var(--preto);
+  font-size: 5em;
+  width: 30%;
+  line-height: 0.8em;
+  text-align: center;
+  text-shadow: 0px 6px 7px rgba(0, 0, 0, 0.2);
+  position: relative;
+  bottom: 5em;
+  right: 4em;
+}
+
+#texto-inicial {
+  font-family: "Poppins-semibold";
+  color: var(--preto);
+  width: 30%;
+  line-height: 1.5em;
+  text-align: start;
+  text-shadow: 0px 6px 7px rgba(0, 0, 0, 0.2);
+  position: relative;
+  bottom: 27em;
+  right: 22.5em;
+}
+
+#span-verde {
+  font-family: "Poppins-bold";
+  color: var(--verde);
+}
+
+.escudo {
+  position: relative;
+  bottom: 39em;
+  left: 28em;
+}
+
+.alvo {
+  position: relative;
+  bottom: 30em;
+  left: 6em;
+}
+
+.lampada {
+  position: relative;
+  bottom: 32em;
+  left: 28em;
+}
+
+.escudo,
+.alvo,
+.lampada {
+  animation-name: float;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+@keyframes animate-shadow {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(4deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 /* final imagem inicial */
@@ -26,7 +130,7 @@ body {
 /* começo campo empresa */
 
 .campo-empresa {
-  margin: 1.5em;
+  margin: 3em 0 5em 0;
 }
 
 #titulo1 {
@@ -39,8 +143,8 @@ body {
 #texto1 {
   font-family: "Poppins-regular";
   color: var(--preto);
-  margin-left: 15em;
-  font-size: 0.9em;
+  margin-left: 13.5em;
+  font-size: 1em;
   width: 70%;
 }
 
@@ -85,6 +189,14 @@ body {
   font-size: 0.9em;
 }
 
+#texto3 {
+  font-family: "Poppins-regular";
+  color: var(--preto);
+  list-style: none;
+  font-size: 0.9em;
+  margin-bottom: 0.2em;
+}
+
 .lista-valores {
   margin-top: 1em;
 }
@@ -103,7 +215,7 @@ body {
 #linha2 {
   color: rgba(0, 0, 0, 0.3);
   width: 80em;
-  margin-top: 1em;
+  margin-top: 3em;
 }
 
 /* final campo valores */
@@ -111,6 +223,129 @@ body {
 /* começo campo equipe */
 
 .campo-equipe {
-    margin: 1em;
+  margin: 5em 0;
 }
+
+.lista-equipe {
+  margin-top: 3em;
+}
+
+.titulo-integrantes {
+  font-family: "Poppins-semibold";
+  color: var(--preto);
+  margin: 3em 0 1em 15em;
+  list-style-image: url(../img/equipe.svg);
+}
+
+.lista-integrantes {
+  font-family: "Poppins-regular";
+  color: var(--preto);
+  list-style: none;
+  margin: 0.5em 0 0 15em;
+}
+
+.img-equipe {
+  width: 90em;
+  height: 40em;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mensagem-foto {
+  font-family: "Poppins-regular";
+  color: var(--preto);
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  width: 50em;
+  margin-top: 5em;
+}
+
+.campo-moods {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1em;
+  gap: 35px;
+  position: relative;
+  bottom: 5em;
+}
+
+.fundo-ram-triste {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: #A0DCF8;
+}
+
+#ram-triste {
+  filter: drop-shadow(0px 5px 5px #6e6e6e);
+}
+
+.fundo-ram-entediado {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: #B6B6B6;
+}
+
+#ram-entediado {
+  filter: drop-shadow(0px 5px 5px #6e6e6e);
+}
+
+.fundo-ram-furioso {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: #FCCECE;
+}
+
+#ram-furioso {
+  filter: drop-shadow(0px 5px 5px #6e6e6e);
+}
+
+.fundo-ram-alegre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: #FFFDCA;
+}
+
+#ram-alegre {
+  filter: drop-shadow(0px 5px 5px #6e6e6e);
+}
+
+.fundo-ram-apaixonado {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: #FFE5E3;
+}
+
+#ram-apaixonado {
+  filter: drop-shadow(0px 5px 5px #6e6e6e);
+}
+
 /* final campo equipe */

@@ -8,18 +8,18 @@
 /* Blinker */
 
 @font-face {
-    font-family: "Blinker-black";
-    src: url(../font/Blinker/Blinker-Black.ttf);
+  font-family: "Blinker-black";
+  src: url(../font/Blinker/Blinker-Black.ttf);
 }
 
 @font-face {
-font-family: "Blinker-bold";
-    src: url(../font/Blinker/Blinker-Bold.ttf);
+  font-family: "Blinker-bold";
+  src: url(../font/Blinker/Blinker-Bold.ttf);
 }
 
 @font-face {
-    font-family: "Blinker-semibold";
-    src: url(../font/Blinker/Blinker-SemiBold.ttf);
+  font-family: "Blinker-semibold";
+  src: url(../font/Blinker/Blinker-SemiBold.ttf);
 }
 
 @font-face {
@@ -28,38 +28,38 @@ font-family: "Blinker-bold";
 }
 
 @font-face {
-    font-family: "Blinker-regular";
-    src: url(../font/Blinker/Blinker-Regular.ttf);
+  font-family: "Blinker-regular";
+  src: url(../font/Blinker/Blinker-Regular.ttf);
 }
 
 /* Poppins */
 
 @font-face {
-    font-family: "Poppins-black";
-    src: url(../font/Poppins/Poppins-Black.ttf);
+  font-family: "Poppins-black";
+  src: url(../font/Poppins/Poppins-Black.ttf);
 }
 
 @font-face {
-    font-family: "Poppins-bold";
-    src: url(../font/Poppins/Poppins-Bold.ttf);
+  font-family: "Poppins-bold";
+  src: url(../font/Poppins/Poppins-Bold.ttf);
 }
 
 @font-face {
-    font-family: "Poppins-extrabold";
-    src: url(../font/Poppins/Poppins-ExtraBold.ttf);
+  font-family: "Poppins-extrabold";
+  src: url(../font/Poppins/Poppins-ExtraBold.ttf);
 }
 
 @font-face {
-    font-family: "Poppins-medium";
-    src: url(../font/Poppins/Poppins-Medium.ttf);
+  font-family: "Poppins-medium";
+  src: url(../font/Poppins/Poppins-Medium.ttf);
 }
 
 @font-face {
-    font-family: "Poppins-regular";
-    src: url(../font/Poppins/Poppins-Medium.ttf);
+  font-family: "Poppins-regular";
+  src: url(../font/Poppins/Poppins-Medium.ttf);
 }
 
 @font-face {
-    font-family: "Poppins-semibold";
-    src: url(../font/Poppins/Poppins-SemiBold.ttf);
+  font-family: "Poppins-semibold";
+  src: url(../font/Poppins/Poppins-SemiBold.ttf);
 }

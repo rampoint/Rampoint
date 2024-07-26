@@ -129,7 +129,6 @@
 /* Tablets em modo paisagem (tela horizontal) */
 @media (max-width: 1024px) {
   /* Estilos aqui */
- 
 
   #perfil {
     float: left;
@@ -157,23 +156,20 @@
     margin-left: 80px;
   }
 
-
-  .container-grid{
+  .container-grid {
     display: flex;
     flex-direction: column;
   }
 
-  .texto{
-    display: flex;
-    flex-direction:column;
-  }
-  
-  .texto-ram{
+  .texto {
     display: flex;
     flex-direction: column;
   }
 
-
+  .texto-ram {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /* Laptops pequenos */
@@ -194,44 +190,41 @@
   /* Estilos aqui */
 }
 
-
-
-
 /* header layout */
-@media(max-width: 895px){
-  .hideOnMobile{
+@media (max-width: 895px) {
+  .hideOnMobile {
     display: none;
   }
-  .menu-button{
+  .menu-button {
     display: block;
   }
-  nav ul{
-    justify-content:space-between;
-    padding-left:0;
+  nav ul {
+    justify-content: space-between;
+    padding-left: 0;
   }
 
-  nav a{
+  nav a {
     padding-right: 30px;
   }
 
-  #logo{
+  #logo {
     margin-left: 20px;
   }
 
-  #logo-nav{
+  #logo-nav {
     margin-left: 20px;
   }
-  #perfil{
-    display:none;
-    }
+  #perfil {
+    display: none;
+  }
 
-    nav a:visited {
-      text-decoration: none;
-      transition: color 1.5s ease-out 1ms;
-    }
-    
-    nav a:hover {
-      color: var(--branco);
-      text-decoration-line: underline;
-    }
+  nav a:visited {
+    text-decoration: none;
+    transition: color 1.5s ease-out 1ms;
+  }
+
+  nav a:hover {
+    color: var(--branco);
+    text-decoration-line: underline;
+  }
 }

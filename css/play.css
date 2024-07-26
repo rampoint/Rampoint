@@ -18,36 +18,44 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 25px;
+  height: 35em;
+  width: 100%;
+  position: relative;
+  top: 5em;
+}
+
+.imagem-inicial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 35em;
+  width: 80em;
 }
 
 #titulo-inicial {
   font-family: "Blinker-extrabold";
   color: var(--preto);
   font-size: 5em;
-  z-index: 1;
-  width: 25%;
+  width: 30%;
   line-height: 0.8em;
   text-align: center;
   text-shadow: 0px 8px 7px rgba(0, 0, 0, 0.2);
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
+  top: 4em;
+  z-index: -1;
 }
 
 #texto-inicial {
   font-family: "Poppins-semibold";
   color: var(--preto);
-  z-index: 1;
-  width: 35%;
+  width: 40%;
   line-height: 1.5em;
   text-align: center;
   text-shadow: 0px 8px 7px rgba(0, 0, 0, 0.2);
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
+  top: 25em;
+  z-index: -1;
 }
 
 #span-preto {
@@ -58,6 +66,16 @@ body {
 #span-azul {
   font-family: "Poppins-bold";
   color: var(--azul);
+}
+
+.botao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 35em;
+  position: relative;
+  bottom: 15em;
 }
 
 #btn {
@@ -74,8 +92,127 @@ body {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
-#scrollTarget {
-  margin-top: 70px; /* Define o ponto de destino para o scroll */
+/* começo lado esquerdo */
+
+.medalha-vermelha {
+  position: relative;
+  top: 5em;
+  right: 25em;
+}
+
+.medalha-verde {
+  position: relative;
+  top: 10em;
+  right: 25em;
+}
+
+.brilho-amarelo {
+  position: relative;
+  bottom: 1em;
+  right: 10em;
+  z-index: -1;
+}
+
+.brilho-verde {
+  position: relative;
+  top: 3em;
+  right: 16em;
+  z-index: -1;
+}
+
+.brilho-azul {
+  position: relative;
+  top: 6em;
+  right: 13em;
+  z-index: -1;
+}
+
+/* final lado esquerdo */
+
+/* começo lado direito */
+
+.brilho-roxo {
+  position: relative;
+  bottom: 12em;
+  left: 10em;
+  z-index: -1;
+}
+
+.medalha-azul {
+  position: relative;
+  bottom: 17em;
+  left: 20em;
+}
+
+.medalha-amarela {
+  position: relative;
+  bottom: 15em;
+  left: 30em;
+}
+
+.brilho-vermelho {
+  position: relative;
+  bottom: 15em;
+  left: 15em;
+  z-index: -1;
+}
+
+.brilho-amarelo2 {
+  position: relative;
+  bottom: 11em;
+  left: 10em;
+  z-index: -1;
+}
+
+.medalha-roxa {
+  position: relative;
+  bottom: 15em;
+  left: 25em;
+}
+
+/* final lado esquerdo */
+
+.medalha-vermelha,
+.medalha-verde,
+.medalha-azul,
+.medalha-amarela,
+.medalha-roxa {
+  animation-name: float;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  z-index: -1;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+@keyframes animate-shadow {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(4deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 /* final imagem inicial */
@@ -86,42 +223,49 @@ body {
   font-family: "Blinker-extrabold";
   color: var(--verde);
   font-size: 1.7em;
-  margin: 1em 0 0.5em 8em;
+  margin: -0.1em 0 0.5em 8em;
 }
 
 #texto1 {
   font-family: "Poppins-regular";
   color: var(--preto);
-  margin-left: 15.5em;
+  font-size: 1em;
+  margin-left: 13.5em;
   width: 70%;
+}
+
+#scrollTarget {
+  padding-top: 9.5em; /* para compensar o menu fixo */
 }
 
 .cupons {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 5em;
+  margin-top: 2.5em;
   background-color: #c0d2ff;
-  width: 100%;
+  width: 1415px;
   height: 25em;
   padding: 2em;
 }
 
 .campo-texto {
-  margin-bottom: 5em;
+  margin: -6em 0 2em 0;
 }
 
 #titulo2 {
   font-family: "Blinker-extrabold";
   color: var(--azul);
   font-size: 1.7em;
-  margin-left: 7em;
+  margin: 3em 0 0 7em;
+  list-style: url(../img/Vector2.svg);
 }
 
 #texto2 {
   font-family: "Poppins-regular";
   color: var(--preto);
-  margin-left: 13.5em;
+  font-size: 1em;
+  margin-left: 12em;
   width: 50%;
 }
 
@@ -156,8 +300,8 @@ body {
   align-self: center;
   border-radius: 35px;
   padding: 10px;
-  width: 15em;
-  height: 15em;
+  width: 13em;
+  height: 13em;
   box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.13) inset;
 }
 
@@ -170,7 +314,7 @@ body {
   padding: 5px;
   cursor: pointer;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-  margin-left: 11.5em;
+  margin-left: 10em;
   margin-top: -1.5em;
 }
 
@@ -178,11 +322,15 @@ body {
 
 /* começo dos cards das empresas */
 
+.section-empresas {
+  margin-top: 5em;
+}
+
 #empresas {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 5em;
+  margin: 2em 0 3em 0;
   flex-wrap: nowrap;
 }
 
@@ -193,25 +341,25 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 15em;
-  height: 6.5em;
+  width: 13em;
+  height: 15em;
   border-radius: 30px;
   padding: 10px;
-  margin: 5px;
+  margin: 50px 10px 0 10px;
 }
-
-/*
 
 .img-empresas {
   position: relative;
-  bottom: 2em;
+  bottom: 3em;
 }
-*/
 
 #titulo-empresas {
   font-family: "Poppins-bold";
   color: #112e78;
   font-size: 1em;
+  margin: 10px 0;
+  position: relative;
+  bottom: 2.5em;
 }
 
 #endereco-empresas {
@@ -219,19 +367,26 @@ body {
   color: #112e78;
   width: 14em;
   text-align: center;
-  font-size: 0.8em;
+  font-size: 0.9em;
+  margin: 0;
+  position: relative;
+  bottom: 2em;
 }
 
 /* final dos cards das empresas */
 
 /* começo das medalhas */
 
+.conquistas {
+  margin-top: 1em;
+}
+
 .medalhas {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 5em;
+  margin: 1em 0 5em 0;
 }
 
 /* final das medalhas */

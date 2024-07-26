@@ -18,84 +18,115 @@
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <div class="titulo">
-                <img src="img/ram.svg" id="sapo-ram" alt="Sapo Ram">
-                <h1 style="color: #3DD715; margin-left: 12px;">ram</h1>
-                <h1>point.</h1>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg id="fechar" xmlns="http://www.w3.org/2000/svg" height="26"
+                        viewBox="0 96 960 960" width="26">
+                        <path
+                            d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
+                    </svg></a></li>
+            <li id="perfil-sidebar"><img src="img/perfil.svg" alt="" srcset="">
+                <div class="menus">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">PLAY</a></li>
+            <li><a href="#ecopontos">ECOPONTOS</a></li>
+            <li><a href="#">MATERIAIS</a></li>
+            <li><a href="#">QR-CODE</a></li>
+            <li><a href="#">FALE CONOSCO</a></li>
+            <div class="footer-logo">
+                <a id="footer-logo">ram</a>
+                <a id="footer-logo">point.</a>
             </div>
-            <nav>
-                <a href="">HOME</a>
-                <a href="">PLAY</a>
-                <a href="">ECOPONTOS</a>
-                <a href="">MATERIAIS</a>
-                <a href="">QR CODE</a>
-                <a href="">FALE CONOSCO</a>
-            </nav>
-
-            <!-- Modal sem perfil -->
-            <div class="modal-sem-perfil" id="modalSemPerfil">
-                <div class="content-sem-perfil">
-                    <p class="perfil">Perfil</p>
-                    <img src="./img/user.svg" id="foto-perfil" alt="Foto de perfil">
-                    <div class="fundo">
-                        <p class="texto-perfil">Sem login</p>
-                        <div class="grupo">
-                            <div class="linha"></div>
-                            <a class="cadastro">Cadastrar-se</a>
-                            <div class="linha"></div>
-                            <a class="login">Fazer login</a>
-                        </div>
-                    </div>
-                </div>
             </div>
 
-            <button class="modalBtn" id="openModalBtn"><img id="perfil" src="img/perfil.svg" alt="perfil"></button>
-            <!-- Modal sem perfil -->
+        </ul>
+        <ul>
+            <li id="logo-nav"><img src="img/ram.svg" alt="ram">
+                <h1 style="color: black;"><b style="color:#7ad761; margin-left: 10px;">ram</b>point.</h1>
+            <li class="hideOnMobile"><a href="#">HOME</a>
+            <li class="hideOnMobile"><a href="#">PLAY</a>
+            <li class="hideOnMobile"><a href="#ecopontos">ECOPONTOS</a>
+            <li class="hideOnMobile"><a href="#">MATERIAIS</a>
+            <li class="hideOnMobile"><a href="#">QR-CODE</a>
+            <li class="hideOnMobile"><a href="#">FALE CONOSCO</a>
+            <li class="hideOnMobile">
 
-            <div class="dropdown">
-
-                <img class="dropbtn" id="drop" src="img/heroicons-outline_menu.svg" alt="drop">
-                <div class="dropdown-content">
-                    <a href="">Link 1</a>
-                    <a href="">Link 2</a>
-                    <a href="">Link 3</a>
-                </div>
-            </div>
-
-            <!-- modal com perfil -->
-            <!-- <div class="modal-com-perfil">
-                <div class="content-com-perfil">
-                    <p class="perfil">Perfil</p>
-
-                    <div class="fundo">
+                <!-- Modal sem perfil -->
+                <div class="modal-sem-perfil" id="modalSemPerfil">
+                    <div class="content-sem-perfil">
+                        <p class="perfil">Perfil</p>
                         <img src="./img/user.svg" id="foto-perfil" alt="Foto de perfil">
-                        <p class="texto-perfil">Sem login</p>
-                        <div class="grupo">
-                            <div class="linha"></div>
-                            <a class="cadastro">Cadastrar-se</a>
-                            <div class="linha"></div>
-                            <a class="login">Fazer login</a>
+                        <div class="fundo">
+                            <p class="texto-perfil">Sem login</p>
+                            <div class="grupo">
+                                <hr class="linha">
+                                <a class="cadastro">Cadastrar-se</a>
+                                <hr class="linha">
+                                <a class="login">Fazer login</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <button class="modalBtn"><img id="perfil" src="img/perfil.svg" alt="perfil"></button> -->
-            <!-- modal com perfil -->
+                <button class="modalBtn" id="openModalBtn"><img id="perfil" src="img/perfil.svg" alt="perfil"></button>
+            </li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                        height="26" viewBox="0 96 960 960" width="26">
+                        <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
+                    </svg></a></li>
+        </ul>
 
-        </header>
+        <!-- modal com perfil -->
+        <!-- <div class="modal-com-perfil">
+                        <div class="content-com-perfil">
+                            <p class="perfil">Perfil</p>
+        
+                            <div class="fundo">
+                                <img src="./img/user.svg" id="foto-perfil" alt="Foto de perfil">
+                                <p class="texto-perfil">Sem login</p>
+                                <div class="grupo">
+                                    <hr class="linha"></hr>
+                                    <a class="cadastro">Cadastrar-se</a>
+                                    <hr class="linha"></hr>
+                                    <a class="login">Fazer login</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <button class="modalBtn"><img id="perfil" src="img/perfil.svg" alt="perfil"></button> -->
+        <!-- modal com perfil -->
+    </nav>
+    
+    <div class="container">
 
         <section class="imagem-fundo">
-            <img src="./img/imagem-fundo.svg" class="imagem-inicial" alt="">
-            <h1 id="titulo-inicial">SAIBA SOBRE HARDWARE</h1>
-            <p id="texto-inicial"> <span id="span-preto">Detecte e Doe:</span> Seja o herói do seu <span
-                    id="span-vermelho">hardware</span>, doando para o ecoponto mais próximo!</p>
+            <div class="imagem-inicial">
+                <img src="./img/imagem-fundo.svg" class="img-fundo" alt="">
+                <h1 id="titulo-inicial">SAIBA SOBRE HARDWARE</h1>
+                <p id="texto-inicial"><span id="span-preto">Detecte e Doe:</span> Seja o herói do seu <span
+                        id="span-vermelho">hardware</span>, doando para o ecoponto mais próximo!
+                </p>
 
-            <div class="botao">
-                <button id="btn"><img src="./img/seta.svg" id="seta-branca" alt=""></button>
+                <img src="./img/interno-inicial.svg" class="interno-inicial" alt="">
+                <img src="./img/brilho-amarelo.svg" class="brilho-amarelo" alt="">
+                <img src="./img/monitor.svg" class="monitor" alt="">
+                <img src="./img/brilho-verde.svg" class="brilho-verde" alt="">
+                <img src="./img/brilho-azul.svg" class="brilho-azul" alt="">
+
+                <img src="./img/brilho-roxo.svg" class="brilho-roxo" alt="">
+                <img src="./img/teclado.svg" class="teclado" alt="">
+                <img src="./img/brilho-vermelho.svg" class="brilho-vermelho" alt="">
+                <img src="./img/brilho-amarelo.svg" class="brilho-amarelo2" alt="">
+                <img src="./img/icone-roxo.svg" class="icone-roxo" alt="">
+
+                <div class="botao">
+                    <button id="btn">
+                        <img src="./img/seta.svg" id="seta-branca" alt="">
+                    </button>
+                </div>
             </div>
+
         </section>
 
         <section id="scrollTarget">
@@ -235,7 +266,7 @@
         </footer>
         <script src="js/botao.js"></script>
         <script src="js/modal.js"></script>
-        <script src="./js/scroll.js"></script>
+        <script src="./js/scroll-modal.js"></script>
         <script src="./js/menuAccordion.js"></script>
 
     </div>

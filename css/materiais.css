@@ -18,20 +18,35 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 25px;
+  height: 35em;
+  width: 100%;
+  position: relative;
+  top: 5em;
+}
+
+.imagem-inicial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 35em;
+  width: 80em;
+}
+
+.img-fundo {
+  margin-top: 33em;
 }
 
 #titulo-inicial {
   font-family: "Blinker-extrabold";
   color: var(--preto);
   font-size: 5em;
-  z-index: 1;
   width: 40%;
   line-height: 0.9em;
   text-align: center;
   text-shadow: 0px 8px 7px rgba(0, 0, 0, 0.2);
   position: absolute;
-  top: 45%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -39,9 +54,8 @@ body {
 #texto-inicial {
   font-family: "Poppins-semibold";
   color: var(--preto);
-  z-index: 1;
-  width: 35%;
-  line-height: 1em;
+  width: 30%;
+  line-height: 1.5em;
   text-align: center;
   text-shadow: 0px 8px 7px rgba(0, 0, 0, 0.2);
   position: absolute;
@@ -60,6 +74,16 @@ body {
   color: #e6322b;
 }
 
+.botao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 35em;
+  position: relative;
+  bottom: 40em;
+}
+
 #btn {
   background-color: var(--azul);
   display: flex;
@@ -75,10 +99,120 @@ body {
 }
 
 #scrollTarget {
-  margin-top: 70px; /* Define o ponto de destino para o scroll */
+  padding-top: 8em; /* para compensar o menu fixo */
+}
+
+/* começo lado esquerdo */
+
+.interno-inicial {
+  position: relative;
+  bottom: 30em;
+  right: 22em;
+}
+
+.brilho-amarelo {
+  position: relative;
+  bottom: 35em;
+  right: 9.5em;
+}
+
+.brilho-verde {
+  position: relative;
+  bottom: 29em;
+  right: 16em;
+}
+
+.brilho-azul {
+  position: relative;
+  bottom: 26em;
+  right: 12em;
+}
+
+.monitor {
+  position: relative;
+  bottom: 21em;
+  right: 22em;
+}
+
+/* final lado esquerdo */
+
+/* começo lado direito */
+
+.brilho-roxo {
+  position: relative;
+  bottom: 47em;
+  left: 10em;
+}
+
+.teclado {
+  position: relative;
+  bottom: 47em;
+  left: 22em;
+}
+
+.brilho-vermelho {
+  position: relative;
+  bottom: 40em;
+  left: 17em;
+}
+
+.brilho-amarelo2 {
+  position: relative;
+  bottom: 35em;
+  left: 9em;
+}
+
+.icone-roxo {
+  position: relative;
+  bottom: 41em;
+  left: 25em;
+}
+
+/* final lado direito */
+
+.interno-inicial,
+.monitor,
+.teclado,
+.icone-roxo {
+  animation-name: float;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+@keyframes animate-shadow {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(4deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 /* final imagem inicial */
+
 
 /* começo textos */
 

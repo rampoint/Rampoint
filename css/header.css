@@ -4,9 +4,9 @@
 
 nav {
   background-color: var(--branco);
-  margin-bottom: 0px;
-  
+  margin-bottom: 0px;  
 }
+
 nav ul {
   background-color: var(--branco);
   width: 100%;
@@ -19,6 +19,7 @@ nav ul {
   margin-right: 15px;
   position: fixed;
   height: 4em;
+  z-index: 5;
 }
 
 #logo-nav {
@@ -104,13 +105,16 @@ nav a:hover {
   margin: 10px 10px 10px 10px;
   font-family: "Batangas";
 }
+
 .sidebar li {
   width: 100%;
 }
+
 .sidebar a {
   width: 100%;
   color: var(--branco);
 }
+
 .menu-button {
   display: none;
 }
@@ -133,6 +137,7 @@ nav a:hover {
   padding: 0;
   margin-left: 20px;
 }
+
 #footer-logo:last-child {
   padding: 0;
 }

@@ -4,13 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/font.css">
-    <link rel="stylesheet" href="./css/cores.css">
+    <title>Página Qr-code</title>
+
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/layout.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/qrcode.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/qrcode.css">
+
+    <link rel="shortcut icon" href="./img/rostoCirculo.svg" type="image/x-icon">
+
 </head>
 <script>
     function showSidebar() {
@@ -25,7 +28,6 @@
 
 <body>
 
-
     <nav>
         <ul class="sidebar">
             <li onclick=hideSidebar()><a href="#"><svg id="fechar" xmlns="http://www.w3.org/2000/svg" height="26"
@@ -37,7 +39,7 @@
                 <div class="menus">
             <li><a href="#">HOME</a></li>
             <li><a href="#">PLAY</a></li>
-            <li><a href="#">ECOPONTOS</a></li>
+            <li><a href="#ecopontos">ECOPONTOS</a></li>
             <li><a href="#">MATERIAIS</a></li>
             <li><a href="#">QR-CODE</a></li>
             <li><a href="#">FALE CONOSCO</a></li>
@@ -50,31 +52,33 @@
         </ul>
         <ul>
             <li id="logo-nav"><img src="img/ram.svg" alt="ram">
-                <h1 style="color: black;"><b style="color:#7ad761;">ram</b>point.</h1>
+                <h1 style="color: black;"><b style="color:#7ad761; margin-left: 10px;">ram</b>point.</h1>
             <li class="hideOnMobile"><a href="#">HOME</a>
             <li class="hideOnMobile"><a href="#">PLAY</a>
-            <li class="hideOnMobile"><a href="#">ECOPONTOS</a>
+            <li class="hideOnMobile"><a href="#ecopontos">ECOPONTOS</a>
             <li class="hideOnMobile"><a href="#">MATERIAIS</a>
             <li class="hideOnMobile"><a href="#">QR-CODE</a>
             <li class="hideOnMobile"><a href="#">FALE CONOSCO</a>
-            <li class="hideOnMobile"><!-- modal sem perfil -->
-                <div class="modal-sem-perfil">
+            <li class="hideOnMobile">
+
+                <!-- Modal sem perfil -->
+                <div class="modal-sem-perfil" id="modalSemPerfil">
                     <div class="content-sem-perfil">
                         <p class="perfil">Perfil</p>
                         <img src="./img/user.svg" id="foto-perfil" alt="Foto de perfil">
                         <div class="fundo">
                             <p class="texto-perfil">Sem login</p>
                             <div class="grupo">
-                                <div class="linha"></div>
+                                <hr class="linha">
                                 <a class="cadastro">Cadastrar-se</a>
-                                <div class="linha"></div>
+                                <hr class="linha">
                                 <a class="login">Fazer login</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <button class="modalBtn"><img id="perfil" src="img/perfil.svg" alt="perfil"></button>
+                <button class="modalBtn" id="openModalBtn"><img id="perfil" src="img/perfil.svg" alt="perfil"></button>
             </li>
             <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
                         height="26" viewBox="0 96 960 960" width="26">
@@ -82,33 +86,27 @@
                     </svg></a></li>
         </ul>
 
-
-
-        <!-- modal sem perfil -->
-
-
         <!-- modal com perfil -->
         <!-- <div class="modal-com-perfil">
-                <div class="content-com-perfil">
-                    <p class="perfil">Perfil</p>
-
-                    <div class="fundo">
-                        <img src="./img/user.svg" id="foto-perfil" alt="Foto de perfil">
-                        <p class="texto-perfil">Sem login</p>
-                        <div class="grupo">
-                            <div class="linha"></div>
-                            <a class="cadastro">Cadastrar-se</a>
-                            <div class="linha"></div>
-                            <a class="login">Fazer login</a>
+                        <div class="content-com-perfil">
+                            <p class="perfil">Perfil</p>
+        
+                            <div class="fundo">
+                                <img src="./img/user.svg" id="foto-perfil" alt="Foto de perfil">
+                                <p class="texto-perfil">Sem login</p>
+                                <div class="grupo">
+                                    <hr class="linha"></hr>
+                                    <a class="cadastro">Cadastrar-se</a>
+                                    <hr class="linha"></hr>
+                                    <a class="login">Fazer login</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-
-            <button class="modalBtn"><img id="perfil" src="img/perfil.svg" alt="perfil"></button> -->
+        
+                    <button class="modalBtn"><img id="perfil" src="img/perfil.svg" alt="perfil"></button> -->
         <!-- modal com perfil -->
     </nav>
-
 
     <div class="conteiner">
 
@@ -120,27 +118,27 @@
         <div class="qrcode-box">
             <div class="codigo-l1">
                 <div class="colocar">
-                    <p>Coloque seu codigo aqui:</p>
+                    <p class="titulo-form">Coloque seu codigo aqui:</p>
                     <input type="text">
                 </div>
                 <div class="inserir">
-                    <p>Inserir pontos:</p>
-                    <input id="inserir-total" placeholder="TOTAL:2000" type="text">
+                    <p class="titulo-form">Inserir pontos:</p>
+                    <input id="inserir-total" placeholder="TOTAL: 2000" type="text">
                 </div>
-             </div>
+            </div>
             <div class="codigo-l2">
                 <form>
-                    <p>Escolha a loja parceira:</p>
+                    <p class="titulo-form">Escolha a loja parceira:</p>
                     <div class="select">
-                    <select name="plataforma">
-                        <option value=""></option>
-                        <option value="xbox">Receba</option>
-                        <option value="ps5">Bora bill</option>
-                        <option value="nsw">Amostradinho</option>
-                        <option value="pcg">fake natty</option>
-                    </select>
-                    <i id="seta-form"><img src="img/setaform.svg" alt="seta"></i>
-                </div>
+                        <select name="plataforma">
+                            <option value=""></option>
+                            <option value="xbox">Receba</option>
+                            <option value="ps5">Bora bill</option>
+                            <option value="nsw">Amostradinho</option>
+                            <option value="pcg">fake natty</option>
+                        </select>
+                        <i id="seta-form"><img src="img/setaform.svg" alt="seta"></i>
+                    </div>
                 </form>
 
                 <button id="gerar-button">Concluído</button>
@@ -152,8 +150,48 @@
                     <button id="download">Download</button><br><br>
                     <button id="salvar">Salvar</button>
                 </div>
-            </div> 
+            </div>
         </div>
+
+        <div class="moedas-esquerda">
+            <div class="brilho-verde">
+                <img src="./img/brlho-verde.svg" alt="Ícone brlho-verde" id="brilho-verde">
+            </div>
+            <div class="moeda-verde">
+                <img src="./img/moeda-verde.svg" alt="Ícone moeda-verde" id="moeda-verde">
+                <div class="shadow"></div>
+            </div>
+
+            <div class="moeda-amarela">
+                <img src="./img/moeda-amarela.svg" alt="Ícone moeda amarela" id="moeda-amarela">
+                <div class="shadow-moeda-amarela"></div>
+            </div>
+
+            <div class="briho-amarelo">
+                <img src="./img/brilho-amarelo.svg" alt="Ícone brilho amarelo" id="brilho-amarelo">
+            </div>
+
+            <div class="estrela">
+                <img src="./img/estrela.svg" alt="Ícone estrela amarela" id="estrela">
+            </div>
+        </div>
+
+        <div class="moedas-direita">
+            <div class="moeda-verde2">
+                <img src="./img/moeda-verde2.svg" alt="Ícone moeda verde" id="moeda-verde2">
+                <div class="shadow-moeda2"></div>
+            </div>
+
+            <div class="briho-roxo">
+                <img src="./img/brilho-roxo.svg" alt="Ícone brilho roxo" id="brilho-roxo">
+            </div>
+
+            <div class="moeda-roxa">
+                <img src="./img/moeda-roxa.svg" alt="Ícone moeda roxa" id="moeda-roxa">
+                <div class="shadow-moeda-roxa"></div>
+            </div>
+        </div>
+
     </div>
 
     <footer class="footer-container">
@@ -197,7 +235,8 @@
 
 
     </footer>
-    <script src="js/modal.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/scroll-modal.js"></script>
 
     </div>
 </body>

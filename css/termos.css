@@ -13,7 +13,7 @@ body {
 .termos {
   display: flex;
   flex-direction: column;
-  height: auto
+  height: auto;
 }
 
 .titulo {
@@ -24,33 +24,33 @@ body {
 }
 
 .lista-termos {
-    margin: 0 10em;
+  margin: 0 10em;
 }
 
 .titulo-termos {
-    font-family: "Poppins-semibold";
-    color: var(--preto);
-    list-style: none;
-    font-size: 1.1em;
+  font-family: "Poppins-semibold";
+  color: var(--preto);
+  list-style: none;
+  font-size: 1.1em;
 }
 
 .texto-termos {
-    font-family: "Poppins-regular";
-    color: var(--preto);
-    list-style: none;
-    font-size: 0.9em;
-    margin-bottom: 1.5em;
+  font-family: "Poppins-regular";
+  color: var(--preto);
+  list-style: none;
+  font-size: 0.9em;
+  margin-bottom: 2em;
 }
 
 .data {
-    font-family: "Poppins-regular";
-    color: var(--preto);
-    list-style: none;
-    font-size: 0.9em;
-    margin: 3em 0 2em 0;
+  font-family: "Poppins-regular";
+  color: var(--preto);
+  list-style: none;
+  font-size: 0.9em;
+  margin: 3em 0 2em 0;
 }
 
 #span-preto {
-    font-family: "Poppins-semibold";
-    color: var(--preto);
+  font-family: "Poppins-semibold";
+  color: var(--preto);
 }

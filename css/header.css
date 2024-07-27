@@ -5,6 +5,7 @@
 nav {
   background-color: var(--branco);
   margin-bottom: 0px;
+  z-index: 5;
   
 }
 nav ul {

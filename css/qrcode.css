@@ -106,7 +106,7 @@ body {
 .qrcode-box p {
   color: var(--preto);
   font-family: "Poppins-semibold";
-  text-align: left;
+  
   outline: none;
 }
 
@@ -120,7 +120,7 @@ body {
 .colocar,
 .inserir {
   white-space: nowrap;
-  width: fit-content;
+  width:50%;
 }
 
 .titulo-form {
@@ -129,7 +129,7 @@ body {
 
 .codigo-l1 p {
   margin-bottom: 10px;
-  margin-left: 5px;
+
 }
 
 .codigo-aqui button {
@@ -177,8 +177,9 @@ body {
   display: flex;
   flex-direction: row;
   width: 100%;
-  justify-content: space-around;
+  justify-content:center;
   align-items: center;
+
 }
 
 .codigo-l2 p {
@@ -190,34 +191,49 @@ body {
   background-color: var(--verde);
   border: none;
   font-family: "Poppins-semibold";
-  margin-top: 25px;
-  margin-right: 65px;
+  margin-top: 20px;
   padding: 5px 30px 5px 30px;
 }
+
+.botaoC{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 .codigo-l2 select {
   border-radius: 30px;
   border: none;
   padding: 0.6em;
-  width: 230px;
+  width: 226px;
   -webkit-appearance: none;
   font-family: "Poppins-bold";
   outline: none;
   cursor: pointer;
+  margin-left: 30px;
+  
 }
+.codigo-l2 form{
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 
 #seta-form {
   position: relative;
   left: -28px;
-  top: 5px;
+  
   pointer-events: none;
+  
 }
 
 .select {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  width: 100%;
+ white-space: nowrap;
 }
 
 #download {

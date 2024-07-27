@@ -182,6 +182,11 @@
   .logoBranca {
     display: none;
   }
+  .codigo-l2 select {
+
+    margin-left: 0px;
+    
+  }
 }
 
 /* Laptops e desktops */

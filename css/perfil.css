@@ -24,6 +24,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 20px;
+  margin-top: 8em;
 }
 
 #titulo-inicial {
@@ -298,6 +299,7 @@ body {
   font-family: "Poppins-semibold";
   color: var(--preto);
   transition: none;
+  text-decoration: none;
 }
 
 .editar-perfil:hover {

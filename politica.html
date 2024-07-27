@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/politicas.css">
+
+    <link rel="shortcut icon" href="./img/rostoCirculo.svg" type="image/x-icon">
+    <title>Política e Privacidade</title>
+
+</head>
+
+<body>
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg id="fechar" xmlns="http://www.w3.org/2000/svg" height="26"
+                        viewBox="0 96 960 960" width="26">
+                        <path
+                            d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
+                    </svg></a></li>
+            <li id="perfil-sidebar"><img src="img/perfil.svg" alt="" srcset="">
+                <div class="menus">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">PLAY</a></li>
+            <li><a href="#ecopontos">ECOPONTOS</a></li>
+            <li><a href="#">MATERIAIS</a></li>
+            <li><a href="#">QR-CODE</a></li>
+            <li><a href="#">FALE CONOSCO</a></li>
+            <div class="footer-logo">
+                <a id="footer-logo">ram</a>
+                <a id="footer-logo">point.</a>
+            </div>
+            </div>
+
+        </ul>
+        <ul>
+            <li id="logo-nav"><img src="img/ram.svg" alt="ram">
+                <h1 style="color: black;"><b style="color:#7ad761; margin-left: 10px;">ram</b>point.</h1>
+            <li class="hideOnMobile"><a href="#">HOME</a>
+            <li class="hideOnMobile"><a href="#">PLAY</a>
+            <li class="hideOnMobile"><a href="#ecopontos">ECOPONTOS</a>
+            <li class="hideOnMobile"><a href="#">MATERIAIS</a>
+            <li class="hideOnMobile"><a href="#">QR-CODE</a>
+            <li class="hideOnMobile"><a href="#">FALE CONOSCO</a>
+            <li class="hideOnMobile">
+
+                <!-- Modal sem perfil -->
+                <div class="modal-sem-perfil" id="modalSemPerfil">
+                    <div class="content-sem-perfil">
+                        <p class="perfil">Perfil</p>
+                        <img src="./img/user.svg" id="foto-perfil" alt="Foto de perfil">
+                        <div class="fundo">
+                            <p class="texto-perfil">Sem login</p>
+                            <div class="grupo">
+                                <hr class="linha">
+                                <a class="cadastro">Cadastrar-se</a>
+                                <hr class="linha">
+                                <a class="login">Fazer login</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="modalBtn" id="openModalBtn"><img id="perfil" src="img/perfil.svg" alt="perfil"></button>
+            </li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                        height="26" viewBox="0 96 960 960" width="26">
+                        <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
+                    </svg></a></li>
+        </ul>
+
+        <!-- modal com perfil -->
+        <!-- <div class="modal-com-perfil">
+                        <div class="content-com-perfil">
+                            <p class="perfil">Perfil</p>
+        
+                            <div class="fundo">
+                                <img src="./img/user.svg" id="foto-perfil" alt="Foto de perfil">
+                                <p class="texto-perfil">Sem login</p>
+                                <div class="grupo">
+                                    <hr class="linha"></hr>
+                                    <a class="cadastro">Cadastrar-se</a>
+                                    <hr class="linha"></hr>
+                                    <a class="login">Fazer login</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <button class="modalBtn"><img id="perfil" src="img/perfil.svg" alt="perfil"></button> -->
+        <!-- modal com perfil -->
+    </nav>
+
+    <div class="container">
+
+        <section class="termos">
+            <h1 class="titulo">Política e Privacidade</h1>
+
+            <ul class="lista-termos">
+                <li class="titulo-termos"> 1. Introdução</li>
+                <li class="texto-termos">Bem-vindo à Rampoint!. Estamos comprometidos em proteger a sua privacidade e
+                    garantir que suas informações pessoais sejam manuseadas de forma segura e responsável. Esta Política
+                    de Privacidade descreve como coletamos, usamos, e protegemos suas informações pessoais.
+                </li>
+                <li class="titulo-termos">2. Informações que Coletamos</li>
+                <li class="texto-termos">Coletamos informações pessoais de várias maneiras, incluindo:
+                    <br>
+                    - Informações fornecidas diretamente por você: Nome, endereço de e-mail, endereço postal, número de
+                    telefone e outras informações de contato.
+                    <br>
+                    - Informações coletadas automaticamente: Dados de navegação, como endereço IP, tipo de navegador,
+                    páginas visitadas e tempo gasto em nosso site.
+                    <br>
+                    - Informações de terceiros: Podemos receber informações sobre você de outras fontes, como redes
+                    sociais ou parceiros de negócios.
+                </li>
+                <li class="titulo-termos">3. Uso das Informações</li>
+                <li class="texto-termos">Usamos as informações coletadas para:
+                    <br>
+                    - *Fornecer e gerenciar nossos serviços: Para processar suas solicitações, responder a perguntas e
+                    melhorar a funcionalidade do Site.
+                    <br>
+                    - Comunicação: Enviar e-mails informativos, promocionais e outras comunicações relacionadas aos
+                    nossos serviços.
+                    <br>
+                    - Análise e melhoria: Monitorar e analisar tendências, uso e atividades para melhorar nossos
+                    serviços e o Site.
+                    <br>
+                    - Cumprimento legal: Atender a obrigações legais e regulatórias.
+                </li>
+                <li class="titulo-termos">4. Compartilhamento de Informações</li>
+                <li class="texto-termos">Não vendemos, trocamos ou alugamos suas informações pessoais para terceiros.
+                    Podemos compartilhar suas informações com:
+                    <br>
+                    - Fornecedores de serviços: Empresas terceirizadas que nos ajudam a operar o Site e fornecer nossos
+                    serviços.
+                    <br>
+                    - Requisitos legais: Se formos obrigados por lei a divulgar suas informações ou para proteger nossos
+                    direitos e segurança.
+                </li>
+                <li class="titulo-termos">5. Segurança das Informações</li>
+                <li class="texto-termos">Implementamos medidas de segurança apropriadas para proteger suas informações
+                    contra acesso não autorizado, alteração, divulgação ou destruição. No entanto, nenhum método de
+                    transmissão pela Internet ou armazenamento eletrônico é 100% seguro.
+                </li>
+                <li class="titulo-termos">6. Seus Direitos</li>
+                <li class="texto-termos">Você tem o direito de:
+                    <br>
+                    - Acessar suas informações pessoais: Solicitar uma cópia das informações que temos sobre você.
+                    <br>
+                    - Corrigir informações incorretas: Atualizar ou corrigir suas informações pessoais.
+                    <br>
+                    - Excluir suas informações: Solicitar a exclusão de suas informações pessoais.
+                    <br>
+                    - Optar por não receber comunicações: Cancelar a assinatura de e-mails promocionais.
+                </li>
+                <li class="titulo-termos">7. Cookies e Tecnologias Semelhantes</li>
+                <li class="texto-termos">Usamos cookies e tecnologias semelhantes para melhorar sua experiência no Site.
+                    Você pode configurar seu navegador para recusar cookies, mas isso pode afetar a funcionalidade do
+                    Site.
+                </li>
+                <li class="titulo-termos">8. Alterações na Política de Privacidade</li>
+                <li class="texto-termos">Podemos atualizar esta Política de Privacidade periodicamente. Recomendamos que
+                    você reveja esta política regularmente para se manter informado sobre como estamos protegendo suas
+                    informações.
+                </li>
+                <li class="titulo-termos">9. Contato</li>
+                <li class="texto-termos">Se você tiver perguntas ou preocupações sobre esta Política de Privacidade,
+                    entre em contato conosco:
+                </li>
+                <li class="texto-termos">- E-mail: rampointofc@gmail.com</li>
+                <li class="texto-termos">- Telefone: (11) 93350-6834</li>
+                <li class="data"><span id="span-preto">Data de Vigência:</span> 1 de junho de 2024</li>
+                <li class="texto-termos">Estes Termos de Uso foram atualizados pela última vez em 25 de junho de 2024.
+                </li>
+
+            </ul>
+        </section>
+
+        <footer class="footer-container">
+            <h2>Quer ser nosso parceiro?</h2>
+            <p>Envie-nos seu email!</p>
+            <div class="email">
+                <input type="email" id="email" placeholder="Insira seu email aqui">
+                <button>Enviar</button>
+            </div>
+            <div class="descricao-footer">
+                <div class="logo">
+                    <img src="./img/logoBranca.svg" class="logoBranca" alt="Imagem Logo branca 'rampoint'">
+                    <img src="./img/logoBranca-extenso.svg" class="logoBranca-small"
+                        alt="Imagem Logo branca 'rampoint'">
+                </div>
+                <div class="geral">
+                    <h3 id="geral-titulo">GERAL</h3>
+                    <ul>
+                        <li><a href="#">Sobre Nós</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Política e Privacidade</a></li>
+                        <li><a href="#">Termos e Condições</a></li>
+                    </ul>
+                </div>
+                <div class="redes-sociais">
+                    <h3 id="redes_sociais-titulo">REDES SOCIAIS</h3>
+                    <ul>
+                        <li><a href="https://www.instagram.com/rampoint_?igsh=MWptbnVwdDAzN3NkNw==">Instagram</a></li>
+                        <li><a href="#">Tiktok</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Linkedln</a></li>
+                    </ul>
+                </div>
+                <div class="contato">
+                    <h3 id="contato-titulo">CONTATO</h3>
+                    <p><b>Email:</b> rampointofc@gmail.com</p>
+                    <p><span>Telefone:</span> (11) 93350-6834</p>
+                    <p class="endereco"><span>Endereço:</span> Rua João Batista Soares, 440 - Centro, Barueri - SP,
+                        06401-135</p>
+                </div>
+            </div>
+            <p class="copyright">Copyright &copy; 2024 Rampoint</p>
+        </footer>
+
+        <script src="./js/modal.js"></script>
+        <script src="./js/scroll-modal.js"></script>
+
+    </div>
+</body>
+
+</html>

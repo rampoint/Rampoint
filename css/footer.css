@@ -66,7 +66,7 @@ h3,
   margin-top: 20px;
 }
 
-.footer-container input[type="email"] {
+#email {
   background-color: var(--branco);
   padding: 10px;
   border: none;
@@ -75,8 +75,11 @@ h3,
   height: 20px;
   max-width: 80%;
   margin-right: 10px;
-  font-family: "Poppins-bold";
+}
+
+#email::placeholder {
   color: var(--cinza);
+  font-family: "Poppins-bold";
 }
 
 input:focus {

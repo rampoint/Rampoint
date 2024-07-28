@@ -106,10 +106,6 @@ body {
   z-index: -3;
 }
 
-.inicio {
-  flex-direction: column;
-}
-
 #titulo-inicial {
   font-family: "Blinker-extrabold";
   color: var(--preto);

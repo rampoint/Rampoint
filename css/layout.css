@@ -1,22 +1,20 @@
 /* Dispositivos móveis pequenos (em pé) */
 @media (max-width: 320px) {
   /* Estilos aqui */
+
+  /* .imagem-fundo {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+   */
   .footer-container {
-    width: 320px;
+    width: 100px;
     height: auto;
     position: none;
   }
 
   .flor img {
     visibility: hidden;
-  }
-
-  h2 {
-    margin: 0;
-  }
-
-  h3 {
-    margin-top: 15px;
   }
 
   .email {
@@ -28,7 +26,7 @@
   }
 
   .footer-container .logo {
-    width: 80px;
+    width: 100%;
   }
 }
 
@@ -129,7 +127,6 @@
 /* Tablets em modo paisagem (tela horizontal) */
 @media (max-width: 1024px) {
   /* Estilos aqui */
- 
 
   #perfil {
     float: left;
@@ -157,23 +154,20 @@
     margin-left: 80px;
   }
 
-
-  .container-grid{
+  .container-grid {
     display: flex;
     flex-direction: column;
   }
 
-  .texto{
-    display: flex;
-    flex-direction:column;
-  }
-  
-  .texto-ram{
+  .texto {
     display: flex;
     flex-direction: column;
   }
 
-
+  .texto-ram {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /* Laptops pequenos */
@@ -194,44 +188,63 @@
   /* Estilos aqui */
 }
 
-
-
-
 /* header layout */
-@media(max-width: 895px){
-  .hideOnMobile{
+@media (max-width: 895px) {
+  .hideOnMobile {
     display: none;
   }
-  .menu-button{
+  .menu-button {
     display: block;
   }
-  nav ul{
-    justify-content:space-between;
-    padding-left:0;
+
+  nav ul {
+    background-color: var(--branco);
+    width: 415px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
   }
 
-  nav a{
-    padding-right: 30px;
+  .imagem-fundo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 150px 25px 25px 25px;
   }
 
-  #logo{
+  .imagem-inicial {
+    width: 20em;
+    margin-left: 0em;
+  }
+
+  #titulo-inicial {
+    font-size: 8em;
+    width: 25%;
+    line-height: 0.8em;
+    margin: 0 0 0 0em;
+    margin-left: 0em;
+  }
+
+  #logo {
     margin-left: 20px;
   }
 
-  #logo-nav{
+  #logo-nav {
     margin-left: 20px;
   }
-  #perfil{
-    display:none;
-    }
+  #perfil {
+    display: none;
+  }
 
-    nav a:visited {
-      text-decoration: none;
-      transition: color 1.5s ease-out 1ms;
-    }
-    
-    nav a:hover {
-      color: var(--branco);
-      text-decoration-line: underline;
-    }
+  nav a:visited {
+    text-decoration: none;
+    transition: color 1.5s ease-out 1ms;
+  }
+
+  nav a:hover {
+    color: var(--branco);
+    text-decoration-line: underline;
+  }
 }

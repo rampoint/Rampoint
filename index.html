@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/ram-redondo.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <script src="js/index.js"></script>
+    <script src="js/validation.js"></script>
     <title>Login e cadastro</title>
 </head>
 
@@ -79,15 +81,15 @@
                 <h1 class="titulo login">Login</h1>
                 <div class="email">
                     <label for="">Email</label>
-                    <input type="email">
+                    <input type="email" id="email" onchange="validarCampos()">
                 </div>
 
                 <div class="senha">
                     <label for="">Senha</label>
-                    <input type="password">
+                    <input type="password" id="senha">
                 </div>
-                <a href="#">Esqueceu sua senha?</a>
-                <button>Entrar</button>
+                <button id="recover-password" disabled="true">Esqueceu sua senha?</button>
+                <button id="entrar" type="button" onclick="pegarUsuario()"disabled="false">Entrar</button>
                 <div class="social-icons">
                     <a href="#" class="icon"><img src="./img/google-Icon.svg" alt="Ícone Google"></a>
                     <a href="#" class="icon"><img src="./img/facebook-icon.svg" alt="Ícone Facebook"></a>
@@ -114,8 +116,9 @@
             </div>
         </div>
     </div>
-
     <script src="script.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-auth-compat.js"></script>
 </body>
 
 </html>

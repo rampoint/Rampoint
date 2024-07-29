@@ -45,8 +45,8 @@ function mudarErroEmail() {
 function mudarErroSenha() {
     const senha = form.senha().value
 
-        form.senha().style.border = !senha ? 'none' : "rgb(193, 91, 91) solid"
-        form.erro_senha().style.display = !senha ? "none" : "block"
+        form.senha().style.border = senha ? 'none' : "rgb(193, 91, 91) solid"
+        form.erro_senha().style.display = senha ? "none" : "block"
 
     
 }

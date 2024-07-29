@@ -81,12 +81,16 @@
                 <h1 class="titulo login">Login</h1>
                 <div class="email">
                     <label for="">Email</label>
-                    <input type="email" id="email" onchange="validarCampos()">
+                    <input type="email" id="email" onchange="validarcampoEmail()">
+                    <label id="erro-login-invalido">Email incorreto ou inválido</label>
+                    <label id="erro-login">O email é obrigatório</label>
                 </div>
 
                 <div class="senha">
                     <label for="">Senha</label>
-                    <input type="password" id="senha">
+                    <input type="password" id="senha" onchange="validarcampoSenha()">
+                    <label id="erro-senha-incorreta">Senha incorreta</label>
+                    <label id="erro-senha">A senha é obrigatória</label>
                 </div>
                 <button id="recover-password" disabled="true">Esqueceu sua senha?</button>
                 <button id="entrar" type="button" onclick="pegarUsuario()"disabled="false">Entrar</button>

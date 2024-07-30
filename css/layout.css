@@ -1,20 +1,165 @@
 /* Dispositivos móveis pequenos (em pé) */
-@media (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 421px) {
   /* Estilos aqui */
 
-  /* .imagem-fundo {
-    flex-wrap: nowrap;
+  .container {
+    display: flex;
     flex-direction: column;
-  }
-   */
-  .footer-container {
-    width: 100px;
-    height: auto;
-    position: none;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
   }
 
-  .flor img {
-    visibility: hidden;
+  .imagem-fundo {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    height: 35em;
+  }
+
+  .internos-inicial {
+    position: relative;
+    right: 8em;
+    top: 5em;
+  }
+
+  .brilho-inicial {
+    position: relative;
+    right: 8em;
+    top: 15em;
+    z-index: -1;
+  }
+
+  .monitor-inicial {
+    position: relative;
+    right: 8em;
+    top: 25em;
+  }
+
+  .roxo-inicial {
+    position: relative;
+    left: 8em;
+    top: 15em;
+  }
+
+  .brilho-inicial2 {
+    position: relative;
+    left: 8em;
+    top: 29em;
+    z-index: -1;
+  }
+
+  .teclado-inicial {
+    position: relative;
+    left: 8em;
+    top: 35em;
+  }
+
+  .imagem-inicial {
+    width: 350px;
+    margin: 0 0 30px 0;
+    z-index: -1;
+  }
+
+  #titulo-inicial {
+    font-size: 4em;
+    width: 90%;
+    margin: 0 0 30px 0;
+    text-align: center;
+  }
+
+  #texto-inicial {
+    width: 95%;
+    margin: 0;
+    text-align: center;
+    font-size: 1em;
+  }
+
+  .botao {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    gap: 15px;
+    margin-left: 4em;
+  }
+
+  #texto1,
+  #texto2 {
+    margin: 20px 70px;
+    text-align: start;
+  }
+
+  #titulo1 {
+    font-size: 1.7em;
+    margin: 240px 0 10px 110px;
+  }
+
+  #titulo2 {
+    font-size: 1.5em;
+    margin: 95px 0 0 150px;
+  }
+
+  .imagem-medalha {
+    width: 50%;
+    height: 50%;
+  }
+
+  #medalhas {
+    width: 350px;
+    margin-left: 60px;
+  }
+
+  .ramEmpe {
+    width: 240px;
+    margin: 0;
+  }
+
+  .cep-rua {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+  }
+
+  .form-conteiner {
+    background-color: rgba(217, 217, 217, 0.5);
+    border-radius: 35px;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  input {
+    background-color: var(--branco);
+    padding-left: 10px;
+    border: none;
+    border-radius: 30px;
+    width: 10px;
+    height: 35px;
+    max-width: 80%;
+    margin-right: 10px;
+  }
+
+  #bairro {
+    grid-area: "bairro";
+    padding-right: 50px;
+  }
+
+  #titulo-descarte {
+    font-family: "Poppins-bold";
+    color: var(--preto);
+    margin-left: 30px;
+  }
+
+  .footer-container {
+    width: 100%;
+    height: auto;
+    position: none;
   }
 
   .email {
@@ -30,9 +175,9 @@
   }
 }
 
-/* Dispositivos móveis médios (em pé) */
+/* Dispositivos móveis médios (em pé)
 @media (max-width: 375px) {
-  /* Estilos aqui */
+  /* Estilos aqui
   .flor img {
     visibility: hidden;
   }
@@ -41,7 +186,7 @@
     display: flex;
     flex-wrap: wrap;
   }
-}
+} */
 
 /* Dispositivos móveis grandes (em pé) */
 @media (max-width: 425px) {
@@ -50,10 +195,6 @@
     margin: 0;
     bottom: 20px;
     flex-direction: column;
-  }
-
-  .flor img {
-    visibility: hidden;
   }
 
   .flor img {
@@ -90,10 +231,6 @@
   .footer-container button {
     margin-right: 10px;
   }
-
-  h3 {
-    margin-top: 15px;
-  }
 }
 
 /* quebrando a linha da imagem */
@@ -111,17 +248,6 @@
 /* Tablets em modo retrato (tela vertical) */
 @media (max-width: 768px) {
   /* Estilos aqui */
-  .flor img {
-    visibility: hidden;
-  }
-
-  p {
-    margin-bottom: 10px;
-  }
-
-  #medalhas {
-    width: 280px;
-  }
 }
 
 /* Tablets em modo paisagem (tela horizontal) */
@@ -207,25 +333,25 @@
     position: fixed;
   }
 
-  .imagem-fundo {
+  /* .imagem-fundo {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 150px 25px 25px 25px;
-  }
+  } */
 
-  .imagem-inicial {
+  /* .imagem-inicial {
     width: 20em;
     margin-left: 0em;
-  }
+  } */
 
-  #titulo-inicial {
+  /* #titulo-inicial {
     font-size: 8em;
     width: 25%;
     line-height: 0.8em;
     margin: 0 0 0 0em;
     margin-left: 0em;
-  }
+  } */
 
   #logo {
     margin-left: 20px;

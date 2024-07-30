@@ -20,6 +20,10 @@ body {
   margin: 150px 25px 25px 25px;
 }
 
+.inicio {
+  margin-left: 2em;
+}
+
 .internos-inicial {
   position: relative;
   right: 27em;
@@ -101,9 +105,9 @@ body {
 }
 
 .imagem-inicial {
-  width: 30em;
+  width: 430px;
   margin-left: 30em;
-  z-index: -3;
+  z-index: -1;
 }
 
 #titulo-inicial {
@@ -268,6 +272,7 @@ span {
 .info-box {
   margin: auto;
   width: 900px;
+  max-width: 900px;
   display: flex;
   flex-direction: column;
   margin-top: 100px;
@@ -302,6 +307,7 @@ form {
   margin-top: 30px;
 }
 
+/*
 .box-codigo,
 .box-pontos {
   display: flex;
@@ -336,7 +342,7 @@ form {
   height: 30px;
 }
 
-/* fim form */
+ fim form */
 
 /* colocando endereco começo */
 

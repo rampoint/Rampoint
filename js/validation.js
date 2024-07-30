@@ -1,3 +1,20 @@
+function login(){
+    
+        firebase.auth().signInWithEmailAndPassword(form.email().value,form.senha().value)
+        .then(response =>{
+        window.location.href = "teste.html"
+        }).catch(error=>{
+            alert(getErrorCode(error))
+        })
+}
+
+function getErrorCode(error){
+    if(error.code == "auth/invalid-credential"){
+        return("Usuário não encontrado")
+    }
+    return error.message
+}
+
 
 function validarcampoEmail() {
     mudarBotoes()
@@ -47,8 +64,6 @@ function mudarErroSenha() {
 
         form.senha().style.border = senha ? 'none' : "rgb(193, 91, 91) solid"
         form.erro_senha().style.display = senha ? "none" : "block"
-
-    
 }
 
 function mudarBotoes() {

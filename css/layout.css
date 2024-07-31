@@ -91,24 +91,32 @@
 
   /* grid */
 
+  .container-grid {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
   #texto1 {
     margin: 20px 70px -40px 70px;
-    text-align: start;
+    text-align: center;
   }
 
   #texto2 {
     margin: 20px 70px;
-    text-align: start;
+    text-align: center;
   }
 
   #titulo1 {
+    text-align: center;
     font-size: 1.7em;
-    margin: 240px 0 10px 110px;
+    margin: 280px 0 10px 0px;
   }
 
   #titulo2 {
+    text-align: center;
     font-size: 1.5em;
-    margin: 95px 0 0 150px;
+    margin: 0px 0 0 0px;
   }
 
   .imagem-medalha {
@@ -130,12 +138,13 @@
     margin: 0;
   }
 
-  .texto-ram {
-    margin-top: -5em;
-  }
   /* grid */
 
   /* forms */
+
+  #ecopontos {
+    max-width: 50%;
+  }
 
   .info-box {
     display: flex;
@@ -146,26 +155,35 @@
   }
 
   #h1-info {
-    margin-bottom: 20px;
-    font-size: 1.5em;
-    width: 100%;
+    text-align: center;
+    width: 15em;
+  }
+
+  #p-info {
+    text-align: center;
+    width: 15em;
+    margin-bottom: 30px;
   }
 
   .form-conteiner {
-    background-color: rgba(217, 217, 217, 0.5);
-    border-radius: 35px;
-    display: flex;
     padding: 10px;
-    flex-direction: column;
-    width: 20em;
+    flex-direction: row;
+    width: 300px;
   }
 
   input {
-    padding-left: 5px;
-    width: 80px;
+    width: 150px;
     height: 35px;
     max-width: 100%;
     margin-right: 0px;
+  }
+
+  .cep-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+    max-width: 100%;
   }
 
   .cep-rua {
@@ -174,13 +192,36 @@
     margin-left: 0;
   }
 
+  .rua-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 15px 0 0 20px;
+  }
+
+  #rua {
+    padding-right: 100px;
+  }
+
   #bairro {
-    grid-area: "bairro";
-    padding-right: 50px;
+    padding-right: 100px;
   }
 
   .bairro-form {
-    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+  }
+
+  .btn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .btn-lupa {
+    margin: 30px 0 0 50px;
   }
   /* forms */
 
@@ -269,19 +310,6 @@
   /* footer */
 }
 
-/* Dispositivos móveis médios (em pé)
-@media (max-width: 375px) {
-  /* Estilos aqui
-  .flor img {
-    visibility: hidden;
-  }
-
-  .email {
-    display: flex;
-    flex-wrap: wrap;
-  }
-} */
-
 /* Dispositivos móveis grandes (em pé) */
 @media (max-width: 425px) {
   /* Estilos aqui */
@@ -290,12 +318,6 @@
     bottom: 20px;
     flex-direction: column;
   }
-
-  /* .email {
-    display: flex;
-    flex-direction: row;
-    margin-left: 10px;
-  } */
 
   .footer-container .descricao-footer {
     /* margin-top: 0; */
@@ -310,12 +332,7 @@
     /* margin-top: 40px; */
     max-width: 100%;
   }
-  /*   
-  .geral, .contato {
-    margin: 70px;
 
-  }
- */
   .endereco {
     max-width: 100%;
   }
@@ -343,8 +360,62 @@
 }
 
 /* Tablets em modo paisagem (tela horizontal) */
-@media (max-width: 1024px) {
+@media (min-width: 1024px) {
   /* Estilos aqui */
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  nav ul {
+    width: 95%;
+    margin-left: 40px;
+  }
+
+  /* começo da imagem inicial */
+
+  .inicio {
+    margin-left: 5em;
+  }
+
+  .imagem-inicial {
+    margin-left: 15em;
+  }
+
+  #titulo1 {
+    margin: 80px 0 35px 100px;
+  }
+
+  #texto1 {
+    margin-left: 100px;
+    max-width: 85%;
+  }
+
+  #titulo2 {
+    margin: 80px 0 35px 100px;
+  }
+
+  #texto2 {
+    margin-left: 100px;
+    max-width: 85%;
+  }
+
+  #medalhas {
+    width: 380px;
+    margin-left: 0px;
+  }
+
+  .imagem-medalha {
+    grid-area: imagem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+  }
 
   #perfil {
     float: left;
@@ -355,29 +426,31 @@
     display: block;
   }
 
-  .info-box {
-    width: auto;
-    text-align: center;
-    /* width: 50%; */
-  }
-
-  /* .descricao-footer {
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 40px;
-    max-width: 100%;
-  } */
-
-  /* .copyright {
-    margin-left: 80px;
-  } */
-
   .container-grid {
-    display: flex;
-    flex-direction: column;
     grid-template-areas:
       "texto texto imagem"
       "texto-ram texto-ram ram";
+  }
+
+  .bairro-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .btn {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  .btn-lupa {
+    margin: 30px 0 0 30px;
+  }
+
+  #titulo-descarte {
+    margin-left: 0px;
+    margin-right: 570px;
   }
 }
 
@@ -417,26 +490,6 @@
     align-items: center;
     position: fixed;
   }
-
-  /* .imagem-fundo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 150px 25px 25px 25px;
-  } */
-
-  /* .imagem-inicial {
-    width: 20em;
-    margin-left: 0em;
-  } */
-
-  /* #titulo-inicial {
-    font-size: 8em;
-    width: 25%;
-    line-height: 0.8em;
-    margin: 0 0 0 0em;
-    margin-left: 0em;
-  } */
 
   #logo {
     margin-left: 20px;

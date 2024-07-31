@@ -167,12 +167,6 @@ body {
 /* final da imagem inicial */
 
 /* começo dos textos */
-#texto1,
-#texto2 {
-  margin-left: 150px;
-  color: var(--preto);
-  font-family: "Poppins-regular";
-}
 
 #titulo1 {
   font-family: "Blinker-extrabold";
@@ -189,6 +183,9 @@ body {
 }
 
 #texto1 {
+  margin-left: 150px;
+  color: var(--preto);
+  font-family: "Poppins-regular";
   max-width: 70%;
   font-size: 1em;
 }
@@ -196,6 +193,9 @@ body {
 #texto2 {
   max-width: 65%;
   font-size: 1em;
+  margin-left: 150px;
+  color: var(--preto);
+  font-family: "Poppins-regular";
 }
 
 span {
@@ -251,7 +251,7 @@ span {
 
 .imagem-ram {
   grid-area: ram;
-  margin-left: 140px;
+  margin-left: 100px;
 }
 
 .texto-ram {
@@ -266,7 +266,7 @@ span {
 
 #ecopontos {
   padding: 60px 20px;
-  margin-top: 60px;
+  margin-top: 45px;
 }
 
 .info-box {
@@ -355,7 +355,6 @@ form {
   width: 100%;
   align-items: center;
   justify-content: center;
-  width: 100%;
 }
 
 .form-conteiner form {
@@ -371,6 +370,13 @@ form {
   margin-left: 15px;
 }
 
+.cep-form,
+.rua-form,
+.bairro-form {
+  display: flex;
+  flex-direction: column;
+}
+
 .bairro-form {
   margin-left: 15px;
 }
@@ -378,6 +384,7 @@ form {
 #cep {
   grid-area: "cep";
   padding-right: 100px;
+  margin-top: 15px;
 }
 
 #cep::placeholder,
@@ -390,6 +397,7 @@ form {
 #rua {
   grid-area: "rua";
   margin-bottom: 30px;
+  margin-top: 15px;
   padding-right: 180px;
 }
 
@@ -400,6 +408,7 @@ form {
 #bairro {
   grid-area: "bairro";
   padding-right: 550px;
+  margin-top: 15px;
 }
 
 label {
@@ -422,6 +431,11 @@ input {
   height: 35px;
   max-width: 80%;
   margin-right: 10px;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
 }
 
 .btn-lupa {

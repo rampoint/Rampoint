@@ -232,7 +232,8 @@ nav a:hover {
 #foto-perfil {
   position: relative;
 }
-/* modal sem perfil */
+
+/* modal com perfil 
 
 .modalBtn {
   border: none;
@@ -267,7 +268,7 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+} 
 
 .fundo {
   background-color: var(--branco);
@@ -285,21 +286,6 @@ nav a:hover {
   margin-top: -40px;
 }
 
-/* .fundo {
-  background-color: var(--branco);
-  width: 15em;
-  height: 20em;
-  border-top-left-radius: 55px;
-  border-top-right-radius: 55px;
-  border-bottom-left-radius: 40px;
-  border-bottom-right-radius: 40px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: -40px;
-} */
 
 .perfil,
 .texto-perfil {
@@ -347,3 +333,5 @@ nav a:hover {
 #foto-perfil {
   position: relative;
 }
+
+modal com perfil*/

@@ -371,11 +371,6 @@
     overflow: hidden;
   }
 
-  nav ul {
-    width: 95%;
-    margin-left: 40px;
-  }
-
   /* começo da imagem inicial */
 
   .inicio {
@@ -383,7 +378,7 @@
   }
 
   .imagem-inicial {
-    margin-left: 15em;
+    margin-left: 30em;
   }
 
   #titulo1 {
@@ -392,7 +387,6 @@
 
   #texto1 {
     margin-left: 100px;
-    max-width: 85%;
   }
 
   #titulo2 {
@@ -401,7 +395,6 @@
 
   #texto2 {
     margin-left: 100px;
-    max-width: 85%;
   }
 
   #medalhas {
@@ -426,12 +419,6 @@
     display: block;
   }
 
-  .container-grid {
-    grid-template-areas:
-      "texto texto imagem"
-      "texto-ram texto-ram ram";
-  }
-
   .bairro-form {
     display: flex;
     flex-direction: column;
@@ -441,11 +428,6 @@
   .btn {
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
-  }
-
-  .btn-lupa {
-    margin: 30px 0 0 30px;
   }
 
   #titulo-descarte {
@@ -498,6 +480,7 @@
   #logo-nav {
     margin-left: 20px;
   }
+
   #perfil {
     display: none;
   }

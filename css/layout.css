@@ -207,6 +207,7 @@
   }
   nav ul{
     justify-content:space-between;
+    position: static;
     padding-left:0;
   }
 

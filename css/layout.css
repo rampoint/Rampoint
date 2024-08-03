@@ -297,7 +297,7 @@
     height: auto;
     display: flex;
     flex-direction: row;
-    margin-left: 85px;
+    margin: 0 55px;
   }
 
   #email {
@@ -361,8 +361,6 @@
 
 /* Tablets em modo paisagem (tela horizontal) */
 @media (min-width: 1024px) {
-  /* Estilos aqui */
-
   .container {
     display: flex;
     flex-direction: column;
@@ -408,11 +406,6 @@
     display: flex;
     flex-direction: row;
     justify-content: end;
-  }
-
-  #perfil {
-    float: left;
-    display: none;
   }
 
   #drop {

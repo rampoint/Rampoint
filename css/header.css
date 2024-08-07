@@ -3,10 +3,9 @@
 @import url(../css/cores.css);
 
 nav {
+  background-color: var(--branco);
   margin-bottom: 0px;
-  z-index: 5;
 }
-
 nav ul {
   background-color: var(--branco);
   width: 100%;
@@ -15,10 +14,11 @@ nav ul {
   justify-content: space-around;
   align-items: center;
   padding-left: 0px;
-  margin-left: 0px;
+  margin-left: 15px;
   margin-right: 15px;
   position: fixed;
   height: 4em;
+  margin: 0;
 }
 
 #logo-nav {
@@ -31,6 +31,7 @@ nav ul {
 
 nav li {
   height: 50px;
+  font-size: 100%;
 }
 
 .sidebar nav a {
@@ -39,6 +40,7 @@ nav li {
   display: flex;
   align-items: center;
   color: var(--branco);
+
 }
 
 nav a {
@@ -47,7 +49,7 @@ nav a {
   text-decoration: none;
   display: flex;
   align-items: center;
-  color: rgba(0, 0, 0, 0.50);
+  color: rgba(0, 0, 0, 0.5);
 }
 
 nav a:visited {
@@ -71,12 +73,11 @@ nav a:hover {
   align-items: center;
   margin-left: 160px;
   margin-top: 30px;
-  padding-bottom: 30px;
 }
 
 #fechar {
   margin-left: 172px;
-  margin-top: 25px;
+  margin-top: 5px;
 }
 
 .menus {
@@ -106,6 +107,7 @@ nav a:hover {
 }
 .sidebar li {
   width: 100%;
+  margin-top:20px;
 }
 .sidebar a {
   width: 100%;
@@ -123,10 +125,16 @@ nav a:hover {
 }
 
 .footer-logo {
-  font-size: 40px;
+  font-size: 50px;
   width: 100px;
   height: 25px;
-  margin-top: 160px;
+  margin-top: 90%;
+}
+
+@media (max-height:850px){
+  .footer-logo {
+    margin-top: 10%;
+  }
 }
 
 #footer-logo {
@@ -232,8 +240,7 @@ nav a:hover {
 #foto-perfil {
   position: relative;
 }
-
-/* modal com perfil 
+/* modal sem perfil */
 
 .modalBtn {
   border: none;
@@ -268,7 +275,7 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-} 
+}
 
 .fundo {
   background-color: var(--branco);
@@ -286,6 +293,21 @@ nav a:hover {
   margin-top: -40px;
 }
 
+/* .fundo {
+  background-color: var(--branco);
+  width: 15em;
+  height: 20em;
+  border-top-left-radius: 55px;
+  border-top-right-radius: 55px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: -40px;
+} */
 
 .perfil,
 .texto-perfil {
@@ -333,5 +355,3 @@ nav a:hover {
 #foto-perfil {
   position: relative;
 }
-
-modal com perfil*/

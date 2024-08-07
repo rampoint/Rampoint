@@ -262,7 +262,7 @@ body {
 }
 
 .container-perfil {
-  background-color: var(--cinza-claro);
+  background-color: rgba(234, 236, 240, 0.5);
   display: flex;
   flex-direction: row;
   width: 50em;

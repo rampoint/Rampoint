@@ -104,6 +104,19 @@
   .flor img {
     visibility: hidden;
   }
+  .codigo-l1{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .codigo-l2{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+
 }
 /* Dispositivos móveis em modo paisagem (tela horizontal) */
 @media (max-width: 767px) {

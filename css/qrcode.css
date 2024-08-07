@@ -244,6 +244,10 @@ body {
   padding: 3px 40px 3px 40px;
 }
 
+#qrcode__img{
+  width: 85%;
+}
+
 /* qr code final */
 
 /* animaçao */
@@ -253,7 +257,7 @@ body {
   flex-direction: row;
   margin: 0 5em;
   position: relative;
-  bottom: 3em;
+  bottom: 5em;
   right: 23em;
   height: 10em;
 }
@@ -263,7 +267,7 @@ body {
   flex-direction: row;
   margin: 0 5em 0 10em;
   position: relative;
-  bottom: 13em;
+  bottom: 15em;
   left: 23em;
   height: 1em;
 }

@@ -120,7 +120,7 @@ body {
 .colocar,
 .inserir {
   white-space: nowrap;
-  width:50%;
+  width:100%;
 }
 
 .titulo-form {
@@ -164,13 +164,15 @@ body {
 .qrcode-box input {
   border-radius: 30px;
   border: none;
-  padding: 10px 45px 5px 19px;
+  padding: 8px 45px 8px 19px;
   outline: none;
 }
+
 
 #inserir-total::-webkit-input-placeholder {
   color: var(--azul);
   font-family: "Poppins-bold";
+  
 }
 
 .codigo-l2 {
@@ -268,6 +270,11 @@ body {
   bottom: 15em;
   left: 23em;
   height: 1em;
+}
+@media (max-width: 670px) {
+  .moedas-direita{
+    display: none;
+  }
 }
 
 .brilho-verde {

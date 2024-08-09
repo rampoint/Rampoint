@@ -113,13 +113,14 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-right: 1000px;
   }
+
   .codigo-l2 {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
   }
+
   .moedas-esquerda {
     display: none;
   }
@@ -136,13 +137,8 @@
   .qrcode-salvar {
     flex-direction: column;
   }
-  .colocar,
-  .inserir {
-    
-    white-space: nowrap;
-    margin-right: 10em;
-  }
 }
+
 
 /* Dispositivos móveis em modo paisagem (tela horizontal) */
 @media (max-width: 767px) {

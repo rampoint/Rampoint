@@ -99,7 +99,7 @@ body {
   padding-top: 20px;
   width: 42%;
   max-width: 800px;
-  min-width: 500px;
+  min-width: 400px;
   align-items: center;
 }
 
@@ -227,9 +227,7 @@ body {
 #seta-form {
   position: relative;
   left: -28px;
-  
   pointer-events: none;
-  
 }
 
 .select {

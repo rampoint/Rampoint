@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/materiais.css">
 
-    <script src="https://kit.fontawesome.com/7eb7045707.js" crossorigin="anonymous"></script>
+    <!-- icons -->
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet">
 
     <link rel="shortcut icon" href="./img/rostoCirculo.png" type="image/x-icon">
     <title>Materiais</title>
@@ -97,7 +98,7 @@
                     <button class="modalBtn"><img id="perfil" src="img/perfil.svg" alt="perfil"></button> -->
         <!-- modal com perfil -->
     </nav>
-    
+
     <div class="container">
 
         <section class="imagem-fundo">
@@ -142,85 +143,70 @@
                     deles e o quanto valem. Tudo o que você doar é útil para a gente!
                 </p>
             </section>
-
         </section>
 
-        <section class="accordion">
-            <div class="accordion-item">
-                <div class="accordion-header" id="accordion-header" onclick="mudarCorAzul()">
-                    <img src="./img/internos.svg" alt="Internos Icon" class="internos">
-                    <button class="accordion-button" id="internos" data-target="#collapseOne">INTERNOS</button>
-                    <i class="fas fa-chevron-down arrow-icon" style="color: #2a55c2;"></i>
+        <section class="carrossel-materiais">
+            <div class="menu">
+                <div class="main-buttons">
+                    <button class="main-btn active" id="estrutura">ESTRUTURA</button>
+                    <button class="main-btn" id="internos">INTERNOS</button>
+                    <button class="main-btn" id="perifericos">PERIFÉRICOS</button>
+                    <button class="main-btn" id="resfriamento">RESFRIAMENTO</button>
                 </div>
-                <div id="collapseOne" class="accordion-collapse">
-                    <div class="accordion-body">
-                        <li class="materiais"><a href="">Placa de Vídeo (PGU)</a></li>
-                        <hr>
-                        <li class="materiais"><a href="">Placa-mãe</a></li>
-                        <hr>
-                        <li class="materiais"><a href="">Processador (CPU)</a></li>
-                        <hr>
-                        <li class="materiais"><a>Memória RAM</a></li>
-                        <hr>
-                        <li class="materiais"><a>Unidade de Armazenamento (HDD/SSD)</a></li>
-                        <hr>
-                        <li class="materiais"><a>Fonte de Alimentação (PSU)</a></li>
+                <div class="sub-buttons-container">
+                    <div class="nav-buttons">
+                        <i id="prev-btn" class='bx bx-chevron-left disabled'></i>
+                    </div>
+                    <div class="sub-buttons-wrapper">
+                        <div class="sub-buttons" id="estrutura-sub">
+                            <button class="sub-btn active">Gabinete</button>
+                            <button class="sub-btn">Baias de Drive</button>
+                            <button class="sub-btn">Expansão</button>
+                            <button class="sub-btn">Organizador</button>
+                            <button class="sub-btn">Painel Frontal</button>
+                        </div>
+                        <div class="sub-buttons" id="internos-sub" style="display:none;">
+                            <button class="sub-btn">Placa de Vídeo</button>
+                            <button class="sub-btn">Placa-mãe</button>
+                            <button class="sub-btn">Memoria RAM</button>
+                            <button class="sub-btn">HDD/SSD</button>
+                            <button class="sub-btn">PSU</button>
+                            <button class="sub-btn">Processador</button>
+                        </div>
+                        <div class="sub-buttons" id="perifericos-sub" style="display:none;">
+                            <button class="sub-btn">Monitor</button>
+                            <button class="sub-btn">Teclado</button>
+                            <button class="sub-btn">Mouse</button>
+                            <button class="sub-btn">Alto-falante</button>
+                        </div>
+                        <div class="sub-buttons" id="resfriamento-sub" style="display:none;">
+                            <button class="sub-btn">Ventoinhas</button>
+                            <button class="sub-btn">Dissipadores</button>
+                            <button class="sub-btn">Filtro-poeira</button>
+                            <button class="sub-btn">Cooler</button>
+                        </div>
+                    </div>
+                    <div class="nav-buttons">
+                        <i id="next-btn" class='bx bx-chevron-right'></i>
                     </div>
                 </div>
-            </div>
-            <div class="accordion-item">
-                <div class="accordion-header">
-                    <img src="./img/perifericos.svg" alt="Periféricos Icon" class="icon">
-                    <button class="accordion-button" data-target="#collapseTwo">PERIFÉRICOS</button>
-                    <i class="fas fa-chevron-down arrow-icon" style="color: #2a55c2;"></i>
-                </div>
-                <div id="collapseTwo" class="accordion-collapse">
-                    <div class="accordion-body">
-                        <li class="materiais"><a>Monitor</a></li>
-                        <hr>
-                        <li class="materiais"><a>Teclado</a></li>
-                        <hr>
-                        <li class="materiais"><a>Mouse</a></li>
-                        <hr>
-                        <li class="materiais"><a>Alto-falantes</a></li>
+        
+                <div class="content">
+                    <div class="content-item active" id="gabinete">
+                        <div class="content-details">
+                            <img src="./img/estrutura-gabinete.svg" alt="Gabinete">
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <div class="accordion-header">
-                    <img src="./img/estrutura.svg" alt="Estrutura Icon" class="icon">
-                    <button class="accordion-button" data-target="#collapseThree">ESTRUTURA (GABINETE)</button>
-                    <i class="fas fa-chevron-down arrow-icon"></i>
-                </div>
-                <div id="collapseThree" class="accordion-collapse">
-                    <div class="accordion-body">
-                        <li class="materiais"><a>Baias de Drive</a></li>
-                        <hr>
-                        <li class="materiais"><a>Slots de Expansão</a></li>
-                        <hr>
-                        <li class="materiais"><a>Organização de Cabos</a></li>
+                    <div class="content-item" id="baias-de-drive">
+                        <div class="content-details">
+                            <img src="./img/baias-drive.svg" alt="Baias de Drive">
+                        </div>
                     </div>
+                    <!-- Adicione outros itens de conteúdo aqui -->
                 </div>
             </div>
-            <div class="accordion-item">
-                <div class="accordion-header">
-                    <img src="./img/resfriamento.svg" alt="Resfriamento Icon" class="icon">
-                    <button class="accordion-button" data-target="#collapseFour">RESFRIAMENTO</button>
-                    <i class="fas fa-chevron-down arrow-icon" style="color: #2a55c2;"></i>
-                </div>
-                <div id="collapseFour" class="accordion-collapse">
-                    <div class="accordion-body">
-                        <li class="materiais"><a>Ventoinhas</a></li>
-                        <hr>
-                        <li class="materiais"><a>Dissipadores</a></li>
-                        <hr>
-                        <li class="materiais"><a>Filtros de Poeira</a></li>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
+        </section>        
+        
         <footer class="footer-container">
             <h2>Quer ser nosso parceiro?</h2>
             <p>Envie-nos seu email!</p>
@@ -264,10 +250,10 @@
 
 
         </footer>
-        <script src="js/botao.js"></script>
-        <script src="js/modal.js"></script>
-        <script src="./js/scroll-modal.js"></script>
-        <script src="./js/menuAccordion.js"></script>
+        <script defer src="js/botao.js"></script>
+        <script defer src="js/modal.js"></script>
+        <script defer src="./js/scroll-modal.js"></script>
+        <script defer src="./js/menuCarrossel.js"></script>
 
     </div>
 </body>

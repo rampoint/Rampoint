@@ -99,6 +99,7 @@ body {
   0% {
     transform: translateY(0px);
   }
+
   100% {
     transform: translateY(20px);
   }
@@ -108,6 +109,7 @@ body {
   0% {
     transform: scale(1);
   }
+
   100% {
     transform: scale(1.2);
   }
@@ -117,9 +119,11 @@ body {
   0% {
     transform: rotate(0deg);
   }
+
   50% {
     transform: rotate(4deg);
   }
+
   100% {
     transform: rotate(0deg);
   }
@@ -131,6 +135,7 @@ body {
 
 .campo-empresa {
   margin: 3em 0 5em 0;
+
 }
 
 #titulo1 {
@@ -146,6 +151,42 @@ body {
   margin-left: 13.5em;
   font-size: 1em;
   width: 70%;
+
+}
+
+/* mano pq que nao funciona no layout */
+@media (max-width:670px) {
+  .flor img {
+    visibility: hidden;
+  }
+
+  .campo-empresa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #texto1 {
+    margin-left: 0px;
+  }
+
+  #titulo1 {
+    margin-left: 0px;
+  }
+
+  .campo-equipe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .lista-integrantes {
+    margin:0px;
+   border: black so;
+  }
+
 }
 
 /* final campo empresa */
@@ -157,16 +198,20 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 55em;
+
+  border: black solid;
+
 }
 
 .fundo-valores {
   border: 1px solid var(--azul);
   border-radius: 15px;
-  width: 45em;
+  min-width: 1px;
+  width: 65%;
   padding: 2.5em;
   margin: 1em;
+  display: flex;
+  flex-direction: column;
 }
 
 .titulo-principal {
@@ -208,7 +253,7 @@ body {
 
 #linha {
   color: rgba(0, 0, 0, 0.3);
-  width: 45em;
+  width: 100%;
   margin-top: 1em;
 }
 

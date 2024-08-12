@@ -43,6 +43,14 @@ document.addEventListener('DOMContentLoaded', () => {
         showContent('');
         // Remove 'active' class from all sub-buttons
         document.querySelectorAll('.sub-btn').forEach(btn => btn.classList.remove('active'));
+
+        // Ativar o primeiro sub botão da categoria
+        const firstSubButton = document.querySelector(`.sub-buttons[data-category="${categoryIndex}"] .sub-btn`);
+        if (firstSubButton) {
+            firstSubButton.classList.add('active');
+            // Mostrar o conteúdo relacionado ao primeiro sub botão
+            showContent(firstSubButton.dataset.content);
+        }
     }
 
     function handleSubButtonClick(e) {
@@ -79,4 +87,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Inicializa o carrossel com a primeira categoria
     showSubButtons(0);
+
+    // Ativa o primeiro sub botão da primeira categoria
+    const firstSubButton = document.querySelector('.sub-buttons[data-category="0"] .sub-btn');
+    if (firstSubButton) {
+        firstSubButton.classList.add('active');
+        showContent(firstSubButton.dataset.content);
+    }
 });

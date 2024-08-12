@@ -238,7 +238,7 @@ body {
 .carrossel-container {
   width: 80%;
   max-width: 900px;
-  margin: 50px auto;
+  margin: 30px auto 50px auto;
   position: relative;
 }
 
@@ -266,48 +266,48 @@ body {
   border: none;
   border-radius: 35px;
   background-color: rgba(222, 222, 225, 0.5);
-  color: #A9A9A9;
+  color: #a9a9a9;
   cursor: pointer;
 }
 
 #estrutura.active {
-  background-color: #9D4EDD;
-  color: #FFFFFF;
+  background-color: #9d4edd;
+  color: #ffffff;
 }
 
 #estrutura:hover {
-  background-color: #9D4EDD;
-  color: #FFFFFF;
+  background-color: #9d4edd;
+  color: #ffffff;
 }
 
 #internos.active {
-  background-color: #F89701;
-  color: #FFFFFF;
+  background-color: #f89701;
+  color: #ffffff;
 }
 
 #internos:hover {
-  background-color: #F89701;
-  color: #FFFFFF; 
+  background-color: #f89701;
+  color: #ffffff;
 }
 
 #perifericos.active {
-  background-color: #2A55C2;
-  color: #FFFFFF;
+  background-color: #2a55c2;
+  color: #ffffff;
 }
 
 #perifericos:hover {
-  background-color: #2A55C2;
-  color: #FFFFFF; 
+  background-color: #2a55c2;
+  color: #ffffff;
 }
 
 #resfriamento.active {
-  background-color: #61D243;
-  color: #FFFFFF;
+  background-color: #61d243;
+  color: #ffffff;
 }
 
 #resfriamento:hover {
-  background-color: #61D243;
-  color: #FFFFFF; 
+  background-color: #61d243;
+  color: #ffffff;
 }
 
 .sub-buttons-container {
@@ -335,17 +335,17 @@ body {
   border: none;
   border-radius: 35px;
   background-color: rgba(230, 230, 230, 0.5);
-  color: #A9A9A9;
+  color: #a9a9a9;
   cursor: pointer;
 }
 
 .sub-btn.active {
-  background-color: #2A55C2;
+  background-color: #2a55c2;
   color: #fff;
 }
 
 .sub-btn:hover {
-  background-color: #2A55C2;
+  background-color: #2a55c2;
   color: #fff;
 }
 
@@ -366,15 +366,20 @@ body {
 }
 
 .content {
-  padding: 20px;
+  padding: 10px 20px;
+  display: none;
+}
+
+.content.active {
+  display: block;
 }
 
 .titulo-content {
   font-family: "Poppins-bold";
-  color: #9D4EDD;
+  color: #9d4edd;
   position: absolute;
   top: 30%;
-  right: 23%; 
+  right: 23%;
 }
 
 .lado-direito {
@@ -383,7 +388,7 @@ body {
   flex-direction: column;
   position: absolute;
   top: 45%;
-  left: 49.5%; 
+  left: 49.5%;
   margin-top: 25px;
 }
 
@@ -400,15 +405,43 @@ body {
 }
 
 .ramcoin {
+  position: absolute;
+  bottom: 4em;
+  left: 45em;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: end;
-  margin-top: 40px;
+  margin-top: 25px;
 }
 
-.ramcoin:hover {
-  background-color: purple;
+.text-block {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 30%;
+  transform: translateX(-50%);
+  background-color: #FFFFFF;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 2px 8px 8px rgba(42, 85, 194, 0.15);
+  width: 300px;
+  z-index: 1;
+}
+
+.textos {
+  font-family: "Poppins-semibold";
+  color: var(--azul);
+  font-size: 13px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: 15px;
+}
+
+.ramcoin:hover .text-block {
+  display: block;
 }
 
 .qtd-ramcoin {

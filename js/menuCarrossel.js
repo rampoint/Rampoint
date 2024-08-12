@@ -1,60 +1,82 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', () => {
+    const mainButtons = document.querySelectorAll('.main-btn');
+    const subButtonsContainers = document.querySelectorAll('.sub-buttons');
+    const contentContainers = document.querySelectorAll('.content');
     const prevBtn = document.getElementById('prev-btn');
     const nextBtn = document.getElementById('next-btn');
     const subButtonsWrapper = document.querySelector('.sub-buttons-wrapper');
-    const subButtons = document.querySelectorAll('.sub-buttons');
-    const mainButtons = document.querySelectorAll('.main-btn');
-    let currentIndex = 0;
-    const visibleButtons = 4; // Quantidade de botões visíveis por vez
 
-    function updateNavigation(subButtonContainer) {
-        const totalButtons = subButtonContainer.querySelectorAll('.sub-btn').length;
-        const maxIndex = totalButtons - visibleButtons;
-
-        prevBtn.classList.toggle('disabled', currentIndex <= 0);
-        nextBtn.classList.toggle('disabled', currentIndex >= maxIndex);
-
-        const offset = -currentIndex * (subButtonContainer.querySelector('.sub-btn').offsetWidth + 10); // Largura do botão + gap
-        subButtonContainer.style.transform = `translateX(${offset}px)`;
+    function showContent(contentId) {
+        contentContainers.forEach(content => {
+            content.style.display = content.id === contentId ? 'block' : 'none';
+        });
     }
 
-    function showSubButtons(targetId) {
-        subButtons.forEach((container) => {
-            container.style.display = container.id === targetId ? 'flex' : 'none';
+    function showSubButtons(categoryIndex) {
+        subButtonsContainers.forEach((container, index) => {
+            container.style.display = index === categoryIndex ? 'flex' : 'none';
         });
-
-        currentIndex = 0;
-        updateNavigation(document.getElementById(targetId));
+        updateArrowVisibility();
     }
 
-    mainButtons.forEach((button) => {
-        button.addEventListener('click', function () {
-            mainButtons.forEach((btn) => btn.classList.remove('active'));
-            button.classList.add('active');
+    function updateArrowVisibility() {
+        const currentContainer = document.querySelector('.sub-buttons:not([style*="display: none"])');
+        const containerWidth = currentContainer.offsetWidth;
+        const wrapperWidth = subButtonsWrapper.offsetWidth;
+        const scrollLeft = currentContainer.scrollLeft;
+        const scrollWidth = currentContainer.scrollWidth;
 
-            showSubButtons(`${button.id}-sub`);
-        });
+        prevBtn.style.visibility = scrollLeft > 0 ? 'visible' : 'hidden';
+        nextBtn.style.visibility = scrollWidth - scrollLeft > wrapperWidth ? 'visible' : 'hidden';
+    }
+
+    function handleMainButtonClick(e) {
+        // Remove 'active' class from all main buttons
+        mainButtons.forEach(btn => btn.classList.remove('active'));
+        // Add 'active' class to the clicked button
+        e.target.classList.add('active');
+        // Get the category index from the clicked button
+        const categoryIndex = parseInt(e.target.dataset.index);
+        // Show the sub-buttons related to the clicked main button
+        showSubButtons(categoryIndex);
+        // Close all content sections
+        showContent('');
+        // Remove 'active' class from all sub-buttons
+        document.querySelectorAll('.sub-btn').forEach(btn => btn.classList.remove('active'));
+    }
+
+    function handleSubButtonClick(e) {
+        // Remove 'active' class from all sub-buttons
+        document.querySelectorAll('.sub-btn').forEach(btn => btn.classList.remove('active'));
+        // Add 'active' class to the clicked sub-button
+        e.target.classList.add('active');
+        // Get the content ID from the clicked sub-button
+        const contentId = e.target.dataset.content;
+        // Show the related content
+        showContent(contentId);
+    }
+
+    // Add click event listeners to all main buttons
+    mainButtons.forEach(button => {
+        button.addEventListener('click', handleMainButtonClick);
     });
 
-    nextBtn.addEventListener('click', function () {
-        const activeSubButtons = document.querySelector('.sub-buttons:not([style*="display: none"])');
-        const totalButtons = activeSubButtons.querySelectorAll('.sub-btn').length;
-        const maxIndex = totalButtons - visibleButtons;
-
-        if (currentIndex < maxIndex) {
-            currentIndex++;
-            updateNavigation(activeSubButtons);
-        }
+    // Add click event listeners to all sub-buttons
+    document.querySelectorAll('.sub-btn').forEach(button => {
+        button.addEventListener('click', handleSubButtonClick);
     });
 
-    prevBtn.addEventListener('click', function () {
-        if (currentIndex > 0) {
-            currentIndex--;
-            const activeSubButtons = document.querySelector('.sub-buttons:not([style*="display: none"])');
-            updateNavigation(activeSubButtons);
-        }
+    // Add click event listeners to the navigation arrows
+    prevBtn.addEventListener('click', () => {
+        document.querySelector('.sub-buttons:not([style*="display: none"])').scrollBy(-100, 0);
+        updateArrowVisibility();
     });
 
-    // Inicializar a exibição correta com os botões de estrutura
-    showSubButtons('estrutura-sub');
+    nextBtn.addEventListener('click', () => {
+        document.querySelector('.sub-buttons:not([style*="display: none"])').scrollBy(100, 0);
+        updateArrowVisibility();
+    });
+
+    // Inicializa o carrossel com a primeira categoria
+    showSubButtons(0);
 });

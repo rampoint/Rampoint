@@ -145,68 +145,94 @@
             </section>
         </section>
 
-        <section class="carrossel-materiais">
+        <section class="carrossel-container">
             <div class="menu">
                 <div class="main-buttons">
-                    <button class="main-btn active" id="estrutura">ESTRUTURA</button>
-                    <button class="main-btn" id="internos">INTERNOS</button>
-                    <button class="main-btn" id="perifericos">PERIFÉRICOS</button>
-                    <button class="main-btn" id="resfriamento">RESFRIAMENTO</button>
+                    <button class="main-btn active" id="estrutura" data-index="0">ESTRUTURA</button>
+                    <button class="main-btn" id="internos" data-index="1">INTERNOS</button>
+                    <button class="main-btn" id="perifericos" data-index="2">PERIFÉRICOS</button>
+                    <button class="main-btn" id="resfriamento" data-index="3">RESFRIAMENTO</button>
                 </div>
                 <div class="sub-buttons-container">
-                    <div class="nav-buttons">
-                        <i id="prev-btn" class='bx bx-chevron-left disabled'></i>
-                    </div>
+                    <i id="prev-btn" class="arrow">&lt;</i>
                     <div class="sub-buttons-wrapper">
-                        <div class="sub-buttons" id="estrutura-sub">
-                            <button class="sub-btn active">Gabinete</button>
-                            <button class="sub-btn">Baias de Drive</button>
-                            <button class="sub-btn">Expansão</button>
-                            <button class="sub-btn">Organizador</button>
-                            <button class="sub-btn">Painel Frontal</button>
+                        <div class="sub-buttons" data-category="0">
+                            <button class="sub-btn" data-content="content1">Gabinete</button>
+                            <button class="sub-btn" data-content="content2">Baias de Drive</button>
+                            <button class="sub-btn" data-content="content3">Expansão</button>
+                            <button class="sub-btn" data-content="content4">Organizador</button>
+                            <button class="sub-btn" data-content="content5">Painel Frontal</button>
                         </div>
-                        <div class="sub-buttons" id="internos-sub" style="display:none;">
-                            <button class="sub-btn">Placa de Vídeo</button>
-                            <button class="sub-btn">Placa-mãe</button>
-                            <button class="sub-btn">Memoria RAM</button>
-                            <button class="sub-btn">HDD/SSD</button>
-                            <button class="sub-btn">PSU</button>
-                            <button class="sub-btn">Processador</button>
+                        <div class="sub-buttons" data-category="1" style="display: none;">
+                            <button class="sub-btn" data-content="content6">Placa de Vídeo</button>
+                            <button class="sub-btn" data-content="content7">Placa-Mãe</button>
+                            <button class="sub-btn" data-content="content8">Memória RAM</button>
+                            <button class="sub-btn" data-content="content9">HDD/SSD</button>
+                            <button class="sub-btn" data-content="content10">PSU</button>
+                            <button class="sub-btn" data-content="content11">Processador</button>
                         </div>
-                        <div class="sub-buttons" id="perifericos-sub" style="display:none;">
-                            <button class="sub-btn">Monitor</button>
-                            <button class="sub-btn">Teclado</button>
-                            <button class="sub-btn">Mouse</button>
-                            <button class="sub-btn">Alto-falante</button>
+                        <div class="sub-buttons" data-category="2" style="display: none;">
+                            <button class="sub-btn" data-content="content12">Monitor</button>
+                            <button class="sub-btn" data-content="content13">Teclado</button>
+                            <button class="sub-btn" data-content="content14">Mouse</button>
+                            <button class="sub-btn" data-content="content15">Alto-falante</button>
                         </div>
-                        <div class="sub-buttons" id="resfriamento-sub" style="display:none;">
-                            <button class="sub-btn">Ventoinhas</button>
-                            <button class="sub-btn">Dissipadores</button>
-                            <button class="sub-btn">Filtro-poeira</button>
-                            <button class="sub-btn">Cooler</button>
+                        <div class="sub-buttons" data-category="3" style="display: none;">
+                            <button class="sub-btn" data-content="content16">Ventoinhas</button>
+                            <button class="sub-btn" data-content="content17">Dissipadores</button>
+                            <button class="sub-btn" data-content="content18">Filtro-poeira</button>
+                            <button class="sub-btn" data-content="content19">Cooler</button>
                         </div>
-                    </div>
-                    <div class="nav-buttons">
-                        <i id="next-btn" class='bx bx-chevron-right'></i>
+                        <i id="next-btn" class="arrow">&gt;</i>
                     </div>
                 </div>
-        
-                <div class="content">
-                    <div class="content-item active" id="gabinete">
-                        <div class="content-details">
-                            <img src="./img/estrutura-gabinete.svg" alt="Gabinete">
+                <div class="content-container">
+                    <div id="content1" class="content" style="display: none;">
+                        <img src="./img/estrutura-gabinete.svg" alt="Imagem de um gabinete da categoria 'estrutura'">
+
+                        <h2 class="titulo-content">Estrutura do Gabinete</h2>
+                        <div class="lado-direito">
+                            <p class="texto-content"><span class="span-azul">Função:</span> Protege e organiza os
+                                componentes do computador.
+                            </p>
+                            <p class="texto-content"><span class="span-azul">Problemas Comuns:</span> Dobradiças
+                                quebradas,
+                                painéis soltos.
+                            </p>
+                            <p class="texto-content"><span class="span-azul">Identificação:</span> Inspecionar
+                                fisicamente
+                                por danos, verificar estabilidade e encaixe dos painéis.
+                            </p>
+                            <div class="ramcoin">
+                                <p class="qtd-ramcoin">2000</p>
+                                <img src="./img/ramcoin.svg" alt="">
+                            </div>
                         </div>
                     </div>
-                    <div class="content-item" id="baias-de-drive">
-                        <div class="content-details">
-                            <img src="./img/baias-drive.svg" alt="Baias de Drive">
-                        </div>
-                    </div>
-                    <!-- Adicione outros itens de conteúdo aqui -->
+                    <div id="content2" class="content" style="display: none;">Conteúdo 2</div>
+                    <div id="content3" class="content" style="display: none;">Conteúdo 3</div>
+                    <div id="content4" class="content" style="display: none;">Conteúdo 4</div>
+                    <div id="content5" class="content" style="display: none;">Conteúdo 5</div>
+                    <div id="content6" class="content" style="display: none;">Conteúdo 6</div>
+                    <div id="content7" class="content" style="display: none;">Conteúdo 7</div>
+                    <div id="content8" class="content" style="display: none;">Conteúdo 8</div>
+                    <div id="content9" class="content" style="display: none;">Conteúdo 9</div>
+                    <div id="content10" class="content" style="display: none;">Conteúdo 10</div>
+                    <div id="content11" class="content" style="display: none;">Conteúdo 11</div>
+                    <div id="content12" class="content" style="display: none;">Conteúdo 12</div>
+                    <div id="content13" class="content" style="display: none;">Conteúdo 13</div>
+                    <div id="content14" class="content" style="display: none;">Conteúdo 14</div>
+                    <div id="content15" class="content" style="display: none;">Conteúdo 15</div>
+                    <div id="content16" class="content" style="display: none;">Conteúdo 16</div>
+                    <div id="content17" class="content" style="display: none;">Conteúdo 17</div>
+                    <div id="content18" class="content" style="display: none;">Conteúdo 18</div>
+                    <div id="content19" class="content" style="display: none;">Conteúdo 19</div>
                 </div>
             </div>
-        </section>        
-        
+
+        </section>
+
+
         <footer class="footer-container">
             <h2>Quer ser nosso parceiro?</h2>
             <p>Envie-nos seu email!</p>

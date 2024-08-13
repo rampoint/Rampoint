@@ -1,16 +1,9 @@
-document.querySelectorAll('nav a[href^="#"]').forEach((anchor) => {
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault();
+document.getElementById('ecoponto').addEventListener('click', function () {
+  const targetSection = document.getElementById('ecopontos');
 
-    const targetId = this.getAttribute("href");
-    const targetElement = document.querySelector(targetId);
-
-    if (targetElement) {
-      window.scrollTo({
-        top:
-          targetElement.offsetTop - document.querySelector("nav").offsetHeight, // Compensa o menu fixo
-        behavior: "smooth",
+  if (targetSection) {
+      targetSection.scrollIntoView({
+          behavior: 'smooth'
       });
-    }
-  });
+  }
 });

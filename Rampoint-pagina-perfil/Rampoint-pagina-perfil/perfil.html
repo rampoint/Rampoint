@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/perfil.css">
+
+    <link rel="shortcut icon" href="./img/rostoCirculo.png" type="image/x-icon">
+    <title>Perfil</title>
+
+</head>
+
+<body>
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg id="fechar" xmlns="http://www.w3.org/2000/svg" height="26"
+                        viewBox="0 96 960 960" width="26">
+                        <path
+                            d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
+                    </svg></a></li>
+            <li id="perfil-sidebar"><img src="img/perfil.svg" alt="" srcset="">
+                <div class="menus">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">PLAY</a></li>
+            <li><a href="#ecopontos">ECOPONTOS</a></li>
+            <li><a href="#">MATERIAIS</a></li>
+            <li><a href="#">QR-CODE</a></li>
+            <li><a href="#">FALE CONOSCO</a></li>
+            <div class="footer-logo">
+                <a id="footer-logo">ram</a>
+                <a id="footer-logo">point.</a>
+            </div>
+            </div>
+
+        </ul>
+        <ul>
+            <li id="logo-nav"><img src="img/ram.svg" alt="ram">
+                <h1 style="color: black;"><b style="color:#7ad761; margin-left: 10px;">ram</b>point.</h1>
+            <li class="hideOnMobile"><a href="#">HOME</a>
+            <li class="hideOnMobile"><a href="#">PLAY</a>
+            <li class="hideOnMobile"><a href="#ecopontos">ECOPONTOS</a>
+            <li class="hideOnMobile"><a href="#">MATERIAIS</a>
+            <li class="hideOnMobile"><a href="#">QR-CODE</a>
+            <li class="hideOnMobile"><a href="#">FALE CONOSCO</a>
+            <li class="hideOnMobile">
+
+                <!-- Modal sem perfil -->
+                <div class="modal-sem-perfil" id="modalSemPerfil">
+                    <div class="content-sem-perfil">
+                        <p class="perfil">Perfil</p>
+                        <img src="./img/user.svg" id="foto-perfil" alt="Foto de perfil">
+                        <div class="fundo">
+                            <p class="texto-perfil">Sem login</p>
+                            <div class="grupo">
+                                <hr class="linha">
+                                <a class="cadastro">Cadastrar-se</a>
+                                <hr class="linha">
+                                <a class="login">Fazer login</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="modalBtn" id="openModalBtn"><img id="perfil" src="img/perfil.svg" alt="perfil"></button>
+            </li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                        height="26" viewBox="0 96 960 960" width="26">
+                        <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
+                    </svg></a></li>
+        </ul>
+
+        <!-- modal com perfil -->
+        <!-- <div class="modal-com-perfil">
+                        <div class="content-com-perfil">
+                            <p class="perfil">Perfil</p>
+        
+                            <div class="fundo">
+                                <img src="./img/user.svg" id="foto-perfil" alt="Foto de perfil">
+                                <p class="texto-perfil">Sem login</p>
+                                <div class="grupo">
+                                    <hr class="linha"></hr>
+                                    <a class="cadastro">Cadastrar-se</a>
+                                    <hr class="linha"></hr>
+                                    <a class="login">Fazer login</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <button class="modalBtn"><img id="perfil" src="img/perfil.svg" alt="perfil"></button> -->
+        <!-- modal com perfil -->
+    </nav>
+
+    <div class="container">
+        <g id="body">
+
+            <g class="spots">
+                <g class="top-spots" opacity="0.9">
+                    <path fill="#1E1E1E"
+                        d="M89.372,78.952c2.58,0,2.58-4,0-4S86.792,78.952,89.372,78.952L89.372,78.952z" />
+
+                    <g class="down-spots" opacity="0.3">
+                        <path fill="#1E1E1E"
+                            d="M64.788,121.952c2.58,0,2.58-4,0-4S62.208,121.952,64.788,121.952L64.788,121.952z" />
+                    </g>
+                </g>
+            </g>
+
+        </g>
+        </svg>
+
+        <!-- <div class="shadow"></div> -->
+
+        <section class="imagem-fundo">
+            <div class="inicio">
+                <div class="moedas-esquerda">
+                    <div class="moeda-verde">
+                        <img src="./img/moeda-verde.svg" alt="Ícone moeda-verde" id="moeda-verde">
+                        <div class="shadow"></div>
+                    </div>
+
+                    <div class="brilho-verde">
+                        <img src="./img/brlho-verde.svg" alt="Ícone brlho-verde" id="brilho-verde">
+                    </div>
+
+                    <div class="moeda-pequena">
+                        <img src="./img/moeda-verde2.svg" alt="Ícone moeda-verde" id="moeda-verde-pequena">
+                        <div class="shadow-moeda-pequena"></div>
+                    </div>
+
+                    <div class="moeda-amarela">
+                        <img src="./img/moeda-amarela.svg" alt="Ícone moeda-amarela" id="moeda-amarela">
+                        <div class="shadow-moeda-amarela"></div>
+                    </div>
+
+                    <div class="briho-amarelo">
+                        <img src="./img/brilho.svg" alt="Ícone brilho-amarelo" id="brilho-amarelo">
+                    </div>
+                </div>
+
+                <div class="container-texto">
+                    <h1 id="titulo-inicial">MEU PERFIL</h1>
+                    <p id="texto-inicial">Personalize seu perfil, veja suas conquistas e seus cupons que vão expirar!
+                    </p>
+                </div>
+
+                <div class="moedas-direita">
+                    <img src="./img/brilho-amarelo.svg" alt="Ícone brilho-amarelo" id="brilho-amarelo2">
+                    <div class="moeda-verde">
+                        <img src="./img/moeda-verde3.svg" alt="Ícone moeda-verde" id="moeda-verde2">
+                        <div class="shadow-moeda-verde"></div>
+                    </div>
+
+                    <img src="./img/brlho-verde.svg" alt="Ícone brlho-verde" id="brilho-verde2">
+
+                    <div class="moeda-azul">
+                        <img src="./img/moeda-azul.svg" alt="Ícone moeda-azul" id="moeda-azul">
+                        <div class="shadow-moeda-azul"></div>
+                    </div>
+
+                    <img src="./img/brilho.svg" alt="Ícone brilho-amarelo" id="brilho-amarelo3">
+                </div>
+            </div>
+            <img src="./img/imagem-inicial.svg" class="imagem-inicial" alt="">
+        </section>
+
+
+        <section class="campo-perfil">
+            <div class="container-perfil">
+                <div class="bloco-perfil">
+                    <img src="./img/foto-perfil.svg" id="foto-usuario" alt="Foto de perfil do usuário">
+
+                    <div class="bloco-usuario">
+                        <h2 class="nome-usuario">Jacques</h2>
+                        <h3 class="email-usuario">jacquessigma@gmail.com</h3>
+                        <h2 class="emocao-usuario">Emocionado</h2>
+                    </div>
+                </div>
+
+                <div class="bloco-ramcoin">
+                    <div class="ramcoin">
+                        <p class="qtd-ramcoin">2000</p>
+                        <img src="./img/ramcoin.svg" class="moeda-ramcoin" alt="Ícone moeda 'Ramcoin'">
+                    </div>
+
+                    <!-- modal editar perfil -->
+                    <div class="modal-perfil">
+                        <div class="content-perfil">
+                            <img src="./img/Vector.svg" class="icon-x" alt="Ícone de um x para fechar o modal">
+                            <h1 class="titulo-editar">Configurações de perfil</h1>
+                            <div class="info-perfil">
+                                <div class="usuario">
+                                    <img src="./img/user.svg" alt="Foto de perfil do usuário">
+                                    <img src="./img/lapis.svg" alt="">
+                                </div>
+                                <div class="campo-form">
+                                    <label for="">Nome</label>
+                                    <input type="name" placeholder="Jacques">
+                                </div>
+                                <div class="campo-form">
+                                    <label for="">Email</label>
+                                    <input type="email" placeholder="jacquessigma@gmail.com">
+                                </div>
+                                <div class="campo-form">
+                                    <label for="">Telefone</label>
+                                    <select name="" id="">
+                                        <option value="">11</option>
+                                    </select>
+                                    <input type="tel" placeholder="94002-8922">
+                                </div>
+                                <div class="campo-form">
+                                    <label for="">Gênero</label>
+                                    <select name="" id="">
+                                        <option value="">Prefiro não dizer</option>
+                                    </select>
+                                </div>
+                                <div class="campo-form">
+                                    <label for="">Senha</label>
+                                    <input type="password" placeholder="*********">
+                                </div>
+                                <div class="campo-form">
+                                    <label for="">Nascimento</label>
+                                    <input type="date">
+                                </div>
+                            </div>
+                            <a href="">Excluir minha conta</a>
+                            <button>Salvar</button>
+                        </div>
+                    </div>
+
+                    <button class="modalBtn-perfil">Editar perfil</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="campo-conquistas">
+            <div class="container-conquistas">
+                <div class="toggle-container">
+                    <div class="toggle-button" id="toggleButton">
+                        <div class="toggle-option active" id="conquistasButton">CONQUISTAS</div>
+                        <div class="toggle-option" id="cuponsButton">CUPONS</div>
+                    </div>
+                </div>
+
+                <div class="content-container">
+                    <div class="content active" id="conquistasContent">
+                        <h1 class="titulo-content">Histórico de medalhas</h1>
+                        <ul class="lista-medalhas">
+                            <li class="conjunto-medalhas">
+                                <img src="./img/medalha-roxa.svg" alt="">
+                                <div class="lista-textos">
+                                    <p class="titulo-medalha-roxa">Explosão Eletrônica</p>
+                                    <p class="meta-medalha-roxa">Atingiu 2000 Ramcoins</p>
+                                </div>
+                            </li>
+                            <hr id="linha">
+                            <li class="conjunto-medalhas">
+                                <img src="./img/medalha-azul.svg" alt="">
+                                <div class="lista-textos">
+                                    <p class="titulo-medalha-azul">Engrenagem Solidária</p>
+                                    <p class="meta-medalha-azul">Personalizou o perfil</p>
+                                </div>
+                            </li>
+                            <hr id="linha">
+                        </ul>
+                    </div>
+
+                    <div class="content" id="cuponsContent">
+                        <h1 class="titulo-content">Histórico de cupons</h1>
+                        <ul class="lista-cupons">
+                            <li class="conjunto-cupons">
+                                <img src="./img/ram-amarelo.svg" alt="">
+                                <div class="lista-textos2">
+                                    <p class="titulo-cupom-amarelo">CUPOM RAM DOURADA</p>
+                                    <p class="porcentagem-cupom-amarelo">30%</p>
+
+                                </div>
+                                <div class="area-excluir">
+                                    <button class="btn-excluir">EXCLUIR</button>
+                                    <p class="mensagem-cupom">Cupom prestes à expirar</p>
+                                </div>
+                            </li>
+                            <hr id="linha">
+                            <li class="conjunto-cupons">
+                                <img src="./img/ram-vidro.svg" alt="">
+                                <div class="lista-textos2">
+                                    <p class="titulo-cupom-azul">CUPOM RAM DE VIDRO</p>
+                                    <p class="porcentagem-cupom-azul">30%</p>
+
+                                </div>
+                                <div class="area-excluir">
+                                    <button class="btn-excluir">EXCLUIR</button>
+                                    <p class="mensagem-cupom">Cupom prestes à expirar</p>
+                                </div>
+                            </li>
+                            <hr id="linha">
+                            <li class="conjunto-cupons">
+                                <img src="./img/ram-golias.svg" alt="">
+                                <div class="lista-textos2">
+                                    <p class="titulo-cupom-verde">CUPOM RAM GOLIAS</p>
+                                    <p class="porcentagem-cupom-verde">30%</p>
+
+                                </div>
+                                <div class="area-excluir">
+                                    <button class="btn-excluir">EXCLUIR</button>
+                                    <p class="mensagem-cupom">Cupom prestes à expirar</p>
+                                </div>
+                            </li>
+                            <hr id="linha">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <footer class="footer-container">
+            <h2>Quer ser nosso parceiro?</h2>
+            <p>Envie-nos seu email!</p>
+            <div class="email">
+                <input type="email" placeholder="Insira seu email aqui">
+                <button>Enviar</button>
+            </div>
+            <div class="descricao-footer">
+                <div class="logo">
+                    <img src="./img/logoBranca.svg" class="logoBranca" alt="Imagem Logo branca 'rampoint'">
+                </div>
+                <div class="geral">
+                    <h3 id="geral-titulo">GERAL</h3>
+                    <ul>
+                        <li><a href="#">Sobre Nós</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Política e Privacidade</a></li>
+                        <li><a href="#">Termos e Condições</a></li>
+                    </ul>
+                </div>
+                <div class="redes-sociais">
+                    <h3 id="redes_sociais-titulo">REDES SOCIAIS</h3>
+                    <ul>
+                        <li><a href="https://www.instagram.com/rampoint_?igsh=MWptbnVwdDAzN3NkNw==">Instagram</a></li>
+                        <li><a href="#">Tiktok</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Linkedln</a></li>
+                    </ul>
+                </div>
+                <div class="contato">
+                    <h3 id="contato-titulo">CONTATO</h3>
+                    <p><b>Email:</b> rampointofc@gmail.com</p>
+                    <p><span>Telefone:</span> (11) 93350-6834</p>
+                    <p class="endereco"><span>Endereço:</span> Rua João Batista Soares, 440 - Centro, Barueri - SP,
+                        06401-135</p>
+                </div>
+            </div>
+            <p class="copyright">Copyright &copy; 2024 Rampoint</p>
+
+
+        </footer>
+        <script defer src="./js/modal.js"></script>
+        <script defer src="./js/scroll.js"></script>
+        <script defer src="./js/toggle.js"></script>
+        <script defer src="./js/modalPerfil.js"></script>
+
+    </div>
+</body>
+
+</html>

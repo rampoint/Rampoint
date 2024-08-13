@@ -1,5 +1,6 @@
 /* Dispositivos móveis pequenos (em pé) */
 @media (max-width: 320px) {
+
   /* Estilos aqui */
   .footer-container {
     width: 320px;
@@ -34,6 +35,7 @@
 
 /* Dispositivos móveis médios (em pé) */
 @media (max-width: 375px) {
+
   /* Estilos aqui */
   .flor img {
     visibility: hidden;
@@ -47,6 +49,7 @@
 
 /* Dispositivos móveis grandes (em pé) */
 @media (max-width: 425px) {
+
   /* Estilos aqui */
   .footer-container .logo {
     margin: 0;
@@ -79,6 +82,7 @@
     margin-top: 40px;
     max-width: 100%;
   }
+
   /*   
   .geral, .contato {
     margin: 70px;
@@ -105,6 +109,7 @@
     visibility: hidden;
   }
 }
+
 /* Dispositivos móveis em modo paisagem (tela horizontal) */
 @media (max-width: 767px) {
   /* Estilos aqui */
@@ -112,6 +117,7 @@
 
 /* Tablets em modo retrato (tela vertical) */
 @media (max-width: 768px) {
+
   /* Estilos aqui */
   .flor img {
     visibility: hidden;
@@ -123,6 +129,10 @@
 
   #medalhas {
     width: 280px;
+  }
+
+  .lista-termos {
+    width: 90%;
   }
 }
 
@@ -174,6 +184,7 @@
 
 /* Laptops pequenos */
 @media (max-width: 1280px) {
+
   /* Estilos aqui */
   .logoBranca {
     display: none;
@@ -195,9 +206,14 @@
   .hideOnMobile {
     display: none;
   }
+  nav ul{
+    position:static;
+  }
+
   .menu-button {
     display: block;
   }
+
   nav ul {
     justify-content: space-between;
     padding-left: 0;
@@ -214,6 +230,7 @@
   #logo-nav {
     margin-left: 20px;
   }
+
   #perfil {
     display: none;
   }

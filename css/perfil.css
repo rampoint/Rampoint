@@ -295,18 +295,6 @@ body {
   margin-top: 0.1em;
 }
 
-.editar-perfil {
-  font-family: "Poppins-semibold";
-  color: var(--preto);
-  transition: none;
-  text-decoration: none;
-}
-
-.editar-perfil:hover {
-  color: var(--preto);
-  text-decoration: none;
-}
-
 .bloco-perfil {
   display: flex;
   flex-direction: row;
@@ -341,6 +329,70 @@ body {
 }
 
 /* final campo perfil */
+
+/* começo modal perfil */
+
+.modalBtn-perfil {
+  font-family: "Poppins-semibold";
+  color: var(--preto);
+  height: 5vh;
+  width: 15vh;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.titulo-editar {
+  font-family: "Blinker-extrabold";
+  color:var(--preto);
+  margin: 0 auto 35px auto;
+}
+
+.modal-perfil {
+  display: none; 
+  position: fixed;
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: auto;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-perfil .content-perfil {
+  background-color: var(--branco);
+  margin: 5% auto; 
+  padding: 20px;
+  border-radius: 35px;
+  width: 70%; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-x {
+  position: relative;
+  left: 30em;
+}
+
+.info-perfil {
+  background-color: var(--cinza-claro);
+  border-radius: 35px;
+  width: 55em;
+  height: 30em;
+  display: flex;
+  flex-direction: row;
+}
+
+.campo-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* final modal editar perfil */
 
 /* começo campo conquistas */
 

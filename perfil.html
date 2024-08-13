@@ -148,7 +148,7 @@
                         <img src="./img/moeda-amarela.svg" alt="Ícone moeda-amarela" id="moeda-amarela">
                         <div class="shadow-moeda-amarela"></div>
                     </div>
-                    
+
                     <div class="briho-amarelo">
                         <img src="./img/brilho.svg" alt="Ícone brilho-amarelo" id="brilho-amarelo">
                     </div>
@@ -173,7 +173,7 @@
                         <img src="./img/moeda-azul.svg" alt="Ícone moeda-azul" id="moeda-azul">
                         <div class="shadow-moeda-azul"></div>
                     </div>
-                    
+
                     <img src="./img/brilho.svg" alt="Ícone brilho-amarelo" id="brilho-amarelo3">
                 </div>
             </div>
@@ -198,7 +198,53 @@
                         <p class="qtd-ramcoin">2000</p>
                         <img src="./img/ramcoin.svg" class="moeda-ramcoin" alt="Ícone moeda 'Ramcoin'">
                     </div>
-                    <a href="#" class="editar-perfil">Editar perfil</a>
+
+                    <!-- modal editar perfil -->
+                    <div class="modal-perfil">
+                        <div class="content-perfil">
+                            <img src="./img/Vector.svg" class="icon-x" alt="Ícone de um x para fechar o modal">
+                            <h1 class="titulo-editar">Configurações de perfil</h1>
+                            <div class="info-perfil">
+                                <div class="usuario">
+                                    <img src="./img/user.svg" alt="Foto de perfil do usuário">
+                                    <img src="./img/lapis.svg" alt="">
+                                </div>
+                                <div class="campo-form">
+                                    <label for="">Nome</label>
+                                    <input type="name" placeholder="Jacques">
+                                </div>
+                                <div class="campo-form">
+                                    <label for="">Email</label>
+                                    <input type="email" placeholder="jacquessigma@gmail.com">
+                                </div>
+                                <div class="campo-form">
+                                    <label for="">Telefone</label>
+                                    <select name="" id="">
+                                        <option value="">11</option>
+                                    </select>
+                                    <input type="tel" placeholder="94002-8922">
+                                </div>
+                                <div class="campo-form">
+                                    <label for="">Gênero</label>
+                                    <select name="" id="">
+                                        <option value="">Prefiro não dizer</option>
+                                    </select>
+                                </div>
+                                <div class="campo-form">
+                                    <label for="">Senha</label>
+                                    <input type="password" placeholder="*********">
+                                </div>
+                                <div class="campo-form">
+                                    <label for="">Nascimento</label>
+                                    <input type="date">
+                                </div>
+                            </div>
+                            <a href="">Excluir minha conta</a>
+                            <button>Salvar</button>
+                        </div>
+                    </div>
+
+                    <button class="modalBtn-perfil">Editar perfil</button>
                 </div>
             </div>
         </section>
@@ -241,7 +287,7 @@
                             <li class="conjunto-cupons">
                                 <img src="./img/ram-amarelo.svg" alt="">
                                 <div class="lista-textos2">
-                                    <p class="titulo-cupom-amarelo">CUPOM RÃ DOURADA</p>
+                                    <p class="titulo-cupom-amarelo">CUPOM RAM DOURADA</p>
                                     <p class="porcentagem-cupom-amarelo">30%</p>
 
                                 </div>
@@ -254,7 +300,7 @@
                             <li class="conjunto-cupons">
                                 <img src="./img/ram-vidro.svg" alt="">
                                 <div class="lista-textos2">
-                                    <p class="titulo-cupom-azul">CUPOM RÃ DE VIDRO</p>
+                                    <p class="titulo-cupom-azul">CUPOM RAM DE VIDRO</p>
                                     <p class="porcentagem-cupom-azul">30%</p>
 
                                 </div>
@@ -267,7 +313,7 @@
                             <li class="conjunto-cupons">
                                 <img src="./img/ram-golias.svg" alt="">
                                 <div class="lista-textos2">
-                                    <p class="titulo-cupom-verde">CUPOM RÃ GOLIAS</p>
+                                    <p class="titulo-cupom-verde">CUPOM RAM GOLIAS</p>
                                     <p class="porcentagem-cupom-verde">30%</p>
 
                                 </div>
@@ -325,9 +371,10 @@
 
 
         </footer>
-        <script src="./js/modal.js"></script>
-        <script src="./js/scroll.js"></script>
-        <script src="./js/toggle.js"></script>
+        <script defer src="./js/modal.js"></script>
+        <script defer src="./js/scroll.js"></script>
+        <script defer src="./js/toggle.js"></script>
+        <script defer src="./js/modalPerfil.js"></script>
 
     </div>
 </body>

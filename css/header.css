@@ -6,6 +6,7 @@ nav {
   background-color: var(--branco);
   margin-bottom: 0px;
 }
+
 nav ul {
   background-color: var(--branco);
   width: 100%;
@@ -19,6 +20,7 @@ nav ul {
   position: fixed;
   height: 4em;
   margin: 0;
+  z-index: 1000;
 }
 
 #logo-nav {

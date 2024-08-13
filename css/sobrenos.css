@@ -198,9 +198,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  border: black solid;
-
 }
 
 .fundo-valores {

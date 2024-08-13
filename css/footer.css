@@ -76,7 +76,7 @@ h3,
   max-width: 80%;
   margin-right: 10px;
   font-family: "Poppins-bold";
-  color: var(--cinza);
+  color: var(--cinza-claro);
 }
 
 input:focus {

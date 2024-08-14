@@ -2,7 +2,7 @@ function login(){
     
         firebase.auth().signInWithEmailAndPassword(form.email().value,form.senha().value)
         .then(response =>{
-        window.location.href = "teste.html"
+        window.location.href ="../pagina-inicial/inicial.html"
         }).catch(error=>{
             alert(getErrorCode(error))
         })

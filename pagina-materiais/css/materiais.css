@@ -477,7 +477,7 @@ body {
 .ramcoin {
   position: absolute;
   bottom: 4em;
-  left: 45em;
+  left: 40em;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -507,7 +507,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-left: 15px;
+  margin-left: 5px;
 }
 
 .ramcoin:hover .text-block {

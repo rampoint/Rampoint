@@ -227,7 +227,6 @@ body {
 }
 
 #scrollTarget {
-  border: solid;
   padding-top: 8em; /* para compensar o menu fixo */
 }
 @media (max-width: 768px) {
@@ -255,8 +254,8 @@ body {
 
 /* começo carrossel-materiais  */
 .carrossel-container {
-  width: 80%;
-  margin: 30px auto 50px auto;
+  width: 50%;
+  margin: 100px auto 100px auto;
   position: relative;
 }
 
@@ -269,6 +268,8 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  margin: auto;
+  justify-content: center;
 }
 
 .main-buttons {
@@ -276,7 +277,7 @@ body {
   flex-wrap: wrap;
   margin-bottom: 20px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   
 }
 
@@ -394,8 +395,14 @@ body {
 .content {
   padding: 10px 20px;
   display: none;
-  width: 10%;
   margin: auto;
+}
+
+.content img {
+  
+  width: 100%;
+  max-width: 446.800px;
+  min-width:200px;
   
 }
 

@@ -109,6 +109,12 @@
   h3 {
     margin-top: 15px;
   }
+
+  .main-buttons {
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+  }
 }
 
 /* quebrando a linha da imagem */

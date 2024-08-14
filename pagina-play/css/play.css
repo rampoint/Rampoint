@@ -468,7 +468,7 @@ body {
   display: flex;
   flex-direction: row;
   gap: 15px;
-  margin: 10px 5px;
+  margin: 10px 15px;
 }
 
 #loja {

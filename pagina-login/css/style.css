@@ -28,13 +28,12 @@ body {
 
 h1,
 h2 {
-  font-family: "Blinker-extrabold";
+  font-family: "Poppins-bold";
 }
 
 .titulo {
   color: var(--azul);
   text-transform: uppercase;
-  font-family: "Poppins-bold";
 }
 
 .cadastro {
@@ -43,7 +42,6 @@ h2 {
 
 .login {
   margin-bottom: 30px;
-  font-family: "Poppins-bold";
 }
 
 label,

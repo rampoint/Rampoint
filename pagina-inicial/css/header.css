@@ -73,17 +73,14 @@ nav a:hover {
   display: flex;
   align-items: center;
   margin-left: 160px;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 #fechar {
   margin-left: 172px;
-  margin-top: 5px;
+  margin-top: 35px;
 }
 
-.menus {
-  margin-top: 20px;
-}
 
 #menuMobile {
   font-family: "Poppins-semibold";
@@ -113,7 +110,7 @@ nav a:hover {
 }
 .sidebar li {
   width: 100%;
-  margin-top: 20px;
+  margin-top: 0px;
 }
 .sidebar a {
   width: 100%;
@@ -131,7 +128,7 @@ nav a:hover {
 }
 
 .footer-logo {
-  margin-top: 90%;
+  margin-top: 10em;
 }
 
 #footer-logo {
@@ -139,11 +136,17 @@ nav a:hover {
   width: 150px;
 }
 
-@media (max-height: 850px) {
-  .footer-logo {
-    margin-top: 10%;
-  }
+.menus {
+margin-top:60px;
 }
+
+.menus li{
+
+  margin-bottom:5%;
+}
+
+
+
 
 #footer-logo {
   padding: 0;

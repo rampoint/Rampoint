@@ -170,7 +170,7 @@ body {
   left: 25em;
 }
 
-/* final lado esquerdo */
+/* final lado direito */
 
 .medalha-vermelha,
 .medalha-verde,
@@ -318,6 +318,196 @@ body {
   margin-top: -1.5em;
 }
 
+/* Modal Container */
+/* Adiciona essa classe para desabilitar o scroll */
+.no-scroll {
+  overflow: hidden;
+}
+
+.modal-container {
+  display: none; /* Escondido por padrão */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo semi-transparente */
+}
+
+/* Modal Content */
+.modal-content-dourado {
+  background-color: #fffdce;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 15px;
+  width: 80%;
+  max-width: 600px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content-vidro {
+  background-color: #dffbff;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 15px;
+  width: 80%;
+  max-width: 600px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content-golias {
+  background-color: #c7fbb9;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 15px;
+  width: 80%;
+  max-width: 600px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Fechar botão */
+.close {
+  color: var(--cinza);
+  font-size: 24px;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid var(--cinza);
+  background-color: transparent;
+  text-align: center;
+  line-height: 36px;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #555;
+  border-color: #555;
+  text-decoration: none;
+}
+
+.titulo-dourado {
+  font-family: "Blinker-extrabold";
+  color: #f89701;
+  font-size: 30px;
+}
+
+.texto-dourado {
+  font-family: "Blinker-bold";
+  color: #f89701;
+  font-size: 18px;
+}
+
+.estrela-dourada {
+  position: relative;
+  right: 9em;
+  top: 2em;
+}
+
+.estrela-dourada2 {
+  position: relative;
+  left: 9em;
+  bottom: 2em;
+}
+
+.itens {
+  display: flex;
+  flex-direction: column;
+}
+
+.ramcoin {
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+}
+
+.qtd-ramcoin {
+  font-family: "Blinker-bold";
+  color: #417932;
+  margin-left: 5px;
+}
+
+.lojas {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+#loja {
+  width: 20%;
+}
+
+.texto-lojas {
+  font-family: "Poppins-bold";
+  color: #f89701;
+  margin: 0 50px;
+}
+
+.cupom-dourado {
+  width: 50%;
+  margin-left: 45px;
+}
+
+#estrelas {
+  position: relative;
+  right: 16em;
+  top: 1em;
+  margin-bottom: 1em;
+}
+
+.campo-curiosidade {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#ram-dourado {
+  width: 35%;
+  position: relative;
+  left: 2em;
+  bottom: 2em;
+  z-index: 2;
+}
+
+.curiosidade {
+  background-color: #FFCE1E;
+  border-radius: 25px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-right: 2em;
+  position: relative;
+  bottom: 2em;
+}
+
+.texto-curiosidade {
+  font-family: "Poppins-bold";
+  color: #745F12;
+  text-align: right;
+  
+}
+
 /* final dos cards dos cupons */
 
 /* começo dos cards das empresas */
@@ -390,3 +580,215 @@ body {
 }
 
 /* final das medalhas */
+
+/* o layout nao quer */
+@media (min-width: 320px) and (max-width: 421px) {
+  /* Estilos aqui */
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  /* imagem inicial */
+
+  .imagem-fundo {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    height: 30em;
+  }
+
+  #titulo-inicial {
+    font-size: 4em;
+    width: 30%;
+    margin: 0 0 30px 0;
+  }
+
+  #texto-inicial {
+    width: 30%;
+    text-align: center;
+    position: relative;
+    top: 20em;
+  }
+
+  .botao {
+    display: flex;
+    flex-direction: column;
+    margin-top: 105px;
+    margin-left: 0;
+  }
+
+  #scrollTarget {
+    padding-top: 9.5em; /* para compensar o menu fixo */
+  }
+
+  /* começo lado esquerdo */
+
+  .medalha-vermelha {
+    width: 4em;
+    position: relative;
+    top: -4em;
+    right: 8em;
+  }
+
+  .medalha-verde {
+    width: 4em;
+    position: relative;
+    top: 12em;
+    right: 8em;
+  }
+
+  .brilho-amarelo {
+    position: relative;
+    bottom: 1em;
+    right: 8em;
+    z-index: -1;
+  }
+
+  .brilho-verde {
+    width: 1em;
+    position: relative;
+    top: 1em;
+    right: 10em;
+    z-index: -1;
+  }
+
+  .brilho-azul {
+    width: 1em;
+    position: relative;
+    top: 4em;
+    right: 11em;
+    z-index: -1;
+  }
+  /* final lado esquerdo */
+
+  /* começo lado direito */
+
+  .brilho-roxo {
+    width: 1em;
+    position: relative;
+    bottom: 12em;
+    left: 5em;
+    z-index: -1;
+  }
+
+  .medalha-azul {
+    width: 4em;
+    position: relative;
+    bottom: 17em;
+    left: 9em;
+  }
+
+  .medalha-amarela {
+    width: 3em;
+    position: relative;
+    bottom: 15em;
+    left: 10.5em;
+  }
+
+  .brilho-vermelho {
+    width: 1em;
+    position: relative;
+    bottom: 17em;
+    left: 8em;
+    z-index: -1;
+  }
+
+  .brilho-amarelo2 {
+    position: relative;
+    bottom: 11em;
+    left: 8em;
+    z-index: -1;
+  }
+
+  .medalha-roxa {
+    width: 4em;
+    position: relative;
+    bottom: 5em;
+    left: 8em;
+  }
+
+  /* final lado direito */
+
+  /* imagem inicial */
+
+  #titulo1 {
+    font-family: "Blinker-extrabold";
+    color: var(--verde);
+    font-size: 1.7em;
+    margin: -0.1em 0 0.5em 3em;
+  }
+
+  #texto1 {
+    font-family: "Poppins-regular";
+    color: var(--preto);
+    font-size: 1em;
+    margin-left: 5em;
+    width: 70%;
+  }
+
+  .cupons {
+    width: 350px;
+    height: 850px;
+  }
+
+  #titulo2 {
+    margin: 3em 0 0 1em;
+  }
+
+  #texto2 {
+    margin-left: 3em;
+    width: 75%;
+  }
+
+  /* começo dos cards dos cupons */
+
+  .card-cupons {
+    flex-wrap: wrap;
+    padding: 0;
+    gap: 1em;
+  }
+
+  #titulo-card {
+    font-size: 1.3em;
+  }
+
+  .item1,
+  .item2,
+  .item3 {
+    padding: 10px;
+    width: 10em;
+    height: 12em;
+  }
+
+  #cupom-dourado {
+    width: 10em;
+  }
+
+  .btn-cupom {
+    margin-left: 8em;
+    margin-top: -1em;
+  }
+
+  #empresas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2em 0 3em 0;
+    flex-wrap: nowrap;
+  }
+
+  .card-empresa {
+    margin: 80px 10px 0 10px;
+  }
+
+  /* final dos cards dos cupons */
+}

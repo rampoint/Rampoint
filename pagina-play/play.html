@@ -29,24 +29,17 @@
 
     <nav>
         <ul class="sidebar">
-            <li onclick=hideSidebar()>
-                <a href="#">
-                    <img id="fechar" src="img/fechar.svg" alt="fechar">
-                </a>
-            </li>
-            <li id="perfil-sidebar">
-                <img src="img/perfil.svg" alt="" srcset="">
-
+            <li onclick=hideSidebar()><a href="#"><img id="fechar" src="img/fechar.svg" alt="fechar nav"></a></li>
+            <li id="perfil-sidebar"><img src="img/perfil2.svg" alt="" srcset="">
                 <div class="menus">
-            <li><a href="../pagina-inicial/inicial.html">HOME</a></li>
-            <li><a href="../pagina-play/play.html">PLAY</a></li>
-            <li><a href="../pagina-inicial/inicial.html" id="ecoponto">ECOPONTOS</a></li>
-            <li><a href="../pagina-materiais/materiais.html">MATERIAIS</a></li>
-            <li><a href="../pagina-qrcode/index.html">QR-CODE</a></li>
-            <li><a href="../pagina-faq/faq.html">FALE CONOSCO</a></li>
+            <li><a href="../pagina-inicial/inicial.html" id="menuMobile">HOME</a></li>
+            <li><a href="../pagina-play/play.html" id="menuMobile">PLAY</a></li>
+            <li><a href="../pagina-inicial/inicial.html" id="ecoponto menuMobile">ECOPONTOS</a></li>
+            <li><a href="../pagina-materiais/materiais.html" id="menuMobile">MATERIAIS</a></li>
+            <li><a href="../pagina-qrcode/index.html" id="menuMobile">QR-CODE</a></li>
+            <li><a href="../pagina-faq/faq.html" id="menuMobile">FALE CONOSCO</a></li>
             <div class="footer-logo">
-                <a id="footer-logo">ram</a>
-                <a id="footer-logo">point.</a>
+                <img src="./img/logoBranca.svg" id="footer-logo" alt="">
             </div>
             </div>
             </li>
@@ -56,7 +49,7 @@
                 <h1 style="color: black;"><b style="color:#7ad761; margin-left: 10px;">ram</b>point.</h1>
             <li class="hideOnMobile"><a href="../pagina-inicial/inicial.html">HOME</a>
             <li class="hideOnMobile"><a href="../pagina-play/play.html">PLAY</a>
-            <li class="hideOnMobile"><a href="../pagina-inicial/inicial.html" id="ecoponto">ECOPONTOS</a>
+            <li class="hideOnMobile"><a href="#" id="ecoponto">ECOPONTOS</a>
             <li class="hideOnMobile"><a href="../pagina-materiais/materiais.html">MATERIAIS</a>
             <li class="hideOnMobile"><a href="../pagina-qrcode/index.html">QR-CODE</a>
             <li class="hideOnMobile"><a href="../pagina-faq/faq.html">FALE CONOSCO</a>
@@ -95,23 +88,23 @@
 
         <!-- modal com perfil -->
         <!-- <div class="modal-com-perfil">
-            <div class="content-com-perfil">
-                <p class="perfil">Perfil</p>
-
-                <div class="fundo">
-                    <img src="./img/user.svg" id="foto-perfil" alt="Foto de perfil">
-                    <p class="texto-perfil">Sem login</p>
-                    <div class="grupo">
-                        <hr class="linha"></hr>
-                        <a class="cadastro">Cadastrar-se</a>
-                        <hr class="linha"></hr>
-                        <a class="login">Fazer login</a>
+                <div class="content-com-perfil">
+                    <p class="perfil">Perfil</p>
+    
+                    <div class="fundo">
+                        <img src="./img/user.svg" id="foto-perfil" alt="Foto de perfil">
+                        <p class="texto-perfil">Sem login</p>
+                        <div class="grupo">
+                            <hr class="linha"></hr>
+                            <a class="cadastro">Cadastrar-se</a>
+                            <hr class="linha"></hr>
+                            <a class="login">Fazer login</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <button class="modalBtn"><img id="perfil" src="img/perfil.svg" alt="perfil"></button> -->
+    
+            <button class="modalBtn"><img id="perfil" src="img/perfil.svg" alt="perfil"></button> -->
         <!-- modal com perfil -->
     </nav>
 
@@ -163,23 +156,74 @@
                 </p>
             </div>
 
+            <!-- Modals -->
+            <div id="modal-cupom-dourado" class="modal-container">
+                <div class="modal-content-dourado">
+                    <span class="close">&times;</span>
+                    <img src="./img/estrela-modal.svg" class="estrela-dourada" alt="">
+                    <h1 class="titulo-dourado">RAM DOURADA</h1>
+                    <p class="texto-dourado">A mais venenosa de todas</p>
+                    <img src="./img/estrela-modal2.svg" class="estrela-dourada2" alt="">
+
+                    <div class="itens">
+                        <div class="ramcoin">
+                            <img src="./img/moeda.svg" alt="">
+                            <p class="qtd-ramcoin">800-1000 RAMCOINS</p>
+                        </div>
+
+                        <div class="lojas">
+                            <img src="./img/casasBahia.svg" id="loja" alt="">
+                            <img src="./img/magalu.svg" id="loja" alt="">
+                            <img src="./img/cupom-dourado.svg" class="cupom-dourado" alt="">
+                        </div>
+                        <p class="texto-lojas">Lojas disponíveis</p>
+                    </div>
+                    <img src="./img/estrelas.svg" id="estrelas" alt="">
+
+                    <div class="campo-curiosidade">
+                        <img src="./img/ram-dourado.svg" id="ram-dourado" alt="">
+
+                        <div class="curiosidade">
+                            <p class="texto-curiosidade">A mais venenosa do mundo, esta pequena joia das florestas tropicais é uma verdadeira maravilha letal. Use esse poder com sabedoria. 
+                                Continue sua aventura! </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="modal-cupom-vidro" class="modal-container">
+                <div class="modal-content-vidro">
+                    <span class="close">&times;</span>
+                    <img src="./img/cupom-vidro.svg" alt="Imagem do cupom Vidro">
+                </div>
+            </div>
+
+            <div id="modal-cupom-golias" class="modal-container">
+                <div class="modal-content-golias">
+                    <span class="close">&times;</span>
+                    <img src="./img/cupom-golias.svg" alt="Imagem do cupom Golias">
+                </div>
+            </div>
+
+            <!-- Card Cupons -->
             <div class="card-cupons">
                 <div class="item1">
                     <h3 id="titulo-card">RAM DOURADA</h3>
-                    <img src="./img/cupom-dourado.svg" alt="Imagem cupom 'Rã Dourada'">
-                    <img src="./img/seta-preta.svg" class="btn-cupom" alt="">
+                    <img src="./img/cupom-dourado.svg" id="cupom-dourado" alt="Imagem cupom 'Rã Dourada'">
+                    <img src="./img/seta-preta.svg" class="btn-cupom" data-target="#modal-cupom-dourado" alt="">
                 </div>
                 <div class="item2">
                     <h3 id="titulo-card">RAM DE VIDRO</h3>
                     <img src="./img/cupom-vidro.svg" alt="Imagem cupom 'Rã de Vidro'">
-                    <img src="./img/seta-preta.svg" class="btn-cupom" alt="">
+                    <img src="./img/seta-preta.svg" class="btn-cupom" data-target="#modal-cupom-vidro" alt="">
                 </div>
                 <div class="item3">
                     <h3 id="titulo-card">RAM GOLIAS</h3>
                     <img src="./img/cupom-golias.svg" alt="Imagem cupom 'Rã Golias'">
-                    <img src="./img/seta-preta.svg" class="btn-cupom" alt="">
+                    <img src="./img/seta-preta.svg" class="btn-cupom" data-target="#modal-cupom-golias" alt="">
                 </div>
             </div>
+
         </section>
 
         <section class="section-empresas">
@@ -266,6 +310,7 @@
         <script src="./js/botao.js"></script>
         <script src="./js/modal.js"></script>
         <script src="./js/scrollModal.js"></script>
+        <script src="./js/modalCupom.js"></script>
     </div>
 </body>
 

@@ -791,4 +791,58 @@ body {
   }
 
   /* final dos cards dos cupons */
+  /* footer */
+
+  .footer-container {
+    width: 100%;
+    height: auto;
+    position: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .geral {
+    margin-left: 55px;
+  }
+
+  .redes-sociais,
+  .contato {
+    margin-top: 30px;
+    margin-left: 55px;
+  }
+
+  .footer-container .descricao-footer ul {
+    list-style-type: none;
+    padding: 0px 5px;
+  }
+
+  .descricao-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    width: 100%;
+  }
+
+  .email {
+    width: 200px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin: 0 65px;
+  }
+
+  #email {
+    height: 20px;
+  }
+
+  .footer-container .logo {
+    width: 100%;
+  }
+  /* footer */
+
+  .logoBranca-small {
+    width: 150px;
+  }
 }

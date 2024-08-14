@@ -76,7 +76,7 @@ h3,
   max-width: 80%;
   margin-right: 10px;
   font-family: "Poppins-bold";
-  color: var(--cinza);
+  color: var(--cinza-claro);
 }
 
 input:focus {
@@ -150,7 +150,9 @@ input:focus {
   margin: 0px;
 }
 
-#geral-titulo, #redes_sociais-titulo, #contato-titulo {
+#geral-titulo,
+#redes_sociais-titulo,
+#contato-titulo {
   color: var(--branco);
 }
 
@@ -159,6 +161,7 @@ input:focus {
   width: 270px;
 }
 
-#email-span, #telefone-span {
+#email-span,
+#telefone-span {
   color: var(--branco);
 }

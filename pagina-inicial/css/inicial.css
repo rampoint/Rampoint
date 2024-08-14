@@ -151,6 +151,21 @@ body {
   cursor: pointer;
 }
 
+.cadastro {
+  font-family: "Poppins-bold";
+  font-size: 1em;
+  color: var(--branco);
+  width: 200px;
+  height: 40px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.cadastro:hover {
+  color: var(--branco);
+}
+
 #login {
   font-family: "Poppins-bold";
   font-size: 1em;
@@ -160,6 +175,17 @@ body {
   height: 40px;
   border: none;
   border-bottom: 5px solid #0076ac;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.login {
+  font-family: "Poppins-bold";
+  font-size: 1em;
+  color: var(--branco);
+  width: 200px;
+  height: 40px;
+  border: none;
   border-radius: 30px;
   cursor: pointer;
 }

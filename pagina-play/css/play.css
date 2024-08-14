@@ -339,12 +339,12 @@ body {
 /* Modal Content */
 .modal-content-dourado {
   background-color: #fffdce;
-  margin: 5% auto;
+  margin: 10% auto;
   padding: 20px;
-  border: 1px solid #888;
-  border-radius: 15px;
-  width: 80%;
+  border-radius: 25px;
+  width: 27em;
   max-width: 600px;
+  height: 30em;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -352,14 +352,16 @@ body {
   justify-content: center;
 }
 
+
 .modal-content-vidro {
   background-color: #dffbff;
-  margin: 5% auto;
+  margin: 10% auto;
   padding: 20px;
   border: 1px solid #888;
-  border-radius: 15px;
-  width: 80%;
+  border-radius: 25px;
+  width: 25em;
   max-width: 600px;
+  height: 30em;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -372,7 +374,7 @@ body {
   margin: 5% auto;
   padding: 20px;
   border: 1px solid #888;
-  border-radius: 15px;
+  border-radius: 25px;
   width: 80%;
   max-width: 600px;
   position: relative;
@@ -384,19 +386,20 @@ body {
 
 /* Fechar botão */
 .close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: var(--cinza);
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 20px;
   position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 36px;
-  height: 36px;
+  top: 25px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   border: 2px solid var(--cinza);
   background-color: transparent;
   text-align: center;
-  line-height: 36px;
   cursor: pointer;
 }
 
@@ -407,28 +410,38 @@ body {
   text-decoration: none;
 }
 
+#brilho-modal {
+  height: 1em;
+}
+
 .titulo-dourado {
   font-family: "Blinker-extrabold";
   color: #f89701;
   font-size: 30px;
+  position: relative;
+  top: 2em;
 }
 
 .texto-dourado {
   font-family: "Blinker-bold";
   color: #f89701;
   font-size: 18px;
+  position: relative;
+  top: 3em;
 }
 
 .estrela-dourada {
+  width: 8%;
   position: relative;
   right: 9em;
-  top: 2em;
+  top: 5em;
 }
 
 .estrela-dourada2 {
+  width: 10%;
   position: relative;
   left: 9em;
-  bottom: 2em;
+  top: 1em;
 }
 
 .itens {
@@ -437,9 +450,12 @@ body {
 }
 
 .ramcoin {
-  width: 500px;
+  width: 250px;
   display: flex;
   flex-direction: row;
+  margin: 15pX 0;
+  position: relative;
+  top: 1em;
 }
 
 .qtd-ramcoin {
@@ -452,6 +468,7 @@ body {
   display: flex;
   flex-direction: row;
   gap: 15px;
+  margin: 10px 5px;
 }
 
 #loja {
@@ -461,7 +478,7 @@ body {
 .texto-lojas {
   font-family: "Poppins-bold";
   color: #f89701;
-  margin: 0 50px;
+  margin: -20px 35px;
 }
 
 .cupom-dourado {
@@ -471,8 +488,8 @@ body {
 
 #estrelas {
   position: relative;
-  right: 16em;
-  top: 1em;
+  right: 12em;
+  top: 2em;
   margin-bottom: 1em;
 }
 
@@ -481,31 +498,34 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  width: 36em;
+  padding: 0 0 20px 15px;
 }
 
 #ram-dourado {
   width: 35%;
   position: relative;
-  left: 2em;
+  left: 3em;
   bottom: 2em;
   z-index: 2;
 }
 
 .curiosidade {
-  background-color: #FFCE1E;
+  height: 8em;
+  background-color: #ffce1e;
   border-radius: 25px;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
   padding: 10px;
-  margin-right: 2em;
+  margin-right: 5em;
   position: relative;
   bottom: 2em;
 }
 
 .texto-curiosidade {
   font-family: "Poppins-bold";
-  color: #745F12;
+  color: #745f12;
   text-align: right;
-  
+  margin-left: 15px;
 }
 
 /* final dos cards dos cupons */
@@ -608,20 +628,20 @@ body {
   #titulo-inicial {
     font-size: 4em;
     width: 30%;
-    margin: 0 0 30px 0;
+    margin: 0 0 50px 0;
   }
 
   #texto-inicial {
     width: 30%;
     text-align: center;
     position: relative;
-    top: 20em;
+    top: 16em;
   }
 
   .botao {
     display: flex;
     flex-direction: column;
-    margin-top: 105px;
+    margin-top: 10em;
     margin-left: 0;
   }
 
@@ -632,31 +652,31 @@ body {
   /* começo lado esquerdo */
 
   .medalha-vermelha {
-    width: 4em;
+    width: 3em;
     position: relative;
-    top: -4em;
-    right: 8em;
+    top: -2em;
+    right: 10em;
   }
 
   .medalha-verde {
-    width: 4em;
+    width: 3em;
     position: relative;
-    top: 12em;
+    top: 9em;
     right: 8em;
   }
 
   .brilho-amarelo {
     position: relative;
-    bottom: 1em;
-    right: 8em;
+    bottom: 0.5em;
+    right: 7em;
     z-index: -1;
   }
 
   .brilho-verde {
     width: 1em;
     position: relative;
-    top: 1em;
-    right: 10em;
+    top: -1em;
+    right: 11em;
     z-index: -1;
   }
 
@@ -674,44 +694,44 @@ body {
   .brilho-roxo {
     width: 1em;
     position: relative;
-    bottom: 12em;
+    bottom: 10em;
     left: 5em;
     z-index: -1;
   }
 
   .medalha-azul {
-    width: 4em;
+    width: 3em;
     position: relative;
-    bottom: 17em;
-    left: 9em;
+    bottom: 15em;
+    left: 0em;
   }
 
   .medalha-amarela {
     width: 3em;
     position: relative;
-    bottom: 15em;
-    left: 10.5em;
+    bottom: 14em;
+    left: 10em;
   }
 
   .brilho-vermelho {
     width: 1em;
     position: relative;
-    bottom: 17em;
-    left: 8em;
+    bottom: 15em;
+    left: 7em;
     z-index: -1;
   }
 
   .brilho-amarelo2 {
     position: relative;
-    bottom: 11em;
-    left: 8em;
+    bottom: 10em;
+    left: 10em;
     z-index: -1;
   }
 
   .medalha-roxa {
-    width: 4em;
+    width: 3em;
     position: relative;
-    bottom: 5em;
+    bottom: 6em;
     left: 8em;
   }
 

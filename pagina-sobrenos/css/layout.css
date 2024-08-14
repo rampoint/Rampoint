@@ -26,26 +26,57 @@
 
   #titulo-inicial {
     font-size: 3em;
-    width: 90%;
-    margin: 0 0 10px 5em;
+    position: relative;
+    bottom: 2.5em;
+    right: 0em;
     text-align: center;
   }
 
   #texto-inicial {
-    width: 95%;
-    margin: 0 0 0 5em;
+    width: 25%;
+    position: relative;
+    bottom: 6em;
+    right: 0em;
     text-align: center;
     font-size: 1em;
-  } 
-
-  .botao {
-    display: flex;
-    flex-direction: column;
-    margin-top: 25px;
-    gap: 15px;
-    margin-left: 4em;
+  }
+  
+  .img-equipe {
+    height: 30em;
   }
 
+  .mensagem-foto {
+    width: 20em;
+    margin-top: 0em;
+  }
+
+  .campo-moods {
+    flex-wrap: wrap;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    bottom: 0;
+  }
+
+  .fundo-ram-triste,
+  .fundo-ram-entediado,
+  .fundo-ram-furioso,
+  .fundo-ram-alegre,
+  .fundo-ram-apaixonado {
+    width: 70px;
+    height: 70px;
+  }
+
+  #ram-triste,
+  #ram-furioso,
+  #ram-apaixonado {
+    width: 5em;
+  }
+
+  #ram-alegre, #ram-entediado {
+    width: 4em;
+  }
   /* footer */
 
   .footer-container {
@@ -81,7 +112,7 @@
   }
 
   .email {
-    width: 200px;
+    width: 300px;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -96,14 +127,6 @@
     width: 100%;
   }
   /* footer */
-
-  h2 {
-    margin: 0;
-  }
-
-  h3 {
-    margin-top: 15px;
-  }
 
   .logoBranca-small {
     width: 150px;
@@ -155,15 +178,132 @@
   }
 }
 /* quebrando a linha da imagem */
-
-@media (max-width: 670px) {
-  .flor img {
-    visibility: hidden;
-  }
-  .campo-empresa {
+/* 
+@media (min-width: 670px) {
+  imagem inicial */
+  /* .imagem-fundo {
+    display: flex;
+    flex-direction: column-reverse;
     margin: 0;
+    width: 100%;
+    height: 35em;
   }
-}
+
+  .img-fundo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+  }
+
+  #titulo-inicial {
+    font-size: 3em;
+    position: relative;
+    bottom: 5em;
+    right: 0em;
+    text-align: center;
+  }
+
+  #texto-inicial {
+    width: 25%;
+    position: relative;
+    bottom: 6em;
+    right: 0em;
+    text-align: center;
+    font-size: 1em;
+  }
+  
+  .img-equipe {
+    height: 30em;
+  }
+
+  .mensagem-foto {
+    width: 20em;
+    margin-top: 0em;
+  }
+
+  .campo-moods {
+    flex-wrap: wrap;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    bottom: 0;
+  }
+
+  .campo-empresa {
+    margin-top: 50px;
+  }
+
+  .fundo-ram-triste,
+  .fundo-ram-entediado,
+  .fundo-ram-furioso,
+  .fundo-ram-alegre,
+  .fundo-ram-apaixonado {
+    width: 70px;
+    height: 70px;
+  }
+
+  #ram-triste,
+  #ram-furioso,
+  #ram-apaixonado {
+    width: 5em;
+  }
+
+  #ram-alegre, #ram-entediado {
+    width: 4em;
+  }
+  /* footer
+
+  .footer-container {
+    width: 100%;
+    height: auto;
+    position: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .geral {
+    margin-left: 55px;
+  }
+
+  .redes-sociais,
+  .contato {
+    margin-top: 30px;
+    margin-left: 55px;
+  }
+
+  .footer-container .descricao-footer ul {
+    list-style-type: none;
+    padding: 0px 5px;
+  }
+
+  .descricao-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    width: 100%;
+  }
+
+  .email {
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin: 0 65px;
+  }
+
+  #email {
+    height: 20px;
+  }
+
+  .footer-container .logo {
+    width: 100%;
+  } 
+  footer
+} */
 /* Dispositivos móveis em modo paisagem (tela horizontal) */
 @media (max-width: 767px) {
   /* Estilos aqui */
@@ -172,18 +312,12 @@
 /* Tablets em modo retrato (tela vertical) */
 @media (max-width: 768px) {
   /* Estilos aqui */
-  .flor img {
-    visibility: hidden;
-  }
-  p {
-    margin-bottom: 10px;
-  }
 }
 
 /* Tablets em modo paisagem (tela horizontal) */
 @media (max-width: 1024px) {
   /* Estilos aqui */
-  header {
+  /* header {
     display: flex;
     justify-content: space-between;
   }
@@ -208,7 +342,7 @@
     flex-wrap: wrap;
     margin-top: 40px;
     max-width: 100%;
-  }
+  } */
 }
 
 /* Laptops pequenos */

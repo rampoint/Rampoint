@@ -42,7 +42,6 @@ nav li {
   display: flex;
   align-items: center;
   color: var(--branco);
-
 }
 
 nav a {
@@ -86,15 +85,20 @@ nav a:hover {
   margin-top: 20px;
 }
 
+#menuMobile {
+  font-family: "Poppins-semibold";
+}
+
 /*    
   nav li:first-child{
     margin-right: 280px;
   }  */
+
 .sidebar {
   position: fixed;
   top: 0;
   right: 0;
-  height: 100vh;
+  height: 98vh;
   width: 250px;
   background-color: var(--azul);
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
@@ -109,7 +113,7 @@ nav a:hover {
 }
 .sidebar li {
   width: 100%;
-  margin-top:20px;
+  margin-top: 20px;
 }
 .sidebar a {
   width: 100%;
@@ -127,13 +131,15 @@ nav a:hover {
 }
 
 .footer-logo {
-  font-size: 50px;
-  width: 100px;
-  height: 25px;
   margin-top: 90%;
 }
 
-@media (max-height:850px){
+#footer-logo {
+  margin-top: 8em;
+  width: 150px;
+}
+
+@media (max-height: 850px) {
   .footer-logo {
     margin-top: 10%;
   }
@@ -143,6 +149,7 @@ nav a:hover {
   padding: 0;
   margin-left: 20px;
 }
+
 #footer-logo:last-child {
   padding: 0;
 }

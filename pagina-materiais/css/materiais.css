@@ -12,6 +12,7 @@ body {
 
 /* começo imagem inicial */
 .imagem-fundo {
+  margin-top:10px ;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -94,10 +95,6 @@ body {
   padding: 5px;
   cursor: pointer;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-}
-
-#scrollTarget {
-  padding-top: 8em; /* para compensar o menu fixo */
 }
 
 /* começo lado esquerdo */
@@ -218,6 +215,7 @@ body {
   color: var(--verde);
   font-size: 1.7em;
   margin: 1em 0 0.5em 8em;
+
 }
 
 #texto1 {
@@ -226,6 +224,27 @@ body {
   margin-left: 15em;
   font-size: 0.9em;
   width: 70%;
+}
+
+#scrollTarget {
+  border: solid;
+  padding-top: 8em; /* para compensar o menu fixo */
+}
+@media (max-width: 768px) {
+
+  /* Estilos aqui */
+  #titulo1 {
+    margin: 0em 0 0.5em 0em;
+    text-align: center;
+  }
+  #texto1 {
+    font-family: "Poppins-regular";
+    color: var(--preto);
+    margin:0;
+    font-size: 0.9em;
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .perifericos {
@@ -237,7 +256,6 @@ body {
 /* começo carrossel-materiais  */
 .carrossel-container {
   width: 80%;
-  max-width: 900px;
   margin: 30px auto 50px auto;
   position: relative;
 }
@@ -255,19 +273,23 @@ body {
 
 .main-buttons {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   margin-bottom: 20px;
+  align-items: center;
+  justify-content: space-between;
+  
 }
 
 .main-btn {
   font-family: "Poppins-extrabold";
-  margin: 0 10px;
+  margin: 0 10px 25px 0px;
   padding: 10px 20px;
   border: none;
   border-radius: 35px;
   background-color: rgba(222, 222, 225, 0.5);
   color: #a9a9a9;
   cursor: pointer;
+  
 }
 
 #estrutura.active {
@@ -317,6 +339,7 @@ body {
   position: relative;
   overflow: hidden;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 .sub-buttons-wrapper {
@@ -326,7 +349,10 @@ body {
 
 .sub-buttons {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
+  justify-content: center;
+  align-items: center;
 }
 
 .sub-btn {
@@ -368,6 +394,9 @@ body {
 .content {
   padding: 10px 20px;
   display: none;
+  width: 10%;
+  margin: auto;
+  
 }
 
 .content.active {

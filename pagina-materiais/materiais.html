@@ -17,15 +17,21 @@
     <title>Materiais</title>
 
 </head>
+<script>
+    function showSidebar() {
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+    }
+    function hideSidebar() {
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+    }
+</script>
 
 <body>
     <nav>
         <ul class="sidebar">
-            <li onclick=hideSidebar()><a href="#"><svg id="fechar" xmlns="http://www.w3.org/2000/svg" height="26"
-                        viewBox="0 96 960 960" width="26">
-                        <path
-                            d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
-                    </svg></a></li>
+            <li onclick=hideSidebar()><a href="#"><img id="fechar" src="img/fechar.svg" alt="fechar nav"></a></li>
             <li id="perfil-sidebar"><img src="img/perfil.svg" alt="" srcset="">
                 <div class="menus">
             <li><a href="../pagina-inicial/inicial.html">HOME</a></li>
@@ -101,7 +107,7 @@
 
     <div class="container">
 
-        <section class="imagem-fundo">
+        <!-- <section class="imagem-fundo">
             <div class="imagem-inicial">
                 <img src="./img/imagem-fundo.svg" class="img-fundo" alt="">
                 <h1 id="titulo-inicial">SAIBA SOBRE HARDWARE</h1>
@@ -128,7 +134,7 @@
                 </div>
             </div>
 
-        </section>
+        </section> -->
 
         <section id="scrollTarget">
             <h1 id="titulo1">O que é?</h1>

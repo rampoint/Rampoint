@@ -17,15 +17,21 @@
     <title>Materiais</title>
 
 </head>
+<script>
+    function showSidebar() {
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+    }
+    function hideSidebar() {
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+    }
+</script>
 
 <body>
     <nav>
         <ul class="sidebar">
-            <li onclick=hideSidebar()><a href="#"><svg id="fechar" xmlns="http://www.w3.org/2000/svg" height="26"
-                        viewBox="0 96 960 960" width="26">
-                        <path
-                            d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
-                    </svg></a></li>
+            <li onclick=hideSidebar()><a href="#"><img id="fechar" src="img/fechar.svg" alt="fechar nav"></a></li>
             <li id="perfil-sidebar"><img src="img/perfil.svg" alt="" srcset="">
                 <div class="menus">
             <li><a href="../pagina-inicial/inicial.html">HOME</a></li>
@@ -101,7 +107,7 @@
 
     <div class="container">
 
-        <section class="imagem-fundo">
+        <!-- <section class="imagem-fundo">
             <div class="imagem-inicial">
                 <img src="./img/imagem-fundo.svg" class="img-fundo" alt="">
                 <h1 id="titulo-inicial">SAIBA SOBRE HARDWARE</h1>
@@ -128,7 +134,7 @@
                 </div>
             </div>
 
-        </section>
+        </section> -->
 
         <section id="scrollTarget">
             <h1 id="titulo1">O que é?</h1>
@@ -189,7 +195,7 @@
                     <div id="content1" class="content" style="display: none;">
                         <img src="./img/estrutura-gabinete.svg"
                             alt="Imagem de uma estrutura de um gabinete da categoria 'estrutura'">
-                        <div class="ramcoin">
+                        <!-- <div class="ramcoin">
                             <p class="qtd-ramcoin">2000</p>
                             <img src="./img/ramcoin.svg" alt="">
                             <div class="text-block">
@@ -199,12 +205,12 @@
                                         trocar por um cupom. </p>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <div id="content2" class="content" style="display: none;">
                     <img src="./img/baias-drive.svg" alt="Imagem de uma baia de drive da categoria 'estrutura'">
-                    <div class="ramcoin">
+                    <!-- <div class="ramcoin">
                         <p class="qtd-ramcoin">2000</p>
                         <img src="./img/ramcoin.svg" alt="">
                         <div class="text-block">
@@ -214,11 +220,11 @@
                                     por um cupom. </p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div id="content3" class="content" style="display: none;">
                     <img src="./img/slots-expansao.svg" alt="Imagem de um slot de expansão da categoria 'estrutura'">
-                    <div class="ramcoin">
+                    <!-- <div class="ramcoin">
                         <p class="qtd-ramcoin">2000</p>
                         <img src="./img/ramcoin.svg" alt="">
                         <div class="text-block">
@@ -228,12 +234,12 @@
                                     por um cupom. </p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div id="content4" class="content" style="display: none;">
                     <img src="./img/organizador-cabos.svg"
                         alt="Imagem de um organizador de cabos da categoria 'estrutura'">
-                    <div class="ramcoin">
+                    <!-- <div class="ramcoin">
                         <p class="qtd-ramcoin">2000</p>
                         <img src="./img/ramcoin.svg" alt="">
                         <div class="text-block">
@@ -243,12 +249,12 @@
                                     por um cupom. </p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div id="content5" class="content" style="display: none;">
                     <img src="./img/painel-frontal.svg"
                         alt="Imagem de um painel frontal e portas da categoria 'estrutura'">
-                    <div class="ramcoin">
+                    <!-- <div class="ramcoin">
                         <p class="qtd-ramcoin">2000</p>
                         <img src="./img/ramcoin.svg" alt="">
                         <div class="text-block">
@@ -260,14 +266,14 @@
                                 </p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <!-- final estrutura -->
 
                 <!-- começo internos -->
                 <div id="content6" class="content" style="display: none;">
                     <img src="./img/GPU.svg" alt="Imagem de uma placa de vídeo(GPU) da categoria 'internos'">
-                    <div class="ramcoin">
+                    <!-- <div class="ramcoin">
                         <p class="qtd-ramcoin">2000</p>
                         <img src="./img/ramcoin.svg" alt="">
                         <div class="text-block">
@@ -279,11 +285,11 @@
                                 </p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div id="content7" class="content" style="display: none;">
                     <img src="./img/placa-mae.svg" alt="Imagem de uma placa mãe da categoria 'internos'">
-                    <div class="ramcoin">
+                    <!-- <div class="ramcoin">
                         <p class="qtd-ramcoin">2000</p>
                         <img src="./img/ramcoin.svg" alt="">
                         <div class="text-block">
@@ -295,11 +301,11 @@
                                 </p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div id="content8" class="content" style="display: none;">
                     <img src="./img/memoriaRAM.svg" alt="Imagem de uma memória RAM da categoria 'internos'">
-                    <div class="ramcoin">
+                    <!-- <div class="ramcoin">
                         <p class="qtd-ramcoin">2000</p>
                         <img src="./img/ramcoin.svg" alt="">
                         <div class="text-block">
@@ -311,11 +317,11 @@
                                 </p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div id="content9" class="content" style="display: none;">
                     <img src="./img/ssd.svg" alt="Imagem de um armazenamento (HDD/SSD) da categoria 'internos'">
-                    <div class="ramcoin">
+                    <!-- <div class="ramcoin">
                         <p class="qtd-ramcoin">2000</p>
                         <img src="./img/ramcoin.svg" alt="">
                         <div class="text-block">
@@ -327,11 +333,11 @@
                                 </p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div id="content10" class="content" style="display: none;">
                     <img src="./img/PSU.svg" alt="Imagem de uma fonte de alimentação (PSU) da categoria 'internos'">
-                    <div class="ramcoin">
+                    <!-- <div class="ramcoin">
                         <p class="qtd-ramcoin">2000</p>
                         <img src="./img/ramcoin.svg" alt="">
                         <div class="text-block">
@@ -342,12 +348,11 @@
                                     cupom.
                                 </p>
                             </div>
-                        </div>
-                    </div>
+                        </div> -->
                 </div>
                 <div id="content11" class="content" style="display: none;">
                     <img src="./img/processador.svg" alt="Imagem de um processador (CPU) da categoria 'internos'">
-                    <div class="ramcoin">
+                    <!-- <div class="ramcoin">
                         <p class="qtd-ramcoin">2000</p>
                         <img src="./img/ramcoin.svg" alt="">
                         <div class="text-block">
@@ -359,14 +364,14 @@
                                 </p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <!-- final internos -->
 
                 <!-- começo periféricos -->
                 <div id="content12" class="content" style="display: none;">
                     <img src="./img/monitor-carrossel.svg" alt="Imagem de um monitor da categoria 'periféricos'">
-                    <div class="ramcoin">
+                    <!-- <div class="ramcoin">
                         <p class="qtd-ramcoin">2000</p>
                         <img src="./img/ramcoin.svg" alt="">
                         <div class="text-block">
@@ -378,11 +383,11 @@
                                 </p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div id="content13" class="content" style="display: none;">
                     <img src="./img/teclado-carrossel.svg" alt="Imagem de um teclado da categoria 'periféricos'">
-                    <div class="ramcoin">
+                    <!-- <div class="ramcoin">
                         <p class="qtd-ramcoin">2000</p>
                         <img src="./img/ramcoin.svg" alt="">
                         <div class="text-block">
@@ -393,12 +398,12 @@
                                     cupom.
                                 </p>
                             </div>
-                        </div>
-                    </div>
+                        </div> -->
+                    
                 </div>
                 <div id="content14" class="content" style="display: none;">
                     <img src="./img/mouse.svg" alt="Imagem de um mouse da categoria 'periféricos'">
-                    <div class="ramcoin">
+                    <!-- <div class="ramcoin">
                         <p class="qtd-ramcoin">2000</p>
                         <img src="./img/ramcoin.svg" alt="">
                         <div class="text-block">
@@ -410,11 +415,11 @@
                                 </p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div id="content15" class="content" style="display: none;">
                     <img src="./img/alto-falante.svg" alt="Imagem de um alto falante da categoria 'periféricos'">
-                    <div class="ramcoin">
+                    <!-- <div class="ramcoin">
                         <p class="qtd-ramcoin">2000</p>
                         <img src="./img/ramcoin.svg" alt="">
                         <div class="text-block">
@@ -426,14 +431,14 @@
                                 </p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <!-- final periféricos -->
 
                 <!-- começo resfriamento -->
                 <div id="content16" class="content" style="display: none;">
                     <img src="./img/ventoinhas.svg" alt="Imagem de uma ventoinha da categoria 'resfriamento'">
-                    <div class="ramcoin">
+                    <!-- <div class="ramcoin">
                         <p class="qtd-ramcoin">2000</p>
                         <img src="./img/ramcoin.svg" alt="">
                         <div class="text-block">
@@ -445,11 +450,11 @@
                                 </p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div id="content17" class="content" style="display: none;">
                     <img src="./img/dissipadores.svg" alt="Imagem de um dissipador da categoria 'resfriamento'">
-                    <div class="ramcoin">
+                    <!-- <div class="ramcoin">
                         <p class="qtd-ramcoin">2000</p>
                         <img src="./img/ramcoin.svg" alt="">
                         <div class="text-block">
@@ -461,11 +466,11 @@
                                 </p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div id="content18" class="content" style="display: none;">
                     <img src="./img/filtro poeira.svg" alt="Imagem de um filtro de poeira da categoria 'resfriamento'">
-                    <div class="ramcoin">
+                    <!-- <div class="ramcoin">
                         <p class="qtd-ramcoin">2000</p>
                         <img src="./img/ramcoin.svg" alt="">
                         <div class="text-block">
@@ -477,11 +482,11 @@
                                 </p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div id="content19" class="content" style="display: none;">
                     <img src="./img/cooler.svg" alt="Imagem de um cooler da categoria 'resfriamento'">
-                    <div class="ramcoin">
+                    <!-- <div class="ramcoin">
                         <p class="qtd-ramcoin">2000</p>
                         <img src="./img/ramcoin.svg" alt="">
                         <div class="text-block">
@@ -493,7 +498,7 @@
                                 </p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <!-- final resfriamento -->
             </div>

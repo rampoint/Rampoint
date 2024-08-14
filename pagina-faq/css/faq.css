@@ -167,7 +167,23 @@ body {
   color: var(--preto);
   margin: 1em 0 0.9em 10.2em;
   font-size: 1em;
-  width: 70%;
+  width: 70;
+}
+
+
+@media(max-width: 768px) {
+  
+  #titulo1 {
+    margin:10px 0px 10px 0px;
+    text-align: center;
+    
+    
+  }
+
+  #texto1 {
+    margin:10px 0px 10px 0px;
+    text-align: center;
+  }
 }
 
 .perifericos {

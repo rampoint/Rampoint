@@ -124,6 +124,8 @@
   #medalhas {
     width: 280px;
   }
+
+  
 }
 
 /* Tablets em modo paisagem (tela horizontal) */
@@ -201,6 +203,7 @@
   nav ul {
     justify-content: space-between;
     padding-left: 0;
+    position: static;
   }
 
   nav a {

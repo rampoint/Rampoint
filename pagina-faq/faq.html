@@ -28,32 +28,28 @@
 <body>
     <nav>
         <ul class="sidebar">
-            <li onclick=hideSidebar()><a href="#"><svg id="fechar" xmlns="http://www.w3.org/2000/svg" height="26"
-                        viewBox="0 96 960 960" width="26">
-                        <path
-                            d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
-                    </svg></a></li>
+            <li onclick=hideSidebar()><a href="#"><img id="fechar" src="img/fechar.svg" alt="fechar nav"></a></li>
             <li id="perfil-sidebar"><img src="img/perfil.svg" alt="" srcset="">
                 <div class="menus">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">PLAY</a></li>
-            <li><a href="#ecopontos">ECOPONTOS</a></li>
-            <li><a href="#">MATERIAIS</a></li>
-            <li><a href="#">QR-CODE</a></li>
-            <li><a href="#">FALE CONOSCO</a></li>
-            <div class="footer-logo">
-                <a id="footer-logo">ram</a>
-                <a id="footer-logo">point.</a>
-            </div>
-            </div>
-
+                    <li><a href="../pagina-inicial/inicial.html">HOME</a></li>
+                    <li><a href="../pagina-play/play.html">PLAY</a></li>
+                    <li><a href="../pagina-inicial/inicial.html" id="ecoponto">ECOPONTOS</a></li>
+                    <li><a href="../pagina-materiais/materiais.html">MATERIAIS</a></li>
+                    <li><a href="../pagina-qrcode/index.html">QR-CODE</a></li>
+                    <li><a href="../pagina-faq/faq.html">FALE CONOSCO</a></li>
+                    <div class="footer-logo">
+                        <a id="footer-logo">ram</a>
+                        <a id="footer-logo">point.</a>
+                    </div>
+                </div>
+            </li>
         </ul>
         <ul>
             <li id="logo-nav"><img src="img/ram.svg" alt="ram">
                 <h1 style="color: black;"><b style="color:#7ad761; margin-left: 10px;">ram</b>point.</h1>
             <li class="hideOnMobile"><a href="../pagina-inicial/inicial.html">HOME</a>
             <li class="hideOnMobile"><a href="../pagina-play/play.html">PLAY</a>
-            <li class="hideOnMobile"><a href="../pagina-inicial/inicial.html" id="ecoponto">ECOPONTOS</a>
+            <li class="hideOnMobile"><a href="#" id="ecoponto">ECOPONTOS</a>
             <li class="hideOnMobile"><a href="../pagina-materiais/materiais.html">MATERIAIS</a>
             <li class="hideOnMobile"><a href="../pagina-qrcode/index.html">QR-CODE</a>
             <li class="hideOnMobile"><a href="../pagina-faq/faq.html">FALE CONOSCO</a>
@@ -76,7 +72,9 @@
                     </div>
                 </div>
 
-                <button class="modalBtn" id="openModalBtn"><img id="perfil" src="img/perfil.svg" alt="perfil"></button>
+                <button class="modalBtn" id="openModalBtn">
+                    <img id="perfil" src="img/perfil.svg" alt="perfil">
+                </button>
             </li>
             <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
                         height="26" viewBox="0 96 960 960" width="26">
@@ -84,31 +82,36 @@
                     </svg></a></li>
         </ul>
 
+
+
+        <!-- modal sem perfil -->
+
         <!-- modal com perfil -->
         <!-- <div class="modal-com-perfil">
-                        <div class="content-com-perfil">
-                            <p class="perfil">Perfil</p>
-        
-                            <div class="fundo">
-                                <img src="./img/user.svg" id="foto-perfil" alt="Foto de perfil">
-                                <p class="texto-perfil">Sem login</p>
-                                <div class="grupo">
-                                    <hr class="linha"></hr>
-                                    <a class="cadastro">Cadastrar-se</a>
-                                    <hr class="linha"></hr>
-                                    <a class="login">Fazer login</a>
-                                </div>
-                            </div>
+                <div class="content-com-perfil">
+                    <p class="perfil">Perfil</p>
+
+                    <div class="fundo">
+                        <img src="./img/user.svg" id="foto-perfil" alt="Foto de perfil">
+                        <p class="texto-perfil">Sem login</p>
+                        <div class="grupo">
+                            <hr class="linha"></hr>
+                            <a class="cadastro">Cadastrar-se</a>
+                            <hr class="linha"></hr>
+                            <a class="login">Fazer login</a>
                         </div>
                     </div>
-        
-                    <button class="modalBtn"><img id="perfil" src="img/perfil.svg" alt="perfil"></button> -->
+                </div>
+            </div>
+
+            <button class="modalBtn"><img id="perfil" src="img/perfil.svg" alt="perfil"></button> -->
         <!-- modal com perfil -->
     </nav>
 
+
     <div class="container">
 
-        <section class="imagem-fundo">
+        <!-- <section class="imagem-fundo">
             <div class="imagem-inicial">
                 <img src="./img/imagem-fundo.svg" class="img-fundo" alt="">
                 <h1 id="titulo-inicial">COMO PODEMOS TE AJUDAR?</h1>
@@ -129,7 +132,7 @@
                 </div>
             </div>
 
-        </section>
+        </section> -->
 
         <section class="campo1">
             <h1 id="titulo1">Pesquise sua dúvida</h1>
@@ -144,7 +147,7 @@
             <h1 id="titulo1">Perguntas Frequentes</h1>
             <p id="texto1">Precisa de uma resposta? Você pode encontrar aqui!</p>
 
-            <section class="perguntas">
+             <section class="perguntas">
                 <div class="faq-container">
                     <div class="faq-sidebar">
                         <h3 id="titulo2">Filtrar por categoria</h3>
@@ -278,7 +281,7 @@
                                         certos marcos. Elas podem ser vistas na seção "Perfil".</p>
                                 </div>
                             </div>
-                            <!-- Adicione mais itens de accordion para a categoria "Play" aqui -->
+                            <!-- Adicione mais itens de accordion para a categoria "Play" aqui-->
                         </div>
                         <div class="accordion" id="materiais" style="display: none;">
                             <h1 data-category="materiais" id="titulo-accordion">Materiais</h1>
@@ -342,7 +345,7 @@
                                         Sobre Hardware" para mais detalhes sobre cada tipo de componente.</p>
                                 </div>
                             </div>
-                            <!-- Adicione mais itens de accordion para a categoria "Materiais" aqui -->
+                            <!-- Adicione mais itens de accordion para a categoria "Materiais" aqui-->
                         </div>
                         <div class="accordion" id="perfil" style="display: none;">
                             <h1 data-category="perfil" id="titulo-accordion">Perfil</h1>
@@ -390,7 +393,7 @@
                                         entre em contato com o suporte técnico para assistência.</p>
                                 </div>
                             </div>
-                            <!-- Adicione mais itens de accordion para a categoria "Perfil" aqui -->
+                            <!-- Adicione mais itens de accordion para a categoria "Perfil" aqui--> 
                         </div>
                         <div class="accordion" id="doacoes-cupons" style="display: none;">
                             <h1 data-category="doacoes-cupons" id="titulo-accordion">Doações e Cupons</h1>
@@ -438,7 +441,7 @@
                                         doar, mais cupons e recompensas você pode acumular.</p>
                                 </div>
                             </div>
-                            <!-- Adicione mais itens de accordion para a categoria "Doações e Cupons" aqui -->
+                            <!-- Adicione mais itens de accordion para a categoria "Doações e Cupons" aqui-->
                         </div>
                         <div class="accordion" id="problemas-tecnicos" style="display: none;">
                             <h1 data-category="problemas-tecnicos" id="titulo-accordion">Problemas Técnicos</h1>
@@ -510,7 +513,7 @@
                                         pessoais entrando em contato com nosso suporte ao cliente.</p>
                                 </div>
                             </div>
-                            <!-- Adicione mais itens de accordion para a categoria "Política e Privacidade" aqui -->
+                            <!-- Adicione mais itens de accordion para a categoria "Política e Privacidade" aqui-->
                         </div>
                     </div>
                 </div>
@@ -560,7 +563,7 @@
                             10h às 18h.</li>
                     </ul>
                 </div>
-            </section>
+            </section> 
 
             <footer class="footer-container">
                 <h2>Quer ser nosso parceiro?</h2>

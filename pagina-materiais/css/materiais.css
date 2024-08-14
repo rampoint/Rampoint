@@ -299,71 +299,81 @@ body {
 
 #estrutura.active {
   background-color: #9d4edd;
-  color: #ffffff;
+  color: #fff;
 }
 
 #estrutura:hover {
   background-color: #9d4edd;
-  color: #ffffff;
+  color: #fff;
 }
 
 #sub-estrutura.active {
   background-color: #C67DFF;
-  color: #ffffff;
+  color: #fff;
 }
 
 #sub-estrutura:hover {
   background-color: #C67DFF;
-  color: #ffffff;
+  color: #fff;
 }
 
 #internos.active {
   background-color: #f89701;
-  color: #ffffff;
+  color: #fff;
 }
 
 #internos:hover {
   background-color: #f89701;
-  color: #ffffff;
+  color: #fff;
 }
 
 #sub-internos.active {
   background-color: #ffdd00;
-  color: #ffffff;
+  color: #fff;
 }
 
 #sub-internos:hover {
   background-color: #ffdd00;
-  color: #ffffff;
+  color: #fff;
 }
 
 #perifericos.active {
-  background-color: #46C4FF;
-  color: #ffffff;
+  background-color: #2a55c2;
+  color: #fff;
 }
 
 #perifericos:hover {
+  background-color: #2a55c2;
+  color: #fff;
+}
+
+.sub-btn.active {
   background-color: #46C4FF;
-  color: #ffffff;
+  color: #fff;
+}
+
+.sub-btn:hover {
+  background-color: #46C4FF;
+  color: #fff;
 }
 
 #resfriamento.active {
-  background-color: #61d243;
+  background-color: #408e2b;
   color: #ffffff;
 }
 
 #resfriamento:hover {
-  background-color: #61d243;
+  background-color: #408e2b;
   color: #ffffff;
 }
 
 #sub-resfriamento.active {
-  background-color: #417932;
+  background-color: #61d243;
   color: #ffffff;
 }
 
 #sub-resfriamento:hover {
-  background-color: #417932;
+  background-color: #61d243;
   color: #ffffff;
 }
 
@@ -398,16 +408,6 @@ body {
   background-color: rgba(230, 230, 230, 0.5);
   color: #a9a9a9;
   cursor: pointer;
-}
-
-.sub-btn.active {
-  background-color: #2a55c2;
-  color: #fff;
-}
-
-.sub-btn:hover {
-  background-color: #2a55c2;
-  color: #fff;
 }
 
 .arrow {

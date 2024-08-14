@@ -229,6 +229,7 @@ body {
 #scrollTarget {
   padding-top: 8em; /* para compensar o menu fixo */
 }
+
 @media (max-width: 768px) {
 
   /* Estilos aqui */
@@ -257,6 +258,9 @@ body {
   width: 50%;
   margin: 100px auto 100px auto;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .menu {
@@ -267,7 +271,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: 60em;
   margin: auto;
   justify-content: center;
 }
@@ -303,6 +307,16 @@ body {
   color: #ffffff;
 }
 
+#sub-estrutura.active {
+  background-color: #C67DFF;
+  color: #ffffff;
+}
+
+#sub-estrutura:hover {
+  background-color: #C67DFF;
+  color: #ffffff;
+}
+
 #internos.active {
   background-color: #f89701;
   color: #ffffff;
@@ -313,13 +327,23 @@ body {
   color: #ffffff;
 }
 
+#sub-internos.active {
+  background-color: #ffdd00;
+  color: #ffffff;
+}
+
+#sub-internos:hover {
+  background-color: #ffdd00;
+  color: #ffffff;
+}
+
 #perifericos.active {
-  background-color: #2a55c2;
+  background-color: #46C4FF;
   color: #ffffff;
 }
 
 #perifericos:hover {
-  background-color: #2a55c2;
+  background-color: #46C4FF;
   color: #ffffff;
 }
 
@@ -330,6 +354,16 @@ body {
 
 #resfriamento:hover {
   background-color: #61d243;
+  color: #ffffff;
+}
+
+#sub-resfriamento.active {
+  background-color: #417932;
+  color: #ffffff;
+}
+
+#sub-resfriamento:hover {
+  background-color: #417932;
   color: #ffffff;
 }
 
@@ -398,13 +432,13 @@ body {
   margin: auto;
 }
 
-.content img {
+/* .content img {
   
   width: 100%;
   max-width: 446.800px;
   min-width:200px;
   
-}
+} */
 
 .content.active {
   display: block;

@@ -129,6 +129,21 @@ nav a:hover {
 
 .footer-logo {
   margin-top: 10em;
+  
+}
+
+
+@media (max-width: 670px) {
+  .footer-logo{
+    margin-top:5em;
+  }
+}
+/* Dispositivos móveis em modo paisagem (tela horizontal) */
+@media (max-width: 767px) {
+  /* Estilos aqui */
+  .footer-logo{
+    margin-top:3em;
+  }
 }
 
 #footer-logo {
@@ -140,10 +155,7 @@ nav a:hover {
 margin-top:60px;
 }
 
-.menus li{
 
-  margin-bottom:5%;
-}
 
 
 

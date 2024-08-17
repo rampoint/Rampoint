@@ -373,3 +373,23 @@ option {
   color: red;
   display: none;
 }
+
+#erro-email-register{
+  color: red;
+  display: none;
+}
+
+#erro-email-obrigatorio{
+  color: red;
+  display: none;
+
+}
+
+#erro-senha-invalida{
+  color: red;
+  display: none;
+}
+#erro-senha-register{
+  color: red;
+  display: none;
+}

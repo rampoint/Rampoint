@@ -459,7 +459,7 @@ body {
   color: #027a8d;
   font-size: 30px;
   position: relative;
-  top: -2.5em;
+  top: -3em;
 }
 
 .texto-vidro {
@@ -467,7 +467,7 @@ body {
   color: #027a8d;
   font-size: 18px;
   position: relative;
-  top: -4.5em;
+  top: -5em;
 }
 
 .modal-content-vidro .ramcoin {
@@ -493,14 +493,14 @@ body {
 
 .modal-content-vidro .texto-lojas {
   font-family: "Poppins-bold";
-  color: #027A8D;
+  color: #027a8d;
   position: relative;
   bottom: 7em;
 }
 
 .modal-content-vidro .curiosidade {
   height: 8em;
-  background-color: #027A8D;
+  background-color: #027a8d;
   border-radius: 25px;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
   padding: 10px;
@@ -511,9 +511,11 @@ body {
 
 .modal-content-vidro .texto-curiosidade {
   font-family: "Poppins-bold";
-  color: #DFFBFF;
+  color: #dffbff;
   text-align: right;
-  margin-left: 15px;
+  margin-left: 10px;
+  position: relative;
+  bottom: 0.5em;
 }
 
 #ram-vidro {
@@ -528,18 +530,98 @@ body {
 /* começo modal golias */
 .modal-content-golias {
   background-color: #c7fbb9;
-  margin: 5% auto;
+  margin: 6em auto;
   padding: 20px;
-  border: 1px solid #888;
   border-radius: 25px;
-  width: 80%;
+  width: 27em;
   max-width: 600px;
+  height: 30em;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+
+.titulo-golias {
+  font-family: "Blinker-extrabold";
+  color: #2b5121;
+  font-size: 30px;
+  position: relative;
+  top: 1.5em;
+}
+
+.texto-golias {
+  font-family: "Blinker-bold";
+  color: #2b5121;
+  font-size: 18px;
+  position: relative;
+  top: 0;
+}
+
+.mancha-verde1 {
+  position: relative;
+  right: 11em;
+  top: 3em;
+}
+
+.mancha-verde2 {
+  position: relative;
+  left: 11em;
+  bottom: 2em;
+}
+
+.modal-content-golias .ramcoin {
+  margin: 15px 0;
+  position: relative;
+  top: -1em;
+  left: 1.5em;
+}
+
+.modal-content-golias .lojas {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  position: relative;
+  bottom: 3em;
+  left: 1em;
+}
+
+.modal-content-golias .texto-lojas {
+  font-family: "Poppins-bold";
+  color: #2b5121;
+  position: relative;
+  bottom: 3em;
+}
+
+.modal-content-golias .curiosidade {
+  height: 8em;
+  background-color: #579445;
+  border-radius: 25px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-right: 5em;
+  position: relative;
+  bottom: 0;
+}
+
+.modal-content-golias .texto-curiosidade {
+  font-family: "Poppins-bold";
+  color: #d3ffc8;
+  text-align: right;
+  margin-left: 10px;
+  position: relative;
+  bottom: 0.5em;
+}
+
+#ram-golias {
+  width: 35%;
+  position: relative;
+  left: 3em;
+  bottom: 0;
+  z-index: 2;
+}
+
 /* final modal golias */
 
 /* começo botão fechar o modal */
@@ -712,6 +794,145 @@ body {
   justify-content: center;
   margin: 1em 0 5em 0;
 }
+
+/* começo salto tecnologico */
+.fundo-medalha-salto {
+  background-color: #c6f0ac;
+  width: 40em;
+  height: 10em;
+  margin-top: 3em;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+.img-salto {
+  width: 7.5em;
+  position: relative;
+  bottom: 2em;
+  left: 1em;
+}
+
+.img-vitoria-regia {
+  width: 8em;
+  position: relative;
+  bottom: 4em;
+  right: 2em;
+}
+
+.column-textos {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3em;
+  margin-top: 1em;
+}
+
+.titulo-salto {
+  font-family: "Blinker-extrabold";
+  color: #2b5121;
+  font-size: 24px;
+}
+
+.objetivo {
+  font-family: "Poppins-bold";
+  color: #2b5121;
+  margin: 5px 0;
+  list-style: url(../img/Vector-verde.svg);
+}
+
+.fundo-medalha-salto .texto {
+  font-family: "Poppins-medium";
+  color: #2B5121;
+  font-size: 16px;
+  width: 100%;
+}
+
+/* final salto tecnologico */
+
+/* começo coração generoso */
+.fundo-medalha-coracao {
+  background-color: #FFB5C3;
+  width: 40em;
+  height: 10em;
+  margin-top: 4em;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+.img-coracao {
+  width: 10em;
+  position: relative;
+  bottom: 2em;
+  left: 0;
+}
+
+.fundo-medalha-coracao .titulo-coracao {
+  font-family: "Blinker-extrabold";
+  color: #6B0015;
+  font-size: 24px;
+}
+
+.fundo-medalha-coracao .objetivo {
+  font-family: "Poppins-bold";
+  color: #6B0015;
+  margin: 5px 0;
+  list-style: url(../img/Vector-vermelho.svg);
+}
+
+.fundo-medalha-coracao .texto {
+  font-family: "Poppins-medium";
+  color: #6B0015;
+  font-size: 16px;
+  width: 100%;
+}
+/* final coração generoso */
+
+/* começo explosão eletronica */
+.fundo-medalha-explosao {
+  background-color: #E4C2FF;
+  width: 40em;
+  height: 10em;
+  margin-top: 4em;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+.img-explosao {
+  width: 10em;
+  position: relative;
+  bottom: 2em;
+  left: 0;
+}
+
+.fundo-medalha-explosao .titulo-explosao {
+  font-family: "Blinker-extrabold";
+  color: #6513A9;
+  font-size: 24px;
+}
+
+.fundo-medalha-explosao .objetivo {
+  font-family: "Poppins-bold";
+  color: #6513A9;
+  margin: 5px 0;
+  list-style: url(../img/Vector-roxo.svg);
+}
+
+.fundo-medalha-explosao .column-textos {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
+  margin-top: 1em;
+}
+
+.fundo-medalha-explosao .texto {
+  font-family: "Poppins-medium";
+  color: #6513A9;
+  font-size: 16px;
+  width: 65%;
+}
+/* final explosão eletronica */
 
 /* final das medalhas */
 

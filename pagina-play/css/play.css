@@ -319,13 +319,12 @@ body {
 }
 
 /* Modal Container */
-/* Adiciona essa classe para desabilitar o scroll */
 .no-scroll {
   overflow: hidden;
 }
 
 .modal-container {
-  display: none; /* Escondido por padrão */
+  display: none;
   position: fixed;
   z-index: 1000;
   left: 0;
@@ -333,13 +332,14 @@ body {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo semi-transparente */
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* Modal Content */
+/* começo modal dourado */
 .modal-content-dourado {
   background-color: #fffdce;
-  margin: 10% auto;
+  margin: 6em auto;
   padding: 20px;
   border-radius: 25px;
   width: 27em;
@@ -350,64 +350,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-
-.modal-content-vidro {
-  background-color: #dffbff;
-  margin: 10% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  border-radius: 25px;
-  width: 25em;
-  max-width: 600px;
-  height: 30em;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.modal-content-golias {
-  background-color: #c7fbb9;
-  margin: 5% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  border-radius: 25px;
-  width: 80%;
-  max-width: 600px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Fechar botão */
-.close {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--cinza);
-  font-size: 20px;
-  position: absolute;
-  top: 25px;
-  right: 15px;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: 2px solid var(--cinza);
-  background-color: transparent;
-  text-align: center;
-  cursor: pointer;
-}
-
-.close:hover,
-.close:focus {
-  color: #555;
-  border-color: #555;
-  text-decoration: none;
 }
 
 #brilho-modal {
@@ -444,37 +386,6 @@ body {
   top: 1em;
 }
 
-.itens {
-  display: flex;
-  flex-direction: column;
-}
-
-.ramcoin {
-  width: 250px;
-  display: flex;
-  flex-direction: row;
-  margin: 15pX 0;
-  position: relative;
-  top: 1em;
-}
-
-.qtd-ramcoin {
-  font-family: "Blinker-bold";
-  color: #417932;
-  margin-left: 5px;
-}
-
-.lojas {
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
-  margin: 10px 15px;
-}
-
-#loja {
-  width: 20%;
-}
-
 .texto-lojas {
   font-family: "Poppins-bold";
   color: #f89701;
@@ -491,15 +402,6 @@ body {
   right: 12em;
   top: 2em;
   margin-bottom: 1em;
-}
-
-.campo-curiosidade {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  width: 36em;
-  padding: 0 0 20px 15px;
 }
 
 #ram-dourado {
@@ -526,6 +428,218 @@ body {
   color: #745f12;
   text-align: right;
   margin-left: 15px;
+}
+/* final modal dourado */
+
+/* começo modal vidro */
+.modal-content-vidro {
+  background-color: #dffbff;
+  margin: 6em auto;
+  padding: 20px;
+  border-radius: 25px;
+  width: 27em;
+  max-width: 600px;
+  height: 30em;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.brilho-vidro {
+  width: 5em;
+  position: relative;
+  right: 11em;
+  top: 9em;
+}
+
+.titulo-vidro {
+  font-family: "Blinker-extrabold";
+  color: #027a8d;
+  font-size: 30px;
+  position: relative;
+  top: -2.5em;
+}
+
+.texto-vidro {
+  font-family: "Blinker-bold";
+  color: #027a8d;
+  font-size: 18px;
+  position: relative;
+  top: -4.5em;
+}
+
+.modal-content-vidro .ramcoin {
+  margin: 15px 0;
+  position: relative;
+  top: -5em;
+  left: 1.5em;
+}
+
+.cupom-vidro {
+  width: 50%;
+  margin-left: 45px;
+}
+
+.modal-content-vidro .lojas {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  position: relative;
+  bottom: 6em;
+  left: 1em;
+}
+
+.modal-content-vidro .texto-lojas {
+  font-family: "Poppins-bold";
+  color: #027A8D;
+  position: relative;
+  bottom: 7em;
+}
+
+.modal-content-vidro .curiosidade {
+  height: 8em;
+  background-color: #027A8D;
+  border-radius: 25px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-right: 5em;
+  position: relative;
+  bottom: 5em;
+}
+
+.modal-content-vidro .texto-curiosidade {
+  font-family: "Poppins-bold";
+  color: #DFFBFF;
+  text-align: right;
+  margin-left: 15px;
+}
+
+#ram-vidro {
+  width: 35%;
+  position: relative;
+  left: 3em;
+  bottom: 5em;
+  z-index: 2;
+}
+/* final modal vidro */
+
+/* começo modal golias */
+.modal-content-golias {
+  background-color: #c7fbb9;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 25px;
+  width: 80%;
+  max-width: 600px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* final modal golias */
+
+/* começo botão fechar o modal */
+.close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--cinza);
+  font-size: 20px;
+  position: absolute;
+  top: 25px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid var(--cinza);
+  background-color: transparent;
+  text-align: center;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #555;
+  border-color: #555;
+  text-decoration: none;
+}
+/* final botão fechar o modal */
+
+/* começo ramcoin */
+.itens {
+  display: flex;
+  flex-direction: column;
+}
+
+.ramcoin {
+  width: 250px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 15px 0;
+  position: relative;
+  top: 1em;
+}
+
+.qtd-ramcoin {
+  font-family: "Blinker-bold";
+  color: #417932;
+  margin-left: 5px;
+}
+
+.text-block {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 30%;
+  transform: translateX(-50%);
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 2px 8px 8px rgba(42, 85, 194, 0.15);
+  width: 300px;
+  z-index: 1;
+}
+
+.textos {
+  font-family: "Poppins-semibold";
+  color: var(--azul);
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.ramcoin:hover .text-block {
+  display: block;
+}
+
+/* final ramcoin */
+
+.lojas {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin: 10px 15px;
+}
+
+#loja {
+  width: 20%;
+}
+
+.campo-curiosidade {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 36em;
+  padding: 0 0 20px 15px;
 }
 
 /* final dos cards dos cupons */
@@ -647,6 +761,10 @@ body {
 
   #scrollTarget {
     padding-top: 9.5em; /* para compensar o menu fixo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   /* começo lado esquerdo */
@@ -743,14 +861,18 @@ body {
     font-family: "Blinker-extrabold";
     color: var(--verde);
     font-size: 1.7em;
-    margin: -0.1em 0 0.5em 3em;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   #texto1 {
     font-family: "Poppins-regular";
     color: var(--preto);
     font-size: 1em;
-    margin-left: 5em;
+    margin-left: 0;
+    text-align: center;
     width: 70%;
   }
 

@@ -281,7 +281,6 @@ p {
 .senha {
   width: 100%;
   gap: 5px;
-  
 }
 
 .grupo-telefone {
@@ -394,5 +393,17 @@ option {
 }
 #erro-senha-register{
   color: red;
+  display: none;
+}
+
+#erro-senha-obrigatorio{
+  display: none;
+}
+
+#erro-nao-corresponde{
+  display: none;
+}
+
+#erro-data{
   display: none;
 }

@@ -704,13 +704,6 @@ body {
 
 /* final ramcoin */
 
-.lojas {
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
-  margin: 10px 15px;
-}
-
 #loja {
   width: 20%;
 }
@@ -807,7 +800,7 @@ body {
 }
 
 .img-salto {
-  width: 7.5em;
+  width: 6.5em;
   position: relative;
   bottom: 2em;
   left: 1em;
@@ -833,7 +826,7 @@ body {
   font-size: 24px;
 }
 
-.objetivo {
+.fundo-medalha-salto .objetivo {
   font-family: "Poppins-bold";
   color: #2b5121;
   margin: 5px 0;
@@ -842,7 +835,7 @@ body {
 
 .fundo-medalha-salto .texto {
   font-family: "Poppins-medium";
-  color: #2B5121;
+  color: #2b5121;
   font-size: 16px;
   width: 100%;
 }
@@ -851,7 +844,7 @@ body {
 
 /* começo coração generoso */
 .fundo-medalha-coracao {
-  background-color: #FFB5C3;
+  background-color: #ffb5c3;
   width: 40em;
   height: 10em;
   margin-top: 4em;
@@ -861,28 +854,28 @@ body {
 }
 
 .img-coracao {
-  width: 10em;
+  width: 8em;
   position: relative;
   bottom: 2em;
-  left: 0;
+  left: -1em;
 }
 
 .fundo-medalha-coracao .titulo-coracao {
   font-family: "Blinker-extrabold";
-  color: #6B0015;
+  color: #6b0015;
   font-size: 24px;
 }
 
 .fundo-medalha-coracao .objetivo {
   font-family: "Poppins-bold";
-  color: #6B0015;
+  color: #6b0015;
   margin: 5px 0;
   list-style: url(../img/Vector-vermelho.svg);
 }
 
 .fundo-medalha-coracao .texto {
   font-family: "Poppins-medium";
-  color: #6B0015;
+  color: #6b0015;
   font-size: 16px;
   width: 100%;
 }
@@ -890,7 +883,7 @@ body {
 
 /* começo explosão eletronica */
 .fundo-medalha-explosao {
-  background-color: #E4C2FF;
+  background-color: #e4c2ff;
   width: 40em;
   height: 10em;
   margin-top: 4em;
@@ -908,13 +901,13 @@ body {
 
 .fundo-medalha-explosao .titulo-explosao {
   font-family: "Blinker-extrabold";
-  color: #6513A9;
+  color: #6513a9;
   font-size: 24px;
 }
 
 .fundo-medalha-explosao .objetivo {
   font-family: "Poppins-bold";
-  color: #6513A9;
+  color: #6513a9;
   margin: 5px 0;
   list-style: url(../img/Vector-roxo.svg);
 }
@@ -928,11 +921,110 @@ body {
 
 .fundo-medalha-explosao .texto {
   font-family: "Poppins-medium";
-  color: #6513A9;
+  color: #6513a9;
   font-size: 16px;
   width: 65%;
 }
 /* final explosão eletronica */
+
+/* começo engrenagem solidaria */
+.fundo-medalha-engrenagem {
+  background-color: #bae8fe;
+  width: 40em;
+  height: 10em;
+  margin-top: 4em;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+.img-engrenagem {
+  width: 10em;
+  position: relative;
+  bottom: 2em;
+  left: 0;
+}
+
+.fundo-medalha-engrenagem .titulo-engrenagem {
+  font-family: "Blinker-extrabold";
+  color: #0076ac;
+  font-size: 24px;
+}
+
+.fundo-medalha-engrenagem .objetivo {
+  font-family: "Poppins-bold";
+  color: #0076ac;
+  margin: 5px 0;
+  list-style: url(../img/Vector-azul.svg);
+}
+
+.fundo-medalha-engrenagem .texto {
+  font-family: "Poppins-medium";
+  color: #0076ac;
+  font-size: 16px;
+  width: 100%;
+}
+/* final engrenagem solidaria */
+
+/* começo raio esperança */
+.fundo-medalha-raio {
+  background-color: #fff092;
+  width: 40em;
+  height: 10em;
+  margin-top: 4em;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+.img-raio {
+  width: 6.5em;
+  position: relative;
+  bottom: 3em;
+  left: 1em;
+}
+
+.brilho-esperanca {
+  width: 4em;
+  position: relative;
+  top: 2em;
+  right: 6em;
+}
+
+.img-raio2 {
+  width: 8em;
+  position: relative;
+  bottom: 0.5em;
+  right: 3em;
+}
+
+.fundo-medalha-raio .column-textos {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
+  margin-top: 1em;
+}
+
+.titulo-raio {
+  font-family: "Blinker-extrabold";
+  color: #945a01;
+  font-size: 24px;
+}
+
+.fundo-medalha-raio .objetivo {
+  font-family: "Poppins-bold";
+  color: #945a01;
+  margin: 5px 0;
+  list-style: url(../img/Vector-amarelo.svg);
+}
+
+.fundo-medalha-raio .texto {
+  font-family: "Poppins-medium";
+  color: #945a01;
+  font-size: 16px;
+  width: 80%;
+}
+/* final raio esperança */
 
 /* final das medalhas */
 
@@ -1097,6 +1189,18 @@ body {
     width: 70%;
   }
 
+  .section-empresas,
+  .conquistas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .conquistas #texto1 {
+    width: 50%;
+  }
+
   .cupons {
     width: 350px;
     height: 850px;
@@ -1154,6 +1258,464 @@ body {
   }
 
   /* final dos cards dos cupons */
+
+  /* Modal Content */
+  /* começo modal dourado */
+  .modal-content-dourado {
+    width: 20em;
+    height: 30em;
+  }
+
+  .titulo-dourado {
+    top: 1.5em;
+  }
+
+  .texto-dourado {
+    top: 2.5em;
+  }
+
+  .estrela-dourada {
+    right: 8em;
+  }
+
+  .estrela-dourada2 {
+    width: 9%;
+    position: relative;
+    left: 8em;
+    top: 0.5em;
+  }
+
+  .texto-lojas {
+    font-family: "Poppins-bold";
+    color: #f89701;
+    margin: -20px 35px;
+  }
+
+  .modal-content-dourado .lojas {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin: 10px 15px;
+  }
+
+  .modal-content-dourado #loja {
+    width: 27%;
+  }
+
+  .cupom-dourado {
+    width: 45%;
+    margin-left: 20px;
+  }
+
+  #estrelas {
+    position: relative;
+    right: 10em;
+    top: 2em;
+    margin-bottom: 1em;
+  }
+
+  #ram-dourado {
+    width: 30%;
+    position: relative;
+    left: 3em;
+    bottom: 2em;
+    z-index: 2;
+  }
+
+  .curiosidade {
+    width: 16em;
+    height: 8em;
+    margin-right: 5em;
+    position: relative;
+    bottom: 1em;
+  }
+
+  .texto-curiosidade {
+    font-family: "Poppins-bold";
+    color: #745f12;
+    text-align: right;
+    margin-left: 15px;
+  }
+  /* final modal dourado */
+
+  /* começo modal vidro */
+  .modal-content-vidro {
+    background-color: #dffbff;
+    margin: 6em auto;
+    padding: 20px;
+    border-radius: 25px;
+    width: 27em;
+    max-width: 600px;
+    height: 30em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .brilho-vidro {
+    width: 5em;
+    position: relative;
+    right: 11em;
+    top: 9em;
+  }
+
+  .titulo-vidro {
+    font-family: "Blinker-extrabold";
+    color: #027a8d;
+    font-size: 30px;
+    position: relative;
+    top: -3em;
+  }
+
+  .texto-vidro {
+    font-family: "Blinker-bold";
+    color: #027a8d;
+    font-size: 18px;
+    position: relative;
+    top: -5em;
+  }
+
+  .modal-content-vidro .ramcoin {
+    margin: 15px 0;
+    position: relative;
+    top: -5em;
+    left: 1.5em;
+  }
+
+  .cupom-vidro {
+    width: 50%;
+    margin-left: 45px;
+  }
+
+  .modal-content-vidro .lojas {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    position: relative;
+    bottom: 6em;
+    left: 1em;
+  }
+
+  .modal-content-vidro .texto-lojas {
+    font-family: "Poppins-bold";
+    color: #027a8d;
+    position: relative;
+    bottom: 7em;
+  }
+
+  .modal-content-vidro .curiosidade {
+    height: 8em;
+    background-color: #027a8d;
+    border-radius: 25px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-right: 5em;
+    position: relative;
+    bottom: 5em;
+  }
+
+  .modal-content-vidro .texto-curiosidade {
+    font-family: "Poppins-bold";
+    color: #dffbff;
+    text-align: right;
+    margin-left: 10px;
+    position: relative;
+    bottom: 0.5em;
+  }
+
+  #ram-vidro {
+    width: 35%;
+    position: relative;
+    left: 3em;
+    bottom: 5em;
+    z-index: 2;
+  }
+  /* final modal vidro */
+
+  /* começo modal golias */
+  .modal-content-golias {
+    background-color: #c7fbb9;
+    margin: 6em auto;
+    padding: 20px;
+    border-radius: 25px;
+    width: 27em;
+    max-width: 600px;
+    height: 30em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .titulo-golias {
+    font-family: "Blinker-extrabold";
+    color: #2b5121;
+    font-size: 30px;
+    position: relative;
+    top: 1.5em;
+  }
+
+  .texto-golias {
+    font-family: "Blinker-bold";
+    color: #2b5121;
+    font-size: 18px;
+    position: relative;
+    top: 0;
+  }
+
+  .mancha-verde1 {
+    position: relative;
+    right: 11em;
+    top: 3em;
+  }
+
+  .mancha-verde2 {
+    position: relative;
+    left: 11em;
+    bottom: 2em;
+  }
+
+  .modal-content-golias .ramcoin {
+    margin: 15px 0;
+    position: relative;
+    top: -1em;
+    left: 1.5em;
+  }
+
+  .modal-content-golias .lojas {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    position: relative;
+    bottom: 3em;
+    left: 1em;
+  }
+
+  .modal-content-golias .texto-lojas {
+    font-family: "Poppins-bold";
+    color: #2b5121;
+    position: relative;
+    bottom: 3em;
+  }
+
+  .modal-content-golias .curiosidade {
+    height: 8em;
+    background-color: #579445;
+    border-radius: 25px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-right: 5em;
+    position: relative;
+    bottom: 0;
+  }
+
+  .modal-content-golias .texto-curiosidade {
+    font-family: "Poppins-bold";
+    color: #d3ffc8;
+    text-align: right;
+    margin-left: 10px;
+    position: relative;
+    bottom: 0.5em;
+  }
+
+  #ram-golias {
+    width: 35%;
+    position: relative;
+    left: 3em;
+    bottom: 0;
+    z-index: 2;
+  }
+
+  /* final modal golias */
+
+  /* começo botão fechar o modal */
+  .close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--cinza);
+    font-size: 20px;
+    position: absolute;
+    top: 25px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid var(--cinza);
+    background-color: transparent;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #555;
+    border-color: #555;
+    text-decoration: none;
+  }
+  /* final botão fechar o modal */
+
+  /* começo ramcoin */
+  .itens {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ramcoin {
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 15px 0;
+    position: relative;
+    top: 1em;
+  }
+
+  .qtd-ramcoin {
+    font-family: "Blinker-bold";
+    color: #417932;
+    margin-left: 5px;
+  }
+
+  .text-block {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 30%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 2px 8px 8px rgba(42, 85, 194, 0.15);
+    width: 300px;
+    z-index: 1;
+  }
+
+  .textos {
+    font-family: "Poppins-semibold";
+    color: var(--azul);
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+  }
+
+  .ramcoin:hover .text-block {
+    display: block;
+  }
+
+  /* final ramcoin */
+
+  #loja {
+    width: 20%;
+  }
+
+  .campo-curiosidade {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 36em;
+    padding: 0 0 20px 15px;
+  }
+
+  /* final dos cards dos cupons */
+
+  /* começo salto tecnologico */
+  .fundo-medalha-salto {
+    width: 20em;
+    height: 20em;
+    margin-top: 3em;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img-salto {
+    width: 6.5em;
+    position: relative;
+    bottom: 2em;
+    left: 1em;
+  }
+
+  .img-vitoria-regia {
+    width: 8em;
+    position: relative;
+    bottom: 5em;
+    right: 0;
+    left: 11em;
+  }
+
+  .column-textos {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3em;
+    margin-top: 1em;
+  }
+
+  .titulo-salto {
+    position: relative;
+    bottom: 5em;
+    left: 3.5em;
+  }
+
+  .fundo-medalha-salto .objetivo {
+    position: relative;
+    bottom: 5em;
+    left: 1em;
+  }
+
+  .fundo-medalha-salto .texto {
+    width: 100%;
+    position: relative;
+    bottom: 5em;
+    right: 1.5em;
+  }
+
+  /* final salto tecnologico */
+
+  /* começo coração generoso */
+  .fundo-medalha-coracao {
+    background-color: #ffb5c3;
+    width: 20em;
+    height: 16em;
+    margin-top: 4em;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img-coracao {
+    width: 8em;
+    position: relative;
+    bottom: 13em;
+    left: 12em;
+  }
+
+  .fundo-medalha-coracao .titulo-coracao {
+    position: relative;
+    top: 0.2em;
+    right: 1.5em;
+  }
+
+  .fundo-medalha-coracao .objetivo {
+    position: relative;
+    top: 3em;
+    right: 1.5em;
+  }
+
+  .fundo-medalha-coracao .texto {
+    position: relative;
+    top: 3em;
+    right: 1.5em;
+  }
+  /* final coração generoso */
+
   /* footer */
 
   .footer-container {

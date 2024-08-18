@@ -12,7 +12,7 @@ body {
 
 /* começo imagem inicial */
 .imagem-fundo {
-  margin-top:10px ;
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -215,7 +215,6 @@ body {
   color: var(--verde);
   font-size: 1.7em;
   margin: 1em 0 0.5em 8em;
-
 }
 
 #texto1 {
@@ -231,7 +230,6 @@ body {
 }
 
 @media (max-width: 768px) {
-
   /* Estilos aqui */
   #titulo1 {
     margin: 0em 0 0.5em 0em;
@@ -240,7 +238,7 @@ body {
   #texto1 {
     font-family: "Poppins-regular";
     color: var(--preto);
-    margin:0;
+    margin: 0;
     font-size: 0.9em;
     width: 100%;
     text-align: center;
@@ -279,10 +277,8 @@ body {
 .main-buttons {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 20px;
   align-items: center;
   justify-content: center;
-  
 }
 
 .main-btn {
@@ -294,7 +290,6 @@ body {
   background-color: rgba(222, 222, 225, 0.5);
   color: #a9a9a9;
   cursor: pointer;
-  
 }
 
 #estrutura.active {
@@ -308,12 +303,12 @@ body {
 }
 
 #sub-estrutura.active {
-  background-color: #C67DFF;
+  background-color: #c67dff;
   color: #fff;
 }
 
 #sub-estrutura:hover {
-  background-color: #C67DFF;
+  background-color: #c67dff;
   color: #fff;
 }
 
@@ -347,13 +342,13 @@ body {
   color: #fff;
 }
 
-.sub-btn.active {
-  background-color: #46C4FF;
+#sub-perifericos.active {
+  background-color: #46c4ff;
   color: #fff;
 }
 
-.sub-btn:hover {
-  background-color: #46C4FF;
+#sub-perifericos:hover {
+  background-color: #46c4ff;
   color: #fff;
 }
 
@@ -410,17 +405,6 @@ body {
   cursor: pointer;
 }
 
-.arrow {
-  font-size: 24px;
-  cursor: pointer;
-  margin: 0 10px;
-}
-
-.arrow.disabled {
-  color: #ccc;
-  cursor: not-allowed;
-}
-
 .content-container {
   margin-top: 20px;
   text-align: center;
@@ -432,41 +416,71 @@ body {
   margin: auto;
 }
 
-/* .content img {
-  
-  width: 100%;
-  max-width: 446.800px;
-  min-width:200px;
-  
-} */
-
 .content.active {
   display: block;
 }
 
-.titulo-content {
-  font-family: "Poppins-bold";
-  color: #9d4edd;
-  position: absolute;
-  top: 30%;
-  right: 23%;
+/* começo imagem estrutura gabinete */
+.fundo-gabinete {
+  background-color: var(--branco);
+  width: 40em;
+  height: 22em;
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
 }
 
-.lado-direito {
-  width: 40%;
+.fundo-gabinete .tipo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 20em;
+  margin: 0;
+  z-index: 2;
+}
+
+.fundo-gabinete .estrutura {
+  width: 2em;
+  margin: 1em 0.5em 1em 2em;
+}
+
+.fundo-gabinete .titulo {
+  font-family: "Blinker-extrabold";
+  font-size: 16px;
+  color: #9d4edd;
+}
+
+.circulo-estrutura {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-10%, -15%);
+  background: #9d4edd;
+  border-radius: 50%;
+  width: 15em;
+  height: 15em;
+  z-index: 1;
+}
+
+.img-estrutura {
+  position: relative;
+  bottom: 3em;
+  left: 1em;
+  width: 15em;
+  height: 15em;
+}
+
+.textos-gabinete {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 45%;
-  left: 49.5%;
-  margin-top: 25px;
+  position: relative;
+  left: 6em;
+  bottom: 4em;
 }
 
-.texto-content {
-  font-family: "Poppins-regular";
-  color: var(--preto);
-  width: 105%;
-  text-align: start;
+.titulo-gabinete {
+  font-family: "Poppins-bold";
+  color: #9d4edd;
 }
 
 .span-azul {
@@ -474,10 +488,20 @@ body {
   color: var(--azul);
 }
 
-.ramcoin {
+.p-gabinete {
+  font-family: "Poppins-regular";
+  color: var(--preto);
+  width: 50%;
+  position: relative;
+  top: 1em;
+  left: 14em;
+  text-align: start;
+}
+
+#content1 .ramcoin {
   position: absolute;
-  bottom: 4em;
-  left: 40em;
+  bottom: 3em;
+  left: 38em;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -491,7 +515,7 @@ body {
   top: 100%;
   left: 30%;
   transform: translateX(-50%);
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding: 10px;
   border-radius: 15px;
   box-shadow: 2px 8px 8px rgba(42, 85, 194, 0.15);
@@ -500,13 +524,16 @@ body {
 }
 
 .textos {
-  font-family: "Poppins-semibold";
-  color: var(--azul);
-  font-size: 13px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+}
+
+.texto-ramcoin {
+  font-family: "Poppins-semibold";
+  color: var(--azul);
+  font-size: 13px;
   margin-left: 5px;
 }
 
@@ -519,4 +546,141 @@ body {
   color: var(--verde);
   margin-right: 5px;
 }
+/* final imagem estrutura gabinete */
+
+/* começo imagem estrutura baias de drive */
+.fundo-baias {
+  background-color: var(--branco);
+  width: 40em;
+  height: 22em;
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.fundo-baias .tipo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 20em;
+  margin: 0;
+  z-index: 2;
+  position: relative;
+  left: 2em;
+  top: 2em;
+}
+
+.fundo-baias .estrutura {
+  width: 2em;
+  margin: 0;
+}
+
+.fundo-baias .titulo {
+  font-family: "Blinker-extrabold";
+  font-size: 16px;
+  color: #9d4edd;
+  margin-left: 5px;
+}
+
+.circulo-estrutura {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-10%, -15%);
+  background: #9d4edd;
+  border-radius: 50%;
+  width: 15em;
+  height: 15em;
+  z-index: 1;
+}
+
+.img-baias {
+  position: relative;
+  bottom: 2em;
+  left: 2em;
+  width: 15em;
+  height: 15em;
+}
+
+.textos-baias {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 6em;
+  bottom: 3em;
+}
+
+.titulo-baias {
+  font-family: "Poppins-bold";
+  color: #9d4edd;
+  position: relative;
+  left: 9em;
+  top: 0;
+}
+
+.span-azul {
+  font-family: "Poppins-bold";
+  color: var(--azul);
+}
+
+.p-baias {
+  font-family: "Poppins-regular";
+  color: var(--preto);
+  width: 50%;
+  position: relative;
+  top: 1em;
+  left: 14em;
+  text-align: start;
+}
+
+#content2 .ramcoin {
+  position: absolute;
+  bottom: 3em;
+  left: 38em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  margin-top: 25px;
+}
+
+.text-block {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 30%;
+  transform: translateX(-50%);
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 2px 8px 8px rgba(42, 85, 194, 0.15);
+  width: 300px;
+  z-index: 1;
+}
+
+.textos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.texto-ramcoin {
+  font-family: "Poppins-semibold";
+  color: var(--azul);
+  font-size: 13px;
+  margin-left: 5px;
+}
+
+.ramcoin:hover .text-block {
+  display: block;
+}
+
+.qtd-ramcoin {
+  font-family: "Poppins-extrabold";
+  color: var(--verde);
+  margin-right: 5px;
+}
+/* final imagem estrutura */
+
 /* final carrossel-materiais */

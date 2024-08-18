@@ -177,10 +177,10 @@
                             <button class="sub-btn" id="sub-internos" data-content="content11">Processador</button>
                         </div>
                         <div class="sub-buttons" data-category="2" style="display: none;">
-                            <button class="sub-btn" data-content="content12">Monitor</button>
-                            <button class="sub-btn" data-content="content13">Teclado</button>
-                            <button class="sub-btn" data-content="content14">Mouse</button>
-                            <button class="sub-btn" data-content="content15">Alto-falante</button>
+                            <button class="sub-btn" id="sub-perifericos" data-content="content12">Monitor</button>
+                            <button class="sub-btn" id="sub-perifericos" data-content="content13">Teclado</button>
+                            <button class="sub-btn" id="sub-perifericos" data-content="content14">Mouse</button>
+                            <button class="sub-btn" id="sub-perifericos" data-content="content15">Alto-falante</button>
                         </div>
                         <div class="sub-buttons" data-category="3" style="display: none;">
                             <button class="sub-btn" id="sub-resfriamento" data-content="content16">Ventoinhas</button>
@@ -193,36 +193,79 @@
                 </div>
                 <div class="content-container">
                     <!-- começo estrutura -->
+
+                    <!-- começo gabinete -->
                     <div id="content1" class="content" style="display: none;">
-                        <img src="./img/estrutura-gabinete.svg"
-                            alt="Imagem de uma estrutura de um gabinete da categoria 'estrutura'">
+                        <div class="fundo-gabinete">
+                            <div class="tipo">
+                                <img src="./img/estrutura.svg" class="estrutura"
+                                    alt="Ícone de uma representação de um gabinete">
+                                <p class="titulo">ESTRUTURA (GABINETE)</p>
+                            </div>
+                            <div class="circulo-estrutura">
+                                <img src="./img/img-estrutura.svg" class="img-estrutura" alt="Imagem de um gabinete">
+                            </div>
+                            <div class="textos-gabinete">
+                                <h2 class="titulo-gabinete">Estrutura do Gabinete</h2>
+                                <p class="p-gabinete"><span class="span-azul">Função: </span>Protege e organiza os
+                                    componentes do computador.</p>
+                                <p class="p-gabinete"><span class="span-azul">Problemas Comuns: </span>Dobradiças
+                                    quebradas, painéis soltos.</p>
+                                <p class="p-gabinete"><span class="span-azul">Identificação: </span>Inspecionar
+                                    fisicamente por danos, verificar estabilidade e encaixe dos painéis.</p>
+                            </div>
+                        </div>
                         <div class="ramcoin">
-                            <p class="qtd-ramcoin">2000</p>
+                            <p class="qtd-ramcoin">200</p>
                             <img src="./img/ramcoin.svg" alt="">
                             <div class="text-block">
                                 <div class="textos">
                                     <img src="./img/ramcoin.svg" alt="">
-                                    <p class="textos">Ramcoin é a moeda da rampoint utilizada para você acumular e
+                                    <p class="texto-ramcoin">Ramcoin é a moeda da rampoint utilizada para você acumular
+                                        e
                                         trocar por um cupom. </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- final gabinete -->
+
+                <!-- começo baias de drive -->
                 <div id="content2" class="content" style="display: none;">
-                    <img src="./img/baias-drive.svg" alt="Imagem de uma baia de drive da categoria 'estrutura'">
+                    <div class="fundo-baias">
+                        <div class="tipo">
+                            <img src="./img/estrutura.svg" class="estrutura"
+                                alt="Ícone de uma representação de um gabinete">
+                            <p class="titulo">ESTRUTURA (GABINETE)</p>
+                        </div>
+                        <div class="circulo-estrutura">
+                            <img src="./img/img-baias-drive.svg" class="img-baias" alt="Imagem de um gabinete">
+                        </div>
+                        <div class="textos-baias">
+                            <h2 class="titulo-baias">Baias de Drive</h2>
+                            <p class="p-baias"><span class="span-azul">Função: </span>Desempenham um papel na
+                                organização, acessibilidade e manutenção das unidades de armazenamento.</p>
+                            <p class="p-baias"><span class="span-azul">Problemas Comuns: </span>Baias não alinhadas,
+                                dificuldade de instalação de unidades.</p>
+                            <p class="p-baias"><span class="span-azul">Identificação: </span>Verificar se as
+                                unidades de armazenamento estão fixas corretamente e sem folgas.</p>
+                        </div>
+                    </div>
                     <div class="ramcoin">
-                        <p class="qtd-ramcoin">2000</p>
+                        <p class="qtd-ramcoin">50</p>
                         <img src="./img/ramcoin.svg" alt="">
                         <div class="text-block">
                             <div class="textos">
                                 <img src="./img/ramcoin.svg" alt="">
-                                <p class="textos">Ramcoin é a moeda da rampoint utilizada para você acumular e trocar
-                                    por um cupom. </p>
+                                <p class="texto-ramcoin">Ramcoin é a moeda da rampoint utilizada para você acumular e
+                                    trocar por um cupom. </p>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- final baias de drive -->
+
                 <div id="content3" class="content" style="display: none;">
                     <img src="./img/slots-expansao.svg" alt="Imagem de um slot de expansão da categoria 'estrutura'">
                     <div class="ramcoin">

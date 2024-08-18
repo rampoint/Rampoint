@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+form{
+  overflow-y: scroll;
+}
+
 body {
   background-color: #c9d6ff;
   background: linear-gradient(to right, #e2e2e2, #c9d6ff);
@@ -277,8 +281,7 @@ p {
 .senha {
   width: 100%;
   gap: 5px;
-  margin-bottom: 5px;
-  margin-top: 10px;
+  
 }
 
 .grupo-telefone {

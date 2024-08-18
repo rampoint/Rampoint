@@ -1628,8 +1628,8 @@ body {
 
   /* começo salto tecnologico */
   .fundo-medalha-salto {
-    width: 20em;
-    height: 20em;
+    width: 22em;
+    height: 18em;
     margin-top: 3em;
     border-radius: 30px;
     display: flex;
@@ -1644,11 +1644,7 @@ body {
   }
 
   .img-vitoria-regia {
-    width: 8em;
-    position: relative;
-    bottom: 5em;
-    right: 0;
-    left: 11em;
+    display: none;
   }
 
   .column-textos {
@@ -1673,8 +1669,8 @@ body {
   .fundo-medalha-salto .texto {
     width: 100%;
     position: relative;
-    bottom: 5em;
-    right: 1.5em;
+    bottom: 4em;
+    right: 1em;
   }
 
   /* final salto tecnologico */
@@ -1682,9 +1678,9 @@ body {
   /* começo coração generoso */
   .fundo-medalha-coracao {
     background-color: #ffb5c3;
-    width: 20em;
+    width: 22em;
     height: 16em;
-    margin-top: 4em;
+    margin-top: 5em;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
@@ -1694,19 +1690,19 @@ body {
     width: 8em;
     position: relative;
     bottom: 13em;
-    left: 12em;
+    left: 13em;
   }
 
   .fundo-medalha-coracao .titulo-coracao {
     position: relative;
     top: 0.2em;
-    right: 1.5em;
+    right: 1em;
   }
 
   .fundo-medalha-coracao .objetivo {
     position: relative;
-    top: 3em;
-    right: 1.5em;
+    top: 2em;
+    right: 1em;
   }
 
   .fundo-medalha-coracao .texto {
@@ -1715,6 +1711,142 @@ body {
     right: 1.5em;
   }
   /* final coração generoso */
+
+  /* começo explosão eletronica */
+  .fundo-medalha-explosao {
+    width: 22em;
+    height: 18em;
+    margin-top: 4em;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img-explosao {
+    width: 8em;
+    position: relative;
+    bottom: 2.5em;
+    left: -0.5em;
+  }
+
+  .fundo-medalha-explosao .titulo-explosao {
+    position: relative;
+    bottom: 7em;
+    left: 5em;
+  }
+
+  .fundo-medalha-explosao .objetivo {
+    position: relative;
+    bottom: 6em;
+    left: 3em;
+  }
+
+  .fundo-medalha-explosao .column-textos {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    margin-top: 1em;
+  }
+
+  .fundo-medalha-explosao .texto {
+    position: relative;
+    bottom: 5em;
+    left: 2em;
+    width: 85%;
+  }
+  /* final explosão eletronica */
+
+  /* começo engrenagem solidaria */
+  .fundo-medalha-engrenagem {
+    width: 22em;
+    height: 16em;
+    margin-top: 4em;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img-engrenagem {
+    width: 8em;
+    position: relative;
+    bottom: 15em;
+    left: 14em;
+  }
+
+  .fundo-medalha-engrenagem .titulo-engrenagem {
+    position: relative;
+    right: 1em;
+  }
+
+  .fundo-medalha-engrenagem .objetivo {
+    position: relative;
+    top: 2em;
+    right: 0;
+    left: 0.5em;
+  }
+
+  .fundo-medalha-engrenagem .texto {
+    position: relative;
+    top: 3em;
+    right: 1.5em;
+  }
+  /* final engrenagem solidaria */
+
+  /* começo raio esperança */
+.fundo-medalha-raio {
+  width: 22em;
+  height: 18em;
+  margin-top: 4em;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.img-raio {
+  width: 6.5em;
+  position: relative;
+  bottom: 2em;
+  left: 1em;
+}
+
+.brilho-esperanca {
+  width: 4em;
+  position: relative;
+  top: -2em;
+  right: 0;
+  left: 0;
+}
+
+.img-raio2 {
+  display: none;
+}
+
+.fundo-medalha-raio .column-textos {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
+  margin-top: 1em;
+}
+
+.titulo-raio {
+  position: relative;
+  bottom: 7em;
+  left: 6em;
+}
+
+.fundo-medalha-raio .objetivo {
+  position: relative;
+  bottom: 8em;
+  left: 8em;
+}
+
+.fundo-medalha-raio .texto {
+  position: relative;
+  bottom: 6em;
+  left: 2em;
+  width: 88%;
+}
+/* final raio esperança */
 
   /* footer */
 

@@ -497,15 +497,23 @@ body {
   color: #9d4edd;
 }
 
-/* começo estrutura gabinete */
+.titulo {
+  font-family: "Blinker-extrabold";
+  font-size: 16px;
+  color: #9d4edd;
+}
 
-.fundo-gabinete .tipo {
+.tipo {
   display: flex;
   flex-direction: row;
   align-items: center;
   width: 20em;
-  margin: 0;
   z-index: 2;
+}
+/* começo estrutura gabinete */
+
+.fundo-gabinete .tipo {
+  margin: 0;
 }
 
 .fundo-gabinete .estrutura {
@@ -514,9 +522,6 @@ body {
 }
 
 .fundo-gabinete .titulo {
-  font-family: "Blinker-extrabold";
-  font-size: 16px;
-  color: #9d4edd;
   margin-left: 5px;
 }
 
@@ -566,12 +571,6 @@ body {
 
 /* começo estrutura baias de drive */
 .fundo-baias .tipo {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 20em;
-  margin: 0;
-  z-index: 2;
   position: relative;
   left: 2em;
   top: 1em;
@@ -583,10 +582,7 @@ body {
 }
 
 .fundo-baias .titulo {
-  font-family: "Blinker-extrabold";
-  font-size: 16px;
-  color: #9d4edd;
-  margin-left: 10px;
+  margin-left: 13px;
 }
 
 .img-baias {
@@ -635,12 +631,7 @@ body {
 
 /* começo estrutura slots */
 .fundo-slots .tipo {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 20em;
   margin: 0;
-  z-index: 2;
   position: relative;
   left: 2em;
   top: 1em;
@@ -652,10 +643,7 @@ body {
 }
 
 .fundo-slots .titulo {
-  font-family: "Blinker-extrabold";
-  font-size: 16px;
-  color: #9d4edd;
-  margin-left: 5px;
+  margin-left: 13px;
 }
 
 .img-slots {
@@ -704,12 +692,7 @@ body {
 
 /* começo estrutura organizador */
 .fundo-organizador .tipo {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 20em;
   margin: 0;
-  z-index: 2;
 }
 
 .fundo-organizador .estrutura {
@@ -718,9 +701,6 @@ body {
 }
 
 .fundo-organizador .titulo {
-  font-family: "Blinker-extrabold";
-  font-size: 16px;
-  color: #9d4edd;
   margin-left: 5px;
 }
 
@@ -770,12 +750,7 @@ body {
 
 /* começo estrutura painel */
 .fundo-painel .tipo {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 20em;
   margin: 0;
-  z-index: 2;
 }
 
 .fundo-painel .estrutura {
@@ -784,9 +759,6 @@ body {
 }
 
 .fundo-painel .titulo {
-  font-family: "Blinker-extrabold";
-  font-size: 16px;
-  color: #9d4edd;
   margin-left: 5px;
 }
 

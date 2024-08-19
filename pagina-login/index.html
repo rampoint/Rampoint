@@ -25,8 +25,8 @@
                 <div class="email">
                     <label for="">Email</label>
                     <input id="email-cadastro" onchange="onchangeEmail()" type="email">
-                    <label id="erro-email-register">Senha incorreta</label>
-                    <label id="erro-email-obrigatorio">A senha é obrigatória</label>
+                    <label id="erro-email-register">Email não possui @</label>
+                    <label id="erro-email-obrigatorio">O email é obrigatório</label>
                 </div>
 
 
@@ -61,18 +61,19 @@
                 <div class="grupo">
                     <div class="senha">
                         <label for="">Senha</label>
-                        <input id="senha-cadastro" type="password">
+                        <input onchange="onchangePassword()" id="senha-cadastro" type="password">
                         <label id="erro-senha-register">A senha é obrigatória</label>
+                        <label id="erro-senha-min">A senha precisa ter mais que 5 caracteres</label>
                     </div>
                     <div class="senha">
                         <label for="">Confirmar senha</label>
-                        <input id="confirmarSenha" type="password">
+                        <input id="confirmarSenha" onchange="onchangePasswordConfirm()" type="password">
                         <label id="erro-senha-obrigatorio">A senha é obrigatória</label>
                         <label id="erro-nao-corresponde">A senha não corresponde </label>
                     </div>
                 </div>
 
-                <button>Cadastrar</button>
+                <button id="cadastrar" disabled="true">Cadastrar</button>
                 <div class="social-icons">
                     <a href="#" class="icon"><img src="./img/google-Icon.svg" alt="Ícone Google"></a>
                     <a href="#" class="icon"><img src="./img/facebook-icon.svg" alt="Ícone Facebook"></a>

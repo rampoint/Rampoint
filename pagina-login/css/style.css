@@ -342,13 +342,21 @@ option {
   cursor: pointer;
 }
 
-#eocover-password:active {
+#recover-password:active {
   opacity: 1;
 }
 
 #recover-password:disabled {
   opacity: 0.5;
 }
+
+#cadastrar:disabled{
+  opacity: 0.5;
+}
+#cadastrar:active{
+  opacity: 1;
+}
+
 
 #entrar:disabled {
   opacity: 0.5;
@@ -398,12 +406,20 @@ option {
 
 #erro-senha-obrigatorio{
   display: none;
+  color: red;
 }
 
 #erro-nao-corresponde{
   display: none;
+  color: red;
 }
 
 #erro-data{
   display: none;
+  color: red;
+}
+
+#erro-senha-min{
+  display: none;
+  color: red;
 }

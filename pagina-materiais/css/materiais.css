@@ -420,8 +420,66 @@ body {
   display: block;
 }
 
-/* começo imagem estrutura gabinete */
-.fundo-gabinete {
+.text-block {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 30%;
+  transform: translateX(-50%);
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 2px 8px 8px rgba(42, 85, 194, 0.15);
+  width: 300px;
+  z-index: 1;
+}
+
+.textos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.texto-ramcoin {
+  font-family: "Poppins-semibold";
+  color: var(--azul);
+  font-size: 13px;
+  margin-left: 5px;
+}
+
+.ramcoin:hover .text-block {
+  display: block;
+}
+
+.qtd-ramcoin {
+  font-family: "Poppins-extrabold";
+  color: var(--verde);
+  margin-right: 5px;
+}
+
+.span-azul {
+  font-family: "Poppins-bold";
+  color: var(--azul);
+}
+
+.circulo-estrutura {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-10%, -15%);
+  background: #9d4edd;
+  border-radius: 50%;
+  width: 15em;
+  height: 15em;
+  z-index: 1;
+}
+
+.fundo-gabinete,
+.fundo-baias,
+.fundo-slots,
+.fundo-organizador,
+.fundo-painel {
   background-color: var(--branco);
   width: 40em;
   height: 22em;
@@ -429,6 +487,17 @@ body {
   position: relative;
   overflow: hidden;
 }
+
+.titulo-gabinete,
+.titulo-baias,
+.titulo-slots,
+.titulo-organizador,
+.titulo-painel {
+  font-family: "Poppins-bold";
+  color: #9d4edd;
+}
+
+/* começo estrutura gabinete */
 
 .fundo-gabinete .tipo {
   display: flex;
@@ -448,18 +517,7 @@ body {
   font-family: "Blinker-extrabold";
   font-size: 16px;
   color: #9d4edd;
-}
-
-.circulo-estrutura {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translate(-10%, -15%);
-  background: #9d4edd;
-  border-radius: 50%;
-  width: 15em;
-  height: 15em;
-  z-index: 1;
+  margin-left: 5px;
 }
 
 .img-estrutura {
@@ -470,22 +528,17 @@ body {
   height: 15em;
 }
 
+.titulo-gabinete {
+  position: relative;
+  bottom: 0.5em;
+}
+
 .textos-gabinete {
   display: flex;
   flex-direction: column;
   position: relative;
   left: 6em;
   bottom: 4em;
-}
-
-.titulo-gabinete {
-  font-family: "Poppins-bold";
-  color: #9d4edd;
-}
-
-.span-azul {
-  font-family: "Poppins-bold";
-  color: var(--azul);
 }
 
 .p-gabinete {
@@ -501,7 +554,7 @@ body {
 #content1 .ramcoin {
   position: absolute;
   bottom: 3em;
-  left: 38em;
+  left: 37em;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -509,55 +562,9 @@ body {
   margin-top: 25px;
 }
 
-.text-block {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 30%;
-  transform: translateX(-50%);
-  background-color: #ffffff;
-  padding: 10px;
-  border-radius: 15px;
-  box-shadow: 2px 8px 8px rgba(42, 85, 194, 0.15);
-  width: 300px;
-  z-index: 1;
-}
+/* final estrutura gabinete */
 
-.textos {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-.texto-ramcoin {
-  font-family: "Poppins-semibold";
-  color: var(--azul);
-  font-size: 13px;
-  margin-left: 5px;
-}
-
-.ramcoin:hover .text-block {
-  display: block;
-}
-
-.qtd-ramcoin {
-  font-family: "Poppins-extrabold";
-  color: var(--verde);
-  margin-right: 5px;
-}
-/* final imagem estrutura gabinete */
-
-/* começo imagem estrutura baias de drive */
-.fundo-baias {
-  background-color: var(--branco);
-  width: 40em;
-  height: 22em;
-  border-radius: 30px;
-  position: relative;
-  overflow: hidden;
-}
-
+/* começo estrutura baias de drive */
 .fundo-baias .tipo {
   display: flex;
   flex-direction: row;
@@ -567,7 +574,7 @@ body {
   z-index: 2;
   position: relative;
   left: 2em;
-  top: 2em;
+  top: 1em;
 }
 
 .fundo-baias .estrutura {
@@ -579,19 +586,7 @@ body {
   font-family: "Blinker-extrabold";
   font-size: 16px;
   color: #9d4edd;
-  margin-left: 5px;
-}
-
-.circulo-estrutura {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translate(-10%, -15%);
-  background: #9d4edd;
-  border-radius: 50%;
-  width: 15em;
-  height: 15em;
-  z-index: 1;
+  margin-left: 10px;
 }
 
 .img-baias {
@@ -611,16 +606,9 @@ body {
 }
 
 .titulo-baias {
-  font-family: "Poppins-bold";
-  color: #9d4edd;
   position: relative;
   left: 9em;
   top: 0;
-}
-
-.span-azul {
-  font-family: "Poppins-bold";
-  color: var(--azul);
 }
 
 .p-baias {
@@ -636,51 +624,216 @@ body {
 #content2 .ramcoin {
   position: absolute;
   bottom: 3em;
-  left: 38em;
+  left: 37em;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: end;
   margin-top: 25px;
 }
+/* final estrutura baias de drive */
 
-.text-block {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 30%;
-  transform: translateX(-50%);
-  background-color: #ffffff;
-  padding: 10px;
-  border-radius: 15px;
-  box-shadow: 2px 8px 8px rgba(42, 85, 194, 0.15);
-  width: 300px;
-  z-index: 1;
-}
-
-.textos {
+/* começo estrutura slots */
+.fundo-slots .tipo {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  width: 20em;
+  margin: 0;
+  z-index: 2;
+  position: relative;
+  left: 2em;
+  top: 1em;
 }
 
-.texto-ramcoin {
-  font-family: "Poppins-semibold";
-  color: var(--azul);
-  font-size: 13px;
+.fundo-slots .estrutura {
+  width: 2em;
+  margin: 0;
+}
+
+.fundo-slots .titulo {
+  font-family: "Blinker-extrabold";
+  font-size: 16px;
+  color: #9d4edd;
   margin-left: 5px;
 }
 
-.ramcoin:hover .text-block {
-  display: block;
+.img-slots {
+  position: relative;
+  bottom: 2em;
+  left: 2em;
+  width: 15em;
+  height: 15em;
 }
 
-.qtd-ramcoin {
-  font-family: "Poppins-extrabold";
-  color: var(--verde);
-  margin-right: 5px;
+.textos-slots {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 6em;
+  bottom: 3em;
 }
+
+.titulo-slots {
+  position: relative;
+  left: 9em;
+  top: 0;
+}
+
+.p-slots {
+  font-family: "Poppins-regular";
+  color: var(--preto);
+  width: 50%;
+  position: relative;
+  top: 1em;
+  left: 14em;
+  text-align: start;
+}
+
+#content3 .ramcoin {
+  position: absolute;
+  bottom: 3em;
+  left: 37em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  margin-top: 25px;
+}
+/* final estrutura slots */
+
+/* começo estrutura organizador */
+.fundo-organizador .tipo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 20em;
+  margin: 0;
+  z-index: 2;
+}
+
+.fundo-organizador .estrutura {
+  width: 2em;
+  margin: 1em 0.5em 1em 2em;
+}
+
+.fundo-organizador .titulo {
+  font-family: "Blinker-extrabold";
+  font-size: 16px;
+  color: #9d4edd;
+  margin-left: 5px;
+}
+
+.img-organizador {
+  position: relative;
+  bottom: 1em;
+  left: 1em;
+  width: 15em;
+  height: 15em;
+}
+
+.textos-organizador {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 6em;
+  bottom: 4em;
+}
+
+.titulo-organizador {
+  position: relative;
+  left: 9em;
+  bottom: 0.5em;
+}
+
+.p-organizador {
+  font-family: "Poppins-regular";
+  color: var(--preto);
+  width: 50%;
+  position: relative;
+  top: 1em;
+  left: 14em;
+  text-align: start;
+}
+
+#content4 .ramcoin {
+  position: absolute;
+  bottom: 3em;
+  left: 37em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  margin-top: 25px;
+}
+/* final estrutura organizador */
+
+/* começo estrutura painel */
+.fundo-painel .tipo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 20em;
+  margin: 0;
+  z-index: 2;
+}
+
+.fundo-painel .estrutura {
+  width: 2em;
+  margin: 1em 0.5em 1em 2em;
+}
+
+.fundo-painel .titulo {
+  font-family: "Blinker-extrabold";
+  font-size: 16px;
+  color: #9d4edd;
+  margin-left: 5px;
+}
+
+.img-painel {
+  position: relative;
+  bottom: 1em;
+  left: 2em;
+  width: 15em;
+  height: 15em;
+}
+
+.textos-painel {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 6em;
+  bottom: 4em;
+}
+
+.titulo-painel {
+  position: relative;
+  left: 9em;
+  bottom: 1em;
+}
+
+.p-painel {
+  font-family: "Poppins-regular";
+  color: var(--preto);
+  width: 50%;
+  position: relative;
+  top: 0;
+  left: 14em;
+  text-align: start;
+}
+
+#content5 .ramcoin {
+  position: absolute;
+  bottom: 3em;
+  left: 37em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  margin-top: 25px;
+}
+/* final estrutura painel */
+
 /* final imagem estrutura */
 
 /* final carrossel-materiais */

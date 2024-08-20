@@ -36,8 +36,8 @@ body {
 }
 
 .sidebar.active ~ .main-content {
-  left: 300px;
-  width: calc(100% - 300px);
+  left: 290px;
+  width: calc(100% - 290px);
 }
 
 .sidebar.active {
@@ -183,15 +183,20 @@ body {
   top: 0;
   left: 80px;
   transition: all 0.5s ease;
-  width: calc(100% - 90px);
-  padding: 1rem;
+  width: calc(100% - 80px);
 }
 
 .container {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
-.texto-teste {
+.fundo-titulo {
+  background-color: #f5f6fa;
+  height: 5em;
+}
+
+.titulo-pagina {
   font-family: "Poppins-semibold";
 }

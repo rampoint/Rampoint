@@ -432,6 +432,7 @@ body {
   box-shadow: 2px 8px 8px rgba(42, 85, 194, 0.15);
   width: 300px;
   z-index: 1;
+  text-align: center;
 }
 
 .textos {
@@ -475,11 +476,61 @@ body {
   z-index: 1;
 }
 
+.circulo-internos {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-10%, -15%);
+  background: #f89701;
+  border-radius: 50%;
+  width: 15em;
+  height: 15em;
+  z-index: 1;
+}
+
+.circulo-perifericos {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-10%, -15%);
+  background: #2a55c2;
+  border-radius: 50%;
+  width: 15em;
+  height: 15em;
+  z-index: 1;
+}
+
+.circulo-resfriamento {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-10%, -15%);
+  background: #61d243;
+  border-radius: 50%;
+  width: 15em;
+  height: 15em;
+  z-index: 1;
+}
+
 .fundo-gabinete,
 .fundo-baias,
 .fundo-slots,
 .fundo-organizador,
-.fundo-painel {
+.fundo-painel,
+.fundo-gpu,
+.fundo-placa-mae,
+.fundo-memoria-ram,
+.fundo-hdd,
+.fundo-psu,
+.fundo-cpu,
+.fundo-monitor,
+.fundo-teclado,
+.fundo-mouse,
+.fundo-alto-falante,
+.fundo-ventoinhas,
+.fundo-dissipadores,
+.fundo-filtro,
+.fundo-cooler {
   background-color: var(--branco);
   width: 40em;
   height: 22em;
@@ -497,10 +548,54 @@ body {
   color: #9d4edd;
 }
 
-.titulo {
+.titulo-estrutura {
   font-family: "Blinker-extrabold";
   font-size: 16px;
   color: #9d4edd;
+}
+
+.titulo-internos {
+  font-family: "Blinker-extrabold";
+  font-size: 16px;
+  color: #f89701;
+}
+
+.titulo-gpu,
+.titulo-placa-mae,
+.titulo-memoria-ram,
+.titulo-hdd,
+.titulo-psu,
+.titulo-cpu {
+  font-family: "Poppins-bold";
+  color: #f89701;
+}
+
+.titulo-perifericos {
+  font-family: "Blinker-extrabold";
+  font-size: 16px;
+  color: #2a55c2;
+}
+
+.titulo-monitor,
+.titulo-teclado,
+.titulo-mouse,
+.titulo-alto-falante {
+  font-family: "Poppins-bold";
+  color: #2a55c2;
+}
+
+.titulo-resfriamento {
+  font-family: "Blinker-extrabold";
+  font-size: 16px;
+  color: #61d243;
+}
+
+.titulo-ventoinhas,
+.titulo-dissipadores,
+.titulo-filtro,
+.titulo-cooler {
+  font-family: "Poppins-bold";
+  color: #61d243;
 }
 
 .tipo {
@@ -510,8 +605,8 @@ body {
   width: 20em;
   z-index: 2;
 }
-/* começo estrutura gabinete */
 
+/* começo estrutura gabinete */
 .fundo-gabinete .tipo {
   margin: 0;
 }
@@ -521,7 +616,7 @@ body {
   margin: 1em 0.5em 1em 2em;
 }
 
-.fundo-gabinete .titulo {
+.fundo-gabinete .titulo-estrutura {
   margin-left: 5px;
 }
 
@@ -581,7 +676,7 @@ body {
   margin: 0;
 }
 
-.fundo-baias .titulo {
+.fundo-baias .titulo-estrutura {
   margin-left: 13px;
 }
 
@@ -627,6 +722,7 @@ body {
   justify-content: end;
   margin-top: 25px;
 }
+
 /* final estrutura baias de drive */
 
 /* começo estrutura slots */
@@ -642,7 +738,7 @@ body {
   margin: 0;
 }
 
-.fundo-slots .titulo {
+.fundo-slots .titulo-estrutura {
   margin-left: 13px;
 }
 
@@ -700,7 +796,7 @@ body {
   margin: 1em 0.5em 1em 2em;
 }
 
-.fundo-organizador .titulo {
+.fundo-organizador .titulo-estrutura {
   margin-left: 5px;
 }
 
@@ -758,7 +854,7 @@ body {
   margin: 1em 0.5em 1em 2em;
 }
 
-.fundo-painel .titulo {
+.fundo-painel .titulo-estrutura {
   margin-left: 5px;
 }
 
@@ -805,7 +901,823 @@ body {
   margin-top: 25px;
 }
 /* final estrutura painel */
-
 /* final imagem estrutura */
 
+/* começo imagem internos */
+/* começo gpu */
+.fundo-gpu .tipo {
+  margin: 0;
+}
+
+.fundo-gpu .internos {
+  width: 2.8em;
+  margin: 1em 0.5em 1em 2em;
+}
+
+.fundo-gpu .titulo-internos {
+  margin-left: 5px;
+}
+
+.img-gpu {
+  position: relative;
+  bottom: 1em;
+  left: 2em;
+  width: 15em;
+  height: 15em;
+}
+
+.textos-gpu {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 6em;
+  bottom: 3em;
+}
+
+.titulo-gpu {
+  position: relative;
+  left: 9em;
+  bottom: 1.5em;
+}
+
+.p-gpu {
+  font-family: "Poppins-regular";
+  color: var(--preto);
+  width: 50%;
+  position: relative;
+  top: 0;
+  left: 14em;
+  text-align: start;
+}
+
+#content6 .ramcoin {
+  position: absolute;
+  bottom: 3em;
+  left: 37em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  margin-top: 25px;
+}
+/* final gpu */
+
+/* começo placa mae */
+.fundo-placa-mae .tipo {
+  margin: 0;
+}
+
+.fundo-placa-mae .internos {
+  width: 2.8em;
+  margin: 1em 0.5em 1em 2em;
+}
+
+.fundo-placa-mae .titulo-internos {
+  margin-left: 5px;
+}
+
+.img-placa-mae {
+  position: relative;
+  bottom: 1em;
+  left: 2em;
+  width: 15em;
+  height: 15em;
+}
+
+.textos-placa-mae {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 6em;
+  bottom: 3.5em;
+}
+
+.titulo-placa-mae {
+  position: relative;
+  left: 9em;
+  bottom: 1em;
+}
+
+.p-placa-mae {
+  font-family: "Poppins-regular";
+  color: var(--preto);
+  width: 50%;
+  position: relative;
+  top: 0;
+  left: 14em;
+  text-align: start;
+}
+
+#content7 .ramcoin {
+  position: absolute;
+  bottom: 3em;
+  left: 37em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  margin-top: 25px;
+}
+/* final placa mae */
+
+/* começo memória ram */
+.fundo-memoria-ram .tipo {
+  margin: 0;
+}
+
+.fundo-memoria-ram .internos {
+  width: 2.8em;
+  margin: 1em 0.5em 1em 2em;
+}
+
+.fundo-memoria-ram .titulo-internos {
+  margin-left: 5px;
+}
+
+.img-memoria-ram {
+  position: relative;
+  bottom: 1em;
+  left: 2em;
+  width: 15em;
+  height: 15em;
+}
+
+.textos-memoria-ram {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 6em;
+  bottom: 5em;
+}
+
+.titulo-memoria-ram {
+  position: relative;
+  left: 9em;
+  bottom: 5px;
+}
+
+.p-memoria-ram {
+  font-family: "Poppins-regular";
+  color: var(--preto);
+  width: 50%;
+  position: relative;
+  top: 0;
+  left: 14em;
+  text-align: start;
+}
+
+#content8 .ramcoin {
+  position: absolute;
+  bottom: 3em;
+  left: 37em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  margin-top: 25px;
+}
+/* final memoria ram */
+
+/* começo hdd/sdd */
+.fundo-hdd .tipo {
+  margin: 0;
+}
+
+.fundo-hdd .internos {
+  width: 2.8em;
+  margin: 1em 0.5em 1em 2em;
+}
+
+.fundo-hdd .titulo-internos {
+  margin-left: 5px;
+}
+
+.img-hdd {
+  position: relative;
+  bottom: 1em;
+  left: 2em;
+  width: 15em;
+  height: 15em;
+}
+
+.textos-hdd {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 6em;
+  bottom: 3em;
+}
+
+.titulo-hdd {
+  position: relative;
+  left: 9em;
+  bottom: 1.5em;
+}
+
+.p-hdd {
+  font-family: "Poppins-regular";
+  color: var(--preto);
+  width: 50%;
+  position: relative;
+  top: 0;
+  left: 14em;
+  text-align: start;
+}
+
+#content9 .ramcoin {
+  position: absolute;
+  bottom: 3em;
+  left: 37em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  margin-top: 25px;
+}
+/* final hdd/sdd */
+
+/* começo psu */
+.fundo-psu .tipo {
+  margin: 0;
+}
+
+.fundo-psu .internos {
+  width: 2.8em;
+  margin: 1em 0.5em 1em 2em;
+}
+
+.fundo-psu .titulo-internos {
+  margin-left: 5px;
+}
+
+.img-psu {
+  position: relative;
+  bottom: 1em;
+  left: 2em;
+  width: 15em;
+  height: 15em;
+}
+
+.textos-psu {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 6em;
+  bottom: 3em;
+}
+
+.titulo-psu {
+  position: relative;
+  left: 9em;
+  bottom: 1.5em;
+}
+
+.p-psu {
+  font-family: "Poppins-regular";
+  color: var(--preto);
+  width: 50%;
+  position: relative;
+  top: 0;
+  left: 14em;
+  text-align: start;
+}
+
+#content10 .ramcoin {
+  position: absolute;
+  bottom: 3em;
+  left: 37em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  margin-top: 25px;
+}
+/* final psu */
+
+/* começo cpu */
+.fundo-cpu .tipo {
+  margin: 0;
+}
+
+.fundo-cpu .internos {
+  width: 2.8em;
+  margin: 1em 0.5em 1em 2em;
+}
+
+.fundo-cpu .titulo-internos {
+  margin-left: 5px;
+}
+
+.img-cpu {
+  position: relative;
+  bottom: 1em;
+  left: 2em;
+  width: 15em;
+  height: 15em;
+}
+
+.textos-cpu {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 6em;
+  bottom: 3em;
+}
+
+.titulo-cpu {
+  position: relative;
+  left: 9em;
+  bottom: 1.5em;
+}
+
+.p-cpu {
+  font-family: "Poppins-regular";
+  color: var(--preto);
+  width: 50%;
+  position: relative;
+  top: 0;
+  left: 14em;
+  text-align: start;
+}
+
+#content11 .ramcoin {
+  position: absolute;
+  bottom: 3em;
+  left: 37em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  margin-top: 25px;
+}
+/* final cpu */
+/* final imagem internos */
+
+/* começo imagem perifericos */
+/* começo monitor */
+.fundo-monitor .tipo {
+  margin: 0;
+}
+
+.fundo-monitor .perifericos {
+  width: 2.8em;
+  margin: 1em 0.5em 1em 2em;
+}
+
+.fundo-monitor .titulo-perifericos {
+  margin-left: 5px;
+}
+
+.img-monitor {
+  position: relative;
+  bottom: 2em;
+  left: 2em;
+  width: 15em;
+  height: 15em;
+}
+
+.textos-monitor {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 6em;
+  bottom: 3em;
+}
+
+.titulo-monitor {
+  position: relative;
+  left: 9em;
+  bottom: 1.5em;
+}
+
+.p-monitor {
+  font-family: "Poppins-regular";
+  color: var(--preto);
+  width: 55%;
+  position: relative;
+  top: 0;
+  left: 14em;
+  text-align: start;
+}
+
+#content12 .ramcoin {
+  position: absolute;
+  bottom: 3em;
+  left: 37em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  margin-top: 25px;
+}
+/* final monitor */
+
+/* começo teclado */
+.fundo-teclado .tipo {
+  margin: 0;
+}
+
+.fundo-teclado .perifericos {
+  width: 2.8em;
+  margin: 1em 0.5em 1em 2em;
+}
+
+.fundo-teclado .titulo-perifericos {
+  margin-left: 5px;
+}
+
+.img-teclado {
+  position: relative;
+  bottom: 1em;
+  left: 2em;
+  width: 15em;
+  height: 15em;
+}
+
+.textos-teclado {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 6em;
+  bottom: 3em;
+}
+
+.titulo-teclado {
+  position: relative;
+  left: 9em;
+  bottom: 1.5em;
+}
+
+.p-teclado {
+  font-family: "Poppins-regular";
+  color: var(--preto);
+  width: 55%;
+  position: relative;
+  top: 0;
+  left: 14em;
+  text-align: start;
+}
+
+#content13 .ramcoin {
+  position: absolute;
+  bottom: 3em;
+  left: 37em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  margin-top: 25px;
+}
+/* final teclado */
+
+/* começo mouse */
+.fundo-mouse .tipo {
+  margin: 0;
+}
+
+.fundo-mouse .perifericos {
+  width: 2.8em;
+  margin: 1em 0.5em 1em 2em;
+}
+
+.fundo-mouse .titulo-perifericos {
+  margin-left: 5px;
+}
+
+.img-mouse {
+  position: relative;
+  bottom: 1em;
+  left: 2em;
+  width: 15em;
+  height: 15em;
+}
+
+.textos-mouse {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 6em;
+  bottom: 3em;
+}
+
+.titulo-mouse {
+  position: relative;
+  left: 9em;
+  bottom: 1.5em;
+}
+
+.p-mouse {
+  font-family: "Poppins-regular";
+  color: var(--preto);
+  width: 50%;
+  position: relative;
+  top: 0;
+  left: 14em;
+  text-align: start;
+}
+
+#content14 .ramcoin {
+  position: absolute;
+  bottom: 3em;
+  left: 37em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  margin-top: 25px;
+}
+/* final mouse */
+
+/* começo alto falante */
+.fundo-alto-falante .tipo {
+  margin: 0;
+}
+
+.fundo-alto-falante .perifericos {
+  width: 2.8em;
+  margin: 1em 0.5em 1em 2em;
+}
+
+.fundo-alto-falante .titulo-perifericos {
+  margin-left: 5px;
+}
+
+.img-alto-falante {
+  position: relative;
+  bottom: 1em;
+  left: 2em;
+  width: 13em;
+  height: 13em;
+}
+
+.textos-alto-falante {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 6em;
+  bottom: 1em;
+}
+
+.titulo-alto-falante {
+  position: relative;
+  left: 9em;
+  bottom: 2.5em;
+}
+
+.p-alto-falante {
+  font-family: "Poppins-regular";
+  color: var(--preto);
+  width: 50%;
+  position: relative;
+  top: 0;
+  left: 14em;
+  text-align: start;
+}
+
+#content15 .ramcoin {
+  position: absolute;
+  bottom: 3em;
+  left: 37em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  margin-top: 25px;
+}
+/* final alto falante */
+/* final imagem perifericos */
+
+/* começo imagem resfriamento */
+/* começo ventoinhas */
+.fundo-ventoinhas .tipo {
+  margin: 0;
+}
+
+.fundo-ventoinhas .resfriamento {
+  width: 2.8em;
+  margin: 1em 0.5em 1em 2em;
+}
+
+.fundo-ventoinhas .titulo-perifericos {
+  margin-left: 5px;
+}
+
+.img-ventoinhas {
+  position: relative;
+  bottom: 3em;
+  left: 2em;
+  width: 17em;
+  height: 17em;
+}
+
+.textos-ventoinhas {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 6em;
+  bottom: 3.5em;
+}
+
+.titulo-ventoinhas {
+  position: relative;
+  left: 9em;
+  bottom: 1em;
+}
+
+.p-ventoinhas {
+  font-family: "Poppins-regular";
+  color: var(--preto);
+  width: 50%;
+  position: relative;
+  top: 0;
+  left: 14em;
+  text-align: start;
+}
+
+#content16 .ramcoin {
+  position: absolute;
+  bottom: 3em;
+  left: 37em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  margin-top: 25px;
+}
+/* final ventoinhas */
+
+/* começo dissipadores */
+.fundo-dissipadores .tipo {
+  margin: 0;
+}
+
+.fundo-dissipadores .resfriamento {
+  width: 2.8em;
+  margin: 1em 0.5em 1em 2em;
+}
+
+.fundo-dissipadores .titulo-perifericos {
+  margin-left: 5px;
+}
+
+.img-dissipadores {
+  position: relative;
+  bottom: 1em;
+  left: 2em;
+  width: 15em;
+  height: 15em;
+}
+
+.textos-dissipadores {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 6em;
+  bottom: 4em;
+}
+
+.titulo-dissipadores {
+  position: relative;
+  left: 9em;
+  bottom: 1em;
+}
+
+.p-dissipadores {
+  font-family: "Poppins-regular";
+  color: var(--preto);
+  width: 50%;
+  position: relative;
+  top: 0;
+  left: 14em;
+  text-align: start;
+}
+
+#content17 .ramcoin {
+  position: absolute;
+  bottom: 3em;
+  left: 37em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  margin-top: 25px;
+}
+/* final dissipadores */
+
+/* começo filtro de poeira */
+.fundo-filtro .tipo {
+  margin: 0;
+}
+
+.fundo-filtro .resfriamento {
+  width: 2.8em;
+  margin: 1em 0.5em 1em 2em;
+}
+
+.fundo-filtro .titulo-perifericos {
+  margin-left: 5px;
+}
+
+.img-filtro {
+  position: relative;
+  bottom: 1em;
+  left: 2em;
+  width: 13em;
+  height: 13em;
+}
+
+.textos-filtro {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 6em;
+  bottom: 2em;
+}
+
+.titulo-filtro {
+  position: relative;
+  left: 9em;
+  bottom: 2.5em;
+}
+
+.p-filtro {
+  font-family: "Poppins-regular";
+  color: var(--preto);
+  width: 50%;
+  position: relative;
+  top: 0;
+  left: 14em;
+  text-align: start;
+}
+
+#content18 .ramcoin {
+  position: absolute;
+  bottom: 3em;
+  left: 37em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  margin-top: 25px;
+}
+/* final filtro de poeira */
+
+/* começo cooler */
+.fundo-cooler .tipo {
+  margin: 0;
+}
+
+.fundo-cooler .resfriamento {
+  width: 2.8em;
+  margin: 1em 0.5em 1em 2em;
+}
+
+.fundo-cooler .titulo-perifericos {
+  margin-left: 5px;
+}
+
+.img-cooler {
+  position: relative;
+  bottom: 1em;
+  left: 2em;
+  width: 13em;
+  height: 13em;
+}
+
+.textos-cooler {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 6em;
+  bottom: 3em;
+}
+
+.titulo-cooler {
+  position: relative;
+  left: 9em;
+  bottom: 1.5em;
+}
+
+.p-cooler {
+  font-family: "Poppins-regular";
+  color: var(--preto);
+  width: 50%;
+  position: relative;
+  top: 0;
+  left: 14em;
+  text-align: start;
+}
+
+#content19 .ramcoin {
+  position: absolute;
+  bottom: 3em;
+  left: 37em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  margin-top: 25px;
+}
+/* final cooler */
+/* final imagem resfriamento */
 /* final carrossel-materiais */

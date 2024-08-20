@@ -195,8 +195,16 @@ body {
 .fundo-titulo {
   background-color: #f5f6fa;
   height: 5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .titulo-pagina {
   font-family: "Poppins-semibold";
+  margin: 15px 30px;
+}
+
+.usuario {
+  margin: 5px 15px;
 }

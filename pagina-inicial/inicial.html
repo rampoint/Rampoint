@@ -169,17 +169,17 @@
                     <div class="cep-rua">
                         <div class="cep-form">
                             <label for="cep">CEP:</label>
-                            <input placeholder="Insira seu CEP aqui" type="text" id="cep" name="cep">
+                            <input name="cep" type="text" placeholder="Insira seu CEP" id="cep" value="" size="10" maxlength="9" onblur="pesquisacep(this.value);" />
                         </div>
                         <div class="rua-form">
                             <label for="rua">Rua:</label>
-                            <input placeholder="Insira sua rua aqui" type="text" id="rua" name="rua">
+                            <input placeholder="Insira sua rua aqui" type="text" id="rua" name="rua" size="60">
                         </div>
                     </div>
                     <div class="bairro-form">
                         <label for="bairro">Bairro:</label>
                         <div class="btn"> <input placeholder="Insira seu bairro aqui" type="text" id="bairro"
-                                name="bairro">
+                                name="bairro" size="40">
 
                             <button type="submit" class="btn-lupa"><img src="./img/lupa.svg" alt=""></button>
                         </div>
@@ -291,9 +291,10 @@
 
         </footer>
 
-        <script src="./js/modal.js"></script>
-        <script src="./js/scroll-modal.js"></script>
-        <script src="./js/scroll-ecopontos.js"></script>
+        <script defer src="./js/modal.js"></script>
+        <script defer src="./js/scroll-modal.js"></script>
+        <script defer src="./js/scroll-ecopontos.js"></script>
+        <script defer src="./js/cep.js"></script>
 
     </div>
 </body>

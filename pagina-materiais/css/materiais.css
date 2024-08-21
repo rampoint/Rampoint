@@ -378,17 +378,20 @@ body {
   justify-content: center;
   position: relative;
   overflow: hidden;
-  width: 100%;
+  width: 60em;
   flex-wrap: wrap;
 }
 
 .sub-buttons-wrapper {
   display: flex;
+  align-items: center;
+  justify-content: center;
   transition: transform 0.3s ease;
 }
 
 .sub-buttons {
   display: flex;
+  width: 100%;
   flex-wrap: wrap;
   gap: 10px;
   justify-content: center;

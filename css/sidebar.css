@@ -12,7 +12,7 @@ body {
 }
 
 .imagem-logo {
-  width: 70px;
+  width: 150px;
   height: 80px;
 }
 
@@ -27,12 +27,13 @@ body {
   top: 0;
   left: 0;
   height: 100vh;
-  width: 90px;
+  width: 80px;
   background-color: #f5f6fa;
   padding: 0.4rem 0.8rem;
   transition: all 0.5s ease;
   overflow-y: auto;
   scrollbar-width: none;
+  position: fixed;
 }
 
 .sidebar.active ~ .main-content {
@@ -194,10 +195,13 @@ body {
 
 .fundo-titulo {
   background-color: #f5f6fa;
+  width: 90em;
   height: 5em;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
 }
 
 .titulo-pagina {
@@ -206,5 +210,6 @@ body {
 }
 
 .usuario {
-  margin: 5px 15px;
+  height: 70%;
+  margin: 10px 55px;
 }

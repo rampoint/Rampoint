@@ -1,10 +1,33 @@
+
+
+function register(){  
+  const email = Form.email().value
+  const senha = Form.senha().value
+  firebase.auth().createUserWithEmailAndPassword(
+    email,senha
+  ).then(() =>{
+    window.location.href = "../../pagina-inicial/inicial.html"
+  }).catch(error => {
+    alert(getErrorMessage(error))
+  })
+}
+
+function getErrorMessage(error) {
+  
+  if (error.code == 'auth/email-already-in-use'){
+    return "Usuario ja esta registrado"
+  }
+  return error.message
+}
+
+
 function onchangeEmail() {
   const email = Form.email().value;
   Form.erro_email_obrigatorio().style.display = email ? "none" : "block";
 
-  Form.erro_email_register().style.display = validarEmail(email)
-    ? "none"
-    : "block";
+  Form.erro_email_register().style.display = validarEmail(email) ? "none": "block";
+
+    botaoDesativar();
 }
 
 function onchangePassword() {
@@ -13,11 +36,13 @@ function onchangePassword() {
 
   Form.erro_senha_min().style.display = senha.length >= 6 ? "none" : "block";
 
+  botaoDesativar();
   validarSenhaCorresponde();
 }
 
 function onchangePasswordConfirm() {
   validarSenhaCorresponde();
+  botaoDesativar();
 }
 
 function validarSenhaCorresponde() {
@@ -29,7 +54,7 @@ function validarSenhaCorresponde() {
 }
 
 function botaoDesativar() {
-  Form.cadastrar_button().disable = !isFormValid();
+  Form.cadastrar_button().disabled = !isFormValid();
 }
 
 function isFormValid() {

@@ -34,11 +34,12 @@ body {
   overflow-y: auto;
   scrollbar-width: none;
   position: fixed;
+  z-index: 10;
 }
 
 .sidebar.active ~ .main-content {
   left: 290px;
-  width: calc(100% - 290px);
+  width: calc(100% - 150px);
 }
 
 .sidebar.active {
@@ -156,7 +157,7 @@ body {
 .links li a:hover {
   background-color: var(--azul);
   color: var(--branco);
-  width: 80%;
+  width: 100%;
 }
 
 .sidebar ul li a i {
@@ -184,24 +185,24 @@ body {
   top: 0;
   left: 80px;
   transition: all 0.5s ease;
-  width: calc(100% - 80px);
+  width: calc(100% - 90px);
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 .fundo-titulo {
   background-color: #f5f6fa;
-  width: 90em;
+  width: 95vw;
   height: 5em;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   position: fixed;
   top: 0;
+  z-index: 10;
 }
 
 .titulo-pagina {
@@ -210,6 +211,6 @@ body {
 }
 
 .usuario {
-  height: 70%;
+  height: auto;
   margin: 10px 55px;
 }

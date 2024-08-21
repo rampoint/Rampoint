@@ -103,7 +103,6 @@
 .texto-doacoes {
   display: flex;
   flex-direction: row;
-  align-items: center;
 }
 
 .titulo-doadores {
@@ -111,14 +110,20 @@
   color: #121212;
   position: relative;
   top: 2em;
+  right: 7.5em;
 }
 
 .link-doacoes {
-  font-family: "Blinker-semibold";
+  font-family: "Poppins-regular";
   color: #2a55c2;
+  font-size: 14px;
   position: relative;
-  top: 2.3em;
-  left: 16em;
+  top: 2.8em;
+  left: 8em;
+}
+
+.link-doacoes:hover {
+  cursor: pointer;
 }
 
 .fundo-doacoes {
@@ -126,15 +131,30 @@
   width: 30em;
   height: auto;
   border-radius: 15px;
-  margin-top: 5px;
+  margin-top: 50px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-}
-
-.fundo-doacoes ul {
   display: flex;
   flex-direction: row;
 }
 
-.fundo-doacoes li {
+.fundo-doacoes ul {
+  display: flex;
+  flex-direction: column;
   list-style: none;
+  justify-content: center;
+  align-items: center;
+  margin: 0 25px;
+}
+
+.fundo-doacoes li {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  list-style: none;
+}
+
+.titulo-tabela {
+  font-family: "Poppins-regular";
+  font-size: 15px;
+  margin: 15px;
 }

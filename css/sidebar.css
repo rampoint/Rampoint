@@ -23,7 +23,6 @@ body {
 }
 
 .sidebar {
-  position: absolute;
   top: 0;
   left: 0;
   height: 100vh;
@@ -39,7 +38,7 @@ body {
 
 .sidebar.active ~ .main-content {
   left: 290px;
-  width: calc(100% - 150px);
+  width: calc(100% - 300px);
 }
 
 .sidebar.active {
@@ -56,15 +55,16 @@ body {
   align-items: center;
   position: absolute;
   top: 1.5em;
-  left: 50%;
+  left: 30%;
   transform: translateX(-50%);
+  transform: rotate(180deg);
   cursor: pointer;
   transition: all 0.5s ease;
 }
 
 .sidebar.active #btn {
   left: 14.5em;
-  transform: rotate(180deg);
+  transform: rotate(0);
   z-index: 1;
   display: flex;
   align-items: center;
@@ -89,6 +89,49 @@ body {
   margin-left: 10px;
 }
 
+.user {
+  width: 50%;
+  position: relative;
+  top: 2em;
+  left: 0.5em;
+  opacity: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.sidebar.active .user {
+  opacity: 1;
+}
+
+.sidebar .user {
+  opacity: 0;
+}
+
+.foto-perfil {
+  height: 50%;
+  margin: 5px;
+  padding: 5px;
+}
+
+.sidebar.active  .foto-perfil {
+  height: 50%;
+  margin: 5px;
+  padding: 5px;
+  position: relative;
+  left: 0;
+}
+
+.nome-usuario {
+  font-family: "Poppins-semibold";
+  margin-left: 15px;
+  opacity: 0;
+}
+
+.sidebar.active .nome-usuario {
+  opacity: 1;
+}
+
 #ram,
 #point {
   font-family: "Batangas";
@@ -109,7 +152,7 @@ body {
 
 .links {
   position: relative;
-  top: 1.5em;
+  top: 3em;
 }
 
 .sidebar a {
@@ -176,6 +219,10 @@ body {
 
 .sidebar.active .nav-item {
   opacity: 1;
+}
+
+.sidebar .sair {
+  margin-top: 10em;
 }
 
 .main-content {

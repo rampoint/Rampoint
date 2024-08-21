@@ -361,7 +361,7 @@ body {
   color: #f89701;
   font-size: 30px;
   position: relative;
-  top: 2em;
+  top: 1.5em;
 }
 
 .texto-dourado {
@@ -369,7 +369,7 @@ body {
   color: #f89701;
   font-size: 18px;
   position: relative;
-  top: 3em;
+  top: 2.5em;
 }
 
 .estrela-dourada {
@@ -383,10 +383,26 @@ body {
   width: 10%;
   position: relative;
   left: 9em;
-  top: 1em;
+  top: 0;
 }
 
-.texto-lojas {
+.modal-content-dourado .ramcoin {
+  margin: 15px 0;
+  position: relative;
+  top: 0;
+  left: 1.5em;
+}
+
+.modal-content-dourado .lojas {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  position: relative;
+  top: -1em;
+  left: 1em;
+}
+
+.modal-content-dourado .texto-lojas {
   font-family: "Poppins-bold";
   color: #f89701;
   margin: -20px 35px;
@@ -412,7 +428,7 @@ body {
   z-index: 2;
 }
 
-.curiosidade {
+.modal-content-dourado .curiosidade {
   height: 8em;
   background-color: #ffce1e;
   border-radius: 25px;
@@ -423,7 +439,7 @@ body {
   bottom: 2em;
 }
 
-.texto-curiosidade {
+.modal-content-dourado .texto-curiosidade {
   font-family: "Poppins-bold";
   color: #745f12;
   text-align: right;
@@ -506,7 +522,7 @@ body {
   padding: 10px;
   margin-right: 5em;
   position: relative;
-  bottom: 5em;
+  bottom: 8em;
 }
 
 .modal-content-vidro .texto-curiosidade {
@@ -522,7 +538,7 @@ body {
   width: 35%;
   position: relative;
   left: 3em;
-  bottom: 5em;
+  bottom: 7em;
   z-index: 2;
 }
 /* final modal vidro */
@@ -583,7 +599,7 @@ body {
   flex-direction: row;
   gap: 15px;
   position: relative;
-  bottom: 3em;
+  bottom: 2em;
   left: 1em;
 }
 
@@ -602,7 +618,7 @@ body {
   padding: 10px;
   margin-right: 5em;
   position: relative;
-  bottom: 0;
+  bottom: 2em;
 }
 
 .modal-content-golias .texto-curiosidade {
@@ -618,7 +634,7 @@ body {
   width: 35%;
   position: relative;
   left: 3em;
-  bottom: 0;
+  bottom: 2em;
   z-index: 2;
 }
 
@@ -1295,7 +1311,9 @@ body {
     display: flex;
     flex-direction: row;
     gap: 15px;
-    margin: 10px 15px;
+    position: relative;
+    bottom: 6em;
+    left: 1em;
   }
 
   .modal-content-dourado #loja {
@@ -1793,60 +1811,60 @@ body {
   /* final engrenagem solidaria */
 
   /* começo raio esperança */
-.fundo-medalha-raio {
-  width: 22em;
-  height: 18em;
-  margin-top: 4em;
-  border-radius: 30px;
-  display: flex;
-  flex-direction: column;
-}
+  .fundo-medalha-raio {
+    width: 22em;
+    height: 18em;
+    margin-top: 4em;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+  }
 
-.img-raio {
-  width: 6.5em;
-  position: relative;
-  bottom: 2em;
-  left: 1em;
-}
+  .img-raio {
+    width: 6.5em;
+    position: relative;
+    bottom: 2em;
+    left: 1em;
+  }
 
-.brilho-esperanca {
-  width: 4em;
-  position: relative;
-  top: -2em;
-  right: 0;
-  left: 0;
-}
+  .brilho-esperanca {
+    width: 4em;
+    position: relative;
+    top: -2em;
+    right: 0;
+    left: 0;
+  }
 
-.img-raio2 {
-  display: none;
-}
+  .img-raio2 {
+    display: none;
+  }
 
-.fundo-medalha-raio .column-textos {
-  display: flex;
-  flex-direction: column;
-  margin-left: 0;
-  margin-top: 1em;
-}
+  .fundo-medalha-raio .column-textos {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    margin-top: 1em;
+  }
 
-.titulo-raio {
-  position: relative;
-  bottom: 7em;
-  left: 6em;
-}
+  .titulo-raio {
+    position: relative;
+    bottom: 7em;
+    left: 6em;
+  }
 
-.fundo-medalha-raio .objetivo {
-  position: relative;
-  bottom: 8em;
-  left: 8em;
-}
+  .fundo-medalha-raio .objetivo {
+    position: relative;
+    bottom: 8em;
+    left: 8em;
+  }
 
-.fundo-medalha-raio .texto {
-  position: relative;
-  bottom: 6em;
-  left: 2em;
-  width: 88%;
-}
-/* final raio esperança */
+  .fundo-medalha-raio .texto {
+    position: relative;
+    bottom: 6em;
+    left: 2em;
+    width: 88%;
+  }
+  /* final raio esperança */
 
   /* footer */
 

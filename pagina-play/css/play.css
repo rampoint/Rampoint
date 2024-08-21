@@ -244,7 +244,7 @@ body {
   justify-content: center;
   margin-top: 2.5em;
   background-color: #c0d2ff;
-  width: 1415px;
+  /* width: 1415px; */
   height: 25em;
   padding: 2em;
 }

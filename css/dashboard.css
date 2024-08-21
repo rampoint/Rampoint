@@ -73,7 +73,7 @@
 .coluna-mensagem {
   display: flex;
   flex-direction: column;
-  margin-left: 15px;
+  margin: 10px 15px;
 }
 
 .titulo-mensagem,
@@ -95,7 +95,7 @@
 .horario {
   position: relative;
   top: 17px;
-  left: 1em;
+  left: 7em;
 }
 
 .doacoes {

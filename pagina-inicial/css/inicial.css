@@ -162,6 +162,17 @@ body {
   cursor: pointer;
 }
 
+.sair-button {
+  font-family: "Poppins-bold";
+  font-size: 1em;
+  color: red;
+  width: 200px;
+  height: 40px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
 .cadastro:hover {
   color: var(--branco);
 }
@@ -190,6 +201,16 @@ body {
   cursor: pointer;
 }
 
+.login-button {
+  font-family: "Poppins-bold";
+  font-size: 1em;
+  color: #6b6b6b;
+  width: 200px;
+  height: 40px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
 /* final da imagem inicial */
 
 /* começo dos textos */

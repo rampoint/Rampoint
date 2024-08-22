@@ -207,44 +207,60 @@
                             <div class="info-perfil">
                                 <div class="usuario">
                                     <img src="./img/user.svg" alt="Foto de perfil do usuário">
-                                    <img src="./img/lapis.svg" alt="">
+                                    <img src="./img/lapis.svg" id="lapis" alt="Editar foto de perfil"
+                                        class="editar-foto">
                                 </div>
-                                <div class="campo-form">
-                                    <label for="">Nome</label>
-                                    <input type="name" placeholder="Jacques">
-                                </div>
-                                <div class="campo-form">
-                                    <label for="">Email</label>
-                                    <input type="email" placeholder="jacquessigma@gmail.com">
-                                </div>
-                                <div class="campo-form">
-                                    <label for="">Telefone</label>
-                                    <select name="" id="">
-                                        <option value="">11</option>
-                                    </select>
-                                    <input type="tel" placeholder="94002-8922">
-                                </div>
-                                <div class="campo-form">
-                                    <label for="">Gênero</label>
-                                    <select name="" id="">
-                                        <option value="">Prefiro não dizer</option>
-                                    </select>
-                                </div>
-                                <div class="campo-form">
-                                    <label for="">Senha</label>
-                                    <input type="password" placeholder="*********">
-                                </div>
-                                <div class="campo-form">
-                                    <label for="">Nascimento</label>
-                                    <input type="date">
+                                <div class="form-fields">
+                                    <div class="grupo1">
+                                        <div class="campo-form">
+                                            <label for="nome">Nome</label>
+                                            <input id="nome" type="text" placeholder="Jacques">
+                                        </div>
+                                        <div class="campo-form">
+                                            <label for="telefone">Telefone</label>
+                                            <div class="input-telefone">
+                                                <select id="telefone-ddd">
+                                                    <option value="11" selected>11</option>
+                                                </select>
+                                                <input id="telefone" type="tel" placeholder="00000-0000">
+                                            </div>
+                                        </div>
+                                        <div class="campo-form">
+                                            <label for="genero">Gênero</label>
+                                            <select id="genero">
+                                                <option value="nao-dizer" selected>Prefiro não dizer</option>
+                                                <option value="feminino">Feminino</option>
+                                                <option value="masculino">Masculino</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="grupo2">
+                                        <div class="campo-form">
+                                            <label for="email">Email</label>
+                                            <input id="email" type="email" placeholder="jacquessigma@gmail.com">
+                                        </div>
+                                        <div class="campo-form">
+                                            <label for="senha">Senha</label>
+                                            <input id="senha" type="password" placeholder="*********">
+                                        </div>
+                                        <div class="campo-form">
+                                            <label for="nascimento">Nascimento</label>
+                                            <input id="nascimento" type="date">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <a href="">Excluir minha conta</a>
-                            <button>Salvar</button>
+                            <div class="botoes">
+                                <a href="#" class="excluir-conta">Excluir minha conta</a>
+                                <button class="btn-salvar">Salvar</button>
+                            </div>
+
                         </div>
                     </div>
 
                     <button class="modalBtn-perfil">Editar perfil</button>
+
                 </div>
             </div>
         </section>

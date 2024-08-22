@@ -1,14 +1,9 @@
 
-function pegarDados(){
-    firebase.firestore()
-    .collection('usuario_login')
-    .get()
-    .then(snapshot => {
-        snapshot.docs.forEach(doc =>{
-            console.log(doc.data())
-        })
-    } )    
-}
+const querySnapshot = await getDocs(collection(db, "usuario_login"));
+querySnapshot.forEach((doc) => {
+  console.log(`${doc.id} => ${doc.data()}`);
+});
+
 const form = {
     nome: () => document.getElementById("nome_usuario"),
     email: () => document.getElementById("email_usuario"),

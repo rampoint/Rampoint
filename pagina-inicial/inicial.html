@@ -31,19 +31,19 @@
         <ul class="sidebar">
             <li onclick=hideSidebar()><a href="#"><img id="fechar" src="img/fechar.svg" alt="fechar nav"></a></li>
             <li id="perfil-sidebar"><img src="img/perfil2.svg" alt="" srcset=""></li>
-                <div class="menus">
-            <li><a href="../pagina-inicial/inicial.html" id="menuMobile">HOME</a></li>
-            <li><a href="../pagina-play/play.html" id="menuMobile">PLAY</a></li>
-            <li><a href="../pagina-inicial/inicial.html" id="ecoponto menuMobile">ECOPONTOS</a></li>
-            <li><a href="../pagina-materiais/materiais.html" id="menuMobile">MATERIAIS</a></li>
-            <li><a href="../pagina-qrcode/index.html" id="menuMobile">QR-CODE</a></li>
-            <li><a href="../pagina-faq/faq.html" id="menuMobile">FALE CONOSCO</a></li>
-        </div>
+            <div class="menus">
+                <li><a href="../pagina-inicial/inicial.html" id="menuMobile">HOME</a></li>
+                <li><a href="../pagina-play/play.html" id="menuMobile">PLAY</a></li>
+                <li><a href="../pagina-inicial/inicial.html" id="ecoponto menuMobile">ECOPONTOS</a></li>
+                <li><a href="../pagina-materiais/materiais.html" id="menuMobile">MATERIAIS</a></li>
+                <li><a href="../pagina-qrcode/index.html" id="menuMobile">QR-CODE</a></li>
+                <li><a href="../pagina-faq/faq.html" id="menuMobile">FALE CONOSCO</a></li>
+            </div>
             <div class="footer-logo">
                 <img src="./img/logoBranca.svg" id="footer-logo" alt="">
             </div>
-                
-            </div>  
+
+            </div>
         </ul>
         <ul>
             <li id="logo-nav"><img src="img/ram.svg" alt="ram">
@@ -62,12 +62,12 @@
                         <p class="perfil">Perfil</p>
                         <img src="./img/user.svg" id="foto-perfil" alt="Foto de perfil">
                         <div class="fundo">
-                            <p class="texto-perfil">Sem login</p>
+                            <p class="texto-perfil">Ir para perfil</p>
                             <div class="grupo">
                                 <hr class="linha">
-                                <a class="cadastro" href="../pagina-login/index.html">Cadastrar-se</a>
+                                <a class="sair-button" onclick="logout()" href="../pagina-login/index.html">Sair</a>
                                 <hr class="linha">
-                                <a href="../pagina-login/index.html" class="login">Fazer login</a>
+                                <a href="../pagina-login/index.html" class="login-button">Fazer login</a>
                             </div>
                         </div>
                     </div>
@@ -169,7 +169,8 @@
                     <div class="cep-rua">
                         <div class="cep-form">
                             <label for="cep">CEP:</label>
-                            <input name="cep" type="text" placeholder="Insira seu CEP" id="cep" value="" size="10" maxlength="9" onblur="pesquisacep(this.value);" />
+                            <input name="cep" type="text" placeholder="Insira seu CEP" id="cep" value="" size="10"
+                                maxlength="9" onblur="pesquisacep(this.value);" />
                         </div>
                         <div class="rua-form">
                             <label for="rua">Rua:</label>
@@ -295,6 +296,11 @@
         <script defer src="./js/scroll-modal.js"></script>
         <script defer src="./js/scroll-ecopontos.js"></script>
         <script defer src="./js/cep.js"></script>
+        <script src="../js/firebase-init.js"></script>
+        <script src="../js/validation.js"></script>
+        <script src="../js/logout.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-app-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-auth-compat.js"></script>
 
     </div>
 </body>

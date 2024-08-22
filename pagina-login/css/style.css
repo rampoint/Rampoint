@@ -107,7 +107,7 @@ p {
   height: 100%;
 }
 
-.container input {
+.container input, select {
   background-color: var(--cinza-claro);
   border: none;
   margin: 8px 0;

@@ -62,12 +62,12 @@
                         <p class="perfil">Perfil</p>
                         <img src="./img/user.svg" id="foto-perfil" alt="Foto de perfil">
                         <div class="fundo">
-                            <p class="texto-perfil">Ir para perfil</p>
+                            <a href="../pagina-perfil/perfil.html" class="texto-perfil">Ir para perfil</a>
                             <div class="grupo">
                                 <hr class="linha">
-                                <a class="sair-button" onclick="logout()" href="../pagina-login/index.html">Sair</a>
+                                <button type="button" class="sair-button" onclick="logout()" href="../pagina-login/index.html">Sair</button>
                                 <hr class="linha">
-                                <a href="../pagina-login/index.html" class="login-button">Fazer login</a>
+                                <button type="button" href="../pagina-login/index.html" class="login-button">Fazer login</button>
                             </div>
                         </div>
                     </div>
@@ -271,12 +271,10 @@
         <script defer src="./js/scroll-modal.js"></script>
         <script defer src="./js/scroll-ecopontos.js"></script>
         <script defer src="./js/cep.js"></script>
-        <script src="../js/firebase-init.js"></script>
         <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-app-compat.js"></script>
         <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-auth-compat.js"></script>
+        <script src="../js/firebase-init.js"></script>
         <script src="../js/logout.js"></script>
-        <script src="../js/auth-guard.js"></script>
-
     </div>
 </body>
 

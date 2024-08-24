@@ -171,6 +171,7 @@ body {
   border: none;
   border-radius: 30px;
   cursor: pointer;
+  margin-right: 10px;
 }
 
 .cadastro:hover {
@@ -210,6 +211,7 @@ body {
   border: none;
   border-radius: 30px;
   cursor: pointer;
+
 }
 /* final da imagem inicial */
 

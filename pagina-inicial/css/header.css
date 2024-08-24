@@ -203,6 +203,7 @@ margin-top:60px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   /* box-shadow: 0px 4px 0px 4px rgba(0, 0, 0, 0.5) inset; */
 }
 
@@ -211,11 +212,18 @@ margin-top:60px;
   display: flex;
   flex-direction: column;
   margin-left: 15px;
+  justify-content: center;
+  align-items: center;
 }
 
 .perfil,
 .texto-perfil {
   font-family: "Poppins-bold";
+}
+
+.texto-perfil{
+  padding: 0;
+  height: 10px;
 }
 
 .cadastro,
@@ -314,6 +322,7 @@ margin-top:60px;
   align-items: center;
   justify-content: center;
   margin-top: -40px;
+  
 }
 
 /* .fundo {

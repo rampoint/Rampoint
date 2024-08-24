@@ -9,13 +9,12 @@
     <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/perfil.css">
-
     <link rel="shortcut icon" href="./img/rostoCirculo.png" type="image/x-icon">
     <title>Perfil</title>
 
 </head>
 
-<body>
+<body onload="pegarDados()">
     <script>
         function showSidebar() {
             const sidebar = document.querySelector('.sidebar')
@@ -187,15 +186,15 @@
                     <img src="./img/foto-perfil.svg" id="foto-usuario" alt="Foto de perfil do usuário">
 
                     <div class="bloco-usuario">
-                        <h2 class="nome-usuario">Jacques</h2>
-                        <h3 class="email-usuario">jacquessigma@gmail.com</h3>
-                        <h2 class="emocao-usuario">Emocionado</h2>
+                        <h2 id="nome_usuario" class="nome-usuario"></h2>
+                        <h3 id="email_usuario" class="email-usuario">jacquessigma@gmail.com</h3>
+                        <h2 id="emocao_usuario" class="emocao-usuario">Emocionado</h2>
                     </div>
                 </div>
 
                 <div class="bloco-ramcoin">
                     <div class="ramcoin">
-                        <p class="qtd-ramcoin">2000</p>
+                        <p id="pontos_usuario" class="qtd-ramcoin">2000</p>
                         <img src="./img/ramcoin.svg" class="moeda-ramcoin" alt="Ícone moeda 'Ramcoin'">
                     </div>
 
@@ -391,6 +390,12 @@
         <script defer src="./js/scroll.js"></script>
         <script defer src="./js/toggle.js"></script>
         <script defer src="./js/modalPerfil.js"></script>
+        <script src="../js/perfil.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-app-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-auth-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-firestore-compat.js"></script>
+        <script src="../js/firebase-init.js"></script>
+        
 
     </div>
 </body>

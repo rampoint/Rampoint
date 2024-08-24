@@ -152,7 +152,7 @@ body {
 
 .links {
   position: relative;
-  top: 3em;
+  top: 2em;
 }
 
 .sidebar a {
@@ -228,7 +228,7 @@ body {
 .main-content {
   position: relative;
   background-color: #e4e9f7;
-  min-height: 100vh;
+  height: 85vh;
   top: 0;
   left: 80px;
   transition: all 0.5s ease;

@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./css/sidebar.css" />
-  <link rel="stylesheet" href="./css/doacoes.css" />
-  <title>Adicionar doações</title>
+  <link rel="stylesheet" href="./css/sidebar.css">
+  <link rel="stylesheet" href="./css/doacoes.css">
+  <title>Doações</title>
 
   <link rel="shortcut icon" href="./img/rostoCirculo.png" type="image/x-icon" />
 
@@ -27,8 +27,8 @@
       <ul class="links">
         <li>
           <div class="user">
-              <img src="./img/perfilADM.svg" class="foto-perfil" alt="Foto de perfil do usuário" />
-              <p class="nome-usuario">Usuário</p>
+            <img src="./img/perfilADM.svg" class="foto-perfil" alt="Foto de perfil do usuário" />
+            <p class="nome-usuario">Usuário</p>
           </div>
         </li>
         <li>
@@ -89,10 +89,29 @@
 
     <section class="campo-titulo">
       <h2 class="titulo-inicial">Doações registradas</h2>
+      <div class="btn">
+        <select name="filtro" id="btn-filtrar">Filtrar
+          <option value="peca">Peça</option>
+          <option value="tipo-componente">Tipo de componente</option>
+          <option value="nome-doador">Nome do doador</option>
+          <option value="email">Email</option>
+          <option value="qtd-total">Qtd. Total</option>
+          <option value="realizada">Realizada</option>
+          <option value="pendente">Pendente</option>
+      </div>
     </section>
 
     <section class="campo-inicial">
-      
+      <div class="fundo-doacoes">
+        <ul class="titulo-doacoes">
+          <li class="texto-doacoes">Peça</li>
+          <li class="texto-doacoes">Tipo de componente</li>
+          <li class="texto-doacoes">Nome do doador</li>
+          <li class="texto-doacoes">Email</li>
+          <li class="texto-doacoes">Qtd. Total</li>
+          <li class="texto-doacoes">Vistoria</li>
+        </ul>
+      </div>
     </section>
   </main>
 

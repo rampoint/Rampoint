@@ -4,7 +4,27 @@
 .campo-titulo {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   margin: 110px 50px 40px 50px;
+}
+
+#btn-filtrar {
+  background-color: #fff;
+  width: 12em;
+  border: none;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  outline: none;
+  padding: 5px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.titulo-inicial {
+  font-family: "Blinker-semibold";
+  color: #2a55c2;
 }
 
 /* campo inicial */
@@ -15,7 +35,9 @@
   margin: 50px;
 }
 
-.titulo-inicial {
-  font-family: "Blinker-semibold";
-  color: #2a55c2;
+.fundo-doacoes {
+  background-color: #fff;
+  width: 10em;
+  height: 5em;
+  border-radius: 15px;
 }

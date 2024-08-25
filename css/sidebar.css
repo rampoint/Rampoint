@@ -228,11 +228,12 @@ body {
 .main-content {
   position: relative;
   background-color: #e4e9f7;
-  min-height: 100vh;
+  min-height: 85vh;
   top: 0;
   left: 80px;
   transition: all 0.5s ease;
   width: calc(100% - 90px);
+  overflow: hidden;
 }
 
 .container {

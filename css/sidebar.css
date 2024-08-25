@@ -9,6 +9,7 @@
 
 body {
   background-color: #e4e9f7;
+  overflow: hidden;
 }
 
 .imagem-logo {
@@ -27,7 +28,7 @@ body {
   left: 0;
   height: 100vh;
   width: 80px;
-  background-color: #f5f6fa;
+  background-color: #fff;
   padding: 0.4rem 0.8rem;
   transition: all 0.5s ease;
   overflow-y: auto;
@@ -37,12 +38,12 @@ body {
 }
 
 .sidebar.active ~ .main-content {
-  left: 290px;
-  width: calc(100% - 300px);
+  left: 280px;
+  width: calc(100% - 150px);
 }
 
 .sidebar.active {
-  width: 290px;
+  width: 280px;
 }
 
 .sidebar #btn {
@@ -92,12 +93,12 @@ body {
 .user {
   width: 50%;
   position: relative;
-  top: 2em;
-  left: 0.5em;
+  bottom: 0.5em;
   opacity: 1;
   display: flex;
   flex-direction: row;
   align-items: center;
+  cursor: pointer;
 }
 
 .sidebar.active .user {
@@ -105,7 +106,9 @@ body {
 }
 
 .sidebar .user {
-  opacity: 0;
+  opacity: 1;
+  position: relative;
+  right: 0.5em;
 }
 
 .foto-perfil {
@@ -152,11 +155,11 @@ body {
 
 .links {
   position: relative;
-  top: 2em;
+  top: 1em;
 }
 
 .sidebar a {
-  margin: 25px 0;
+  margin: 20px 0;
 }
 
 .sidebar ul li {
@@ -222,17 +225,18 @@ body {
 }
 
 .sidebar .sair {
-  margin-top: 10em;
+  margin-top: 1em;
 }
 
 .main-content {
   position: relative;
   background-color: #e4e9f7;
-  height: 85vh;
+  min-height: 85vh;
   top: 0;
   left: 80px;
   transition: all 0.5s ease;
   width: calc(100% - 90px);
+  overflow: hidden;
 }
 
 .container {
@@ -241,7 +245,7 @@ body {
 }
 
 .fundo-titulo {
-  background-color: #f5f6fa;
+  background-color: #fff;
   width: 95vw;
   height: 5em;
   display: flex;

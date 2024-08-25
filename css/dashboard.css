@@ -88,6 +88,14 @@ input {
   flex-direction: row;
 }
 
+#search {
+  padding: 5px;
+}
+
+#search::placeholder {
+  font-family: "Poppins-regular";
+}
+
 .icon-add {
   margin-top: 5px;
   margin-left: 10px;

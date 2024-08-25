@@ -1,0 +1,21 @@
+@import url(../css/font.css);
+@import url(../css/cores.css);
+
+.campo-titulo {
+  display: flex;
+  flex-direction: row;
+  margin: 110px 50px 40px 50px;
+}
+
+/* campo inicial */
+.campo-inicial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 50px;
+}
+
+.titulo-inicial {
+  font-family: "Blinker-semibold";
+  color: #2a55c2;
+}

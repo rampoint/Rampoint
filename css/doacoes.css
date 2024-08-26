@@ -10,7 +10,7 @@
 
 #btn-filtrar {
   background-color: #fff;
-  width: 12em;
+  width: 12.5em;
   border: none;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -20,6 +20,28 @@
   padding: 5px;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
   cursor: pointer;
+}
+
+select {
+  font-family: "Blinker-semibold";
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url("../img/seta-select.svg") no-repeat right 10px center;
+  padding: 10px;
+  padding-right: 30px;
+  width: 100%;
+  font-size: 16px;
+}
+
+option[disabled] {
+  display: none;
+}
+
+#btn-filtrar option {
+  font-family: "Blinker-semibold";
+  font-size: 16px;
+  background-color: #fff;
 }
 
 .titulo-inicial {
@@ -38,7 +60,50 @@
 .fundo-doacoes {
   background-color: #fff;
   width: 100%;
-  height: 10%;
+  height: 30em;
   border-radius: 15px;
-  border: solid black;
+}
+
+.titulo-tabela {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 8em;
+  margin: 1.5em 5em;
+}
+
+.tabela {
+  font-family: "Poppins-medium";
+  font-size: 14px;
+}
+
+.itens {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 2em;
+}
+
+.conteudo {
+  display: flex;
+  flex-direction: row;
+}
+
+#placa-de-video {
+  width: 4em;
+}
+
+.nome-peca {
+  font-family: "Blinker-semibold";
+  margin: 5px;
+}
+
+.tipo {
+  width: 5em;
+  height: 2em;
+  font-family: "Blinker-regular";
+  background-color: #FEE333;
+  border-radius: 15px;
+  margin-left: 4em;
+  text-align: center;
 }

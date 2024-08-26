@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/doacoes.css">
   <link rel="stylesheet" href="./css/sidebar.css">
   <title>Doações</title>
@@ -91,6 +91,7 @@
       <h2 class="titulo-inicial">Doações registradas</h2>
       <div class="btn">
         <select name="filtro" id="btn-filtrar">
+          <option value="" disabled selected class="placeholder">Filtrar</option>
           <option value="peca">Peça</option>
           <option value="tipo-componente">Tipo de componente</option>
           <option value="nome-doador">Nome do doador</option>
@@ -103,22 +104,35 @@
     </section>
 
     <section class="campo-inicial">
-      <div class="filtro-doacoes">
-        <ul class="titulo-doacoes">
-          <li class="texto-doacoes">Peça</li>
-          <li class="texto-doacoes">Tipo de componente</li>
-          <li class="texto-doacoes">Nome do doador</li>
-          <li class="texto-doacoes">Email</li>
-          <li class="texto-doacoes">Qtd. Total</li>
-          <li class="texto-doacoes">Vistoria</li>
+      <div class="fundo-doacoes">
+        <ul class="titulo-tabela">
+          <li class="tabela">Peça</li>
+          <li class="tabela">Tipo de componente</li>
+          <li class="tabela">Nome do doador</li>
+          <li class="tabela">Email</li>
+          <li class="tabela">Qtd. Total</li>
+          <li class="tabela">Vistoria</li>
+        </ul>
+
+        <ul class="itens">
+          <li class="conteudo">
+            <img src="./img/placa-de-video.svg" id="placa-de-video" alt="Imagem de uma placa de vídeo">
+            <p class="nome-peca">Placa de vídeo</p>
+            <button class="tipo">Interno</button>
+            <p class="nome">Giovana</p>
+            <p class="email">giovana@gmail.com</p>
+            <p class="qtd-total">2</p>
+            <button class="vistoria">
+             <img src="./img/check.svg" alt="">
+              Realizada
+            </button>
+          </li>
+          <li class="conteudo"></li>
+          <li class="conteudo"></li>
+          <li class="conteudo"></li>
         </ul>
       </div>
     </section>
-
-    <div class="fundo-doacoes">
-      <h1>5</h1>
-    </div>
-    
   </main>
 
   <script src="./js/sidebar.js"></script>

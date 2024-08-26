@@ -28,12 +28,14 @@
   display: flex;
   flex-direction: row;
   gap: 3em;
+  margin-left: 150px;
 }
 
 .grupo2 {
   display: flex;
   flex-direction: row;
   margin-top: 3em;
+  margin-left: 150px;
   gap: 1em;
 }
 
@@ -49,7 +51,8 @@
 }
 
 input {
-  background-color: rgba(217, 217, 217, 0.8);
+  background-color: var(--branco);
+  font-family: "Poppins-regular";
   width: 15em;
   height: 2em;
   margin-top: 5px;
@@ -65,19 +68,23 @@ input {
 }
 
 #select-telefone {
-  background-color: rgba(217, 217, 217, 0.8);
+  background-color: var(--branco);
+  font-family: "Poppins-regular";
   width: 3em;
   height: 2em;
+  padding: 5px;
   border: none;
   border-radius: 10px;
   outline: none;
 }
 
 #select-peca {
-  background-color: rgba(217, 217, 217, 0.8);
+  background-color: var(--branco);
+  font-family: "Poppins-regular";
   width: 15em;
   height: 2em;
   margin-top: 5px;
+  padding: 5px;
   border: none;
   border-radius: 10px;
   outline: none;
@@ -89,11 +96,8 @@ input {
 }
 
 #search {
-  padding: 5px;
-}
-
-#search::placeholder {
   font-family: "Poppins-regular";
+  padding: 5px;
 }
 
 .icon-add {
@@ -103,10 +107,12 @@ input {
 }
 
 #tipo-componente {
-  background-color: rgba(217, 217, 217, 0.8);
+  background-color: var(--branco);
+  font-family: "Poppins-regular";
   width: 15em;
   height: 2em;
   margin-top: 5px;
+  padding: 5px;
   border: none;
   border-radius: 10px;
   outline: none;
@@ -121,10 +127,12 @@ input {
   display: flex;
   flex-direction: column;
   margin-top: 4em;
+  margin-left: 150px;
 }
 
 #descricao-peca {
-  background-color: rgba(217, 217, 217, 0.8);
+  background-color: var(--branco);
+  font-family: "Poppins-regular";
   border: none;
   outline: none;
   border-radius: 15px;
@@ -132,7 +140,7 @@ input {
   min-width: 40em;
   max-height: 15em;
   min-height: 15em;
-  padding: 0.5em;
+  padding: 10px;
   margin-top: 1em;
   resize: none;
 }

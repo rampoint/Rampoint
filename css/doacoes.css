@@ -87,6 +87,7 @@ option[disabled] {
 .conteudo {
   display: flex;
   flex-direction: row;
+  gap: 5em;
 }
 
 #placa-de-video {
@@ -95,7 +96,7 @@ option[disabled] {
 
 .nome-peca {
   font-family: "Blinker-semibold";
-  margin: 5px;
+  margin: 0.5em -4em;
 }
 
 .tipo {
@@ -103,7 +104,37 @@ option[disabled] {
   height: 2em;
   font-family: "Blinker-regular";
   background-color: #FEE333;
+  border: none;
   border-radius: 15px;
-  margin-left: 4em;
+  margin: 0.5em 4em;
   text-align: center;
+}
+
+.nome {
+  font-family: "Blinker-semibold";
+  margin: 0.5em 5em;
+}
+
+.email {
+  font-family: "Blinker-semibold";
+  margin: 0.5em -3em;
+}
+
+.qtd-total {
+  font-family: "Blinker-semibold";
+  margin: 0.5em 5em;
+}
+
+.vistoria {
+  width: 7em;
+  height: 2em;
+  font-family: "Blinker-regular";
+  background-color: #ECFDF3;
+  border: none;
+  border-radius: 15px;
+  margin: 0.5em -2em;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }

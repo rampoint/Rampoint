@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/doacoes.css">
+  <link rel="stylesheet" href="./css/sidebar.css">
+  <title>Doações</title>
+
+  <link rel="shortcut icon" href="./img/rostoCirculo.png" type="image/x-icon">
+
+  <!-- icon -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <aside class="sidebar">
+    <div class="top">
+      <div class="logo">
+        <img src="./img/logo.svg" class="imagem-logo" alt="">
+      </div>
+      <img src="./img/seta.svg" id="btn" alt="">
+    </div>
+
+    <nav>
+      <ul class="links">
+        <li>
+          <div class="user">
+            <img src="./img/perfilADM.svg" class="foto-perfil" alt="Foto de perfil do usuário" />
+            <p class="nome-usuario">Usuário</p>
+          </div>
+        </li>
+        <li>
+          <a href="../dashboard-adm/dashboard.html">
+            <i class="bx bx-grid-alt"></i>
+            <span class="nav-item">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="../add-doacoes-adm/add-doacoes.html">
+            <i class="bx bx-list-plus"></i>
+            <span class="nav-item">Adicionar doações</span>
+          </a>
+        </li>
+        <li>
+          <a href="../pagina-doacoes-adm/doacoes.html">
+            <i class="bx bx-spreadsheet"></i>
+            <span class="nav-item">Doações</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-list-check"></i>
+            <span class="nav-item">Vistoria</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-time-five"></i>
+            <span class="nav-item">Histórico</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-bell"></i>
+            <span class="nav-item">Notificações</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-cog"></i>
+            <span class="nav-item">Configurações</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="sair">
+            <i class="bx bx-log-out"></i>
+            <span class="nav-item">Sair</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main class="main-content">
+    <header class="fundo-titulo">
+      <h1 class="titulo-pagina">Doações</h1>
+    </header>
+
+    <section class="campo-titulo">
+      <h2 class="titulo-inicial">Doações registradas</h2>
+      <div class="btn">
+        <select name="filtro" id="btn-filtrar">
+          <option value="" disabled selected class="placeholder">Filtrar</option>
+          <option value="peca">Peça</option>
+          <option value="tipo-componente">Tipo de componente</option>
+          <option value="nome-doador">Nome do doador</option>
+          <option value="email">Email</option>
+          <option value="qtd-total">Qtd. Total</option>
+          <option value="realizada">Realizada</option>
+          <option value="pendente">Pendente</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="campo-inicial">
+      <div class="fundo-doacoes">
+        <ul class="titulo-tabela">
+          <li class="tabela">Peça</li>
+          <li class="tabela">Tipo de componente</li>
+          <li class="tabela">Nome do doador</li>
+          <li class="tabela">Email</li>
+          <li class="tabela">Qtd. Total</li>
+          <li class="tabela">Vistoria</li>
+        </ul>
+
+        <ul class="itens">
+          <li class="conteudo">
+            <img src="./img/placa-de-video.svg" id="placa-de-video" alt="Imagem de uma placa de vídeo">
+            <p class="nome-peca">Placa de vídeo</p>
+            <button class="tipo">Interno</button>
+            <p class="nome">Giovana</p>
+            <p class="email">giovana@gmail.com</p>
+            <p class="qtd-total">2</p>
+            <button class="vistoria">
+             <img src="./img/check.svg" alt="">
+              Realizada
+            </button>
+          </li>
+          <li class="conteudo"></li>
+          <li class="conteudo"></li>
+          <li class="conteudo"></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <script src="./js/sidebar.js"></script>
+</body>
+
+</html>

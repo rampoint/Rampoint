@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/sidebar.css" />
+  <link rel="stylesheet" href="./css/add-doacoes.css" />
+  <title>Adicionar doações</title>
+
+  <link rel="shortcut icon" href="./img/rostoCirculo.png" type="image/x-icon" />
+
+  <!-- icon -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <aside class="sidebar">
+    <div class="top">
+      <div class="logo">
+        <img src="./img/logo.svg" class="imagem-logo" alt="" />
+      </div>
+      <img src="./img/seta.svg" id="btn" alt="" />
+    </div>
+
+    <nav>
+      <ul class="links">
+        <li>
+          <div class="user">
+              <img src="./img/perfilADM.svg" class="foto-perfil" alt="Foto de perfil do usuário" />
+              <p class="nome-usuario">Usuário</p>
+          </div>
+        </li>
+        <li>
+          <a href="../dashboard-adm/dashboard.html">
+            <i class="bx bx-grid-alt"></i>
+            <span class="nav-item">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="../add-doacoes-adm/add-doacoes.html">
+            <i class="bx bx-list-plus"></i>
+            <span class="nav-item">Adicionar doações</span>
+          </a>
+        </li>
+        <li>
+          <a href="../pagina-doacoes-adm/doacoes.html">
+            <i class="bx bx-spreadsheet"></i>
+            <span class="nav-item">Doações</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-list-check"></i>
+            <span class="nav-item">Vistoria</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-time-five"></i>
+            <span class="nav-item">Histórico</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-bell"></i>
+            <span class="nav-item">Notificações</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-cog"></i>
+            <span class="nav-item">Configurações</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="sair">
+            <i class="bx bx-log-out"></i>
+            <span class="nav-item">Sair</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main class="main-content">
+    <header class="fundo-titulo">
+      <h1 class="titulo-pagina">Adicionar doações</h1>
+    </header>
+
+    <section class="campo-titulo">
+      <h2 class="titulo-inicial">Informações gerais</h2>
+    </section>
+
+    <section class="campo-inicial">
+      <form action="" class="form-doacoes">
+        <div class="grupo1">
+          <div class="campo-form">
+            <label for="nome" id="nome" class="titulo-form">Nome Completo</label>
+            <input type="name">
+          </div>
+
+          <div class="campo-form">
+            <label for="email" id="email" class="titulo-form">Email</label>
+            <input type="email">
+          </div>
+
+          <div class="campo-form">
+            <label for="telefone" id="telefone" class="titulo-form">Telefone</label>
+            <div class="select-telefone">
+              <select name="select-telefone" id="select-telefone">
+                <option value="">11</option>
+              </select>
+              <input type="tel">
+            </div>
+          </div>
+        </div>
+
+        <div class="grupo2">
+          <div class="campo-form">
+            <label for="nome-peca" class="titulo-form">Nome da(s) peça(s)</label>
+            <div class="select-peca">
+              <input type="search" id="search" placeholder="Buscar por peça">
+              <img src="./img/add-peca.svg" class="icon-add" alt="Ícone para adicionar mais peças">
+            </div>
+
+          </div>
+
+          <div class="campo-form">
+            <label for="qtd-peca" class="titulo-form">Qtd. de peça(s)</label>
+            <input type="number">
+          </div>
+
+          <div class="campo-form">
+            <label for="componente" class="titulo-form">Tipo de componente</label>
+            <select name="tipo-componente" id="tipo-componente">
+              <option value="interno">Interno</option>
+              <option value="periferico">Periférico</option>
+              <option value="estrutura">Estrutura</option>
+              <option value="resfriamento">Resfriamento</option>
+            </select>
+          </div>
+
+          <div class="campo-form">
+            <label for="data" class="titulo-form">Data</label>
+            <input type="date" class="data">
+          </div>
+          <div class="campo-form">
+            <label for="hora" class="titulo-form">Hora</label>
+            <input type="time" class="hora">
+          </div>
+        </div>
+
+        <div class="campo-descricao">
+          <label for="descricao" class="titulo-form">Descrição:</label>
+          <textarea name="descricao-peca" id="descricao-peca" cols="10" rows="15"></textarea>
+        </div>
+
+        <div class="botoes">
+          <button class="btn-salvar">Salvar</button>
+          <button class="btn-cancelar">Cancelar</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <script src="./js/sidebar.js"></script>
+</body>
+
+</html>

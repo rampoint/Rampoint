@@ -1,0 +1,176 @@
+@import url(../css/font.css);
+@import url(../css/cores.css);
+
+.campo-titulo {
+  margin: 100px 50px 25px 50px;
+}
+
+.titulo-inicial {
+  font-family: "Blinker-semibold";
+  color: #2a55c2;
+}
+
+/* conteudo da pagina */
+.campo-inicial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0.5em 50px 0 50px;
+}
+
+.subtitulo {
+  font-family: "Blinker-semibold";
+  color: #121212;
+}
+
+.grupos {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.grafico-coluna {
+  background-color: #fff;
+  width: 800px;
+  height: 500px;
+  border-radius: 15px;
+  margin-top: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* notificacoes */
+.notificacoes {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5em;
+}
+
+.titulo-notificacoes {
+  font-family: "Blinker-semibold";
+  color: #121212;
+  position: relative;
+  bottom: 1em;
+}
+
+.fundo-notificacoes {
+  background-color: #fff;
+  width: 35em;
+  height: 16em;
+  border-radius: 15px;
+  margin-top: 0;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.grupo-mensagem {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 15px;
+}
+
+.linha {
+  background: rgba(128, 128, 128, 0.25);
+  width: 30em;
+  height: 1px;
+  margin: 0 auto;
+}
+
+.coluna-mensagem {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 15px;
+}
+
+.titulo-mensagem,
+.mensagem,
+.horario {
+  font-family: "Blinker-regular";
+  color: #121212;
+}
+
+.mensagem {
+  margin-top: 5px;
+}
+
+.span-mensagem {
+  color: rgba(0, 0, 0, 0.67);
+}
+
+.horario {
+  position: relative;
+  top: 1.5em;
+  left: 6em;
+}
+
+/* doacoes */
+.doacoes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tabela-doadores {
+  background-color: #fff;
+  width: 35em;
+  height: 5em;
+  border-radius: 15px;
+  margin: 14px 0 20px 0;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.titulo-doadores {
+  font-family: "Blinker-semibold";
+  color: #121212;
+  position: relative;
+  top: 1.5em;
+  right: 11em;
+}
+
+.link-doacoes {
+  font-family: "Poppins-regular";
+  color: #2a55c2;
+  font-size: 14px;
+  position: relative;
+  top: 0.5em;
+  left: 20em;
+}
+
+.link-doacoes:hover {
+  cursor: pointer;
+}
+
+.titulo-tabela {
+  font-family: "Poppins-regular";
+  color: #111;
+  font-size: 15px;
+  margin: 15px;
+}
+
+th,
+td {
+  padding: 10px 15px;
+  text-align: left;
+}
+
+th {
+  font-family: "Poppins-regular";
+  font-weight: 100;
+  color: #121212;
+  position: relative;
+}
+
+td {
+  font-family: "Poppins-regular";
+  font-weight: 100;
+  font-size: 0.9em;
+  color: #808080;
+  position: relative;
+}
+
+#coluna-data {
+  cursor: pointer;
+}
+
+tbody tr:hover {
+  cursor: pointer;
+}

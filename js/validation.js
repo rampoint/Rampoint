@@ -18,7 +18,14 @@
 
         // Initialize Firebase
         const app = firebase.initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        auth.languageCode = 'it'
+        var provider = new firebase.auth.GoogleAuthProvider();
 
+        const googleButton = document.getElementById('google');
+        googleButton.addEventListener('click', function(){
+            alert(5)
+        })
 
 firebase.auth().onAuthStateChanged((user) => {
     if(user){

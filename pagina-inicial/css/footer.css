@@ -77,7 +77,7 @@ h3,
   margin-right: 10px;
 }
 
-#email::placeholder {
+#email {
   color: var(--cinza);
   font-family: "Poppins-bold";
 }

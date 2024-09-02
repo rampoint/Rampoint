@@ -6,10 +6,27 @@ function register(){
   firebase.auth().createUserWithEmailAndPassword(
     email,senha
   ).then(() =>{
-    window.location.href = "../../pagina-inicial/inicial.html"
+    const uid = userCredential.user.uid;
+    console.log("Usuário criado com UID:", uid);
+    saveUserData(uid, email);
+    window.location.href = "../../pagina-inicial/inicial.html";
   }).catch(error => {
     alert(getErrorMessage(error))
   })
+}
+
+function saveUserData() {
+  const userRef = database.ref('users/' + uid);
+  userRef.set({
+      email: email,
+      otherData: "Alguma informação adicional"
+  })
+  .then(() => {
+      console.log("Dados do usuário salvos com sucesso!");
+  })
+  .catch((error) => {
+      console.error("Erro ao salvar dados do usuário:", error);
+  });
 }
 
 function getErrorMessage(error) {

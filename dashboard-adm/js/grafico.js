@@ -1,27 +1,38 @@
-const QuickChart = require('quickchart-js');
+google.charts.load('current', {'packages':['bar']});
+google.charts.setOnLoadCallback(drawChart);
 
-const chart = new QuickChart();
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+    ['', '', '', ''],
+    ['Jan', 1000, 400, 0],
+    ['Fev', 1170, 460, 0],
+    ['Mar', 660, 1120, 0],
+    ['Abr', 1030, 540, 0]
+  ]);
 
-chart.setWidth(500)
-chart.setHeight(300);
+  var options = {
+    chart: {
+      title: '',
+      subtitle: '',
+    },
+    bars: 'vertical',
+    vAxis: {format: 'decimal'},
+    width: 800,
+    height: 450,
+    colors: ['#1b9e77', '#d95f02', '#7570b3']
+  };
 
-// Config can be set as string or as a Javascript object
-chart.setConfig(`{
-  type: 'bar',
-  data: {
-    labels: ['Q1', 'Q2', 'Q3', 'Q4'],
-    datasets: [{
-      label: 'Users',
-      data: [50, 60, 70, 180]
-    }]
+  var chart = new google.charts.Bar(document.getElementById('chart_div'));
+
+  chart.draw(data, google.charts.Bar.convertOptions(options));
+
+  var btns = document.getElementById('btn-group');
+
+  btns.onclick = function (e) {
+
+    if (e.target.tagName === 'BUTTON') {
+      options.vAxis.format = e.target.id === 'none' ? '' : e.target.id;
+      chart.draw(data, google.charts.Bar.convertOptions(options));
+    }
   }
-}`);
-
-// Print the chart URL
-console.log(chart.getUrl());
-
-// Get the image...
-const image = await chart.toBinary();
-
-// Or write it to a file
-chart.toFile('chart.png');
+}

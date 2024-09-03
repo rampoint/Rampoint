@@ -110,9 +110,15 @@
         <h3 class="subtitulo">Tendência mensal de doações</h3>
         <div class="grupos">
           <div class="grafico-coluna">
-            <img
-              src="https://quickchart.io/chart?width=500&height=300&chart={type:'bar',data:{labels:['January','February', 'March','April', 'May'], datasets:[{label:'Dogs',data:[50,60,70,180,190]},{label:'Cats',data:[100,200,300,400,500]}]}}"
-            />
+            <script
+              type="text/javascript"
+              src="https://www.gstatic.com/charts/loader.js"
+            ></script>
+            <div id="chart_div"></div>
+            <br />
+            <div id="btn-group">
+              <button class="button button-blue" id="short">Short</button>
+            </div>
           </div>
 
           <aside class="notificacoes">
@@ -196,6 +202,7 @@
     </main>
 
     <script src="./js/sidebar.js"></script>
-    <script src="./js/setaData.js"></script>
+    <script defer src="./js/setaData.js"></script>
+    <script src="./js/grafico.js"></script>
   </body>
 </html>

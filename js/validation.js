@@ -19,11 +19,11 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth();
-const database = firebase.database();
+
 
 firebase.auth().onAuthStateChanged((user) => {
   if (user) {
-    window.location.href = "../../pagina-inicial/inicial.html";
+    // window.location.href = "../../pagina-inicial/inicial.html";
   }
 });
 

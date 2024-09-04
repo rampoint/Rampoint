@@ -20,7 +20,7 @@ connectedRef.on("value", (snap) => {
       console.log("Usuário criado com UID:", uid);
       saveUserData(uid, email);
       // Descomente a linha abaixo quando estiver pronto para redirecionar
-      // window.location.href = "../../pagina-inicial/inicial.html";
+      window.location.href = "../../pagina-inicial/inicial.html";
     })
     .catch((error) => {
       alert(getErrorMessage(error));

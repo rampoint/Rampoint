@@ -330,7 +330,7 @@ body {
 
 /* final campo perfil */
 
-/* começo modal perfil */
+/* começo estilo modal perfil */
 
 .modalBtn-perfil {
   font-family: "Poppins-semibold";
@@ -346,53 +346,161 @@ body {
 
 .titulo-editar {
   font-family: "Blinker-extrabold";
-  color:var(--preto);
+  color: var(--preto);
   margin: 0 auto 35px auto;
 }
 
 .modal-perfil {
-  display: none; 
+  display: none;
   position: fixed;
-  z-index: 1; 
+  z-index: 1;
   left: 0;
   top: 0;
-  width: 100%; 
-  height: auto;
-  overflow: auto;
-  background-color: rgba(0,0,0,0.4);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
-.modal-perfil .content-perfil {
+.content-perfil {
   background-color: var(--branco);
-  margin: 5% auto; 
+  margin: auto;
+  margin-top: 7em;
   padding: 20px;
-  border-radius: 35px;
-  width: 70%; 
+  border-radius: 30px;
+  width: 55%;
+  height: auto; 
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between; 
+  position: relative;
 }
 
 .icon-x {
-  position: relative;
-  left: 30em;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
 }
 
 .info-perfil {
   background-color: var(--cinza-claro);
   border-radius: 35px;
-  width: 55em;
-  height: 30em;
+  width: 95%;
+  height: 16em;
+  padding: 20px;
   display: flex;
   flex-direction: row;
+  gap: 15px;
+  overflow: hidden;
+}
+
+.usuario {
+  position: relative;
+  top: 2em;
+}
+
+#lapis {
+  position: relative;
+  left: 4em;
+  bottom: 1.5em;
 }
 
 .campo-form {
   display: flex;
   flex-direction: column;
+  gap: 5px;
 }
 
-/* final modal editar perfil */
+.campo-form label {
+  font-family: "Poppins-medium";
+  color: var(--preto);
+}
+
+input::placeholder {
+  font-family: "Poppins-semibold";
+}
+
+#nome, #email, #senha, #nascimento, #genero {
+  background-color: var(--branco);
+  width: 15em;
+  border: none;
+  border-radius: 15px;
+  padding: 5px 10px;
+  margin: 0 15px 0 0;
+}
+
+.input-telefone select {
+  background-color: var(--branco);
+  width: 4em;
+  border: none;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+#telefone {
+  background-color: var(--branco);
+  width: 11.5em;
+  border: none;
+  border-radius: 15px;
+  padding: 5px;
+  margin-right: 17px;
+}
+
+/* #genero {
+  background-color: var(--branco);
+  width: 10em;
+  border: none;
+  border-radius: 15px;
+  padding: 5px;
+} */
+
+.grupo1, .grupo2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.grupo2 {
+  margin-top: 35px;
+}
+
+.input-telefone {
+  display: flex;
+  gap: 5px;
+}
+
+.botoes {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  bottom: 5em;
+}
+
+.excluir-conta {
+  font-family: "Poppins-bold";
+  font-size: 14px;
+  color: var(--vermelho);
+  text-decoration: none;
+  position: relative;
+  top: 2em;
+  right: 18em;
+}
+
+.btn-salvar {
+  font-family: "Poppins-semibold";
+  width: 10em;
+  padding: 10px 20px;
+  background-color: var(--verde);
+  color: var(--branco);
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.15);
+  position: relative;
+  top: 1em;
+  left: 14em;
+}
+/* final estilo modal perfil */
 
 /* começo campo conquistas */
 

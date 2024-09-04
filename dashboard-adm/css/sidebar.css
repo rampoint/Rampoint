@@ -1,0 +1,267 @@
+@import url(../css/font.css);
+@import url(../css/cores.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e4e9f7;
+  overflow: hidden;
+}
+
+.imagem-logo {
+  width: 150px;
+  height: 80px;
+}
+
+.logo {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar {
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 80px;
+  background-color: #fff;
+  padding: 0.4rem 0.8rem;
+  transition: all 0.5s ease;
+  overflow-y: auto;
+  scrollbar-width: none;
+  position: fixed;
+  z-index: 10;
+}
+
+.sidebar.active ~ .main-content {
+  left: 280px;
+  width: calc(100% - 150px);
+}
+
+.sidebar.active {
+  width: 280px;
+}
+
+.sidebar #btn {
+  background-color: var(--azul);
+  border-radius: 50px;
+  width: 2em;
+  height: 2em;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 1.5em;
+  left: 30%;
+  transform: translateX(-50%);
+  transform: rotate(180deg);
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.sidebar.active #btn {
+  left: 14.5em;
+  transform: rotate(0);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+.sidebar .top .logo {
+  color: #000;
+  display: flex;
+  height: 50px;
+  width: 100%;
+  align-items: center;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.top {
+  margin-top: 10px;
+}
+
+.logo {
+  margin-left: 10px;
+}
+
+.user {
+  width: 50%;
+  position: relative;
+  bottom: 0.5em;
+  opacity: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sidebar.active .user {
+  opacity: 1;
+}
+
+.sidebar .user {
+  opacity: 1;
+  position: relative;
+  right: 0.5em;
+}
+
+.foto-perfil {
+  height: 50%;
+  margin: 5px;
+  padding: 5px;
+}
+
+.sidebar.active  .foto-perfil {
+  height: 50%;
+  margin: 5px;
+  padding: 5px;
+  position: relative;
+  left: 0;
+}
+
+.nome-usuario {
+  font-family: "Poppins-semibold";
+  margin-left: 15px;
+  opacity: 0;
+}
+
+.sidebar.active .nome-usuario {
+  opacity: 1;
+}
+
+#ram,
+#point {
+  font-family: "Batangas";
+  font-size: 34px;
+}
+
+#ram {
+  color: var(--azul);
+}
+
+#point {
+  color: var(--preto);
+}
+
+.sidebar.active .top .logo {
+  opacity: 1;
+}
+
+.links {
+  position: relative;
+  top: 1em;
+}
+
+.sidebar a {
+  margin: 20px 0;
+}
+
+.sidebar ul li {
+  font-family: "Poppins-regular";
+  position: relative;
+  list-style-type: none;
+  height: 50px;
+  width: 90%;
+  margin: 0.8rem auto;
+  line-height: 50px;
+}
+
+.sidebar.active ul li a {
+  color: #707070;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 0.8rem;
+  width: 50px;
+  height: 50px;
+  width: 100%;
+}
+
+.sidebar ul li a {
+  color: #707070;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 0.8rem;
+  width: 50px;
+  height: 50px;
+  width: 100%;
+}
+
+.sidebar.active li a:hover {
+  background-color: var(--azul);
+  color: var(--branco);
+  width: 100%;
+}
+
+.links li a:hover {
+  background-color: var(--azul);
+  color: var(--branco);
+  width: 100%;
+}
+
+.sidebar ul li a i {
+  min-width: 50px;
+  text-align: center;
+  height: 50px;
+  border-radius: 12px;
+  line-height: 50px;
+}
+
+.sidebar .nav-item {
+  font-family: "Poppins-regular";
+  font-size: 15px;
+  opacity: 0;
+}
+
+.sidebar.active .nav-item {
+  opacity: 1;
+}
+
+.sidebar .sair {
+  margin-top: 1em;
+}
+
+.main-content {
+  position: relative;
+  background-color: #e4e9f7;
+  min-height: 85vh;
+  top: 0;
+  left: 80px;
+  transition: all 0.5s ease;
+  width: calc(100% - 90px);
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.fundo-titulo {
+  background-color: #fff;
+  width: 95vw;
+  height: 5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.titulo-pagina {
+  font-family: "Poppins-semibold";
+  margin: 15px 30px;
+}
+
+.usuario {
+  height: auto;
+  margin: 10px 55px;
+}

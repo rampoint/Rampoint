@@ -269,7 +269,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 60em;
+  width: 50em;
   margin: auto;
   justify-content: center;
 }
@@ -378,17 +378,20 @@ body {
   justify-content: center;
   position: relative;
   overflow: hidden;
-  width: 100%;
+  width: 60em;
   flex-wrap: wrap;
 }
 
 .sub-buttons-wrapper {
   display: flex;
+  align-items: center;
+  justify-content: center;
   transition: transform 0.3s ease;
 }
 
 .sub-buttons {
   display: flex;
+  width: 100%;
   flex-wrap: wrap;
   gap: 10px;
   justify-content: center;
@@ -644,10 +647,10 @@ body {
 .p-gabinete {
   font-family: "Poppins-regular";
   color: var(--preto);
-  width: 50%;
+  width: 45%;
   position: relative;
   top: 1em;
-  left: 14em;
+  left: 12.3em;
   text-align: start;
 }
 
@@ -708,7 +711,7 @@ body {
   width: 50%;
   position: relative;
   top: 1em;
-  left: 14em;
+  left: 12.3em;
   text-align: start;
 }
 
@@ -720,7 +723,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: end;
-  margin-top: 25px;
+  margin-top: 35px;
 }
 
 /* final estrutura baias de drive */
@@ -770,7 +773,7 @@ body {
   width: 50%;
   position: relative;
   top: 1em;
-  left: 14em;
+  left: 12.3em;
   text-align: start;
 }
 
@@ -828,7 +831,7 @@ body {
   width: 50%;
   position: relative;
   top: 1em;
-  left: 14em;
+  left: 12.3em;
   text-align: start;
 }
 
@@ -886,7 +889,7 @@ body {
   width: 50%;
   position: relative;
   top: 0;
-  left: 14em;
+  left: 12.3em;
   text-align: start;
 }
 
@@ -1001,11 +1004,12 @@ body {
 .p-placa-mae {
   font-family: "Poppins-regular";
   color: var(--preto);
-  width: 50%;
+  width: 53%;
   position: relative;
   top: 0;
-  left: 14em;
+  left: 13em;
   text-align: start;
+  font-size: 15px;
 }
 
 #content7 .ramcoin {
@@ -1062,7 +1066,7 @@ body {
   width: 50%;
   position: relative;
   top: 0;
-  left: 14em;
+  left: 12.3em;
   text-align: start;
 }
 
@@ -1120,7 +1124,7 @@ body {
   width: 50%;
   position: relative;
   top: 0;
-  left: 14em;
+  left: 12.3em;
   text-align: start;
 }
 
@@ -1178,7 +1182,7 @@ body {
   width: 50%;
   position: relative;
   top: 0;
-  left: 14em;
+  left: 12.3em;
   text-align: start;
 }
 
@@ -1236,7 +1240,7 @@ body {
   width: 50%;
   position: relative;
   top: 0;
-  left: 14em;
+  left: 12.3em;
   text-align: start;
 }
 
@@ -1287,16 +1291,16 @@ body {
 .titulo-monitor {
   position: relative;
   left: 9em;
-  bottom: 1.5em;
+  bottom: 1em;
 }
 
 .p-monitor {
   font-family: "Poppins-regular";
   color: var(--preto);
-  width: 55%;
+  width: 50%;
   position: relative;
   top: 0;
-  left: 14em;
+  left: 12.3em;
   text-align: start;
 }
 
@@ -1345,16 +1349,16 @@ body {
 .titulo-teclado {
   position: relative;
   left: 9em;
-  bottom: 1.5em;
+  bottom: 1em;
 }
 
 .p-teclado {
   font-family: "Poppins-regular";
   color: var(--preto);
-  width: 55%;
+  width: 50%;
   position: relative;
   top: 0;
-  left: 14em;
+  left: 12.3em;
   text-align: start;
 }
 
@@ -1403,7 +1407,7 @@ body {
 .titulo-mouse {
   position: relative;
   left: 9em;
-  bottom: 1.5em;
+  bottom: 1em;
 }
 
 .p-mouse {
@@ -1412,7 +1416,7 @@ body {
   width: 50%;
   position: relative;
   top: 0;
-  left: 14em;
+  left: 12.3em;
   text-align: start;
 }
 
@@ -1470,7 +1474,7 @@ body {
   width: 50%;
   position: relative;
   top: 0;
-  left: 14em;
+  left: 12.3em;
   text-align: start;
 }
 
@@ -1530,7 +1534,7 @@ body {
   width: 50%;
   position: relative;
   top: 0;
-  left: 14em;
+  left: 12.3em;
   text-align: start;
 }
 
@@ -1579,7 +1583,7 @@ body {
 .titulo-dissipadores {
   position: relative;
   left: 9em;
-  bottom: 1em;
+  bottom: 0.7em;
 }
 
 .p-dissipadores {
@@ -1588,7 +1592,7 @@ body {
   width: 50%;
   position: relative;
   top: 0;
-  left: 14em;
+  left: 12.3em;
   text-align: start;
 }
 
@@ -1637,7 +1641,7 @@ body {
 .titulo-filtro {
   position: relative;
   left: 9em;
-  bottom: 2.5em;
+  bottom: 2em;
 }
 
 .p-filtro {
@@ -1646,7 +1650,7 @@ body {
   width: 50%;
   position: relative;
   top: 0;
-  left: 14em;
+  left: 12.3em;
   text-align: start;
 }
 
@@ -1695,7 +1699,7 @@ body {
 .titulo-cooler {
   position: relative;
   left: 9em;
-  bottom: 1.5em;
+  bottom: 1.3em;
 }
 
 .p-cooler {
@@ -1704,7 +1708,7 @@ body {
   width: 50%;
   position: relative;
   top: 0;
-  left: 14em;
+  left: 12.3em;
   text-align: start;
 }
 
@@ -1721,3 +1725,377 @@ body {
 /* final cooler */
 /* final imagem resfriamento */
 /* final carrossel-materiais */
+
+@media (min-width: 320px) and (max-width: 421px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  /* imagem inicial */
+  .imagem-fundo {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    height: 20em;
+  }
+
+  .img-fundo {
+    display: none;
+  }
+
+  #titulo-inicial {
+    font-size: 3em;
+    text-align: center;
+    width: 85%;
+    margin: 0 0 50px 0;
+  }
+
+  #texto-inicial {
+    width: 75%;
+    text-align: center;
+    margin-top: 3em;
+  }
+
+  .botao {
+    display: none;
+  }
+
+  .interno-inicial {
+    width: 5%;
+    position: relative;
+    bottom: 3em;
+    right: 9em;
+  }
+
+  .brilho-amarelo {
+    width: 2%;
+    position: relative;
+    bottom: 2em;
+    right: 1em;
+  }
+
+  .monitor {
+    width: 5%;
+    position: relative;
+    top: 11em;
+    right: 9em;
+  }
+
+  .brilho-verde {
+    width: 1%;
+    position: relative;
+    top: 3em;
+    right: 11em;
+  }
+
+  .brilho-azul {
+    width: 1%;
+    position: relative;
+    top: 5em;
+    right: 10em;
+  }
+
+  .brilho-roxo {
+    width: 1%;
+    position: relative;
+    top: 5em;
+    right: 10em;
+  }
+
+  .teclado {
+    width: 5%;
+    position: relative;
+    bottom: 13em;
+    left: 9em;
+  }
+
+  .brilho-vermelho {
+    width: 1%;
+    position: relative;
+    bottom: 5em;
+    left: 11em;
+  }
+
+  .brilho-amarelo2 {
+    display: none;
+  }
+
+  .icone-roxo {
+    width: 5%;
+    position: relative;
+    top: 2em;
+    left: 9em;
+  }
+  /* imagem inicial */
+
+  /* section */
+  #scrollTarget {
+    text-align: center;
+    margin-top: 5em;
+  }
+
+  #texto1 {
+    width: 80%;
+    margin: 0 3em;
+  }
+  /* section */
+
+  /* carrossel */
+  .carrossel-container {
+    width: 45%;
+    margin: 50px auto 100px auto;
+  }
+
+  .menu {
+    width: 20em;
+  }
+
+  .sub-buttons-container {
+    width: 30em;
+    flex-wrap: wrap;
+  }
+
+  .sub-buttons {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text-block {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 30%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 2px 8px 8px rgba(42, 85, 194, 0.15);
+    width: 300px;
+    z-index: 1;
+    text-align: center;
+  }
+
+  .texto-ramcoin {
+    font-size: 13px;
+    margin-left: 5px;
+  }
+
+  .ramcoin:hover .text-block {
+    display: block;
+  }
+
+  .qtd-ramcoin {
+    margin-right: 5px;
+  }
+
+  .circulo-estrutura {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-10%, -15%);
+    background: #9d4edd;
+    border-radius: 50%;
+    width: 15em;
+    height: 15em;
+    z-index: 1;
+  }
+
+  .circulo-internos {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-10%, -15%);
+    background: #f89701;
+    border-radius: 50%;
+    width: 15em;
+    height: 15em;
+    z-index: 1;
+  }
+
+  .circulo-perifericos {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-10%, -15%);
+    background: #2a55c2;
+    border-radius: 50%;
+    width: 15em;
+    height: 15em;
+    z-index: 1;
+  }
+
+  .circulo-resfriamento {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-10%, -15%);
+    background: #61d243;
+    border-radius: 50%;
+    width: 15em;
+    height: 15em;
+    z-index: 1;
+  }
+
+  .fundo-gabinete,
+  .fundo-baias,
+  .fundo-slots,
+  .fundo-organizador,
+  .fundo-painel,
+  .fundo-gpu,
+  .fundo-placa-mae,
+  .fundo-memoria-ram,
+  .fundo-hdd,
+  .fundo-psu,
+  .fundo-cpu,
+  .fundo-monitor,
+  .fundo-teclado,
+  .fundo-mouse,
+  .fundo-alto-falante,
+  .fundo-ventoinhas,
+  .fundo-dissipadores,
+  .fundo-filtro,
+  .fundo-cooler {
+    background-color: var(--branco);
+    width: 20em;
+    height: 22em;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .titulo-estrutura,
+  .titulo-internos,
+  .titulo-perifericos,
+  .titulo-resfriamento {
+    font-size: 16px;
+  }
+
+  .tipo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 20em;
+    z-index: 2;
+  }
+
+  /* começo estrutura gabinete */
+  .fundo-gabinete .tipo {
+    margin: 0;
+  }
+
+  .fundo-gabinete .estrutura {
+    width: 2em;
+    margin: 1em 0.5em 1em 10em;
+  }
+
+  .fundo-gabinete .titulo-estrutura {
+    margin-left: 5px;
+  }
+
+  .img-estrutura {
+    position: relative;
+    bottom: 3em;
+    left: 1em;
+    width: 15em;
+    height: 15em;
+  }
+
+  .titulo-gabinete {
+    position: relative;
+    bottom: 0.5em;
+  }
+
+  .textos-gabinete {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 6em;
+    bottom: 4em;
+  }
+
+  .p-gabinete {
+    font-family: "Poppins-regular";
+    color: var(--preto);
+    width: 50%;
+    position: relative;
+    top: 1em;
+    left: 14em;
+    text-align: start;
+  }
+
+  #content1 .ramcoin {
+    position: absolute;
+    bottom: 3em;
+    left: 37em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    margin-top: 25px;
+  }
+
+  /* final estrutura gabinete */
+  /* carrossel */
+
+  /* footer */
+  .footer-container {
+    width: 100%;
+    height: auto;
+    position: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .geral {
+    margin-top: 35px;
+    margin-left: 55px;
+  }
+
+  .redes-sociais,
+  .contato {
+    margin-top: 30px;
+    margin-left: 55px;
+  }
+
+  .footer-container .descricao-footer ul {
+    list-style-type: none;
+    padding: 0px 5px;
+  }
+
+  .descricao-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    width: 100%;
+  }
+
+  .email {
+    width: 200px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin: 5px 65px;
+  }
+
+  .footer-container .logo {
+    width: 100%;
+  }
+
+  .copyright {
+    margin: 5em 5em 0 5em;
+  }
+  /* footer */
+}

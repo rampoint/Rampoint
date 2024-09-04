@@ -32,21 +32,21 @@
                 <div class="telefone">
                     <label for="">Telefone</label>
                     <div class="grupo-telefone">
-                        <select name="telefone" id="telefone">
+                        <select name="telefone" id="telefone-select">
                             <option value="">+55</option>
                         </select>
 
-                        <input type="tel">
+                        <input type="tel" id="telefone" >
                     </div>
                 </div>
 
                 <div class="grupo2">
                     <div class="genero">
                         <label for="">Gênero</label>
-                        <select name="genero">
-                            <option value="">Feminino</option>
-                            <option value="">Masculino</option>
-                            <option value="">Prefiro não informar</option>
+                        <select id="genero" name="genero">
+                            <option value="feminino">Feminino</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="prifiro-nao-informar">Prefiro não informar</option>
                         </select>
                     </div>
 
@@ -99,7 +99,7 @@
                 <button id="recover-password" disabled="true">Esqueceu sua senha?</button>
                 <button id="entrar" type="button" onclick="login()" disabled="false">Entrar</button>
                 <div class="social-icons">
-                    <a href="#" class="icon"><img src="./img/google-Icon.svg" alt="Ícone Google"></a>
+                    <a href="#" id="google"  class="icon"><img src="./img/google-Icon.svg" alt="Ícone Google"></a>
                     <a href="#" class="icon"><img src="./img/facebook-icon.svg" alt="Ícone Facebook"></a>
                     <a href="#" class="icon"><img src="./img/linkedln-icon.svg" alt="Ícone Linkedln"></a>
                 </div>
@@ -127,10 +127,12 @@
     
     
 </body>
-<script src="js/script.js"></script>
-    <script type="module" src="js/firebase-init.js"></script>
+<script src="../js/script.js"></script>
+    <script type="module" src="../js/firebase-init.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-auth-compat.js"></script>
-    <script src="js/validation.js"></script>
-    <script src="js/register.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-database-compat.js"></script>
+    <script src="../js/validation.js"></script>
+    <script src="../js/register.js"></script>
+    
 </html>

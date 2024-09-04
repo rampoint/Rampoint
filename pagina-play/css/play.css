@@ -244,7 +244,7 @@ body {
   justify-content: center;
   margin-top: 2.5em;
   background-color: #c0d2ff;
-  width: 1415px;
+  /* width: 1415px; */
   height: 25em;
   padding: 2em;
 }
@@ -361,7 +361,7 @@ body {
   color: #f89701;
   font-size: 30px;
   position: relative;
-  top: 2em;
+  top: 1.5em;
 }
 
 .texto-dourado {
@@ -369,7 +369,7 @@ body {
   color: #f89701;
   font-size: 18px;
   position: relative;
-  top: 3em;
+  top: 2.5em;
 }
 
 .estrela-dourada {
@@ -383,10 +383,26 @@ body {
   width: 10%;
   position: relative;
   left: 9em;
-  top: 1em;
+  top: 0;
 }
 
-.texto-lojas {
+.modal-content-dourado .ramcoin {
+  margin: 15px 0;
+  position: relative;
+  top: 0;
+  left: 1.5em;
+}
+
+.modal-content-dourado .lojas {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  position: relative;
+  top: -1em;
+  left: 1em;
+}
+
+.modal-content-dourado .texto-lojas {
   font-family: "Poppins-bold";
   color: #f89701;
   margin: -20px 35px;
@@ -412,7 +428,7 @@ body {
   z-index: 2;
 }
 
-.curiosidade {
+.modal-content-dourado .curiosidade {
   height: 8em;
   background-color: #ffce1e;
   border-radius: 25px;
@@ -423,7 +439,7 @@ body {
   bottom: 2em;
 }
 
-.texto-curiosidade {
+.modal-content-dourado .texto-curiosidade {
   font-family: "Poppins-bold";
   color: #745f12;
   text-align: right;
@@ -506,7 +522,7 @@ body {
   padding: 10px;
   margin-right: 5em;
   position: relative;
-  bottom: 5em;
+  bottom: 8em;
 }
 
 .modal-content-vidro .texto-curiosidade {
@@ -522,7 +538,7 @@ body {
   width: 35%;
   position: relative;
   left: 3em;
-  bottom: 5em;
+  bottom: 7em;
   z-index: 2;
 }
 /* final modal vidro */
@@ -583,7 +599,7 @@ body {
   flex-direction: row;
   gap: 15px;
   position: relative;
-  bottom: 3em;
+  bottom: 2em;
   left: 1em;
 }
 
@@ -602,7 +618,7 @@ body {
   padding: 10px;
   margin-right: 5em;
   position: relative;
-  bottom: 0;
+  bottom: 2em;
 }
 
 .modal-content-golias .texto-curiosidade {
@@ -618,7 +634,7 @@ body {
   width: 35%;
   position: relative;
   left: 3em;
-  bottom: 0;
+  bottom: 2em;
   z-index: 2;
 }
 
@@ -1295,7 +1311,9 @@ body {
     display: flex;
     flex-direction: row;
     gap: 15px;
-    margin: 10px 15px;
+    position: relative;
+    bottom: 6em;
+    left: 1em;
   }
 
   .modal-content-dourado #loja {

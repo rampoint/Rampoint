@@ -59,7 +59,7 @@ body {
   text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.2);
   position: absolute;
   top: 24em;
-  right: 63em;
+  right: 55em;
 }
 
 #span-preto {
@@ -170,18 +170,110 @@ body {
   width: 70;
 }
 
+@media (min-width: 320px) and (max-width: 421px) {
+  .img-fundo {
+    width: 73em;
+    position: relative;
+    right: 17em;
+    margin-bottom: 12em;
+    z-index: -1;
+  }
 
-@media(max-width: 768px) {
-  
-  #titulo1 {
-    margin:10px 0px 10px 0px;
+  #titulo-inicial {
+    font-size: 3em;
+    width: 80%;
     text-align: center;
-    
-    
+    line-height: 0.9em;
+    position: absolute;
+    top: 8em;
+    left: 1em;
+    z-index: 1;
+  }
+  
+  #texto-inicial {
+    width: 75%;
+    line-height: 1.5em;
+    text-align: center;
+    position: absolute;
+    top: 31em;
+    right: 3em;
+  }
+
+  .lado-direito {
+    position: relative;
+    bottom: 43em;
+    left: -7.5em;
+  }
+  
+  .lado-esquerdo {
+    position: relative;
+    bottom: 30em;
+    left: 9.5em;
+  }
+
+  /* footer */
+  .footer-container {
+    width: 100%;
+    height: auto;
+    position: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logoBranca {
+    display: none;
+  }
+
+  .geral {
+    margin-left: 55px;
+  }
+
+  .redes-sociais,
+  .contato {
+    margin-top: 30px;
+    margin-left: 55px;
+  }
+
+  .footer-container .descricao-footer ul {
+    list-style-type: none;
+    padding: 0px 5px;
+  }
+
+  .descricao-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    width: 100%;
+  }
+
+  .email {
+    width: 200px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin: 0 55px;
+  }
+
+  #email {
+    height: 20px;
+  }
+
+  .footer-container .logo {
+    width: 100%;
+  }
+  /* footer */
+}
+
+@media (max-width: 768px) {
+  #titulo1 {
+    margin: 10px 0px 10px 0px;
+    text-align: center;
   }
 
   #texto1 {
-    margin:10px 0px 10px 0px;
+    margin: 10px 0px 10px 0px;
     text-align: center;
   }
 }
@@ -215,7 +307,6 @@ body {
   max-width: 80%;
   margin-right: 10px;
   font-family: "Poppins-bold";
-  color: var(--cinza);
 }
 
 #btn {
@@ -405,11 +496,12 @@ body {
 }
 
 #email {
+  font-family: "Poppins-semibold";
   background-color: var(--branco);
   border: none;
   outline: none;
   border-radius: 15px;
-  width: 40em;
+  width: 30em;
   padding: 0.5em;
   margin-top: 1em;
 }
@@ -434,10 +526,9 @@ body {
   font-size: 1em;
 }
 
-#feedback::placeholder {
+#feedback {
   font-family: "Poppins-semibold";
-  color: var(--cinza);
-  font-size: 1em;
+  color: var(--preto);
 }
 
 #btn-feedback {
@@ -470,6 +561,7 @@ body {
 
 .lista-suporte {
   margin-left: 10em;
+  margin-bottom: 3em;
 }
 
 #span-azul {

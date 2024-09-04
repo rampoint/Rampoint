@@ -1,23 +1,38 @@
 /* Dispositivos móveis pequenos (em pé) */
-@media (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 421px) {
 
-  /* Estilos aqui */
-  .footer-container {
-    width: 320px;
+   /* footer */
+   .footer-container {
+    width: 100%;
     height: auto;
     position: none;
+    display: flex;
+    flex-direction: column;
   }
 
-  .flor img {
-    visibility: hidden;
+  .geral {
+    margin-top: 35px;
+    margin-left: 55px;
   }
 
-  h2 {
-    margin: 0;
+  .redes-sociais,
+  .contato {
+    margin-top: 30px;
+    margin-left: 55px;
   }
 
-  h3 {
-    margin-top: 15px;
+  .footer-container .descricao-footer ul {
+    list-style-type: none;
+    padding: 0px 5px;
+  }
+
+  .descricao-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    width: 100%;
   }
 
   .email {
@@ -25,12 +40,17 @@
     height: auto;
     display: flex;
     flex-direction: row;
-    margin-left: 30px;
+    margin: 5px 65px;
   }
 
   .footer-container .logo {
-    width: 80px;
+    width: 100%;
   }
+
+  .copyright {
+    margin: 5em 5em 0 5em;
+  }
+  /* footer */
 }
 
 /* Dispositivos móveis médios (em pé) */
@@ -49,7 +69,6 @@
 
 /* Dispositivos móveis grandes (em pé) */
 @media (max-width: 425px) {
-
   /* Estilos aqui */
   .footer-container .logo {
     margin: 0;
@@ -82,7 +101,6 @@
     margin-top: 40px;
     max-width: 100%;
   }
-
   /*   
   .geral, .contato {
     margin: 70px;
@@ -95,6 +113,10 @@
 
   .footer-container button {
     margin-right: 10px;
+  }
+
+  .logoBranca-small {
+    width: 150px;
   }
 
   h3 {

@@ -8,9 +8,6 @@
   box-sizing: border-box;
 }
 
-form{
-  overflow-y: scroll;
-}
 
 body {
   background-color: #c9d6ff;
@@ -33,7 +30,7 @@ h2 {
 }
 
 .cadastro {
-  margin-bottom: 10px;
+  margin: 10px;
 }
 
 .login {
@@ -110,7 +107,7 @@ p {
   height: 100%;
 }
 
-.container input {
+.container input, select {
   background-color: var(--cinza-claro);
   border: none;
   margin: 8px 0;
@@ -154,6 +151,8 @@ p {
   width: 50%;
   opacity: 0;
   z-index: 1;
+  overflow-y: hidden;
+
 }
 
 .container.active .sign-up {
@@ -178,7 +177,7 @@ p {
 }
 
 .social-icons {
-  margin: 25px auto;
+  margin: 10px auto;
 }
 
 .social-icons img {
@@ -313,7 +312,7 @@ option {
 
 .grupo {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 5px;
 }
 

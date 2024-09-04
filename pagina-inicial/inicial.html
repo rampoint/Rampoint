@@ -31,19 +31,19 @@
         <ul class="sidebar">
             <li onclick=hideSidebar()><a href="#"><img id="fechar" src="img/fechar.svg" alt="fechar nav"></a></li>
             <li id="perfil-sidebar"><img src="img/perfil2.svg" alt="" srcset=""></li>
-                <div class="menus">
-            <li><a href="../pagina-inicial/inicial.html" id="menuMobile">HOME</a></li>
-            <li><a href="../pagina-play/play.html" id="menuMobile">PLAY</a></li>
-            <li><a href="../pagina-inicial/inicial.html" id="ecoponto menuMobile">ECOPONTOS</a></li>
-            <li><a href="../pagina-materiais/materiais.html" id="menuMobile">MATERIAIS</a></li>
-            <li><a href="../pagina-qrcode/index.html" id="menuMobile">QR-CODE</a></li>
-            <li><a href="../pagina-faq/faq.html" id="menuMobile">FALE CONOSCO</a></li>
-        </div>
+            <div class="menus">
+                <li><a href="../pagina-inicial/inicial.html" id="menuMobile">HOME</a></li>
+                <li><a href="../pagina-play/play.html" id="menuMobile">PLAY</a></li>
+                <li><a href="../pagina-inicial/inicial.html" id="ecoponto menuMobile">ECOPONTOS</a></li>
+                <li><a href="../pagina-materiais/materiais.html" id="menuMobile">MATERIAIS</a></li>
+                <li><a href="../pagina-qrcode/index.html" id="menuMobile">QR-CODE</a></li>
+                <li><a href="../pagina-faq/faq.html" id="menuMobile">FALE CONOSCO</a></li>
+            </div>
             <div class="footer-logo">
                 <img src="./img/logoBranca.svg" id="footer-logo" alt="">
             </div>
-                
-            </div>  
+
+            </div>
         </ul>
         <ul>
             <li id="logo-nav"><img src="img/ram.svg" alt="ram">
@@ -62,12 +62,12 @@
                         <p class="perfil">Perfil</p>
                         <img src="./img/user.svg" id="foto-perfil" alt="Foto de perfil">
                         <div class="fundo">
-                            <p class="texto-perfil">Sem login</p>
+                            <a href="../pagina-perfil/perfil.html" class="texto-perfil">Ir para perfil</a>
                             <div class="grupo">
                                 <hr class="linha">
-                                <a class="cadastro" href="../pagina-login/index.html">Cadastrar-se</a>
+                                <button type="button" class="sair-button" onclick="logout()" href="../pagina-login/index.html">Sair</button>
                                 <hr class="linha">
-                                <a href="../pagina-login/index.html" class="login">Fazer login</a>
+                                <button type="button" href="../pagina-login/index.html" class="login-button">Fazer login</button>
                             </div>
                         </div>
                     </div>
@@ -82,31 +82,6 @@
                         <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
                     </svg></a></li>
         </ul>
-
-
-
-        <!-- modal sem perfil -->
-
-        <!-- modal com perfil -->
-        <!-- <div class="modal-com-perfil">
-                <div class="content-com-perfil">
-                    <p class="perfil">Perfil</p>
-
-                    <div class="fundo">
-                        <img src="./img/user.svg" id="foto-perfil" alt="Foto de perfil">
-                        <p class="texto-perfil">Sem login</p>
-                        <div class="grupo">
-                            <hr class="linha"></hr>
-                            <a class="cadastro">Cadastrar-se</a>
-                            <hr class="linha"></hr>
-                            <a class="login">Fazer login</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <button class="modalBtn"><img id="perfil" src="img/perfil.svg" alt="perfil"></button> -->
-        <!-- modal com perfil -->
     </nav>
 
     <div class="container">
@@ -169,17 +144,18 @@
                     <div class="cep-rua">
                         <div class="cep-form">
                             <label for="cep">CEP:</label>
-                            <input placeholder="Insira seu CEP aqui" type="text" id="cep" name="cep">
+                            <input name="cep" type="text" placeholder="Insira seu CEP" id="cep" value="" size="10"
+                                maxlength="9" onblur="pesquisacep(this.value);" />
                         </div>
                         <div class="rua-form">
                             <label for="rua">Rua:</label>
-                            <input placeholder="Insira sua rua aqui" type="text" id="rua" name="rua">
+                            <input placeholder="Insira sua rua aqui" type="text" id="rua" name="rua" size="60">
                         </div>
                     </div>
                     <div class="bairro-form">
                         <label for="bairro">Bairro:</label>
                         <div class="btn"> <input placeholder="Insira seu bairro aqui" type="text" id="bairro"
-                                name="bairro">
+                                name="bairro" size="40">
 
                             <button type="submit" class="btn-lupa"><img src="./img/lupa.svg" alt=""></button>
                         </div>
@@ -291,10 +267,14 @@
 
         </footer>
 
-        <script src="./js/modal.js"></script>
-        <script src="./js/scroll-modal.js"></script>
-        <script src="./js/scroll-ecopontos.js"></script>
-
+        <script defer src="./js/modal.js"></script>
+        <script defer src="./js/scroll-modal.js"></script>
+        <script defer src="./js/scroll-ecopontos.js"></script>
+        <script defer src="./js/cep.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-app-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-auth-compat.js"></script>
+        <script src="../js/firebase-init.js"></script>
+        <script src="../js/logout.js"></script>
     </div>
 </body>
 

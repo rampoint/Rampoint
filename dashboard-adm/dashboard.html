@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/sidebar.css" />
+  <link rel="stylesheet" href="./css/dashboard.css" />
+  <title>Dashboard</title>
+  <link rel="shortcut icon" href="./img/rostoCirculo.png" type="image/x-icon" />
+
+  <!-- icon -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <aside class="sidebar">
+    <div class="top">
+      <div class="logo">
+        <img src="./img/logo.svg" class="imagem-logo" alt="" />
+      </div>
+      <img src="./img/seta.svg" id="btn" alt="" />
+    </div>
+
+    <nav>
+      <ul class="links">
+        <li>
+          <div class="user">
+            <img src="./img/perfilADM.svg" class="foto-perfil" alt="Foto de perfil do usuário" />
+            <p class="nome-usuario">Usuário</p>
+          </div>
+        </li>
+        <li>
+          <a href="../dashboard-adm/dashboard.html">
+            <i class="bx bx-grid-alt"></i>
+            <span class="nav-item">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="../add-doacoes-adm/add-doacoes.html">
+            <i class="bx bx-list-plus"></i>
+            <span class="nav-item">Adicionar doações</span>
+          </a>
+        </li>
+        <li>
+          <a href="../pagina-doacoes-adm/doacoes.html">
+            <i class="bx bx-spreadsheet"></i><span class="nav-item">Doações</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-list-check"></i>
+            <span class="nav-item">Vistoria</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-time-five"></i>
+            <span class="nav-item">Histórico</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-bell"></i>
+            <span class="nav-item">Notificações</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-cog"></i>
+            <span class="nav-item">Configurações</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="sair">
+            <i class="bx bx-log-out"></i>
+            <span class="nav-item">Sair</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main class="main-content">
+    <header class="fundo-titulo">
+      <h1 class="titulo-pagina">Dashboard</h1>
+    </header>
+
+    <section class="campo-titulo">
+      <h2 class="titulo-inicial">Visão geral</h2>
+    </section>
+
+    <section class="campo-inicial">
+      <h3 class="subtitulo">Tendência mensal de doações</h3>
+      <div class="grupos">
+        <div class="grafico-coluna">
+          <script src="https://code.highcharts.com/highcharts.js"></script>
+          <script src="https://code.highcharts.com/modules/exporting.js"></script>
+          <script src="https://code.highcharts.com/modules/export-data.js"></script>
+          <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+          <figure class="highcharts-figure">
+            <div id="container"></div>
+          </figure>
+        </div>
+
+        <aside class="notificacoes">
+          <h3 class="titulo-notificacoes">Notificações</h3>
+          <section class="fundo-notificacoes">
+            <article class="grupo-mensagem">
+              <img src="./img/perfilADM.svg" alt="Perfil" />
+              <div class="coluna-mensagem">
+                <h4 class="titulo-mensagem">Nova doação!</h4>
+                <p class="mensagem">
+                  Nome do doador:<span class="span-mensagem">
+                    is simply dummy text of the</span>
+                </p>
+              </div>
+              <p class="horario">XX:XX</p>
+            </article>
+            <div class="linha"></div>
+            <article class="grupo-mensagem">
+              <img src="./img/perfilADM.svg" alt="Perfil" />
+              <div class="coluna-mensagem">
+                <h4 class="titulo-mensagem">Código disponível</h4>
+                <p class="mensagem">
+                  Nome do doador:<span class="span-mensagem">
+                    is simply dummy text of the</span>
+                </p>
+              </div>
+              <p class="horario">XX:XX</p>
+            </article>
+            <div class="linha"></div>
+            <article class="grupo-mensagem">
+              <img src="./img/perfilADM.svg" alt="Perfil" />
+              <div class="coluna-mensagem">
+                <h4 class="titulo-mensagem">Vistoria disponível</h4>
+                <p class="mensagem">
+                  Nome do doador:<span class="span-mensagem">
+                    is simply dummy text of the</span>
+                </p>
+              </div>
+              <p class="horario">XX:XX</p>
+            </article>
+          </section>
+
+          <section class="doacoes">
+            <header class="texto-doacoes">
+              <h3 class="titulo-doadores">Últimos doadores</h3>
+              <a href="" class="link-doacoes">Ver tudo</a>
+            </header>
+            <table class="tabela-doadores">
+              <thead>
+                <tr>
+                  <th>Nome do doador</th>
+                  <th>Peça</th>
+                  <th id="coluna-data">Data <span id="seta">&darr;</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Giovana</td>
+                  <td>Placa de vídeo</td>
+                  <td>15/11/24</td>
+                </tr>
+                <tr>
+                  <td>Ana Julia</td>
+                  <td>Teclado</td>
+                  <td>20/09/24</td>
+                </tr>
+                <tr>
+                  <td>Jacques</td>
+                  <td>Memória RAM</td>
+                  <td>16/08/24</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <script src="./js/sidebar.js"></script>
+  <script defer src="./js/setaData.js"></script>
+  <script src="./js/grafico.js"></script>
+</body>
+
+</html>

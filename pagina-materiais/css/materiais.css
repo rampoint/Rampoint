@@ -2099,3 +2099,204 @@ body {
   }
   /* footer */
 }
+
+
+@media (max-width: 1920px) {
+  .menu {
+    background-color: rgba(234, 236, 240, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45em;
+    margin: auto;
+    justify-content: center;
+  }
+
+  #content1 .ramcoin {
+    position: absolute;
+    bottom: 3em;
+    left: 42em;
+    margin-top: 25px;
+  }
+
+  #content2 .ramcoin {
+    position: absolute;
+    bottom: 3em;
+    left: 42em;
+    margin-top: 25px;
+  }
+
+  .p-baias, .p-slots, .p-organizador {
+    font-size: 15px;
+    width: 50%;
+    position: relative;
+    top: 1em;
+    left: 13em;
+  }
+  
+  .p-painel {
+    font-size: 15px;
+    width: 50%;
+    position: relative;
+    top: 0;
+    left: 13em;
+  }
+
+  #content3 .ramcoin {
+    position: absolute;
+    bottom: 3em;
+    left: 42.3em;
+    margin-top: 25px;
+  }
+  
+  #content4 .ramcoin {
+    position: absolute;
+    bottom: 3em;
+    left: 42.3em;
+    margin-top: 25px;
+  }
+
+  #content5 .ramcoin {
+    position: absolute;
+    bottom: 3em;
+    left: 42.3em;
+    margin-top: 25px;
+  }
+
+  #content6 .ramcoin {
+    position: absolute;
+    bottom: 3em;
+    left: 42.3em;
+    margin-top: 25px;
+  }
+
+  #content7 .ramcoin {
+    position: absolute;
+    bottom: 3em;
+    left: 42.3em;
+    margin-top: 25px;
+  }
+
+  .p-placa-mae {
+    font-size: 15px;
+    width: 53%;
+    position: relative;
+    top: 0;
+    left: 13em;
+  }
+
+  #content8 .ramcoin {
+    position: absolute;
+    bottom: 3em;
+    left: 42.3em;
+    margin-top: 25px;
+  }
+
+  #content9 .ramcoin {
+    position: absolute;
+    bottom: 3em;
+    left: 42.3em;
+    margin-top: 25px;
+  }
+
+  .titulo-hdd {
+    position: relative;
+    left: 8.8em;
+    bottom: 1.5em;
+  }
+
+  .p-hdd {
+    font-size: 15px;
+    width: 53%;
+    position: relative;
+    top: 0;
+    left: 13em;
+  }
+
+  #content10 .ramcoin {
+    position: absolute;
+    bottom: 3em;
+    left: 42.3em;
+    margin-top: 25px;
+  }
+
+  #content11 .ramcoin {
+    position: absolute;
+    bottom: 3em;
+    left: 42.3em;
+    margin-top: 25px;
+  }
+
+  .p-cpu {
+    position: relative;
+    top: -1em;
+    left: 12.3em;
+    text-align: start;
+  }
+
+  #content12 .ramcoin {
+    position: absolute;
+    bottom: 3em;
+    left: 42.3em;
+    margin-top: 25px;
+  }
+
+  #content13 .ramcoin {
+    position: absolute;
+    bottom: 3em;
+    left: 42.3em;
+    margin-top: 25px;
+  }
+
+  #content14 .ramcoin {
+    position: absolute;
+    bottom: 3em;
+    left: 42.3em;
+    margin-top: 25px;
+  }
+
+  #content15 .ramcoin {
+    position: absolute;
+    bottom: 3em;
+    left: 42.3em;
+    margin-top: 25px;
+  }
+
+  #content16 .ramcoin {
+    position: absolute;
+    bottom: 3em;
+    left: 42.3em;
+    margin-top: 25px;
+  }
+
+  #content17 .ramcoin {
+    position: absolute;
+    bottom: 3em;
+    left: 42.3em;
+    margin-top: 25px;
+  }
+
+  .p-dissipadores {
+    font-size: 15px;
+    position: relative;
+    top: 0;
+    left: 13em;
+  }
+
+  #content18 .ramcoin {
+    position: absolute;
+    bottom: 3em;
+    left: 42.3em;
+    margin-top: 25px;
+  }
+
+  #content19 .ramcoin {
+    position: absolute;
+    bottom: 3em;
+    left: 42.3em;
+    margin-top: 25px;
+  }
+}

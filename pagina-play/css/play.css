@@ -1922,6 +1922,7 @@ body {
   }
 }
 
+/* monitor da sala */
 @media (max-width: 1920px) {
   .cupons {
     width: 1800px;

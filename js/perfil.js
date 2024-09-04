@@ -1,7 +1,5 @@
-
 function recuperarDadosUsuario(userId) {
   const userRef = database.ref('users/' + userId);
-
   userRef.once('value')
     .then((snapshot) => {
       if (snapshot.exists()) {

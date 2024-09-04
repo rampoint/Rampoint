@@ -647,10 +647,10 @@ body {
 .p-gabinete {
   font-family: "Poppins-regular";
   color: var(--preto);
-  width: 50%;
+  width: 45%;
   position: relative;
   top: 1em;
-  left: 14em;
+  left: 12.3em;
   text-align: start;
 }
 
@@ -711,7 +711,7 @@ body {
   width: 50%;
   position: relative;
   top: 1em;
-  left: 14em;
+  left: 12.3em;
   text-align: start;
 }
 
@@ -723,7 +723,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: end;
-  margin-top: 25px;
+  margin-top: 35px;
 }
 
 /* final estrutura baias de drive */
@@ -773,7 +773,7 @@ body {
   width: 50%;
   position: relative;
   top: 1em;
-  left: 14em;
+  left: 12.3em;
   text-align: start;
 }
 
@@ -831,7 +831,7 @@ body {
   width: 50%;
   position: relative;
   top: 1em;
-  left: 14em;
+  left: 12.3em;
   text-align: start;
 }
 
@@ -889,7 +889,7 @@ body {
   width: 50%;
   position: relative;
   top: 0;
-  left: 14em;
+  left: 12.3em;
   text-align: start;
 }
 
@@ -1004,11 +1004,12 @@ body {
 .p-placa-mae {
   font-family: "Poppins-regular";
   color: var(--preto);
-  width: 50%;
+  width: 53%;
   position: relative;
   top: 0;
-  left: 14em;
+  left: 13em;
   text-align: start;
+  font-size: 15px;
 }
 
 #content7 .ramcoin {
@@ -1065,7 +1066,7 @@ body {
   width: 50%;
   position: relative;
   top: 0;
-  left: 14em;
+  left: 12.3em;
   text-align: start;
 }
 
@@ -1123,7 +1124,7 @@ body {
   width: 50%;
   position: relative;
   top: 0;
-  left: 14em;
+  left: 12.3em;
   text-align: start;
 }
 
@@ -1181,7 +1182,7 @@ body {
   width: 50%;
   position: relative;
   top: 0;
-  left: 14em;
+  left: 12.3em;
   text-align: start;
 }
 
@@ -1239,7 +1240,7 @@ body {
   width: 50%;
   position: relative;
   top: 0;
-  left: 14em;
+  left: 12.3em;
   text-align: start;
 }
 
@@ -1290,16 +1291,16 @@ body {
 .titulo-monitor {
   position: relative;
   left: 9em;
-  bottom: 1.5em;
+  bottom: 1em;
 }
 
 .p-monitor {
   font-family: "Poppins-regular";
   color: var(--preto);
-  width: 55%;
+  width: 50%;
   position: relative;
   top: 0;
-  left: 14em;
+  left: 12.3em;
   text-align: start;
 }
 
@@ -1348,16 +1349,16 @@ body {
 .titulo-teclado {
   position: relative;
   left: 9em;
-  bottom: 1.5em;
+  bottom: 1em;
 }
 
 .p-teclado {
   font-family: "Poppins-regular";
   color: var(--preto);
-  width: 55%;
+  width: 50%;
   position: relative;
   top: 0;
-  left: 14em;
+  left: 12.3em;
   text-align: start;
 }
 
@@ -1406,7 +1407,7 @@ body {
 .titulo-mouse {
   position: relative;
   left: 9em;
-  bottom: 1.5em;
+  bottom: 1em;
 }
 
 .p-mouse {
@@ -1415,7 +1416,7 @@ body {
   width: 50%;
   position: relative;
   top: 0;
-  left: 14em;
+  left: 12.3em;
   text-align: start;
 }
 
@@ -1473,7 +1474,7 @@ body {
   width: 50%;
   position: relative;
   top: 0;
-  left: 14em;
+  left: 12.3em;
   text-align: start;
 }
 
@@ -1533,7 +1534,7 @@ body {
   width: 50%;
   position: relative;
   top: 0;
-  left: 14em;
+  left: 12.3em;
   text-align: start;
 }
 
@@ -1582,7 +1583,7 @@ body {
 .titulo-dissipadores {
   position: relative;
   left: 9em;
-  bottom: 1em;
+  bottom: 0.7em;
 }
 
 .p-dissipadores {
@@ -1591,7 +1592,7 @@ body {
   width: 50%;
   position: relative;
   top: 0;
-  left: 14em;
+  left: 12.3em;
   text-align: start;
 }
 
@@ -1640,7 +1641,7 @@ body {
 .titulo-filtro {
   position: relative;
   left: 9em;
-  bottom: 2.5em;
+  bottom: 2em;
 }
 
 .p-filtro {
@@ -1649,7 +1650,7 @@ body {
   width: 50%;
   position: relative;
   top: 0;
-  left: 14em;
+  left: 12.3em;
   text-align: start;
 }
 
@@ -1698,7 +1699,7 @@ body {
 .titulo-cooler {
   position: relative;
   left: 9em;
-  bottom: 1.5em;
+  bottom: 1.3em;
 }
 
 .p-cooler {
@@ -1707,7 +1708,7 @@ body {
   width: 50%;
   position: relative;
   top: 0;
-  left: 14em;
+  left: 12.3em;
   text-align: start;
 }
 

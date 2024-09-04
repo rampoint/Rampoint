@@ -787,7 +787,9 @@
 
 /* Telas grandes */
 @media (max-width: 1920px) {
-  /* Estilos aqui */
+  .cupons {
+    width: 1925px;
+  }
 }
 
 @media (max-width: 895px) {

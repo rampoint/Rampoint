@@ -106,34 +106,156 @@
 
     <section class="campo-inicial">
       <div class="fundo-doacoes">
-        <ul class="titulo-tabela">
-          <li class="tabela">Peça</li>
-          <li class="tabela">Tipo de componente</li>
-          <li class="tabela">Nome do doador</li>
-          <li class="tabela">Email</li>
-          <li class="tabela">Qtd. Total</li>
-          <li class="tabela">Vistoria</li>
-        </ul>
+        <table class="tabela-doacoes">
+          <thead>
+            <tr>
+              <th>Peça</th>
+              <th>Tipo de componente</th>
+              <th>Nome do doador</th>
+              <th>Email</th>
+              <th>Qtd. Total</th>
+              <th>Vistoria</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- placa de video -->
+            <tr>
+              <td>
+                <div class="peca">
+                  <img src="./img/placa-de-video.svg" id="placa-de-video" alt="Imagem de uma placa de vídeo">
+                  <p class="nome-peca">Placa de vídeo</p>
+                </div>
+              </td>
+              <td>
+                <button class="tipo-interno">Interno</button>
+              </td>
+              <td>
+                <p class="nome">Giovana</p>
+              </td>
+              <td>
+                <p class="email">giovana@gmail.com</p>
+              </td>
+              <td>
+                <p class="qtd-total">2</p>
+              </td>
+              <td>
+                <button class="vistoria-realizada">
+                  <img src="./img/check.svg" alt="">
+                  Realizada
+                </button>
+              </td>
+              <td>
+                <button class="opcoes">
+                  <img src="./img/more.svg" alt="Mais opções">
+                </button>
+              </td>
+            </tr>
 
-        <ul class="itens">
-          <li class="conteudo">
-            <img src="./img/placa-de-video.svg" id="placa-de-video" alt="Imagem de uma placa de vídeo">
-            <p class="nome-peca">Placa de vídeo</p>
-            <button class="tipo">Interno</button>
-            <p class="nome">Giovana</p>
-            <p class="email">giovana@gmail.com</p>
-            <p class="qtd-total">2</p>
-            <button class="vistoria">
-             <img src="./img/check.svg" alt="">
-              Realizada
-            </button>
-          </li>
-          <li class="conteudo"></li>
-          <li class="conteudo"></li>
-          <li class="conteudo"></li>
-        </ul>
+            <!-- teclado -->
+            <tr>
+              <td>
+                <div class="peca">
+                  <img src="./img/teclado.svg" id="placa-de-video" alt="Imagem de um teclado">
+                  <p class="nome-peca">Teclado</p>
+                </div>
+              </td>
+              <td>
+                <button class="tipo-periferico">Periférico</button>
+              </td>
+              <td>
+                <p class="nome">Ana Julia</p>
+              </td>
+              <td>
+                <p class="email">anajulia@gmail.com</p>
+              </td>
+              <td>
+                <p class="qtd-total">1</p>
+              </td>
+              <td>
+                <button class="vistoria-realizada">
+                  <img src="./img/check.svg" alt="">
+                  Realizada
+                </button>
+              </td>
+              <td>
+                <button class="opcoes">
+                  <img src="./img/more.svg" alt="Mais opções">
+                </button>
+              </td>
+            </tr>
+
+            <!-- memoria ram -->
+            <tr>
+              <td>
+                <div class="peca">
+                  <img src="./img/memoria-RAM.svg" id="placa-de-video" alt="Imagem de uma memória ram">
+                  <p class="nome-peca">Memória RAM</p>
+                </div>
+              </td>
+              <td>
+                <button class="tipo-interno">Interno</button>
+              </td>
+              <td>
+                <p class="nome">Jacques</p>
+              </td>
+              <td>
+                <p class="email">jacquessigma@gmail.com</p>
+              </td>
+              <td>
+                <p class="qtd-total">3</p>
+              </td>
+              <td>
+                <button class="vistoria-pendente">
+                  <img src="./img/pendente.svg" alt="">
+                  Pendente
+                </button>
+              </td>
+              <td>
+                <button class="opcoes">
+                  <img src="./img/more.svg" alt="Mais opções">
+                </button>
+              </td>
+            </tr>
+
+            <!-- gabinete -->
+            <tr>
+              <td>
+                <div class="peca">
+                  <img src="./img/gabinete.svg" id="placa-de-video" alt="Imagem de um gabinete">
+                  <p class="nome-peca">Gabinete</p>
+                </div>
+              </td>
+              <td>
+                <button class="tipo-estrutura">Estrutura</button>
+              </td>
+              <td>
+                <p class="nome">Ana Beatriz</p>
+              </td>
+              <td>
+                <p class="email">anabeatriz@gmail.com</p>
+              </td>
+              <td>
+                <p class="qtd-total">2</p>
+              </td>
+              <td>
+                <button class="vistoria-pendente">
+                  <img src="./img/pendente.svg" alt="">
+                  Pendente
+                </button>
+              </td>
+              <td>
+                <button class="opcoes">
+                  <img src="./img/more.svg" alt="Mais opções">
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </section>
+
+
   </main>
 
   <script src="./js/sidebar.js"></script>

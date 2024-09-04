@@ -85,6 +85,7 @@ option[disabled] {
 
 .tabela-doacoes td {
   font-family: "Blinker-regular";
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .peca {

@@ -24,7 +24,7 @@ function register() {
 
 // Função para salvar os dados do usuário no Realtime Database
 function saveUserData(uid, email) {
-  const nome = Form.nome();
+  const nome = Form.nome().value;
   const telefone = Form.telefone().value;
   const dataNascimento = Form.data().value;
   const genero = Form.genero().value;
@@ -167,13 +167,13 @@ function recuperarDadosUsuario() {
     console.log("current");
   }
 
-  // const userId = "2tUMtCqlmFVcAs4aoR6OfYFjyof1"; // Certifique-se de que esta função retorna um ID válido
+  const userId = "2tUMtCqlmFVcAs4aoR6OfYFjyof1"; // Certifique-se de que esta função retorna um ID válido
   const userRef = firebase.database().ref(`/users/${userId}`);
   userRef
     .once("value")
     .then((snapshot) => {
       // Seu código para lidar com os dados
-      console.log('hasChild', snapshot.hasChild('"2tUMtCqlmFVcAs4aoR6OfYFjyof1"/nome'));
+      console.log(snapshot.val());
     })
     .catch((error) => {
       console.error("Erro ao recuperar dados:", error);

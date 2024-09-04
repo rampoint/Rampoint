@@ -2100,6 +2100,63 @@ body {
   /* footer */
 }
 
+@media (max-width: 422px) {
+  .email {
+    width: 200px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin: 5px 40px;
+  }
+
+  .footer-container .logo {
+    margin: 0;
+    bottom: 20px;
+    flex-direction: column;
+  }
+
+  .flor img {
+    visibility: hidden;
+  }
+
+  .flor img {
+    visibility: hidden;
+  }
+
+  .footer-container .descricao-footer {
+    margin-top: 0;
+    display: block;
+  }
+
+  .descricao-footer {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40px;
+    max-width: 100%;
+  }
+  /*   
+  .geral, .contato {
+    margin: 70px;
+
+  }
+ */
+  .endereco {
+    max-width: 100%;
+  }
+
+  .footer-container button {
+    margin-right: 10px;
+  }
+
+  .logoBranca-small {
+    width: 150px;
+  }
+
+  h3 {
+    margin-top: 15px;
+  }
+}
+
 
 @media (max-width: 1920px) {
   .menu {

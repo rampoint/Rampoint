@@ -94,12 +94,14 @@
       <h3 class="subtitulo">Tendência mensal de doações</h3>
       <div class="grupos">
         <div class="grafico-coluna">
-          <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-          <div id="chart_div"></div>
-          <br />
-          <div id="btn-group">
-            <button class="button button-blue" id="short">Short</button>
-          </div>
+          <script src="https://code.highcharts.com/highcharts.js"></script>
+          <script src="https://code.highcharts.com/modules/exporting.js"></script>
+          <script src="https://code.highcharts.com/modules/export-data.js"></script>
+          <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+          <figure class="highcharts-figure">
+            <div id="container"></div>
+          </figure>
         </div>
 
         <aside class="notificacoes">

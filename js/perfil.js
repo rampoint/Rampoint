@@ -1,8 +1,20 @@
 
-const querySnapshot = await getDocs(collection(db, "usuario_login"));
-querySnapshot.forEach((doc) => {
-  console.log(`${doc.id} => ${doc.data()}`);
-});
+function recuperarDadosUsuario(userId) {
+  const userRef = database.ref('users/' + userId);
+
+  userRef.once('value')
+    .then((snapshot) => {
+      if (snapshot.exists()) {
+        const dadosUsuario = snapshot.val();
+        console.log("Dados do usuário:", dadosUsuario);
+      } else {
+        console.log("Usuário não encontrado.");
+      }
+    })
+    .catch((error) => {
+      console.error("Erro ao recuperar dados:", error);
+    });
+}
 
 const form = {
     nome: () => document.getElementById("nome_usuario"),

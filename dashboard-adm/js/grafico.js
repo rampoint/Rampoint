@@ -17,7 +17,7 @@ function drawChart() {
     },
     bars: 'vertical',
     vAxis: {format: 'decimal'},
-    width: 800,
+    width: 650,
     height: 450,
     colors: ['#1b9e77', '#d95f02', '#7570b3']
   };

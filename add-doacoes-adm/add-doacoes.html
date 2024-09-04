@@ -9,7 +9,6 @@
   <title>Adicionar doações</title>
 
   <link rel="shortcut icon" href="./img/rostoCirculo.png" type="image/x-icon" />
-
   <!-- icon -->
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 </head>
@@ -108,10 +107,10 @@
           <div class="campo-form">
             <label for="telefone" id="telefone" class="titulo-form">Telefone</label>
             <div class="select-telefone">
-              <select name="select-telefone" id="select-telefone">
-                <option value="">11</option>
-              </select>
-              <input type="tel">
+              <!-- <select name="select-telefone" id="ddd-select"">
+                <!-- As opções serão geradas aqui 
+              </select> -->
+              <input type="tel" placeholder="11 98765-4123">
             </div>
           </div>
         </div>
@@ -153,7 +152,7 @@
 
         <div class="campo-descricao">
           <label for="descricao" class="titulo-form">Descrição:</label>
-          <textarea name="descricao-peca" id="descricao-peca" cols="10" rows="15"></textarea>
+          <textarea name="descricao-peca" id="descricao-peca" cols="10" rows="15" placeholder="Descrição sobre a peça"></textarea>
         </div>
 
         <div class="botoes">
@@ -165,6 +164,7 @@
   </main>
 
   <script src="./js/sidebar.js"></script>
+  <script src="./js/ddd.js"></script>
 </body>
 
 </html>

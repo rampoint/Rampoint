@@ -1921,3 +1921,76 @@ body {
     width: 150px;
   }
 }
+
+/* monitor da sala */
+@media (max-width: 1920px) {
+  .cupons {
+    width: 1800px;
+  }
+  /* começo cupom dourado */
+  .modal-content-dourado .lojas {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin: 10px 15px;
+  }
+
+  .titulo-dourado {
+    position: relative;
+    top: 2em;
+  }
+
+  .texto-dourado {
+    position: relative;
+    top: 3em;
+  }
+
+  .estrela-dourada {
+    position: relative;
+    right: 9em;
+    top: 6em;
+  }
+
+  .estrela-dourada2 {
+    position: relative;
+    left: 9em;
+    top: 1em;
+  }
+
+  .texto-lojas {
+    margin: -20px 35px;
+  }
+
+  .cupom-dourado {
+    margin-left: 15px;
+  }
+
+  #estrelas {
+    position: relative;
+    right: 12em;
+    top: 2em;
+    margin-bottom: 1em;
+  }
+
+  #ram-dourado {
+    width: 35%;
+    position: relative;
+    left: 3em;
+    bottom: 2em;
+    z-index: 2;
+  }
+
+  .curiosidade {
+    margin-right: 5em;
+    position: relative;
+    bottom: 2em;
+  }
+
+  .texto-curiosidade {
+    font-family: "Poppins-bold";
+    color: #745f12;
+    text-align: right;
+    margin-left: 15px;
+  }
+  /* final modal dourado */
+}

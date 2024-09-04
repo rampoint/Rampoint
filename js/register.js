@@ -2,23 +2,15 @@
 function register() {
   const email = Form.email().value;
   const senha = Form.senha().value;
-
-  const connectedRef = firebase.database().ref(".info/connected");
-connectedRef.on("value", (snap) => {
-  if (snap.val() === true) {
-    console.log("Conectado ao Realtime Database");
-  } else {
-    console.log("Não conectado ao Realtime Database");
-  }
-});
-
   firebase
     .auth()
     .createUserWithEmailAndPassword(email, senha)
     .then((userCredential) => {
       const uid = userCredential.user.uid;
+      console.log(telefone)
       console.log("Usuário criado com UID:", uid);
       saveUserData(uid, email);
+
       // Descomente a linha abaixo quando estiver pronto para redirecionar
       window.location.href = "../../pagina-inicial/inicial.html";
     })
@@ -29,16 +21,20 @@ connectedRef.on("value", (snap) => {
 
 // Função para salvar os dados do usuário no Realtime Database
 function saveUserData(uid, email) {
-  console.log("Tentando salvar dados para UID:", uid);
-  const database = firebase.database();
-  console.log("Referência do database obtida:", database);
-  const userRef = database.ref("users/" + uid);
-  console.log("Referência do usuário criada:", userRef);
 
+  var nome = Form.nome()
+  var telefone = Form.telefone()
+  var data_naci = Form.data()
+  var genero = Form.genero()
+  const database = firebase.database();
+  const userRef = database.ref("users/" + uid);
   userRef
     .set({
       email: email,
-      otherData: "Alguma informação adicional",
+      nome: nome,
+      data: data_naci,
+      tel: telefone,
+      genero:genero,
       createdAt: firebase.database.ServerValue.TIMESTAMP,
     })
     .then(() => {
@@ -118,17 +114,17 @@ function ValidarEmail() {
 const Form = {
   email: () => document.getElementById("email-cadastro"),
   senha: () => document.getElementById("senha-cadastro"),
+  nome: () => document.getElementById('Nome').value,
+  telefone: () => document.getElementById('telefone').value,
+  genero: () => document.getElementById('genero').value,
   confirmarSenha: () => document.getElementById("confirmarSenha"),
-  telefone: () => document.getElementById("telefone"),
-  data: () => document.getElementById("data"),
+  data: () => document.getElementById("data-cadastro").value,
   erro_email_register: () => document.getElementById("erro-email-register"),
   erro_data: () => document.getElementById("erro-data"),
-  erro_email_obrigatorio: () =>
-    document.getElementById("erro-email-obrigatorio"),
+  erro_email_obrigatorio: () =>document.getElementById("erro-email-obrigatorio"),
   erro_senha_min: () => document.getElementById("erro-senha-min"),
   erro_senha_register: () => document.getElementById("erro-senha-register"),
-  erro_senha_obrigatorio: () =>
-    document.getElementById("erro-senha-obrigatorio"),
+  erro_senha_obrigatorio: () =>document.getElementById("erro-senha-obrigatorio"),
   erro_nao_corresponde: () => document.getElementById("erro-nao-corresponde"),
   cadastrar_button: () => document.getElementById("cadastrar"),
 };

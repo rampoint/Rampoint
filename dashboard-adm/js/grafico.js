@@ -17,9 +17,9 @@ function drawChart() {
     },
     bars: 'vertical',
     vAxis: {format: 'decimal'},
-    width: 650,
+    width: 550,
     height: 450,
-    colors: ['#1b9e77', '#d95f02', '#7570b3']
+    colors: ['#2A55C2', '#7AD761', '#7570b3']
   };
 
   var chart = new google.charts.Bar(document.getElementById('chart_div'));

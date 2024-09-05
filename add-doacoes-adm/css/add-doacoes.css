@@ -67,16 +67,28 @@ input {
   flex-direction: row;
 }
 
-#select-telefone {
+#ddd-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   background-color: var(--branco);
   font-family: "Poppins-regular";
-  width: 3em;
+  width: 4em;
   height: 2em;
   padding: 5px;
   border: none;
   border-radius: 10px;
   outline: none;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMDAwMDAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MCA0MCI+PHBhdGggZD0iTTEzIDE2bDcgNiA3LTYgMSAxLTggOC04LTh6Ii8+PC9zdmc+');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px; 
 }
+
+#ddd-select::-ms-expand {
+  display: none; 
+}
+
 
 #select-peca {
   background-color: var(--branco);

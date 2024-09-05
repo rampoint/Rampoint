@@ -164,21 +164,22 @@ function recuperarDadosUsuario() {
   });
   currentUser = firebase.auth().currentUser;
   if (currentUser) {
-    console.log("current");
+    console.log("current", currentUser);
   }
+   
 
-  const userId = "2tUMtCqlmFVcAs4aoR6OfYFjyof1"; // Certifique-se de que esta função retorna um ID válido
-  const userRef = firebase.database().ref(`/users/${userId}`);
-  userRef
-    .once("value")
-    .then((snapshot) => {
-      // Seu código para lidar com os dados
-      console.log(snapshot.val());
-    })
-    .catch((error) => {
-      console.error("Erro ao recuperar dados:", error);
-    });
-}
+//   const userId = "2tUMtCqlmFVcAs4aoR6OfYFjyof1"; // Certifique-se de que esta função retorna um ID válido
+//   const userRef = firebase.database().ref(`/users/${userId}`);
+//   userRef
+//     .once("value")
+//     .then((snapshot) => {
+//       // Seu código para lidar com os dados
+//       console.log(snapshot.val());
+//     })
+//     .catch((error) => {
+//       console.error("Erro ao recuperar dados:", error);
+//     });
+ }
 
 // Objeto com referências aos elementos do perfil do usuário
 const form_usuario = {

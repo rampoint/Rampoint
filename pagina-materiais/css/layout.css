@@ -1,5 +1,4 @@
-/* Dispositivos móveis pequenos (em pé) */
-@media (min-width: 320px) and (max-width: 421px) {
+@media (max-width: 421px) {
   .container {
     display: flex;
     flex-direction: column;
@@ -8,26 +7,28 @@
     overflow: hidden;
   }
 
-  /* imagem inicial */
+  /* Imagem inicial */
   .imagem-fundo {
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    margin: 0;
     width: 100%;
     height: 20em;
+    margin: 0;
   }
 
-  .img-fundo {
+  .img-fundo,
+  .botao,
+  .brilho-amarelo2 {
     display: none;
   }
 
   #titulo-inicial {
     font-size: 3em;
-    text-align: center;
     width: 85%;
-    margin: 0 0 50px 0;
+    margin-bottom: 50px;
+    text-align: center;
   }
 
   #texto-inicial {
@@ -36,79 +37,64 @@
     margin-top: 3em;
   }
 
-  .botao {
-    display: none;
+  .interno-inicial,
+  .monitor,
+  .teclado,
+  .icone-roxo {
+    width: 5%;
+    position: relative;
   }
 
   .interno-inicial {
-    width: 5%;
-    position: relative;
     bottom: 3em;
     right: 9em;
   }
 
-  .brilho-amarelo {
-    width: 2%;
-    position: relative;
-    bottom: 2em;
-    right: 1em;
-  }
-
   .monitor {
-    width: 5%;
-    position: relative;
     top: 11em;
     right: 9em;
   }
 
-  .brilho-verde {
-    width: 1%;
-    position: relative;
-    top: 3em;
-    right: 11em;
-  }
-
-  .brilho-azul {
-    width: 1%;
-    position: relative;
-    top: 5em;
-    right: 10em;
-  }
-
-  .brilho-roxo {
-    width: 1%;
-    position: relative;
-    top: 5em;
-    right: 10em;
-  }
-
   .teclado {
-    width: 5%;
-    position: relative;
     bottom: 13em;
     left: 9em;
   }
 
+  .icone-roxo {
+    top: 2em;
+    left: 9em;
+  }
+
+  .brilho-amarelo,
+  .brilho-verde,
+  .brilho-azul,
+  .brilho-roxo,
   .brilho-vermelho {
     width: 1%;
     position: relative;
+  }
+
+  .brilho-amarelo {
+    bottom: 2em;
+    right: 1em;
+  }
+
+  .brilho-verde {
+    top: 3em;
+    right: 11em;
+  }
+
+  .brilho-azul,
+  .brilho-roxo {
+    top: 5em;
+    right: 10em;
+  }
+
+  .brilho-vermelho {
     bottom: 5em;
     left: 11em;
   }
 
-  .brilho-amarelo2 {
-    display: none;
-  }
-
-  .icone-roxo {
-    width: 5%;
-    position: relative;
-    top: 2em;
-    left: 9em;
-  }
-  /* imagem inicial */
-
-  /* section */
   #scrollTarget {
     text-align: center;
     margin-top: 5em;
@@ -118,38 +104,92 @@
     width: 80%;
     margin: 0 3em;
   }
-  /* section */
 
-  /* carrossel */
   .carrossel-container {
-    width: 5%;
+    width: 45%;
+    margin: 50px auto 100px;
   }
 
-  /* carrossel */
+  .menu {
+    width: 20em;
+  }
 
-  /* footer */
+  .sub-buttons-container {
+    width: 30em;
+    flex-wrap: wrap;
+  }
+
+  .sub-buttons {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+  }
+
+  .text-block {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 30%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 2px 8px 8px rgba(42, 85, 194, 0.15);
+    width: 300px;
+    z-index: 1;
+    text-align: center;
+  }
+
+  .ramcoin:hover .text-block {
+    display: block;
+  }
+
+  .texto-ramcoin {
+    font-size: 13px;
+    margin-left: 5px;
+  }
+
+  .circulo-estrutura,
+  .circulo-internos,
+  .circulo-perifericos,
+  .circulo-resfriamento {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-10%, -15%);
+    border-radius: 50%;
+    width: 15em;
+    height: 15em;
+    z-index: 1;
+  }
+
+  .circulo-estrutura {
+    background: #9d4edd;
+  }
+  .circulo-internos {
+    background: #f89701;
+  }
+  .circulo-perifericos {
+    background: #2a55c2;
+  }
+  .circulo-resfriamento {
+    background: #61d243;
+  }
+
+  /* Footer */
   .footer-container {
     width: 100%;
-    height: auto;
-    position: none;
     display: flex;
     flex-direction: column;
   }
 
-  .geral {
-    margin-top: 35px;
-    margin-left: 55px;
-  }
-
+  .geral,
   .redes-sociais,
   .contato {
-    margin-top: 30px;
     margin-left: 55px;
-  }
-
-  .footer-container .descricao-footer ul {
-    list-style-type: none;
-    padding: 0px 5px;
+    margin-top: 30px;
   }
 
   .descricao-footer {
@@ -157,107 +197,30 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0px;
     width: 100%;
   }
 
   .email {
     width: 200px;
-    height: auto;
-    display: flex;
-    flex-direction: row;
     margin: 5px 65px;
+    display: flex;
   }
 
-  .footer-container .logo {
+  .logo {
     width: 100%;
   }
 
   .copyright {
-    margin: 5em 5em 0 5em;
-  }
-  /* footer */
-}
-
-/* Dispositivos móveis médios (em pé) */
-@media (max-width: 375px) {
-  .flor img {
-    visibility: hidden;
-  }
-
-  .email {
-    display: flex;
-    flex-wrap: wrap;
+    margin: 5em;
   }
 }
 
-/* Dispositivos móveis grandes (em pé) */
-@media (max-width: 425px) {
-  /* Estilos aqui */
-  .footer-container .logo {
-    margin: 0;
-    bottom: 20px;
-    flex-direction: column;
-  }
-
-  .flor img {
-    visibility: hidden;
-  }
-
-  .flor img {
-    visibility: hidden;
-  }
-
-  .email {
-    display: flex;
-    flex-direction: row;
-    margin-left: 10px;
-  }
-
-  .footer-container .descricao-footer {
-    margin-top: 0;
-    display: block;
-  }
-
-  .descricao-footer {
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 40px;
-    max-width: 100%;
-  }
-  /*   
-  .geral, .contato {
-    margin: 70px;
-
-  }
- */
-  .endereco {
-    max-width: 100%;
-  }
-
-  .footer-container button {
-    margin-right: 10px;
-  }
-
-  .logoBranca-small {
-    width: 150px;
-  }
-
-  h3 {
-    margin-top: 15px;
+@media (width: 430px) {
+  body {
+    background-color: lightblue; /* Teste simples para verificar se a media query está funcionando */
   }
 }
-/* quebrando a linha da imagem */
 
-@media (max-width: 670px) {
-  .flor img {
-    visibility: hidden;
-  }
-}
-/* Dispositivos móveis em modo paisagem (tela horizontal) */
-@media (max-width: 767px) {
-  /* Estilos aqui */
-}
 
 /* Tablets em modo retrato (tela vertical) */
 @media (max-width: 768px) {
@@ -273,6 +236,45 @@
 
   p {
     margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 895px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+  }
+  nav ul {
+    justify-content: space-between;
+    position: static;
+    padding-left: 0;
+  }
+
+  nav a {
+    padding-right: 30px;
+  }
+
+  #logo {
+    margin-left: 20px;
+  }
+
+  #logo-nav {
+    margin-left: 20px;
+  }
+  #perfil {
+    display: none;
+  }
+
+  nav a:visited {
+    text-decoration: none;
+    transition: color 1.5s ease-out 1ms;
+  }
+
+  nav a:hover {
+    color: var(--branco);
+    text-decoration-line: underline;
   }
 }
 
@@ -324,46 +326,44 @@
   /* Estilos aqui */
 }
 
-/* Telas grandes */
-@media (max-width: 1920px) {
-  /* Estilos aqui */
-}
-
-@media (max-width: 895px) {
-  .hideOnMobile {
-    display: none;
-  }
-  .menu-button {
-    display: block;
-  }
-  nav ul {
-    justify-content: space-between;
-    position: static;
-    padding-left: 0;
+@media (min-width: 1920px) {
+  .menu {
+    width: 45em;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(234, 236, 240, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    align-items: center;
   }
 
-  nav a {
-    padding-right: 30px;
+  .ramcoin {
+    position: absolute;
+    bottom: 3em;
+    left: 42em;
+    margin-top: 25px;
   }
 
-  #logo {
-    margin-left: 20px;
+  /* Adjustments for text */
+  .p-gabinete,
+  .p-baias,
+  .p-slots,
+  .p-organizador,
+  .p-painel,
+  .p-hdd,
+  .p-cpu {
+    font-size: 15px;
+    width: 50%;
+    position: relative;
+    top: 1em;
+    left: 13em;
   }
 
-  #logo-nav {
-    margin-left: 20px;
-  }
-  #perfil {
-    display: none;
-  }
-
-  nav a:visited {
-    text-decoration: none;
-    transition: color 1.5s ease-out 1ms;
-  }
-
-  nav a:hover {
-    color: var(--branco);
-    text-decoration-line: underline;
+  /* Estrutura-specific */
+  .titulo-estrutura,
+  .titulo-internos,
+  .titulo-perifericos,
+  .titulo-resfriamento {
+    font-size: 16px;
   }
 }

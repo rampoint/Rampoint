@@ -1726,7 +1726,7 @@ body {
 /* final imagem resfriamento */
 /* final carrossel-materiais */
 
-@media (min-width: 320px) and (max-width: 421px) {
+@media (max-width: 421px) {
   .container {
     display: flex;
     flex-direction: column;
@@ -1735,26 +1735,28 @@ body {
     overflow: hidden;
   }
 
-  /* imagem inicial */
+  /* Imagem inicial */
   .imagem-fundo {
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    margin: 0;
     width: 100%;
     height: 20em;
+    margin: 0;
   }
 
-  .img-fundo {
+  .img-fundo,
+  .botao,
+  .brilho-amarelo2 {
     display: none;
   }
 
   #titulo-inicial {
     font-size: 3em;
-    text-align: center;
     width: 85%;
-    margin: 0 0 50px 0;
+    margin-bottom: 50px;
+    text-align: center;
   }
 
   #texto-inicial {
@@ -1763,79 +1765,64 @@ body {
     margin-top: 3em;
   }
 
-  .botao {
-    display: none;
+  .interno-inicial,
+  .monitor,
+  .teclado,
+  .icone-roxo {
+    width: 5%;
+    position: relative;
   }
 
   .interno-inicial {
-    width: 5%;
-    position: relative;
     bottom: 3em;
     right: 9em;
   }
 
-  .brilho-amarelo {
-    width: 2%;
-    position: relative;
-    bottom: 2em;
-    right: 1em;
-  }
-
   .monitor {
-    width: 5%;
-    position: relative;
     top: 11em;
     right: 9em;
   }
 
-  .brilho-verde {
-    width: 1%;
-    position: relative;
-    top: 3em;
-    right: 11em;
-  }
-
-  .brilho-azul {
-    width: 1%;
-    position: relative;
-    top: 5em;
-    right: 10em;
-  }
-
-  .brilho-roxo {
-    width: 1%;
-    position: relative;
-    top: 5em;
-    right: 10em;
-  }
-
   .teclado {
-    width: 5%;
-    position: relative;
     bottom: 13em;
     left: 9em;
   }
 
+  .icone-roxo {
+    top: 2em;
+    left: 9em;
+  }
+
+  .brilho-amarelo,
+  .brilho-verde,
+  .brilho-azul,
+  .brilho-roxo,
   .brilho-vermelho {
     width: 1%;
     position: relative;
+  }
+
+  .brilho-amarelo {
+    bottom: 2em;
+    right: 1em;
+  }
+
+  .brilho-verde {
+    top: 3em;
+    right: 11em;
+  }
+
+  .brilho-azul,
+  .brilho-roxo {
+    top: 5em;
+    right: 10em;
+  }
+
+  .brilho-vermelho {
     bottom: 5em;
     left: 11em;
   }
 
-  .brilho-amarelo2 {
-    display: none;
-  }
-
-  .icone-roxo {
-    width: 5%;
-    position: relative;
-    top: 2em;
-    left: 9em;
-  }
-  /* imagem inicial */
-
-  /* section */
   #scrollTarget {
     text-align: center;
     margin-top: 5em;
@@ -1845,12 +1832,10 @@ body {
     width: 80%;
     margin: 0 3em;
   }
-  /* section */
 
-  /* carrossel */
   .carrossel-container {
     width: 45%;
-    margin: 50px auto 100px auto;
+    margin: 50px auto 100px;
   }
 
   .menu {
@@ -1868,7 +1853,6 @@ body {
     flex-wrap: wrap;
     gap: 5px;
     justify-content: center;
-    align-items: center;
   }
 
   .text-block {
@@ -1877,7 +1861,7 @@ body {
     top: 100%;
     left: 30%;
     transform: translateX(-50%);
-    background-color: #ffffff;
+    background-color: #fff;
     padding: 10px;
     border-radius: 15px;
     box-shadow: 2px 8px 8px rgba(42, 85, 194, 0.15);
@@ -1886,474 +1870,123 @@ body {
     text-align: center;
   }
 
+  .ramcoin:hover .text-block {
+    display: block;
+  }
+
   .texto-ramcoin {
     font-size: 13px;
     margin-left: 5px;
   }
 
-  .ramcoin:hover .text-block {
-    display: block;
-  }
-
-  .qtd-ramcoin {
-    margin-right: 5px;
-  }
-
-  .circulo-estrutura {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translate(-10%, -15%);
-    background: #9d4edd;
-    border-radius: 50%;
-    width: 15em;
-    height: 15em;
-    z-index: 1;
-  }
-
-  .circulo-internos {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translate(-10%, -15%);
-    background: #f89701;
-    border-radius: 50%;
-    width: 15em;
-    height: 15em;
-    z-index: 1;
-  }
-
-  .circulo-perifericos {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translate(-10%, -15%);
-    background: #2a55c2;
-    border-radius: 50%;
-    width: 15em;
-    height: 15em;
-    z-index: 1;
-  }
-
+  .circulo-estrutura,
+  .circulo-internos,
+  .circulo-perifericos,
   .circulo-resfriamento {
     position: absolute;
     top: 50%;
     left: 0;
     transform: translate(-10%, -15%);
-    background: #61d243;
     border-radius: 50%;
     width: 15em;
     height: 15em;
     z-index: 1;
   }
 
-  .fundo-gabinete,
-  .fundo-baias,
-  .fundo-slots,
-  .fundo-organizador,
-  .fundo-painel,
-  .fundo-gpu,
-  .fundo-placa-mae,
-  .fundo-memoria-ram,
-  .fundo-hdd,
-  .fundo-psu,
-  .fundo-cpu,
-  .fundo-monitor,
-  .fundo-teclado,
-  .fundo-mouse,
-  .fundo-alto-falante,
-  .fundo-ventoinhas,
-  .fundo-dissipadores,
-  .fundo-filtro,
-  .fundo-cooler {
-    background-color: var(--branco);
-    width: 20em;
-    height: 22em;
-    border-radius: 30px;
-    position: relative;
-    overflow: hidden;
+  .circulo-estrutura {
+    background: #9d4edd;
+  }
+  .circulo-internos {
+    background: #f89701;
+  }
+  .circulo-perifericos {
+    background: #2a55c2;
+  }
+  .circulo-resfriamento {
+    background: #61d243;
   }
 
+  /* Footer */
+  .footer-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .geral,
+  .redes-sociais,
+  .contato {
+    margin-left: 55px;
+    margin-top: 30px;
+  }
+
+  .descricao-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .email {
+    width: 200px;
+    margin: 5px 65px;
+    display: flex;
+  }
+
+  .logo {
+    width: 100%;
+  }
+
+  .copyright {
+    margin: 5em;
+  }
+}
+
+@media (width: 430px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+@media (min-width: 1920px) {
+  .menu {
+    width: 45em;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(234, 236, 240, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    align-items: center;
+  }
+
+  .ramcoin {
+    position: absolute;
+    bottom: 3em;
+    left: 42em;
+    margin-top: 25px;
+  }
+
+  /* Adjustments for text */
+  .p-gabinete,
+  .p-baias,
+  .p-slots,
+  .p-organizador,
+  .p-painel,
+  .p-hdd,
+  .p-cpu {
+    font-size: 15px;
+    width: 50%;
+    position: relative;
+    top: 1em;
+    left: 13em;
+  }
+
+  /* Estrutura-specific */
   .titulo-estrutura,
   .titulo-internos,
   .titulo-perifericos,
   .titulo-resfriamento {
     font-size: 16px;
-  }
-
-  .tipo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 20em;
-    z-index: 2;
-  }
-
-  /* começo estrutura gabinete */
-  .fundo-gabinete .tipo {
-    margin: 0;
-  }
-
-  .fundo-gabinete .estrutura {
-    width: 2em;
-    margin: 1em 0.5em 1em 10em;
-  }
-
-  .fundo-gabinete .titulo-estrutura {
-    margin-left: 5px;
-  }
-
-  .img-estrutura {
-    position: relative;
-    bottom: 3em;
-    left: 1em;
-    width: 15em;
-    height: 15em;
-  }
-
-  .titulo-gabinete {
-    position: relative;
-    bottom: 0.5em;
-  }
-
-  .textos-gabinete {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    left: 6em;
-    bottom: 4em;
-  }
-
-  .p-gabinete {
-    font-family: "Poppins-regular";
-    color: var(--preto);
-    width: 50%;
-    position: relative;
-    top: 1em;
-    left: 14em;
-    text-align: start;
-  }
-
-  #content1 .ramcoin {
-    position: absolute;
-    bottom: 3em;
-    left: 37em;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: end;
-    margin-top: 25px;
-  }
-
-  /* final estrutura gabinete */
-  /* carrossel */
-
-  /* footer */
-  .footer-container {
-    width: 100%;
-    height: auto;
-    position: none;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .geral {
-    margin-top: 35px;
-    margin-left: 55px;
-  }
-
-  .redes-sociais,
-  .contato {
-    margin-top: 30px;
-    margin-left: 55px;
-  }
-
-  .footer-container .descricao-footer ul {
-    list-style-type: none;
-    padding: 0px 5px;
-  }
-
-  .descricao-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0px;
-    width: 100%;
-  }
-
-  .email {
-    width: 200px;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    margin: 5px 65px;
-  }
-
-  .footer-container .logo {
-    width: 100%;
-  }
-
-  .copyright {
-    margin: 5em 5em 0 5em;
-  }
-  /* footer */
-}
-
-@media (max-width: 422px) {
-  .email {
-    width: 200px;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    margin: 5px 40px;
-  }
-
-  .footer-container .logo {
-    margin: 0;
-    bottom: 20px;
-    flex-direction: column;
-  }
-
-  .flor img {
-    visibility: hidden;
-  }
-
-  .flor img {
-    visibility: hidden;
-  }
-
-  .footer-container .descricao-footer {
-    margin-top: 0;
-    display: block;
-  }
-
-  .descricao-footer {
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 40px;
-    max-width: 100%;
-  }
-  /*   
-  .geral, .contato {
-    margin: 70px;
-
-  }
- */
-  .endereco {
-    max-width: 100%;
-  }
-
-  .footer-container button {
-    margin-right: 10px;
-  }
-
-  .logoBranca-small {
-    width: 150px;
-  }
-
-  h3 {
-    margin-top: 15px;
-  }
-}
-
-
-@media (max-width: 1920px) {
-  .menu {
-    background-color: rgba(234, 236, 240, 0.5);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 45em;
-    margin: auto;
-    justify-content: center;
-  }
-
-  #content1 .ramcoin {
-    position: absolute;
-    bottom: 3em;
-    left: 42em;
-    margin-top: 25px;
-  }
-
-  #content2 .ramcoin {
-    position: absolute;
-    bottom: 3em;
-    left: 42em;
-    margin-top: 25px;
-  }
-
-  .p-baias, .p-slots, .p-organizador {
-    font-size: 15px;
-    width: 50%;
-    position: relative;
-    top: 1em;
-    left: 13em;
-  }
-  
-  .p-painel {
-    font-size: 15px;
-    width: 50%;
-    position: relative;
-    top: 0;
-    left: 13em;
-  }
-
-  #content3 .ramcoin {
-    position: absolute;
-    bottom: 3em;
-    left: 42.3em;
-    margin-top: 25px;
-  }
-  
-  #content4 .ramcoin {
-    position: absolute;
-    bottom: 3em;
-    left: 42.3em;
-    margin-top: 25px;
-  }
-
-  #content5 .ramcoin {
-    position: absolute;
-    bottom: 3em;
-    left: 42.3em;
-    margin-top: 25px;
-  }
-
-  #content6 .ramcoin {
-    position: absolute;
-    bottom: 3em;
-    left: 42.3em;
-    margin-top: 25px;
-  }
-
-  #content7 .ramcoin {
-    position: absolute;
-    bottom: 3em;
-    left: 42.3em;
-    margin-top: 25px;
-  }
-
-  .p-placa-mae {
-    font-size: 15px;
-    width: 53%;
-    position: relative;
-    top: 0;
-    left: 13em;
-  }
-
-  #content8 .ramcoin {
-    position: absolute;
-    bottom: 3em;
-    left: 42.3em;
-    margin-top: 25px;
-  }
-
-  #content9 .ramcoin {
-    position: absolute;
-    bottom: 3em;
-    left: 42.3em;
-    margin-top: 25px;
-  }
-
-  .titulo-hdd {
-    position: relative;
-    left: 8.8em;
-    bottom: 1.5em;
-  }
-
-  .p-hdd {
-    font-size: 15px;
-    width: 53%;
-    position: relative;
-    top: 0;
-    left: 13em;
-  }
-
-  #content10 .ramcoin {
-    position: absolute;
-    bottom: 3em;
-    left: 42.3em;
-    margin-top: 25px;
-  }
-
-  #content11 .ramcoin {
-    position: absolute;
-    bottom: 3em;
-    left: 42.3em;
-    margin-top: 25px;
-  }
-
-  .p-cpu {
-    position: relative;
-    top: -1em;
-    left: 12.3em;
-    text-align: start;
-  }
-
-  #content12 .ramcoin {
-    position: absolute;
-    bottom: 3em;
-    left: 42.3em;
-    margin-top: 25px;
-  }
-
-  #content13 .ramcoin {
-    position: absolute;
-    bottom: 3em;
-    left: 42.3em;
-    margin-top: 25px;
-  }
-
-  #content14 .ramcoin {
-    position: absolute;
-    bottom: 3em;
-    left: 42.3em;
-    margin-top: 25px;
-  }
-
-  #content15 .ramcoin {
-    position: absolute;
-    bottom: 3em;
-    left: 42.3em;
-    margin-top: 25px;
-  }
-
-  #content16 .ramcoin {
-    position: absolute;
-    bottom: 3em;
-    left: 42.3em;
-    margin-top: 25px;
-  }
-
-  #content17 .ramcoin {
-    position: absolute;
-    bottom: 3em;
-    left: 42.3em;
-    margin-top: 25px;
-  }
-
-  .p-dissipadores {
-    font-size: 15px;
-    position: relative;
-    top: 0;
-    left: 13em;
-  }
-
-  #content18 .ramcoin {
-    position: absolute;
-    bottom: 3em;
-    left: 42.3em;
-    margin-top: 25px;
-  }
-
-  #content19 .ramcoin {
-    position: absolute;
-    bottom: 3em;
-    left: 42.3em;
-    margin-top: 25px;
   }
 }

@@ -24,7 +24,9 @@ const auth = firebase.auth();
 
 firebase.auth().onAuthStateChanged((user) => {
   if (user) {
-  window.location.href = "../../pagina-inicial/inicial.html";
+    setTimeout(() => {
+      window.location.href = "../../pagina-inicial/inicial.html";
+    }, 3000);
   }
 });
 

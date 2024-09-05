@@ -9,12 +9,12 @@ function register() {
     .auth()
     .createUserWithEmailAndPassword(email, senha)
     .then((userCredential) => {
-      const uid = userCredential.user.uid;
-      console.log("Usuário criado com UID:", uid);
-      // Salva os dados do usuário no Realtime Database
+      let uid = userCredential.user.uid;
       saveUserData(uid, email);
-      // Redireciona para a página inicial quando o registro for concluído
-      //window.location.href = "../../pagina-inicial/inicial.html";
+      // Redireciona para a página inicial após 10 segundos
+      setTimeout(() => {
+        window.location.href = "../../pagina-inicial/inicial.html";
+      }, 3000);
     })
     .catch((error) => {
       // Exibe uma mensagem de erro caso ocorra algum problema no registro
@@ -51,7 +51,6 @@ function saveUserData(uid, email) {
       console.error("Mensagem do erro:", error.message);
     });
 }
-
 // Função para obter a mensagem de erro adequada
 function getErrorMessage(error) {
   if (error.code == "auth/email-already-in-use") {
@@ -145,42 +144,52 @@ const Form = {
   data: () => document.getElementById("data-cadastro"),
   erro_email_register: () => document.getElementById("erro-email-register"),
   erro_data: () => document.getElementById("erro-data"),
-  erro_email_obrigatorio: () =>document.getElementById("erro-email-obrigatorio"),
+  erro_email_obrigatorio: () =>
+    document.getElementById("erro-email-obrigatorio"),
   erro_senha_min: () => document.getElementById("erro-senha-min"),
   erro_senha_register: () => document.getElementById("erro-senha-register"),
-  erro_senha_obrigatorio: () =>document.getElementById("erro-senha-obrigatorio"),
+  erro_senha_obrigatorio: () =>
+    document.getElementById("erro-senha-obrigatorio"),
   erro_nao_corresponde: () => document.getElementById("erro-nao-corresponde"),
   cadastrar_button: () => document.getElementById("cadastrar"),
 };
 
 // Função para recuperar os dados do usuário
-function recuperarDadosUsuario() {
-  firebase.auth().onAuthStateChanged((usuario) => {
-    if (usuario) {
-      console.log("usuario", usuario);
-    } else {
-      console.log("não há usuarios logados");
-    }
-  });
-  currentUser = firebase.auth().currentUser;
-  if (currentUser) {
-    console.log("current", currentUser);
+// Definição da função para buscar dados do usuário
+function buscarDadosUsuario(uid) {
+  const dbRef = firebase.database().ref('users/' + uid); // Caminho onde os dados do usuário estão armazenados
+
+  dbRef.once('value')
+      .then((snapshot) => {
+          if (snapshot.exists()) {
+              const dadosUsuario = snapshot.val();
+              console.log("Dados do usuário:", dadosUsuario);
+              exibirDadosUsuario(dadosUsuario);
+          } else {
+              console.log("Nenhum dado encontrado para este usuário.");
+          }
+      })
+      .catch((error) => {
+          console.error("Erro ao buscar dados do usuário:", error);
+      });
+}
+// Autenticação do usuário
+firebase.auth().onAuthStateChanged((user) => {
+  if (user) {
+      const uid = user.uid; // UID do usuário logado
+      console.log("UID do usuário logado:", uid);
+      buscarDadosUsuario(uid); // Chama a função para buscar dados do usuário
+  } else {
+      console.log("Nenhum usuário logado.");
   }
-   
+});
 
-//   const userId = "2tUMtCqlmFVcAs4aoR6OfYFjyof1"; // Certifique-se de que esta função retorna um ID válido
-//   const userRef = firebase.database().ref(`/users/${userId}`);
-//   userRef
-//     .once("value")
-//     .then((snapshot) => {
-//       // Seu código para lidar com os dados
-//       console.log(snapshot.val());
-//     })
-//     .catch((error) => {
-//       console.error("Erro ao recuperar dados:", error);
-//     });
- }
 
+function exibirDadosUsuario(users) {
+  document.getElementById('nome_usuario').innerHTML = users.nome;
+  document.getElementById('email_usuario').innerHTML = users.email;
+
+}
 // Objeto com referências aos elementos do perfil do usuário
 const form_usuario = {
   nome_perfil: () => document.getElementById("nome_usuario"),

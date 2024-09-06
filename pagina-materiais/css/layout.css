@@ -215,13 +215,6 @@
   }
 }
 
-@media (width: 430px) {
-  body {
-    background-color: lightblue; /* Teste simples para verificar se a media query está funcionando */
-  }
-}
-
-
 /* Tablets em modo retrato (tela vertical) */
 @media (max-width: 768px) {
   /* Estilos aqui */

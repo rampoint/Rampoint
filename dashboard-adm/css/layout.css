@@ -1,4 +1,4 @@
-@media (max-width: 1920px) {
+@media (min-width: 1920px) {
   .campo-inicial {
     margin: 0.5em 50px 0 85px;
   }
@@ -42,3 +42,4 @@
     margin-top: 2em;
   }
 }
+

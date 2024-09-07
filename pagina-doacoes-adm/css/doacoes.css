@@ -40,8 +40,13 @@ option[disabled] {
 
 #btn-filtrar option {
   font-family: "Blinker-semibold";
-  font-size: 16px;
-  background-color: #fff;
+  background-color: none;
+  color: #121212;
+}
+
+#btn-filtrar option:checked {
+  background-color: none;
+  color: #121212;
 }
 
 .titulo-inicial {
@@ -134,6 +139,7 @@ option[disabled] {
   font-family: "Blinker-regular";
   border: none;
   border-radius: 15px;
+  margin: 0 0 0 2em;
   padding: 5px;
   display: flex;
   align-items: center;
@@ -161,4 +167,187 @@ option[disabled] {
 .opcoes img {
   width: 1em;
   height: 1em;
+}
+
+/* Estilos do Modal */
+.modal {
+  display: none; /* Oculto por padrão */
+  position: fixed;
+  z-index: 1; /* Fica sobreposto a outros elementos */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0); /* Cor de fundo do modal */
+  background-color: rgba(0, 0, 0, 0.4); /* Cor de fundo com opacidade */
+}
+
+/* Conteúdo do Modal */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% do topo e centralizado */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Largura do modal */
+  max-width: 300px; /* Largura máxima */
+}
+
+/* Botão de Fechar */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Estilos do Menu de Opções */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+}
+
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4); 
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 17em 0 0 77.5em;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#optionsModal1 .modal-content {
+  width: 9em;
+  height: 7.5em;
+}
+
+#optionsModal2 .modal-content {
+  width: 9em;
+  height: 7.5em;
+  margin: 21.5em 0 0 77.5em;
+}
+
+#optionsModal3 .modal-content {
+  width: 9em;
+  height: 7.5em;
+  margin: 26em 0 0 77.5em;
+}
+
+#optionsModal4 .modal-content {
+  width: 9em;
+  height: 7.5em;
+  margin: 30.5em 0 0 77.5em;
+}
+
+.modal-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.modal-content li {
+  margin: 0;
+}
+
+.confirm-modal-content {
+  padding: 20px;
+  border: none;
+  background-color: #fff;
+  border-radius: 8px;
+  width: 10em;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-button {
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.edit-button {
+  font-family: "Poppins-regular"; 
+  background-color: #c8d7fe;
+  color: #2a55c2;
+  border-radius: 8px;
+  width: 8em;
+  margin: 0;
+}
+
+.edit-button:hover {
+  cursor: pointer;
+}
+
+.delete-button {
+  font-family: "Poppins-regular";
+  background-color: #ffeeee;
+  color: #d40000;
+  border-radius: 8px;
+  width: 8em;
+  margin: 0.5em 0;
+}
+
+.delete-button:hover {
+  cursor: pointer;
+}
+
+.confirm-delete-button {
+  background-color: #f44336;
+  color: white;
+  margin: 0.5em 0;
+  width: 8em;
+  border-radius: 8px;
+}
+
+.confirm-delete-button:hover {
+  cursor: pointer;
+}
+
+.cancel-delete-button {
+  background-color: #9e9e9e; 
+  color: white;
+  width: 8em;
+  border-radius: 8px;
+}
+
+.cancel-delete-button:hover {
+  cursor: pointer;
+}
+
+#icon-modal {
+  height: 1em;
+  margin-right: 0.5em;
 }

@@ -15,13 +15,12 @@ const firebaseConfig = {
   storageBucket: "rampoint-81352.appspot.com",
   messagingSenderId: "694254448576",
   appId: "1:694254448576:web:7b78f9707f2625aa9ca225",
-  measurementId: "G-5GMT9136G7"
+  measurementId: "G-5GMT9136G7",
 };
 
 // Initialize Firebase
 const app = firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth();
-
 firebase.auth().onAuthStateChanged((user) => {
   if (user) {
     setTimeout(() => {
@@ -77,8 +76,8 @@ function senhaIsValid() {
   return true;
 }
 
-function validarEmail(email) {
-  return /\S+@\S+\.\S+/.test(email);
+function validarEmail() {
+  return /\S+@\S+\.\S+/.test("sergio@gmail.com");
 }
 
 function mudarErroEmail() {
@@ -86,13 +85,6 @@ function mudarErroEmail() {
 
   form.email().style.border = email ? "none" : "rgb(193, 91, 91) solid";
   form.erro_email_vazio().style.display = email ? "none" : "block";
-
-  form.email().style.border = validarEmail(email)
-    ? "none"
-    : "rgb(193, 91, 91) solid";
-  form.erro_email_invalido().style.display = validarEmail(email)
-    ? "none"
-    : "block";
 }
 
 function mudarErroSenha() {

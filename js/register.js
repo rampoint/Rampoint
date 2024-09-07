@@ -1,3 +1,8 @@
+function mudandoBotao(mensagem){
+    Form.cadastrar_button().innerHTML = ""
+    Form.cadastrar_button().innerHTML = mensagem
+}
+
 var currentUser;
 // Função para registrar o usuário
 function register() {
@@ -9,16 +14,21 @@ function register() {
     .auth()
     .createUserWithEmailAndPassword(email, senha)
     .then((userCredential) => {
+      mudandoBotao("Cadastrando...");
       let uid = userCredential.user.uid;
       saveUserData(uid, email);
       // Redireciona para a página inicial após 10 segundos
       setTimeout(() => {
         window.location.href = "../../pagina-inicial/inicial.html";
-      }, 3000);
+      }, 3000)
+
+
     })
     .catch((error) => {
       // Exibe uma mensagem de erro caso ocorra algum problema no registro
+      mudandoBotao("Cadastrar");
       alert(getErrorMessage(error));
+
     });
 }
 
@@ -165,8 +175,6 @@ function buscarDadosUsuario(uid) {
               const dadosUsuario = snapshot.val();
               console.log("Dados do usuário:", dadosUsuario);
               exibirDadosUsuario(dadosUsuario);
-          } else {
-              console.log("Nenhum dado encontrado para este usuário.");
           }
       })
       .catch((error) => {

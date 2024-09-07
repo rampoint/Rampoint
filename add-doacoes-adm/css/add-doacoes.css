@@ -28,14 +28,14 @@
   display: flex;
   flex-direction: row;
   gap: 3em;
-  margin-left: 150px;
+  margin-left: 100px;
 }
 
 .grupo2 {
   display: flex;
   flex-direction: row;
   margin-top: 3em;
-  margin-left: 150px;
+  margin-left: 100px;
   gap: 1em;
 }
 
@@ -139,7 +139,7 @@ input {
   display: flex;
   flex-direction: column;
   margin-top: 4em;
-  margin-left: 150px;
+  margin-left: 100px;
 }
 
 #descricao-peca {

@@ -65,7 +65,7 @@ option[disabled] {
 .fundo-doacoes {
   background-color: #fff;
   width: 100%;
-  height: 30em;
+  height: 27em;
   border-radius: 15px;
 }
 
@@ -171,26 +171,26 @@ option[disabled] {
 
 /* Estilos do Modal */
 .modal {
-  display: none; /* Oculto por padrão */
+  display: none; 
   position: fixed;
-  z-index: 1; /* Fica sobreposto a outros elementos */
+  z-index: 1; 
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgb(0, 0, 0); /* Cor de fundo do modal */
-  background-color: rgba(0, 0, 0, 0.4); /* Cor de fundo com opacidade */
+  background-color: rgb(0, 0, 0); 
+  background-color: rgba(0, 0, 0, 0.4); 
 }
 
 /* Conteúdo do Modal */
 .modal-content {
   background-color: #fefefe;
-  margin: 15% auto; /* 15% do topo e centralizado */
+  margin: 15% auto; 
   padding: 20px;
-  border: 1px solid #888;
-  width: 80%; /* Largura do modal */
-  max-width: 300px; /* Largura máxima */
+  width: 80%; 
+  max-width: 300px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
 }
 
 /* Botão de Fechar */
@@ -227,7 +227,7 @@ li {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.4); 
+  background-color: rgba(0, 0, 0, 0.0); 
 }
 
 .modal-content {
@@ -350,4 +350,26 @@ li {
 #icon-modal {
   height: 1em;
   margin-right: 0.5em;
+}
+
+/* btn vistoria */
+.botao-vistoria {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-top: 2em;
+}
+
+.btn-vistoria {
+  font-family: "Poppins-semibold";
+  background-color: #CDCDCD;
+  border: none;
+  border-radius: 10px;
+  width: 12em;
+  height: 3em;
+}
+
+.btn-vistoria a {
+  color: #fff;
+  text-decoration: none;
 }

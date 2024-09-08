@@ -1,0 +1,90 @@
+@import url(../css/font.css);
+@import url(../css/cores.css);
+
+.campo-titulo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 110px 50px 40px 50px;
+}
+
+.titulo-inicial {
+  font-family: "Blinker-semibold";
+  color: #2a55c2;
+}
+
+/* campo inicial */
+.campo-inicial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 50px;
+}
+
+.fundo-doacoes {
+  background-color: #fff;
+  width: 100%;
+  height: 30em;
+  border-radius: 15px;
+}
+
+.titulo-tabela {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 8em;
+  margin: 1.5em 5em;
+}
+
+.tabela {
+  font-family: "Poppins-medium";
+  font-size: 14px;
+}
+
+.itens {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 2em;
+}
+
+.conteudo {
+  display: flex;
+  flex-direction: row;
+  gap: 5em;
+}
+
+#placa-de-video {
+  width: 4em;
+}
+
+.nome-peca {
+  font-family: "Blinker-semibold";
+  margin: 0.5em -4em;
+}
+
+.tipo {
+  width: 5em;
+  height: 2em;
+  font-family: "Blinker-regular";
+  background-color: #FEE333;
+  border: none;
+  border-radius: 15px;
+  margin: 0.5em 4em;
+  text-align: center;
+}
+
+.nome {
+  font-family: "Blinker-semibold";
+  margin: 0.5em 5em;
+}
+
+.email {
+  font-family: "Blinker-semibold";
+  margin: 0.5em -3em;
+}
+
+.qtd-total {
+  font-family: "Blinker-semibold";
+  margin: 0.5em 5em;
+}

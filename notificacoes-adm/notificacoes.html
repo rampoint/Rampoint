@@ -5,9 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/sidebar.css" />
-    <link rel="stylesheet" href="./css/historico.css" />
+    <link rel="stylesheet" href="./css/notificacoes.css" />
     <link rel="stylesheet" href="./css/layout.css">
-    <title>Histórico</title>
+    <title>Notificações</title>
     <link rel="shortcut icon" href="./img/rostoCirculo.png" type="image/x-icon" />
 
     <!-- icon -->
@@ -44,24 +44,24 @@
                     </a>
                 </li>
                 <li>
-                    <a href="../pagina-doacoes-adm/doacoes.html">
+                    <a href="../doacoes-adm/doacoes.html">
                         <i class="bx bx-spreadsheet"></i><span class="nav-item">Doações</span>
                     </a>
                 </li>
                 <li>
-                    <a href="../pagina-vistoria-adm/vistorias-pendentes.html">
+                    <a href="../vistoria-adm/vistorias-pendentes.html">
                         <i class="bx bx-list-check"></i>
                         <span class="nav-item">Vistorias pendentes</span>
                     </a>
                 </li>
                 <li>
-                    <a href="../pagina-historico-adm/historico.html">
+                    <a href="../historico-adm/historico.html">
                         <i class="bx bx-time-five"></i>
                         <span class="nav-item">Histórico</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="../notificacoes-adm/notificacoes.html">
                         <i class="bx bx-bell"></i>
                         <span class="nav-item">Notificações</span>
                     </a>
@@ -84,39 +84,65 @@
 
     <main class="main-content">
         <header class="fundo-titulo">
-            <h1 class="titulo-pagina">Histórico</h1>
+            <h1 class="titulo-pagina">Área de notificações</h1>
         </header>
 
-        <section class="campo-titulo">
-            <h2 class="titulo-inicial">Busca de dados</h2>
+        <section class="area-notificacao">
+            <div class="mensagens">
+                <h2>Mensagens</h2>
+                <div class="mensagens-item" onclick="showDetails(0)">
+                    <div class="mensagem-info">
+                        <img src="./img/check.svg" alt="Ícone de um check">
+                        <img src="./img/foto-adm.svg" alt="">
+                        <p>Sergio adicionou uma nova doação</p>
+                    </div>
+                    <div class="seta-mensagem">
+                        <button><img src="./img/seta-mensagem.svg" alt=""></button>
+                    </div>
+                </div>
+                <hr>
+                <div class="mensagens-item" onclick="showDetails(1)">
+                    <div class="mensagem-info">
+                        <img src="./img/check.svg" alt="Ícone de um check">
+                        <img src="./img/foto-adm.svg" alt="">
+                        <p>Nova vistoria disponível</p>
+                    </div>
+                    <div class="seta-mensagem">
+                        <button><img src="./img/seta-mensagem.svg" alt=""></button>
+                    </div>
+                </div>
+            </div>
 
-            <div class="pesquisar-form">
-                <form action="">
-                    <div class="grupo">
-                        <div class="campo-nome">
-                            <label for="nome">Nome Completo</label>
-                            <input type="name">
-                        </div>
-                        <div class="campo-telefone">
-                            <label for="telefone">Telefone</label>
-                            <input type="text">
-                        </div>
+            <div class="mensagem-detalhes" id="mensagem">
+                <div class="mensagem-header">
+                    <img src="./img/foto-adm.svg" alt="Foto de perfil do administrador">
+                    <div class="coluna-mensagem">
+                        <h3>Sergio</h3>
+                        <span class="data-hora">15/10/21, 14:00</span>
                     </div>
-                    <div class="grupo">
-                        <div class="campo-email">
-                            <label for="email">Email</label>
-                            <input type="email">
-                        </div>
-                        <div class="campo-botao">
-                            <button class="btn-pesquisar">Pesquisar</button>
-                        </div>
+                </div>
+                <div class="message-content">
+                    <h4>Nova doação</h4>
+                    <p>Descrição: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="donation-info">
+                        <h5>Informações pessoais</h5>
+                        <p>Nome do doador: Jacques</p>
+                        <p>Email: jacquesmail@gmail.com</p>
+                        <p>Telefone: (11) 95432-3214</p>
+
+                        <h5>Informações da doação</h5>
+                        <p>Peça: Memória RAM</p>
+                        <p>Tipo de componente: Interno</p>
+                        <p>Quantidade: 3</p>
                     </div>
-                </form>
+                </div>
+                <button class="verify-button">Verificar</button>
             </div>
         </section>
     </main>
 
-    <script defer src="./js/sidebar.js"></script>
+    <script src="./js/sidebar.js"></script>
+    <script defer src="./js/mensagens.js"></script>
 </body>
 
 </html>

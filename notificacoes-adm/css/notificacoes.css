@@ -1,0 +1,105 @@
+@import url(../css/cores.css);
+@import url(../css/font.css);
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.area-notificacao {
+  display: flex;
+  margin-top: 6em;
+  margin-left: 1em;
+}
+
+.mensagens {
+  width: 40%;
+  height: 38em;
+  background-color: none;
+  padding: 20px;
+  border-right: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.mensagens h2 {
+  font-family: "Blinker-semibold";
+  color: #2a55c2;
+  margin-bottom: 20px;
+}
+
+.mensagens-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+hr {
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.mensagens-item:hover {
+  cursor: pointer;
+}
+
+.mensagem-info {
+  font-family: "Blinker-regular";
+  display: flex;
+  align-items: center;
+}
+
+.mensagem-info img {
+  margin-right: 10px;
+}
+
+.seta-mensagem button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.mensagem-detalhes {
+  width: 60%;
+  padding: 20px;
+  margin-left: 20px;
+  display: none; 
+  border-radius: 5px;
+}
+
+.mensagem-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.coluna-mensagem {
+  font-family: "Blinker-semibold";
+  margin-left: 1em;
+}
+
+.data-hora {
+  font-family: "Blinker-regular";
+}
+
+.verify-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.verify-button:hover {
+  background-color: #0056b3;
+}

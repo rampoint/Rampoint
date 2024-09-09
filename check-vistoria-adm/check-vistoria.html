@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./css/sidebar.css" />
-  <link rel="stylesheet" href="./css/add-doacoes.css" />
+  <link rel="stylesheet" href="./css/check-vistoria.css" />
   <link rel="stylesheet" href="./css/layout.css">
   <title>Adicionar doações</title>
 
@@ -85,7 +85,7 @@
 
   <main class="main-content">
     <header class="fundo-titulo">
-      <h1 class="titulo-pagina">Adicionar doações</h1>
+      <h1 class="titulo-pagina">Vistoria</h1>
     </header>
 
     <section class="campo-titulo">
@@ -97,18 +97,18 @@
         <div class="grupo1">
           <div class="campo-form">
             <label for="nome" id="nome" class="titulo-form">Nome Completo</label>
-            <input type="name">
+            <input type="name" placeholder="Nome do doador">
           </div>
 
           <div class="campo-form">
             <label for="email" id="email" class="titulo-form">Email</label>
-            <input type="email">
+            <input type="email" placeholder="Email do doador">
           </div>
 
           <div class="campo-form">
             <label for="telefone" id="telefone" class="titulo-form">Telefone</label>
             <div class="select-telefone">
-              <input type="tel">
+              <input type="tel" placeholder="Telefone do doador">
             </div>
           </div>
         </div>
@@ -117,7 +117,7 @@
           <div class="campo-form">
             <label for="nome-peca" class="titulo-form">Nome da(s) peça(s)</label>
             <div class="select-peca">
-              <input type="search" id="search" placeholder="Buscar por peça">
+              <input type="search" id="search" placeholder="Peça doada">
               <img src="./img/add-peca.svg" class="icon-add" alt="Ícone para adicionar mais peças">
             </div>
 
@@ -125,12 +125,13 @@
 
           <div class="campo-form">
             <label for="qtd-peca" class="titulo-form">Qtd. de peça(s)</label>
-            <input type="number">
+            <input type="number" placeholder="Qtd. doada">
           </div>
 
           <div class="campo-form">
             <label for="componente" class="titulo-form">Tipo de componente</label>
             <select name="tipo-componente" id="tipo-componente">
+              <option value="interno">Peça doada</option>
               <option value="interno">Interno</option>
               <option value="periferico">Periférico</option>
               <option value="estrutura">Estrutura</option>
@@ -154,7 +155,7 @@
         </div>
 
         <div class="botoes">
-          <button class="btn-salvar">Salvar</button>
+          <button class="btn-salvar">Confirmar vistoria</button>
           <button class="btn-cancelar">Cancelar</button>
         </div>
       </form>

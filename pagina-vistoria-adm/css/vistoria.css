@@ -24,67 +24,120 @@
 .fundo-doacoes {
   background-color: #fff;
   width: 100%;
-  height: 30em;
+  height: 27em;
   border-radius: 15px;
 }
 
-.titulo-tabela {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  gap: 8em;
-  margin: 1.5em 5em;
+.tabela-doacoes {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0 2em 0;
 }
 
-.tabela {
+.tabela-doacoes th,
+.tabela-doacoes td {
+  padding: 1em;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.tabela-doacoes th {
   font-family: "Poppins-medium";
   font-size: 14px;
+  color: #555;
 }
 
-.itens {
+.tabela-doacoes td {
+  font-family: "Blinker-regular";
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.peca {
   display: flex;
-  flex-direction: row;
-  list-style: none;
-  margin: 2em;
+  align-items: center;
+  gap: 1em;
+  margin-left: 2em;
 }
 
-.conteudo {
-  display: flex;
-  flex-direction: row;
-  gap: 5em;
-}
-
-#placa-de-video {
-  width: 4em;
+.peca img {
+  max-width: 4em;
 }
 
 .nome-peca {
   font-family: "Blinker-semibold";
-  margin: 0.5em -4em;
+  margin: 0 0 1em 0;
 }
 
-.tipo {
-  width: 5em;
+.tipo-interno,
+.tipo-periferico,
+.tipo-estrutura {
+  width: 6em;
   height: 2em;
   font-family: "Blinker-regular";
-  background-color: #FEE333;
   border: none;
   border-radius: 15px;
-  margin: 0.5em 4em;
   text-align: center;
 }
 
-.nome {
-  font-family: "Blinker-semibold";
-  margin: 0.5em 5em;
+.tipo-interno {
+  background-color: #fee333;
 }
 
-.email {
-  font-family: "Blinker-semibold";
-  margin: 0.5em -3em;
+.tipo-periferico {
+  background-color: #c8d7fe;
 }
 
-.qtd-total {
-  font-family: "Blinker-semibold";
-  margin: 0.5em 5em;
+.tipo-estrutura {
+  background-color: #e1c6f6;
+}
+
+.vistoria-realizada,
+.vistoria-pendente {
+  width: 7em;
+  height: 2em;
+  font-family: "Blinker-regular";
+  border: none;
+  border-radius: 15px;
+  margin: 0 0 0 2em;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+}
+
+.vistoria-realizada {
+  background-color: #ecfdf3;
+  color: #508d3f;
+}
+
+.vistoria-pendente {
+  background-color: #ffeeee;
+  color: #d40000;
+}
+
+.opcoes {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.opcoes img {
+  width: 1em;
+  height: 1em;
+}
+
+#gabinete {
+  width: 2.5em;
+}
+
+.btn-vistoria {
+  background-color: #2a55c2;
+  border: none;
+  border-radius: 15px;
+  width: 2em;
+  height: 2em;
+  padding: 5px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }

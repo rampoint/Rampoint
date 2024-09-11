@@ -44,7 +44,8 @@
 }
 
 hr {
-  color: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(155, 155, 155, 0.15);
+  margin: 10px 0;
 }
 
 .mensagens-item:hover {
@@ -91,13 +92,65 @@ hr {
   font-family: "Blinker-regular";
 }
 
+.mensagem-content h2 {
+  font-family: "Blinker-semibold";
+  margin-bottom: 10px;
+}
+
+.mensagem-content .descricao {
+  font-family: "Blinker-semibold";
+  color: rgba(0, 0, 0, 0.67);
+}
+
+.conteudo-descricao {
+  font-family: "Blinker-regular";
+  color: rgba(0, 0, 0, 0.67);
+  margin: 5px 0;
+  width: 90%;
+  text-align: justify;
+}
+
+.info {
+  margin: 25px 0;
+}
+
+.info h4 {
+  font-family: "Blinker-regular";
+  color: var(--azul);
+  margin-bottom: 10px;
+}
+
+.span-preto {
+  font-family: "Blinker-regular";
+  color: #000;
+}
+
+.info p {
+  font-family: "Blinker-regular";
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.btn-vistoria {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 .verify-button {
-  background-color: #007bff;
+  font-family: "Poppins-semibold";
+  background-color: var(--azul);
   color: white;
   border: none;
+  border-radius: 10px;
   padding: 10px 20px;
   cursor: pointer;
   margin-top: 20px;
+  width: 12em;
+  height: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .verify-button:hover {

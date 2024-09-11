@@ -1,0 +1,84 @@
+@import url(../css/font.css);
+@import url(../css/cores.css);
+
+body {
+  overflow: auto;
+}
+
+.campo-titulo {
+  margin: 100px 50px 25px 35px;
+}
+
+.titulo-inicial {
+  font-family: "Blinker-semibold";
+  color: #2a55c2;
+}
+
+/* conteudo da pagina */
+.campo-inicial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5em 50px 0 35px;
+}
+
+.fundo-perfil {
+  background-color: #fff;
+  width: 50em;
+  height: 15em;
+  border-radius: 15px;
+  margin-top: 1em;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.foto-perfil {
+  margin-left: 1em;
+}
+
+.dados-adm {
+  margin-left: 1em;
+}
+
+.nome-adm {
+  font-family: "Poppins-extrabold";
+}
+
+.email-adm {
+  font-family: "Poppins-medium";
+  color: #535252;
+  font-size: 0.9em;
+}
+
+.editar-perfil {
+  font-family: "Poppins-semibold";
+  color: var(--preto);
+  margin-left: 22em;
+  margin-bottom: 10em;
+  text-decoration: none;
+}
+
+.titulo-doacoes {
+  font-family: "Blinker-semibold";  
+  margin: 3em 1.5em 0 1.5em;
+}
+
+.grupos {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2em;
+}
+
+.grafico-coluna, .grafico-pizza {
+  background-color: #fff;
+  width: 550px;
+  height: 500px;
+  margin-top: 2em;
+  border-radius: 15px;
+  margin-left: 5em;
+  padding: 45px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}

@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./css/sidebar.css" />
-  <link rel="stylesheet" href="./css/dashboard.css" />
+  <link rel="stylesheet" href="./css/perfil.css" />
   <link rel="stylesheet" href="./css/layout.css">
   <title>Perfil</title>
   <link rel="shortcut icon" href="./img/rostoCirculo.png" type="image/x-icon" />
@@ -27,7 +27,7 @@
       <ul class="links">
         <li>
           <div class="user">
-            <img src="./img/perfilADM.svg" class="foto-perfil" alt="Foto de perfil do usuário" />
+            <img src="./img/perfilADM.svg" class="foto-perfil-sidebar" alt="Foto de perfil do usuário" />
             <p class="nome-usuario">Usuário</p>
           </div>
         </li>
@@ -92,7 +92,18 @@
     </section>
 
     <section class="campo-inicial">
-      <h3 class="subtitulo">Tendência mensal de doações</h3>
+      <div class="fundo-perfil">
+        <img src="./img/foto-perfil.svg" class="foto-perfil" alt="Foto de perfil do administrador">
+        <div class="dados-adm">
+          <h3 class="nome-adm">Leticia</h3>
+          <p class="email-adm">leticia@gmail.com</p>
+        </div>
+        <a href="" class="editar-perfil">Editar perfil</a>
+      </div>
+    </section>
+
+    <section class="campo-doacoes">
+      <h1 class="titulo-doacoes">Doações cadastradas</h1>
       <div class="grupos">
         <div class="grafico-coluna">
           <script src="https://code.highcharts.com/highcharts.js"></script>
@@ -105,86 +116,24 @@
           </figure>
         </div>
 
-        <aside class="notificacoes">
-          <h3 class="titulo-notificacoes">Notificações</h3>
-          <section class="fundo-notificacoes">
-            <article class="grupo-mensagem">
-              <img src="./img/perfilADM.svg" alt="Perfil" />
-              <div class="coluna-mensagem">
-                <h4 class="titulo-mensagem">Nova doação!</h4>
-                <p class="mensagem">
-                  Nome do doador:<span class="span-mensagem">
-                    is simply dummy text of the</span>
-                </p>
-              </div>
-              <p class="horario">XX:XX</p>
-            </article>
-            <div class="linha"></div>
-            <article class="grupo-mensagem">
-              <img src="./img/perfilADM.svg" alt="Perfil" />
-              <div class="coluna-mensagem">
-                <h4 class="titulo-mensagem">Código disponível</h4>
-                <p class="mensagem">
-                  Nome do doador:<span class="span-mensagem">
-                    is simply dummy text of the</span>
-                </p>
-              </div>
-              <p class="horario">XX:XX</p>
-            </article>
-            <div class="linha"></div>
-            <article class="grupo-mensagem">
-              <img src="./img/perfilADM.svg" alt="Perfil" />
-              <div class="coluna-mensagem">
-                <h4 class="titulo-mensagem">Vistoria disponível</h4>
-                <p class="mensagem">
-                  Nome do doador:<span class="span-mensagem">
-                    is simply dummy text of the</span>
-                </p>
-              </div>
-              <p class="horario">XX:XX</p>
-            </article>
-          </section>
+        <div class="grafico-pizza">
+          <script src="https://code.highcharts.com/highcharts.js"></script>
+          <script src="https://code.highcharts.com/modules/variable-pie.js"></script>
+          <script src="https://code.highcharts.com/modules/exporting.js"></script>
+          <script src="https://code.highcharts.com/modules/export-data.js"></script>
+          <script src="https://code.highcharts.com/modules/accessibility.js"></script>
 
-          <section class="doacoes">
-            <header class="texto-doacoes">
-              <h3 class="titulo-doadores">Últimos doadores</h3>
-              <a href="" class="link-doacoes">Ver tudo</a>
-            </header>
-            <table class="tabela-doadores">
-              <thead>
-                <tr>
-                  <th>Nome do doador</th>
-                  <th>Peça</th>
-                  <th id="coluna-data">Data <span id="seta">&darr;</span></th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Giovana</td>
-                  <td>Placa de vídeo</td>
-                  <td>15/11/24</td>
-                </tr>
-                <tr>
-                  <td>Ana Julia</td>
-                  <td>Teclado</td>
-                  <td>20/09/24</td>
-                </tr>
-                <tr>
-                  <td>Jacques</td>
-                  <td>Memória RAM</td>
-                  <td>16/08/24</td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
-        </aside>
+          <figure class="highcharts-figure">
+            <div id="container2"></div>
+          </figure>
+        </div>
       </div>
     </section>
   </main>
 
   <script src="./js/sidebar.js"></script>
-  <script defer src="./js/setaData.js"></script>
   <script src="./js/grafico.js"></script>
+  <script src="./js/grafico-pizza.js"></script>
 </body>
 
 </html>

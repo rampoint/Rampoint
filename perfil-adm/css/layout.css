@@ -1,0 +1,45 @@
+@media (min-width: 1920px) {
+  .campo-inicial {
+    margin: 0.5em 50px 0 85px;
+  }
+
+  .grupos {
+    margin-top: 2em;
+  }
+
+  .grafico-coluna {
+    background-color: #fff;
+    width: 690px;
+    height: 700px;
+    border-radius: 15px;
+    margin-top: 15px;
+    padding: 30px 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  #container {
+    width: 650px;
+    height: 650px;
+  }
+
+  .notificacoes {
+    margin-left: 15em;
+  }
+
+  .fundo-notificacoes {
+    width: 35em;
+    height: 17em;
+    margin-top: 1em;
+  }
+
+  .doacoes {
+    margin-top: 3em;
+  }
+
+  .tabela-doadores {
+    width: 35em;
+    height: 17em;
+    margin-top: 2em;
+  }
+}
+

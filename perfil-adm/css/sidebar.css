@@ -38,12 +38,12 @@ body {
 }
 
 .sidebar.active ~ .main-content {
-  left: 290px;
-  width: calc(100% - 300px);
+  left: 280px;
+  width: calc(100% - 150px);
 }
 
 .sidebar.active {
-  width: 290px;
+  width: 280px;
 }
 
 .sidebar #btn {
@@ -91,6 +91,7 @@ body {
 }
 
 .user {
+  width: 50%;
   position: relative;
   bottom: 0.5em;
   opacity: 1;
@@ -98,10 +99,6 @@ body {
   flex-direction: row;
   align-items: center;
   cursor: pointer;
-  background-color: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .sidebar.active .user {
@@ -115,13 +112,13 @@ body {
 }
 
 .foto-perfil {
-  height: 95%;
+  height: 50%;
   margin: 5px;
   padding: 5px;
 }
 
 .sidebar.active  .foto-perfil {
-  height: 100%;
+  height: 50%;
   margin: 5px;
   padding: 5px;
   position: relative;

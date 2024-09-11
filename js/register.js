@@ -185,23 +185,31 @@ function buscarDadosUsuario(uid) {
 firebase.auth().onAuthStateChanged((user) => {
   if (user) {
       const uid = user.uid; // UID do usuário logado
-      console.log("UID do usuário logado:", uid);
       buscarDadosUsuario(uid); // Chama a função para buscar dados do usuário
+      //mudarFoto(uid);
   } else {
       console.log("Nenhum usuário logado.");
   }
 });
-
-
 function exibirDadosUsuario(users) {
   document.getElementById('nome_usuario').innerHTML = users.nome;
   document.getElementById('email_usuario').innerHTML = users.email;
-
+  document.getElementById('foto-usuario').src = users.imagemPerfil;
 }
+
+function mudandoDados(){}
+// function mudarFoto(uid){
+//   const dbRef = firebase.database().ref('users/' + uid); // Caminho onde os dados do usuário estão armazenados
+  
+//    dbRef.child("/imagemPerfil").set().then(() =>{
+//      console.log("receba ta no banco")
+//    })
+//  }
 // Objeto com referências aos elementos do perfil do usuário
 const form_usuario = {
   nome_perfil: () => document.getElementById("nome_usuario"),
   email_perfil: () => document.getElementById("email_usuario"),
   emocao_usuario: () => document.getElementById("emocao_usuario"),
   pontos: () => document.getElementById("pontos_usuario"),
+  foto_perfil:() => document.getElementById("foto-usuario")
 };

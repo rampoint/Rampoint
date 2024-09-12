@@ -91,7 +91,6 @@ body {
 }
 
 .user {
-  width: 50%;
   position: relative;
   bottom: 0.5em;
   opacity: 1;
@@ -99,6 +98,10 @@ body {
   flex-direction: row;
   align-items: center;
   cursor: pointer;
+  background-color: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .sidebar.active .user {
@@ -108,17 +111,22 @@ body {
 .sidebar .user {
   opacity: 1;
   position: relative;
-  right: 0.5em;
+  right: 0.1em;
+}
+
+#user-btn:hover {
+  background-color: transparent;
+  color: #707070;
 }
 
 .foto-perfil {
-  height: 50%;
+  height: 95%;
   margin: 5px;
   padding: 5px;
 }
 
 .sidebar.active  .foto-perfil {
-  height: 50%;
+  height: 100%;
   margin: 5px;
   padding: 5px;
   position: relative;

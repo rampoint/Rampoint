@@ -98,7 +98,43 @@
           <h3 class="nome-adm">Leticia</h3>
           <p class="email-adm">leticia@gmail.com</p>
         </div>
-        <a href="" class="editar-perfil">Editar perfil</a>
+        <!-- modal editar perfil -->
+        <div class="modal-perfil">
+          <div class="content-perfil">
+            <img src="./img/Vector.svg" class="icon-x" alt="Ícone de um x para fechar o modal">
+            <div class="info-perfil">
+              <img src="./img/foto-perfil.svg" id="foto-perfil" alt="Foto de perfil">
+              <img src="./img/lapis.svg" id="lapis" alt="">
+              <div class="grupo">
+                <div class="campo-form">
+                  <label for="nome">Nome</label>
+                  <input type="name" name="nome" id="nome">
+                </div>
+                <div class="campo-form">
+                  <label for="telefone">Telefone</label>
+                  <input type="tel" name="telefone" id="telefone">
+                </div>
+              </div>
+              <div class="grupo">
+                <div class="campo-form">
+                  <label for="email-adm">Email</label>
+                  <input type="email" name="email-adm" id="email-adm">
+                </div>
+                <div class="campo-form">
+                  <label for="senha">Senha</label>
+                  <input type="password" name="senha" id="senha">
+                </div>
+              </div>
+              <div class="grupo">
+                <div class="botoes">
+                  <button class="btn-salvar">Salvar</button>
+                  <button class="excluir-conta">Excluir conta</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="modalBtn-perfil">Editar perfil</button>
       </div>
     </section>
 
@@ -131,9 +167,10 @@
     </section>
   </main>
 
-  <script src="./js/sidebar.js"></script>
-  <script src="./js/grafico.js"></script>
-  <script src="./js/grafico-pizza.js"></script>
+  <script defer src="./js/sidebar.js"></script>
+  <script defer src="./js/grafico.js"></script>
+  <script defer src="./js/grafico-pizza.js"></script>
+  <script defer src="./js/editar-perfil.js"></script>
 </body>
 
 </html>

@@ -1,9 +1,11 @@
+
+
 function mudandoBotao(mensagem){
     Form.cadastrar_button().innerHTML = ""
     Form.cadastrar_button().innerHTML = mensagem
 }
 
-var currentUser;
+
 // Função para registrar o usuário
 function register() {
   const email = Form.email().value;
@@ -185,7 +187,7 @@ firebase.auth().onAuthStateChanged((user) => {
   if (user) {
       const uid = user.uid; // UID do usuário logado
       buscarDadosUsuario(uid); // Chama a função para buscar dados do usuário
-      //mudarFoto(uid);
+      
   } else {
       console.log("Nenhum usuário logado.");
   }
@@ -200,15 +202,14 @@ function exibirDadosUsuario(users) {
 }
 
 function mudarDados(){
-  var nome_mudanca = document.getElementById('nome_mudar').value
+  var nome_mudanca = document.getElementById('nome-mudar').value
   const database = firebase.database();
-  const userRef = database.ref("users/" + uid);
+  const userRef = database.ref("users/" + globalUserId);
 
   if(nome_mudanca){
-  
-  // Salva os dados do usuário no Realtime Database
+
   userRef
-    .set({
+    .update({
       nome: nome_mudanca,
     })
     .then(() => {
@@ -223,6 +224,13 @@ function mudarDados(){
   }
 }
 
+let globalUserId = null;
+firebase.auth().onAuthStateChanged( (user) => {
+  if (user) {
+    globalUserId = user.uid;
+     // Armazena o UID globalmente
+  }
+});
 
 function mudandoDados(){}
 // function mudarFoto(uid){

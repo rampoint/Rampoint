@@ -20,9 +20,9 @@ function register() {
       let uid = userCredential.user.uid;
       saveUserData(uid, email);
       // Redireciona para a página inicial após 10 segundos
-      setTimeout(() => {
-        window.location.href = "../../pagina-inicial/inicial.html";
-      }, 3000)
+      // setTimeout(() => {
+      //   window.location.href = "../../pagina-inicial/inicial.html";
+      // }, 3000)
 
 
     })
@@ -78,7 +78,7 @@ function onchangeEmail() {
   Form.erro_email_obrigatorio().style.display = email ? "none" : "block";
 
   // Valida se o email é válido
-  Form.erro_email_register().style.display = validarEmail(email)
+  Form.erro_email_register().style.display = validarEmail_cadastro(email)
     ? "none"
     : "block";
 
@@ -124,7 +124,7 @@ function botaoDesativar() {
 // Função para validar se o formulário é válido
 function isFormValid() {
   const email = Form.email().value;
-  if (!email || !validarEmail()) {
+  if (!email || !validarEmail_cadastro()) {
     return false;
   }
   const senha = Form.senha().value;
@@ -140,7 +140,7 @@ function isFormValid() {
 }
 
 // Função para validar o formato do email
-function validarEmail() {
+function validarEmail_cadastro() {
   return /\S+@\S+\.\S+/.test(Form.email().value);
 }
 

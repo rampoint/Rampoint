@@ -23,9 +23,9 @@ const app = firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth();
 firebase.auth().onAuthStateChanged((user) => {
   if (user) {
-    setTimeout(() => {
-      window.location.href = "../../pagina-inicial/inicial.html";
-    }, 3000);
+    // setTimeout(() => {
+    //   window.location.href = "../../pagina-inicial/inicial.html";
+    // }, 3000);
   }
 });
 
@@ -64,7 +64,6 @@ function emailIsValid() {
   if (!email) {
     return false;
   }
-
   return validarEmail(email);
 }
 
@@ -76,8 +75,8 @@ function senhaIsValid() {
   return true;
 }
 
-function validarEmail() {
-  return /\S+@\S+\.\S+/.test("sergio@gmail.com");
+function validarEmail(email) {
+  return /\S+@\S+\.\S+/.test(email); // Usa o e-mail do formulário
 }
 
 function mudarErroEmail() {
@@ -103,6 +102,31 @@ function mudarBotoes() {
 
   var senhaValida = senhaIsValid();
   form.entrar().disabled = !senhaValida;
+}
+
+function VerificarData() {
+  const dataNascimento = new Date(document.getElementById("data-cadastro").value);
+  const idade = calcularIdade(dataNascimento);
+  const resultado = document.getElementById("erro-data-18");
+
+  if (idade < 18) {
+      resultado.style.display = "block"
+  } else {
+      resultado.style.display = "none"
+  }
+};
+
+function calcularIdade(dataNascimento) {
+  const hoje = new Date();
+  let idade = hoje.getFullYear() - dataNascimento.getFullYear();
+  const mesAtual = hoje.getMonth();
+  const mesNascimento = dataNascimento.getMonth();
+
+  // Verifica se o aniversário já ocorreu este ano
+  if (mesAtual < mesNascimento || (mesAtual === mesNascimento && hoje.getDate() < dataNascimento.getDate())) {
+      idade--;
+  }
+  return idade;
 }
 
 //dados pegos de forma mais facil

@@ -421,7 +421,7 @@ input::placeholder {
   font-family: "Poppins-semibold";
 }
 
-#nome, #email, #senha, #nascimento, #genero {
+#nome-mudar, #email-mudar, #senha-mudar, #nascimento, #genero-mudar {
   background-color: var(--branco);
   width: 15em;
   border: none;
@@ -438,7 +438,7 @@ input::placeholder {
   padding: 5px;
 }
 
-#telefone {
+#telefone-mudar  {
   background-color: var(--branco);
   width: 11.5em;
   border: none;

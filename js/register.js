@@ -38,7 +38,6 @@ function saveUserData(uid, email) {
   const telefone = Form.telefone().value;
   const dataNascimento = Form.data().value;
   const genero = Form.genero().value;
-
   const database = firebase.database();
   const userRef = database.ref("users/" + uid);
 
@@ -192,10 +191,38 @@ firebase.auth().onAuthStateChanged((user) => {
   }
 });
 function exibirDadosUsuario(users) {
-  document.getElementById('nome_usuario').innerHTML = users.nome;
-  document.getElementById('email_usuario').innerHTML = users.email;
-  document.getElementById('foto-usuario').src = users.imagemPerfil;
+  form_usuario.nome_perfil().innerHTML= users.nome;
+  form_usuario.email_perfil().innerHTML = users.email;
+  form_usuario.foto_perfil().src = users.imagemPerfil;
+  document.getElementById('nome-mudar').placeholder = users.nome
+  document.getElementById('email-mudar').placeholder = users.email
+  document.getElementById('telefone-mudar').placeholder = users.tel
 }
+
+function mudarDados(){
+  var nome_mudanca = document.getElementById('nome_mudar').value
+  const database = firebase.database();
+  const userRef = database.ref("users/" + uid);
+
+  if(nome_mudanca){
+  
+  // Salva os dados do usuário no Realtime Database
+  userRef
+    .set({
+      nome: nome_mudanca,
+    })
+    .then(() => {
+      console.log("Dados do usuário modificado com sucesso");
+    })
+    .catch((error) => {
+      console.error("Erro ao salvar dados do usuário:", error);
+      console.error("Código do erro:", error.code);
+      console.error("Mensagem do erro:", error.message);
+    });
+
+  }
+}
+
 
 function mudandoDados(){}
 // function mudarFoto(uid){

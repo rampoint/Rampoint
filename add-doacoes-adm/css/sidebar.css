@@ -111,7 +111,12 @@ body {
 .sidebar .user {
   opacity: 1;
   position: relative;
-  right: 0.5em;
+  right: 0.1em;
+}
+
+#user-btn:hover {
+  background-color: transparent;
+  color: #707070;
 }
 
 .foto-perfil {

@@ -20,9 +20,9 @@ function register() {
       let uid = userCredential.user.uid;
       saveUserData(uid, email);
       // Redireciona para a página inicial após 10 segundos
-      // setTimeout(() => {
-      //   window.location.href = "../../pagina-inicial/inicial.html";
-      // }, 3000)
+       setTimeout(() => {
+         window.location.href = "../../pagina-inicial/inicial.html";
+       }, 3000)
 
 
     })
@@ -229,6 +229,8 @@ function exibirDadosUsuario(users) {
   document.getElementById('nome-mudar').placeholder = users.nome
   document.getElementById('email-mudar').placeholder = users.email
   document.getElementById('telefone-mudar').placeholder = users.tel
+  //parte da inicial
+  document.getElementById('nome_modal').innerHTML = users.nome
 }
 
 function mudarDados(){
@@ -278,3 +280,4 @@ const form_usuario = {
   pontos: () => document.getElementById("pontos_usuario"),
   foto_perfil:() => document.getElementById("foto-usuario")
 };
+//parte visual da sala inicial

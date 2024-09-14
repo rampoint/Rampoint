@@ -22,9 +22,9 @@ const app = firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth();
 firebase.auth().onAuthStateChanged((user) => {
   if (user) {
-    // setTimeout(() => {
-    //   window.location.href = "../../pagina-inicial/inicial.html";
-    // }, 3000);
+     setTimeout(() => {
+       window.location.href = "../../pagina-inicial/inicial.html";
+     }, 3000);
   }
 });
 

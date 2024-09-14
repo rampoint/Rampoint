@@ -135,13 +135,43 @@ function isFormValid() {
   if (senha != confirmarSenha) {
     return false;
   }
-
+  if(!VerificarData()){
+    return false
+  }
   return true;
 }
 
 // Função para validar o formato do email
 function validarEmail_cadastro() {
   return /\S+@\S+\.\S+/.test(Form.email().value);
+}
+
+
+function VerificarData() {
+  const dataNascimento = new Date(Form.data().value);
+  const idade = calcularIdade(dataNascimento);
+  const resultado = document.getElementById("erro-data-18");
+  if (idade < 18) {
+      resultado.style.display = "block"
+      return false
+  } else {
+      resultado.style.display = "none"
+      return true
+  }
+  
+};
+
+function calcularIdade(dataNascimento) {
+  const hoje = new Date();
+  let idade = hoje.getFullYear() - dataNascimento.getFullYear();
+  const mesAtual = hoje.getMonth();
+  const mesNascimento = dataNascimento.getMonth();
+
+  // Verifica se o aniversário já ocorreu este ano
+  if (mesAtual < mesNascimento || (mesAtual === mesNascimento && hoje.getDate() < dataNascimento.getDate())) {
+      idade--;
+  }
+  return idade;
 }
 
 // Objeto com referências aos elementos do formulário

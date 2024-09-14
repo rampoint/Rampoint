@@ -6,7 +6,6 @@
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: "AIzaSyDUzAILjPJy3zoUVWkD7U4YdI6MDh_QlS4",
   authDomain: "rampoint-81352.firebaseapp.com",
@@ -104,30 +103,6 @@ function mudarBotoes() {
   form.entrar().disabled = !senhaValida;
 }
 
-function VerificarData() {
-  const dataNascimento = new Date(document.getElementById("data-cadastro").value);
-  const idade = calcularIdade(dataNascimento);
-  const resultado = document.getElementById("erro-data-18");
-
-  if (idade < 18) {
-      resultado.style.display = "block"
-  } else {
-      resultado.style.display = "none"
-  }
-};
-
-function calcularIdade(dataNascimento) {
-  const hoje = new Date();
-  let idade = hoje.getFullYear() - dataNascimento.getFullYear();
-  const mesAtual = hoje.getMonth();
-  const mesNascimento = dataNascimento.getMonth();
-
-  // Verifica se o aniversário já ocorreu este ano
-  if (mesAtual < mesNascimento || (mesAtual === mesNascimento && hoje.getDate() < dataNascimento.getDate())) {
-      idade--;
-  }
-  return idade;
-}
 
 //dados pegos de forma mais facil
 

@@ -14,7 +14,7 @@
 
 </head>
 
-<body onload="buscarDadosUsuario()">
+<body>
     <script>
         function showSidebar() {
             const sidebar = document.querySelector('.sidebar')
@@ -183,18 +183,18 @@
         <section class="campo-perfil">
             <div class="container-perfil">
                 <div class="bloco-perfil">
-                    <img id="foto-usuario" alt="Foto de perfil do usuário">
+                    <img id="foto-usuario"src="/pagina-perfil/img/user.svg" alt="Foto de perfil do usuário">
 
                     <div class="bloco-usuario">
                         <h2 id="nome_usuario" class="nome-usuario"></h2>
-                        <h3 id="email_usuario" class="email-usuario">jacquessigma@gmail.com</h3>
-                        <h2 id="emocao_usuario" class="emocao-usuario">Emocionado</h2>
+                        <h3 id="email_usuario" class="email-usuario"></h3>
+                        <h2 id="emocao_usuario" class="emocao-usuario"></h2>
                     </div>
                 </div>
 
                 <div class="bloco-ramcoin">
                     <div class="ramcoin">
-                        <p id="pontos_usuario" class="qtd-ramcoin">2000</p>
+                        <p id="pontos_usuario" class="qtd-ramcoin">0</p>
                         <img src="./img/ramcoin.svg" class="moeda-ramcoin" alt="Ícone moeda 'Ramcoin'">
                     </div>
 
@@ -256,7 +256,6 @@
                                 <a href="#" class="excluir-conta">Excluir minha conta</a>
                                 <button  onclick="mudarDados()" class="btn-salvar">Salvar</button>
                             </div>
-
                         </div>
                     </div>
 
@@ -279,15 +278,15 @@
                     <div class="content active" id="conquistasContent">
                         <h1 class="titulo-content">Histórico de medalhas</h1>
                         <ul class="lista-medalhas">
-                            <li class="conjunto-medalhas">
+                            <!-- <li class="conjunto-medalhas">
                                 <img src="./img/medalha-roxa.svg" alt="">
                                 <div class="lista-textos">
                                     <p class="titulo-medalha-roxa">Explosão Eletrônica</p>
                                     <p class="meta-medalha-roxa">Atingiu 2000 Ramcoins</p>
                                 </div>
-                            </li>
+                            </li> -->
                             <hr id="linha">
-                            <li class="conjunto-medalhas">
+                            <li class="conjunto-medalhas" id="medalha-azul">
                                 <img src="./img/medalha-azul.svg" alt="">
                                 <div class="lista-textos">
                                     <p class="titulo-medalha-azul">Engrenagem Solidária</p>

@@ -438,6 +438,12 @@ input::placeholder {
   padding: 5px;
 }
 
+#foto-usuario{
+width: 170px;
+border: solid;
+height: 170px;
+}
+
 #telefone-mudar  {
   background-color: var(--branco);
   width: 11.5em;
@@ -543,6 +549,11 @@ input::placeholder {
   margin: 0.9em 1em 0.5em 1em;
   padding: 0.5em 0;
 }
+
+#medalha-azul {
+display: none
+}
+
 
 .lista-medalhas,
 .lista-cupons {

@@ -20,6 +20,8 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth();
+
+
 firebase.auth().onAuthStateChanged((user) => {
   if (user) {
      setTimeout(() => {
@@ -103,8 +105,54 @@ function mudarBotoes() {
   form.entrar().disabled = !senhaValida;
 }
 
+function recuperarSenha() {
+  const email = form.email().value;
+  console.log(email)
+  // Supondo que você tenha um campo de entrada com o ID "email"
+  firebase.auth().sendPasswordResetEmail(email)
+      .then(() => {
+          // E-mail de redefinição de senha enviado!
+          alert("Um e-mail de redefinição de senha foi enviado para " + email);
+      })
+      .catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          // Trate o erro aqui
+          alert("Erro: " + errorMessage);
+      });
+}
+
+function googleauth(){
+  var provider = new firebase.auth.GoogleAuthProvider();
+  firebase.auth()
+  .signInWithPopup(provider)
+  .then((result) => {
+    /** @type {firebase.auth.OAuthCredential} */
+    var credential = result.credential;
+    var token = credential.accessToken;
+    var user = result.user;
+    const nomeGoogle = user.displayName; // Nome do usuário
+    const emailGoogle = user.email; // E-mail do usuário
+
+    // IdP data available in result.additionalUserInfo.profile.
+    console.log(nomeGoogle)
+    console.log(emailGoogle)
+    saveUserDataGoogle(uid, emailGoogle)
+      // ...
+  }).catch((error) => {
+    // Handle Errors here.
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    // The email of the user's account used.
+    var email = error.email;
+    // The firebase.auth.AuthCredential type that was used.
+    var credential = error.credential;
+    // ...
+  });
+}
 
 //dados pegos de forma mais facil
+
 
 const form = {
   email: () => document.getElementById("email"),

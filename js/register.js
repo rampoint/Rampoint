@@ -1,180 +1,5 @@
-
-
-function mudandoBotao(mensagem){
-    Form.cadastrar_button().innerHTML = ""
-    Form.cadastrar_button().innerHTML = mensagem
-}
-
-
-// Função para registrar o usuário
-function register() {
-  const email = Form.email().value;
-  const senha = Form.senha().value;
-
-  // Cria um novo usuário com email e senha
-  firebase
-    .auth()
-    .createUserWithEmailAndPassword(email, senha)
-    .then((userCredential) => {
-      mudandoBotao("Cadastrando...");
-      let uid = userCredential.user.uid;
-      saveUserData(uid, email);
-      // Redireciona para a página inicial após 10 segundos
-       setTimeout(() => {
-         window.location.href = "../../pagina-inicial/inicial.html";
-       }, 3000)
-
-
-    })
-    .catch((error) => {
-      // Exibe uma mensagem de erro caso ocorra algum problema no registro
-      mudandoBotao("Cadastrar");
-      alert(getErrorMessage(error));
-
-    });
-}
-
-// Função para salvar os dados do usuário no Realtime Database
-function saveUserData(uid, email) {
-  const nome = Form.nome().value;
-  const telefone = Form.telefone().value;
-  const dataNascimento = Form.data().value;
-  const genero = Form.genero().value;
-  const database = firebase.database();
-  const userRef = database.ref("users/" + uid);
-
-  // Salva os dados do usuário no Realtime Database
-  userRef
-    .set({
-      email: email,
-      nome: nome,
-      data: dataNascimento,
-      tel: telefone,
-      genero: genero,
-      createdAt: firebase.database.ServerValue.TIMESTAMP,
-    })
-    .then(() => {
-      console.log("Dados do usuário salvos com sucesso!");
-    })
-    .catch((error) => {
-      console.error("Erro ao salvar dados do usuário:", error);
-      console.error("Código do erro:", error.code);
-      console.error("Mensagem do erro:", error.message);
-    });
-}
-// Função para obter a mensagem de erro adequada
-function getErrorMessage(error) {
-  if (error.code == "auth/email-already-in-use") {
-    return "Usuario ja esta registrado";
-  }
-  return error.message;
-}
-
-// Função chamada quando o email é alterado
-function onchangeEmail() {
-  const email = Form.email().value;
-
-  // Valida se o email é obrigatório
-  Form.erro_email_obrigatorio().style.display = email ? "none" : "block";
-
-  // Valida se o email é válido
-  Form.erro_email_register().style.display = validarEmail_cadastro(email)
-    ? "none"
-    : "block";
-
-  // Desativa o botão de cadastro se o email não for válido
-  botaoDesativar();
-}
-
-// Função chamada quando a senha é alterada
-function onchangePassword() {
-  const senha = Form.senha().value;
-
-  // Valida se a senha é obrigatória
-  Form.erro_senha_register().style.display = senha ? "none" : "block";
-
-  // Valida se a senha tem pelo menos 6 caracteres
-  Form.erro_senha_min().style.display = senha.length >= 6 ? "none" : "block";
-
-  // Desativa o botão de cadastro se a senha não for válida
-  botaoDesativar();
-  validarSenhaCorresponde();
-}
-
-// Função chamada quando a confirmação de senha é alterada
-function onchangePasswordConfirm() {
-  validarSenhaCorresponde();
-  botaoDesativar();
-}
-
-// Função para validar se as senhas correspondem
-function validarSenhaCorresponde() {
-  const senha = Form.senha().value;
-  const confirmarSenha = Form.confirmarSenha().value;
-
-  Form.erro_nao_corresponde().style.display =
-    senha == confirmarSenha ? "none" : "block";
-}
-
-// Função para desativar o botão de cadastro se o formulário não for válido
-function botaoDesativar() {
-  Form.cadastrar_button().disabled = !isFormValid();
-}
-
-// Função para validar se o formulário é válido
-function isFormValid() {
-  const email = Form.email().value;
-  if (!email || !validarEmail_cadastro()) {
-    return false;
-  }
-  const senha = Form.senha().value;
-  if (!senha || senha.length <= 5) {
-    return false;
-  }
-  const confirmarSenha = Form.confirmarSenha().value;
-  if (senha != confirmarSenha) {
-    return false;
-  }
-  if(!VerificarData()){
-    return false
-  }
-  return true;
-}
-
-// Função para validar o formato do email
-function validarEmail_cadastro() {
-  return /\S+@\S+\.\S+/.test(Form.email().value);
-}
-
-
-function VerificarData() {
-  const dataNascimento = new Date(Form.data().value);
-  const idade = calcularIdade(dataNascimento);
-  const resultado = document.getElementById("erro-data-18");
-  if (idade < 18) {
-      resultado.style.display = "block"
-      return false
-  } else {
-      resultado.style.display = "none"
-      return true
-  }
-  
-};
-
-function calcularIdade(dataNascimento) {
-  const hoje = new Date();
-  let idade = hoje.getFullYear() - dataNascimento.getFullYear();
-  const mesAtual = hoje.getMonth();
-  const mesNascimento = dataNascimento.getMonth();
-
-  // Verifica se o aniversário já ocorreu este ano
-  if (mesAtual < mesNascimento || (mesAtual === mesNascimento && hoje.getDate() < dataNascimento.getDate())) {
-      idade--;
-  }
-  return idade;
-}
-
-// Objeto com referências aos elementos do formulário
+// Firebase Authentication and User Management
+// Utility Functions
 const Form = {
   email: () => document.getElementById("email-cadastro"),
   senha: () => document.getElementById("senha-cadastro"),
@@ -185,99 +10,231 @@ const Form = {
   data: () => document.getElementById("data-cadastro"),
   erro_email_register: () => document.getElementById("erro-email-register"),
   erro_data: () => document.getElementById("erro-data"),
-  erro_email_obrigatorio: () =>
-    document.getElementById("erro-email-obrigatorio"),
+  erro_email_obrigatorio: () => document.getElementById("erro-email-obrigatorio"),
   erro_senha_min: () => document.getElementById("erro-senha-min"),
   erro_senha_register: () => document.getElementById("erro-senha-register"),
-  erro_senha_obrigatorio: () =>
-    document.getElementById("erro-senha-obrigatorio"),
+  erro_senha_obrigatorio: () => document.getElementById("erro-senha-obrigatorio"),
   erro_nao_corresponde: () => document.getElementById("erro-nao-corresponde"),
   cadastrar_button: () => document.getElementById("cadastrar"),
 };
 
-// Função para recuperar os dados do usuário
-// Definição da função para buscar dados do usuário
-function buscarDadosUsuario(uid) {
-  const dbRef = firebase.database().ref('users/' + uid); // Caminho onde os dados do usuário estão armazenados
-
-  dbRef.once('value')
-      .then((snapshot) => {
-          if (snapshot.exists()) {
-              const dadosUsuario = snapshot.val();
-              console.log("Dados do usuário:", dadosUsuario);
-              exibirDadosUsuario(dadosUsuario);
-          }
-      })
-      .catch((error) => {
-          console.error("Erro ao buscar dados do usuário:", error);
-      });
-}
-// Autenticação do usuário
-firebase.auth().onAuthStateChanged((user) => {
-  if (user) {
-      const uid = user.uid; // UID do usuário logado
-      buscarDadosUsuario(uid); // Chama a função para buscar dados do usuário
-      
-  } else {
-      console.log("Nenhum usuário logado.");
-  }
-});
-function exibirDadosUsuario(users) {
-  form_usuario.nome_perfil().innerHTML= users.nome;
-  form_usuario.email_perfil().innerHTML = users.email;
-  form_usuario.foto_perfil().src = users.imagemPerfil;
-  document.getElementById('nome-mudar').placeholder = users.nome
-  document.getElementById('email-mudar').placeholder = users.email
-  document.getElementById('telefone-mudar').placeholder = users.tel
-  //parte da inicial
-  document.getElementById('nome_modal').innerHTML = users.nome
-}
-
-function mudarDados(){
-  var nome_mudanca = document.getElementById('nome-mudar').value
-  const database = firebase.database();
-  const userRef = database.ref("users/" + globalUserId);
-
-  if(nome_mudanca){
-
-  userRef
-    .update({
-      nome: nome_mudanca,
-    })
-    .then(() => {
-      console.log("Dados do usuário modificado com sucesso");
-    })
-    .catch((error) => {
-      console.error("Erro ao salvar dados do usuário:", error);
-      console.error("Código do erro:", error.code);
-      console.error("Mensagem do erro:", error.message);
-    });
-
-  }
-}
-
-let globalUserId = null;
-firebase.auth().onAuthStateChanged( (user) => {
-  if (user) {
-    globalUserId = user.uid;
-     // Armazena o UID globalmente
-  }
-});
-
-function mudandoDados(){}
-// function mudarFoto(uid){
-//   const dbRef = firebase.database().ref('users/' + uid); // Caminho onde os dados do usuário estão armazenados
-  
-//    dbRef.child("/imagemPerfil").set().then(() =>{
-//      console.log("receba ta no banco")
-//    })
-//  }
-// Objeto com referências aos elementos do perfil do usuário
 const form_usuario = {
   nome_perfil: () => document.getElementById("nome_usuario"),
   email_perfil: () => document.getElementById("email_usuario"),
   emocao_usuario: () => document.getElementById("emocao_usuario"),
   pontos: () => document.getElementById("pontos_usuario"),
-  foto_perfil:() => document.getElementById("foto-usuario")
+  foto_perfil: () => document.getElementById("foto-usuario")
 };
-//parte visual da sala inicial
+
+function mudandoBotao(mensagem) {
+  Form.cadastrar_button().innerHTML = mensagem;
+}
+
+function getErrorMessage(error) {
+  if (error.code === "auth/email-already-in-use") {
+    return "Usuário já está registrado";
+  }
+  return error.message;
+}
+
+function validarEmail_cadastro() {
+  return /\S+@\S+\.\S+/.test(Form.email().value);
+}
+
+function calcularIdade(dataNascimento) {
+  const hoje = new Date();
+  let idade = hoje.getFullYear() - dataNascimento.getFullYear();
+  const mesAtual = hoje.getMonth();
+  const mesNascimento = dataNascimento.getMonth();
+
+  if (mesAtual < mesNascimento || (mesAtual === mesNascimento && hoje.getDate() < dataNascimento.getDate())) {
+    idade--;
+  }
+  return idade;
+}
+
+// User Registration
+function register() {
+  const email = Form.email().value;
+  const senha = Form.senha().value;
+
+  firebase.auth().createUserWithEmailAndPassword(email, senha)
+    .then((userCredential) => {
+      mudandoBotao("Cadastrando...");
+      let uid = userCredential.user.uid;
+      saveUserData(uid, email);
+      setTimeout(() => {
+        window.location.href = "../../pagina-inicial/inicial.html";
+      }, 3000);
+    })
+    .catch((error) => {
+      mudandoBotao("Cadastrar");
+      alert(getErrorMessage(error));
+    });
+}
+
+function saveUserData(uid, email) {
+  const nome = Form.nome().value;
+  const telefone = Form.telefone().value;
+  const dataNascimento = Form.data().value;
+  const genero = Form.genero().value;
+  const database = firebase.database();
+  const userRef = database.ref("users/" + uid);
+
+  userRef.set({
+    email: email,
+    nome: nome,
+    data: dataNascimento,
+    tel: telefone,
+    genero: genero,
+    createdAt: firebase.database.ServerValue.TIMESTAMP,
+  })
+  .then(() => {
+    console.log("Dados do usuário salvos com sucesso!");
+  })
+  .catch((error) => {
+    console.error("Erro ao salvar dados do usuário:", error);
+  });
+}
+
+// Form Validation
+function onchangeEmail() {
+  const email = Form.email().value;
+  Form.erro_email_obrigatorio().style.display = email ? "none" : "block";
+  Form.erro_email_register().style.display = validarEmail_cadastro(email) ? "none" : "block";
+  botaoDesativar();
+}
+
+function onchangePassword() {
+  const senha = Form.senha().value;
+  Form.erro_senha_register().style.display = senha ? "none" : "block";
+  Form.erro_senha_min().style.display = senha.length >= 6 ? "none" : "block";
+  botaoDesativar();
+  validarSenhaCorresponde();
+}
+
+function onchangePasswordConfirm() {
+  validarSenhaCorresponde();
+  botaoDesativar();
+}
+
+function validarSenhaCorresponde() {
+  const senha = Form.senha().value;
+  const confirmarSenha = Form.confirmarSenha().value;
+  Form.erro_nao_corresponde().style.display = senha === confirmarSenha ? "none" : "block";
+}
+
+function botaoDesativar() {
+  Form.cadastrar_button().disabled = !isFormValid();
+}
+
+function isFormValid() {
+  const email = Form.email().value;
+  const senha = Form.senha().value;
+  const confirmarSenha = Form.confirmarSenha().value;
+
+  return (
+    email &&
+    validarEmail_cadastro() &&
+    senha &&
+    senha.length > 5 &&
+    senha === confirmarSenha &&
+    VerificarData()
+  );
+}
+
+function VerificarData() {
+  const dataNascimento = new Date(Form.data().value);
+  const idade = calcularIdade(dataNascimento);
+  const resultado = document.getElementById("erro-data-18");
+  if (idade < 18) {
+    resultado.style.display = "block";
+    return false;
+  } else {
+    resultado.style.display = "none";
+    return true;
+  }
+}
+
+// User Data Management
+let globalUserId = null;
+
+firebase.auth().onAuthStateChanged((user) => {
+  if (user) {
+    globalUserId = user.uid;
+    buscarDadosUsuario(user.uid);
+  } else {
+    console.log("Nenhum usuário logado.");
+  }
+});
+
+function buscarDadosUsuario(uid) {
+  const dbRef = firebase.database().ref('users/' + uid);
+
+  dbRef.once('value')
+    .then((snapshot) => {
+      if (snapshot.exists()) {
+        const dadosUsuario = snapshot.val();
+        console.log("Dados do usuário:", dadosUsuario);
+        exibirDadosUsuario(dadosUsuario);
+      }
+    })
+    .catch((error) => {
+      console.error("Erro ao buscar dados do usuário:", error);
+    });
+}
+
+
+
+
+function exibirDadosUsuario(users) {
+  // Obtém a URL atual da página
+var currentPage = window.location.href;
+
+// Verifica se a URL contém uma string específica
+if (currentPage.includes("/pagina-inicial/inicial.html")) {
+  document.getElementById("nome_modal").innerHTML = users.nome
+} else if (currentPage.includes("/pagina-perfil/")) {
+  form_usuario.nome_perfil().innerHTML = users.nome;
+  form_usuario.email_perfil().innerHTML = users.email;
+  document.getElementById('nome-mudar').placeholder = users.nome;
+  document.getElementById('email-mudar').placeholder = users.email;
+  document.getElementById('telefone-mudar').placeholder = users.tel;
+  document.getElementById('nome-mudar').value = users.nome;
+  document.getElementById('email-mudar').value = users.email;
+  document.getElementById('telefone-mudar').value = users.tel;
+}
+ else {
+  console.log("O usuário está em outra página");
+}
+
+  
+}
+
+
+function mudarDados() {
+  const nome_mudanca = document.getElementById('nome-mudar').value;
+  const telefone_mudanca = document.getElementById('telefone-mudar').value;
+  const genero_mudanca = document.getElementById('genero-mudar').value;
+
+
+    const userRef = firebase.database().ref("users/" + globalUserId);
+    userRef.update({ 
+      nome: nome_mudanca ,
+      tel: telefone_mudanca,
+      genero: genero_mudanca
+    })
+      .then(() => {
+        adicionarMedalhas()
+        alert("Dados do usuário modificados com sucesso");
+      })
+      .catch((error) => {
+        alert("Erro ao salvar dados do usuário:", error);
+      });
+  }
+
+  function adicionarMedalhas(){
+    var medalhaAzul = document.getElementById('medalha-azul')
+
+    medalhaAzul.style.display = "block"
+  }

@@ -97,10 +97,10 @@
                     <label id="erro-senha-incorreta">Senha incorreta</label>
                     <label id="erro-senha">A senha é obrigatória</label>
                 </div>
-                <button id="recover-password" disabled="true">Esqueceu sua senha?</button>
+                <button id="recover-password" type="button" onclick="recuperarSenha()" disabled="true">Esqueceu sua senha?</button>
                 <button id="entrar" type="button" onclick="login()" disabled="false">Entrar</button>
                 <div class="social-icons">
-                    <a href="#" id="google"  class="icon"><img src="./img/google-Icon.svg" alt="Ícone Google"></a>
+                    <a href="#" id="google" onclick="googleauth()" class="icon"><img src="./img/google-Icon.svg" alt="Ícone Google"></a>
                     <a href="#" class="icon"><img src="./img/facebook-icon.svg" alt="Ícone Facebook"></a>
                     <a href="#" class="icon"><img src="./img/linkedln-icon.svg" alt="Ícone Linkedln"></a>
                 </div>

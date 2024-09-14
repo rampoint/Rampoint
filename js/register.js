@@ -203,22 +203,18 @@ if (currentPage.includes("/pagina-inicial/inicial.html")) {
   document.getElementById('nome-mudar').value = users.nome;
   document.getElementById('email-mudar').value = users.email;
   document.getElementById('telefone-mudar').value = users.tel;
+  document.getElementById('medalha-azul').style.display = users.medalhas.azul.display
+  document.getElementById('medalha-azul-img').src = users.medalhas.azul.img
 }
  else {
   console.log("O usuário está em outra página");
-}
-
-  
-}
-
+}}
 
 function mudarDados() {
   const nome_mudanca = document.getElementById('nome-mudar').value;
   const telefone_mudanca = document.getElementById('telefone-mudar').value;
   const genero_mudanca = document.getElementById('genero-mudar').value;
-
-
-    const userRef = firebase.database().ref("users/" + globalUserId);
+  const userRef = firebase.database().ref("users/" + globalUserId);
     userRef.update({ 
       nome: nome_mudanca ,
       tel: telefone_mudanca,
@@ -228,13 +224,20 @@ function mudarDados() {
         adicionarMedalhas()
         alert("Dados do usuário modificados com sucesso");
       })
-      .catch((error) => {
-        alert("Erro ao salvar dados do usuário:", error);
-      });
   }
 
   function adicionarMedalhas(){
-    var medalhaAzul = document.getElementById('medalha-azul')
+ 
+    const userRef = firebase.database().ref("users/" + globalUserId);
+    userRef.child('medalhas/azul').set({
+      nome:"Engrenagem Solidária",
+      display:"flex",
+      descricao: "Personalizou perfil",
+      img:"https://firebasestorage.googleapis.com/v0/b/rampoint-81352.appspot.com/o/medalhas%2Fmedalha%20azul.svg?alt=media&token=c7134715-8121-44cb-9823-9a013761513d",
+    }).then(() =>{
+      console.log("enviado para o banco")
+    }).catch((error) =>{
+      console.log('nao foi esse o motivo' + error)
+    })
 
-    medalhaAzul.style.display = "block"
   }

@@ -65,7 +65,7 @@
                         <p class="perfil">Perfil</p>
                         <img src="./img/user.svg" id="foto-perfil" alt="Foto de perfil">
                         <div class="fundo">
-                            <p class="texto-perfil"id="nome_modal"></p>
+                            <p class="texto-perfil" id="nome_modal"></p>
                             <div class="grupo">
                                 <hr class="linha">
                                 <a class="cadastro" href="../pagina-login/index.html">Ver perfil</a>
@@ -124,8 +124,6 @@
         </g>
         </svg>
 
-        <!-- <div class="shadow"></div> -->
-
         <section class="imagem-fundo">
             <div class="inicio">
                 <div class="moedas-esquerda">
@@ -183,7 +181,7 @@
         <section class="campo-perfil">
             <div class="container-perfil">
                 <div class="bloco-perfil">
-                    <img id="foto-usuario"src="/pagina-perfil/img/user.svg" alt="Foto de perfil do usuário">
+                    <img id="foto-usuario" src="/pagina-perfil/img/user.svg" alt="Foto de perfil do usuário">
 
                     <div class="bloco-usuario">
                         <h2 id="nome_usuario" class="nome-usuario"></h2>
@@ -227,7 +225,7 @@
                                         <div class="campo-form">
                                             <label for="genero">Gênero</label>
                                             <select id="genero-mudar">
-                                                
+
                                                 <option id="genero-mudar" selected></option>
                                                 <option value="nao-dizer">Prefiro não dizer</option>
                                                 <option value="feminino">Feminino</option>
@@ -255,8 +253,9 @@
                             <div class="botoes">
                                 <!-- num mexe aqui nao -->
                                 <a href="#" onclick="apagandoUsuario()" class="excluir-conta">Excluir minha conta</a>
-                                <button  onclick="mudarDados()" class="btn-salvar">Salvar</button>
+                                <button onclick="mudarDados()" class="btn-salvar">Salvar</button>
                                 <!-- po mexer -->
+
                             </div>
                         </div>
                     </div>
@@ -288,7 +287,6 @@
                                         <div class="campo-form">
                                             <label for="genero">Gênero</label>
                                             <select id="genero-mudar">
-                                                
                                                 <option id="genero-mudar" selected></option>
                                                 <option value="nao-dizer">Prefiro não dizer</option>
                                                 <option value="feminino">Feminino</option>
@@ -315,7 +313,68 @@
                             </div>
                             <div class="botoes">
                                 <a href="#" onclick="apagandoUsuario()" class="excluir-conta">Excluir minha conta</a>
-                                <button  onclick="mudarDados()" class="btn-salvar">Salvar</button>
+                                <button onclick="mudarDados()" class="btn-salvar">Salvar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Aqui começa o modal mudar-mood -->
+                    <div id="mudar-mood" class="modal-mood" style="display: none;">
+                        <div class="content-mood">
+                            <img src="./img/Vector.svg" class="icon-x" id="fechar-mood"
+                                alt="Ícone de um x para fechar o modal">
+                            <h1 class="titulo-mood">Escolha seu ícone</h1>
+                            <p class="texto-mood">Escolha seu <span class="span-preto">mood</span> do Ram favorito!</p>
+                            <div class="grupo-moods">
+                                <div class="select-mood">
+                                    <button class="btn-mood" id="ram-emocionado">
+                                        <img src="./img/ram-emocionado.svg" alt="Imagem do Ram com o 'mood' Emocionado">
+                                    </button>
+                                    <h4 class="titulo-emocionado">Emocionado</h4>
+                                </div>
+                                <div class="select-mood">
+                                    <button class="btn-mood" id="ram-triste">
+                                        <img src="./img/ram-triste.svg" alt="Imagem do Ram com o 'mood' Triste">
+                                    </button>
+                                    <h4 class="titulo-triste">Triste</h4>
+                                </div>
+                                <div class="select-mood">
+                                    <button class="btn-mood" id="ram-entediado">
+                                        <img src="./img/ram-entediado.svg" alt="Imagem do Ram com o 'mood' Entediado">
+                                    </button>
+                                    <h4 class="titulo-entediado">Entediado</h4>
+                                </div>
+                                <div class="select-mood">
+                                    <button class="btn-mood" id="ram-furioso">
+                                        <img src="./img/ram-furioso.svg" alt="Imagem do Ram com o 'mood' Furioso">
+                                    </button>
+                                    <h4 class="titulo-furioso">Furioso</h4>
+                                </div>
+                                <div class="select-mood">
+                                    <button class="btn-mood" id="ram-feliz">
+                                        <img src="./img/ram-feliz.svg" alt="Imagem do Ram com o 'mood' Feliz">
+                                    </button>
+                                    <h4 class="titulo-feliz">Feliz</h4>
+                                </div>
+                                <div class="select-mood">
+                                    <button class="btn-mood" id="ram-apaixonado">
+                                        <img src="./img/ram-apaixonado.svg" alt="Imagem do Ram com o 'mood' Apaixonado">
+                                    </button>
+                                    <h4 class="titulo-apaixonado">Apaixonado</h4>
+                                </div>
+                                <div class="select-mood">
+                                    <button class="btn-mood" id="ram-padrao">
+                                        <img src="./img/ram-padrao.svg" alt="Imagem do Ram com o 'mood' Padrão">
+                                    </button>
+                                    <h4 class="titulo-padrao">Padrão</h4>
+                                </div>
+                                <div class="select-mood">
+                                    <button class="btn-mood" id="ram-sem-mood">
+                                        <img src="./img/sem-mood.svg" alt="Imagem de perfil sem foto">
+                                    </button>
+                                    <h4 class="titulo-sem-mood">Sem mood</h4>
+                                </div>
+                                <button class="btn-check"><img src="./img/check.svg" alt=""></button>
                             </div>
                         </div>
                     </div>
@@ -325,8 +384,6 @@
                 </div>
             </div>
         </section>
-
-        
 
         <section class="campo-conquistas">
             <div class="container-conquistas">
@@ -454,6 +511,7 @@
         <script defer src="./js/scroll.js"></script>
         <script defer src="./js/toggle.js"></script>
         <script defer src="./js/modalPerfil.js"></script>
+        <script defer src="./js/modal-mood.js"></script>
         <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-app-compat.js"></script>
         <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-auth-compat.js"></script>
         <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-database-compat.js"></script>
@@ -461,9 +519,6 @@
         <script src="../js/firebase-init.js"></script>
         <script src="../js/register.js"></script>
         <script src="../js/logout.js"></script>
-        
-
-        
 
     </div>
 </body>

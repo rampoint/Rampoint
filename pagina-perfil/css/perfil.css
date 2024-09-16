@@ -368,11 +368,11 @@ body {
   padding: 20px;
   border-radius: 30px;
   width: 55%;
-  height: auto; 
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between; 
+  justify-content: space-between;
   position: relative;
 }
 
@@ -404,6 +404,7 @@ body {
   position: relative;
   left: 4em;
   bottom: 1.5em;
+  cursor: pointer;
 }
 
 .campo-form {
@@ -417,11 +418,15 @@ body {
   color: var(--preto);
 }
 
-input::placeholder {
-  font-family: "Poppins-semibold";
+.campo-form input {
+  font-family: "Poppins-regular";
 }
 
-#nome-mudar, #email-mudar, #senha-mudar, #nascimento, #genero-mudar {
+#nome-mudar,
+#email-mudar,
+#senha-mudar,
+#nascimento,
+#genero-mudar {
   background-color: var(--branco);
   width: 15em;
   border: none;
@@ -431,6 +436,7 @@ input::placeholder {
 }
 
 .input-telefone select {
+  font-family: "Poppins-regular";
   background-color: var(--branco);
   width: 4em;
   border: none;
@@ -438,13 +444,13 @@ input::placeholder {
   padding: 5px;
 }
 
-#foto-usuario{
-width: 170px;
-border: solid;
-height: 170px;
+#foto-usuario {
+  width: 170px;
+  border: solid;
+  height: 170px;
 }
 
-#telefone-mudar  {
+#telefone-mudar {
   background-color: var(--branco);
   width: 11.5em;
   border: none;
@@ -461,7 +467,8 @@ height: 170px;
   padding: 5px;
 } */
 
-.grupo1, .grupo2 {
+.grupo1,
+.grupo2 {
   display: flex;
   flex-direction: row;
 }
@@ -508,6 +515,171 @@ height: 170px;
 }
 /* final estilo modal perfil */
 
+/* modal mood */
+.modal-mood {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.content-mood {
+  background-color: var(--branco);
+  padding: 20px;
+  border-radius: 25px;
+  width: 51.5em;
+  height: 28em;
+  text-align: center;
+  margin-bottom: 6em;
+}
+
+.content-mood .icon-x {
+  position: absolute;
+  top: 5em;
+  right: 21em;
+  cursor: pointer;
+}
+
+.titulo-mood {
+  font-family: "Blinker-extrabold";
+  color: var(--preto);
+  text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.1);
+  margin-top: 1em;
+}
+
+.texto-mood {
+  font-family: "Poppins-medium";
+  color: var(--preto);
+}
+
+.span-preto {
+  font-family: "Poppins-bold";
+  text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
+}
+
+.grupo-moods {
+  width: 35em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  margin: 1em auto;
+  padding: 10px;
+}
+
+.btn-mood {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 8em;
+  height: 8em;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.btn-mood img {
+  width: 8em;
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.select-mood h4 {
+  font-family: "Poppins-extrabold";
+  margin-top: 10px;
+}
+
+#ram-emocionado {
+  background-color: #DCC1FF;
+}
+
+.titulo-emocionado {
+  color: #9C4EDC;
+}
+
+#ram-triste {
+  background-color: #A0DCF8;
+}
+
+.titulo-triste {
+  color: #0076AC;
+}
+
+#ram-entediado {
+  background-color: #B6B6B6;
+}
+
+.titulo-entediado {
+  color: #808080;
+}
+
+#ram-furioso {
+  background-color: #FCCECE;
+}
+
+.titulo-furioso {
+  color: #E00632;
+}
+
+#ram-feliz {
+  background-color: #FFFDCA;
+}
+
+#ram-feliz img {
+  width: 7em;
+}
+
+.titulo-feliz {
+  color: #FFC01E;
+}
+
+#ram-apaixonado {
+  background-color: #FFE5E3;
+}
+
+.titulo-apaixonado {
+  color: #FF9090;
+}
+
+#ram-padrao {
+  background-color: #CEFFAF;
+}
+
+.titulo-padrao {
+  color: #61D243;
+}
+
+.titulo-sem-mood {
+  color: #CDCDCD;
+}
+
+#ram-sem-mood img {
+  filter: none;
+}
+
+.btn-check {
+  background-color: #2A55C2;
+  width: 4em;
+  height: 4em;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: 7em;
+  left: 27em;
+  cursor: pointer;
+}
+
 /* começo campo conquistas */
 
 .campo-conquistas {
@@ -551,9 +723,8 @@ height: 170px;
 }
 
 #medalha-azul {
-display: none
+  display: none;
 }
-
 
 .lista-medalhas,
 .lista-cupons {

@@ -1,7 +1,150 @@
-/* Dispositivos móveis pequenos (em pé) */
-@media (min-width: 320px) and (max-width: 421px) {
-  /* Estilos aqui */
+@media (max-width: 1280px) {
+  .logoBranca {
+    display: none;
+  }
+}
 
+@media (min-width: 1024px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  /* começo da imagem inicial */
+
+  .inicio {
+    margin-left: 5em;
+  }
+
+  .imagem-inicial {
+    margin-left: 30em;
+  }
+
+  #titulo1 {
+    margin: 80px 0 35px 100px;
+  }
+
+  #texto1 {
+    margin-left: 100px;
+  }
+
+  #titulo2 {
+    margin: 80px 0 35px 100px;
+  }
+
+  #texto2 {
+    margin-left: 100px;
+  }
+
+  #medalhas {
+    width: 380px;
+    margin-left: 0px;
+  }
+
+  .imagem-medalha {
+    grid-area: imagem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+  }
+
+  #drop {
+    display: block;
+  }
+
+  .bairro-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .btn {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #titulo-descarte {
+    margin-left: 0px;
+    margin-right: 570px;
+  }
+}
+
+/* header layout */
+@media (max-width: 895px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+  }
+  nav ul {
+    justify-content: space-between;
+    position: static;
+    padding-left: 0;
+  }
+
+  nav a {
+    padding-right: 30px;
+  }
+
+  #logo {
+    margin-left: 20px;
+  }
+
+  #logo-nav {
+    margin-left: 20px;
+  }
+  #perfil {
+    display: none;
+  }
+
+  nav a:visited {
+    text-decoration: none;
+    transition: color 1.5s ease-out 1ms;
+  }
+
+  nav a:hover {
+    color: var(--branco);
+    text-decoration-line: underline;
+  }
+}
+
+@media (max-width: 425px) {
+  /* Estilos aqui */
+  .footer-container .logo {
+    margin: 0;
+    bottom: 20px;
+    flex-direction: column;
+  }
+
+  .footer-container .descricao-footer {
+    /* margin-top: 0; */
+    display: block;
+  }
+
+  .descricao-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 40px; */
+    max-width: 100%;
+  }
+
+  .endereco {
+    max-width: 100%;
+  }
+
+  .footer-container button {
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 421px) {
   .container {
     display: flex;
     flex-direction: column;
@@ -308,183 +451,4 @@
     width: 100%;
   }
   /* footer */
-}
-
-/* Dispositivos móveis grandes (em pé) */
-@media (max-width: 425px) {
-  /* Estilos aqui */
-  .footer-container .logo {
-    margin: 0;
-    bottom: 20px;
-    flex-direction: column;
-  }
-
-  .footer-container .descricao-footer {
-    /* margin-top: 0; */
-    display: block;
-  }
-
-  .descricao-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* margin-top: 40px; */
-    max-width: 100%;
-  }
-
-  .endereco {
-    max-width: 100%;
-  }
-
-  .footer-container button {
-    margin-right: 10px;
-  }
-}
-
-/* quebrando a linha da imagem */
-
-@media (max-width: 670px) {
-  .flor img {
-    visibility: hidden;
-  }
-}
-/* Dispositivos móveis em modo paisagem (tela horizontal) */
-@media (max-width: 767px) {
-  /* Estilos aqui */
-}
-
-/* Tablets em modo retrato (tela vertical) */
-@media (max-width: 768px) {
-  /* Estilos aqui */
-}
-
-/* Tablets em modo paisagem (tela horizontal) */
-@media (min-width: 1024px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-  }
-
-  /* começo da imagem inicial */
-
-  .inicio {
-    margin-left: 5em;
-  }
-
-  .imagem-inicial {
-    margin-left: 30em;
-  }
-
-  #titulo1 {
-    margin: 80px 0 35px 100px;
-  }
-
-  #texto1 {
-    margin-left: 100px;
-  }
-
-  #titulo2 {
-    margin: 80px 0 35px 100px;
-  }
-
-  #texto2 {
-    margin-left: 100px;
-  }
-
-  #medalhas {
-    width: 380px;
-    margin-left: 0px;
-  }
-
-  .imagem-medalha {
-    grid-area: imagem;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-  }
-
-  #drop {
-    display: block;
-  }
-
-  .bairro-form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .btn {
-    display: flex;
-    flex-direction: row;
-  }
-
-  #titulo-descarte {
-    margin-left: 0px;
-    margin-right: 570px;
-  }
-}
-
-/* Laptops pequenos */
-@media (max-width: 1280px) {
-  /* Estilos aqui */
-  .logoBranca {
-    display: none;
-  }
-}
-
-/* Laptops e desktops */
-@media (max-width: 1440px) {
-  /* Estilos aqui */
-}
-
-/* Telas grandes */
-@media (max-width: 1920px) {
-  /* Estilos aqui */
-}
-
-/* header layout */
-@media(max-width: 895px){
-  .hideOnMobile{
-    display: none;
-  }
-  .menu-button{
-    display: block;
-  }
-  nav ul{
-    justify-content:space-between;
-    position: static;
-    padding-left:0;
-  }
-
-  nav a{
-    padding-right: 30px;
-  }
-
-  #logo{
-    margin-left: 20px;
-  }
-
-  #logo-nav{
-    margin-left: 20px;
-  }
-  #perfil{
-    display:none;
-    }
-
-    nav a:visited {
-      text-decoration: none;
-      transition: color 1.5s ease-out 1ms;
-    }
-    
-    nav a:hover {
-      color: var(--branco);
-      text-decoration-line: underline;
-    }
-
-   
 }

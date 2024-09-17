@@ -487,7 +487,7 @@
   }
 
   input {
-    width: 150px;
+    width: 200px;
     height: 35px;
     max-width: 100%;
     margin-right: 0px;
@@ -514,12 +514,10 @@
     margin: 15px 0 0 20px;
   }
 
-  #rua {
-    padding-right: 100px;
-  }
-
+  #cep,
+  #rua,
   #bairro {
-    padding-right: 100px;
+    padding-right: 65px;
   }
 
   .bairro-form {
@@ -593,7 +591,8 @@
     margin-left: 0;
   }
 
-  .redes-sociais, .geral {
+  .redes-sociais,
+  .geral {
     width: 270px;
   }
 

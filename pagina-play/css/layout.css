@@ -1,4 +1,3 @@
-/* Dispositivos móveis pequenos (em pé) */
 @media (min-width: 320px) and (max-width: 421px) {
   /* Estilos aqui */
 
@@ -640,22 +639,14 @@
   }
 }
 
-/* Dispositivos móveis médios (em pé) */
 @media (max-width: 375px) {
-  /* Estilos aqui */
-  .flor img {
-    visibility: hidden;
-  }
-
   .email {
     display: flex;
     flex-wrap: wrap;
   }
 }
 
-/* Dispositivos móveis grandes (em pé) */
 @media (max-width: 425px) {
-  /* Estilos aqui */
   .footer-container .logo {
     margin: 0;
     bottom: 20px;
@@ -710,23 +701,7 @@
   }
 }
 
-@media (max-width: 670px) {
-  .flor img {
-    visibility: hidden;
-  }
-}
-/* Dispositivos móveis em modo paisagem (tela horizontal) */
-@media (max-width: 767px) {
-  /* Estilos aqui */
-}
-
-/* Tablets em modo retrato (tela vertical) */
 @media (max-width: 768px) {
-  /* Estilos aqui */
-  .flor img {
-    visibility: hidden;
-  }
-
   .logoBranca-small {
     display: block;
     width: 150px;
@@ -737,9 +712,7 @@
   }
 }
 
-/* Tablets em modo paisagem (tela horizontal) */
 @media (max-width: 1024px) {
-  /* Estilos aqui */
   header {
     display: flex;
     justify-content: space-between;
@@ -786,7 +759,7 @@
 }
 
 /* Telas grandes */
-@media (max-width: 1920px) {
+@media (min-width: 1920px) {
   .cupons {
     width: 1925px;
   }

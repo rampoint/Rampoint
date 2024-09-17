@@ -254,7 +254,7 @@ margin-top:60px;
 }
 
 .perfil {
-  color: var(--cinza);
+  color: var(--branco);
   padding: 0;
   margin: 10px 0 20px 0;
 }
@@ -345,7 +345,7 @@ margin-top:60px;
 .texto-perfil {
   font-family: "Poppins-bold";
   font-size: 0.9em;
-  color: var(--cinza);
+  color: var(--branco);
 }
 
 .cadastro,
@@ -376,7 +376,7 @@ margin-top:60px;
 }
 
 .perfil {
-  color: var(--cinza);
+  color: var(--branco);
   padding: 0;
   margin: 15px 0 20px 0;
 

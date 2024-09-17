@@ -1,6 +1,54 @@
 @media (max-width: 1280px) {
+  .content-sem-perfil {
+    margin-left: 60em;
+  }
+
   .logoBranca {
     display: none;
+  }
+}
+
+@media (max-width: 1180px) {
+  .content-sem-perfil {
+    margin-left: 55em;
+  }
+
+  .imagem-inicial {
+    margin-left: 25em;
+  }
+}
+
+@media (max-width: 1135px) {
+  .content-sem-perfil {
+    margin-left: 53em;
+  }
+}
+
+@media (max-width: 1100px) {
+  .content-sem-perfil {
+    margin-left: 52em;
+  }
+
+  .imagem-inicial {
+    margin-left: 20em;
+  }
+}
+
+@media (max-width: 1080px) {
+  .content-sem-perfil {
+    margin-left: 50em;
+  }
+}
+
+@media (max-width: 1055px) {
+  .content-sem-perfil {
+    margin-left: 49em;
+  }
+}
+
+@media (max-width: 1040px) {
+  .content-sem-perfil {
+    margin-left: 48em;
   }
 }
 
@@ -19,9 +67,9 @@
     margin-left: 5em;
   }
 
-  .imagem-inicial {
+  /* .imagem-inicial {
     margin-left: 30em;
-  }
+  } */
 
   #titulo1 {
     margin: 80px 0 35px 100px;
@@ -73,8 +121,45 @@
   }
 }
 
-/* header layout */
-@media (max-width: 895px) {
+@media (max-width: 1000px) {
+  nav ul {
+    width: 62.7em;
+    padding: 5px;
+  }
+
+  .content-sem-perfil {
+    margin-left: 45em;
+  }
+
+  .imagem-inicial {
+    margin-left: 15em;
+  }
+
+  #titulo1,
+  #texto1 {
+    margin-left: 100px;
+  }
+
+  #titulo2,
+  #texto2 {
+    margin-left: 80px;
+  }
+
+  .form-conteiner {
+    width: 85%;
+    margin: 15px auto;
+  }
+
+  #rua {
+    padding-right: 150px;
+  }
+
+  #bairro {
+    padding-right: 350px;
+  }
+}
+
+@media (max-width: 985px) {
   .hideOnMobile {
     display: none;
   }
@@ -82,9 +167,95 @@
     display: block;
   }
   nav ul {
+    width: 57em;
     justify-content: space-between;
     position: static;
     padding-left: 0;
+  }
+
+  nav a {
+    padding-right: 30px;
+  }
+
+  #logo {
+    margin-left: 20px;
+  }
+
+  #logo-nav {
+    margin-left: 20px;
+  }
+
+  #perfil {
+    display: none;
+  }
+
+  nav a:visited {
+    text-decoration: none;
+    transition: color 1.5s ease-out 1ms;
+  }
+
+  nav a:hover {
+    color: var(--branco);
+    text-decoration-line: underline;
+  }
+
+  .sidebar {
+    right: 4em;
+  }
+
+  .imagem-inicial {
+    width: 35%;
+    margin-left: 15em;
+  }
+
+  .internos-inicial {
+    right: 19em;
+  }
+
+  .brilho-inicial {
+    right: 26em;
+  }
+
+  .monitor-inicial {
+    top: 8em;
+    right: 25em;
+  }
+
+  .brilho-inicial2 {
+    top: 2em;
+    right: 14em;
+  }
+
+  .teclado-inicial {
+    top: 9em;
+    right: 22em;
+  }
+
+  #medalhas {
+    width: 400px;
+  }
+
+  .imagem-ram {
+    margin-left: 65px;
+  }
+
+  .ramEmpe {
+    width: 23em;
+    height: 23em;
+  }
+}
+
+/* header layout */
+@media (max-width: 900px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+  }
+
+  nav ul {
+    width: 25em;
   }
 
   nav a {
@@ -113,44 +284,39 @@
   }
 }
 
-@media (max-width: 425px) {
-  /* Estilos aqui */
-  .footer-container .logo {
-    margin: 0;
-    bottom: 20px;
-    flex-direction: column;
+@media (max-width: 876px) {
+  .imagem-fundo,
+  .container-grid,
+  .info-box {
+    margin: 5em 2em;
   }
 
-  .footer-container .descricao-footer {
-    /* margin-top: 0; */
-    display: block;
+  .form-conteiner {
+    width: 75%;
+    margin: 0 2em;
   }
 
-  .descricao-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* margin-top: 40px; */
-    max-width: 100%;
+  #rua {
+    padding-right: 70px;
   }
 
-  .endereco {
-    max-width: 100%;
-  }
-
-  .footer-container button {
-    margin-right: 10px;
+  #bairro {
+    padding-right: 300px;
   }
 }
 
-@media (min-width: 320px) and (max-width: 421px) {
+@media (min-width: 320px) and (max-width: 435px) {
   .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+  }
+
+  .sidebar {
+    right: 1em;
+    height: 45em;
   }
 
   /* imagem inicial */
@@ -205,14 +371,19 @@
 
   .imagem-inicial {
     width: 350px;
-    margin: 0 0 30px 0;
+    margin: 0 0 12em 0;
     z-index: -1;
+  }
+
+  .inicio {
+    position: relative;
+    bottom: 10em;
   }
 
   #titulo-inicial {
     font-size: 4em;
     width: 90%;
-    margin: 0 0 30px 0;
+    margin: 0 0 25px 0;
     text-align: center;
   }
 
@@ -226,9 +397,10 @@
   .botao {
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-top: 25px;
     gap: 15px;
-    margin-left: 4em;
+    margin-left: -2em;
   }
   /* imagem inicial */
 
@@ -412,13 +584,17 @@
   }
 
   .geral {
-    margin-left: 55px;
+    margin-left: 0;
   }
 
   .redes-sociais,
   .contato {
     margin-top: 30px;
-    margin-left: 55px;
+    margin-left: 0;
+  }
+
+  .redes-sociais, .geral {
+    width: 270px;
   }
 
   .footer-container .descricao-footer ul {

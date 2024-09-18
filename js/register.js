@@ -210,14 +210,13 @@ function exibirDadosUsuario(users) {
     document.getElementById("email-mudar").placeholder = users.email;
     document.getElementById("telefone-mudar").placeholder = users.tel;
     document.getElementById("nome-mudar").value = users.nome;
+    document.getElementById('foto-usuario').src = users.fotoPerfil.fotoPerfil
     document.getElementById("email-mudar").value = users.email;
     document.getElementById("telefone-mudar").value = users.tel;
     document.getElementById("medalha-azul").style.display =
       users.medalhas.azul.display;
     document.getElementById("medalha-azul-img").src = users.medalhas.azul.img;
     document.getElementById("nome_modal").innerHTML = users.nome;
-    document.getElementById('foto-usuario').src = users.fotoPerfil.fotoPerfil
-    console.log(users.fotoPerfil.fotoPerfil)
   } else {
     console.log("O usuário está em outra página");
   }

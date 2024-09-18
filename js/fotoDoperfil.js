@@ -1,63 +1,119 @@
 
-const userRef = firebase.database().ref("users/" + globalUserId).child('fotoPerfil')
-
 function pegarValorFotoFeliz(){
     var ram = document.getElementById('ram-feliz').value
-    
-   
+    const userRef = firebase.database().ref("users/" + globalUserId).child('fotoPerfil')
+    userRef.set({
+        fotoPerfil:"https://firebasestorage.googleapis.com/v0/b/rampoint-81352.appspot.com/o/imagens%2FGroup%20525.svg?alt=media&token=964936c0-bfcf-4ba4-afa5-6c397715b692",
+        fotoMensage: ram,
+    }).then(() =>{
+        console.log('foto de perfil enviada')
+    }).catch((error) =>{
+        console.log('nao foi amigo'+error)
+    })
     console.log(ram)
     console.log(globalUserId)
 }
 
 function pegarValorFotoEmocionado(){
     var ram = document.getElementById('ram-emocionado').value
+    const userRef = firebase.database().ref("users/" + globalUserId).child('fotoPerfil')
+    console.log(globalUserId)
+    console.log(ram)
+
     userRef.set({
-        fotoPerfil:"https://firebasestorage.googleapis.com/v0/b/rampoint-81352.appspot.com/o/imagens%2FGroup%20525.svg?alt=media&token=964936c0-bfcf-4ba4-afa5-6c397715b692",
-        fotoMensage: ram
+        fotoPerfil:"https://firebasestorage.googleapis.com/v0/b/rampoint-81352.appspot.com/o/imagens%2FGroup%20526.svg?alt=media&token=0f273e2b-4392-468a-9819-a7378ef88957",
+        fotoMensage: ram,
     }).then(() =>{
         console.log('foto de perfil enviada')
     }).catch((error) =>{
         console.log('nao foi amigo'+error)
     })
-    console.log(globalUserId)
-    console.log(ram)
     
 }
 function pegarValorFotoTriste(){
     var ram = document.getElementById('ram-triste').value
+    const userRef = firebase.database().ref("users/" + globalUserId).child('fotoPerfil')
 
+    userRef.set({
+        fotoPerfil:"https://firebasestorage.googleapis.com/v0/b/rampoint-81352.appspot.com/o/imagens%2FGroup%20515.svg?alt=media&token=adfc3f86-6e04-4160-baa1-c0e38ffa7117",
+        fotoMensage: ram,
+    }).then(() =>{
+        console.log('foto de perfil enviada')
+    }).catch((error) =>{
+        console.log('nao foi amigo'+error)
+    })
     console.log(ram)
 }
 function pegarValorFotoEntediado(){
     var ram = document.getElementById('ram-entediado').value
+    const userRef = firebase.database().ref("users/" + globalUserId).child('fotoPerfil')
 
+    userRef.set({
+        fotoPerfil:"https://firebasestorage.googleapis.com/v0/b/rampoint-81352.appspot.com/o/imagens%2FGroup%20517.svg?alt=media&token=dee8203f-843f-421a-b955-395ff4407476",
+        fotoMensage: ram,
+    }).then(() =>{
+        console.log('foto de perfil enviada')
+    }).catch((error) =>{
+        console.log('nao foi amigo'+error)
+    })
     console.log(ram)
 }
 function pegarValorFotoFurioso(){
     var ram = document.getElementById('ram-furioso').value
+    const userRef = firebase.database().ref("users/" + globalUserId).child('fotoPerfil')
 
+    userRef.set({
+        fotoPerfil:"https://firebasestorage.googleapis.com/v0/b/rampoint-81352.appspot.com/o/imagens%2FGroup%20519.svg?alt=media&token=83bd63a2-ab4f-4ef1-9141-7534da8f3ab7",
+        fotoMensage: ram,
+    }).then(() =>{
+        console.log('foto de perfil enviada')
+    }).catch((error) =>{
+        console.log('nao foi amigo'+error)
+    })
     console.log(ram)
 }
-function pegarValorFotoFeliz(){
-    var ram = document.getElementById('ram-feliz').value
 
-    console.log(ram)
-}
 function pegarValorFotoApaixonado(){
     var ram = document.getElementById('ram-apaixonado').value
+    const userRef = firebase.database().ref("users/" + globalUserId).child('fotoPerfil')
 
-
+    userRef.set({
+        fotoPerfil:"https://firebasestorage.googleapis.com/v0/b/rampoint-81352.appspot.com/o/imagens%2FGroup%20524.svg?alt=media&token=d101ece0-987f-45a8-9631-a29763acd20a",
+        fotoMensage: ram,
+    }).then(() =>{
+        console.log('foto de perfil enviada')
+    }).catch((error) =>{
+        console.log('nao foi amigo'+error)
+    })
     console.log(ram)
 }
 function pegarValorFotoPadrao(){
     var ram = document.getElementById('ram-padrao').value
+    const userRef = firebase.database().ref("users/" + globalUserId).child('fotoPerfil')
 
+    userRef.set({
+        fotoPerfil:"https://firebasestorage.googleapis.com/v0/b/rampoint-81352.appspot.com/o/imagens%2FGroup%20518.svg?alt=media&token=f876fea9-e991-472d-bd42-83fca4132ed1",
+        fotoMensage: ram,
+    }).then(() =>{
+        console.log('foto de perfil enviada')
+    }).catch((error) =>{
+        console.log('nao foi amigo'+error)
+    })
     console.log(ram)
 }
 
 function pegarValorFotoNomood(){
     var ram = document.getElementById('ram-sem-mood').value
+    const userRef = firebase.database().ref("users/" + globalUserId).child('fotoPerfil')
 
+    userRef.set({
+        fotoPerfil:"https://firebasestorage.googleapis.com/v0/b/rampoint-81352.appspot.com/o/imagens%2FGroup%20526.svg?alt=media&token=0f273e2b-4392-468a-9819-a7378ef88957",
+        fotoMensage: ram,
+    }).then(() =>{
+        console.log('foto de perfil enviada')
+    }).catch((error) =>{
+        console.log('nao foi amigo'+error)
+    })
     console.log(ram)
 }
 

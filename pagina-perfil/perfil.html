@@ -181,7 +181,7 @@
         <section class="campo-perfil">
             <div class="container-perfil">
                 <div class="bloco-perfil">
-                    <img id="foto-usuario" src="/pagina-perfil/img/user.svg" alt="Foto de perfil do usuário">
+                    <img id="foto-usuario" src=""alt="Foto de perfil do usuário">
 
                     <div class="bloco-usuario">
                         <h2 id="nome_usuario" class="nome-usuario"></h2>
@@ -259,65 +259,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="modal-perfil">
-                        <div class="content-perfil">
-                            <img src="./img/Vector.svg" class="icon-x" alt="Ícone de um x para fechar o modal">
-                            <h1 class="titulo-editar">Configurações de perfil</h1>
-                            <div class="info-perfil">
-                                <div class="usuario">
-                                    <img src="./img/user.svg" alt="Foto de perfil do usuário">
-                                    <img src="./img/lapis.svg" id="lapis" alt="Editar foto de perfil"
-                                        class="editar-foto">
-                                </div>
-                                <div class="form-fields">
-                                    <div class="grupo1">
-                                        <div class="campo-form">
-                                            <label for="nome">Nome</label>
-                                            <input id="nome-mudar" type="text">
-                                        </div>
-                                        <div class="campo-form">
-                                            <label for="telefone">Telefone</label>
-                                            <div class="input-telefone">
-                                                <select id="telefone-ddd">
-                                                    <option value="11" selected>11</option>
-                                                </select>
-                                                <input id="telefone-mudar" type="tel">
-                                            </div>
-                                        </div>
-                                        <div class="campo-form">
-                                            <label for="genero">Gênero</label>
-                                            <select id="genero-mudar">
-                                                <option id="genero-mudar" selected></option>
-                                                <option value="nao-dizer">Prefiro não dizer</option>
-                                                <option value="feminino">Feminino</option>
-                                                <option value="masculino">Masculino</option>
-                                            </select>
-                                        </div>
-                                    </div>
-
-                                    <div class="grupo2">
-                                        <div class="campo-form">
-                                            <label for="email">Email</label>
-                                            <input id="email-mudar" type="email">
-                                        </div>
-                                        <div class="campo-form">
-                                            <label for="senha">Senha</label>
-                                            <input id="senha-mudar" type="password" placeholder="*********">
-                                        </div>
-                                        <div class="campo-form">
-                                            <label for="nascimento">Nascimento</label>
-                                            <input id="nascimento" type="date">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="botoes">
-                                <a href="#" onclick="apagandoUsuario()" class="excluir-conta">Excluir minha conta</a>
-                                <button onclick="mudarDados()" class="btn-salvar">Salvar</button>
-                            </div>
-                        </div>
-                    </div>
-
+                    
                     <!-- Aqui começa o modal mudar-mood -->
                     <div id="mudar-mood" class="modal-mood" style="display: none;">
                         <div class="content-mood">
@@ -339,37 +281,37 @@
                                     <h4 class="titulo-triste">Triste</h4>
                                 </div>
                                 <div class="select-mood">
-                                    <button value="Entediado" onclick="pegarValorEntediado()" class="btn-mood" id="ram-entediado">
+                                    <button value="Entediado" onclick="pegarValorFotoEntediado()" class="btn-mood" id="ram-entediado">
                                         <img src="./img/ram-entediado.svg" alt="Imagem do Ram com o 'mood' Entediado">
                                     </button>
                                     <h4 class="titulo-entediado">Entediado</h4>
                                 </div>
                                 <div class="select-mood">
-                                    <button value="Furioso" onclick="pegarValorFurioso()" class="btn-mood" id="ram-furioso">
+                                    <button value="Furioso" onclick="pegarValorFotoFurioso()" class="btn-mood" id="ram-furioso">
                                         <img src="./img/ram-furioso.svg" alt="Imagem do Ram com o 'mood' Furioso">
                                     </button>
                                     <h4 class="titulo-furioso">Furioso</h4>
                                 </div>
                                 <div class="select-mood">
-                                    <button value="Feliz" onclick="pegarValorFeliz()" class="btn-mood" id="ram-feliz">
+                                    <button value="Feliz" onclick="pegarValorFotoFeliz()" class="btn-mood" id="ram-feliz">
                                         <img src="./img/ram-feliz.svg" alt="Imagem do Ram com o 'mood' Feliz">
                                     </button>
                                     <h4 class="titulo-feliz">Feliz</h4>
                                 </div>
                                 <div class="select-mood">
-                                    <button value="Apaixonado" onclick="pegarValorApaixonado()" class="btn-mood" id="ram-apaixonado">
+                                    <button value="Apaixonado" onclick="pegarValorFotoApaixonado()" class="btn-mood" id="ram-apaixonado">
                                         <img src="./img/ram-apaixonado.svg" alt="Imagem do Ram com o 'mood' Apaixonado">
                                     </button>
                                     <h4 class="titulo-apaixonado">Apaixonado</h4>
                                 </div>
                                 <div class="select-mood">
-                                    <button value="padrao" onclick="pegarValorpadrao()" class="btn-mood" id="ram-padrao">
+                                    <button value="padrao" onclick="pegarValorFotoPadrao()" class="btn-mood" id="ram-padrao">
                                         <img src="./img/ram-padrao.svg" alt="Imagem do Ram com o 'mood' Padrão">
                                     </button>
                                     <h4 class="titulo-padrao">Padrão</h4>
                                 </div>
                                 <div class="select-mood">
-                                    <button value="No_mood" onclick="pegarValorNomood()" class="btn-mood" id="ram-sem-mood">
+                                    <button value="No_mood" onclick="pegarValorFotoNomood()" class="btn-mood" id="ram-sem-mood">
                                         <img src="./img/sem-mood.svg" alt="Imagem de perfil sem foto">
                                     </button>
                                     <h4 class="titulo-sem-mood">Sem mood</h4>

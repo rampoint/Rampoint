@@ -216,6 +216,8 @@ function exibirDadosUsuario(users) {
       users.medalhas.azul.display;
     document.getElementById("medalha-azul-img").src = users.medalhas.azul.img;
     document.getElementById("nome_modal").innerHTML = users.nome;
+    document.getElementById('foto-usuario').src = users.fotoPerfil.fotoPerfil
+    console.log(users.fotoPerfil.fotoPerfil)
   } else {
     console.log("O usuário está em outra página");
   }

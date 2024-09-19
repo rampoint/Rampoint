@@ -1,6 +1,160 @@
-@media (min-width: 320px) and (max-width: 421px) {
-  /* Estilos aqui */
+/* monitor da sala */
+@media (max-width: 1920px) {
+  .cupons {
+    width: 1800px;
+  }
+  /* começo cupom dourado */
+  .modal-content-dourado .lojas {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin: 10px 15px;
+  }
 
+  .titulo-dourado {
+    position: relative;
+    top: 2em;
+  }
+
+  .texto-dourado {
+    position: relative;
+    top: 3em;
+  }
+
+  .estrela-dourada {
+    position: relative;
+    right: 9em;
+    top: 6em;
+  }
+
+  .estrela-dourada2 {
+    position: relative;
+    left: 9em;
+    top: 1em;
+  }
+
+  .texto-lojas {
+    margin: -20px 35px;
+  }
+
+  .cupom-dourado {
+    margin-left: 15px;
+  }
+
+  #estrelas {
+    position: relative;
+    right: 12em;
+    top: 2em;
+    margin-bottom: 1em;
+  }
+
+  #ram-dourado {
+    width: 35%;
+    position: relative;
+    left: 3em;
+    bottom: 2em;
+    z-index: 2;
+  }
+
+  .curiosidade {
+    margin-right: 5em;
+    position: relative;
+    bottom: 2em;
+  }
+
+  .texto-curiosidade {
+    font-family: "Poppins-bold";
+    color: #745f12;
+    text-align: right;
+    margin-left: 15px;
+  }
+  /* final modal dourado */
+}
+
+@media (max-width: 1024px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #perfil {
+    float: left;
+    display: none;
+  }
+
+  #drop {
+    display: block;
+  }
+
+  .info-box {
+    width: auto;
+    text-align: center;
+    width: 50%;
+  }
+
+  .descricao-footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    max-width: 100%;
+  }
+
+  .copyright {
+    margin-left: 80px;
+  }
+}
+
+@media (max-width: 895px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+  }
+  nav ul {
+    justify-content: space-between;
+    position: static;
+    padding-left: 0;
+  }
+
+  nav a {
+    padding-right: 30px;
+  }
+
+  #logo {
+    margin-left: 20px;
+  }
+
+  #logo-nav {
+    margin-left: 20px;
+  }
+  #perfil {
+    display: none;
+  }
+
+  nav a:visited {
+    text-decoration: none;
+    transition: color 1.5s ease-out 1ms;
+  }
+
+  nav a:hover {
+    color: var(--branco);
+    text-decoration-line: underline;
+  }
+}
+
+@media (max-width: 768px) {
+  .logoBranca-small {
+    display: block;
+    width: 150px;
+  }
+
+  p {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 455px) {
   .container {
     display: flex;
     flex-direction: column;
@@ -10,7 +164,6 @@
   }
 
   /* imagem inicial */
-
   .imagem-fundo {
     display: flex;
     flex-direction: column-reverse;
@@ -18,7 +171,7 @@
     align-items: center;
     margin: 0;
     width: 100%;
-    height: 30em;
+    height: 15em;
   }
 
   #titulo-inicial {
@@ -35,13 +188,12 @@
   }
 
   .botao {
-    display: flex;
-    flex-direction: column;
-    margin-top: 10em;
-    margin-left: 0;
+    opacity: 0;
+    display: none;
   }
 
   #scrollTarget {
+    margin-top: 5em;
     padding-top: 9.5em; /* para compensar o menu fixo */
     display: flex;
     flex-direction: column;
@@ -50,7 +202,6 @@
   }
 
   /* começo lado esquerdo */
-
   .medalha-vermelha {
     width: 3em;
     position: relative;
@@ -90,7 +241,6 @@
   /* final lado esquerdo */
 
   /* começo lado direito */
-
   .brilho-roxo {
     width: 1em;
     position: relative;
@@ -155,26 +305,40 @@
     font-size: 1em;
     margin-left: 0;
     text-align: center;
+    width: 80%;
+  }
+
+  .section-empresas,
+  .conquistas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .conquistas #texto1 {
     width: 70%;
   }
 
   .cupons {
-    width: 350px;
-    height: 850px;
+    width: 650px;
+    height: 55em;
+    padding: 2em;
   }
 
   #titulo2 {
-    margin: 3em 0 0 1em;
+    margin: 1em 0 0 6em;
   }
 
   #texto2 {
-    margin-left: 3em;
-    width: 75%;
+    margin-left: 10em;
+    width: 60%;
   }
 
   /* começo dos cards dos cupons */
 
   .card-cupons {
+    flex-direction: column;
     flex-wrap: wrap;
     padding: 0;
     gap: 1em;
@@ -221,6 +385,7 @@
   .modal-content-dourado {
     width: 20em;
     height: 30em;
+    overflow: hidden;
   }
 
   .titulo-dourado {
@@ -252,7 +417,9 @@
     display: flex;
     flex-direction: row;
     gap: 15px;
-    margin: 10px 15px;
+    position: relative;
+    bottom: 6em;
+    left: -1em;
   }
 
   .modal-content-dourado #loja {
@@ -272,15 +439,15 @@
   }
 
   #ram-dourado {
-    width: 30%;
+    width: 20%;
     position: relative;
     left: 3em;
-    bottom: 2em;
+    bottom: 0;
     z-index: 2;
   }
 
-  .curiosidade {
-    width: 16em;
+  .modal-content-dourado .curiosidade {
+    width: 16.5em;
     height: 8em;
     margin-right: 5em;
     position: relative;
@@ -583,8 +750,229 @@
 
   /* final dos cards dos cupons */
 
-  /* footer */
+  /* começo salto tecnologico */
+  .fundo-medalha-salto {
+    width: 22em;
+    height: 18em;
+    margin-top: 3em;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+  }
 
+  .img-salto {
+    width: 6.5em;
+    position: relative;
+    bottom: 2em;
+    left: 1em;
+  }
+
+  .img-vitoria-regia {
+    display: none;
+  }
+
+  .column-textos {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3em;
+    margin-top: 1em;
+  }
+
+  .titulo-salto {
+    position: relative;
+    bottom: 5em;
+    left: 3.5em;
+  }
+
+  .fundo-medalha-salto .objetivo {
+    position: relative;
+    bottom: 5em;
+    left: 1em;
+  }
+
+  .fundo-medalha-salto .texto {
+    width: 100%;
+    position: relative;
+    bottom: 4em;
+    right: 1em;
+  }
+
+  /* final salto tecnologico */
+
+  /* começo coração generoso */
+  .fundo-medalha-coracao {
+    background-color: #ffb5c3;
+    width: 22em;
+    height: 16em;
+    margin-top: 5em;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img-coracao {
+    width: 8em;
+    position: relative;
+    bottom: 13em;
+    left: 13em;
+  }
+
+  .fundo-medalha-coracao .titulo-coracao {
+    position: relative;
+    top: 0.2em;
+    right: 1em;
+  }
+
+  .fundo-medalha-coracao .objetivo {
+    position: relative;
+    top: 2em;
+    right: 1em;
+  }
+
+  .fundo-medalha-coracao .texto {
+    position: relative;
+    top: 3em;
+    right: 1.5em;
+  }
+  /* final coração generoso */
+
+  /* começo explosão eletronica */
+  .fundo-medalha-explosao {
+    width: 22em;
+    height: 18em;
+    margin-top: 4em;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img-explosao {
+    width: 8em;
+    position: relative;
+    bottom: 2.5em;
+    left: -0.5em;
+  }
+
+  .fundo-medalha-explosao .titulo-explosao {
+    position: relative;
+    bottom: 7em;
+    left: 5em;
+  }
+
+  .fundo-medalha-explosao .objetivo {
+    position: relative;
+    bottom: 6em;
+    left: 3em;
+  }
+
+  .fundo-medalha-explosao .column-textos {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    margin-top: 1em;
+  }
+
+  .fundo-medalha-explosao .texto {
+    position: relative;
+    bottom: 5em;
+    left: 2em;
+    width: 85%;
+  }
+  /* final explosão eletronica */
+
+  /* começo engrenagem solidaria */
+  .fundo-medalha-engrenagem {
+    width: 22em;
+    height: 16em;
+    margin-top: 4em;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img-engrenagem {
+    width: 8em;
+    position: relative;
+    bottom: 15em;
+    left: 14em;
+  }
+
+  .fundo-medalha-engrenagem .titulo-engrenagem {
+    position: relative;
+    right: 1em;
+  }
+
+  .fundo-medalha-engrenagem .objetivo {
+    position: relative;
+    top: 2em;
+    right: 0;
+    left: 0.5em;
+  }
+
+  .fundo-medalha-engrenagem .texto {
+    position: relative;
+    top: 3em;
+    right: 1.5em;
+  }
+  /* final engrenagem solidaria */
+
+  /* começo raio esperança */
+  .fundo-medalha-raio {
+    width: 22em;
+    height: 18em;
+    margin-top: 4em;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img-raio {
+    width: 6.5em;
+    position: relative;
+    bottom: 2em;
+    left: 1em;
+  }
+
+  .brilho-esperanca {
+    width: 4em;
+    position: relative;
+    top: -2em;
+    right: 0;
+    left: 0;
+  }
+
+  .img-raio2 {
+    display: none;
+  }
+
+  .fundo-medalha-raio .column-textos {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    margin-top: 1em;
+  }
+
+  .titulo-raio {
+    position: relative;
+    bottom: 7em;
+    left: 6em;
+  }
+
+  .fundo-medalha-raio .objetivo {
+    position: relative;
+    bottom: 8em;
+    left: 8em;
+  }
+
+  .fundo-medalha-raio .texto {
+    position: relative;
+    bottom: 6em;
+    left: 2em;
+    width: 88%;
+  }
+  /* final raio esperança */
+
+  /* footer */
   .footer-container {
     width: 100%;
     height: auto;
@@ -593,14 +981,13 @@
     flex-direction: column;
   }
 
-  .geral {
-    margin-left: 55px;
+  .geral, .redes-sociais {
+    width: 270px;
   }
 
-  .redes-sociais,
   .contato {
-    margin-top: 30px;
-    margin-left: 55px;
+    margin-top: 15px;
+    margin-left: 0;
   }
 
   .footer-container .descricao-footer ul {
@@ -634,8 +1021,16 @@
   }
   /* footer */
 
-  .logoBranca-small {
-    width: 150px;
+  .logoBranca {
+    display: none;
+  }
+
+  #geral-titulo, #redes_sociais-titulo, #contato-titulo {
+    margin-top: 3em;
+  }
+
+  .copyright {
+    margin-left: 0;
   }
 }
 
@@ -643,163 +1038,5 @@
   .email {
     display: flex;
     flex-wrap: wrap;
-  }
-}
-
-@media (max-width: 425px) {
-  .footer-container .logo {
-    margin: 0;
-    bottom: 20px;
-    flex-direction: column;
-  }
-
-  .flor img {
-    visibility: hidden;
-  }
-
-  .flor img {
-    visibility: hidden;
-  }
-
-  .email {
-    display: flex;
-    flex-direction: row;
-    margin-left: 10px;
-  }
-
-  .footer-container .descricao-footer {
-    margin-top: 0;
-    display: block;
-  }
-
-  .descricao-footer {
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 40px;
-    max-width: 100%;
-  }
-  /*   
-  .geral, .contato {
-    margin: 70px;
-
-  }
- */
-  .endereco {
-    max-width: 100%;
-  }
-
-  .footer-container button {
-    margin-right: 10px;
-  }
-
-  .logoBranca-small {
-    width: 150px;
-  }
-
-  h3 {
-    margin-top: 15px;
-  }
-}
-
-@media (max-width: 768px) {
-  .logoBranca-small {
-    display: block;
-    width: 150px;
-  }
-
-  p {
-    margin-bottom: 10px;
-  }
-}
-
-@media (max-width: 1024px) {
-  header {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  #perfil {
-    float: left;
-    display: none;
-  }
-
-  #drop {
-    display: block;
-  }
-
-  .info-box {
-    width: auto;
-    text-align: center;
-    width: 50%;
-  }
-
-  .descricao-footer {
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 40px;
-    max-width: 100%;
-  }
-
-  .copyright {
-    margin-left: 80px;
-  }
-}
-
-/* Laptops pequenos */
-@media (max-width: 1280px) {
-  /* Estilos aqui */
-  .logoBranca {
-    display: none;
-  }
-}
-
-/* Laptops e desktops */
-@media (max-width: 1440px) {
-  /* Estilos aqui */
-}
-
-/* Telas grandes */
-@media (min-width: 1920px) {
-  .cupons {
-    width: 1925px;
-  }
-}
-
-@media (max-width: 895px) {
-  .hideOnMobile {
-    display: none;
-  }
-  .menu-button {
-    display: block;
-  }
-  nav ul {
-    justify-content: space-between;
-    position: static;
-    padding-left: 0;
-  }
-
-  nav a {
-    padding-right: 30px;
-  }
-
-  #logo {
-    margin-left: 20px;
-  }
-
-  #logo-nav {
-    margin-left: 20px;
-  }
-  #perfil {
-    display: none;
-  }
-
-  nav a:visited {
-    text-decoration: none;
-    transition: color 1.5s ease-out 1ms;
-  }
-
-  nav a:hover {
-    color: var(--branco);
-    text-decoration-line: underline;
   }
 }

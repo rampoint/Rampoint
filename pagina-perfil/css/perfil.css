@@ -306,7 +306,7 @@ body {
 .bloco-usuario {
   display: flex;
   flex-direction: column;
-  margin-left: 1.5em;
+  margin-left: 4.5em;
 }
 
 .ramcoin {
@@ -445,9 +445,9 @@ body {
 }
 
 #foto-usuario {
-  width: 170px;
+  width: 140px;
   border: solid;
-  height: 170px;
+  
 }
 
 #telefone-mudar {

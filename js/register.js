@@ -210,6 +210,7 @@ function exibirDadosUsuario(users) {
     document.getElementById("email-mudar").placeholder = users.email;
     document.getElementById("telefone-mudar").placeholder = users.tel;
     document.getElementById("nome-mudar").value = users.nome;
+    document.getElementById('foto-usuario').src = users.fotoPerfil.fotoPerfil
     document.getElementById("email-mudar").value = users.email;
     document.getElementById("telefone-mudar").value = users.tel;
     document.getElementById("medalha-azul").style.display =

@@ -233,6 +233,7 @@ nav a:hover {
 
 #foto-perfil {
   position: relative;
+  width: 100px;
 }
 /* modal sem perfil */
 
@@ -253,6 +254,9 @@ nav a:hover {
   height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.1);
+}
+#perfil{
+  width: 45px;
 }
 
 .content-sem-perfil {

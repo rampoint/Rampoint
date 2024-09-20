@@ -21,6 +21,9 @@ nav ul {
   height: 4em;
   z-index: 5;
 }
+#perfil{
+  width: 45px;
+}
 
 #logo-nav {
   display: flex;
@@ -236,6 +239,7 @@ nav a:hover {
 
 #foto-perfil {
   position: relative;
+  width: 100px;
 }
 /* modal sem perfil */
 

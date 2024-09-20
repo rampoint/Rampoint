@@ -270,6 +270,7 @@ margin-top:60px;
 
 #foto-perfil {
   position: relative;
+  width: 100px;
 }
 /* modal sem perfil */
 
@@ -293,7 +294,7 @@ margin-top:60px;
 }
 
 .content-sem-perfil {
-  background-color: var(--verde);
+
   margin-top: 4em;
   margin-left: 73em;
   padding: 0;
@@ -306,6 +307,9 @@ margin-top:60px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+#perfil{
+  width: 45px;
 }
 
 .fundo {

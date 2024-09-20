@@ -57,16 +57,16 @@
 
                 <!-- Modal sem perfil -->
                 <div class="modal-sem-perfil" id="modalSemPerfil">
-                    <div class="content-sem-perfil">
+                    <div id="content-sem-perfil" class="content-sem-perfil">
                         <p class="perfil">Perfil</p>
                         <img src="./img/user.svg" id="foto-perfil" alt="Foto de perfil">
                         <div class="fundo">
-                            <p class="texto-perfil">Sem login</p>
+                            <p class="texto-perfil" id="nome_modal"></p>
                             <div class="grupo">
                                 <hr class="linha">
-                                <a class="cadastro" href="../pagina-login/index.html">Cadastrar-se</a>
+                                <a class="cadastro" href="../pagina-perfil/perfil.html"><span style="color: black;">Ir para perfil</span></a>
                                 <hr class="linha">
-                                <a href="../pagina-login/index.html" class="login">Fazer login</a>
+                                <a href="../pagina-login/index.html" onclick="logout()" class="login"><span style="color: red;">Sair</span></a>
                             </div>
                         </div>
                     </div>
@@ -230,6 +230,14 @@
 
         <script src="./js/modal.js"></script>
         <script src="./js/scroll-modal.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-app-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-auth-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-database-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-firestore-compat.js"></script>
+        <script src="../js/firebase-init.js"></script>
+        <script src="../js/register.js"></script>
+        <script src="../js/logout.js"></script>
+    </div>
 
     </div>
 </body>

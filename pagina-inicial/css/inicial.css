@@ -179,6 +179,10 @@ body {
   color: var(--branco);
 }
 
+#perfil{
+  width: 45px;
+}
+
 #login {
   font-family: "Poppins-bold";
   font-size: 1em;

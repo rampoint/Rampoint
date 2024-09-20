@@ -11,6 +11,7 @@ function pegarValorFotoFeliz() {
       fotoPerfil:
         "https://firebasestorage.googleapis.com/v0/b/rampoint-81352.appspot.com/o/imagens%2FGroup%20525.svg?alt=media&token=964936c0-bfcf-4ba4-afa5-6c397715b692",
       fotoMensage: ram,
+      cor_foto:"#FFFDCA"
     })
     .then(() => {
       console.log("foto de perfil enviada");
@@ -38,6 +39,7 @@ function pegarValorFotoEmocionado() {
       fotoPerfil:
         "https://firebasestorage.googleapis.com/v0/b/rampoint-81352.appspot.com/o/imagens%2FGroup%20526.svg?alt=media&token=0f273e2b-4392-468a-9819-a7378ef88957",
       fotoMensage: ram,
+      cor_foto:"#DAACFE"
     })
     .then(() => {
       console.log("foto de perfil enviada");
@@ -60,6 +62,7 @@ function pegarValorFotoTriste() {
       fotoPerfil:
         "https://firebasestorage.googleapis.com/v0/b/rampoint-81352.appspot.com/o/imagens%2FGroup%20515.svg?alt=media&token=adfc3f86-6e04-4160-baa1-c0e38ffa7117",
       fotoMensage: ram,
+      cor_foto:"#52E0FF"
     })
     .then(() => {
       console.log("foto de perfil enviada");

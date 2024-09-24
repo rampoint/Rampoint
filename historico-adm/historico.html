@@ -96,26 +96,28 @@
                     <div class="grupo">
                         <div class="campo-nome">
                             <label for="nome">Nome Completo</label>
-                            <input type="name">
+                            <input id="nomeHistorico" type="name">
                         </div>
                         <div class="campo-telefone">
                             <label for="telefone">Telefone</label>
-                            <input type="text">
+                            <input id="telHistorico" type="text">
                         </div>
                     </div>
                     <div class="grupo">
                         <div class="campo-email">
                             <label for="email">Email</label>
-                            <input type="email">
+                            <input id="emailHistorico" type="email">
                         </div>
                         <div class="campo-botao">
-                            <button type="button" class="btn-pesquisar">Pesquisar</button>
+                            <button type="button" onclick="pesquisarUsuario()" class="btn-pesquisar">Pesquisar</button>
                         </div>
                     </div>
                 </form>
             </div>
             <div style="border: solid;" >
-                <p id="dados"></p>
+                <div id="dados">
+                    <p>dados do usuario</p>
+                </div>
             </div>
         </section>
     </main>

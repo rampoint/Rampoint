@@ -1,5 +1,5 @@
 /* monitor da sala */
-@media (max-width: 1920px) {
+@media (min-width: 1920px) {
   .cupons {
     width: 1800px;
   }
@@ -69,6 +69,12 @@
     margin-left: 15px;
   }
   /* final modal dourado */
+}
+
+@media (max-width: 1055px) {
+  .cupons {
+    width: 1300px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -464,53 +470,40 @@
 
   /* começo modal vidro */
   .modal-content-vidro {
-    background-color: #dffbff;
-    margin: 6em auto;
-    padding: 20px;
-    border-radius: 25px;
-    width: 27em;
-    max-width: 600px;
+    width: 20em;
     height: 30em;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    overflow: hidden;
   }
 
   .brilho-vidro {
     width: 5em;
     position: relative;
-    right: 11em;
-    top: 9em;
+    right: 8em;
+    top: 6em;
   }
 
   .titulo-vidro {
-    font-family: "Blinker-extrabold";
-    color: #027a8d;
     font-size: 30px;
     position: relative;
-    top: -3em;
+    top: -4em;
   }
 
   .texto-vidro {
-    font-family: "Blinker-bold";
-    color: #027a8d;
     font-size: 18px;
     position: relative;
-    top: -5em;
+    top: -7em;
   }
 
   .modal-content-vidro .ramcoin {
     margin: 15px 0;
     position: relative;
-    top: -5em;
+    top: -8em;
     left: 1.5em;
   }
 
   .cupom-vidro {
     width: 50%;
-    margin-left: 45px;
+    margin-left: 0;
   }
 
   .modal-content-vidro .lojas {
@@ -518,23 +511,18 @@
     flex-direction: row;
     gap: 15px;
     position: relative;
-    bottom: 6em;
+    bottom: 8em;
     left: 1em;
   }
 
   .modal-content-vidro .texto-lojas {
-    font-family: "Poppins-bold";
-    color: #027a8d;
     position: relative;
-    bottom: 7em;
+    bottom: 8em;
   }
 
   .modal-content-vidro .curiosidade {
+    width: 15em;
     height: 8em;
-    background-color: #027a8d;
-    border-radius: 25px;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
-    padding: 10px;
     margin-right: 5em;
     position: relative;
     bottom: 5em;
@@ -550,9 +538,9 @@
   }
 
   #ram-vidro {
-    width: 35%;
+    width: 23%;
     position: relative;
-    left: 3em;
+    left: 2.5em;
     bottom: 5em;
     z-index: 2;
   }
@@ -560,52 +548,39 @@
 
   /* começo modal golias */
   .modal-content-golias {
-    background-color: #c7fbb9;
-    margin: 6em auto;
-    padding: 20px;
-    border-radius: 25px;
-    width: 27em;
-    max-width: 600px;
+    width: 20em;
     height: 30em;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    overflow: hidden;
   }
 
   .titulo-golias {
-    font-family: "Blinker-extrabold";
-    color: #2b5121;
     font-size: 30px;
     position: relative;
-    top: 1.5em;
+    top: 1em;
   }
 
   .texto-golias {
-    font-family: "Blinker-bold";
-    color: #2b5121;
     font-size: 18px;
     position: relative;
-    top: 0;
+    top: -1em;
   }
 
   .mancha-verde1 {
     position: relative;
-    right: 11em;
-    top: 3em;
+    right: 9.5em;
+    top: 2em;
   }
 
   .mancha-verde2 {
     position: relative;
-    left: 11em;
-    bottom: 2em;
+    left: 9.5em;
+    bottom: 3em;
   }
 
   .modal-content-golias .ramcoin {
     margin: 15px 0;
     position: relative;
-    top: -1em;
+    top: -3em;
     left: 1.5em;
   }
 
@@ -614,23 +589,18 @@
     flex-direction: row;
     gap: 15px;
     position: relative;
-    bottom: 3em;
+    bottom: 4em;
     left: 1em;
   }
 
   .modal-content-golias .texto-lojas {
-    font-family: "Poppins-bold";
-    color: #2b5121;
     position: relative;
     bottom: 3em;
   }
 
   .modal-content-golias .curiosidade {
+    width: 15em;
     height: 8em;
-    background-color: #579445;
-    border-radius: 25px;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
-    padding: 10px;
     margin-right: 5em;
     position: relative;
     bottom: 0;
@@ -646,9 +616,9 @@
   }
 
   #ram-golias {
-    width: 35%;
+    width: 27%;
     position: relative;
-    left: 3em;
+    left: 3.5em;
     bottom: 0;
     z-index: 2;
   }
@@ -981,7 +951,8 @@
     flex-direction: column;
   }
 
-  .geral, .redes-sociais {
+  .geral,
+  .redes-sociais {
     width: 270px;
   }
 
@@ -1025,7 +996,9 @@
     display: none;
   }
 
-  #geral-titulo, #redes_sociais-titulo, #contato-titulo {
+  #geral-titulo,
+  #redes_sociais-titulo,
+  #contato-titulo {
     margin-top: 3em;
   }
 

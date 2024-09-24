@@ -306,7 +306,7 @@ body {
 .bloco-usuario {
   display: flex;
   flex-direction: column;
-  margin-left: 4.5em;
+  margin-left: 1.5em;
 }
 
 .ramcoin {

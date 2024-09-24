@@ -11,6 +11,7 @@ function pegarValorFotoFeliz() {
       fotoPerfil:
         "https://firebasestorage.googleapis.com/v0/b/rampoint-81352.appspot.com/o/imagens%2FGroup%20525.svg?alt=media&token=964936c0-bfcf-4ba4-afa5-6c397715b692",
       fotoMensage: ram,
+      cor_foto:"#FFFDCA"
     })
     .then(() => {
       console.log("foto de perfil enviada");
@@ -38,6 +39,7 @@ function pegarValorFotoEmocionado() {
       fotoPerfil:
         "https://firebasestorage.googleapis.com/v0/b/rampoint-81352.appspot.com/o/imagens%2FGroup%20526.svg?alt=media&token=0f273e2b-4392-468a-9819-a7378ef88957",
       fotoMensage: ram,
+      cor_foto:"#DAACFE"
     })
     .then(() => {
       console.log("foto de perfil enviada");
@@ -60,6 +62,7 @@ function pegarValorFotoTriste() {
       fotoPerfil:
         "https://firebasestorage.googleapis.com/v0/b/rampoint-81352.appspot.com/o/imagens%2FGroup%20515.svg?alt=media&token=adfc3f86-6e04-4160-baa1-c0e38ffa7117",
       fotoMensage: ram,
+      cor_foto:"#52E0FF"
     })
     .then(() => {
       console.log("foto de perfil enviada");
@@ -83,6 +86,7 @@ function pegarValorFotoEntediado() {
       fotoPerfil:
         "https://firebasestorage.googleapis.com/v0/b/rampoint-81352.appspot.com/o/imagens%2FGroup%20517.svg?alt=media&token=dee8203f-843f-421a-b955-395ff4407476",
       fotoMensage: ram,
+      cor_foto:"#808080",
     })
     .then(() => {
       console.log("foto de perfil enviada");
@@ -106,6 +110,7 @@ function pegarValorFotoFurioso() {
       fotoPerfil:
         "https://firebasestorage.googleapis.com/v0/b/rampoint-81352.appspot.com/o/imagens%2FGroup%20519.svg?alt=media&token=83bd63a2-ab4f-4ef1-9141-7534da8f3ab7",
       fotoMensage: ram,
+      cor_foto:'#F17575'
     })
     .then(() => {
       console.log("foto de perfil enviada");
@@ -130,6 +135,7 @@ function pegarValorFotoApaixonado() {
       fotoPerfil:
         "https://firebasestorage.googleapis.com/v0/b/rampoint-81352.appspot.com/o/imagens%2FGroup%20524.svg?alt=media&token=d101ece0-987f-45a8-9631-a29763acd20a",
       fotoMensage: ram,
+      cor_foto:"#F2B1AF"
     })
     .then(() => {
       console.log("foto de perfil enviada");
@@ -153,6 +159,7 @@ function pegarValorFotoPadrao() {
       fotoPerfil:
         "https://firebasestorage.googleapis.com/v0/b/rampoint-81352.appspot.com/o/imagens%2FGroup%20518.svg?alt=media&token=f876fea9-e991-472d-bd42-83fca4132ed1",
       fotoMensage: ram,
+      cor_foto:"#ABF47D"
     })
     .then(() => {
       console.log("foto de perfil enviada");
@@ -177,6 +184,7 @@ function pegarValorFotoNomood() {
       fotoPerfil:
         "https://firebasestorage.googleapis.com/v0/b/rampoint-81352.appspot.com/o/imagens%2FGroup%20526.svg?alt=media&token=0f273e2b-4392-468a-9819-a7378ef88957",
       fotoMensage: ram,
+      cor_foto:'#808080',
     })
     .then(() => {
       console.log("foto de perfil enviada");

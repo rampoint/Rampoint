@@ -6,6 +6,9 @@ nav {
   background-color: var(--branco);
   margin-bottom: 0px;
 }
+#perfil{
+  width: 45px;
+}
 
 nav ul {
   background-color: var(--branco);
@@ -231,6 +234,7 @@ nav a:hover {
 
 #foto-perfil {
   position: relative;
+  width: 100px;
 }
 /* modal sem perfil */
 

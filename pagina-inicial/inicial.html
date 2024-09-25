@@ -65,9 +65,11 @@
                             <p class="texto-perfil" id="nome_modal"></p>
                             <div class="grupo">
                                 <hr class="linha">
-                                <a class="cadastro" href="../pagina-perfil/perfil.html"><span style="color: black;">Ir para perfil</span></a>
+                                <a class="cadastro" href="../pagina-perfil/perfil.html"><span style="color: black;">Ir
+                                        para perfil</span></a>
                                 <hr class="linha">
-                                <a href="../pagina-login/index.html" onclick="logout()" class="login"><span style="color: red;">Sair</span></a>
+                                <a href="../pagina-login/index.html" onclick="logout()" class="login"><span
+                                        style="color: red;">Sair</span></a>
                             </div>
                         </div>
                     </div>
@@ -92,10 +94,16 @@
                     recompensa <span>RAMTÁSTICA</span>!</p>
 
                 <div class="botao">
-                    <button id="cadastro"><a class="cadastro" href="../pagina-login/index.html">CADASTRE-SE</a></button>
-                    <button id="login"><a class="login" href="../pagina-login/index.html">JÁ TENHO CONTA</a></button>
+                    <button id="cadastro">
+                        <a class="cadastro" href="../pagina-login/index.html">CADASTRE-SE</a>
+                    </button>
+
+                    <button id="login">
+                        <a class="login" href="../pagina-login/index.html">JÁ TENHO CONTA</a>
+                    </button>
                 </div>
             </div>
+
             <img src="./img/imagem-inicial.svg" class="imagem-inicial" alt="">
             <img src="./img/icone-internos.svg" class="internos-inicial" alt="">
             <img src="./img/brilho.svg" class="brilho-inicial" alt="">
@@ -140,12 +148,12 @@
             <h1 id="h1-info">Os mais próximos de você</h1>
             <p id="p-info">Coloque seu endereço para mostrarmos os ecopontos mais próximos de você!</p>
             <div class="form-conteiner">
-                <form>
+                <form action="" onsubmit="event.preventDefault();">
                     <div class="cep-rua">
                         <div class="cep-form">
                             <label for="cep">CEP:</label>
                             <input name="cep" type="text" placeholder="Insira seu CEP" id="cep" value="" size="10"
-                                maxlength="9" onblur="pesquisacep(this.value);" />
+                                maxlength="9" required />
                         </div>
                         <div class="rua-form">
                             <label for="rua">Rua:</label>
@@ -154,14 +162,16 @@
                     </div>
                     <div class="bairro-form">
                         <label for="bairro">Bairro:</label>
-                        <div class="btn"> <input placeholder="Insira seu bairro aqui" type="text" id="bairro"
-                                name="bairro" size="40">
-
-                            <button type="submit" class="btn-lupa"><img src="./img/lupa.svg" alt=""></button>
+                        <div class="btn">
+                            <input placeholder="Insira seu bairro aqui" type="text" id="bairro" name="bairro" size="40">
+                            <button type="submit" class="btn-lupa"
+                                onclick="pesquisacep(document.getElementById('cep').value)">
+                                <img src="./img/lupa.svg" alt="">
+                            </button>
                         </div>
-
                     </div>
                 </form>
+
             </div>
         </section>
 

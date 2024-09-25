@@ -293,6 +293,7 @@ span {
 
 .texto {
   grid-area: texto;
+  margin-left: 5em;
 }
 
 .imagem-medalha {
@@ -327,14 +328,12 @@ span {
 .info-box {
   margin: auto;
   width: 900px;
-  /* max-width: 900px; */
   display: flex;
   flex-direction: column;
   margin-top: 100px;
 }
 
 /* final link header ecoponto */
-
 #h1-info {
   font-family: "Blinker-extrabold";
   color: var(--verde);
@@ -402,14 +401,17 @@ form {
 /* colocando endereco começo */
 
 .form-conteiner {
-  background-color: rgba(217, 217, 217, 0.5);
+  background-color: #F8F8FF;
   border-radius: 35px;
   display: flex;
-  padding: 20px;
   flex-direction: column;
-  width: 100%;
   align-items: center;
   justify-content: center;
+  padding: 20px;
+  margin-top: 15px;
+  margin-left: 4em;
+  width: 45em;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
 }
 
 .form-conteiner form {
@@ -446,23 +448,24 @@ form {
 #rua::placeholder,
 #bairro::placeholder {
   font-family: "Poppins-semibold";
-  color: var(--cinza);
+  color: rgba(42, 85, 194, 0.4);
 }
 
 #rua {
   grid-area: "rua";
   margin-bottom: 30px;
   margin-top: 15px;
-  padding-right: 180px;
+  padding-right: 100px;
 }
 
 .rua-form {
   margin-left: 60px;
+  width: 15em;
 }
 
 #bairro {
   grid-area: "bairro";
-  padding-right: 550px;
+  padding-right: 385px;
   margin-top: 15px;
 }
 
@@ -478,7 +481,7 @@ label {
 }
 
 input {
-  background-color: var(--branco);
+  background-color: rgba(42, 85, 194, 0.07);
   padding-left: 10px;
   border: none;
   border-radius: 30px;
@@ -501,7 +504,7 @@ input {
   border-radius: 50%;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 25%);
   cursor: pointer;
-  margin: 0 0 0 50px;
+  margin: 0 0 0 25px;
 }
 
 /* colocar endereco final */

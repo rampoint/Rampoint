@@ -1,4 +1,4 @@
-@media (max-width: 1920px) {
+@media (min-width: 1920px) {
   .content-sem-perfil {
     margin-left: 100em;
   }

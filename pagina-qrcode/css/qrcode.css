@@ -89,10 +89,10 @@ body {
 /* qr code começo  */
 .qrcode-box {
   display: flex;
-  background-color: var(--cinza-claro);
+  background-color: #f8f8ff;
   text-align: center;
   border-radius: 30px;
-  box-shadow: 4px 4px 5px 1px rgba(0, 0, 0, 0.13);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
   margin-top: 20px;
   margin-bottom: 0;
   flex-direction: column;
@@ -100,6 +100,7 @@ body {
   width: 42%;
   max-width: 800px;
   min-width: 400px;
+  height: 430px;
   align-items: center;
 }
 
@@ -162,6 +163,7 @@ body {
 }
 
 .qrcode-box input {
+  background-color: rgba(42, 85, 194, 0.07);
   border-radius: 30px;
   border: none;
   padding: 8px 45px 8px 19px;
@@ -204,8 +206,8 @@ body {
   justify-content: center;
 }
 
-
 .codigo-l2 select {
+  background-color: rgba(42, 85, 194, 0.07);
   border-radius: 30px;
   border: none;
   padding: 0.6em;
@@ -290,13 +292,13 @@ body {
 
 #brilho-amarelo {
   position: relative;
-  top: 5em;
+  top: 4em;
   right: 10em;
 }
 
 #estrela {
   position: relative;
-  top: 6em;
+  top: 5em;
 }
 
 .moeda-verde2 {
@@ -370,7 +372,7 @@ body {
   animation-direction: alternate;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-  margin-top: 1.5em;
+  margin-top: 2em;
   margin-left: 0.5em;
 }
 

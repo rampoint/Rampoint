@@ -218,10 +218,12 @@ function exibirDadosUsuario(users) {
     document.getElementById("medalha-azul-img").src = users.medalhas.azul.img;
     document.getElementById("nome_modal").innerHTML = users.nome;
   } else {
+    document.getElementById('perfil').src = users.fotoPerfil.fotoPerfil
+    document.getElementById('foto-perfil').src = users.fotoPerfil.fotoPerfil
     document.getElementById("nome_modal").innerHTML = users.nome;
     document.getElementById('content-sem-perfil').style.backgroundColor = users.fotoPerfil.cor_foto
-    document.getElementById('foto-perfil').src = users.fotoPerfil.fotoPerfil
-    document.getElementById('perfil').src = users.fotoPerfil.fotoPerfil
+    
+    
   }
 }
 

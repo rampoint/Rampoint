@@ -451,7 +451,15 @@ body {
 
 #foto-usuario {
   width: 140px;
-  border: solid;
+}
+
+#telefone-mudar {
+  background-color: var(--branco);
+  width: 11.5em;
+  border: none;
+  border-radius: 15px;
+  padding: 5px;
+  margin-right: 17px;
 }
 
 /* #genero {

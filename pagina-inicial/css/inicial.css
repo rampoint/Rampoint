@@ -151,6 +151,10 @@ body {
   cursor: pointer;
 }
 
+#cadastro:hover {
+  border-bottom: none;
+}
+
 .cadastro {
   font-family: "Poppins-bold";
   font-size: 1em;
@@ -160,27 +164,6 @@ body {
   border: none;
   border-radius: 30px;
   cursor: pointer;
-}
-
-.sair-button {
-  font-family: "Poppins-bold";
-  font-size: 1em;
-  color: red;
-  width: 200px;
-  height: 40px;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  margin-right: 10px;
-  background: var(--branco);
-}
-
-.cadastro:hover {
-  color: var(--branco);
-}
-
-#perfil{
-  width: 45px;
 }
 
 #login {
@@ -194,6 +177,10 @@ body {
   border-bottom: 5px solid #0076ac;
   border-radius: 30px;
   cursor: pointer;
+}
+
+#login:hover {
+  border-bottom: none;
 }
 
 .login {
@@ -217,12 +204,31 @@ body {
   border-radius: 30px;
   cursor: pointer;
   background: var(--branco)
+}
 
+.sair-button {
+  font-family: "Poppins-bold";
+  font-size: 1em;
+  color: red;
+  width: 200px;
+  height: 40px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-right: 10px;
+  background: var(--branco);
+}
+
+.cadastro:hover {
+  color: var(--branco);
+}
+
+#perfil{
+  width: 45px;
 }
 /* final da imagem inicial */
 
 /* começo dos textos */
-
 #titulo1 {
   font-family: "Blinker-extrabold";
   color: var(--verde);

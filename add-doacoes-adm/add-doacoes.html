@@ -102,7 +102,7 @@
 
           <div class="campo-form">
             <label for="email" id="email" class="titulo-form">Email</label>
-            <input type="email">
+            <input id="email-add" type="email">
           </div>
 
           <div class="campo-form">
@@ -125,7 +125,7 @@
 
           <div class="campo-form">
             <label for="qtd-peca" class="titulo-form">Qtd. de peça(s)</label>
-            <input type="number">
+            <input id="qtd_peca" type="number">
           </div>
 
           <div class="campo-form">
@@ -140,11 +140,11 @@
 
           <div class="campo-form">
             <label for="data" class="titulo-form">Data</label>
-            <input type="date" class="data">
+            <input type="date" class="data" id="data_doacao">
           </div>
           <div class="campo-form">
             <label for="hora" class="titulo-form">Hora</label>
-            <input type="time" class="hora">
+            <input type="time" class="hora" id="hora_doacao">
           </div>
         </div>
 
@@ -155,7 +155,7 @@
         </div>
 
         <div class="botoes">
-          <button class="btn-salvar">Salvar</button>
+          <button onclick="adicionarDoacao()" type="button" class="btn-salvar">Salvar</button>
           <button class="btn-cancelar">Cancelar</button>
         </div>
       </form>
@@ -164,6 +164,11 @@
 
   <script src="./js/sidebar.js"></script>
   <script src="./js/ddd.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-database-compat.js"></script>
+  <script src="../js/firebase-init.js"></script>
+  <script src="../js/adm/AdicionarDoaçõesAdm.js"></script>
 </body>
 
 </html>

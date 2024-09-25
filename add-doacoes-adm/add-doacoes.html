@@ -102,7 +102,7 @@
 
           <div class="campo-form">
             <label for="email" id="email" class="titulo-form">Email</label>
-            <input type="email">
+            <input id="email-add" type="email">
           </div>
 
           <div class="campo-form">
@@ -155,7 +155,7 @@
         </div>
 
         <div class="botoes">
-          <button class="btn-salvar">Salvar</button>
+          <button onclick="adicionarDoacao()" type="button" class="btn-salvar">Salvar</button>
           <button class="btn-cancelar">Cancelar</button>
         </div>
       </form>
@@ -164,6 +164,11 @@
 
   <script src="./js/sidebar.js"></script>
   <script src="./js/ddd.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-database-compat.js"></script>
+  <script src="../js/firebase-init.js"></script>
+  <script src="../js/adm/AdicionarDoaçõesAdm.js"></script>
 </body>
 
 </html>

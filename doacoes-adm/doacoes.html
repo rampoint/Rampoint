@@ -114,7 +114,7 @@
               <th></th>
             </tr>
           </thead>
-          <tbody>
+          <tbody id="tbody">
             <!-- placa de video -->
             <tr>
               <td>
@@ -240,51 +240,7 @@
 
                 <!-- Modal Principal -->
             <!-- teste -->
-            <tr>
-              <td>
-                <div class="peca">
-                  <img src="./img/gabinete.svg" id="gabinete" alt="Imagem de um gabinete">
-                  <p id="nome-peca" class="nome-peca">Gabinete</p>
-                </div>
-              </td>
-              <td>
-                <button id="tipo-estrutura" class="tipo-estrutura">Estrutura</button>
-              </td>
-              <td>
-                <p id="nome-doador" class="nome">Ana Beatriz</p>
-              </td>
-              <td>
-                <p id="email-doador" class="email">anabeatriz@gmail.com</p>
-              </td>
-              <td>
-                <p id="qtd" class="qtd-total">2</p>
-              </td>
-              <td>
-                <button id="status" class="vistoria-pendente">
-                  <img src="./img/pendente.svg" alt="">
-                  Pendente
-                </button>
-              </td>
-              <button class="opcoes" onclick="openModal('optionsModal4')">
-                <td>
-                  <img src="./img/more.svg" alt="Mais opções">
-                </button>
-
-                <!-- Modal Principal -->
-                <div id="optionsModal4" class="modal">
-                  <div class="modal-content">
-                    <ul>
-                      <li><button class="modal-button edit-button" onclick="editOption()"><img
-                            src="./img/icon-editar.svg" id="icon-modal" alt="ícone de um lápis">Editar</button></li>
-                      <li><button class="modal-button delete-button"
-                          onclick="openDeleteConfirmModal('deleteConfirmModal4')"><img src="./img/icon-deletar.svg"
-                            id="icon-modal" alt="ícone de uma lixeira">Excluir</button></li>
-                    </ul>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            
+           
           </tbody>
         </table>
       </div>

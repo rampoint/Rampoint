@@ -1,12 +1,13 @@
 const usersRef = database.ref("users");
 const formDoacoes = {
+  nome: () => document.getElementById("nome-add").value,
   email: () => document.getElementById("email-add").value,
   Peca: () => document.getElementById('search').value,
   Qtd_peca: () => document.getElementById('qtd_peca').value,
   tipo_componente: () => document.getElementById('tipo-componente').value,
   data_doacao: () => document.getElementById('data_doacao').value,
   hora_doacao: () => document.getElementById('hora_doacao').value,
-  desc_doacao: () => document.getElementById('hora_doacao').value
+  desc_doacao: () => document.getElementById('descricao-peca').value
 };
 
 function adicionarDoacao() {
@@ -16,10 +17,12 @@ function adicionarDoacao() {
       // O email foi encontrado
       snapshot.forEach((childSnapshot) => {
         const userId = childSnapshot.key; // ID do usuário encontrado
-
-        console.log(formDoacoes.Peca())
+        const data = childSnapshot.val()
+        console.log(data)
         // Atualiza ou adiciona dados dentro do nó do usuário
-        childSnapshot.ref.child('peças/' + formDoacoes.Peca()).update({
+        childSnapshot.ref.child('peças/' + formDoacoes.Peca()).set({
+        nome:formDoacoes.nome(),
+        email:formDoacoes.email(),
         qtd: formDoacoes.Qtd_peca(),
         tipo: formDoacoes.tipo_componente(),
         data:formDoacoes.data_doacao(),

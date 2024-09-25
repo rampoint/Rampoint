@@ -62,7 +62,7 @@ p {
   overflow: hidden;
   width: 768px;
   max-width: 100%;
-  min-height: 510px;
+  min-height: 550px;
 }
 
 .container p {
@@ -78,12 +78,14 @@ p {
   margin: 15px 0 10px;
 }
 
-.container button {
-  background-color: var(--azul);
+/* botoes */
+
+#login, #register {
+  background-color: transparent;
   color: var(--branco);
   font-size: 12px;
   padding: 10px 45px;
-  border: 1px solid transparent;
+  border: 1px solid #fff;
   border-radius: 20px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
@@ -98,6 +100,125 @@ p {
   align-items: center;
   justify-content: center;
 }
+
+.btn-animado {
+  padding: 10px 45px;
+  border: 2px solid #2a55c2;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+  margin-top: 20px;
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  color: #2a55c2;
+  font-size: 12px;
+  background-color: transparent;
+  outline: none;
+  transition: color 0.5s;
+  cursor: pointer;
+}
+
+.btn-animado:before {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.btn-animado:after {
+  content: "";
+  z-index: -2;
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s 0.2s;
+  border-radius: 20px;
+}
+
+svg {
+  height: 2em;
+}
+
+.btn-animado:hover {
+  color: #fff;
+  border-radius: 20px;
+}
+
+.btn-animado:hover:after {
+  transition: all 0.3s;
+  left: 0;
+  top: 0;
+  border-radius: 20px;
+}
+
+.blob-btn__inner {
+  z-index: -1;
+  overflow: hidden;
+  position: absolute;
+  left: -1px;
+  top: 0;
+  width: 101%;
+  height: 100%;
+  border-radius: 20px;
+  background: transparent;
+}
+
+.blob-btn__blobs {
+  position: relative;
+  display: block;
+  height: 100%;
+  filter: url("#goo");
+}
+
+.blob-btn__blob {
+  position: absolute;
+  top: 2px;
+  width: 25%;
+  height: 100%;
+  background: #2a55c2;
+  border-radius: 100%;
+  transform: translate3d(0, 150%, 0) scale(1.7);
+  transition: transform 0.45s;
+}
+
+@supports (filter: url("#goo")) {
+  .blob-btn__blob {
+    transform: translate3d(0, 150%, 0) scale(1.4);
+  }
+}
+.blob-btn__blob:nth-child(1) {
+  left: 0%;
+  transition-delay: 0s;
+}
+.blob-btn__blob:nth-child(2) {
+  left: 30%;
+  transition-delay: 0.08s;
+}
+.blob-btn__blob:nth-child(3) {
+  left: 60%;
+  transition-delay: 0.16s;
+}
+.blob-btn__blob:nth-child(4) {
+  left: 90%;
+  transition-delay: 0.24s;
+}
+.btn-animado:hover .blob-btn__blob {
+  transform: translateZ(0) scale(1.7);
+}
+@supports (filter: url("#goo")) {
+  .btn-animado:hover .blob-btn__blob {
+    transform: translateZ(0) scale(1.4);
+  }
+}
+
+/* final botoes */
 
 .container form {
   background-color: var(--branco);
@@ -122,11 +243,12 @@ select {
 }
 
 #genero {
+  font-family: "Poppins-semibold";
   background-color: var(--cinza-claro);
   border: none;
   margin: 8px 0;
   padding: 5px 10px;
-  font-size: 13px;
+  font-size: 12px;
   border-radius: 20px;
   width: 100%;
   height: 2.5em;
@@ -139,7 +261,7 @@ select {
 .genero::after {
   content: url(../img/Icon.svg);
   position: absolute;
-  top: 25.4em;
+  top: 22em;
   right: 19em;
   transform: translateY(-50%);
   pointer-events: none;
@@ -148,11 +270,61 @@ select {
   z-index: 1;
 }
 
-::-webkit-calendar-picker-indicator {
-  background-color: #ffffff;
+#data-cadastro::-webkit-calendar-picker-indicator {
   padding: 5px;
   cursor: pointer;
   border-radius: 3px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.calendar-icon {
+  content: "";
+  background: url(../img/calendario-icon.svg) no-repeat center;
+  position: absolute;
+  top: 16.8em;
+  right: 3em;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  pointer-events: none;
+}
+
+.termos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 20em;
+  margin-top: 1em;
+}
+
+.termos input[type="checkbox"] {
+  background-color: transparent;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 5px;
+  height: 20px;
+  border: 2px solid #2a55c2;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+.termos input[type="checkbox"]:checked::before {
+  content: url(../img/Vector.svg);
+  color: none;
+  font-size: 12px;
+  display: block;
+  position: absolute;
+  top: -1px;
+  left: 0.4em;
+}
+
+.termos-condicoes a {
+  color: #121212;
+  text-decoration: underline;
 }
 
 .form-container {
@@ -211,6 +383,24 @@ select {
 }
 
 .social-icons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 3px;
+  width: 40px;
+  height: 40px;
+}
+
+.social-icons2 {
+  margin: 30px auto 0 auto;
+}
+
+.social-icons2 img {
+  width: 30px;
+  height: auto;
+}
+
+.social-icons2 a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -307,6 +497,11 @@ select {
   gap: 5px;
 }
 
+.email,
+.senha {
+  margin-top: 0.2em;
+}
+
 .grupo-telefone {
   display: flex;
   flex-direction: row;
@@ -326,16 +521,14 @@ select {
   display: flex;
   flex-direction: row;
   gap: 5px;
+  margin-top: 0.5em;
 }
 
 .grupo2 {
   display: flex;
   flex-direction: row;
   gap: 5px;
-}
-
-#data::-webkit-calendar-picker-indicator {
-  background: url("./img/calendario-icon.svg") no-repeat;
+  margin-top: 0.5em;
 }
 
 #recover-password {
@@ -353,6 +546,7 @@ select {
   cursor: pointer;
 }
 
+/*
 #recover-password:active {
   opacity: 1;
 }
@@ -361,9 +555,10 @@ select {
   opacity: 0.5;
 }
 
-#cadastrar:disabled {
+ #cadastrar:disabled {
   opacity: 0.5;
 }
+
 #cadastrar:active {
   opacity: 1;
 }
@@ -371,9 +566,10 @@ select {
 #entrar:disabled {
   opacity: 0.5;
 }
+  
 #entrar:active {
   opacity: 1;
-}
+} */
 
 #erro-login-invalido {
   color: red;

@@ -161,29 +161,6 @@
   }
 }
 
-
-/* Dispositivos móveis em modo paisagem (tela horizontal) */
-@media (max-width: 767px) {
-  /* Estilos aqui */
-}
-
-/* Tablets em modo retrato (tela vertical) */
-@media (max-width: 768px) {
-
-  /* Estilos aqui */
-  .flor img {
-    visibility: hidden;
-  }
-
-  .footer-container p {
-    margin-bottom: 10px;
-  }
-
-  #medalhas {
-    width: 280px;
-  }
-}
-
 /* Tablets em modo paisagem (tela horizontal) */
 @media (max-width: 1024px) {
   /* Estilos aqui */
@@ -241,11 +218,6 @@
   .codigo-l2 select {
     margin-left: 0px;
   }
-}
-
-/* Laptops e desktops */
-@media (max-width: 1440px) {
-  /* Estilos aqui */
 }
 
 /* Telas grandes */

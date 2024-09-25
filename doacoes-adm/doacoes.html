@@ -239,65 +239,6 @@
                 </button>
 
                 <!-- Modal Principal -->
-                <div id="optionsModal3" class="modal">
-                  <div class="modal-content">
-                    <ul>
-                      <li><button class="modal-button edit-button" onclick="editOption()"><img
-                            src="./img/icon-editar.svg" id="icon-modal" alt="ícone de um lápis">Editar</button></li>
-                      <li><button class="modal-button delete-button"
-                          onclick="openDeleteConfirmModal('deleteConfirmModal3')"><img src="./img/icon-deletar.svg"
-                            id="icon-modal" alt="ícone de uma lixeira">Excluir</button></li>
-                    </ul>
-                  </div>
-                </div>
-              </td>
-            </tr>
-
-            <!-- gabinete -->
-            <tr>
-              <td>
-                <div class="peca">
-                  <img src="./img/gabinete.svg" id="gabinete" alt="Imagem de um gabinete">
-                  <p class="nome-peca">Gabinete</p>
-                </div>
-              </td>
-              <td>
-                <button class="tipo-estrutura">Estrutura</button>
-              </td>
-              <td>
-                <p class="nome">Ana Beatriz</p>
-              </td>
-              <td>
-                <p class="email">anabeatriz@gmail.com</p>
-              </td>
-              <td>
-                <p class="qtd-total">2</p>
-              </td>
-              <td>
-                <button class="vistoria-pendente">
-                  <img src="./img/pendente.svg" alt="">
-                  Pendente
-                </button>
-              </td>
-              <td>
-                <button class="opcoes" onclick="openModal('optionsModal4')">
-                  <img src="./img/more.svg" alt="Mais opções">
-                </button>
-
-                <!-- Modal Principal -->
-                <div id="optionsModal4" class="modal">
-                  <div class="modal-content">
-                    <ul>
-                      <li><button class="modal-button edit-button" onclick="editOption()"><img
-                            src="./img/icon-editar.svg" id="icon-modal" alt="ícone de um lápis">Editar</button></li>
-                      <li><button class="modal-button delete-button"
-                          onclick="openDeleteConfirmModal('deleteConfirmModal4')"><img src="./img/icon-deletar.svg"
-                            id="icon-modal" alt="ícone de uma lixeira">Excluir</button></li>
-                    </ul>
-                  </div>
-                </div>
-              </td>
-            </tr>
             <!-- teste -->
             <tr>
               <td>
@@ -356,6 +297,11 @@
   <script src="./js/sidebar.js"></script>
   <script defer src="./js/btn-filtrar.js"></script>
   <script defer src="./js/btn-opcoes.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-database-compat.js"></script>
+  <script src="../js/firebase-init.js"></script>
+  <script src="../js/adm/encontrarDoacoes.js"></script>
 </body>
 
 </html>

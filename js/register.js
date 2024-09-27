@@ -158,7 +158,7 @@ function VerificarData() {
   const dataNascimento = new Date(Form.data().value);
   const idade = calcularIdade(dataNascimento);
   const resultado = document.getElementById("erro-data-18");
-  if (idade < 18) {
+  if (idade < 15) {
     resultado.style.display = "block";
     return false;
   } else {
@@ -204,6 +204,8 @@ function exibirDadosUsuario(users) {
   if (currentPage.includes("/pagina-perfil/")) {
     form_usuario.nome_perfil().innerHTML = users.nome;
     form_usuario.email_perfil().innerHTML = users.email;
+    document.getElementById("emocao_usuario").style.color = users.fotoPerfil.cor_texto;
+    document.getElementById("emocao_usuario").innerHTML = users.fotoPerfil.fotoMensage;
     document.getElementById("nome-mudar").placeholder = users.nome;
     document.getElementById("email-mudar").placeholder = users.email;
     document.getElementById("telefone-mudar").placeholder = users.tel;
@@ -211,19 +213,21 @@ function exibirDadosUsuario(users) {
     document.getElementById('foto-usuario').src = users.fotoPerfil.fotoPerfil
     document.getElementById("email-mudar").value = users.email;
     document.getElementById("telefone-mudar").value = users.tel;
+    document.getElementById("nome_modal").style.color = users.fotoPerfil.cor_texto;
     document.getElementById("nome_modal").innerHTML = users.nome;
     document.getElementById('content-sem-perfil').style.backgroundColor = users.fotoPerfil.cor_foto
     document.getElementById('foto-perfil').src = users.fotoPerfil.fotoPerfil
     document.getElementById("medalha-azul").style.display = users.medalhas.azul.display;
     document.getElementById("medalha-azul-img").src = users.medalhas.azul.img;
     document.getElementById("nome_modal").innerHTML = users.nome;
+
   } else {
-    document.getElementById('perfil').src = users.fotoPerfil.fotoPerfil
-    document.getElementById('foto-perfil').src = users.fotoPerfil.fotoPerfil
+    document.getElementById("nome_modal").style.color = users.fotoPerfil.cor_texto;
     document.getElementById("nome_modal").innerHTML = users.nome;
     document.getElementById('content-sem-perfil').style.backgroundColor = users.fotoPerfil.cor_foto
-    
-    
+    document.getElementById('perfil').src = users.fotoPerfil.fotoPerfil
+    document.getElementById('foto-perfil').src = users.fotoPerfil.fotoPerfil
+
   }
 }
 
@@ -268,11 +272,11 @@ function apagandoUsuario() {
   user
     .delete()
     .then(() => {
-      alert('apagado filho')
+      alert('apagado')
       logout()
     })
     .catch((error) => {
-      alert("nao apagado essa porra" + error.code)
+      alert("nao apagado" + error.code)
       // ...
     });
 
@@ -280,9 +284,9 @@ function apagandoUsuario() {
 
     userRef.remove().
     then(() =>{
-      alert('excluido do banco tambem slc')
+      alert('Excluido')
     })
     .catch((error) => {
-      alert('receba ta errado')
+      alert('conta nao excluida')
     })
 }

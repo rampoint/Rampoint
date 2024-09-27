@@ -48,7 +48,7 @@ function criarTabela(nome_peca,estrutura,email_doador,nome_doador,qtd,vistoria){
         <td>
             <button class="tipo-estrutura">${estrutura}</button>
         </td>
-        <td><p class="nome">${nome_doador}</p></td>
+        <td><p id="nome-peca" class="nome">${nome_doador}</p></td>
         <td><p class="email">${email_doador}</p></td>
         <td><p class="qtd-total">${qtd}</p></td>
         <td>

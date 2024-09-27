@@ -1,4 +1,3 @@
-function mostrarID(id){
-
-    console.log(id)
+function excluirDoacao(){
+    const email = document.getElementById("")
 }

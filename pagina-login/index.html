@@ -6,11 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/ram-redondo.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/layout.css">
 
     <title>Login e cadastro</title>
 </head>
-
-
 <body>
     <div class="container" id="container">
         <div class="form-container sign-up">
@@ -64,7 +63,7 @@
                         <label id="erro-senha-min">A senha precisa ter mais que 5 caracteres</label>
                     </div>
                     <div class="senha">
-                        <label for="">Confirmar senha</label>
+                        <label for="" class="confirmarSenha">Confirmar senha</label>
                         <input id="confirmarSenha" onchange="onchangePasswordConfirm()" type="password">
                         <label id="erro-senha-obrigatorio">A senha é obrigatória</label>
                         <label id="erro-nao-corresponde">A senha não corresponde </label>

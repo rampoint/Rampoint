@@ -1,0 +1,87 @@
+@media (max-width: 775px) {
+  .container {
+    width: 45em;
+  }
+
+  .genero::after {
+    right: 18em;
+  }
+}
+
+@media (max-width: 725px) {
+  .container {
+    width: 42em;
+  }
+}
+
+@media (max-width: 685px) {
+  .container {
+    width: 40em;
+  }
+}
+
+@media (max-width: 645px) {
+  .container {
+    width: 35em;
+  }
+
+  #recover-password {
+    width: 13em;
+    padding: 0;
+  }
+
+  .grupo {
+    width: 15em;
+  }
+
+  #email,
+  #senha {
+    width: 17em;
+  }
+
+  #genero,
+  #data-cadastro {
+    width: 9em;
+  }
+
+  .genero::after {
+    top: 21.8em;
+    right: 14.5em;
+  }
+
+  .confirmarSenha {
+    display: flex;
+    width: 9em;
+  }
+
+  #confirmarSenha {
+    width: 9em;
+  }
+
+  .termos {
+    width: 15em;
+  }
+}
+
+@media (max-width: 555px) {
+  .container {
+    width: 33em;
+  }
+
+  .grupo {
+    width: 14em;
+  }
+
+  .sign-up {
+    overflow: hidden;
+  }
+
+  .sign-up .email {
+    width: 14em;
+  }
+
+  #senha-cadastro,
+  #confirmarSenha {
+    width: 8em;
+  }
+}

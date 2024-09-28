@@ -216,18 +216,17 @@ function exibirDadosUsuario(users) {
     document.getElementById("nome_modal").style.color = users.fotoPerfil.cor_texto;
     document.getElementById("nome_modal").innerHTML = users.nome;
     document.getElementById('content-sem-perfil').style.backgroundColor = users.fotoPerfil.cor_foto
-    document.getElementById('foto-perfil').src = users.fotoPerfil.fotoPerfil
     document.getElementById("medalha-azul").style.display = users.medalhas.azul.display;
     document.getElementById("medalha-azul-img").src = users.medalhas.azul.img;
     document.getElementById("nome_modal").innerHTML = users.nome;
-
+    document.getElementById('foto-perfil').src = users.fotoPerfil.fotoPerfil
+    document.getElementById('perfil').src = users.fotoPerfil.fotoPerfil
   } else {
     document.getElementById("nome_modal").style.color = users.fotoPerfil.cor_texto;
     document.getElementById("nome_modal").innerHTML = users.nome;
     document.getElementById('content-sem-perfil').style.backgroundColor = users.fotoPerfil.cor_foto
     document.getElementById('perfil').src = users.fotoPerfil.fotoPerfil
     document.getElementById('foto-perfil').src = users.fotoPerfil.fotoPerfil
-
   }
 }
 

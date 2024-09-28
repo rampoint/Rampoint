@@ -304,9 +304,55 @@ body {
 }
 
 .bloco-usuario {
+  width: 10em;
   display: flex;
   flex-direction: column;
   margin-left: 1.5em;
+}
+
+.bloco-ramcoin {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  margin-left: 15em;
+}
+
+.ramcoin {
+  position: relative; /* Certifica que o texto segue o contexto da ramcoin */
+}
+
+.text-block {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 2px 8px 8px rgba(42, 85, 194, 0.15);
+  width: 300px;
+  z-index: 1;
+  text-align: center;
+}
+
+.textos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.texto-ramcoin {
+  font-family: "Poppins-semibold";
+  color: var(--azul);
+  font-size: 13px;
+  margin-left: 5px;
+}
+
+.ramcoin:hover .text-block {
+  display: block;
 }
 
 .ramcoin {
@@ -317,15 +363,7 @@ body {
 .qtd-ramcoin {
   font-family: "Poppins-extrabold";
   color: var(--verde);
-  margin-right: 0.5em;
-}
-
-.bloco-ramcoin {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: space-around;
-  margin-left: 15em;
+  margin-right: 5px;
 }
 
 /* final campo perfil */
@@ -372,7 +410,7 @@ body {
   margin-top: 7em;
   padding: 20px;
   border-radius: 30px;
-  width: 55%;
+  width: 60%;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -389,15 +427,16 @@ body {
 }
 
 .info-perfil {
-  background-color: var(--cinza-claro);
+  background-color: #f8f8ff;
   border-radius: 35px;
-  width: 95%;
+  width: 90%;
   height: 16em;
   padding: 20px;
   display: flex;
   flex-direction: row;
   gap: 15px;
   overflow: hidden;
+  box-shadow: 0 5px 20px rgba(157, 78, 221, 0.25);
 }
 
 .usuario {
@@ -407,8 +446,8 @@ body {
 
 #lapis {
   position: relative;
-  left: 4em;
-  bottom: 1.5em;
+  right: 1.5em;
+  bottom: 0;
   cursor: pointer;
 }
 
@@ -428,21 +467,63 @@ body {
 }
 
 #nome-mudar,
-#email-mudar,
-#nascimento,
-#genero-mudar {
-  background-color: var(--branco);
-  width: 15em;
+#email-mudar {
+  background-color: rgba(42, 85, 194, 0.07);
+  width: 15.5em;
   border: none;
   border-radius: 15px;
   padding: 5px 10px;
   margin: 0 15px 0 0;
 }
 
-#senha-mudar, 
+#genero-mudar {
+  font-family: "Poppins-semibold";
+  background-color: rgba(42, 85, 194, 0.07);
+  width: 15em;
+  border: none;
+  border-radius: 15px;
+  padding: 5px 10px;
+  margin: 0 15px 0 0;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer; /* Cursor de mão */
+}
+
+.select-icon {
+  position: absolute;
+  top: 9em;
+  right: 8em;
+  transform: translateY(-50%);
+  pointer-events: none;
+  z-index: 1;
+  width: 14px;
+  height: auto;
+}
+
+#genero-mudar option {
+  font-family: "Poppins-semibold";
+}
+
+#nascimento {
+  font-family: "Poppins-semibold";
+  background-color: rgba(42, 85, 194, 0.07);
+  width: 14em;
+  border: none;
+  border-radius: 15px;
+  padding: 5px 10px;
+  margin: 0 15px 0 0;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+#senha-mudar,
 #telefone-mudar {
-  background-color: var(--branco);
-  width: 10em;
+  background-color: rgba(42, 85, 194, 0.07);
+  width: 12em;
   border: none;
   border-radius: 15px;
   padding: 5px 10px;
@@ -452,23 +533,6 @@ body {
 #foto-usuario {
   width: 140px;
 }
-
-#telefone-mudar {
-  background-color: var(--branco);
-  width: 11.5em;
-  border: none;
-  border-radius: 15px;
-  padding: 5px;
-  margin-right: 17px;
-}
-
-/* #genero {
-  background-color: var(--branco);
-  width: 10em;
-  border: none;
-  border-radius: 15px;
-  padding: 5px;
-} */
 
 .grupo1,
 .grupo2 {
@@ -518,7 +582,7 @@ body {
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.15);
   position: relative;
   top: 1em;
-  left: 14em;
+  left: 16em;
 }
 /* final estilo modal perfil */
 
@@ -540,16 +604,16 @@ body {
   background-color: var(--branco);
   padding: 20px;
   border-radius: 25px;
-  width: 51.5em;
+  width: 56em;
   height: 28em;
   text-align: center;
-  margin-bottom: 6em;
+  margin-bottom: 3em;
 }
 
 .content-mood .icon-x {
   position: absolute;
-  top: 5em;
-  right: 21em;
+  top: 8em;
+  right: 20em;
   cursor: pointer;
 }
 
@@ -673,10 +737,10 @@ body {
 }
 
 .btn-check {
-  background-color: #2a55c2;
+  background-color: transparent;
+  border: 2px solid #2a55c2;
   width: 4em;
   height: 4em;
-  border: none;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -685,6 +749,7 @@ body {
   bottom: 7em;
   left: 27em;
   cursor: pointer;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* começo campo conquistas */

@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const conquistasContent = document.getElementById("conquistasContent");
   const cuponsContent = document.getElementById("cuponsContent");
-
+  
   conquistasButton.addEventListener("click", () => {
     conquistasButton.classList.add("active");
     cuponsButton.classList.remove("active");

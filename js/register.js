@@ -80,6 +80,7 @@ function register() {
     });
 }
 
+
 function saveUserData(uid, email) {
   const nome = Form.nome().value;
   const telefone = Form.telefone().value;
@@ -87,6 +88,7 @@ function saveUserData(uid, email) {
   const genero = Form.genero().value;
   const database = firebase.database();
   const userRef = database.ref("users/" + uid);
+  
 
   userRef
     .set({
@@ -179,8 +181,8 @@ firebase.auth().onAuthStateChanged((user) => {
   }
 });
 
-function buscarDadosUsuario(uid) {
-  const dbRef = firebase.database().ref("users/" + uid);
+function buscarDadosUsuario(globalUserId) {
+  const dbRef = firebase.database().ref("users/" + globalUserId);
 
   dbRef
     .once("value")
@@ -189,6 +191,7 @@ function buscarDadosUsuario(uid) {
         const dadosUsuario = snapshot.val();
         console.log("Dados do usuário:", dadosUsuario);
         exibirDadosUsuario(dadosUsuario);
+
       }
     })
     .catch((error) => {
@@ -221,13 +224,17 @@ function exibirDadosUsuario(users) {
     document.getElementById("nome_modal").innerHTML = users.nome;
     document.getElementById('foto-perfil').src = users.fotoPerfil.fotoPerfil
     document.getElementById('perfil').src = users.fotoPerfil.fotoPerfil
+    document.getElementById("toggle-option").style.backgroundColor = users.fotoPerfil.cor_texto;
   } else {
-    document.getElementById("nome_modal").style.color = users.fotoPerfil.cor_texto;
+
     document.getElementById("nome_modal").innerHTML = users.nome;
     document.getElementById('content-sem-perfil').style.backgroundColor = users.fotoPerfil.cor_foto
     document.getElementById('perfil').src = users.fotoPerfil.fotoPerfil
     document.getElementById('foto-perfil').src = users.fotoPerfil.fotoPerfil
+    document.getElementById("nome_modal").style.color = users.fotoPerfil.cor_texto;
   }
+
+  
 }
 
 function mudarDados() {

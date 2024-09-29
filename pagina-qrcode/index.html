@@ -66,9 +66,11 @@
                             <p class="texto-perfil" id="nome_modal"></p>
                             <div class="grupo">
                                 <hr class="linha">
-                                <a class="cadastro" href="../pagina-perfil/perfil.html"><span style="color: black;">Ir para perfil</span></a>
+                                <a class="cadastro" href="../pagina-perfil/perfil.html"><span style="color: black;">Ir
+                                        para perfil</span></a>
                                 <hr class="linha">
-                                <a href="../pagina-login/index.html" onclick="logout()" class="login"><span style="color: red;">Sair</span></a>
+                                <a href="../pagina-login/index.html" onclick="logout()" class="login"><span
+                                        style="color: red;">Sair</span></a>
                             </div>
                         </div>
                     </div>
@@ -123,6 +125,8 @@
                 <div class="imgqrcode"><img id="qrcode__img" src="img/qrcode.svg"></div>
                 <div class="down-salvar">
                     <button id="download">Download</button><br><br>
+                    <img id="image-to-download" src="path/to/image/qrcode.png" alt="Imagem para Download" style="display:none;">
+
                     <button id="salvar">Salvar</button>
                 </div>
             </div>
@@ -212,6 +216,7 @@
     </footer>
     <script src="./js/modal.js"></script>
     <script src="./js/scroll-modal.js"></script>
+    <script src="./js/animacao-btnQrcode.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-auth-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-database-compat.js"></script>
@@ -219,7 +224,7 @@
     <script src="../js/firebase-init.js"></script>
     <script src="../js/register.js"></script>
     <script src="../js/logout.js"></script>
-</div>
+    </div>
 
     </div>
 </body>

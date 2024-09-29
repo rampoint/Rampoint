@@ -8,8 +8,14 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/layout.css">
 
+    <!-- links do calendario -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/pt.js"></script>
+
     <title>Login e cadastro</title>
 </head>
+
 <body>
     <div class="container" id="container">
         <div class="form-container sign-up">
@@ -48,8 +54,13 @@
 
                     <div class="nascimento">
                         <label for="">Nascimento</label>
-                        <input type="date" onchange="VerificarData()" id="data-cadastro">
-                        <!-- <span class="calendar-icon"></span> -->
+                        <input type="text" id="data-cadastro" onchange="VerificarData()">
+                        <script>
+                            flatpickr("#data-cadastro", {
+                                dateFormat: "d/m/Y",
+                                locale: "pt"
+                            });
+                        </script>
                         <label id="erro-data">Data é obrigatória</label>
                         <label id="erro-data-18">Usuario precisa ter mais de 18</label>
                     </div>
@@ -91,8 +102,8 @@
                     <defs>
                         <filter id="goo">
                             <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
-                            <feColorMatrix in="blur" mode="matrix"
-                                values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
+                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7"
+                                result="goo"></feColorMatrix>
                             <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
                         </filter>
                     </defs>
@@ -123,28 +134,28 @@
                 </div>
                 <button id="recover-password" type="button" onclick="recuperarSenha()" disabled="true">Esqueceu sua
                     senha?</button>
-       
-                    <button class="btn-animado" type="button" id="entrar" onclick="login()" disabled="false"> Entrar
-                        <span class="blob-btn__inner">
-                            <span class="blob-btn__blobs">
-                                <span class="blob-btn__blob"></span>
-                                <span class="blob-btn__blob"></span>
-                                <span class="blob-btn__blob"></span>
-                                <span class="blob-btn__blob"></span>
-                            </span>
-                        </span>
-                    </button>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-                        <defs>
-                            <filter id="goo">
-                                <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
-                                <feColorMatrix in="blur" mode="matrix"
-                                    values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
-                                <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
-                            </filter>
-                        </defs>
-                    </svg>
+                <button class="btn-animado" type="button" id="entrar" onclick="login()" disabled="false"> Entrar
+                    <span class="blob-btn__inner">
+                        <span class="blob-btn__blobs">
+                            <span class="blob-btn__blob"></span>
+                            <span class="blob-btn__blob"></span>
+                            <span class="blob-btn__blob"></span>
+                            <span class="blob-btn__blob"></span>
+                        </span>
+                    </span>
+                </button>
+
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                    <defs>
+                        <filter id="goo">
+                            <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7"
+                                result="goo"></feColorMatrix>
+                            <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                        </filter>
+                    </defs>
+                </svg>
 
                 <div class="social-icons2">
                     <a href="#" id="google" onclick="googleauth()" class="icon"><img src="./img/google-Icon.svg"

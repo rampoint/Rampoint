@@ -6,6 +6,11 @@
   .genero::after {
     right: 18em;
   }
+  
+  .flatpickr-calendar {
+    font-size: 13px;
+    width: 90%;
+  }
 }
 
 @media (max-width: 725px) {
@@ -61,6 +66,19 @@
   .termos {
     width: 15em;
   }
+
+  .flatpickr-calendar {
+    font-size: 12px;
+    width: 85%;
+  }
+
+  .flatpickr-day {
+    font-size: 11px;
+  }
+
+  .flatpickr-month {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 555px) {
@@ -83,5 +101,37 @@
   #senha-cadastro,
   #confirmarSenha {
     width: 8em;
+  }
+
+  .flatpickr-calendar {
+    font-size: 11px;
+    width: 80%;
+  }
+
+  .flatpickr-day,
+  .flatpickr-month {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 535px) {
+  .container {
+    width: 30em;
+  }
+}
+
+@media (max-width: 485px) {
+  .container {
+    width: 28em;
+  }
+
+  .flatpickr-calendar {
+    font-size: 10px;
+    width: 75%;
+  }
+
+  .flatpickr-day,
+  .flatpickr-month {
+    font-size: 9px;
   }
 }

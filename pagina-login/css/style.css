@@ -1,5 +1,4 @@
 @import url(../css/font.css);
-
 @import url(../css/cores.css);
 
 * {
@@ -80,7 +79,8 @@ p {
 
 /* botoes */
 
-#login, #register {
+#login,
+#register {
   background-color: transparent;
   color: var(--branco);
   font-size: 12px;
@@ -270,25 +270,23 @@ select {
   z-index: 1;
 }
 
-#data-cadastro::-webkit-calendar-picker-indicator {
-  padding: 5px;
-  cursor: pointer;
-  border-radius: 3px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+.flatpickr-calendar {
+  font-family: "Poppins-regular";
+  font-size: 12px;
 }
 
-.calendar-icon {
-  content: "";
-  background: url(../img/calendario-icon.svg) no-repeat center;
-  position: absolute;
-  top: 16.8em;
-  right: 3em;
-  transform: translateY(-50%);
-  width: 24px;
-  height: 24px;
-  pointer-events: none;
+.flatpickr-day {
+  font-weight: 400;
+  color: #333;
+}
+
+.flatpickr-months {
+  font-size: 12px; 
+}
+
+.flatpickr-weekday {
+  font-size: 12px; 
+  color: #666;
 }
 
 .termos {
@@ -617,6 +615,7 @@ select {
 #erro-nao-corresponde {
   display: none;
   color: red;
+  width: 15px;
 }
 
 #erro-data {

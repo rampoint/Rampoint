@@ -269,7 +269,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50em;
+  width: 45em;
   margin: auto;
   justify-content: center;
 }

@@ -1,10 +1,71 @@
-@media (max-width: 1280px) {
+@media (min-width: 1920px) {
   .content-sem-perfil {
-    margin-left: 60em;
+    margin-left: auto;
+    margin-right: 5em;
   }
 
-  .logoBranca {
+  #medalhas {
+    width: 500px;
+    margin-left: 10em;
+  }
+}
+
+@media (max-width: 1920px) {
+  .content-sem-perfil {
+    margin-left: auto;
+    margin-right: 5em;
+  }
+
+  #medalhas {
+    width: 500px;
+    margin-left: 10em;
+  }
+}
+
+@media (max-width: 1355px) {
+  .inicio {
+    margin-left: 7em;
+  }
+}
+
+@media (max-width: 1255px) {
+  .content-sem-perfil {
+    margin-left: auto;
+    margin-right: 5em;
+  }
+
+  .inicio {
+    margin-left: 8em;
+  }
+
+  /* #titulo1 {
+    margin: 200px 0 15px 100px;
+  } */
+
+  #medalhas {
+    margin-left: 12em;
+  }
+
+  /* .logoBranca {
     display: none;
+  } */
+}
+
+@media (max-width: 1210px) {
+  .imagem-inicial {
+    margin-left: 25em;
+  }
+
+  .texto {
+    margin-left: 0;
+  }
+
+  #medalhas {
+    margin-left: 10em;
+  }
+
+  .footer-container {
+    width: 75em;
   }
 }
 
@@ -52,7 +113,7 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
   .container {
     display: flex;
     flex-direction: column;
@@ -62,14 +123,22 @@
   }
 
   /* começo da imagem inicial */
-
   .inicio {
-    margin-left: 5em;
+    margin-left: 10em;
   }
 
-  /* .imagem-inicial {
-    margin-left: 30em;
-  } */
+  .imagem-inicial {
+    margin-left: 10em;
+  }
+
+  .botao,
+  #texto-inicial {
+    margin-left: 13em;
+  }
+
+  #titulo-inicial {
+    margin-left: 2.8em;
+  }
 
   #titulo1 {
     margin: 80px 0 35px 100px;
@@ -85,6 +154,10 @@
 
   #texto2 {
     margin-left: 100px;
+  }
+
+  .texto {
+    margin: 0;
   }
 
   #medalhas {
@@ -114,16 +187,11 @@
     display: flex;
     flex-direction: row;
   }
-
-  #titulo-descarte {
-    margin-left: 0px;
-    margin-right: 570px;
-  }
 }
 
 @media (max-width: 1000px) {
   nav ul {
-    width: 62.7em;
+    width: 61.5em;
     padding: 5px;
   }
 
@@ -137,12 +205,21 @@
 
   #titulo1,
   #texto1 {
-    margin-left: 100px;
+    margin-left: 80px;
+  }
+
+  .imagem-ram {
+    margin-left: 40px;
   }
 
   #titulo2,
   #texto2 {
     margin-left: 80px;
+  }
+
+  #h1-info,
+  #p-info {
+    margin-left: 45px;
   }
 
   .form-conteiner {
@@ -156,6 +233,19 @@
 
   #bairro {
     padding-right: 350px;
+  }
+
+  .geral,
+  .redes-sociais {
+    margin-right: 3em;
+  }
+
+  .contato {
+    margin-right: 5em;
+  }
+
+  .logoBranca {
+    display: none;
   }
 }
 
@@ -200,7 +290,11 @@
   }
 
   .sidebar {
-    right: 4em;
+    right: 1em;
+  }
+
+  .imagem-fundo {
+    margin-top: 2em;
   }
 
   .imagem-inicial {
@@ -208,31 +302,9 @@
     margin-left: 15em;
   }
 
-  .internos-inicial {
-    right: 19em;
-  }
-
-  .brilho-inicial {
-    right: 26em;
-  }
-
-  .monitor-inicial {
-    top: 8em;
-    right: 25em;
-  }
-
-  .brilho-inicial2 {
-    top: 2em;
-    right: 14em;
-  }
-
-  .teclado-inicial {
-    top: 9em;
-    right: 22em;
-  }
-
   #medalhas {
     width: 400px;
+    margin-left: 0;
   }
 
   .imagem-ram {
@@ -255,7 +327,7 @@
   }
 
   nav ul {
-    width: 25em;
+    width: 55em;
   }
 
   nav a {
@@ -282,18 +354,44 @@
     color: var(--branco);
     text-decoration-line: underline;
   }
+
+  .imagem-inicial {
+    margin-left: 13em;
+  }
+
+  .form-conteiner {
+    width: 85%;
+    margin: 0 2em;
+  }
 }
 
 @media (max-width: 876px) {
+  nav ul {
+    width: 53em;
+  }
+
   .imagem-fundo,
   .container-grid,
   .info-box {
     margin: 5em 2em;
   }
 
+  .imagem-inicial {
+    margin-left: 10em;
+  }
+
+  #medalhas {
+    margin-left: 26px;
+  }
+
+  #h1-info,
+  #p-info {
+    margin-left: 105px;
+  }
+
   .form-conteiner {
     width: 75%;
-    margin: 0 2em;
+    margin: 0 auto;
   }
 
   #rua {
@@ -303,6 +401,163 @@
   #bairro {
     padding-right: 300px;
   }
+
+  .footer-container {
+    width: 70em;
+  }
+
+  .geral,
+  .redes-sociais {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 820px) {
+  nav ul {
+    width: 50em;
+  }
+}
+
+@media (max-width: 775px) {
+  nav ul {
+    width: 48em;
+  }
+
+  .imagem-fundo,
+  .container-grid,
+  .info-box {
+    margin: 5em 0;
+  }
+
+  .imagem-inicial {
+    margin-left: 7em;
+  }
+
+  #texto-inicial {
+    width: 65%;
+  }
+
+  .internos-inicial {
+    right: 22em;
+  }
+
+  .monitor-inicial {
+    right: 28em;
+  }
+
+  .brilho-inicial2 {
+    right: 16em;
+    top: 6em;
+  }
+
+  .card {
+    width: 700px;
+  }
+
+  #titulo-descarte {
+    margin-right: 28em;
+  }
+}
+
+@media (max-width: 720px) {
+  nav ul {
+    width: 43em;
+  }
+
+  .imagem-inicial {
+    width: 25em;
+    margin-left: 6em;
+  }
+
+  .roxo-inicial {
+    right: 16em;
+    bottom: 9em;
+  }
+
+  .brilho-inicial {
+    right: 28em;
+  }
+
+  .brilho-inicial2 {
+    right: 17em;
+  }
+
+  #titulo-inicial {
+    font-size: 4em;
+    margin-left: 3em;
+  }
+
+  #texto-inicial,
+  .botao {
+    margin-left: 12em;
+  }
+
+  #medalhas {
+    width: 350px;
+    margin-left: 0;
+  }
+
+  .imagem-ram {
+    margin-left: 0;
+  }
+
+  .ramEmpe {
+    margin-top: 5em;
+  }
+
+  #titulo1,
+  #texto1,
+  #titulo2,
+  #texto2 {
+    margin-left: 60px;
+  }
+
+  #h1-info,
+  #p-info {
+    margin-left: 115px;
+  }
+
+  #p-info {
+    width: 65%;
+  }
+
+  .form-conteiner {
+    width: 65%;
+    margin: 0 auto;
+  }
+
+  #cep {
+    padding-right: 40px;
+  }
+
+  .rua-form {
+    margin-left: 30px;
+  }
+
+  #bairro {
+    padding-right: 250px;
+  }
+
+  #ecopontos {
+    padding: 20px 0;
+  }
+
+  .card {
+    width: 600px;
+  }
+
+  #titulo-descarte {
+    margin-right: 23em;
+  }
+
+  .geral {
+    margin-left: 2em;
+  }
+
+  .endereco {
+    width: 15em;
+  }
+
 }
 
 @media (min-width: 320px) and (max-width: 435px) {
@@ -314,13 +569,16 @@
     overflow: hidden;
   }
 
+  nav ul {
+    width: 25em;
+  }
+
   .sidebar {
     right: 1em;
     height: 45em;
   }
 
   /* imagem inicial */
-
   .imagem-fundo {
     display: flex;
     flex-direction: column-reverse;
@@ -329,6 +587,7 @@
     margin: 0;
     width: 100%;
     height: 35em;
+    margin-top: 1em;
   }
 
   .internos-inicial {
@@ -405,7 +664,6 @@
   /* imagem inicial */
 
   /* grid */
-
   .container-grid {
     margin-top: 20px;
     display: flex;
@@ -539,7 +797,6 @@
   /* forms */
 
   /* ecoponto */
-
   #titulo-descarte {
     margin-left: 30px;
   }
@@ -572,7 +829,6 @@
   /* ecoponto */
 
   /* footer */
-
   .footer-container {
     width: 100%;
     height: auto;
@@ -589,6 +845,7 @@
   .contato {
     margin-top: 30px;
     margin-left: 0;
+    margin-right: 0;
   }
 
   .redes-sociais,

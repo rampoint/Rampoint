@@ -11,6 +11,7 @@ function pegarValorFotoFeliz() {
   var ram = document.getElementById("ram-feliz").value;
   document.getElementById("ram-feliz").style.border = "solid";
   document.getElementById("ram-feliz").style.color = "#499136";
+  var img = '/pagina-perfil/img/notfFeliz-1.svg'
 
   const userRef = firebase
     .database()
@@ -25,6 +26,7 @@ function pegarValorFotoFeliz() {
       cor_texto: "#5B4B22",
     })
     .then(() => {
+      mostrarPopupAlteracaoMood(img)
       console.log("foto de perfil enviada");
     })
     .catch((error) => {
@@ -38,6 +40,7 @@ function pegarValorFotoEmocionado() {
   var ram = document.getElementById("ram-emocionado").value;
   document.getElementById("ram-emocionado").style.border = "solid";
   document.getElementById("ram-emocionado").style.color = "#499136";
+  var img = '/pagina-perfil/img//emocionadoNoft.svg'
 
   const userRef = firebase
     .database()
@@ -55,6 +58,7 @@ function pegarValorFotoEmocionado() {
       cor_texto: "#9D4EDD",
     })
     .then(() => {
+      mostrarPopupAlteracaoMood(img)
       console.log("foto de perfil enviada");
     })
     .catch((error) => {
@@ -65,6 +69,7 @@ function pegarValorFotoTriste() {
   var ram = document.getElementById("ram-triste").value;
   document.getElementById("ram-triste").style.border = "solid";
   document.getElementById("ram-triste").style.color = "#499136";
+  var img = '/pagina-perfil/img/notfTriste.svg'
   const userRef = firebase
     .database()
     .ref("users/" + globalUserId)
@@ -79,6 +84,7 @@ function pegarValorFotoTriste() {
       cor_texto: "#0076AC",
     })
     .then(() => {
+      mostrarPopupAlteracaoMood(img)
       console.log("foto de perfil enviada");
     })
     .catch((error) => {
@@ -90,6 +96,7 @@ function pegarValorFotoEntediado() {
   var ram = document.getElementById("ram-entediado").value;
   document.getElementById("ram-entediado").style.border = "solid";
   document.getElementById("ram-entediado").style.color = "#499136";
+  var img = '/pagina-perfil/img/notfEntediado.svg'
   const userRef = firebase
     .database()
     .ref("users/" + globalUserId)
@@ -104,6 +111,7 @@ function pegarValorFotoEntediado() {
       cor_texto: "#808080",
     })
     .then(() => {
+      mostrarPopupAlteracaoMood(img)
       console.log("foto de perfil enviada");
     })
     .catch((error) => {
@@ -115,6 +123,7 @@ function pegarValorFotoFurioso() {
   var ram = document.getElementById("ram-furioso").value;
   document.getElementById("ram-furioso").style.border = "solid";
   document.getElementById("ram-furioso").style.color = "#499136";
+  var img = '/pagina-perfil/img/notfFurioso.svg'
   const userRef = firebase
     .database()
     .ref("users/" + globalUserId)
@@ -129,6 +138,7 @@ function pegarValorFotoFurioso() {
       cor_texto: "#850014",
     })
     .then(() => {
+      mostrarPopupAlteracaoMood(img)
       console.log("foto de perfil enviada");
     })
     .catch((error) => {
@@ -141,6 +151,7 @@ function pegarValorFotoApaixonado() {
   var ram = document.getElementById("ram-apaixonado").value;
   document.getElementById("ram-apaixonado").style.border = "solid";
   document.getElementById("ram-apaixonado").style.color = "#499136";
+  var img = '/pagina-perfil/img/noftApaixonado.svg'
   const userRef = firebase
     .database()
     .ref("users/" + globalUserId)
@@ -155,6 +166,7 @@ function pegarValorFotoApaixonado() {
       cor_texto: "#E6322B",
     })
     .then(() => {
+      mostrarPopupAlteracaoMood(img)
       console.log("foto de perfil enviada");
     })
     .catch((error) => {
@@ -166,6 +178,7 @@ function pegarValorFotoPadrao() {
   var ram = document.getElementById("ram-padrao").value;
   document.getElementById("ram-padrao").style.border = "solid";
   document.getElementById("ram-padrao").style.color = "#499136";
+  var img = '/pagina-perfil/img/notfNormal.svg'
   const userRef = firebase
     .database()
     .ref("users/" + globalUserId)
@@ -180,6 +193,7 @@ function pegarValorFotoPadrao() {
       cor_texto: "#499036",
     })
     .then(() => {
+      mostrarPopupAlteracaoMood(img)
       console.log("foto de perfil enviada");
     })
     .catch((error) => {
@@ -205,6 +219,7 @@ function pegarValorFotoNomood() {
       cor_foto: "#808080",
     })
     .then(() => {
+      
       console.log("foto de perfil enviada");
     })
     .catch((error) => {
@@ -214,3 +229,15 @@ function pegarValorFotoNomood() {
 }
 
 
+function mostrarPopupAlteracaoMood(img) {
+  const popup = document.getElementById('alteracao_popup_Mood');
+  var img = document.getElementById('alteracao_Mood').src = img
+  
+  // Faz o pop-up deslizar para baixo
+  popup.style.top = '20px'; // Ajuste a posição conforme necessário
+
+  // Após 3 segundos, faz o pop-up deslizar de volta para cima
+  setTimeout(() => {
+      popup.style.top = '-120px'; // Volta para fora da tela
+  }, 3000); // 3000 milissegundos = 3 segundos
+}

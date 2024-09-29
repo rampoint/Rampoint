@@ -25,7 +25,17 @@
             sidebar.style.display = 'none'
         }
     </script>
+        <div class="modal" id="alteracao_popup">
+        <img src="img/notf perfil.svg" id="alteracao_popUp" alt="">
+        </div>
 
+        <div class="modal-Azul" id="alteracao_popup_azul">
+            <img src="img/notf_azul.svg" id="alteracao_popUp" alt="">
+            </div>
+
+            <div class="modal-Mood" id="alteracao_popup_Mood">
+                <img src="" id="alteracao_Mood" alt="">
+                </div>
     <nav>
         <ul class="sidebar">
             <li onclick=hideSidebar()><a href="#"><svg id="fechar" xmlns="http://www.w3.org/2000/svg" height="26"
@@ -110,7 +120,7 @@
 
     <div class="container">
         <g id="body">
-
+            
             <g class="spots">
                 <g class="top-spots" opacity="0.9">
                     <path fill="#1E1E1E"
@@ -151,6 +161,7 @@
                     <div class="briho-amarelo">
                         <img src="./img/brilho.svg" alt="Ícone brilho-amarelo" id="brilho-amarelo">
                     </div>
+                    
                 </div>
 
                 <div class="container-texto">
@@ -256,7 +267,7 @@
                             <div class="botoes">
                                 <!-- num mexe aqui nao -->
                                 <a href="#" onclick="apagandoUsuario()" class="excluir-conta">Excluir minha conta</a>
-                                <button onclick="mudarDados()" class="btn-salvar">Salvar</button>
+                                <button onclick="mudarDados()" id="button_salvar" class="btn-salvar">Salvar</button>
                                 <!-- po mexer -->
 
                             </div>
@@ -272,7 +283,7 @@
                             <p class="texto-mood">Escolha seu <span class="span-preto">mood</span> do Ram favorito!</p>
                             <div class="grupo-moods">
                                 <div class="select-mood">
-                                    <button value="Emocionad" onclick="pegarValorFotoEmocionado()" class="btn-mood"
+                                    <button value="Emocionado" onclick="pegarValorFotoEmocionado()" class="btn-mood"
                                         id="ram-emocionado">
                                         <img src="./img/ram-emocionado.svg" alt="Imagem do Ram com o 'mood' Emocionado">
                                     </button>
@@ -286,14 +297,14 @@
                                     <h4 class="titulo-triste">Triste</h4>
                                 </div>
                                 <div class="select-mood">
-                                    <button value="Entediad" onclick="pegarValorFotoEntediado()" class="btn-mood"
+                                    <button value="Entediado" onclick="pegarValorFotoEntediado()" class="btn-mood"
                                         id="ram-entediado">
                                         <img src="./img/ram-entediado.svg" alt="Imagem do Ram com o 'mood' Entediado">
                                     </button>
                                     <h4 class="titulo-entediado">Entediado</h4>
                                 </div>
                                 <div class="select-mood">
-                                    <button value="Furios" onclick="pegarValorFotoFurioso()" class="btn-mood"
+                                    <button value="Furioso" onclick="pegarValorFotoFurioso()" class="btn-mood"
                                         id="ram-furioso">
                                         <img src="./img/ram-furioso.svg" alt="Imagem do Ram com o 'mood' Furioso">
                                     </button>
@@ -307,7 +318,7 @@
                                     <h4 class="titulo-feliz">Feliz</h4>
                                 </div>
                                 <div class="select-mood">
-                                    <button value="Apaixonad" onclick="pegarValorFotoApaixonado()" class="btn-mood"
+                                    <button value="Apaixonado" onclick="pegarValorFotoApaixonado()" class="btn-mood"
                                         id="ram-apaixonado">
                                         <img src="./img/ram-apaixonado.svg" alt="Imagem do Ram com o 'mood' Apaixonado">
                                     </button>
@@ -458,6 +469,8 @@
 
 
         </footer>
+
+
         <script defer src="./js/modal.js"></script>
         <script defer src="./js/scroll.js"></script>
         <script defer src="./js/toggle.js"></script>

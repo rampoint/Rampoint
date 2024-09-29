@@ -80,7 +80,6 @@ function register() {
     });
 }
 
-
 function saveUserData(uid, email) {
   const nome = Form.nome().value;
   const telefone = Form.telefone().value;
@@ -88,7 +87,6 @@ function saveUserData(uid, email) {
   const genero = Form.genero().value;
   const database = firebase.database();
   const userRef = database.ref("users/" + uid);
-  
 
   userRef
     .set({
@@ -191,7 +189,6 @@ function buscarDadosUsuario(globalUserId) {
         const dadosUsuario = snapshot.val();
         console.log("Dados do usuário:", dadosUsuario);
         exibirDadosUsuario(dadosUsuario);
-
       }
     })
     .catch((error) => {
@@ -207,34 +204,39 @@ function exibirDadosUsuario(users) {
   if (currentPage.includes("/pagina-perfil/")) {
     form_usuario.nome_perfil().innerHTML = users.nome;
     form_usuario.email_perfil().innerHTML = users.email;
-    document.getElementById("emocao_usuario").style.color = users.fotoPerfil.cor_texto;
-    document.getElementById("emocao_usuario").innerHTML = users.fotoPerfil.fotoMensage;
+    document.getElementById("emocao_usuario").style.color =
+      users.fotoPerfil.cor_texto;
+    document.getElementById("emocao_usuario").innerHTML =
+      users.fotoPerfil.fotoMensage;
     document.getElementById("nome-mudar").placeholder = users.nome;
     document.getElementById("email-mudar").placeholder = users.email;
     document.getElementById("telefone-mudar").placeholder = users.tel;
     document.getElementById("nome-mudar").value = users.nome;
-    document.getElementById('foto-usuario').src = users.fotoPerfil.fotoPerfil
+    document.getElementById("foto-usuario").src = users.fotoPerfil.fotoPerfil;
     document.getElementById("email-mudar").value = users.email;
     document.getElementById("telefone-mudar").value = users.tel;
-    document.getElementById("nome_modal").style.color = users.fotoPerfil.cor_texto;
+    document.getElementById("nome_modal").style.color =
+      users.fotoPerfil.cor_texto;
     document.getElementById("nome_modal").innerHTML = users.nome;
-    document.getElementById('content-sem-perfil').style.backgroundColor = users.fotoPerfil.cor_foto
-    document.getElementById("medalha-azul").style.display = users.medalhas.azul.display;
+    document.getElementById("content-sem-perfil").style.backgroundColor =
+      users.fotoPerfil.cor_foto;
+    document.getElementById("medalha-azul").style.display =
+      users.medalhas.azul.display;
     document.getElementById("medalha-azul-img").src = users.medalhas.azul.img;
     document.getElementById("nome_modal").innerHTML = users.nome;
-    document.getElementById('foto-perfil').src = users.fotoPerfil.fotoPerfil
-    document.getElementById('perfil').src = users.fotoPerfil.fotoPerfil
-    document.getElementById("toggle-option").style.backgroundColor = users.fotoPerfil.cor_texto;
+    document.getElementById("foto-perfil").src = users.fotoPerfil.fotoPerfil;
+    document.getElementById("perfil").src = users.fotoPerfil.fotoPerfil;
+    document.getElementById("toggle-option").style.backgroundColor =
+      users.fotoPerfil.cor_texto;
   } else {
-
     document.getElementById("nome_modal").innerHTML = users.nome;
-    document.getElementById('content-sem-perfil').style.backgroundColor = users.fotoPerfil.cor_foto
-    document.getElementById('perfil').src = users.fotoPerfil.fotoPerfil
-    document.getElementById('foto-perfil').src = users.fotoPerfil.fotoPerfil
-    document.getElementById("nome_modal").style.color = users.fotoPerfil.cor_texto;
+    document.getElementById("content-sem-perfil").style.backgroundColor =
+      users.fotoPerfil.cor_foto;
+    document.getElementById("perfil").src = users.fotoPerfil.fotoPerfil;
+    document.getElementById("foto-perfil").src = users.fotoPerfil.fotoPerfil;
+    document.getElementById("nome_modal").style.color =
+      users.fotoPerfil.cor_texto;
   }
-
-  
 }
 
 function mudarDados() {
@@ -249,50 +251,79 @@ function mudarDados() {
       genero: genero_mudanca,
     })
     .then(() => {
+      mostrarPopupAlteracao()
       adicionarMedalhas();
-      alert("Dados do usuário modificados com sucesso");
     });
 }
+
+
 
 function adicionarMedalhas() {
   const userRef = firebase.database().ref("users/" + globalUserId);
   userRef
-    .child("medalhas/azul")
-    .set({
-      nome: "Engrenagem Solidária",
-      display: "flex",
-      descricao: "Personalizou perfil",
-      img: "https://firebasestorage.googleapis.com/v0/b/rampoint-81352.appspot.com/o/medalhas%2Fmedalha%20azul.svg?alt=media&token=c7134715-8121-44cb-9823-9a013761513d",
-    })
-    .then(() => {
-      console.log("enviado para o banco");
+  .child("medalhas/azul")
+  .set({
+    nome: "Engrenagem Solidária",
+    display: "flex",
+    descricao: "Personalizou perfil",
+    img: "https://firebasestorage.googleapis.com/v0/b/rampoint-81352.appspot.com/o/medalhas%2Fmedalha%20azul.svg?alt=media&token=c7134715-8121-44cb-9823-9a013761513d",
+  })
+  .then(() => {
+    setTimeout(() => {
+      mostrarPopupMedalhaAzul() // Volta para fora da tela
+  }, 3000)
     })
     .catch((error) => {
-      console.log("nao foi esse o motivo" + error);
+      console.log("Error:" + error);
     });
-}
+  }
 
-function apagandoUsuario() {
-  const user = firebase.auth().currentUser;
-
-  user
+  function apagandoUsuario() {
+    const user = firebase.auth().currentUser;
+    
+    user
     .delete()
     .then(() => {
-      alert('apagado')
-      logout()
+      alert("apagado");
+      logout();
     })
     .catch((error) => {
-      alert("nao apagado" + error.code)
+      alert("nao apagado" + error.code);
       // ...
     });
-
+    
     const userRef = firebase.database().ref("users/" + globalUserId);
-
-    userRef.remove().
-    then(() =>{
-      alert('Excluido')
+    
+    userRef
+    .remove()
+    .then(() => {
+      alert("Excluido");
     })
     .catch((error) => {
-      alert('conta nao excluida')
-    })
-}
+      alert("conta nao excluida");
+    });
+  }
+  
+  function mostrarPopupAlteracao() {
+    const popup = document.getElementById('alteracao_popup');
+    
+    // Faz o pop-up deslizar para baixo
+    popup.style.top = '20px'; // Ajuste a posição conforme necessário
+  
+    // Após 3 segundos, faz o pop-up deslizar de volta para cima
+    setTimeout(() => {
+        popup.style.top = '-120px'; // Volta para fora da tela
+    }, 3000); // 3000 milissegundos = 3 segundos
+  }
+  function mostrarPopupMedalhaAzul() {
+    const popup = document.getElementById('alteracao_popup_azul');
+    
+    // Faz o pop-up deslizar para baixo
+    popup.style.top = '20px'; // Ajuste a posição conforme necessário
+  
+    // Após 3 segundos, faz o pop-up deslizar de volta para cima
+    setTimeout(() => {
+        popup.style.top = '-120px'; // Volta para fora da tela
+    }, 3000); // 3000 milissegundos = 3 segundos
+  }
+  

@@ -233,7 +233,7 @@ body {
   font-family: "Blinker-extrabold";
   color: var(--verde);
   font-size: 1.5em;
-  margin: 200px 0 15px 150px;
+  margin: 200px 0 15px 100px;
 }
 
 #titulo2 {
@@ -244,7 +244,7 @@ body {
 }
 
 #texto1 {
-  margin-left: 150px;
+  margin-left: 100px;
   color: var(--preto);
   font-family: "Poppins-regular";
   max-width: 70%;
@@ -262,11 +262,9 @@ body {
 span {
   font-family: "Poppins-bold";
 }
-
 /* fim dos textos */
 
 /* começo grid */
-
 .parent {
   display: grid;
   grid-template-columns: 2fr 1fr repeat(3, 0);
@@ -307,8 +305,8 @@ span {
 }
 
 #medalhas {
-  width: 480px;
-  margin-left: 0px;
+  width: 450px;
+  margin-left: 5em;
 }
 
 .imagem-ram {
@@ -319,13 +317,11 @@ span {
 .texto-ram {
   grid-area: texto-ram;
 }
-
 /* fim grid */
 
 /* form sem meme */
 
 /* começo link header ecoponto */
-
 #ecopontos {
   padding: 80px 20px;
   margin-top: 45px;
@@ -512,11 +508,9 @@ input {
   cursor: pointer;
   margin: 0 0 0 25px;
 }
-
 /* colocar endereco final */
 
 /* começo cards de descarte */
-
 .card p {
   font-family: "Poppins-black";
   margin: 0px 0px 10px 0px;
@@ -532,10 +526,17 @@ input {
   font-family: "Poppins-regular";
 }
 
+.campo-descarte {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 #titulo-descarte {
   font-family: "Poppins-bold";
   color: var(--preto);
-  margin-left: 340px;
+  margin-right: 31em;
 }
 
 .card {

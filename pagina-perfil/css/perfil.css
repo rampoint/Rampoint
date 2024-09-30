@@ -1010,6 +1010,11 @@ body {
   z-index: 1000;
 }
 
+#foto_mudar{
+  width: 85px;
+  height: 85px;
+}
+
 #alteracao_popup_Mood {
   width: 360px;
   position: fixed;

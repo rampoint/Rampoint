@@ -1,6 +1,202 @@
-/* Dispositivos móveis pequenos (em pé) */
+@media (min-width: 1920px) {
+  .content-sem-perfil {
+    margin-left: auto;
+    margin-right: 4em;
+  }
+}
+
+@media (max-width: 1920px) {
+  .content-sem-perfil {
+    margin-left: auto;
+    margin-right: 4em;
+  }
+}
+
+@media (max-width: 1435px) {
+  nav ul {
+    width: 88em;
+  }
+
+  #titulo-inicial {
+    right: 282px;
+  }
+
+  #texto-inicial {
+    right: 20em;
+  }
+}
+
+@media (max-width: 1420px) {
+  nav ul {
+    width: 87em;
+  }
+
+  .img-equipe {
+    width: auto;
+  }
+}
+
+@media (max-width: 1375px) {
+  nav ul {
+    width: 85em;
+  }
+}
+
+@media (max-width: 1350px) {
+  nav ul {
+    width: 82em;
+  }
+
+  #linha2 {
+    width: 65em;
+  }
+}
+
+@media (max-width: 1310px) {
+  nav ul {
+    width: 81em;
+  }
+}
+
+@media (max-width: 1280px) {
+  nav ul {
+    width: 79em;
+  }
+}
+
+@media (max-width: 1265px) {
+  nav ul {
+    width: 77em;
+  }
+
+  #titulo-inicial {
+    right: 232px;
+  }
+
+  #texto-inicial {
+    right: 16em;
+  }
+}
+
+@media (max-width: 1240px) {
+  nav ul {
+    width: 75em;
+  }
+}
+
+@media (max-width: 1225px) {
+  nav ul {
+    width: 73em;
+  }
+
+  #titulo-inicial {
+    width: 25%;
+    right: 225px;
+    text-align: start;
+  }
+
+  #texto-inicial {
+    right: 13.5em;
+  }
+
+  .img-fundo {
+    bottom: 3em;
+  }
+
+  .escudo {
+    bottom: 38em;
+  }
+
+  #linha2 {
+    width: 60em;
+  }
+}
+
+@media (max-width: 1155px) {
+  nav ul {
+    width: 70em;
+  }
+
+  #titulo-inicial {
+    right: 245px;
+    line-height: 0.9em;
+  }
+
+  #texto-inicial {
+    right: 15em;
+  }
+
+  #titulo1 {
+    margin: 1em 0 0.7em 6em;
+  }
+
+  #texto1 {
+    margin-left: 10.5em;
+  }
+}
+
+@media (max-width: 1100px) {
+  nav ul {
+    width: 68em;
+  }
+}
+
+@media (max-width: 1055px) {
+  nav ul {
+    width: 66em;
+  }
+
+  #linha2 {
+    width: 50em;
+  }
+}
+
+@media (max-width: 1015px) {
+  nav ul {
+    width: 63em;
+  }
+}
+
+@media (max-width: 995px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+  }
+  nav ul {
+    justify-content: space-between;
+    position: static;
+    padding-left: 0;
+  }
+
+  nav a {
+    padding-right: 30px;
+  }
+
+  #logo {
+    margin-left: 20px;
+  }
+
+  #logo-nav {
+    margin-left: 20px;
+  }
+  #perfil {
+    display: none;
+  }
+
+  nav a:visited {
+    text-decoration: none;
+    transition: color 1.5s ease-out 1ms;
+  }
+
+  nav a:hover {
+    color: var(--branco);
+    text-decoration-line: underline;
+  }
+}
+
 @media (min-width: 320px) and (max-width: 421px) {
-  /* Estilos aqui */
   .container {
     display: flex;
     flex-direction: column;
@@ -40,7 +236,7 @@
     text-align: center;
     font-size: 1em;
   }
-  
+
   .img-equipe {
     height: 30em;
   }
@@ -74,7 +270,8 @@
     width: 5em;
   }
 
-  #ram-alegre, #ram-entediado {
+  #ram-alegre,
+  #ram-entediado {
     width: 4em;
   }
   /* footer */
@@ -130,274 +327,5 @@
 
   .logoBranca-small {
     width: 150px;
-  }
-}
-
-/* Dispositivos móveis médios (em pé) */
-@media (max-width: 375px) {
-  /* Estilos aqui */
-  .flor img {
-    visibility: hidden;
-  }
-
-  .email {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-
-/* Dispositivos móveis grandes (em pé) */
-@media (max-width: 425px) {
-  /* Estilos aqui */
-  .footer-container .logo {
-    margin: 0;
-    bottom: 20px;
-    flex-direction: column;
-  }
-
-  .footer-container .descricao-footer {
-    /* margin-top: 0; */
-    display: block;
-  }
-
-  .descricao-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* margin-top: 40px; */
-    max-width: 100%;
-  }
-
-  .endereco {
-    max-width: 100%;
-  }
-
-  .footer-container button {
-    margin-right: 10px;
-  }
-}
-/* quebrando a linha da imagem */
-/* 
-@media (min-width: 670px) {
-  imagem inicial */
-  /* .imagem-fundo {
-    display: flex;
-    flex-direction: column-reverse;
-    margin: 0;
-    width: 100%;
-    height: 35em;
-  }
-
-  .img-fundo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40%;
-  }
-
-  #titulo-inicial {
-    font-size: 3em;
-    position: relative;
-    bottom: 5em;
-    right: 0em;
-    text-align: center;
-  }
-
-  #texto-inicial {
-    width: 25%;
-    position: relative;
-    bottom: 6em;
-    right: 0em;
-    text-align: center;
-    font-size: 1em;
-  }
-  
-  .img-equipe {
-    height: 30em;
-  }
-
-  .mensagem-foto {
-    width: 20em;
-    margin-top: 0em;
-  }
-
-  .campo-moods {
-    flex-wrap: wrap;
-    width: 20%;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    bottom: 0;
-  }
-
-  .campo-empresa {
-    margin-top: 50px;
-  }
-
-  .fundo-ram-triste,
-  .fundo-ram-entediado,
-  .fundo-ram-furioso,
-  .fundo-ram-alegre,
-  .fundo-ram-apaixonado {
-    width: 70px;
-    height: 70px;
-  }
-
-  #ram-triste,
-  #ram-furioso,
-  #ram-apaixonado {
-    width: 5em;
-  }
-
-  #ram-alegre, #ram-entediado {
-    width: 4em;
-  }
-  /* footer
-
-  .footer-container {
-    width: 100%;
-    height: auto;
-    position: none;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .geral {
-    margin-left: 55px;
-  }
-
-  .redes-sociais,
-  .contato {
-    margin-top: 30px;
-    margin-left: 55px;
-  }
-
-  .footer-container .descricao-footer ul {
-    list-style-type: none;
-    padding: 0px 5px;
-  }
-
-  .descricao-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0px;
-    width: 100%;
-  }
-
-  .email {
-    width: 300px;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    margin: 0 65px;
-  }
-
-  #email {
-    height: 20px;
-  }
-
-  .footer-container .logo {
-    width: 100%;
-  } 
-  footer
-} */
-/* Dispositivos móveis em modo paisagem (tela horizontal) */
-@media (max-width: 767px) {
-  /* Estilos aqui */
-}
-
-/* Tablets em modo retrato (tela vertical) */
-@media (max-width: 768px) {
-  /* Estilos aqui */
-}
-
-/* Tablets em modo paisagem (tela horizontal) */
-@media (max-width: 1024px) {
-  /* Estilos aqui */
-  /* header {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  #perfil {
-    float: left;
-    display: none;
-  }
-
-  #drop {
-    display: block;
-  }
-
-  .info-box {
-    width: auto;
-    text-align: center;
-    width: 50%;
-  }
-
-  .descricao-footer {
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 40px;
-    max-width: 100%;
-  } */
-}
-
-/* Laptops pequenos */
-@media (max-width: 1280px) {
-  /* Estilos aqui */
-  .logoBranca {
-    display: none;
-  }
-}
-
-/* Laptops e desktops */
-@media (max-width: 1440px) {
-  /* Estilos aqui */
-}
-
-/* Telas grandes */
-@media (max-width: 1920px) {
-  /* Estilos aqui */
-}
-
-@media (max-width: 895px) {
-  .hideOnMobile {
-    display: none;
-  }
-  .menu-button {
-    display: block;
-  }
-  nav ul {
-    justify-content: space-between;
-    position: static;
-    padding-left: 0;
-  }
-
-  nav a {
-    padding-right: 30px;
-  }
-
-  #logo {
-    margin-left: 20px;
-  }
-
-  #logo-nav {
-    margin-left: 20px;
-  }
-  #perfil {
-    display: none;
-  }
-
-  nav a:visited {
-    text-decoration: none;
-    transition: color 1.5s ease-out 1ms;
-  }
-
-  nav a:hover {
-    color: var(--branco);
-    text-decoration-line: underline;
   }
 }

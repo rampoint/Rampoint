@@ -15,43 +15,43 @@
     <link rel="shortcut icon" href="./img/rostoCirculo.svg" type="image/x-icon">
 
 </head>
-<script>
-    function showSidebar() {
-        const sidebar = document.querySelector('.sidebar')
-        sidebar.style.display = 'flex'
-    }
-    function hideSidebar() {
-        const sidebar = document.querySelector('.sidebar')
-        sidebar.style.display = 'none'
-    }
-</script>
 
 <body>
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
 
     <nav>
         <ul class="sidebar">
-            <li onclick=hideSidebar()><a href="#"><img src="img/fechar.svg" id="fechar" alt="" srcset=""></a></li>
-            <li id="perfil-sidebar"><img src="img/perfil.svg" alt="" srcset="">
-                <div class="menus">
-            <li><a href="../pagina-inicial/inicial.html">HOME</a></li>
-            <li><a href="../pagina-play/play.html">PLAY</a></li>
-            <li><a href="../pagina-inicial/inicial.html" id="ecoponto">ECOPONTOS</a></li>
-            <li><a href="../pagina-materiais/materiais.html">MATERIAIS</a></li>
-            <li><a href="../pagina-qrcode/index.html">QR-CODE</a></li>
-            <li><a href="../pagina-faq/faq.html">FALE CONOSCO</a></li>
-            <div class="footer-logo">
-                <a id="footer-logo">ram</a>
-                <a id="footer-logo">point.</a>
+            <li onclick=hideSidebar()><a href="#"><img id="fechar" src="img/fechar.svg" alt="fechar nav"></a></li>
+            <li id="perfil-sidebar"><img src="img/perfil2.svg" alt="" srcset=""></li>
+            <div class="menus">
+                <li><a href="../pagina-inicial/inicial.html" id="menuMobile">HOME</a></li>
+                <li><a href="../pagina-play/play.html" id="menuMobile">PLAY</a></li>
+                <li><a href="../pagina-inicial/inicial.html" id="ecoponto menuMobile">ECOPONTOS</a></li>
+                <li><a href="../pagina-materiais/materiais.html" id="menuMobile">MATERIAIS</a></li>
+                <li><a href="../pagina-qrcode/index.html" id="menuMobile">QR-CODE</a></li>
+                <li><a href="../pagina-faq/faq.html" id="menuMobile">FALE CONOSCO</a></li>
             </div>
+            <div class="footer-logo">
+                <img src="./img/logoBranca.svg" id="footer-logo" alt="">
             </div>
 
+            </div>
         </ul>
         <ul>
             <li id="logo-nav"><img src="img/ram.svg" alt="ram">
                 <h1 style="color: black;"><b style="color:#7ad761; margin-left: 10px;">ram</b>point.</h1>
             <li class="hideOnMobile"><a href="../pagina-inicial/inicial.html">HOME</a>
             <li class="hideOnMobile"><a href="../pagina-play/play.html">PLAY</a>
-            <li class="hideOnMobile"><a href="../pagina-inicial/inicial.html" id="ecoponto">ECOPONTOS</a>
+            <li class="hideOnMobile"><a href="#" id="ecoponto">ECOPONTOS</a>
             <li class="hideOnMobile"><a href="../pagina-materiais/materiais.html">MATERIAIS</a>
             <li class="hideOnMobile"><a href="../pagina-qrcode/index.html">QR-CODE</a>
             <li class="hideOnMobile"><a href="../pagina-faq/faq.html">FALE CONOSCO</a>
@@ -76,7 +76,9 @@
                     </div>
                 </div>
 
-                <button class="modalBtn" id="openModalBtn"><img id="perfil" src="img/perfil.svg" alt="perfil"></button>
+                <button class="modalBtn" id="openModalBtn">
+                    <img id="perfil" src="img/perfil.svg" alt="perfil">
+                </button>
             </li>
             <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
                         height="26" viewBox="0 96 960 960" width="26">

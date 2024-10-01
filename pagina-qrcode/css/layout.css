@@ -167,20 +167,31 @@
     left: -2em;
   }
 
+  .qrcode-box input {
+    width: 11em;
+  }
+
   .codigo-l2 select {
     margin-left: 0px;
   }
 }
 
 @media (max-width: 1024px) {
+  .nav ul {
+    width: 45em;
+  }
+
   #drop {
     display: block;
   }
 
-  .info-box {
-    width: auto;
-    text-align: center;
-    width: 50%;
+  .qrcode-box input {
+    width: 9em;
+  }
+
+  .codigo-l2 select {
+    margin-left: -39px;
+    width: 13em;
   }
 
   .descricao-footer {
@@ -193,36 +204,26 @@
   .copyright {
     margin-left: 80px;
   }
-
-  .container-grid {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .texto {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .texto-ram {
-    display: flex;
-    flex-direction: column;
-  }
 }
 
 @media (max-width: 985px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .hideOnMobile {
     display: none;
   }
   .menu-button {
     display: block;
   }
-  /* nav ul {
+
+  nav ul {
     width: 57em;
     justify-content: space-between;
     position: static;
     padding-left: 0;
-  } */
+  }
 
   nav a {
     padding-right: 30px;
@@ -251,7 +252,25 @@
   }
 
   .sidebar {
-    right: 1em;
+    height: 75vh;
+    right: 4em;
+  }
+
+  .codigo-l2 select {
+    margin-left: 15px;
+    width: 13em;
+  }
+
+  .moeda-roxa {
+    left: -5em;
+  }
+
+  #brilho-roxo {
+    left: -7em;
+  }
+
+  .footer-logo {
+    margin-top: 40%;
   }
 }
 

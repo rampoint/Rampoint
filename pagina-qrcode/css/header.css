@@ -1,5 +1,4 @@
 @import url(../css/font.css);
-
 @import url(../css/cores.css);
 
 nav {
@@ -96,7 +95,7 @@ nav a:hover {
   position: fixed;
   top: 0;
   right: 0;
-  height: 100vh;
+  height: 65vh;
   width: 250px;
   background-color: var(--azul);
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);

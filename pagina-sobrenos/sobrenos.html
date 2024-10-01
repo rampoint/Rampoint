@@ -29,19 +29,20 @@
   <nav>
     <ul class="sidebar">
       <li onclick=hideSidebar()><a href="#"><img id="fechar" src="img/fechar.svg" alt="fechar nav"></a></li>
-      <li id="perfil-sidebar"><img src="img/perfil2.svg" alt="" srcset="">
-        <div class="menus">
-      <li><a href="../pagina-inicial/inicial.html" id="menuMobile">HOME</a></li>
-      <li><a href="../pagina-play/play.html" id="menuMobile">PLAY</a></li>
-      <li><a href="../pagina-inicial/inicial.html" id="ecoponto menuMobile">ECOPONTOS</a></li>
-      <li><a href="../pagina-materiais/materiais.html" id="menuMobile">MATERIAIS</a></li>
-      <li><a href="../pagina-qrcode/index.html" id="menuMobile">QR-CODE</a></li>
-      <li><a href="../pagina-faq/faq.html" id="menuMobile">FALE CONOSCO</a></li>
+      <li id="perfil-sidebar"><img src="img/perfil2.svg" alt="" srcset=""></li>
+      <div class="menus">
+        <li><a href="../pagina-inicial/inicial.html" id="menuMobile">HOME</a></li>
+        <li><a href="../pagina-play/play.html" id="menuMobile">PLAY</a></li>
+        <li><a href="../pagina-inicial/inicial.html" id="ecoponto menuMobile">ECOPONTOS</a></li>
+        <li><a href="../pagina-materiais/materiais.html" id="menuMobile">MATERIAIS</a></li>
+        <li><a href="../pagina-qrcode/index.html" id="menuMobile">QR-CODE</a></li>
+        <li><a href="../pagina-faq/faq.html" id="menuMobile">FALE CONOSCO</a></li>
+      </div>
       <div class="footer-logo">
         <img src="./img/logoBranca.svg" id="footer-logo" alt="">
       </div>
+
       </div>
-      </li>
     </ul>
     <ul>
       <li id="logo-nav"><img src="img/ram.svg" alt="ram">
@@ -57,19 +58,21 @@
         <!-- Modal sem perfil -->
         <div class="modal-sem-perfil" id="modalSemPerfil">
           <div id="content-sem-perfil" class="content-sem-perfil">
-              <p class="perfil">Perfil</p>
-              <img src="./img/user.svg" id="foto-perfil" alt="Foto de perfil">
-              <div class="fundo">
-                  <p class="texto-perfil" id="nome_modal"></p>
-                  <div class="grupo">
-                      <hr class="linha">
-                      <a class="cadastro" href="../pagina-perfil/perfil.html"><span style="color: black;">Ir para perfil</span></a>
-                      <hr class="linha">
-                      <a href="../pagina-login/index.html" onclick="logout()" class="login"><span style="color: red;">Sair</span></a>
-                  </div>
+            <p class="perfil">Perfil</p>
+            <img src="./img/user.svg" id="foto-perfil" alt="Foto de perfil">
+            <div class="fundo">
+              <p class="texto-perfil" id="nome_modal"></p>
+              <div class="grupo">
+                <hr class="linha">
+                <a class="cadastro" href="../pagina-perfil/perfil.html"><span style="color: black;">Ir
+                    para perfil</span></a>
+                <hr class="linha">
+                <a href="../pagina-login/index.html" onclick="logout()" class="login"><span
+                    style="color: red;">Sair</span></a>
               </div>
+            </div>
           </div>
-      </div>
+        </div>
 
         <button class="modalBtn" id="openModalBtn">
           <img id="perfil" src="img/perfil.svg" alt="perfil">
@@ -80,33 +83,7 @@
             <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
           </svg></a></li>
     </ul>
-
-
-
-    <!-- modal sem perfil -->
-
-    <!-- modal com perfil -->
-    <!-- <div class="modal-com-perfil">
-            <div class="content-com-perfil">
-                <p class="perfil">Perfil</p>
-
-                <div class="fundo">
-                    <img src="./img/user.svg" id="foto-perfil" alt="Foto de perfil">
-                    <p class="texto-perfil">Sem login</p>
-                    <div class="grupo">
-                        <hr class="linha"></hr>
-                        <a class="cadastro">Cadastrar-se</a>
-                        <hr class="linha"></hr>
-                        <a class="login">Fazer login</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <button class="modalBtn"><img id="perfil" src="img/perfil.svg" alt="perfil"></button> -->
-    <!-- modal com perfil -->
   </nav>
-
 
   <div class="container">
     <section class="imagem-fundo">
@@ -232,9 +209,17 @@
       <section class="img-equipe">
         <p class="mensagem-foto">*imagem da equipe rampoint.</p>
 
-        <img src="./img/Rectangle 290.svg" class="imagem-equipe" alt="Imagem da equipe Rampoint" />
+        <img src="./img/foto-equipe.jpg" class="imagem-equipe" alt="Imagem da equipe Rampoint" />
 
         <div class="campo-moods">
+          <div class="fundo-ram-furioso">
+            <img src="./img/ram-furioso.svg" id="ram-furioso" alt="Imagem do Ram com o mood(humor) furioso" />
+          </div>
+
+          <div class="fundo-ram-apaixonado">
+            <img src="./img/ram-apaixonado.svg" id="ram-apaixonado" alt="Imagem do Ram com o mood(humor) apaixonado" />
+          </div>
+
           <div class="fundo-ram-triste">
             <img src="./img/ram-triste.svg" id="ram-triste" alt="Imagem do Ram com o mood(humor) triste" />
           </div>
@@ -243,16 +228,8 @@
             <img src="./img/ram-entediado.svg" id="ram-entediado" alt="Imagem do Ram com o mood(humor) entediado" />
           </div>
 
-          <div class="fundo-ram-furioso">
-            <img src="./img/ram-furioso.svg" id="ram-furioso" alt="Imagem do Ram com o mood(humor) furioso" />
-          </div>
-
-          <div class="fundo-ram-alegre">
-            <img src="./img/ram-alegre.svg" id="ram-alegre" alt="Imagem do Ram com o mood(humor) alegre" />
-          </div>
-
-          <div class="fundo-ram-apaixonado">
-            <img src="./img/ram-apaixonado.svg" id="ram-apaixonado" alt="Imagem do Ram com o mood(humor) apaixonado" />
+          <div class="fundo-ram-emocionado">
+            <img src="./img/ram-emocionado.svg" id="ram-emocionado" alt="Imagem do Ram com o mood(humor) emocionado" />
           </div>
         </div>
       </section>
@@ -283,11 +260,9 @@
           <h3 id="redes_sociais-titulo">REDES SOCIAIS</h3>
           <ul>
             <li>
-              <a href="https://www.instagram.com/rampoint_?igsh=MWptbnVwdDAzN3NkNw==">Instagram</a>
+              <a href="https://www.instagram.com/rampoint_?igsh=MWptbnVwdDAzN3NkNw==" target="_blank">Instagram</a>
             </li>
             <li><a href="#">Tiktok</a></li>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Linkedln</a></li>
           </ul>
         </div>
         <div class="contato">
@@ -312,7 +287,7 @@
     <script src="../js/firebase-init.js"></script>
     <script src="../js/register.js"></script>
     <script src="../js/logout.js"></script>
-</div>
+  </div>
   </div>
 </body>
 

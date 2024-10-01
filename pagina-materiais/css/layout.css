@@ -792,6 +792,147 @@
 }
 
 @media (max-width: 610px) {
+  nav ul {
+    width: 38em;
+  }
+
+  #titulo-inicial {
+    width: 6em;
+  }
+
+  #texto-inicial {
+    width: 90%;
+  }
+
+  .interno-inicial {
+    right: 8em;
+    bottom: 28em;
+  }
+
+  .brilho-verde {
+    right: 9em;
+    bottom: 24em;
+  }
+
+  .brilho-azul,
+  .brilho-vermelho {
+    display: none;
+  }
+
+  .brilho-amarelo {
+    bottom: 29em;
+    right: 0;
+  }
+
+  .brilho-amarelo2 {
+    bottom: 28em;
+  }
+
+  .monitor {
+    right: 8em;
+    bottom: 12em;
+  }
+
+  .brilho-roxo {
+    left: 12em;
+  }
+
+  .teclado {
+    left: 20em;
+  }
+
+  .icone-roxo {
+    bottom: 31em;
+    left: 20em;
+  }
+
+  #scrollTarget {
+    width: 33em;
+    margin: auto 15px;
+  }
+
+  .carrossel-container {
+    margin: 100px 150px;
+  }
+
+  .menu {
+    width: 32em;
+  }
+
+  .main-buttons {
+    width: 34em;
+  }
+
+  .sub-buttons {
+    margin-top: 5px;
+  }
+
+  .fundo-gabinete,
+  .fundo-baias,
+  .fundo-slots,
+  .fundo-organizador,
+  .fundo-painel,
+  .fundo-gpu,
+  .fundo-placa-mae,
+  .fundo-memoria-ram,
+  .fundo-hdd,
+  .fundo-psu,
+  .fundo-cpu,
+  .fundo-monitor,
+  .fundo-teclado,
+  .fundo-mouse,
+  .fundo-alto-falante,
+  .fundo-ventoinhas,
+  .fundo-dissipadores,
+  .fundo-filtro,
+  .fundo-cooler {
+    width: 32em;
+  }
+
+  .titulo-gabinete {
+    width: 10em;
+    top: 5px;
+    left: 185px;
+    bottom: 0;
+  }
+
+  .titulo-gabinete {
+    width: 12em;
+    top: 35px;
+    left: 132px;
+    bottom: 0;
+  }
+
+  .p-gabinete {
+    font-size: 15px;
+    width: 50%;
+    position: relative;
+    top: 4em;
+    left: 10em;
+  }
+
+  #content1 .ramcoin,
+  #content2 .ramcoin,
+  #content3 .ramcoin,
+  #content4 .ramcoin,
+  #content5 .ramcoin,
+  #content6 .ramcoin,
+  #content7 .ramcoin,
+  #content8 .ramcoin,
+  #content9 .ramcoin,
+  #content10 .ramcoin,
+  #content11 .ramcoin,
+  #content12 .ramcoin,
+  #content13 .ramcoin,
+  #content14 .ramcoin,
+  #content15 .ramcoin,
+  #content16 .ramcoin,
+  #content17 .ramcoin,
+  #content18 .ramcoin,
+  #content19 .ramcoin {
+    left: 19em;
+  }
+
   .footer-container {
     width: 100%;
     display: flex;

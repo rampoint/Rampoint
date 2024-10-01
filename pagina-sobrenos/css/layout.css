@@ -3,12 +3,22 @@
     margin-left: auto;
     margin-right: 4em;
   }
+
+  #texto-inicial {
+    bottom: 21em;
+    right: 19.5em;
+  }
 }
 
 @media (max-width: 1920px) {
   .content-sem-perfil {
     margin-left: auto;
     margin-right: 4em;
+  }
+
+  #texto-inicial {
+    bottom: 21em;
+    right: 19.5em;
   }
 }
 

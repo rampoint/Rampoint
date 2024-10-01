@@ -1,3 +1,4 @@
+/* Para telas grandes (1920px ou mais) */
 @media (min-width: 1920px) {
   .content-sem-perfil {
     margin-left: auto;
@@ -55,16 +56,14 @@
   }
 }
 
-@media (max-width: 1815px) {
+/* Para telas médias (de 1025px a 1919px) */
+@media (max-width: 1919px) and (min-width: 1025px) {
   .select-icon {
     right: 10em;
   }
-
-  /* .content-mood .icon-x {
-    right: 31em;
-  }  */
 }
 
+/* Para telas pequenas (de 769px a 1024px) */
 @media (max-width: 1024px) {
   #drop {
     display: block;
@@ -88,144 +87,22 @@
   }
 }
 
-@media (max-width: 985px) {
-  .hideOnMobile {
-    display: none;
-  }
-  .menu-button {
-    display: block;
-  }
-
-  nav ul {
-    width: 57em;
-    justify-content: space-between;
-    position: static;
-    padding-left: 0;
-  }
-
-  nav a {
-    padding-right: 30px;
-  }
-
-  #logo {
-    margin-left: 20px;
-  }
-
-  #logo-nav {
-    margin-left: 20px;
-  }
-
-  #perfil {
-    display: none;
-  }
-
-  nav a:visited {
-    text-decoration: none;
-    transition: color 1.5s ease-out 1ms;
-  }
-
-  nav a:hover {
-    color: var(--branco);
-    text-decoration-line: underline;
-  }
-
-  .sidebar {
-    right: 1em;
-  }
-}
-
+/* Para telas menores (de 426px a 768px) */
 @media (max-width: 768px) {
-  p {
-    margin-bottom: 10px;
-  }
-
-  #medalhas {
-    width: 280px;
-  }
+  
 }
 
+/* Para dispositivos móveis (de 376px a 425px) */
 @media (max-width: 425px) {
-  .footer-container .logo {
-    margin: 0;
-    bottom: 20px;
-    flex-direction: column;
-  }
-
-  .flor img {
-    visibility: hidden;
-  }
-
-  .flor img {
-    visibility: hidden;
-  }
-
-  .email {
-    display: flex;
-    flex-direction: row;
-    margin-left: 10px;
-  }
-
-  .footer-container .descricao-footer {
-    margin-top: 0;
-    display: block;
-  }
-
-  .descricao-footer {
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 40px;
-    max-width: 100%;
-  }
-
-  /* .geral, .contato {
-    margin: 70px;
-
-  }*/
-
-  .endereco {
-    max-width: 100%;
-  }
-
-  .footer-container button {
-    margin-right: 10px;
-  }
-
-  h3 {
-    margin-top: 15px;
-  }
+  
 }
 
+/* Para dispositivos muito pequenos (até 375px) */
 @media (max-width: 375px) {
-  .email {
-    display: flex;
-    flex-wrap: wrap;
-  }
+  
 }
 
+/* Para dispositivos extremamente pequenos (até 320px) */
 @media (max-width: 320px) {
-  .footer-container {
-    width: 320px;
-    height: auto;
-    position: none;
-  }
-
-  h2 {
-    margin: 0;
-  }
-
-  h3 {
-    margin-top: 15px;
-  }
-
-  .email {
-    width: 200px;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    margin-left: 30px;
-  }
-
-  .footer-container .logo {
-    width: 80px;
-  }
+  
 }

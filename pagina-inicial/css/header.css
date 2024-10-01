@@ -212,18 +212,17 @@ margin-top:60px;
   display: flex;
   flex-direction: column;
   margin-left: 15px;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
 }
 
 .perfil,
 .texto-perfil {
-  font-family: "Poppins-bold";
+  font-family: "Poppins-medium";
 }
 
 .texto-perfil{
   padding: 0;
-  height: 10px;
 }
 
 .cadastro,
@@ -270,7 +269,8 @@ margin-top:60px;
 
 #foto-perfil {
   position: relative;
-  width: 100px;
+  width: 90px;
+  margin-bottom: 1em;
 }
 /* modal sem perfil */
 
@@ -352,6 +352,11 @@ margin-top:60px;
   color: var(--branco);
 }
 
+.texto-perfil {
+  margin: 0;
+  margin-right: 5px;
+}
+
 .cadastro,
 .login {
   font-family: "Poppins-medium";
@@ -363,9 +368,9 @@ margin-top:60px;
   text-decoration: none;
 }
 
-.cadastro:hover {
+.cadastro span:hover {
   color: var(--preto);
-  text-decoration: none;
+  text-decoration: underline;
   cursor: pointer;
 }
 
@@ -375,7 +380,8 @@ margin-top:60px;
 }
 
 .login:hover {
-  text-decoration: none;
+  text-decoration: underline;
+  color: red;
   cursor: pointer;
 }
 

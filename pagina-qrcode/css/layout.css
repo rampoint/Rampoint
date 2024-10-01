@@ -1,7 +1,7 @@
 @media (min-width: 1920px) {
   .content-sem-perfil {
     margin-left: auto;
-    margin-right: 16em;
+    margin-right: 4em;
   }
 
   .brilho-verde {
@@ -43,13 +43,17 @@
   .moeda-roxa {
     position: relative;
     left: 3em;
+  }
+
+  .info-box {
+    margin-top: 90px;
   }
 }
 
 @media (max-width: 1920px) {
   .content-sem-perfil {
     margin-left: auto;
-    margin-right: 16em;
+    margin-right: 4em;
   }
 
   .brilho-verde {
@@ -91,6 +95,10 @@
   .moeda-roxa {
     position: relative;
     left: 3em;
+  }
+  
+  .info-box {
+    margin-top: 90px;
   }
 }
 

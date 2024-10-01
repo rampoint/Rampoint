@@ -4,6 +4,10 @@
     margin-right: 4em;
   }
 
+  #texto-inicial {
+    width: 25%;
+  }
+
   .menu {
     width: 45em;
     margin: auto;
@@ -69,6 +73,10 @@
   .content-sem-perfil {
     margin-left: auto;
     margin-right: 4em;
+  }
+
+  #texto-inicial {
+    width: 25%;
   }
 
   .menu {
@@ -771,7 +779,7 @@
     margin-left: 0;
     margin-top: 30px;
     width: 270px;
-    height: auto  ;
+    height: auto;
   }
 
   .descricao-footer {

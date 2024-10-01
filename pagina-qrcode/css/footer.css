@@ -1,5 +1,4 @@
 @import url(../css/font.css);
-
 @import url(../css/cores.css);
 
 footer h2,
@@ -77,7 +76,7 @@ h3,
   margin-right: 10px;
 }
 
-#email::placeholder {
+#email {
   color: var(--cinza);
   font-family: "Poppins-bold";
 }
@@ -147,6 +146,12 @@ input:focus {
 .geral {
   margin-right: 100px;
   margin: 0px;
+}
+
+.geral,
+.redes-sociais,
+.contato {
+  height: 10em;
 }
 
 .redes-sociais {

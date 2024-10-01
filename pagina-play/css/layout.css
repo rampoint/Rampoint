@@ -864,6 +864,12 @@
     margin-top: 3em;
   }
 
+  .redes-sociais,
+  .geral,
+  .contato {
+    height: auto;
+  }
+
   .copyright {
     margin-left: 0;
   }

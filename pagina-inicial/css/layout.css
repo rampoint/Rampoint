@@ -812,6 +812,7 @@
   .geral,
   .contato {
     width: 430px;
+    height: auto;
   }
 
   .footer-container .descricao-footer ul {

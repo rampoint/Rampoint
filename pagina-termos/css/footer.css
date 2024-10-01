@@ -1,10 +1,9 @@
 @import url(../css/font.css);
-
 @import url(../css/cores.css);
 
-h2,
-p,
-li,
+footer h2,
+footer p,
+footer li,
 .btn-enviar {
   color: var(--branco);
 }
@@ -15,7 +14,7 @@ h2 {
   margin-top: 30px;
 }
 
-p {
+footer p {
   font-family: "Poppins-semibold", sans-serif;
   font-size: 14px;
   margin-top: 10px;
@@ -75,8 +74,11 @@ h3,
   height: 20px;
   max-width: 80%;
   margin-right: 10px;
-  font-family: "Poppins-bold";
+}
+
+#email {
   color: var(--cinza);
+  font-family: "Poppins-bold";
 }
 
 input:focus {
@@ -146,11 +148,19 @@ input:focus {
   margin: 0px;
 }
 
+.geral,
+.redes-sociais,
+.contato {
+  height: 10em;
+}
+
 .redes-sociais {
   margin: 0px;
 }
 
-#geral-titulo, #redes_sociais-titulo, #contato-titulo {
+#geral-titulo,
+#redes_sociais-titulo,
+#contato-titulo {
   color: var(--branco);
 }
 
@@ -159,6 +169,7 @@ input:focus {
   width: 270px;
 }
 
-#email-span, #telefone-span {
+#email-span,
+#telefone-span {
   color: var(--branco);
 }

@@ -778,7 +778,6 @@ body {
 } */
 
 /* começo campo conquistas */
-
 .campo-conquistas {
   display: flex;
   align-items: center;
@@ -834,6 +833,7 @@ body {
 .lista-textos {
   display: flex;
   flex-direction: column;
+ justify-content: center;
   margin-left: 1em;
 }
 
@@ -843,14 +843,16 @@ body {
 .lista-textos2 {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   margin-left: 1em;
+  width: 15em;
 }
 
 .area-excluir {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: flex-end;
-  margin: 1em 1em 0em 16.5em;
+  margin: 1em 1em 0em 14em;
 }
 
 .btn-excluir {
@@ -862,6 +864,7 @@ body {
 }
 
 .mensagem-cupom {
+  width: 13em;
   font-family: "Poppins-semibold";
   color: #333333;
   margin: 1em 0 0em 0;
@@ -878,6 +881,12 @@ body {
   font-size: 1.2em;
 }
 
+.titulo-cupom-amarelo,
+.titulo-cupom-azul,
+.titulo-cupom-verde {
+  width: 10em;
+}
+
 .titulo-medalha-roxa,
 .meta-medalha-roxa {
   color: #6513a9;
@@ -886,6 +895,10 @@ body {
 .titulo-medalha-azul,
 .meta-medalha-azul {
   color: #0076ac;
+}
+
+.titulo-medalha-azul {
+  margin-bottom: 10px;
 }
 
 .titulo-cupom-amarelo,

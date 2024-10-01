@@ -967,7 +967,7 @@ body {
 }
 
 .toggle-option.active {
-  background-color: #9d4edd;
+  background-color: var(--verde);
   color: var(--branco);
 }
 

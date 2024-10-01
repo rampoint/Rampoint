@@ -199,11 +199,10 @@ function buscarDadosUsuario(globalUserId) {
 function exibirDadosUsuario(users) {
   // Obtém a URL atual da página
   var currentPage = window.location.href;
-
   // Verifica se a URL contém uma string específica
   if (currentPage.includes("/pagina-perfil/")) {
-    form_usuario.nome_perfil().innerHTML = users.nome;
-    form_usuario.email_perfil().innerHTML = users.email;
+    document.getElementById("nome_usuario").innerHTML = users.nome;
+    document.getElementById("email_usuario").innerHTML = users.email;
     document.getElementById("emocao_usuario").style.color = users.fotoPerfil.cor_texto;
     document.getElementById("emocao_usuario").innerHTML = users.fotoPerfil.fotoMensage;
     document.getElementById("nome-mudar").placeholder = users.nome;
@@ -222,7 +221,7 @@ function exibirDadosUsuario(users) {
     document.getElementById("nome_modal").innerHTML = users.nome;
     document.getElementById("foto-perfil").src = users.fotoPerfil.fotoPerfil;
     document.getElementById("perfil").src = users.fotoPerfil.fotoPerfil;
-    document.getElementById("toggle-option").style.backgroundColor = users.fotoPerfil.cor_texto;
+    document.getElementById('genero-mudar').value = users.genero
   } else {
     document.getElementById("nome_modal").innerHTML = users.nome;
     document.getElementById("content-sem-perfil").style.backgroundColor =

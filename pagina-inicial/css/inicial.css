@@ -171,6 +171,17 @@ body {
   text-decoration: none;
 }
 
+.cadastro-modal {
+  font-family: "Poppins-bold";
+  font-size: 1em;
+  color: var(--preto);
+  width: 200px;
+  height: 40px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  
+}
 #login {
   font-family: "Poppins-bold";
   font-size: 1em;
@@ -272,6 +283,8 @@ body {
 .span-preto {
   font-family: "Poppins-bold";
 }
+
+
 /* fim dos textos */
 
 /* começo grid */

@@ -1,4 +1,5 @@
 @import url(../css/font.css);
+
 @import url(../css/cores.css);
 
 * {
@@ -11,6 +12,7 @@ body {
 }
 
 /* começo imagem inicial */
+
 .imagem-fundo {
   display: flex;
   flex-direction: column;
@@ -74,7 +76,6 @@ body {
   height: 35em;
   position: relative;
   bottom: 15em;
-  z-index: 1;
 }
 
 #btn {
@@ -92,6 +93,7 @@ body {
 }
 
 /* começo lado esquerdo */
+
 .medalha-vermelha {
   position: relative;
   top: 5em;
@@ -124,9 +126,11 @@ body {
   right: 13em;
   z-index: -1;
 }
+
 /* final lado esquerdo */
 
 /* começo lado direito */
+
 .brilho-roxo {
   position: relative;
   bottom: 12em;
@@ -165,6 +169,7 @@ body {
   bottom: 15em;
   left: 25em;
 }
+
 /* final lado direito */
 
 .medalha-vermelha,
@@ -209,9 +214,11 @@ body {
     transform: rotate(0deg);
   }
 }
+
 /* final imagem inicial */
 
 /* começo dos textos */
+
 #titulo1 {
   font-family: "Blinker-extrabold";
   color: var(--verde);
@@ -261,9 +268,11 @@ body {
   margin-left: 12em;
   width: 50%;
 }
+
 /* final dos textos */
 
 /* começo dos cards dos cupons */
+
 .card-cupons {
   display: flex;
   justify-content: center;
@@ -629,6 +638,7 @@ body {
   bottom: 2em;
   z-index: 2;
 }
+
 /* final modal golias */
 
 /* começo botão fechar o modal */
@@ -708,6 +718,7 @@ body {
 .ramcoin:hover .text-block {
   display: block;
 }
+
 /* final ramcoin */
 
 #loja {
@@ -722,9 +733,11 @@ body {
   width: 36em;
   padding: 0 0 20px 15px;
 }
+
 /* final dos cards dos cupons */
 
 /* começo dos cards das empresas */
+
 .section-empresas {
   margin-top: 5em;
 }
@@ -775,9 +788,11 @@ body {
   position: relative;
   bottom: 2em;
 }
+
 /* final dos cards das empresas */
 
 /* começo das medalhas */
+
 .conquistas {
   margin-top: 1em;
 }
@@ -841,6 +856,7 @@ body {
   font-size: 16px;
   width: 100%;
 }
+
 /* final salto tecnologico */
 
 /* começo coração generoso */
@@ -1026,4 +1042,5 @@ body {
   width: 80%;
 }
 /* final raio esperança */
+
 /* final das medalhas */

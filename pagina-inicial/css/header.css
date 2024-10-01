@@ -33,7 +33,7 @@ nav ul {
 
 nav li {
   height: 50px;
-
+  font-size: 100%;
 }
 
 .sidebar nav a {

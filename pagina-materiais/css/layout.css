@@ -1,828 +1,4 @@
-@media (min-width: 1920px) {
-  .content-sem-perfil {
-    margin-left: auto;
-    margin-right: 4em;
-  }
-
-  .menu {
-    width: 45em;
-    margin: auto;
-    padding: 20px;
-    background-color: rgba(234, 236, 240, 0.5);
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    align-items: center;
-  }
-
-  .ramcoin {
-    position: absolute;
-    bottom: 3em;
-    left: 42em;
-    margin-top: 25px;
-  }
-
-  .p-gabinete,
-  .p-baias,
-  .p-slots,
-  .p-organizador,
-  .p-painel,
-  .p-hdd,
-  .p-cpu {
-    font-size: 15px;
-    width: 50%;
-    position: relative;
-    top: 1em;
-    left: 13em;
-  }
-
-  .titulo-estrutura,
-  .titulo-internos,
-  .titulo-perifericos,
-  .titulo-resfriamento {
-    font-size: 16px;
-  }
-
-  #content1 .ramcoin,
-  #content2 .ramcoin,
-  #content3 .ramcoin,
-  #content4 .ramcoin,
-  #content5 .ramcoin,
-  #content6 .ramcoin,
-  #content7 .ramcoin,
-  #content8 .ramcoin,
-  #content9 .ramcoin,
-  #content10 .ramcoin,
-  #content11 .ramcoin,
-  #content12 .ramcoin,
-  #content13 .ramcoin,
-  #content14 .ramcoin,
-  #content15 .ramcoin,
-  #content16 .ramcoin,
-  #content17 .ramcoin,
-  #content18 .ramcoin,
-  #content19 .ramcoin {
-    left: 43em;
-  }
-}
-
-@media (max-width: 1920px) {
-  .content-sem-perfil {
-    margin-left: auto;
-    margin-right: 4em;
-  }
-
-  .menu {
-    width: 45em;
-    margin: auto;
-    padding: 20px;
-    background-color: rgba(234, 236, 240, 0.5);
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    align-items: center;
-  }
-
-  .ramcoin {
-    position: absolute;
-    bottom: 3em;
-    left: 42em;
-    margin-top: 25px;
-  }
-
-  .p-gabinete,
-  .p-baias,
-  .p-slots,
-  .p-organizador,
-  .p-painel,
-  .p-hdd,
-  .p-cpu {
-    font-size: 15px;
-    width: 50%;
-    position: relative;
-    top: 1em;
-    left: 13em;
-  }
-
-  .titulo-estrutura,
-  .titulo-internos,
-  .titulo-perifericos,
-  .titulo-resfriamento {
-    font-size: 16px;
-  }
-
-  #content1 .ramcoin,
-  #content2 .ramcoin,
-  #content3 .ramcoin,
-  #content4 .ramcoin,
-  #content5 .ramcoin,
-  #content6 .ramcoin,
-  #content7 .ramcoin,
-  #content8 .ramcoin,
-  #content9 .ramcoin,
-  #content10 .ramcoin,
-  #content11 .ramcoin,
-  #content12 .ramcoin,
-  #content13 .ramcoin,
-  #content14 .ramcoin,
-  #content15 .ramcoin,
-  #content16 .ramcoin,
-  #content17 .ramcoin,
-  #content18 .ramcoin,
-  #content19 .ramcoin {
-    left: 43em;
-  }
-}
-
-@media (max-width: 1800px) {
-  #content1 .ramcoin,
-  #content2 .ramcoin,
-  #content3 .ramcoin,
-  #content4 .ramcoin,
-  #content5 .ramcoin,
-  #content6 .ramcoin,
-  #content7 .ramcoin,
-  #content8 .ramcoin,
-  #content9 .ramcoin,
-  #content10 .ramcoin,
-  #content11 .ramcoin,
-  #content12 .ramcoin,
-  #content13 .ramcoin,
-  #content14 .ramcoin,
-  #content15 .ramcoin,
-  #content16 .ramcoin,
-  #content17 .ramcoin,
-  #content18 .ramcoin,
-  #content19 .ramcoin {
-    left: 42em;
-  }
-}
-
-@media (max-width: 1665px) {
-  #content1 .ramcoin,
-  #content2 .ramcoin,
-  #content3 .ramcoin,
-  #content4 .ramcoin,
-  #content5 .ramcoin,
-  #content6 .ramcoin,
-  #content7 .ramcoin,
-  #content8 .ramcoin,
-  #content9 .ramcoin,
-  #content10 .ramcoin,
-  #content11 .ramcoin,
-  #content12 .ramcoin,
-  #content13 .ramcoin,
-  #content14 .ramcoin,
-  #content15 .ramcoin,
-  #content16 .ramcoin,
-  #content17 .ramcoin,
-  #content18 .ramcoin,
-  #content19 .ramcoin {
-    left: 40em;
-  }
-}
-
-@media (max-width: 1425px) {
-  #content1 .ramcoin,
-  #content2 .ramcoin,
-  #content3 .ramcoin,
-  #content4 .ramcoin,
-  #content5 .ramcoin,
-  #content6 .ramcoin,
-  #content7 .ramcoin,
-  #content8 .ramcoin,
-  #content9 .ramcoin,
-  #content10 .ramcoin,
-  #content11 .ramcoin,
-  #content12 .ramcoin,
-  #content13 .ramcoin,
-  #content14 .ramcoin,
-  #content15 .ramcoin,
-  #content16 .ramcoin,
-  #content17 .ramcoin,
-  #content18 .ramcoin,
-  #content19 .ramcoin {
-    left: 36em;
-  }
-}
-
-@media (max-width: 1365px) {
-  #content1 .ramcoin,
-  #content2 .ramcoin,
-  #content3 .ramcoin,
-  #content4 .ramcoin,
-  #content5 .ramcoin,
-  #content6 .ramcoin,
-  #content7 .ramcoin,
-  #content8 .ramcoin,
-  #content9 .ramcoin,
-  #content10 .ramcoin,
-  #content11 .ramcoin,
-  #content12 .ramcoin,
-  #content13 .ramcoin,
-  #content14 .ramcoin,
-  #content15 .ramcoin,
-  #content16 .ramcoin,
-  #content17 .ramcoin,
-  #content18 .ramcoin,
-  #content19 .ramcoin {
-    left: 35em;
-  }
-}
-
-@media (max-width: 1235px) {
-  nav ul {
-    width: 77em;
-  }
-
-  #content1 .ramcoin,
-  #content2 .ramcoin,
-  #content3 .ramcoin,
-  #content4 .ramcoin,
-  #content5 .ramcoin,
-  #content6 .ramcoin,
-  #content7 .ramcoin,
-  #content8 .ramcoin,
-  #content9 .ramcoin,
-  #content10 .ramcoin,
-  #content11 .ramcoin,
-  #content12 .ramcoin,
-  #content13 .ramcoin,
-  #content14 .ramcoin,
-  #content15 .ramcoin,
-  #content16 .ramcoin,
-  #content17 .ramcoin,
-  #content18 .ramcoin,
-  #content19 .ramcoin {
-    left: 33em;
-  }
-}
-
-@media (max-width: 1200px) {
-  nav ul {
-    width: 75em;
-  }
-
-  .imagem-fundo {
-    width: 90%;
-  }
-
-  .img-fundo {
-    margin-left: 6em;
-  }
-
-  #titulo-inicial {
-    width: 50%;
-    left: 55%;
-  }
-
-  #texto-inicial {
-    width: 40%;
-    left: 55%;
-  }
-
-  .interno-inicial {
-    right: 16em;
-  }
-
-  .monitor {
-    right: 17em;
-  }
-
-  .brilho-verde {
-    right: 12em;
-  }
-
-  .brilho-azul {
-    bottom: 27em;
-    right: 9em;
-  }
-
-  .teclado {
-    left: 25em;
-  }
-
-  .brilho-vermelho {
-    left: 20em;
-  }
-
-  .brilho-amarelo2 {
-    bottom: 37em;
-    left: 11em;
-  }
-
-  .botao {
-    width: 80%;
-    left: 4em;
-    bottom: 42em;
-  }
-}
-
-@media (max-width: 1116px) {
-  nav ul {
-    width: 67em;
-  }
-
-  #content1 .ramcoin,
-  #content2 .ramcoin,
-  #content3 .ramcoin,
-  #content4 .ramcoin,
-  #content5 .ramcoin,
-  #content6 .ramcoin,
-  #content7 .ramcoin,
-  #content8 .ramcoin,
-  #content9 .ramcoin,
-  #content10 .ramcoin,
-  #content11 .ramcoin,
-  #content12 .ramcoin,
-  #content13 .ramcoin,
-  #content14 .ramcoin,
-  #content15 .ramcoin,
-  #content16 .ramcoin,
-  #content17 .ramcoin,
-  #content18 .ramcoin,
-  #content19 .ramcoin {
-    left: 30em;
-  }
-}
-
-@media (max-width: 1066px) {
-  nav ul {
-    width: 65em;
-  }
-
-  .carrossel-container {
-    margin: 100px 320px;
-  }
-
-  #content1 .ramcoin,
-  #content2 .ramcoin,
-  #content3 .ramcoin,
-  #content4 .ramcoin,
-  #content5 .ramcoin,
-  #content6 .ramcoin,
-  #content7 .ramcoin,
-  #content8 .ramcoin,
-  #content9 .ramcoin,
-  #content10 .ramcoin,
-  #content11 .ramcoin,
-  #content12 .ramcoin,
-  #content13 .ramcoin,
-  #content14 .ramcoin,
-  #content15 .ramcoin,
-  #content16 .ramcoin,
-  #content17 .ramcoin,
-  #content18 .ramcoin,
-  #content19 .ramcoin {
-    left: 30em;
-  }
-}
-
-@media (max-width: 1025px) {
-  header {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  #drop {
-    display: block;
-  }
-
-  .info-box {
-    width: auto;
-    text-align: center;
-    width: 50%;
-  }
-
-  .descricao-footer {
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 40px;
-    max-width: 100%;
-  }
-
-  .copyright {
-    margin-left: 80px;
-  }
-}
-
-@media (max-width: 990px) {
-  .hideOnMobile {
-    display: none;
-  }
-
-  .sidebar {
-    margin-left: auto;
-    margin-right: 4em;
-  }
-
-  .menu-button {
-    display: block;
-  }
-
-  nav ul {
-    width: 60em;
-    justify-content: space-between;
-    position: static;
-    padding-left: 0;
-  }
-
-  nav a {
-    padding-right: 30px;
-  }
-
-  #logo {
-    margin-left: 20px;
-  }
-
-  #logo-nav {
-    margin-left: 20px;
-  }
-
-  #perfil {
-    display: none;
-  }
-
-  nav a:visited {
-    text-decoration: none;
-    transition: color 1.5s ease-out 1ms;
-  }
-
-  nav a:hover {
-    color: var(--branco);
-    text-decoration-line: underline;
-  }
-
-  .imagem-fundo {
-    width: 70%;
-  }
-
-  .img-fundo {
-    left: 15em;
-  }
-
-  #titulo-inicial {
-    width: 70%;
-    left: 70%;
-  }
-
-  #texto-inicial {
-    width: 60%;
-    top: 61%;
-    left: 70%;
-  }
-
-  .interno-inicial {
-    right: 10em;
-  }
-
-  .brilho-amarelo {
-    bottom: 31em;
-    right: 2.5em;
-  }
-
-  .monitor {
-    right: 10em;
-  }
-
-  .brilho-verde {
-    right: 5em;
-  }
-
-  .brilho-azul {
-    bottom: 22em;
-    right: 3em;
-  }
-
-  .brilho-roxo {
-    left: 17em;
-  }
-
-  .teclado {
-    left: 29em;
-  }
-
-  .brilho-vermelho {
-    bottom: 40em;
-    left: 24em;
-  }
-
-  .brilho-amarelo2 {
-    bottom: 35em;
-    left: 22em;
-  }
-
-  .icone-roxo {
-    left: 28em;
-  }
-
-  .botao {
-    display: none;
-  }
-
-  #scrollTarget {
-    width: 45em;
-    margin: auto 75px;
-  }
-
-  #titulo1 {
-    margin: 1em 0 0.5em 1em;
-  }
-
-  #texto1 {
-    margin-left: 2em;
-    width: 100%;
-  }
-
-  .carrossel-container {
-    margin: 80px 230px;
-  }
-
-  #content1 .ramcoin,
-  #content2 .ramcoin,
-  #content3 .ramcoin,
-  #content4 .ramcoin,
-  #content5 .ramcoin,
-  #content6 .ramcoin,
-  #content7 .ramcoin,
-  #content8 .ramcoin,
-  #content9 .ramcoin,
-  #content10 .ramcoin,
-  #content11 .ramcoin,
-  #content12 .ramcoin,
-  #content13 .ramcoin,
-  #content14 .ramcoin,
-  #content15 .ramcoin,
-  #content16 .ramcoin,
-  #content17 .ramcoin,
-  #content18 .ramcoin,
-  #content19 .ramcoin {
-    left: 28em;
-  }
-
-  .logoBranca {
-    display: none;
-  }
-}
-
-@media (max-width: 865px) {
-  body {
-    overflow-x: hidden;
-  }
-
-  nav ul {
-    width: auto;
-  }
-
-  .sidebar {
-    right: 2em;
-  }
-
-  .img-fundo {
-    left: 10em;
-  }
-
-  #titulo-inicial {
-    width: 80%;
-  }
-
-  .carrossel-container {
-    margin: 100px 210px;
-  }
-
-  #content1 .ramcoin,
-  #content2 .ramcoin,
-  #content3 .ramcoin,
-  #content4 .ramcoin,
-  #content5 .ramcoin,
-  #content6 .ramcoin,
-  #content7 .ramcoin,
-  #content8 .ramcoin,
-  #content9 .ramcoin,
-  #content10 .ramcoin,
-  #content11 .ramcoin,
-  #content12 .ramcoin,
-  #content13 .ramcoin,
-  #content14 .ramcoin,
-  #content15 .ramcoin,
-  #content16 .ramcoin,
-  #content17 .ramcoin,
-  #content18 .ramcoin,
-  #content19 .ramcoin {
-    left: 27em;
-  }
-}
-
-@media (max-width: 710px) {
-  body,
-  .container {
-    overflow-x: hidden;
-  }
-  .sidebar {
-    right: 8em;
-  }
-
-  .img-fundo {
-    width: 25em;
-    left: 8em;
-  }
-
-  #titulo-inicial {
-    width: 90%;
-  }
-
-  #texto-inicial {
-    width: 80%;
-  }
-
-  .brilho-amarelo {
-    bottom: 28em;
-    right: 0.5em;
-  }
-
-  .brilho-verde {
-    right: 8em;
-  }
-
-  .brilho-azul {
-    bottom: 18em;
-  }
-
-  .brilho-roxo {
-    left: 14em;
-  }
-
-  .teclado {
-    left: 23em;
-  }
-
-  .brilho-amarelo2 {
-    bottom: 29em;
-    left: 14em;
-  }
-
-  .icone-roxo {
-    left: 23em;
-  }
-
-  #scrollTarget {
-    width: 35em;
-    margin: auto 45px;
-  }
-
-  .carrossel-container {
-    margin: 100px 180px;
-  }
-
-  .menu {
-    width: 38em;
-  }
-
-  .sub-buttons-container {
-    width: 35em;
-  }
-
-  .fundo-gabinete,
-  .fundo-baias,
-  .fundo-slots,
-  .fundo-organizador,
-  .fundo-painel,
-  .fundo-gpu,
-  .fundo-placa-mae,
-  .fundo-memoria-ram,
-  .fundo-hdd,
-  .fundo-psu,
-  .fundo-cpu,
-  .fundo-monitor,
-  .fundo-teclado,
-  .fundo-mouse,
-  .fundo-alto-falante,
-  .fundo-ventoinhas,
-  .fundo-dissipadores,
-  .fundo-filtro,
-  .fundo-cooler {
-    width: 38em;
-    height: 25em;
-  }
-
-  .content {
-    padding: 0;
-  }
-
-  #content1 .ramcoin,
-  #content2 .ramcoin,
-  #content3 .ramcoin,
-  #content4 .ramcoin,
-  #content5 .ramcoin,
-  #content6 .ramcoin,
-  #content7 .ramcoin,
-  #content8 .ramcoin,
-  #content9 .ramcoin,
-  #content10 .ramcoin,
-  #content11 .ramcoin,
-  #content12 .ramcoin,
-  #content13 .ramcoin,
-  #content14 .ramcoin,
-  #content15 .ramcoin,
-  #content16 .ramcoin,
-  #content17 .ramcoin,
-  #content18 .ramcoin,
-  #content19 .ramcoin {
-    left: 23em;
-  }
-
-  .circulo-estrutura,
-  .circulo-internos,
-  .circulo-perifericos,
-  .circulo-resfriamento {
-    top: 60%;
-  }
-
-  .img-estrutura,
-  .img-monitor,
-  .img-ventoinhas {
-    bottom: 4em;
-  }
-
-  .img-slots,
-  .img-painel,
-  .img-alto-falante {
-    bottom: 3em;
-  }
-
-  .img-gpu,
-  .img-memoria-ram,
-  .img-hdd,
-  .img-cpu,
-  .img-mouse,
-  .img-dissipadores,
-  .img-filtro,
-  .img-cooler {
-    bottom: 2em;
-  }
-
-  .footer-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .geral,
-  .redes-sociais,
-  .contato {
-    margin-left: 0;
-    margin-top: 30px;
-    width: 270px;
-  }
-
-  .descricao-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    margin-left: 2em;
-  }
-
-  .logo {
-    width: 100%;
-  }
-
-  .copyright {
-    margin: 5em;
-  }
-}
-
-@media (max-width: 610px) {
-  .footer-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .footer-container input[type="email"] {
-    width: 310px;
-  }
-
-  .geral,
-  .redes-sociais,
-  .contato {
-    margin-left: 55px;
-    margin-top: 30px;
-  }
-
-  .descricao-footer {
-    margin-left: 1em;
-  }
-
-  .logo {
-    width: 100%;
-  }
-
-  .copyright {
-    margin: 5em;
-  }
-}
-
-@media (max-width: 425px) {
+@media (max-width: 421px) {
   .container {
     display: flex;
     flex-direction: column;
@@ -1036,5 +212,151 @@
 
   .copyright {
     margin: 5em;
+  }
+}
+
+/* Tablets em modo retrato (tela vertical) */
+@media (max-width: 768px) {
+  /* Estilos aqui */
+  .flor img {
+    visibility: hidden;
+  }
+
+  .logoBranca-small {
+    display: block;
+    width: 150px;
+  }
+
+  p {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 895px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+  }
+  nav ul {
+    justify-content: space-between;
+    position: static;
+    padding-left: 0;
+  }
+
+  nav a {
+    padding-right: 30px;
+  }
+
+  #logo {
+    margin-left: 20px;
+  }
+
+  #logo-nav {
+    margin-left: 20px;
+  }
+  #perfil {
+    display: none;
+  }
+
+  nav a:visited {
+    text-decoration: none;
+    transition: color 1.5s ease-out 1ms;
+  }
+
+  nav a:hover {
+    color: var(--branco);
+    text-decoration-line: underline;
+  }
+}
+
+/* Tablets em modo paisagem (tela horizontal) */
+@media (max-width: 1024px) {
+  /* Estilos aqui */
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #perfil {
+    float: left;
+    display: none;
+  }
+
+  #drop {
+    display: block;
+  }
+
+  .info-box {
+    width: auto;
+    text-align: center;
+    width: 50%;
+  }
+
+  .descricao-footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    max-width: 100%;
+  }
+
+  .copyright {
+    margin-left: 80px;
+  }
+}
+
+/* Laptops pequenos */
+@media (max-width: 1280px) {
+  /* Estilos aqui */
+  .logoBranca {
+    display: none;
+  }
+}
+
+/* Laptops e desktops */
+@media (max-width: 1440px) {
+  /* Estilos aqui */
+}
+
+@media (min-width: 1920px) {
+  .menu {
+    width: 45em;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(234, 236, 240, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    align-items: center;
+  }
+
+  .ramcoin {
+    position: absolute;
+    bottom: 3em;
+    left: 42em;
+    margin-top: 25px;
+  }
+
+  /* Adjustments for text */
+  .p-gabinete,
+  .p-baias,
+  .p-slots,
+  .p-organizador,
+  .p-painel,
+  .p-hdd,
+  .p-cpu {
+    font-size: 15px;
+    width: 50%;
+    position: relative;
+    top: 1em;
+    left: 13em;
+  }
+
+  /* Estrutura-specific */
+  .titulo-estrutura,
+  .titulo-internos,
+  .titulo-perifericos,
+  .titulo-resfriamento {
+    font-size: 16px;
   }
 }

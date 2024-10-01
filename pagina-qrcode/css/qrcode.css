@@ -68,7 +68,7 @@ body {
 .info-box {
   font-family: "Poppins-medium", sans-serif;
   margin: auto;
-  width: 50%;
+  width: 65%;
   display: flex;
   flex-direction: column;
   margin-top: 80px;
@@ -230,6 +230,11 @@ body {
 
 .select {
   white-space: nowrap;
+}
+
+.down-salvar {
+  position: relative;
+  right: 2em;
 }
 
 #download {

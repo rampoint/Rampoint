@@ -1,8 +1,263 @@
-/* Dispositivos móveis pequenos (em pé) */
-@media (min-width: 320px) and (max-width: 421px) {
+@media (min-width: 1920px) {
+  .content-sem-perfil {
+    margin-left: auto;
+    margin-right: 16em;
+  }
 
-   /* footer */
-   .footer-container {
+  .brilho-verde {
+    bottom: 8em;
+    left: 0;
+    right: 5em;
+  }
+
+  .moeda-verde {
+    right: 10em;
+    bottom: 7em;
+  }
+
+  #brilho-amarelo {
+    top: 5em;
+    right: 17em;
+  }
+
+  .moeda-amarela {
+    position: relative;
+    right: 9em;
+  }
+
+  #estrela {
+    top: 4em;
+    right: 11em;
+  }
+
+  #brilho-roxo {
+    left: 3em;
+  }
+
+  .moeda-verde2 {
+    position: relative;
+    left: 3em;
+    bottom: 0;
+  }
+
+  .moeda-roxa {
+    position: relative;
+    left: 3em;
+  }
+}
+
+@media (max-width: 1920px) {
+  .content-sem-perfil {
+    margin-left: auto;
+    margin-right: 16em;
+  }
+
+  .brilho-verde {
+    bottom: 8em;
+    left: 0;
+    right: 5em;
+  }
+
+  .moeda-verde {
+    right: 10em;
+    bottom: 7em;
+  }
+
+  #brilho-amarelo {
+    top: 5em;
+    right: 17em;
+  }
+
+  .moeda-amarela {
+    position: relative;
+    right: 9em;
+  }
+
+  #estrela {
+    top: 4em;
+    right: 11em;
+  }
+
+  #brilho-roxo {
+    left: 3em;
+  }
+
+  .moeda-verde2 {
+    position: relative;
+    left: 3em;
+    bottom: 0;
+  }
+
+  .moeda-roxa {
+    position: relative;
+    left: 3em;
+  }
+}
+
+@media (max-width: 1580px) {
+  .content-sem-perfil {
+    margin-right: 4em;
+  }
+
+  .brilho-verde {
+    left: 6em;
+    right: 0;
+  }
+
+  .moeda-verde {
+    right: 4em;
+  }
+
+  .moeda-amarela {
+    right: 6em;
+  }
+
+  #estrela {
+    right: 7em;
+  }
+
+  .moeda-verde2,
+  #brilho-roxo {
+    left: 0;
+  }
+
+  .moeda-roxa {
+    left: 1em;
+  }
+}
+
+@media (max-width: 1280px) {
+  .brilho-verde {
+    left: 9em;
+  }
+
+  .moeda-verde {
+    bottom: 6em;
+    left: 2em;
+    right: 0;
+  }
+
+  .moeda-amarela {
+    top: 1em;
+    left: 3em;
+    right: 0em;
+  }
+
+  #brilho-amarelo {
+    top: 4em;
+    right: 7em;
+  }
+
+  #estrela {
+    right: 0;
+    left: 2em;
+    top: 5.5em;
+  }
+
+  #brilho-roxo {
+    left: -2em;
+    bottom: 6em;
+  }
+
+  .moeda-verde2 {
+    left: -4em;
+  }
+
+  .moeda-roxa {
+    left: -2em;
+  }
+
+  .codigo-l2 select {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 1024px) {
+  #drop {
+    display: block;
+  }
+
+  .info-box {
+    width: auto;
+    text-align: center;
+    width: 50%;
+  }
+
+  .descricao-footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    max-width: 100%;
+  }
+
+  .copyright {
+    margin-left: 80px;
+  }
+
+  .container-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .texto {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .texto-ram {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 985px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+  }
+  /* nav ul {
+    width: 57em;
+    justify-content: space-between;
+    position: static;
+    padding-left: 0;
+  } */
+
+  nav a {
+    padding-right: 30px;
+  }
+
+  #logo {
+    margin-left: 20px;
+  }
+
+  #logo-nav {
+    margin-left: 20px;
+  }
+
+  #perfil {
+    display: none;
+  }
+
+  nav a:visited {
+    text-decoration: none;
+    transition: color 1.5s ease-out 1ms;
+  }
+
+  nav a:hover {
+    color: var(--branco);
+    text-decoration-line: underline;
+  }
+
+  .sidebar {
+    right: 1em;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 421px) {
+  /* footer */
+  .footer-container {
     width: 100%;
     height: auto;
     position: none;
@@ -55,7 +310,6 @@
 
 /* Dispositivos móveis médios (em pé) */
 @media (max-width: 375px) {
-
   /* Estilos aqui */
   .flor img {
     visibility: hidden;
@@ -159,70 +413,6 @@
   .qrcode-salvar {
     flex-direction: column;
   }
-}
-
-/* Tablets em modo paisagem (tela horizontal) */
-@media (max-width: 1024px) {
-  /* Estilos aqui */
-
-  #perfil {
-    float: left;
-    display: none;
-  }
-
-  #drop {
-    display: block;
-  }
-
-  .info-box {
-    width: auto;
-    text-align: center;
-    width: 50%;
-  }
-
-  .descricao-footer {
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 40px;
-    max-width: 100%;
-  }
-
-  .copyright {
-    margin-left: 80px;
-  }
-
-  .container-grid {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .texto {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .texto-ram {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-/* Laptops pequenos */
-@media (max-width: 1280px) {
-
-  /* Estilos aqui */
-  .logoBranca {
-    display: none;
-  }
-
-  .codigo-l2 select {
-    margin-left: 0px;
-  }
-}
-
-/* Telas grandes */
-@media (max-width: 1920px) {
-  /* Estilos aqui */
 }
 
 /* header layout */

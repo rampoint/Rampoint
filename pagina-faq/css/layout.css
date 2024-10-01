@@ -1,4 +1,274 @@
-/* Dispositivos móveis pequenos (em pé) */
+@media (min-width: 1920px) {
+  .content-sem-perfil {
+    margin-left: auto;
+    margin-right: 4em;
+  }
+
+  .img-fundo {
+    margin-left: 45em;
+  }
+
+  .lado-esquerdo {
+    left: 12em;
+  }
+
+  .lado-direito {
+    left: 35em;
+  }
+
+  .faq-container {
+    margin-left: 13em;
+  }
+}
+
+@media (max-width: 1920px) {
+  .content-sem-perfil {
+    margin-left: auto;
+    margin-right: 4em;
+  }
+
+  .img-fundo {
+    margin-left: 45em;
+  }
+
+  .lado-esquerdo {
+    left: 12em;
+  }
+
+  .lado-direito {
+    left: 35em;
+  }
+
+  .faq-container {
+    margin-left: 13em;
+  }
+}
+
+@media (max-width: 1367px) {
+  #titulo-inicial {
+    width: 30%;
+    right: 856px;
+  }
+
+  .faq-container {
+    margin-left: 5em;
+  }
+}
+
+@media (max-width: 1325px) {
+  #titulo-inicial {
+    width: 32%;
+    right: 776px;
+  }
+
+  #texto-inicial {
+    right: 51em;
+  }
+
+  .img-fundo {
+    margin-left: 33em;
+  }
+
+  .lado-esquerdo {
+    left: 6em;
+  }
+
+  .lado-direito {
+    left: 28em;
+  }
+
+  .faq-container {
+    margin-left: 5em;
+  }
+}
+
+@media (max-width: 1338px) {
+  #titulo-inicial {
+    width: 33%;
+    right: 743px;
+  }
+
+  #texto-inicial {
+    width: 30%;
+    top: 22em;
+    right: 48em;
+  }
+
+  .faq-sidebar {
+    margin: 0 0em 0 -1em;
+  }
+}
+
+@media (max-width: 1195px) {
+  nav ul {
+    width: 97%;
+  }
+
+  .imagem-inicial {
+    width: 70em;
+  }
+
+  .lado-direito {
+    bottom: 23em;
+  }
+
+  #titulo-inicial {
+    width: 34%;
+    right: 663px;
+  }
+
+  #texto-inicial {
+    right: 44em;
+  }
+
+  .container-feedback {
+    margin-left: 13em;
+  }
+}
+
+@media (max-width: 1166px) {
+  #titulo-inicial {
+    width: 35%;
+  }
+
+  #texto1 {
+    width: 75%;
+  }
+}
+
+@media (max-width: 1133px) {
+  #titulo-inicial {
+    width: 36%;
+    right: 633px;
+  }
+
+  #texto-inicial {
+    right: 43em;
+  }
+}
+
+@media (max-width: 1100px) {
+  #titulo-inicial {
+    width: 37%;
+    right: 610px;
+  }
+
+  #texto-inicial {
+    right: 42em;
+  }
+}
+
+@media (max-width: 1080px) {
+  .imagem-inicial {
+    width: 63em;
+  }
+
+  #titulo-inicial {
+    width: 38%;
+    right: 560px;
+  }
+
+  #texto-inicial {
+    right: 40em;
+  }
+}
+
+@media (max-width: 1045px) {
+  #titulo-inicial {
+    width: 39%;
+  }
+}
+
+@media (max-width: 1035px) {
+  #titulo-inicial {
+    width: 40%;
+    right: 530px;
+  }
+
+  #texto-inicial {
+    right: 39em;
+  }
+
+  .lado-esquerdo {
+    left: 7em;
+  }
+
+  .lado-direito {
+    left: 26em;
+  }
+
+  #pesquisa {
+    width: 45em;
+  }
+}
+
+@media (max-width: 995px) {
+  .hideOnMobile {
+    display: none;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  nav ul {
+    justify-content: space-between;
+    position: static;
+    padding-left: 0;
+  }
+
+  nav a {
+    padding-right: 30px;
+  }
+
+  #logo,
+  #logo-nav {
+    margin-left: 20px;
+  }
+
+  #perfil {
+    display: none;
+  }
+
+  nav a:visited {
+    text-decoration: none;
+    transition: color 1.5s ease-out 1ms;
+  }
+
+  nav a:hover {
+    color: var(--branco);
+    text-decoration-line: underline;
+  }
+
+  .sidebar {
+    height: 75vh;
+  }
+
+  #titulo-inicial {
+    width: 41%;
+  }
+
+  #titulo1 {
+    margin: 1em 0 0.5em 4em;
+  }
+
+  #texto1 {
+    margin: 1em 0 0.9em 7.2em;
+  }
+
+  .container-feedback {
+    margin-left: 6em;
+  }
+
+  .lista-suporte {
+    margin-left: 7.5em;
+  }
+
+  .footer-logo {
+    margin-top: 40%;
+  }
+}
+
 @media (min-width: 320px) and (max-width: 421px) {
   .img-fundo {
     width: 73em;
@@ -85,177 +355,4 @@
     width: 100%;
   }
   /* footer */
-}
-
-/* Dispositivos móveis médios (em pé) */
-@media (max-width: 375px) {
-  .flor img {
-    visibility: hidden;
-  }
-
-  .email {
-    flex-wrap: wrap;
-  }
-}
-
-/* Dispositivos móveis grandes (em pé) */
-@media (max-width: 425px) {
-  .footer-container .logo {
-    margin: 0;
-    bottom: 20px;
-    flex-direction: column;
-  }
-
-  .flor img {
-    visibility: hidden;
-  }
-
-  .email {
-    margin-left: 10px;
-  }
-
-  .footer-container .descricao-footer {
-    margin-top: 0;
-  }
-
-  .descricao-footer {
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 40px;
-    max-width: 100%;
-  }
-
-  .endereco {
-    max-width: 100%;
-  }
-
-  .footer-container button {
-    margin-right: 10px;
-  }
-
-  .logoBranca-small {
-    width: 150px;
-  }
-
-  h3 {
-    margin-top: 15px;
-  }
-}
-
-/* Tablets e dispositivos móveis em modo paisagem */
-@media (max-width: 768px) {
-  .flor img {
-    visibility: hidden;
-  }
-
-  .logoBranca-small {
-    display: block;
-    width: 150px;
-  }
-
-  p {
-    margin-bottom: 10px;
-  }
-
-  .faq-container {
-    flex-direction: column;
-    text-align: center;
-  }
-  .faq-sidebar {
-    margin: 100px;
-  }
-
-  .perguntas {
-    text-align: center;
-    align-items: center;
-  }
-}
-
-/* Telas maiores (768px a 1024px) */
-@media (min-width: 769px) and (max-width: 1024px) {
-  header {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  #perfil {
-    display: none;
-  }
-
-  #drop {
-    display: block;
-  }
-
-  .info-box {
-    text-align: center;
-    width: 50%;
-  }
-
-  .descricao-footer {
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 40px;
-    max-width: 100%;
-  }
-
-  .copyright {
-    margin-left: 80px;
-  }
-}
-
-/* Dispositivos médios a grandes */
-@media (min-width: 1025px) and (max-width: 1280px) {
-  .logoBranca {
-    display: none;
-  }
-}
-
-/* Laptops e desktops maiores */
-@media (min-width: 1281px) and (max-width: 1440px) {
-  /* Estilos aqui */
-}
-
-/* Telas grandes */
-@media (min-width: 1441px) and (max-width: 1920px) {
-  /* Estilos aqui */
-}
-
-/* Ocultar elementos em dispositivos móveis */
-@media (max-width: 895px) {
-  .hideOnMobile {
-    display: none;
-  }
-
-  .menu-button {
-    display: block;
-  }
-
-  nav ul {
-    justify-content: space-between;
-    position: static;
-    padding-left: 0;
-  }
-
-  nav a {
-    padding-right: 30px;
-  }
-
-  #logo,
-  #logo-nav {
-    margin-left: 20px;
-  }
-
-  #perfil {
-    display: none;
-  }
-
-  nav a:visited {
-    text-decoration: none;
-    transition: color 1.5s ease-out 1ms;
-  }
-
-  nav a:hover {
-    color: var(--branco);
-    text-decoration-line: underline;
-  }
 }

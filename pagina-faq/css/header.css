@@ -1,12 +1,13 @@
 @import url(../css/font.css);
-
 @import url(../css/cores.css);
 
 nav {
   background-color: var(--branco);
   margin-bottom: 0px;
 }
-
+#perfil {
+  width: 45px;
+}
 nav ul {
   background-color: var(--branco);
   width: 100%;
@@ -19,10 +20,8 @@ nav ul {
   margin-right: 15px;
   position: fixed;
   height: 4em;
-  z-index: 5;
-}
-#perfil{
-  width: 45px;
+  margin: 0;
+  z-index: 100;
 }
 
 #logo-nav {
@@ -35,6 +34,7 @@ nav ul {
 
 nav li {
   height: 50px;
+  font-size: 100%;
 }
 
 .sidebar nav a {
@@ -75,12 +75,11 @@ nav a:hover {
   align-items: center;
   margin-left: 160px;
   margin-top: 30px;
-  padding-bottom: 30px;
 }
 
 #fechar {
   margin-left: 172px;
-  margin-top: 25px;
+  margin-top: 5px;
 }
 
 .menus {
@@ -95,7 +94,7 @@ nav a:hover {
   position: fixed;
   top: 0;
   right: 0;
-  height: 100vh;
+  height: 65vh;
   width: 250px;
   background-color: var(--azul);
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
@@ -108,16 +107,14 @@ nav a:hover {
   margin: 10px 10px 10px 10px;
   font-family: "Batangas";
 }
-
 .sidebar li {
   width: 100%;
+  margin-top: 20px;
 }
-
 .sidebar a {
   width: 100%;
   color: var(--branco);
 }
-
 .menu-button {
   display: none;
 }
@@ -130,17 +127,22 @@ nav a:hover {
 }
 
 .footer-logo {
-  font-size: 40px;
+  font-size: 50px;
   width: 100px;
   height: 25px;
-  margin-top: 160px;
+  margin-top: 90%;
+}
+
+@media (max-height: 850px) {
+  .footer-logo {
+    margin-top: 10%;
+  }
 }
 
 #footer-logo {
   padding: 0;
   margin-left: 20px;
 }
-
 #footer-logo:last-child {
   padding: 0;
 }

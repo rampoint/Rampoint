@@ -6,43 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/faq.css">
+    <link rel="stylesheet" href="./css/layout.css">
 
     <link rel="shortcut icon" href="./img/rostoCirculo.png" type="image/x-icon">
     <title>Fale Conosco</title>
 </head>
 
-<script>
-    function showSidebar() {
-        const sidebar = document.querySelector('.sidebar')
-        sidebar.style.display = 'flex'
-    }
-    function hideSidebar() {
-        const sidebar = document.querySelector('.sidebar')
-        sidebar.style.display = 'none'
-    }
-</script>
-
 <body>
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
     <nav>
         <ul class="sidebar">
             <li onclick=hideSidebar()><a href="#"><img id="fechar" src="img/fechar.svg" alt="fechar nav"></a></li>
-            <li id="perfil-sidebar"><img src="img/perfil.svg" alt="" srcset="">
-                <div class="menus">
-            <li><a href="../pagina-inicial/inicial.html">HOME</a></li>
-            <li><a href="../pagina-play/play.html">PLAY</a></li>
-            <li><a href="../pagina-inicial/inicial.html" id="ecoponto">ECOPONTOS</a></li>
-            <li><a href="../pagina-materiais/materiais.html">MATERIAIS</a></li>
-            <li><a href="../pagina-qrcode/index.html">QR-CODE</a></li>
-            <li><a href="../pagina-faq/faq.html">FALE CONOSCO</a></li>
+            <li id="perfil-sidebar"><img src="img/perfil2.svg" alt="" srcset=""></li>
+            <div class="menus">
+                <li><a href="../pagina-inicial/inicial.html" id="menuMobile">HOME</a></li>
+                <li><a href="../pagina-play/play.html" id="menuMobile">PLAY</a></li>
+                <li><a href="../pagina-inicial/inicial.html" id="ecoponto menuMobile">ECOPONTOS</a></li>
+                <li><a href="../pagina-materiais/materiais.html" id="menuMobile">MATERIAIS</a></li>
+                <li><a href="../pagina-qrcode/index.html" id="menuMobile">QR-CODE</a></li>
+                <li><a href="../pagina-faq/faq.html" id="menuMobile">FALE CONOSCO</a></li>
+            </div>
             <div class="footer-logo">
-                <a id="footer-logo">ram</a>
-                <a id="footer-logo">point.</a>
+                <img src="./img/logoBranca.svg" id="footer-logo" alt="">
             </div>
+
             </div>
-            </li>
         </ul>
         <ul>
             <li id="logo-nav"><img src="img/ram.svg" alt="ram">
@@ -64,9 +64,11 @@
                             <p class="texto-perfil" id="nome_modal"></p>
                             <div class="grupo">
                                 <hr class="linha">
-                                <a class="cadastro" href="../pagina-perfil/perfil.html"><span style="color: black;">Ir para perfil</span></a>
+                                <a class="cadastro" href="../pagina-perfil/perfil.html"><span style="color: black;">Ir
+                                        para perfil</span></a>
                                 <hr class="linha">
-                                <a href="../pagina-login/index.html" onclick="logout()" class="login"><span style="color: red;">Sair</span></a>
+                                <a href="../pagina-login/index.html" onclick="logout()" class="login"><span
+                                        style="color: red;">Sair</span></a>
                             </div>
                         </div>
                     </div>
@@ -81,36 +83,9 @@
                         <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
                     </svg></a></li>
         </ul>
-
-
-
-        <!-- modal sem perfil -->
-
-        <!-- modal com perfil -->
-        <!-- <div class="modal-com-perfil">
-                <div class="content-com-perfil">
-                    <p class="perfil">Perfil</p>
-
-                    <div class="fundo">
-                        <img src="./img/user.svg" id="foto-perfil" alt="Foto de perfil">
-                        <p class="texto-perfil">Sem login</p>
-                        <div class="grupo">
-                            <hr class="linha"></hr>
-                            <a class="cadastro">Cadastrar-se</a>
-                            <hr class="linha"></hr>
-                            <a class="login">Fazer login</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <button class="modalBtn"><img id="perfil" src="img/perfil.svg" alt="perfil"></button> -->
-        <!-- modal com perfil -->
     </nav>
 
-
     <div class="container">
-
         <section class="imagem-fundo">
             <div class="imagem-inicial">
                 <img src="./img/imagem-fundo.svg" class="img-fundo" alt="">
@@ -529,11 +504,10 @@
                     experiência com você!
                 </p>
                 <div class="container-feedback">
-                    <!-- <img src="./img/ram-sentado.svg" id="ram-sentado" alt="Imagem do mascote 'Ram'"> -->
                     <form action="" id="formulario-feedback" class="formulario-feedback">
                         <div class="container-email">
                             <label for="email" id="campo-email">Seu email</label>
-                            <input type="email" name="email" id="email" placeholder="Insira seu email aqui...">
+                            <input type="email" name="email" id="email-feedback" placeholder="Insira seu email aqui...">
                         </div>
 
                         <div id="bg-feedback">
@@ -620,7 +594,7 @@
             <script src="../js/firebase-init.js"></script>
             <script src="../js/register.js"></script>
             <script src="../js/logout.js"></script>
-        </div>
+    </div>
 </body>
 
 </html>

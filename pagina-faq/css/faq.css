@@ -32,7 +32,9 @@ body {
 }
 
 .img-fundo {
-  margin-top: 10em;
+  width: 35%;
+  margin-top: 8em;
+  margin-left: 35em;
 }
 
 #titulo-inicial {
@@ -67,7 +69,7 @@ body {
 
 .lado-direito {
   position: relative;
-  bottom: 31em;
+  bottom: 28em;
   left: 30em;
 }
 
@@ -85,7 +87,7 @@ body {
 
 .lado-esquerdo {
   position: relative;
-  bottom: 18em;
+  bottom: 12em;
   left: 8em;
 }
 
@@ -164,115 +166,7 @@ body {
   color: var(--preto);
   margin: 1em 0 0.9em 10.2em;
   font-size: 1em;
-  width: 70;
-}
-
-@media (min-width: 320px) and (max-width: 421px) {
-  .img-fundo {
-    width: 73em;
-    position: relative;
-    right: 17em;
-    margin-bottom: 12em;
-    z-index: -1;
-  }
-
-  #titulo-inicial {
-    font-size: 3em;
-    width: 80%;
-    text-align: center;
-    line-height: 0.9em;
-    position: absolute;
-    top: 8em;
-    left: 1em;
-    z-index: 1;
-  }
-  
-  #texto-inicial {
-    width: 75%;
-    line-height: 1.5em;
-    text-align: center;
-    position: absolute;
-    top: 31em;
-    right: 3em;
-  }
-
-  .lado-direito {
-    position: relative;
-    bottom: 43em;
-    left: -7.5em;
-  }
-  
-  .lado-esquerdo {
-    position: relative;
-    bottom: 30em;
-    left: 9.5em;
-  }
-
-  /* footer */
-  .footer-container {
-    width: 100%;
-    height: auto;
-    position: none;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .logoBranca {
-    display: none;
-  }
-
-  .geral {
-    margin-left: 55px;
-  }
-
-  .redes-sociais,
-  .contato {
-    margin-top: 30px;
-    margin-left: 55px;
-  }
-
-  .footer-container .descricao-footer ul {
-    list-style-type: none;
-    padding: 0px 5px;
-  }
-
-  .descricao-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0px;
-    width: 100%;
-  }
-
-  .email {
-    width: 200px;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    margin: 0 55px;
-  }
-
-  #email {
-    height: 20px;
-  }
-
-  .footer-container .logo {
-    width: 100%;
-  }
-  /* footer */
-}
-
-@media (max-width: 768px) {
-  #titulo1 {
-    margin: 10px 0px 10px 0px;
-    text-align: center;
-  }
-
-  #texto1 {
-    margin: 10px 0px 10px 0px;
-    text-align: center;
-  }
+  width: 70%;
 }
 
 .perifericos {
@@ -286,7 +180,7 @@ body {
 }
 
 .duvida {
-  margin-top: 1.5em;
+  margin-top: 2.5em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -473,8 +367,8 @@ body {
 .formulario-feedback {
   display: flex;
   flex-direction: column;
-  background-color: var(--cinza-claro);
-  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.13);
+  background-color: #f8f8ff;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
   width: 35em;
   height: 26em;
   margin-top: 1em;
@@ -495,19 +389,20 @@ body {
   margin-top: 1em;
 }
 
-#email {
+#email-feedback {
   font-family: "Poppins-semibold";
-  background-color: var(--branco);
+  background-color: rgba(42, 85, 194, 0.07);
   border: none;
   outline: none;
   border-radius: 15px;
-  width: 30em;
+  width: 40em;
   padding: 0.5em;
   margin-top: 1em;
 }
 
 #feedback {
-  background-color: var(--branco);
+  font-family: "Poppins-semibold";
+  background-color: rgba(42, 85, 194, 0.07);
   border: none;
   outline: none;
   border-radius: 15px;
@@ -520,15 +415,15 @@ body {
   resize: none;
 }
 
-#email::placeholder {
+#email-feedback::placeholder {
   font-family: "Poppins-semibold";
-  color: var(--cinza);
+  color: rgba(42, 85, 194, 0.4);
   font-size: 1em;
 }
 
-#feedback {
+#feedback::placeholder {
   font-family: "Poppins-semibold";
-  color: var(--preto);
+  color: rgba(42, 85, 194, 0.4);
 }
 
 #btn-feedback {

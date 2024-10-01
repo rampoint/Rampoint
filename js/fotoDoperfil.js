@@ -53,7 +53,7 @@ function pegarValorFotoEmocionado() {
     .set({
       fotoPerfil:
         "https://firebasestorage.googleapis.com/v0/b/rampoint-81352.appspot.com/o/imagens%2FGroup%20526.svg?alt=media&token=0f273e2b-4392-468a-9819-a7378ef88957",
-      fotoMensage: ram,
+      fotoMensage: ram+genero(),
       cor_foto: "#9D4EDD",
       cor_texto: "#9D4EDD",
     })
@@ -106,7 +106,7 @@ function pegarValorFotoEntediado() {
     .set({
       fotoPerfil:
         "https://firebasestorage.googleapis.com/v0/b/rampoint-81352.appspot.com/o/imagens%2FGroup%20517.svg?alt=media&token=dee8203f-843f-421a-b955-395ff4407476",
-      fotoMensage: ram,
+      fotoMensage: ram+genero(),
       cor_foto: "#808080",
       cor_texto: "#808080",
     })
@@ -133,7 +133,7 @@ function pegarValorFotoFurioso() {
     .set({
       fotoPerfil:
         "https://firebasestorage.googleapis.com/v0/b/rampoint-81352.appspot.com/o/imagens%2FGroup%20519.svg?alt=media&token=83bd63a2-ab4f-4ef1-9141-7534da8f3ab7",
-      fotoMensage: ram,
+      fotoMensage: ram+genero(),
       cor_foto: "#E10531",
       cor_texto: "#850014",
     })
@@ -161,7 +161,7 @@ function pegarValorFotoApaixonado() {
     .set({
       fotoPerfil:
         "https://firebasestorage.googleapis.com/v0/b/rampoint-81352.appspot.com/o/imagens%2FGroup%20524.svg?alt=media&token=d101ece0-987f-45a8-9631-a29763acd20a",
-      fotoMensage: ram,
+      fotoMensage: ram+genero(),
       cor_foto: "#FF9090",
       cor_texto: "#E6322B",
     })
@@ -240,4 +240,15 @@ function mostrarPopupAlteracaoMood(img) {
   setTimeout(() => {
       popup.style.top = '-120px'; // Volta para fora da tela
   }, 3000); // 3000 milissegundos = 3 segundos
+}
+
+function genero(){
+var genero = document.getElementById('genero-mudar').value
+  if (genero == 'feminino'){
+    return "a"
+  }else if (genero == 'masculino'){
+    return 'o'
+  }else{
+    return 'x'
+  } 
 }

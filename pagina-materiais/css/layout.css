@@ -1179,3 +1179,149 @@
     margin: 5em;
   }
 }
+
+/* Tablets em modo retrato (tela vertical) */
+@media (max-width: 768px) {
+  /* Estilos aqui */
+  .flor img {
+    visibility: hidden;
+  }
+
+  .logoBranca-small {
+    display: block;
+    width: 150px;
+  }
+
+  p {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 895px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+  }
+  nav ul {
+    justify-content: space-between;
+    position: static;
+    padding-left: 0;
+  }
+
+  nav a {
+    padding-right: 30px;
+  }
+
+  #logo {
+    margin-left: 20px;
+  }
+
+  #logo-nav {
+    margin-left: 20px;
+  }
+  #perfil {
+    display: none;
+  }
+
+  nav a:visited {
+    text-decoration: none;
+    transition: color 1.5s ease-out 1ms;
+  }
+
+  nav a:hover {
+    color: var(--branco);
+    text-decoration-line: underline;
+  }
+}
+
+/* Tablets em modo paisagem (tela horizontal) */
+@media (max-width: 1024px) {
+  /* Estilos aqui */
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #perfil {
+    float: left;
+    display: none;
+  }
+
+  #drop {
+    display: block;
+  }
+
+  .info-box {
+    width: auto;
+    text-align: center;
+    width: 50%;
+  }
+
+  .descricao-footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    max-width: 100%;
+  }
+
+  .copyright {
+    margin-left: 80px;
+  }
+}
+
+/* Laptops pequenos */
+@media (max-width: 1280px) {
+  /* Estilos aqui */
+  .logoBranca {
+    display: none;
+  }
+}
+
+/* Laptops e desktops */
+@media (max-width: 1440px) {
+  /* Estilos aqui */
+}
+
+@media (min-width: 1920px) {
+  .menu {
+    width: 45em;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(234, 236, 240, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    align-items: center;
+  }
+
+  .ramcoin {
+    position: absolute;
+    bottom: 3em;
+    left: 42em;
+    margin-top: 25px;
+  }
+
+  /* Adjustments for text */
+  .p-gabinete,
+  .p-baias,
+  .p-slots,
+  .p-organizador,
+  .p-painel,
+  .p-hdd,
+  .p-cpu {
+    font-size: 15px;
+    width: 50%;
+    position: relative;
+    top: 1em;
+    left: 13em;
+  }
+
+  /* Estrutura-specific */
+  .titulo-estrutura,
+  .titulo-internos,
+  .titulo-perifericos,
+  .titulo-resfriamento {
+    font-size: 16px;
+  }
+}

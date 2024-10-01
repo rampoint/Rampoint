@@ -1,11 +1,12 @@
 @import url(../css/font.css);
+
 @import url(../css/cores.css);
 
 nav {
   background-color: var(--branco);
   margin-bottom: 0px;
+  z-index: 10;
 }
-
 nav ul {
   background-color: var(--branco);
   width: 100%;
@@ -19,7 +20,10 @@ nav ul {
   position: fixed;
   height: 4em;
   margin: 0;
-  z-index: 1000;
+  z-index: 100;
+}
+#perfil{
+  width: 45px;
 }
 
 #logo-nav {
@@ -32,7 +36,7 @@ nav ul {
 
 nav li {
   height: 50px;
-
+  font-size: 100%;
 }
 
 .sidebar nav a {
@@ -41,6 +45,7 @@ nav li {
   display: flex;
   align-items: center;
   color: var(--branco);
+
 }
 
 nav a {
@@ -72,29 +77,27 @@ nav a:hover {
   display: flex;
   align-items: center;
   margin-left: 160px;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 #fechar {
   margin-left: 172px;
-  margin-top: 35px;
+  margin-top: 5px;
 }
 
-
-#menuMobile {
-  font-family: "Poppins-semibold";
+.menus {
+  margin-top: 20px;
 }
 
 /*    
   nav li:first-child{
     margin-right: 280px;
   }  */
-
 .sidebar {
   position: fixed;
   top: 0;
   right: 0;
-  height: 98vh;
+  height: 100vh;
   width: 250px;
   background-color: var(--azul);
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
@@ -109,7 +112,7 @@ nav a:hover {
 }
 .sidebar li {
   width: 100%;
-  margin-top: 0px;
+  margin-top:20px;
 }
 .sidebar a {
   width: 100%;
@@ -127,42 +130,22 @@ nav a:hover {
 }
 
 .footer-logo {
-  margin-top: 10em;
-  
+  font-size: 50px;
+  width: 100px;
+  height: 25px;
+  margin-top: 90%;
 }
 
-@media (max-width: 670px) {
-  .footer-logo{
-    margin-top:5em;
+@media (max-height:850px){
+  .footer-logo {
+    margin-top: 10%;
   }
 }
-/* Dispositivos móveis em modo paisagem (tela horizontal) */
-@media (max-width: 767px) {
-  /* Estilos aqui */
-  .footer-logo{
-    margin-top:3em;
-  }
-}
-
-#footer-logo {
-  margin: 0;
-  width: 150px;
-}
-
-.menus {
-margin-top:60px;
-}
-
-
-
-
-
 
 #footer-logo {
   padding: 0;
   margin-left: 20px;
 }
-
 #footer-logo:last-child {
   padding: 0;
 }
@@ -185,13 +168,13 @@ margin-top:60px;
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .content-sem-perfil {
   background-color: var(--verde);
-  margin-top: 5em;
-  margin-left: 70em;
+  margin-top: 4em;
+  margin-left: 73em;
   padding: 0;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
@@ -202,26 +185,36 @@ margin-top:60px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   /* box-shadow: 0px 4px 0px 4px rgba(0, 0, 0, 0.5) inset; */
 }
+
+.fundo {
+  background-color: var(--branco);
+  width: 15em;
+  height: 14em;
+  border-top-left-radius: 55px;
+  border-top-right-radius: 55px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: -40px;
+}
+
 
 .grupo {
   text-align: start;
   display: flex;
   flex-direction: column;
   margin-left: 15px;
-  /* justify-content: center;
-  align-items: center; */
 }
 
 .perfil,
 .texto-perfil {
-  font-family: "Poppins-medium";
-}
-
-.texto-perfil{
-  padding: 0;
+  font-family: "Poppins-bold";
 }
 
 .cadastro,
@@ -268,8 +261,7 @@ margin-top:60px;
 
 #foto-perfil {
   position: relative;
-  width: 90px;
-  margin-bottom: 1em;
+  width: 100px;
 }
 /* modal sem perfil */
 
@@ -293,7 +285,7 @@ margin-top:60px;
 }
 
 .content-sem-perfil {
-
+  background-color: var(--verde);
   margin-top: 4em;
   margin-left: 73em;
   padding: 0;
@@ -306,9 +298,6 @@ margin-top:60px;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-#perfil{
-  width: 45px;
 }
 
 .fundo {
@@ -325,7 +314,6 @@ margin-top:60px;
   align-items: center;
   justify-content: center;
   margin-top: -40px;
-  
 }
 
 /* .fundo {
@@ -348,12 +336,6 @@ margin-top:60px;
 .texto-perfil {
   font-family: "Poppins-bold";
   font-size: 0.9em;
-  color: var(--branco);
-}
-
-.texto-perfil {
-  margin: 0;
-  margin-right: 5px;
 }
 
 .cadastro,
@@ -367,9 +349,9 @@ margin-top:60px;
   text-decoration: none;
 }
 
-.cadastro span:hover {
+.cadastro:hover {
   color: var(--preto);
-  text-decoration: underline;
+  text-decoration: none;
   cursor: pointer;
 }
 
@@ -379,8 +361,7 @@ margin-top:60px;
 }
 
 .login:hover {
-  text-decoration: underline;
-  color: red;
+  text-decoration: none;
   cursor: pointer;
 }
 
@@ -388,7 +369,6 @@ margin-top:60px;
   color: var(--branco);
   padding: 0;
   margin: 15px 0 20px 0;
-
 }
 
 .texto-perfil {

@@ -15,7 +15,7 @@
 
 </head>
 
-<body onload="exibirDadosUsuario()">
+<body>
     <script>
         function showSidebar() {
             const sidebar = document.querySelector('.sidebar')
@@ -30,20 +30,19 @@
     <nav>
         <ul class="sidebar">
             <li onclick=hideSidebar()><a href="#"><img id="fechar" src="img/fechar.svg" alt="fechar nav"></a></li>
-            <li id="perfil-sidebar"><img src="img/perfil2.svg" alt="" srcset=""></li>
-            <div class="menus">
-                <li><a href="../pagina-inicial/inicial.html" id="menuMobile">HOME</a></li>
-                <li><a href="../pagina-play/play.html" id="menuMobile">PLAY</a></li>
-                <li><a href="../pagina-inicial/inicial.html" id="ecoponto menuMobile">ECOPONTOS</a></li>
-                <li><a href="../pagina-materiais/materiais.html" id="menuMobile">MATERIAIS</a></li>
-                <li><a href="../pagina-qrcode/index.html" id="menuMobile">QR-CODE</a></li>
-                <li><a href="../pagina-faq/faq.html" id="menuMobile">FALE CONOSCO</a></li>
-            </div>
+            <li id="perfil-sidebar"><img src="img/perfil2.svg" alt="" srcset="">
+                <div class="menus">
+            <li><a href="../pagina-inicial/inicial.html" id="menuMobile">HOME</a></li>
+            <li><a href="../pagina-play/play.html" id="menuMobile">PLAY</a></li>
+            <li><a href="../pagina-inicial/inicial.html" id="ecoponto menuMobile">ECOPONTOS</a></li>
+            <li><a href="../pagina-materiais/materiais.html" id="menuMobile">MATERIAIS</a></li>
+            <li><a href="../pagina-qrcode/index.html" id="menuMobile">QR-CODE</a></li>
+            <li><a href="../pagina-faq/faq.html" id="menuMobile">FALE CONOSCO</a></li>
             <div class="footer-logo">
                 <img src="./img/logoBranca.svg" id="footer-logo" alt="">
             </div>
-
             </div>
+            </li>
         </ul>
         <ul>
             <li id="logo-nav"><img src="img/ram.svg" alt="ram">
@@ -65,11 +64,9 @@
                             <p class="texto-perfil" id="nome_modal"></p>
                             <div class="grupo">
                                 <hr class="linha">
-                                <a class="cadastro" href="../pagina-perfil/perfil.html"><span style="color: black;">Ir
-                                        para perfil</span></a>
+                                <a class="cadastro" href="../pagina-perfil/perfil.html"><span style="color: black;">Ir para perfil</span></a>
                                 <hr class="linha">
-                                <a href="../pagina-login/index.html" onclick="logout()" class="login"><span
-                                        style="color: red;">Sair</span></a>
+                                <a href="../pagina-login/index.html" onclick="logout()" class="login"><span style="color: red;">Sair</span></a>
                             </div>
                         </div>
                     </div>
@@ -84,9 +81,33 @@
                         <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
                     </svg></a></li>
         </ul>
+
+        <!-- modal sem perfil -->
+
+        <!-- modal com perfil -->
+        <!-- <div class="modal-com-perfil">
+                <div class="content-com-perfil">
+                    <p class="perfil">Perfil</p>
+    
+                    <div class="fundo">
+                        <img src="./img/user.svg" id="foto-perfil" alt="Foto de perfil">
+                        <p class="texto-perfil">Sem login</p>
+                        <div class="grupo">
+                            <hr class="linha"></hr>
+                            <a class="cadastro">Cadastrar-se</a>
+                            <hr class="linha"></hr>
+                            <a class="login">Fazer login</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <button class="modalBtn"><img id="perfil" src="img/perfil.svg" alt="perfil"></button> -->
+        <!-- modal com perfil -->
     </nav>
 
     <div class="container">
+
         <section class="imagem-fundo">
             <div class="imagem-inicial">
                 <h1 id="titulo-inicial">VAMOS COMEÇAR?</h1>
@@ -431,7 +452,7 @@
 
         <script defer src="./js/botao.js"></script>
         <script defer src="./js/modal.js"></script>
-        <script defer src="./js/scroll-modal.js"></script>
+        <script defer src="./js/scrollModal.js"></script>
         <script defer src="./js/modalCupom.js"></script>
         <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-app-compat.js"></script>
         <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-auth-compat.js"></script>

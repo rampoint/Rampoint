@@ -1,33 +1,9 @@
+/* monitor da sala */
 @media (min-width: 1920px) {
-  nav ul {
-    background-color: var(--branco);
-    width: 100%;
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-left: 0px;
-    margin-left: 15px;
-    margin-right: 15px;
-    position: fixed;
-    height: 4em;
-    margin: 0;
-    z-index: 1000;
-  }
-
-  .content-sem-perfil {
-    margin-left: auto;
-    margin-right: 4em;
-  }
-
   .cupons {
-    width: 1856px;
+    width: 1800px;
   }
-
-  .modal-content-dourado {
-    height: 32em;
-  }
-
+  /* começo cupom dourado */
   .modal-content-dourado .lojas {
     display: flex;
     flex-direction: row;
@@ -37,12 +13,12 @@
 
   .titulo-dourado {
     position: relative;
-    top: 1em;
+    top: 2em;
   }
 
   .texto-dourado {
     position: relative;
-    top: 2em;
+    top: 3em;
   }
 
   .estrela-dourada {
@@ -54,7 +30,7 @@
   .estrela-dourada2 {
     position: relative;
     left: 9em;
-    top: 0;
+    top: 1em;
   }
 
   .texto-lojas {
@@ -92,232 +68,28 @@
     text-align: right;
     margin-left: 15px;
   }
-
-  .modal-content-vidro {
-    height: 32em;
-  }
-
-  #ram-vidro {
-    width: 35%;
-    position: relative;
-    left: 3em;
-    bottom: 4em;
-    z-index: 2;
-  }
-
-  .modal-content-vidro .texto-lojas {
-    bottom: 6em;
-  }
-
-  .modal-content-vidro .curiosidade {
-    bottom: 4em;
-  }
-
-  .modal-content-golias {
-    height: 32em;
-  }
-
-  .modal-content-golias .texto-lojas {
-    bottom: 2em;
-  }
-
-  #ram-golias,
-  .modal-content-golias .curiosidade {
-    bottom: 0;
-  }
+  /* final modal dourado */
 }
 
-@media (max-width: 1920px) {
-  .content-sem-perfil {
-    margin-left: auto;
-    margin-right: 4em;
-  }
-
+@media (max-width: 1055px) {
   .cupons {
-    width: auto;
-  }
-
-  .modal-content-dourado {
-    height: 32em;
-  }
-
-  .modal-content-dourado .lojas {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    margin: 10px 15px;
-  }
-
-  .titulo-dourado {
-    position: relative;
-    top: 1em;
-  }
-
-  .texto-dourado {
-    position: relative;
-    top: 2em;
-  }
-
-  .estrela-dourada {
-    position: relative;
-    right: 9em;
-    top: 6em;
-  }
-
-  .estrela-dourada2 {
-    position: relative;
-    left: 9em;
-    top: 0;
-  }
-
-  .texto-lojas {
-    margin: -20px 35px;
-  }
-
-  .cupom-dourado {
-    margin-left: 15px;
-  }
-
-  #estrelas {
-    position: relative;
-    right: 12em;
-    top: 2em;
-    margin-bottom: 1em;
-  }
-
-  #ram-dourado {
-    width: 35%;
-    position: relative;
-    left: 3em;
-    bottom: 2em;
-    z-index: 2;
-  }
-
-  .curiosidade {
-    margin-right: 5em;
-    position: relative;
-    bottom: 2em;
-  }
-
-  .texto-curiosidade {
-    font-family: "Poppins-bold";
-    color: #745f12;
-    text-align: right;
-    margin-left: 15px;
-  }
-
-  .modal-content-vidro {
-    height: 32em;
-  }
-
-  #ram-vidro {
-    width: 35%;
-    position: relative;
-    left: 3em;
-    bottom: 4em;
-    z-index: 2;
-  }
-
-  .modal-content-vidro .texto-lojas {
-    bottom: 6em;
-  }
-
-  .modal-content-vidro .curiosidade {
-    bottom: 4em;
-  }
-
-  .modal-content-golias {
-    height: 32em;
-  }
-
-  .modal-content-golias .texto-lojas {
-    bottom: 2em;
-  }
-
-  #ram-golias,
-  .modal-content-golias .curiosidade {
-    bottom: 0;
+    width: 1300px;
   }
 }
 
-@media (max-width: 1200px) {
-  nav ul {
-    width: 74em;
-  }
-
-  .imagem-inicial {
-    width: 72em;
-  }
-}
-
-@media (max-width: 1145px) {
-  nav ul {
-    width: 70em;
-  }
-
-  nav a {
-    padding: 0 8px;
-  }
-
-  .content-sem-perfil {
-    margin-right: 4em;
-  }
-
-  .imagem-inicial {
-    width: 68em;
-  }
-
-  .medalha-amarela {
-    left: 28em;
-  }
-
-  .medalha-roxa {
-    left: 22em;
-  }
-}
-
-@media (max-width: 1050px) {
-  nav ul {
-    width: 65em;
-  }
-
-  .imagem-inicial {
-    width: 65em;
-  }
-
-  #titulo-inicial {
-    width: 33%;
-  }
-}
-
-@media (max-width: 1025px) {
-  nav ul {
-    width: 64em;
-  }
-
+@media (max-width: 1024px) {
   header {
     display: flex;
     justify-content: space-between;
   }
 
+  #perfil {
+    float: left;
+    display: none;
+  }
+
   #drop {
     display: block;
-  }
-
-  .imagem-inicial {
-    width: 60em;
-  }
-
-  #titulo-inicial {
-    width: 35%;
-  }
-
-  .medalha-amarela {
-    left: 26em;
-  }
-
-  .medalha-roxa {
-    left: 21em;
   }
 
   .info-box {
@@ -326,7 +98,7 @@
     width: 50%;
   }
 
-  /* .descricao-footer {
+  .descricao-footer {
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 40px;
@@ -335,26 +107,17 @@
 
   .copyright {
     margin-left: 80px;
-  } */
-}
-
-@media (max-width: 1005px) {
-  nav ul {
-    width: 63em;
   }
 }
 
-@media (max-width: 980px) {
+@media (max-width: 895px) {
   .hideOnMobile {
     display: none;
   }
-
   .menu-button {
     display: block;
   }
-
   nav ul {
-    width: 60em;
     justify-content: space-between;
     position: static;
     padding-left: 0;
@@ -371,15 +134,8 @@
   #logo-nav {
     margin-left: 20px;
   }
-
   #perfil {
     display: none;
-  }
-
-  .sidebar li {
-    width: 100%;
-    margin-top: 20px;
-    margin-left: 15px;
   }
 
   nav a:visited {
@@ -391,434 +147,20 @@
     color: var(--branco);
     text-decoration-line: underline;
   }
+}
 
-  .imagem-fundo {
-    height: 25em;
-    margin-bottom: 2em;
+@media (max-width: 768px) {
+  .logoBranca-small {
+    display: block;
+    width: 150px;
   }
 
-  .botao {
-    display: none;
-  }
-
-  #scrollTarget {
-    text-align: center;
-  }
-
-  #scrollTarget #titulo1 {
-    margin: 0;
-  }
-
-  #scrollTarget #texto1 {
-    margin-left: 9em;
+  p {
+    margin-bottom: 10px;
   }
 }
 
-@media (max-width: 945px) {
-  nav ul {
-    width: 58em;
-  }
-
-  .sidebar {
-    right: 1em;
-  }
-
-  .imagem-fundo {
-    height: 25em;
-    width: 56em;
-    margin-bottom: 1em;
-  }
-
-  .medalha-vermelha,
-  .medalha-verde {
-    right: 20em;
-  }
-
-  .brilho-verde {
-    right: 14em;
-  }
-
-  .medalha-amarela {
-    left: 25em;
-  }
-
-  #scrollTarget {
-    text-align: center;
-  }
-
-  #scrollTarget #titulo1 {
-    margin: 0;
-  }
-
-  #scrollTarget #texto1 {
-    text-align: center;
-    margin-left: 9em;
-  }
-
-  #titulo2 {
-    margin: 3em 0 0 4em;
-  }
-
-  #texto2 {
-    width: 60%;
-    margin-left: 8.5em;
-  }
-
-  #titulo1 {
-    margin: -0.1em 0 0.5em 4em;
-  }
-
-  #texto1 {
-    margin-left: 7em;
-  }
-
-  .logoBranca {
-    display: none;
-  }
-}
-
-@media (max-width: 900px) {
-  nav ul {
-    width: 56em;
-  }
-
-  .imagem-fundo {
-    width: auto;
-  }
-}
-
-@media (max-width: 895px) {
-  body {
-    overflow-x: hidden;
-  }
-
-  nav ul {
-    width: 53em;
-  }
-
-  .imagem-fundo {
-    width: 50em;
-  }
-
-  .imagem-inicial {
-    width: 56em;
-  }
-
-  .medalha-vermelha,
-  .medalha-verde,
-  .medalha-azul,
-  .medalha-amarela,
-  .medalha-roxa {
-    width: 6em;
-  }
-
-  .medalha-amarela {
-    left: 24em;
-  }
-}
-
-@media (max-width: 830px) {
-  nav ul {
-    width: 50em;
-  }
-
-  .imagem-fundo {
-    width: 48em;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .imagem-inicial {
-    width: 53em;
-  }
-
-  #titulo-inicial {
-    width: 50%;
-    margin-left: 35px;
-  }
-
-  #texto-inicial {
-    width: 50%;
-    font-size: 18px;
-    top: 20em;
-    left: 1em;
-  }
-
-  .medalha-vermelha {
-    right: 18em;
-  }
-
-  .medalha-verde {
-    right: 19em;
-  }
-
-  .medalha-azul {
-    left: 18em;
-  }
-
-  .medalha-amarela {
-    left: 22em;
-  }
-
-  .medalha-roxa {
-    left: 19em;
-  }
-
-  #scrollTarget {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  #scrollTarget #titulo1 {
-    margin-bottom: 1em;
-  }
-
-  #scrollTarget #texto1 {
-    margin: 0;
-  }
-}
-
-@media (max-width: 800px) {
-  nav ul {
-    width: 48em;
-  }
-}
-
-@media (max-width: 720px) {
-  nav ul {
-    width: 44em;
-  }
-
-  .sidebar {
-    right: 3em;
-  }
-
-  .imagem-fundo {
-    width: 44em;
-  }
-
-  .imagem-inicial {
-    width: 43em;
-  }
-
-  #titulo-inicial {
-    font-size: 70px;
-    width: 45%;
-    position: relative;
-    top: 4em;
-  }
-
-  #texto-inicial {
-    width: 60%;
-    top: 17em;
-  }
-
-  .medalha-vermelha,
-  .medalha-verde,
-  .medalha-azul,
-  .medalha-amarela,
-  .medalha-roxa {
-    width: 5em;
-  }
-
-  .brilho-verde,
-  .brilho-azul,
-  .brilho-roxo,
-  .brilho-vermelho {
-    width: 20px;
-  }
-
-  .medalha-vermelha {
-    right: 16em;
-  }
-
-  .medalha-verde {
-    top: 9em;
-    right: 16em;
-  }
-
-  .brilho-verde {
-    top: 1em;
-    right: 12em;
-  }
-
-  .brilho-azul {
-    top: 5em;
-    right: 11em;
-  }
-
-  .medalha-azul {
-    left: 16em;
-  }
-
-  .medalha-amarela {
-    left: 19em;
-  }
-
-  .brilho-vermelho {
-    left: 13em;
-  }
-
-  .brilho-amarelo2 {
-    bottom: 8em;
-  }
-
-  .medalha-roxa {
-    left: 17em;
-  }
-
-  #titulo2 {
-    margin: 3em 0 0 2em;
-  }
-
-  #texto2 {
-    width: 80%;
-    margin-left: 5em;
-  }
-
-  .item1,
-  .item2,
-  .item3 {
-    width: 10em;
-    height: 10em;
-  }
-
-  .btn-cupom {
-    margin-left: 9em;
-  }
-
-  #empresas {
-    flex-wrap: wrap;
-  }
-}
-
-@media (max-width: 685px) {
-  nav ul {
-    width: 41em;
-  }
-
-  .sidebar {
-    right: 2em;
-  }
-
-  .imagem-fundo {
-    width: 39em;
-  }
-
-  .medalha-vermelha {
-    top: 3em;
-    right: 15em;
-  }
-
-  .medalha-verde {
-    top: 9em;
-  }
-
-  .medalha-amarela {
-    left: 18em;
-  }
-
-  .fundo-medalha-salto,
-  .fundo-medalha-coracao,
-  .fundo-medalha-explosao,
-  .fundo-medalha-engrenagem,
-  .fundo-medalha-raio {
-    width: 37em;
-  }
-}
-
-@media (max-width: 645px) {
-  nav ul {
-    width: 39em;
-  }
-
-  .medalha-azul {
-    left: 15em;
-  }
-
-  .brilho-vermelho {
-    bottom: 13em;
-  }
-
-  .medalha-amarela {
-    left: 16em;
-  }
-
-  .medalha-roxa {
-    bottom: 11em;
-    left: 15em;
-  }
-
-  .cupons {
-    height: 35em;
-  }
-
-  .card-cupons {
-    flex-wrap: wrap;
-  }
-}
-
-@media (max-width: 610px) {
-  .fundo-medalha-salto,
-  .fundo-medalha-coracao,
-  .fundo-medalha-explosao,
-  .fundo-medalha-engrenagem,
-  .fundo-medalha-raio {
-    width: 35em;
-  }
-}
-
-@media (max-width: 595px) {
-  nav ul {
-    width: 37em;
-  }
-
-  .imagem-fundo {
-    width: 36em;
-  }
-
-  .medalha-vermelha {
-    right: 14em;
-  }
-
-  .medalha-verde {
-    top: 10em;
-    right: 14em;
-  }
-
-  .brilho-azul {
-    display: none;
-  }
-
-  .medalha-amarela {
-    left: 15em;
-  }
-
-  .medalha-roxa {
-    bottom: 9em;
-    left: 14em;
-  }
-}
-
-@media (min-width: 320px) and (max-width: 435px) {
-  body {
-    overflow-x: hidden;
-  }
-
-  nav ul {
-    width: 25em;
-  }
-
-  .sidebar {
-    height: 46em;
-  }
-
-  .menus {
-    margin: 0;
-  }
-
+@media (min-width: 320px) and (max-width: 455px) {
   .container {
     display: flex;
     flex-direction: column;
@@ -840,16 +182,15 @@
 
   #titulo-inicial {
     font-size: 4em;
-    width: 45%;
+    width: 30%;
     margin: 0 0 50px 0;
   }
 
   #texto-inicial {
-    width: 50%;
+    width: 30%;
     text-align: center;
     position: relative;
-    top: 13em;
-    left: 0;
+    top: 16em;
   }
 
   .botao {
@@ -857,85 +198,102 @@
     display: none;
   }
 
-  /* começo lado esquerdo */
-  .medalha-vermelha {
-    width: 3em;
-    top: -2em;
-    right: 10em;
-  }
-
-  .medalha-verde {
-    width: 3em;
-    top: 9em;
-    right: 8em;
-  }
-
-  .brilho-amarelo {
-    bottom: 3em;
-    right: 7em;
-  }
-
-  .brilho-verde {
-    width: 1em;
-    top: -1em;
-    right: 10em;
-  }
-
-  .brilho-azul {
-    display: none;
-  }
-  /* final lado esquerdo */
-
-  /* começo lado direito */
-  .brilho-roxo {
-    width: 1em;
-    bottom: 11.5em;
-    left: 5em;
-  }
-
-  .medalha-azul {
-    width: 3em;
-    bottom: 16em;
-    left: 0em;
-  }
-
-  .medalha-amarela {
-    width: 3em;
-    bottom: 15.5em;
-    left: 10em;
-  }
-
-  .brilho-vermelho {
-    width: 1em;
-    bottom: 15.5em;
-    left: 7.5em;
-    z-index: -1;
-  }
-
-  .brilho-amarelo2 {
-    bottom: 11em;
-    left: 10em;
-    z-index: -1;
-  }
-
-  .medalha-roxa {
-    width: 3em;
-    bottom: 5em;
-    left: 8em;
-  }
-  /* final lado direito */
-
   #scrollTarget {
-    margin-top: 6em;
+    margin-top: 5em;
+    padding-top: 9.5em; /* para compensar o menu fixo */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
 
-  .cupons {
-    height: 55em;
+  /* começo lado esquerdo */
+  .medalha-vermelha {
+    width: 3em;
+    position: relative;
+    top: -2em;
+    right: 10em;
   }
+
+  .medalha-verde {
+    width: 3em;
+    position: relative;
+    top: 9em;
+    right: 8em;
+  }
+
+  .brilho-amarelo {
+    position: relative;
+    bottom: 0.5em;
+    right: 7em;
+    z-index: -1;
+  }
+
+  .brilho-verde {
+    width: 1em;
+    position: relative;
+    top: -1em;
+    right: 11em;
+    z-index: -1;
+  }
+
+  .brilho-azul {
+    width: 1em;
+    position: relative;
+    top: 4em;
+    right: 11em;
+    z-index: -1;
+  }
+  /* final lado esquerdo */
+
+  /* começo lado direito */
+  .brilho-roxo {
+    width: 1em;
+    position: relative;
+    bottom: 10em;
+    left: 5em;
+    z-index: -1;
+  }
+
+  .medalha-azul {
+    width: 3em;
+    position: relative;
+    bottom: 15em;
+    left: 0em;
+  }
+
+  .medalha-amarela {
+    width: 3em;
+    position: relative;
+    bottom: 14em;
+    left: 10em;
+  }
+
+  .brilho-vermelho {
+    width: 1em;
+    position: relative;
+    bottom: 15em;
+    left: 7em;
+    z-index: -1;
+  }
+
+  .brilho-amarelo2 {
+    position: relative;
+    bottom: 10em;
+    left: 10em;
+    z-index: -1;
+  }
+
+  .medalha-roxa {
+    width: 3em;
+    position: relative;
+    bottom: 6em;
+    left: 8em;
+  }
+
+  /* final lado direito */
+
+  /* imagem inicial */
 
   #titulo1 {
     font-family: "Blinker-extrabold";
@@ -968,16 +326,23 @@
     width: 70%;
   }
 
+  .cupons {
+    width: 650px;
+    height: 55em;
+    padding: 2em;
+  }
+
   #titulo2 {
-    margin: 1em 0 0 1em;
+    margin: 1em 0 0 6em;
   }
 
   #texto2 {
-    margin-left: 3em;
-    width: 75%;
+    margin-left: 10em;
+    width: 60%;
   }
 
   /* começo dos cards dos cupons */
+
   .card-cupons {
     flex-direction: column;
     flex-wrap: wrap;
@@ -1626,6 +991,7 @@
     width: 100%;
   }
   /* footer */
+
   .logoBranca {
     display: none;
   }
@@ -1641,9 +1007,9 @@
   }
 }
 
-/* @media (max-width: 375px) {
+@media (max-width: 375px) {
   .email {
     display: flex;
     flex-wrap: wrap;
   }
-} */
+}

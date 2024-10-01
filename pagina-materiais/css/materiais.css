@@ -34,8 +34,6 @@ body {
 
 .img-fundo {
   margin-top: 33em;
-  position: relative;
-  left: 7em;
 }
 
 #titulo-inicial {
@@ -82,7 +80,7 @@ body {
   width: 100%;
   height: 35em;
   position: relative;
-  bottom: 35em;
+  bottom: 40em;
 }
 
 #btn {
@@ -100,47 +98,50 @@ body {
 }
 
 /* começo lado esquerdo */
+
 .interno-inicial {
   position: relative;
-  bottom: 25em;
-  right: 20em;
+  bottom: 30em;
+  right: 22em;
 }
 
 .brilho-amarelo {
   position: relative;
-  bottom: 28em;
+  bottom: 35em;
   right: 9.5em;
 }
 
 .brilho-verde {
   position: relative;
-  bottom: 26em;
-  right: 14em;
+  bottom: 29em;
+  right: 16em;
 }
 
 .brilho-azul {
   position: relative;
-  bottom: 23em;
-  right: 15em;
+  bottom: 26em;
+  right: 12em;
 }
 
 .monitor {
   position: relative;
-  bottom: 15em;
+  bottom: 21em;
   right: 22em;
 }
+
 /* final lado esquerdo */
 
 /* começo lado direito */
+
 .brilho-roxo {
   position: relative;
-  bottom: 40em;
+  bottom: 47em;
   left: 10em;
 }
 
 .teclado {
   position: relative;
-  bottom: 45em;
+  bottom: 47em;
   left: 22em;
 }
 
@@ -152,14 +153,14 @@ body {
 
 .brilho-amarelo2 {
   position: relative;
-  bottom: 33em;
-  left: 11em;
+  bottom: 35em;
+  left: 9em;
 }
 
 .icone-roxo {
   position: relative;
-  bottom: 35em;
-  left: 23em;
+  bottom: 41em;
+  left: 25em;
 }
 
 /* final lado direito */
@@ -228,7 +229,8 @@ body {
   padding-top: 8em; /* para compensar o menu fixo */
 }
 
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
+  /* Estilos aqui */
   #titulo1 {
     margin: 0em 0 0.5em 0em;
     text-align: center;
@@ -241,7 +243,7 @@ body {
     width: 100%;
     text-align: center;
   }
-} */
+}
 
 .perifericos {
   margin-top: 3em;
@@ -1723,3 +1725,263 @@ body {
 /* final cooler */
 /* final imagem resfriamento */
 /* final carrossel-materiais */
+
+@media (max-width: 421px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  /* Imagem inicial */
+  .imagem-fundo {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20em;
+    margin: 0;
+  }
+
+  .img-fundo,
+  .botao,
+  .brilho-amarelo2 {
+    display: none;
+  }
+
+  #titulo-inicial {
+    font-size: 3em;
+    width: 85%;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  #texto-inicial {
+    width: 75%;
+    text-align: center;
+    margin-top: 3em;
+  }
+
+  .interno-inicial,
+  .monitor,
+  .teclado,
+  .icone-roxo {
+    width: 5%;
+    position: relative;
+  }
+
+  .interno-inicial {
+    bottom: 3em;
+    right: 9em;
+  }
+
+  .monitor {
+    top: 11em;
+    right: 9em;
+  }
+
+  .teclado {
+    bottom: 13em;
+    left: 9em;
+  }
+
+  .icone-roxo {
+    top: 2em;
+    left: 9em;
+  }
+
+  .brilho-amarelo,
+  .brilho-verde,
+  .brilho-azul,
+  .brilho-roxo,
+  .brilho-vermelho {
+    width: 1%;
+    position: relative;
+  }
+
+  .brilho-amarelo {
+    bottom: 2em;
+    right: 1em;
+  }
+
+  .brilho-verde {
+    top: 3em;
+    right: 11em;
+  }
+
+  .brilho-azul,
+  .brilho-roxo {
+    top: 5em;
+    right: 10em;
+  }
+
+  .brilho-vermelho {
+    bottom: 5em;
+    left: 11em;
+  }
+
+  #scrollTarget {
+    text-align: center;
+    margin-top: 5em;
+  }
+
+  #texto1 {
+    width: 80%;
+    margin: 0 3em;
+  }
+
+  .carrossel-container {
+    width: 45%;
+    margin: 50px auto 100px;
+  }
+
+  .menu {
+    width: 20em;
+  }
+
+  .sub-buttons-container {
+    width: 30em;
+    flex-wrap: wrap;
+  }
+
+  .sub-buttons {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+  }
+
+  .text-block {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 30%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 2px 8px 8px rgba(42, 85, 194, 0.15);
+    width: 300px;
+    z-index: 1;
+    text-align: center;
+  }
+
+  .ramcoin:hover .text-block {
+    display: block;
+  }
+
+  .texto-ramcoin {
+    font-size: 13px;
+    margin-left: 5px;
+  }
+
+  .circulo-estrutura,
+  .circulo-internos,
+  .circulo-perifericos,
+  .circulo-resfriamento {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-10%, -15%);
+    border-radius: 50%;
+    width: 15em;
+    height: 15em;
+    z-index: 1;
+  }
+
+  .circulo-estrutura {
+    background: #9d4edd;
+  }
+  .circulo-internos {
+    background: #f89701;
+  }
+  .circulo-perifericos {
+    background: #2a55c2;
+  }
+  .circulo-resfriamento {
+    background: #61d243;
+  }
+
+  /* Footer */
+  .footer-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .geral,
+  .redes-sociais,
+  .contato {
+    margin-left: 55px;
+    margin-top: 30px;
+  }
+
+  .descricao-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .email {
+    width: 200px;
+    margin: 5px 65px;
+    display: flex;
+  }
+
+  .logo {
+    width: 100%;
+  }
+
+  .copyright {
+    margin: 5em;
+  }
+}
+
+
+@media (min-width: 1920px) {
+  .menu {
+    width: 45em;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(234, 236, 240, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    align-items: center;
+  }
+
+  .ramcoin {
+    position: absolute;
+    bottom: 3em;
+    left: 42em;
+    margin-top: 25px;
+  }
+
+  /* Adjustments for text */
+  .p-gabinete,
+  .p-baias,
+  .p-slots,
+  .p-organizador,
+  .p-painel,
+  .p-hdd,
+  .p-cpu {
+    font-size: 15px;
+    width: 50%;
+    position: relative;
+    top: 1em;
+    left: 13em;
+  }
+
+  /* Estrutura-specific */
+  .titulo-estrutura,
+  .titulo-internos,
+  .titulo-perifericos,
+  .titulo-resfriamento {
+    font-size: 16px;
+  }
+}

@@ -222,7 +222,8 @@ function exibirDadosUsuario(users) {
     document.getElementById("foto-perfil").src = users.fotoPerfil.fotoPerfil;
     document.getElementById("perfil").src = users.fotoPerfil.fotoPerfil;
     document.getElementById('genero-mudar').value = users.genero
-    document.getElementsByClassName('toggle-option active')[0].style.backgroundColor = users.fotoPerfil.cor_foto
+
+    
   } else {
     document.getElementById("nome_modal").innerHTML = users.nome;
     document.getElementById("content-sem-perfil").style.backgroundColor =

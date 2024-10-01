@@ -155,15 +155,20 @@ body {
   border-bottom: none;
 }
 
-.cadastro {
+.btn-cadastro:hover {
+  border-bottom: none;
+}
+
+.btn-cadastro {
   font-family: "Poppins-bold";
   font-size: 1em;
   color: var(--branco);
   width: 200px;
-  height: 40px;
+  height: 20px;
   border: none;
   border-radius: 30px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .cadastro-modal {
@@ -194,18 +199,23 @@ body {
   border-bottom: none;
 }
 
-.login {
+.btn-login:hover {
+  border-bottom: none;
+}
+
+.btn-login {
   font-family: "Poppins-bold";
   font-size: 1em;
   color: var(--branco);
   width: 200px;
-  height: 40px;
+  height: 20px;
   border: none;
   border-radius: 30px;
   cursor: pointer;
+  text-decoration: none;
 }
 
-.login-button {
+/* .login-button {
   font-family: "Poppins-bold";
   font-size: 1em;
   color: #6b6b6b;
@@ -215,7 +225,7 @@ body {
   border-radius: 30px;
   cursor: pointer;
   background: var(--branco)
-}
+} */
 
 .sair-button {
   font-family: "Poppins-bold";
@@ -270,7 +280,7 @@ body {
   font-family: "Poppins-regular";
 }
 
-span {
+.span-preto {
   font-family: "Poppins-bold";
 }
 

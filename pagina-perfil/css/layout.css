@@ -1,31 +1,71 @@
 @media (min-width: 1920px) {
   .content-sem-perfil {
-    margin-left: 100em;
+    margin-left: auto;
+    margin-right: 4em;
+  }
+
+  .bloco-ramcoin {
+    margin-left: 16em;
+  }
+
+  .modalBtn-perfil {
+    position: relative;
+    right: -2em;
+  }
+
+  .content-perfil {
+    margin-top: 12em;
+  }
+
+  .info-perfil {
+    gap: 125px;
+  }
+
+  #foto_mudar {
+    position: relative;
+    left: 3em;
+    width: 125px;
+    height: 125px;
+  }
+
+  #lapis {
+    width: 1.5em;
+    right: -1.5em;
+  }
+
+  .select-icon {
+    right: 14em;
+  }
+
+  .excluir-conta {
+    right: 22em;
+  }
+
+  .btn-salvar {
+    left: 20em;
+  }
+
+  .content-mood {
+    margin-bottom: 13em;
+  }
+
+  .content-mood .icon-x {
+    top: 14em;
+    right: 33em;
   }
 }
 
-@media (max-width: 1280px) {
-  .logoBranca {
-    display: none;
+@media (max-width: 1815px) {
+  .select-icon {
+    right: 10em;
   }
+
+  /* .content-mood .icon-x {
+    right: 31em;
+  }  */
 }
 
 @media (max-width: 1024px) {
-  /* Estilos aqui */
-  header {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  nav {
-    display: none;
-  }
-
-  #perfil {
-    float: left;
-    display: none;
-  }
-
   #drop {
     display: block;
   }
@@ -45,6 +85,52 @@
 
   .copyright {
     margin-left: 80px;
+  }
+}
+
+@media (max-width: 985px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+  }
+
+  nav ul {
+    width: 57em;
+    justify-content: space-between;
+    position: static;
+    padding-left: 0;
+  }
+
+  nav a {
+    padding-right: 30px;
+  }
+
+  #logo {
+    margin-left: 20px;
+  }
+
+  #logo-nav {
+    margin-left: 20px;
+  }
+
+  #perfil {
+    display: none;
+  }
+
+  nav a:visited {
+    text-decoration: none;
+    transition: color 1.5s ease-out 1ms;
+  }
+
+  nav a:hover {
+    color: var(--branco);
+    text-decoration-line: underline;
+  }
+
+  .sidebar {
+    right: 1em;
   }
 }
 

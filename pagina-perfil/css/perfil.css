@@ -1,5 +1,4 @@
 @import url(../css/font.css);
-
 @import url(../css/cores.css);
 
 * {
@@ -11,7 +10,6 @@ body {
 }
 
 /* começo da imagem inicial */
-
 .imagem-fundo {
   display: flex;
   align-items: center;
@@ -401,7 +399,7 @@ body {
 .modal-perfil {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 1000;
   left: 0;
   top: 0;
   width: 100%;
@@ -499,7 +497,7 @@ body {
 
 .select-icon {
   position: absolute;
-  top: 9em;
+  top: 146px;
   right: 8em;
   transform: translateY(-50%);
   pointer-events: none;
@@ -524,6 +522,25 @@ body {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+}
+
+.flatpickr-calendar {
+  font-family: "Poppins-regular";
+  font-size: 12px;
+}
+
+.flatpickr-day {
+  font-weight: 400;
+  color: #333;
+}
+
+.flatpickr-months {
+  font-size: 12px; 
+}
+
+.flatpickr-weekday {
+  font-size: 12px; 
+  color: #666;
 }
 
 #senha-mudar,
@@ -743,7 +760,7 @@ body {
   filter: none;
 }
 
-.btn-check {
+/* .btn-check {
   background-color: transparent;
   border: 2px solid #2a55c2;
   width: 4em;
@@ -757,7 +774,7 @@ body {
   left: 27em;
   cursor: pointer;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.15);
-}
+} */
 
 /* começo campo conquistas */
 

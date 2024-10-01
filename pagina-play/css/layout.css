@@ -806,9 +806,17 @@
   body {
     overflow-x: hidden;
   }
-  
+
   nav ul {
     width: 25em;
+  }
+
+  .sidebar {
+    height: 46em;
+  }
+
+  .menus {
+    margin: 0;
   }
 
   .container {

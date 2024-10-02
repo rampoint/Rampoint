@@ -40,7 +40,7 @@ Highcharts.chart('container', {
           data: [30, 45, 12, 64, 54, 34]
       },
       {
-          name: 'Novos Usuários',
+          name: 'Vistorias',
           data: [45, 14, 10, 14, 19, 11]
       }
   ]

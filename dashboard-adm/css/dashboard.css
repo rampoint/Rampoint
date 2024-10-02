@@ -39,6 +39,11 @@
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
+#container {
+  width: 450px;
+  height: 450px;
+}
+
 /* notificacoes */
 .notificacoes {
   display: flex;

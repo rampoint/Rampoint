@@ -1,45 +1,95 @@
-@media (min-width: 1920px) {
-  .campo-inicial {
-    margin: 0.5em 50px 0 85px;
+@media (min-width: 1600px) {
+  .fundo-titulo {
+    width: 100vw;
+  }
+
+  .titulo-inicial {
+    margin-left: 2em;
+  }
+
+  .titulo-doacoes {
+    margin: 3em 1.5em 0 4em;
   }
 
   .grupos {
-    margin-top: 2em;
+    margin: auto;
+    gap: 5em;
+    width: 76em;
   }
 
-  .grafico-coluna {
-    background-color: #fff;
-    width: 690px;
-    height: 700px;
-    border-radius: 15px;
-    margin-top: 15px;
-    padding: 30px 10px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-  }
-
-  #container {
-    width: 650px;
-    height: 650px;
-  }
-
-  .notificacoes {
-    margin-left: 15em;
-  }
-
-  .fundo-notificacoes {
-    width: 35em;
-    height: 17em;
-    margin-top: 1em;
-  }
-
-  .doacoes {
-    margin-top: 3em;
-  }
-
-  .tabela-doadores {
-    width: 35em;
-    height: 17em;
-    margin-top: 2em;
+  .grupo {
+    margin-left: 4em;
   }
 }
 
+@media (min-width: 1700px) {
+  .fundo-titulo {
+    width: 100vw;
+  }
+
+  .titulo-inicial {
+    margin-left: 3em;
+  }
+
+  .titulo-doacoes {
+    margin: 3em 1.5em 0 5em;
+  }
+
+  .grupos {
+    margin: auto;
+    gap: 5em;
+    width: 76em;
+  }
+
+  .grupo {
+    margin-left: 5em;
+  }
+}
+
+@media (min-width: 1800px) {
+  .fundo-titulo {
+    width: 100vw;
+  }
+
+  .titulo-inicial {
+    margin-left: 5em;
+  }
+
+  .titulo-doacoes {
+    margin: 3em 1.5em 0 6.5em;
+  }
+
+  .grupos {
+    margin: auto;
+    gap: 5em;
+    width: 76em;
+  }
+
+  .grupo {
+    margin-left: 7em;
+  }
+}
+
+@media (min-width: 1900px) {
+  .fundo-titulo {
+    width: 100vw;
+  }
+
+  .titulo-inicial {
+    margin-left: 5em;
+  }
+
+  .titulo-doacoes {
+    margin: 3em 1.5em 0 6.5em;
+  }
+
+  .grupos {
+    margin: auto;
+    gap: 5em;
+    width: 76em;
+  }
+
+  .grupo {
+    margin-left: 7em;
+  }
+}

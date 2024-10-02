@@ -201,6 +201,8 @@ function exibirDadosUsuario(users) {
   var currentPage = window.location.href;
   // Verifica se a URL contém uma string específica
   if (currentPage.includes("/pagina-perfil/")) {
+    document.getElementById("foto-perfil").src = users.fotoPerfil.fotoPerfil;
+    document.getElementById("perfil").src = users.fotoPerfil.fotoPerfil;
     document.getElementById("nome_usuario").innerHTML = users.nome;
     document.getElementById("email_usuario").innerHTML = users.email;
     document.getElementById("emocao_usuario").style.color = users.fotoPerfil.cor_texto;
@@ -219,9 +221,10 @@ function exibirDadosUsuario(users) {
     document.getElementById("medalha-azul").style.display = users.medalhas.azul.display;
     document.getElementById("medalha-azul-img").src = users.medalhas.azul.img;
     document.getElementById("nome_modal").innerHTML = users.nome;
-    document.getElementById("foto-perfil").src = users.fotoPerfil.fotoPerfil;
-    document.getElementById("perfil").src = users.fotoPerfil.fotoPerfil;
-    document.getElementById('genero-mudar').value = users.genero
+
+    
+    document.getElementById('genero-mudar').value = users.genero;
+    // document.getElementById('container-perfil').style.boxShadow =  `0 5px 20px ${users.fotoPerfil.cor_texto} `;
 
     
   } else {

@@ -19,11 +19,11 @@ usersRef.once('value', (snapshot) => {
         usersChild.once('value', (snapshot) => {
          if(snapshot.exists()){    
             snapshot.forEach((childSnapshot) =>{
-                var id = childSnapshot.key
+                var nome_pecas = childSnapshot.key
                 var dataPeca = childSnapshot.val()
                 
-                criarTabela(dataPeca.nome_peca, dataPeca.tipo,dataPeca.email,dataPeca.nome,dataPeca.qtd,dataPeca.vistoria,id)
-
+                criarTabela(dataPeca.nome_peca, dataPeca.tipo,dataPeca.email,dataPeca.nome,dataPeca.qtd,dataPeca.vistoria,childSnapshot.key)
+                
 
             }) 
           
@@ -33,12 +33,12 @@ usersRef.once('value', (snapshot) => {
     })
 })
 
-function criarTabela(nome_peca,estrutura,email_doador,nome_doador,qtd,vistoria,id){
+function criarTabela(nome_peca,estrutura,email_doador,nome_doador,qtd,vistoria){
     const novaLinha = document.createElement('tr');
     
     novaLinha.innerHTML = `
         <td>
-            <div value="${id}" id='peca' class="peca">
+            <div class="peca">
                 <img src="./img/gabinete.svg" id="gabinete" alt="Imagem de um gabinete">
                 <p class="nome-peca">${nome_peca}</p>
             </div>
@@ -65,7 +65,7 @@ function criarTabela(nome_peca,estrutura,email_doador,nome_doador,qtd,vistoria,i
                 <div class="modal-content">
                     <ul>
                         <li><button class="modal-button edit-button" onclick="editOption()"><img src="./img/icon-editar.svg" alt="">Editar</button></li>
-                        <li onclick="excluirDoacao()"><button class="modal-button delete-button" onclick="openDeleteConfirmModal('deleteConfirmModal')"><img src="./img/icon-deletar.svg" alt="">Excluir</button></li>
+                        <li><button class="modal-button delete-button" onclick="openDeleteConfirmModal('deleteConfirmModal')"><img src="./img/icon-deletar.svg" alt="">Excluir</button></li>
                     </ul>
                 </div>
             </div>
@@ -75,9 +75,3 @@ function criarTabela(nome_peca,estrutura,email_doador,nome_doador,qtd,vistoria,i
     document.getElementById('tbody').appendChild(novaLinha);
 
 }
-
-function excluirDoacao() {
-    const id = document.getElementById('peca').value
-    usersRef.ref('users')
-
-  }

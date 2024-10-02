@@ -30,7 +30,7 @@ function pegarValorFotoFeliz() {
       console.log("foto de perfil enviada");
     })
     .catch((error) => {
-      console.log("nao foi amigo" + error);
+      console.log("Foto não enviada" + error);
     });
   console.log(ram);
   console.log(globalUserId);
@@ -62,7 +62,7 @@ function pegarValorFotoEmocionado() {
       console.log("foto de perfil enviada");
     })
     .catch((error) => {
-      console.log("nao foi amigo" + error);
+      console.log("Foto não enviada" + error);
     });
 }
 function pegarValorFotoTriste() {
@@ -88,7 +88,7 @@ function pegarValorFotoTriste() {
       console.log("foto de perfil enviada");
     })
     .catch((error) => {
-      console.log("nao foi amigo" + error);
+      console.log("Foto não enviada" + error);
     });
   console.log(ram);
 }
@@ -115,7 +115,7 @@ function pegarValorFotoEntediado() {
       console.log("foto de perfil enviada");
     })
     .catch((error) => {
-      console.log("nao foi amigo" + error);
+      console.log("Foto não enviada" + error);
     });
   console.log(ram);
 }
@@ -142,7 +142,7 @@ function pegarValorFotoFurioso() {
       console.log("foto de perfil enviada");
     })
     .catch((error) => {
-      console.log("nao foi amigo" + error);
+      console.log("Foto não enviada" + error);
     });
   console.log(ram);
 }
@@ -170,7 +170,7 @@ function pegarValorFotoApaixonado() {
       console.log("foto de perfil enviada");
     })
     .catch((error) => {
-      console.log("nao foi amigo" + error);
+      console.log("Foto não enviada" + error);
     });
   console.log(ram);
 }
@@ -197,7 +197,7 @@ function pegarValorFotoPadrao() {
       console.log("foto de perfil enviada");
     })
     .catch((error) => {
-      console.log("nao foi amigo" + error);
+      console.log("Foto não enviada" + error);
     });
   console.log(ram);
 }
@@ -223,7 +223,7 @@ function pegarValorFotoNomood() {
       console.log("foto de perfil enviada");
     })
     .catch((error) => {
-      console.log("nao foi amigo" + error);
+      console.log("Foto não enviada" + error);
     });
   console.log(ram);
 }

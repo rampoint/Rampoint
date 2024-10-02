@@ -22,10 +22,8 @@ usersRef.once('value', (snapshot) => {
                 var nome_pecas = childSnapshot.key
                 var dataPeca = childSnapshot.val()
                 
-                criarTabela(nome_pecas, dataPeca.tipo,dataPeca.email,dataPeca.nome,dataPeca.qtd,dataPeca.vistoria)
-                console.log(id)
-                console.log(nome_pecas)
-                console.log(dataPeca)
+                criarTabela(dataPeca.nome_peca, dataPeca.tipo,dataPeca.email,dataPeca.nome,dataPeca.qtd,dataPeca.vistoria,childSnapshot.key)
+                
 
             }) 
           

@@ -20,7 +20,7 @@ function adicionarDoacao() {
         const data = childSnapshot.val()
         console.log(data)
         // Atualiza ou adiciona dados dentro do nó do usuário
-        childSnapshot.ref.child('peças').push({
+        childSnapshot.ref.child('peças/' + formDoacoes.Peca()).set({
         nome_peca:formDoacoes.Peca(),
         nome:formDoacoes.nome(),
         email:formDoacoes.email(),

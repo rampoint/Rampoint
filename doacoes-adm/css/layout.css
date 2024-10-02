@@ -2,11 +2,27 @@
   .fundo-titulo {
     width: 100vw;
   }
+
+  #optionsModal1 .modal-content {
+    margin: 17em 0 0 84em;
+  }
+
+  #optionsModal2 .modal-content {
+    margin: 21.5em 0 0 84em;
+  }
 }
 
 @media (min-width: 1700px) {
   .fundo-titulo {
     width: 100vw;
+  }
+
+  #optionsModal1 .modal-content {
+    margin: 17em 0 0 90em;
+  }
+
+  #optionsModal2 .modal-content {
+    margin: 21.5em 0 0 90em;
   }
 }
 
@@ -14,10 +30,26 @@
   .fundo-titulo {
     width: 100vw;
   }
+
+  #optionsModal1 .modal-content {
+    margin: 17em 0 0 96em;
+  }
+
+  #optionsModal2 .modal-content {
+    margin: 21.5em 0 0 96em;
+  }
 }
 
 @media (min-width: 1900px) {
   .fundo-titulo {
     width: 100vw;
+  }
+
+  #optionsModal1 .modal-content {
+    margin: 17em 0 0 102em;
+  }
+
+  #optionsModal2 .modal-content {
+    margin: 21.5em 0 0 102em;
   }
 }

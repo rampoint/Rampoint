@@ -225,8 +225,6 @@ function exibirDadosUsuario(users) {
     document.getElementById('container-perfil').style.boxShadow = users.fotoPerfil.cor_texto_fundo;
     document.getElementsByClassName('toggle-option active')[0].style.backgroundColor = users.fotoPerfil.cor_texto
     document.getElementsByClassName('toggle-option active')[1].style.backgroundColor = users.fotoPerfil.cor_texto
-
-    
   } else {
     document.getElementById("nome_modal").innerHTML = users.nome;
     document.getElementById("content-sem-perfil").style.backgroundColor =

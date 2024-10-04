@@ -373,3 +373,15 @@ li {
   color: #fff;
   text-decoration: none;
 }
+
+#tbody{
+  scroll-behavior: auto;
+  overflow-y: auto;
+}
+
+.tabela-container {
+  max-height: 400px; /* Defina a altura máxima desejada */
+  overflow-y: auto; /* Permite o scroll vertical */
+  border: 1px solid #ccc; /* Opcional: borda para o contêiner */
+  border-radius: 5px; /* Opcional: bordas arredondadas */
+}

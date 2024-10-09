@@ -248,7 +248,7 @@
   }
 }
 
-@media (max-width: 1460px) {
+@media (max-width: 1450px) {
   .fundo-notificacoes,
   .tabela-doadores {
     width: 27em;
@@ -279,44 +279,77 @@
   }
 }
 
-@media (max-width: 1360px) {
+@media (max-width: 1025px) {
+  body {
+    overflow: auto;
+  }
+
+  .grupos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sidebar.active ~ .main-content .grafico-coluna {
+    margin-left: 3em;
+  }
+
   .grafico-coluna {
-    width: 550px;
-    height: 565px;
+    height: 570px;
   }
 
   #container {
-    width: 535px;
-    height: 500px;
+    width: 560px;
+    height: 510px;
   }
 
-  .fundo-notificacoes,
-  .tabela-doadores {
-    width: 27em;
+  .notificacoes {
+    width: 90%;
+    margin-top: 6em;
+    margin-left: 0;
   }
 
   .fundo-notificacoes {
-    height: 19em;
+    width: 36em;
+    margin: auto;
   }
 
-  .doacoes {
-    margin-top: 1em;
+  .sidebar.active ~ .main-content .fundo-notificacoes {
+    margin-left: 0;
+  }
+
+  .sidebar.active ~ .main-content .titulo-notificacoes {
+    right: 20px;
+  }
+
+  .grupo-mensagem {
+    padding: 17px 15px;
   }
 
   .horario {
-    top: 2em;
-    left: 0em;
+    left: 8em;
   }
 
   .linha {
-    width: 26em;
+    width: 35em;
+  }
+
+  .tabela-doadores {
+    margin: 2em auto;
+    width: 36em;
+  }
+
+  .sidebar.active ~ .main-content .titulo-doadores {
+    right: 200px;
+  }
+
+  .sidebar.active ~ .main-content .link-doacoes {
+    left: 23em;
+  }
+  .link-doacoes {
+    left: 21em;
   }
 
   .titulo-doadores {
-    right: 7.5em;
-  }
-
-  .link-doacoes {
-    left: 15em;
+    right: 258px;
   }
 }

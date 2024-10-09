@@ -385,3 +385,12 @@ li {
   border: 1px solid #ccc; /* Opcional: borda para o contêiner */
   border-radius: 5px; /* Opcional: bordas arredondadas */
 }
+
+#lapis_editar{
+  height: 17px;
+  margin-left: 20px;
+}
+#excluir_editar{
+  height: 17px;
+
+}

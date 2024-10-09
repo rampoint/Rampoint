@@ -1,4 +1,3 @@
-/* Para telas grandes (1920px ou mais) */
 @media (min-width: 1920px) {
   .content-sem-perfil {
     margin-left: auto;
@@ -56,14 +55,22 @@
   }
 }
 
-/* Para telas médias (de 1025px a 1919px) */
+/* monitor da sala */
 @media (max-width: 1919px) and (min-width: 1025px) {
+  .content-sem-perfil {
+    margin-left: auto;
+    margin-right: 4em;
+  }
+  
+  .bloco-ramcoin {
+    margin-left: 16em;
+  }
+
   .select-icon {
     right: 10em;
   }
 }
 
-/* Para telas pequenas (de 769px a 1024px) */
 @media (max-width: 1024px) {
   #drop {
     display: block;
@@ -87,22 +94,18 @@
   }
 }
 
-/* Para telas menores (de 426px a 768px) */
 @media (max-width: 768px) {
   
 }
 
-/* Para dispositivos móveis (de 376px a 425px) */
 @media (max-width: 425px) {
   
 }
 
-/* Para dispositivos muito pequenos (até 375px) */
 @media (max-width: 375px) {
   
 }
 
-/* Para dispositivos extremamente pequenos (até 320px) */
 @media (max-width: 320px) {
   
 }

@@ -1,4 +1,168 @@
-@media (min-width: 1600px) {
+@media (max-width: 1920px) {
+  .fundo-titulo {
+    width: 100vw;
+  }
+
+  .campo-inicial {
+    margin: 0.5em 50px 0 85px;
+  }
+
+  .campo-titulo {
+    margin: 120px 50px 25px 55px;
+  }
+
+  .subtitulo {
+    margin-top: 0;
+  }
+
+  .grupos {
+    margin-top: 1em;
+  }
+
+  .grafico-coluna {
+    background-color: #fff;
+    width: 690px;
+    height: 680px;
+    border-radius: 15px;
+    margin-top: 15px;
+    padding: 30px 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  #container {
+    width: 650px;
+    height: 620px;
+  }
+
+  .notificacoes {
+    margin-left: 15em;
+  }
+
+  .fundo-notificacoes {
+    width: 35em;
+    height: 17em;
+    margin-top: 1em;
+  }
+
+  .doacoes {
+    margin-top: 3em;
+  }
+
+  .tabela-doadores {
+    width: 35em;
+    height: 17em;
+    margin-top: 2em;
+  }
+}
+
+@media (max-width: 1850px) {
+  .subtitulo {
+    margin-top: 1em;
+  }
+
+  .grupos {
+    margin-top: 2em;
+  }
+
+  .grafico-coluna {
+    background-color: #fff;
+    width: 690px;
+    height: 700px;
+    border-radius: 15px;
+    margin-top: 15px;
+    padding: 30px 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  #container {
+    width: 650px;
+    height: 650px;
+  }
+
+  .notificacoes {
+    margin-left: 5em;
+  }
+
+  .fundo-notificacoes {
+    width: 35em;
+    height: 17em;
+    margin-top: 1em;
+  }
+
+  .titulo-notificacoes {
+    position: relative;
+    bottom: 48px;
+  }
+
+  .doacoes {
+    margin-top: 3em;
+  }
+
+  .tabela-doadores {
+    width: 35em;
+    height: 17em;
+    margin-top: 2em;
+  }
+}
+
+@media (max-width: 1700px) {
+  .fundo-titulo {
+    width: 100vw;
+  }
+
+  .campo-inicial {
+    margin: 0.5em 50px 0 65px;
+  }
+
+  .campo-titulo {
+    margin: 120px 50px 25px 55px;
+  }
+
+  .subtitulo {
+    margin-top: 1em;
+  }
+
+  .grupos {
+    margin-top: 2em;
+  }
+
+  .grafico-coluna {
+    background-color: #fff;
+    width: 690px;
+    height: 700px;
+    border-radius: 15px;
+    margin-top: 15px;
+    padding: 30px 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  #container {
+    width: 650px;
+    height: 650px;
+  }
+
+  .notificacoes {
+    margin-left: 5em;
+  }
+
+  .fundo-notificacoes {
+    width: 35em;
+    height: 17em;
+    margin-top: 1em;
+  }
+
+  .doacoes {
+    margin-top: 3em;
+  }
+
+  .tabela-doadores {
+    width: 35em;
+    height: 17em;
+    margin-top: 2em;
+  }
+}
+
+@media (max-width: 1680px) {
   .fundo-titulo {
     width: 100vw;
   }
@@ -55,173 +219,104 @@
   }
 }
 
-@media (min-width: 1700px) {
-  .fundo-titulo {
-    width: 100vw;
-  }
-
-  .campo-inicial {
-    margin: 0.5em 50px 0 85px;
-  }
-
-  .campo-titulo {
-    margin: 120px 50px 25px 55px;
-  }
-
-  .subtitulo {
-    margin-top: 1em;
-  }
-
-  .grupos {
-    margin-top: 2em;
-  }
-
+@media (max-width: 1595px) {
   .grafico-coluna {
-    background-color: #fff;
-    width: 690px;
-    height: 700px;
-    border-radius: 15px;
-    margin-top: 15px;
-    padding: 30px 10px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    height: 690px;
   }
 
   #container {
-    width: 650px;
-    height: 650px;
+    width: 520px;
+    height: 600px;
   }
 
-  .notificacoes {
-    margin-left: 5em;
-  }
-
-  .fundo-notificacoes {
-    width: 35em;
-    height: 17em;
-    margin-top: 1em;
-  }
-
-  .doacoes {
-    margin-top: 3em;
-  }
-
+  .fundo-notificacoes,
   .tabela-doadores {
-    width: 35em;
-    height: 17em;
-    margin-top: 2em;
+    width: 32em;
+  }
+
+  .titulo-doadores {
+    right: 10em;
+  }
+
+  .horario {
+    left: 3em;
+  }
+
+  .link-doacoes {
+    left: 18em;
   }
 }
 
-@media (min-width: 1800px) {
-  .fundo-titulo {
-    width: 100vw;
-  }
-
-  .campo-inicial {
-    margin: 0.5em 50px 0 85px;
-  }
-
-  .campo-titulo {
-    margin: 120px 50px 25px 55px;
-  }
-
-  .subtitulo {
-    margin-top: 1em;
-  }
-
-  .grupos {
-    margin-top: 2em;
-  }
-
-  .grafico-coluna {
-    background-color: #fff;
-    width: 690px;
-    height: 700px;
-    border-radius: 15px;
-    margin-top: 15px;
-    padding: 30px 10px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-  }
-
-  #container {
-    width: 650px;
-    height: 650px;
-  }
-
-  .notificacoes {
-    margin-left: 5em;
+@media (max-width: 1460px) {
+  .fundo-notificacoes,
+  .tabela-doadores {
+    width: 27em;
   }
 
   .fundo-notificacoes {
-    width: 35em;
-    height: 17em;
-    margin-top: 1em;
+    height: 19em;
   }
 
   .doacoes {
-    margin-top: 3em;
+    margin-top: 1em;
   }
 
-  .tabela-doadores {
-    width: 35em;
-    height: 17em;
-    margin-top: 2em;
+  .horario {
+    left: 0em;
+  }
+
+  .linha {
+    width: 26em;
+  }
+
+  .titulo-doadores {
+    right: 7.5em;
+  }
+
+  .link-doacoes {
+    left: 15em;
   }
 }
 
-@media (min-width: 1900px) {
-  .fundo-titulo {
-    width: 100vw;
-  }
-
-  .campo-inicial {
-    margin: 0.5em 50px 0 85px;
-  }
-
-  .campo-titulo {
-    margin: 120px 50px 25px 55px;
-  }
-
-  .subtitulo {
-    margin-top: 0;
-  }
-
-  .grupos {
-    margin-top: 2em;
-  }
-
+@media (max-width: 1360px) {
   .grafico-coluna {
-    background-color: #fff;
-    width: 690px;
-    height: 700px;
-    border-radius: 15px;
-    margin-top: 15px;
-    padding: 30px 10px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    width: 550px;
+    height: 565px;
   }
 
   #container {
-    width: 650px;
-    height: 650px;
+    width: 535px;
+    height: 500px;
   }
 
-  .notificacoes {
-    margin-left: 15em;
+  .fundo-notificacoes,
+  .tabela-doadores {
+    width: 27em;
   }
 
   .fundo-notificacoes {
-    width: 35em;
-    height: 17em;
-    margin-top: 1em;
+    height: 19em;
   }
 
   .doacoes {
-    margin-top: 3em;
+    margin-top: 1em;
   }
 
-  .tabela-doadores {
-    width: 35em;
-    height: 17em;
-    margin-top: 2em;
+  .horario {
+    top: 2em;
+    left: 0em;
+  }
+
+  .linha {
+    width: 26em;
+  }
+
+  .titulo-doadores {
+    right: 7.5em;
+  }
+
+  .link-doacoes {
+    left: 15em;
   }
 }

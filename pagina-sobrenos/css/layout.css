@@ -20,6 +20,12 @@
     bottom: 21em;
     right: 19.5em;
   }
+
+  .mensagem-foto {
+    font-size: 12px;
+    width: 55em;
+    margin-bottom: 1em;
+  }
 }
 
 @media (max-width: 1435px) {

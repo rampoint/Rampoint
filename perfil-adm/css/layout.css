@@ -1,95 +1,98 @@
-@media (min-width: 1600px) {
+@media (max-width: 1920px) {
   .fundo-titulo {
     width: 100vw;
   }
 
-  .titulo-inicial {
-    margin-left: 2em;
-  }
-
-  .titulo-doacoes {
-    margin: 3em 1.5em 0 4em;
+  .campo-titulo {
+    margin: 100px 50px 25px 65px;
   }
 
   .grupos {
+    justify-content: center;
+    gap: 10em;
     margin: auto;
-    gap: 5em;
-    width: 76em;
   }
 
-  .grupo {
-    margin-left: 4em;
+  .titulo-doacoes {
+    margin: 3em 1.5em 0 5.5em;
+  }
+
+  .grafico-coluna,
+  .grafico-pizza {
+    height: 400px;
+  }
+
+  #container,
+  #container2 {
+    height: 340px;
   }
 }
 
-@media (min-width: 1700px) {
-  .fundo-titulo {
-    width: 100vw;
+@media (max-width: 1450px) {
+  .titulo-doacoes {
+    margin: 3em 1.5em 0 3.5em;
   }
 
-  .titulo-inicial {
+  .sidebar.active ~ .main-content .titulo-doacoes {
+    margin: 3em 1.5em 0 3em;
+  }
+
+  .grupos {
+    gap: 5em;
+  }
+
+  .sidebar.active ~ .main-content .grupos {
+    gap: 0;
+  }
+
+  .sidebar.active ~ .main-content .grafico-coluna {
     margin-left: 3em;
   }
 
-  .titulo-doacoes {
-    margin: 3em 1.5em 0 5em;
-  }
-
-  .grupos {
-    margin: auto;
-    gap: 5em;
-    width: 76em;
-  }
-
-  .grupo {
-    margin-left: 5em;
+  .sidebar.active ~ .main-content .grafico-pizza {
+    margin-left: 3em;
   }
 }
 
-@media (min-width: 1800px) {
-  .fundo-titulo {
-    width: 100vw;
-  }
-
-  .titulo-inicial {
-    margin-left: 5em;
-  }
-
-  .titulo-doacoes {
-    margin: 3em 1.5em 0 6.5em;
-  }
-
+@media (max-width: 1025px) {
   .grupos {
+    display: flex;
+    flex-direction: column;
     margin: auto;
-    gap: 5em;
-    width: 76em;
+    gap: 0;
   }
 
-  .grupo {
-    margin-left: 7em;
-  }
-}
-
-@media (min-width: 1900px) {
-  .fundo-titulo {
-    width: 100vw;
+  .grafico-coluna,
+  .grafico-pizza {
+    width: 550px;
+    margin: 2em auto;
   }
 
-  .titulo-inicial {
-    margin-left: 5em;
+  .grafico-pizza {
+    margin-bottom: 1em;
   }
 
-  .titulo-doacoes {
-    margin: 3em 1.5em 0 6.5em;
+  .sidebar.active ~ .main-content .fundo-perfil {
+    width: 40em;
   }
 
-  .grupos {
-    margin: auto;
-    gap: 5em;
-    width: 76em;
+  .sidebar.active ~ .main-content .modalBtn-perfil {
+    margin-left: 15em;
   }
 
-  .grupo {
-    margin-left: 7em;
+  .sidebar.active ~ .main-content .campo-titulo {
+    margin: 100px 50px 25px 48px;
+  }
+
+  .sidebar.active ~ .main-content .titulo-doacoes {
+    margin: 3em 1.5em 0 2em;
+  }
+
+  .sidebar.active ~ .main-content .grafico-coluna {
+    margin: 2em 5em;
+  }
+
+  .sidebar.active ~ .main-content .grafico-pizza {
+    margin: 2em 5em;
   }
 }

@@ -6,7 +6,7 @@
   .genero::after {
     right: 18em;
   }
-  
+
   .flatpickr-calendar {
     font-size: 13px;
     width: 90%;
@@ -17,15 +17,87 @@
   .container {
     width: 42em;
   }
+
+  .genero::after {
+    right: 17em;
+  }
 }
 
 @media (max-width: 685px) {
   .container {
     width: 40em;
   }
+
+  .genero::after {
+    right: 16em;
+  }
 }
 
 @media (max-width: 645px) {
+  body {
+    height: auto;
+    overflow: scroll;
+  }
+
+  .container {
+    width: 35em;
+    height: 45em;
+    margin: 15px auto;
+  }
+
+  .form-container {
+    width: 100%;
+    margin: 10px 0;
+    transition: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .form-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-container input,
+  .form-container select,
+  .form-container button {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .genero::after {
+    top: 26.5em;
+    right: 25em;
+  }
+
+  .btn-animado {
+    padding: 10px 30px;
+    font-size: 14px;
+  }
+
+  .toggle-container {
+    display: none;
+    /* Esconder o painel de toggle em telas menores */
+  }
+
+  .social-icons,
+  .social-icons2 {
+    margin-top: 15px;
+  }
+
+  .social-icons a,
+  .social-icons2 a {
+    margin: 5px;
+  }
+}
+
+
+/* @media (max-width: 645px) {
   .container {
     width: 35em;
   }
@@ -79,7 +151,7 @@
   .flatpickr-month {
     font-size: 14px;
   }
-}
+} */
 
 @media (max-width: 555px) {
   .container {

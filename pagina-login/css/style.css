@@ -59,9 +59,9 @@ p {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
   position: relative;
   overflow: hidden;
-  width: 768px;
+  width: 775px;
   max-width: 100%;
-  min-height: 550px;
+  min-height: 600px;
 }
 
 .container p {
@@ -78,7 +78,6 @@ p {
 }
 
 /* botoes */
-
 #login,
 #register {
   background-color: transparent;
@@ -261,7 +260,7 @@ select {
 .genero::after {
   content: url(../img/Icon.svg);
   position: absolute;
-  top: 22em;
+  top: 23em;
   right: 19em;
   transform: translateY(-50%);
   pointer-events: none;

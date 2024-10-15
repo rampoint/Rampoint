@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/ram-redondo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/cadastro.css">
+    <link rel="stylesheet" href="./css/layout-cadastro.css">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form>
+                <h1 class="titulo cadastro">Cadastro</h1>
+                <div class="grupo">
+                    <div class="nome">
+                        <label for="">Nome</label>
+                        <input id="Nome" type="text">
+                    </div>
+                    <div class="telefone">
+                        <label for="">Telefone</label>
+                        <div class="grupo-telefone">
+                            <input type="tel" class="telefone" id="telefone">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="email">
+                    <label for="">Email</label>
+                    <input id="email-cadastro" onchange="onchangeEmail()" type="email">
+                    <label id="erro-email-register">Email não possui @</label>
+                    <label id="erro-email-obrigatorio">O email é obrigatório</label>
+                </div>
+
+                <div class="grupo2">
+                    <div class="genero">
+                        <label for="">Gênero</label>
+                        <select class="genero" id="genero" name="genero">
+                            <option value="feminino">Feminino</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="prifiro-nao-informar">Prefiro não informar</option>
+                        </select>
+                    </div>
+
+                    <div class="nascimento">
+                        <label for="">Nascimento</label>
+                        <input type="text" id="data-cadastro" onchange="VerificarData()">
+                        <script>
+                            flatpickr("#data-cadastro", {
+                                dateFormat: "d/m/Y",
+                                locale: "pt"
+                            });
+                        </script>
+                        <label id="erro-data">Data é obrigatória</label>
+                        <label id="erro-data-18">Usuario precisa ter mais de 15</label>
+                    </div>
+                </div>
+
+                <div class="grupo">
+                    <div class="senha">
+                        <label for="">Senha</label>
+                        <input onchange="onchangePassword()" id="senha-cadastro" type="password">
+                        <label id="erro-senha-register">A senha é obrigatória</label>
+                        <label id="erro-senha-min">A senha precisa ter mais que 5 caracteres</label>
+                    </div>
+                    <div class="senha">
+                        <label for="" class="confirmarSenha">Confirmar senha</label>
+                        <input id="confirmarSenha" onchange="onchangePasswordConfirm()" type="password">
+                        <label id="erro-senha-obrigatorio">A senha é obrigatória</label>
+                        <label id="erro-nao-corresponde">A senha não corresponde </label>
+                    </div>
+                </div>
+
+                <div class="termos">
+                    <input type="checkbox" id="termos-condicoes">
+                    <label for="termos-condicoes" class="termos-condicoes">Eu concordo com os <a
+                            href="../pagina-termos/termos.html">termos e condições</a></label>
+                </div>
+
+                <button class="btn-animado" type="button" id="cadastrar" onclick="register()" disabled="true">Cadastrar
+                    <span class="blob-btn__inner">
+                        <span class="blob-btn__blobs">
+                            <span class="blob-btn__blob"></span>
+                            <span class="blob-btn__blob"></span>
+                            <span class="blob-btn__blob"></span>
+                            <span class="blob-btn__blob"></span>
+                        </span>
+                    </span>
+                </button>
+
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                    <defs>
+                        <filter id="goo">
+                            <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7"
+                                result="goo"></feColorMatrix>
+                            <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                        </filter>
+                    </defs>
+                </svg>
+
+                <div class="link-login">
+                    <a href="../pagina-login/login.html">Login</a>
+                </div>
+
+                <div class="social-icons">
+                    <a href="#" class="icon"><img src="./img/google-Icon.svg" alt="Ícone Google"></a>
+                    <a href="#" class="icon"><img src="./img/facebook-icon.svg" alt="Ícone Facebook"></a>
+                    <a href="#" class="icon"><img src="./img/linkedln-icon.svg" alt="Ícone Linkedln"></a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+<script src="../js/script.js"></script>
+<script type="module" src="../js/firebase-init.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-database-compat.js"></script>
+<script src="../js/validation.js"></script>
+<script src="../js/register.js"></script>
+
+</html>

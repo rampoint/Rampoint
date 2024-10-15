@@ -13,7 +13,7 @@ usersRef.once("value", (snapshot) => {
   snapshot.forEach((childSnapshot) => {
     var id = childSnapshot.key;
     const usersChild = database.ref("users/" + id + "/peças");
-
+    
     usersChild.once("value", (snapshot) => {
       if (snapshot.exists()) {
         snapshot.forEach((childSnapshot) => {
@@ -28,6 +28,7 @@ usersRef.once("value", (snapshot) => {
             dataPeca.qtd,
             dataPeca.vistoria,
             childSnapshot.key
+
           );
         });
       }
@@ -67,7 +68,7 @@ function criarTabela(
         </td>
       <td>
                 <img src="img/excluir.png" id="excluir_editar" onclick="excluirDoacao('${key}')" alt="" srcset="">
-                <img src="img/editar.png" id="lapis_editar" alt="" srcset="">
+                <img src="img/editar.png" id="lapis_editar" onclick="editarDados('${key}')" alt="" srcset="">
         </td>`;
 
   // Adiciona a nova linha ao corpo da tabela
@@ -85,4 +86,12 @@ function excluirDoacao(id) {
   })
 }
 
-      
+
+function pegarIdUrl(){
+  const urlParams = new URLSearchParams(window.location.search)
+  console.log(urlParams.get('id'))
+}
+
+function editarDados(id){
+  window.location.href = '../../check-vistoria-adm/check-vistoria.html?id='+id
+}

@@ -97,18 +97,18 @@
         <div class="grupo1">
           <div class="campo-form">
             <label for="nome" id="nome" class="titulo-form">Nome Completo</label>
-            <input type="name" placeholder="Nome do doador">
+            <input type="name" id="nome-placeholder" placeholder="Nome do doador">
           </div>
 
           <div class="campo-form">
             <label for="email" id="email" class="titulo-form">Email</label>
-            <input type="email" placeholder="Email do doador">
+            <input type="email" id="email-placeholder" placeholder="Email do doador">
           </div>
 
           <div class="campo-form">
             <label for="telefone" id="telefone" class="titulo-form">Telefone</label>
             <div class="select-telefone">
-              <input type="tel" placeholder="Telefone do doador">
+              <input type="tel" id="telefone-placeholder" placeholder="Telefone do doador">
             </div>
           </div>
         </div>
@@ -125,13 +125,13 @@
 
           <div class="campo-form">
             <label for="qtd-peca" class="titulo-form">Qtd. de peça(s)</label>
-            <input type="number" placeholder="Qtd. doada">
+            <input type="number" id="qtd-placeholder" placeholder="Qtd. doada">
           </div>
 
           <div class="campo-form">
             <label for="componente" class="titulo-form">Tipo de componente</label>
             <select name="tipo-componente" id="tipo-componente">
-              <option value="interno">Peça doada</option>
+              <option id="tipo-placeholder"></option>
               <option value="interno">Interno</option>
               <option value="periferico">Periférico</option>
               <option value="estrutura">Estrutura</option>

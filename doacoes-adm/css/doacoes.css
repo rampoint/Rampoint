@@ -132,8 +132,8 @@ option[disabled] {
   background-color: #e1c6f6;
 }
 
-.vistoria-realizada,
-.vistoria-pendente {
+.vistoria-Realizada,
+.vistoria-Pendente {
   width: 7em;
   height: 2em;
   font-family: "Blinker-regular";
@@ -147,12 +147,12 @@ option[disabled] {
   justify-content: center;
 }
 
-.vistoria-realizada {
+.vistoria-Realizada {
   background-color: #ecfdf3;
   color: #508d3f;
 }
 
-.vistoria-pendente {
+.vistoria-Pendente {
   background-color: #ffeeee;
   color: #d40000;
 }

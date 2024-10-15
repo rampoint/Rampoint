@@ -61,8 +61,8 @@ function criarTabela(
         <td><p class="email">${email_doador}</p></td>
         <td><p class="qtd-total">${qtd}</p></td>
         <td>
-            <button class="vistoria-pendente">
-                <img src="./img/pendente.svg" alt="">
+            <button class="vistoria-${vistoria}">
+                <img src="./img/${vistoria}.svg" alt="">
                 ${vistoria}
             </button>
         </td>

@@ -566,3 +566,7 @@ select {
     color: red;
     display: none;
 }
+
+.link-cadastro {
+    display: none;
+}

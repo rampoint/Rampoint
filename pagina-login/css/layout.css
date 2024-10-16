@@ -1,3 +1,15 @@
+@media (max-width: 1920px) {
+  .link-cadastro {
+    display: none;
+  }
+}
+
+@media (min-width: 1920px) {
+  .link-cadastro {
+    display: none;
+  }
+}
+
 @media (max-width: 775px) {
   .container {
     width: 45em;
@@ -95,7 +107,6 @@
     margin: 5px;
   }
 }
-
 
 /* @media (max-width: 645px) {
   .container {

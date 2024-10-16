@@ -279,7 +279,7 @@
   }
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 1405px) {
   body {
     overflow: auto;
   }
@@ -287,10 +287,6 @@
   .grupos {
     flex-direction: column;
     align-items: center;
-  }
-
-  .sidebar.active ~ .main-content .grafico-coluna {
-    margin-left: 3em;
   }
 
   .grafico-coluna {
@@ -311,10 +307,6 @@
   .fundo-notificacoes {
     width: 36em;
     margin: auto;
-  }
-
-  .sidebar.active ~ .main-content .fundo-notificacoes {
-    margin-left: 0;
   }
 
   .sidebar.active ~ .main-content .titulo-notificacoes {
@@ -339,17 +331,27 @@
   }
 
   .sidebar.active ~ .main-content .titulo-doadores {
-    right: 200px;
+    right: 352px;
   }
 
   .sidebar.active ~ .main-content .link-doacoes {
-    left: 23em;
+    left: 20em;
   }
   .link-doacoes {
     left: 21em;
   }
 
   .titulo-doadores {
-    right: 258px;
+    right: 415px;
+  }
+}
+
+@media (max-width: 1235px) {
+  .sidebar.active ~ .main-content .titulo-doadores {
+    right: 289px;
+  }
+
+  .titulo-doadores {
+    right: 356px;
   }
 }

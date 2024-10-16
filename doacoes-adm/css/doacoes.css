@@ -352,45 +352,23 @@ li {
   margin-right: 0.5em;
 }
 
-/* btn vistoria */
-.botao-vistoria {
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  margin-top: 2em;
-}
-
-.btn-vistoria {
-  font-family: "Poppins-semibold";
-  background-color: #CDCDCD;
-  border: none;
-  border-radius: 10px;
-  width: 12em;
-  height: 3em;
-}
-
-.btn-vistoria a {
-  color: #fff;
-  text-decoration: none;
-}
-
 #tbody{
   scroll-behavior: auto;
   overflow-y: auto;
 }
 
 .tabela-container {
-  max-height: 400px; /* Defina a altura máxima desejada */
-  overflow-y: auto; /* Permite o scroll vertical */
-  border: 1px solid #ccc; /* Opcional: borda para o contêiner */
-  border-radius: 5px; /* Opcional: bordas arredondadas */
+  max-height: 400px; 
+  overflow-y: auto; 
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 #lapis_editar{
   height: 17px;
   margin-left: 20px;
 }
+
 #excluir_editar{
   height: 17px;
-
 }

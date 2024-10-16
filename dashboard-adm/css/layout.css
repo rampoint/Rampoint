@@ -87,6 +87,9 @@
     width: 35em;
     height: 17em;
     margin-top: 1em;
+  scroll-behavior: auto;
+  overflow-y: auto;
+
   }
 
   .titulo-notificacoes {

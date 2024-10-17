@@ -3,13 +3,21 @@
         width: 45em;
     }
 
-    .genero::after {
-        right: 18em;
+    .sign-in {
+        width: 100%;
     }
 
-    .flatpickr-calendar {
-        font-size: 13px;
-        width: 90%;
+    .container input,
+    select {
+        padding: 8px 10px;
+    }
+
+    .email,
+    .senha {
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+        margin-top: 15px;
     }
 }
 
@@ -17,31 +25,18 @@
     .container {
         width: 42em;
     }
-
-    .genero::after {
-        right: 17em;
-    }
 }
 
 @media (max-width: 685px) {
     .container {
         width: 40em;
     }
-
-    .genero::after {
-        right: 16em;
-    }
 }
 
 @media (max-width: 645px) {
-    body {
-        height: auto;
-        overflow: scroll;
-    }
-
     .container {
         width: 35em;
-        height: 35em;
+        height: 45em;
         margin: 15px auto;
     }
 
@@ -58,6 +53,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
 
     .form-container input,
@@ -70,9 +66,13 @@
         font-size: 14px;
     }
 
-    .genero::after {
-        top: 26.5em;
-        right: 25em;
+    .email,
+    .senha {
+        width: 65%;
+    }
+
+    .form-container button {
+        width: 50%;
     }
 
     .btn-animado {
@@ -82,7 +82,6 @@
 
     .toggle-container {
         display: none;
-        /* Esconder o painel de toggle em telas menores */
     }
 
     .social-icons,
@@ -96,93 +95,19 @@
     }
 }
 
-
-/* @media (max-width: 645px) {
+@media (max-width: 645px) {
     .container {
-      width: 35em;
+        height: 35em;
     }
-  
-    #recover-password {
-      width: 13em;
-      padding: 0;
-    }
-  
-    .grupo {
-      width: 15em;
-    }
-  
-    #email,
-    #senha {
-      width: 17em;
-    }
-  
-    #genero,
-    #data-cadastro {
-      width: 9em;
-    }
-  
-    .genero::after {
-      top: 21.8em;
-      right: 14.5em;
-    }
-  
-    .confirmarSenha {
-      display: flex;
-      width: 9em;
-    }
-  
-    #confirmarSenha {
-      width: 9em;
-    }
-  
-    .termos {
-      width: 15em;
-    }
-  
-    .flatpickr-calendar {
-      font-size: 12px;
-      width: 85%;
-    }
-  
-    .flatpickr-day {
-      font-size: 11px;
-    }
-  
-    .flatpickr-month {
-      font-size: 14px;
-    }
-  } */
+}
 
-@media (max-width: 555px) {
+@media (max-width: 565px) {
     .container {
         width: 33em;
     }
 
-    .grupo {
-        width: 14em;
-    }
-
-    .sign-up {
-        overflow: hidden;
-    }
-
-    .sign-up .email {
-        width: 14em;
-    }
-
-    #senha-cadastro,
-    #confirmarSenha {
-        width: 8em;
-    }
-
-    .flatpickr-calendar {
-        font-size: 11px;
-        width: 80%;
-    }
-
-    .flatpickr-day,
-    .flatpickr-month {
-        font-size: 10px;
+    #recover-password {
+        padding: 0;
     }
 }
 
@@ -190,20 +115,75 @@
     .container {
         width: 30em;
     }
+
+    .genero::after {
+        right: 22em;
+    }
 }
 
 @media (max-width: 485px) {
     .container {
         width: 28em;
     }
+}
 
-    .flatpickr-calendar {
-        font-size: 10px;
-        width: 75%;
+@media (max-width: 455px) {
+    .container {
+        width: 25em;
     }
 
-    .flatpickr-day,
-    .flatpickr-month {
-        font-size: 9px;
+    .email,
+    .senha {
+        width: 85%;
+    }
+}
+
+@media (max-width: 405px) {
+    .container {
+        width: 23em;
+    }
+
+    #recover-password {
+        width: 60%;
+    }
+}
+
+@media (max-width: 375px) {
+    .container {
+        width: 22em;
+    }
+}
+
+@media (max-width: 365px) {
+    .container {
+        width: 21em;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .form-container button {
+        width: 70%;
+    }
+
+    .email,
+    .senha {
+        width: 95%;
+    }
+}
+
+@media (max-width: 345px) {
+    .container {
+        width: 19em;
+    }
+
+    .email,
+    .senha {
+        width: 105%;
+    }
+
+    #recover-password {
+        width: 70%;
     }
 }

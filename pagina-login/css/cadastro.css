@@ -413,34 +413,14 @@ select {
 
 /* inputs */
 .nome,
-.email,
 .telefone,
-.genero,
-.nascimento,
 .senha {
-    width: 100%;
-    gap: 5px;
-}
-
-.email,
-.senha {
-    margin-top: 0.2em;
-}
-
-.email {
-    display: flex;
-    flex-direction: column;
-}
-
-.grupo-telefone {
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
+    width: 50%;
 }
 
 .genero,
 .nascimento {
-    width: 57%;
+    width: 50%;
 }
 
 .genero option {
@@ -452,13 +432,7 @@ select {
     flex-direction: row;
     gap: 5px;
     margin-top: 0.5em;
-}
-
-.grupo2 {
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-    margin-top: 0.5em;
+    width: 100%;
 }
 
 #recover-password {

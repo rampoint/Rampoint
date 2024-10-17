@@ -1,209 +1,209 @@
 @media (max-width: 775px) {
-    .container {
-      width: 45em;
-    }
-  
-    .genero::after {
-      right: 18em;
-    }
-  
-    .flatpickr-calendar {
-      font-size: 13px;
-      width: 90%;
-    }
+  .container {
+    width: 45em;
   }
-  
-  @media (max-width: 725px) {
-    .container {
-      width: 42em;
-    }
-  
-    .genero::after {
-      right: 17em;
-    }
+
+  .sign-up {
+    width: 100%;
   }
-  
-  @media (max-width: 685px) {
-    .container {
-      width: 40em;
-    }
-  
-    .genero::after {
-      right: 16em;
-    }
+
+  .container input,
+  select {
+    padding: 8px 10px;
   }
-  
-  @media (max-width: 645px) {
-    body {
-      height: auto;
-      overflow: scroll;
-    }
-  
-    .container {
-      width: 35em;
-      height: 45em;
-      margin: 15px auto;
-    }
-  
-    .form-container {
-      width: 100%;
-      margin: 10px 0;
-      transition: none;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-  
-    .form-container form {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .form-container input,
-    .form-container select,
-    .form-container button {
-      width: 100%;
-      max-width: 300px;
-      margin-bottom: 10px;
-      padding: 10px;
-      font-size: 14px;
-    }
-  
-    .genero::after {
-      top: 26.5em;
-      right: 25em;
-    }
-  
-    .btn-animado {
-      padding: 10px 30px;
-      font-size: 14px;
-    }
-  
-    .toggle-container {
-      display: none;
-      /* Esconder o painel de toggle em telas menores */
-    }
-  
-    .social-icons,
-    .social-icons2 {
-      margin-top: 15px;
-    }
-  
-    .social-icons a,
-    .social-icons2 a {
-      margin: 5px;
-    }
+
+  .email,
+  .cep {
+    width: 100%;
   }
-  
-  
-  /* @media (max-width: 645px) {
-    .container {
-      width: 35em;
-    }
-  
-    #recover-password {
-      width: 13em;
-      padding: 0;
-    }
-  
-    .grupo {
-      width: 15em;
-    }
-  
-    #email,
-    #senha {
-      width: 17em;
-    }
-  
-    #genero,
-    #data-cadastro {
-      width: 9em;
-    }
-  
-    .genero::after {
-      top: 21.8em;
-      right: 14.5em;
-    }
-  
-    .confirmarSenha {
-      display: flex;
-      width: 9em;
-    }
-  
-    #confirmarSenha {
-      width: 9em;
-    }
-  
-    .termos {
-      width: 15em;
-    }
-  
-    .flatpickr-calendar {
-      font-size: 12px;
-      width: 85%;
-    }
-  
-    .flatpickr-day {
-      font-size: 11px;
-    }
-  
-    .flatpickr-month {
-      font-size: 14px;
-    }
-  } */
-  
-  @media (max-width: 555px) {
-    .container {
-      width: 33em;
-    }
-  
-    .grupo {
-      width: 14em;
-    }
-  
-    .sign-up {
-      overflow: hidden;
-    }
-  
-    .sign-up .email {
-      width: 14em;
-    }
-  
-    #senha-cadastro,
-    #confirmarSenha {
-      width: 8em;
-    }
-  
-    .flatpickr-calendar {
-      font-size: 11px;
-      width: 80%;
-    }
-  
-    .flatpickr-day,
-    .flatpickr-month {
-      font-size: 10px;
-    }
+
+  .genero::after {
+    top: 23.7em;
+    right: 32em;
   }
-  
-  @media (max-width: 535px) {
-    .container {
-      width: 30em;
-    }
+}
+
+@media (max-width: 725px) {
+  .container {
+    width: 42em;
   }
-  
-  @media (max-width: 485px) {
-    .container {
-      width: 28em;
-    }
-  
-    .flatpickr-calendar {
-      font-size: 10px;
-      width: 75%;
-    }
-  
-    .flatpickr-day,
-    .flatpickr-month {
-      font-size: 9px;
-    }
+
+  .genero::after {
+    right: 30em;
   }
+}
+
+@media (max-width: 685px) {
+  .container {
+    width: 40em;
+  }
+
+  .genero::after {
+    right: 16em;
+  }
+}
+
+@media (max-width: 645px) {
+  body {
+    height: auto;
+    overflow: scroll;
+  }
+
+  .container {
+    width: 35em;
+    height: 45em;
+    margin: 15px auto;
+  }
+
+  .form-container {
+    width: 100%;
+    margin: 10px 0;
+    transition: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .form-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-container input,
+  .form-container select,
+  .form-container button {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .genero::after {
+    top: 26.5em;
+    right: 25em;
+  }
+
+  .btn-animado {
+    padding: 10px 30px;
+    font-size: 14px;
+  }
+
+  .toggle-container {
+    display: none;
+  }
+
+  .social-icons,
+  .social-icons2 {
+    margin-top: 15px;
+  }
+
+  .social-icons a,
+  .social-icons2 a {
+    margin: 5px;
+  }
+}
+
+@media (max-width: 565px) {
+  .container {
+    width: 33em;
+  }
+
+  .genero::after {
+    right: 24em;
+  }
+}
+
+@media (max-width: 535px) {
+  .container {
+    width: 30em;
+  }
+
+  .genero::after {
+    right: 22em;
+  }
+}
+
+@media (max-width: 485px) {
+  .container {
+    width: 28em;
+  }
+
+  .genero::after {
+    right: 20.5em;
+  }
+}
+
+@media (max-width: 455px) {
+  .container {
+    width: 25em;
+  }
+
+  .genero::after {
+    right: 18em;
+  }
+}
+
+@media (max-width: 405px) {
+  .container {
+    width: 23em;
+  }
+
+  .genero::after {
+    right: 17em;
+  }
+}
+
+@media (max-width: 375px) {
+  .container {
+    width: 22em;
+  }
+
+  .genero::after {
+    right: 16.5em;
+  }
+}
+
+@media (max-width: 365px) {
+  .container {
+    width: 21em;
+    height: 65em;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .nome,
+  .telefone,
+  .genero,
+  .nascimento,
+  .senha {
+    width: 100%;
+  }
+
+  .grupo {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .genero::after {
+    top: 40em;
+    right: 6em;
+  }
+
+  .termos {
+    width: 85%;
+  }
+
+  .form-container button {
+    width: 80%;
+  }
+}
+
+@media (max-width: 345px) {
+  .container {
+    width: 19em;
+  }
+}

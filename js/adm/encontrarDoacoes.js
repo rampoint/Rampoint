@@ -92,6 +92,3 @@ function pegarIdUrl(){
   console.log(urlParams.get('id'))
 }
 
-function editarDados(id){
-  window.location.href = '../../check-vistoria-adm/check-vistoria.html?id='+id
-}

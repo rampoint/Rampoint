@@ -16,6 +16,7 @@ usersRef.once("value", (snapshot) => {
                         dataPeca.email,
                         dataPeca.nome,
                         dataPeca.qtd,
+                        childSnapshot.key
 
                     );
                 });
@@ -23,7 +24,7 @@ usersRef.once("value", (snapshot) => {
         });
     });
 });
-function criarTabela(nome_peca, estrutura, email_doador, nome_doador, qtd) {
+function criarTabela(nome_peca, estrutura, email_doador, nome_doador, qtd, id) {
     const novaLinha = document.createElement("tr");
 
     novaLinha.innerHTML = ` 
@@ -46,8 +47,8 @@ function criarTabela(nome_peca, estrutura, email_doador, nome_doador, qtd) {
       <p class="qtd-total">${qtd}</p>
     </td>
     <td>
-      <button class="btn-vistoria">
-        <a href="../check-vistoria-adm/check-vistoria.html">
+      <button onclick=editarDados('${id}') class="btn-vistoria">
+        <a>
           <img src="./img/chevron-right.svg" alt="">
         </a>
       </button>

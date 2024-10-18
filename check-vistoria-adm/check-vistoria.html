@@ -101,7 +101,7 @@
           </div>
 
           <div class="campo-form">
-            <label for="email" id="email" class="titulo-form">Email</label>
+            <label for="email" id="email-add" class="titulo-form">Email</label>
             <input type="email" id="email-placeholder" placeholder="Email do doador">
           </div>
 
@@ -140,12 +140,12 @@
           </div>
 
           <div class="campo-form">
-            <label for="data" class="titulo-form">Data</label>
-            <input type="date" class="data">
+            <label for="data"  class="titulo-form">Data</label>
+            <input type="date" id="data_doacao" class="data">
           </div>
           <div class="campo-form">
-            <label for="hora" class="titulo-form">Hora</label>
-            <input type="time" class="hora">
+            <label for="hora"  class="titulo-form">Hora</label>
+            <input type="time" id="hora_doacao" class="hora">
           </div>
         </div>
 
@@ -155,8 +155,8 @@
         </div>
 
         <div class="botoes">
-          <button class="btn-salvar">Confirmar vistoria</button>
-          <button class="btn-cancelar">Cancelar</button>
+          <button onclick="atualizarVistoria()" type="button" class="btn-salvar">Confirmar vistoria</button>
+          <button href="../doacoes-adm/doacoes.html" class="btn-cancelar">Cancelar</button>
         </div>
       </form>
     </section>

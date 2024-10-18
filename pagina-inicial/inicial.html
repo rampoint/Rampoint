@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/btn-acessibilidade.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/inicial.css">
     <link rel="stylesheet" href="./css/layout.css">
@@ -86,6 +87,73 @@
         </ul>
     </nav>
 
+    <div id="accessibilityBtn" class="accessibility-btn">
+        <span class="icon">
+            <img src="./img/icon-acessibilidade.svg" alt="Ícone de Acessibilidade" class="icon">
+        </span>
+        <span class="text">Recursos Assistivos</span>
+    </div>
+
+    <div id="accessibilityMenu" class="accessibility-menu">
+        <h3 class="title-accessibility-menu">Controle de fonte</h3>
+        <div class="row-group">
+            <div class="group-btn">
+                <img src="./img/btn-acessibilidade/Aa.svg" alt="">
+                <h4 class="title-group">Tamanho da fonte</h4>
+            </div>
+            <div class="group-btn">
+                <img src="./img/btn-acessibilidade/Aa.svg" alt="">
+                <h4 class="title-group">Fonte</h4>
+            </div>
+            <div class="group-btn">
+                <img src="./img/btn-acessibilidade/espaco-linhas.svg" alt="">
+                <h4 class="title-group">Espaço entre linhas</h4>
+            </div>
+            <div class="group-btn">
+                <img src="./img/btn-acessibilidade/espaco-letras.svg" alt="">
+                <h4 class="title-group">Espaço entre letras</h4>
+            </div>
+        </div>
+
+        <h3 class="title-accessibility-menu">Auxílio de Leitura</h3>
+        <div class="row-group">
+            <div class="group-btn">
+                <img src="./img/btn-acessibilidade/leitor-sites.svg" alt="">
+                <h4 class="title-group">Leitor de Sites</h4>
+            </div>
+            <div class="group-btn">
+                <img src="./img/btn-acessibilidade/modo-leitura.svg" alt="">
+                <h4 class="title-group">Modo de Leitura</h4>
+            </div>
+            <div class="group-btn">
+                <img src="./img/btn-acessibilidade/mascara-leitura.svg" alt="">
+                <h4 class="title-group">Máscara de leitura</h4>
+            </div>
+            <div class="group-btn">
+                <img src="./img/btn-acessibilidade/lupa.svg" alt="">
+                <h4 class="title-group">Lupa</h4>
+            </div>
+        </div>
+
+        <h3 class="title-accessibility-menu">Controle de cor</h3>
+        <div class="row-group">
+            <div class="group-btn">
+                <img src="./img/btn-acessibilidade/contraste.svg" alt="">
+                <h4 class="title-group">Contraste</h4>
+            </div>
+            <div class="group-btn">
+                <img src="./img/btn-acessibilidade/saturacao.svg" alt="">
+                <h4 class="title-group">Saturação</h4>
+            </div>
+        </div>
+
+        <div class="clear-accessibility">
+            <button id="clearAccessibility" class="btn-clear">
+                <img src="./img/btn-acessibilidade/icon-clear.svg" alt="">Desabilitar todas alterações no site
+            </button>
+        </div>
+    </div>
+
     <div class="container">
         <section class="imagem-fundo">
             <div class="inicio">
@@ -117,11 +185,14 @@
             <div class="texto">
                 <h1 id="titulo1">Nosso objetivo</h1>
                 <p id="texto1">A Rampoint tem como objetivo principal a implementação de uma plataforma destinada à
-                    <span class="span-preto">conscientização e ao correto descarte de resíduos eletrônicos</span>. Essa iniciativa é
+                    <span class="span-preto">conscientização e ao correto descarte de resíduos eletrônicos</span>. Essa
+                    iniciativa é
                     complementada pela instalação de ecopontos em diversas localidades urbanas onde nossa atuação se
-                    estende. Buscamos, assim, não apenas promover a <span class="span-preto">saúde humana</span>, mas também preservar
+                    estende. Buscamos, assim, não apenas promover a <span class="span-preto">saúde humana</span>, mas
+                    também preservar
                     a
-                    <span class="span-preto">vitalidade</span> e a integridade do <span class="span-preto">meio ambiente</span>.
+                    <span class="span-preto">vitalidade</span> e a integridade do <span class="span-preto">meio
+                        ambiente</span>.
                 </p>
             </div>
 
@@ -134,10 +205,13 @@
             </div>
             <div class="texto-ram">
                 <h1 id="titulo2">Ram, a rã!</h1>
-                <p id="texto2">o nosso mascote é o <span class="span-preto">Ram</span>, uma rã, anfíbio notável por sua peculiaridade.
+                <p id="texto2">o nosso mascote é o <span class="span-preto">Ram</span>, uma rã, anfíbio notável por sua
+                    peculiaridade.
                     O
-                    nome dele foi baseado na associação entre o termo "rã" e o componente <span class="span-preto">periférico</span>
-                    conhecido como <span class="span-preto">memória RAM</span>. Adicionalmente, a presença da palavra "ram" está
+                    nome dele foi baseado na associação entre o termo "rã" e o componente <span
+                        class="span-preto">periférico</span>
+                    conhecido como <span class="span-preto">memória RAM</span>. Adicionalmente, a presença da palavra
+                    "ram" está
                     integrada
                     em nossa <span class="span-preto">logomarca</span>, nossa identidade!
                 </p>
@@ -187,54 +261,54 @@
         </section>
 
         <div class="campo-descarte">
-           <h3 id="titulo-descarte">Descarte disponível:</h3>
-        <section class="cards">
-            <div class="card-wrapper area-madeira">
-                <div class="card-group">
-                    <div class="card-text">
-                        <p>Madeira</p>
-                        <img src="./img/icon-madeira.svg" alt="">
-                        </img>
+            <h3 id="titulo-descarte">Descarte disponível:</h3>
+            <section class="cards">
+                <div class="card-wrapper area-madeira">
+                    <div class="card-group">
+                        <div class="card-text">
+                            <p>Madeira</p>
+                            <img src="./img/icon-madeira.svg" alt="">
+                            </img>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="card-wrapper area-pneu">
-                <div class="card-group">
-                    <div class="card-text">
-                        <p>Pneu</p>
-                        <img src="./img/icon-pneu.svg" alt="">
-                        </img>
+                <div class="card-wrapper area-pneu">
+                    <div class="card-group">
+                        <div class="card-text">
+                            <p>Pneu</p>
+                            <img src="./img/icon-pneu.svg" alt="">
+                            </img>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="card-wrapper area-reciclavel">
-                <div class="card-group">
-                    <div class="card-text">
-                        <p>Reciclável</p>
-                        <img src="./img/icon-reciclavel.svg" alt="">
-                        </img>
+                <div class="card-wrapper area-reciclavel">
+                    <div class="card-group">
+                        <div class="card-text">
+                            <p>Reciclável</p>
+                            <img src="./img/icon-reciclavel.svg" alt="">
+                            </img>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="card-wrapper area-metal">
-                <div class="card-group">
-                    <div class="card-text">
-                        <p>Metal</p>
-                        <img src="./img/icon-metal.svg" alt="">
-                        </img>
+                <div class="card-wrapper area-metal">
+                    <div class="card-group">
+                        <div class="card-text">
+                            <p>Metal</p>
+                            <img src="./img/icon-metal.svg" alt="">
+                            </img>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="card-wrapper area-eletronico">
-                <div class="card-group">
-                    <div class="card-text">
-                        <p>Eletrônico</p>
-                        <img src="img/icon-eletronico.svg" alt="">
-                        </img>
+                <div class="card-wrapper area-eletronico">
+                    <div class="card-group">
+                        <div class="card-text">
+                            <p>Eletrônico</p>
+                            <img src="img/icon-eletronico.svg" alt="">
+                            </img>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section> 
+            </section>
         </div>
 
         <footer class="footer-container">
@@ -260,7 +334,8 @@
                 <div class="redes-sociais">
                     <h3 id="redes_sociais-titulo">REDES SOCIAIS</h3>
                     <ul>
-                        <li><a href="https://www.instagram.com/rampoint_?igsh=MWptbnVwdDAzN3NkNw==" target="_blank">Instagram</a>
+                        <li><a href="https://www.instagram.com/rampoint_?igsh=MWptbnVwdDAzN3NkNw=="
+                                target="_blank">Instagram</a>
                         </li>
                         <li><a href="#">Tiktok</a></li>
                     </ul>
@@ -281,6 +356,8 @@
         <script defer src="./js/scroll-modal.js"></script>
         <script defer src="./js/scroll-ecopontos.js"></script>
         <script defer src="./js/cep.js"></script>
+        <script src="./js/btn-acessibilidade.js"></script>
+
         <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-app-compat.js"></script>
         <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-auth-compat.js"></script>
         <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-database-compat.js"></script>

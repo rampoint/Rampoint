@@ -255,7 +255,7 @@
   }
 
   nav ul {
-    width: 59em;
+    width: auto;
     justify-content: space-between;
     position: static;
     padding-left: 0;
@@ -302,6 +302,11 @@
     margin-left: 15em;
   }
 
+  #titulo1,
+  #texto1 {
+    margin-left: 60px;
+  }
+
   #medalhas {
     width: 400px;
     margin-left: 0;
@@ -314,6 +319,7 @@
   .ramEmpe {
     width: 23em;
     height: 23em;
+    margin-top: 36px;
   }
 }
 
@@ -616,7 +622,7 @@
 
 @media (max-width: 710px) {
   nav ul {
-    width: 43em;
+    width: auto;
   }
 
   .container {
@@ -796,6 +802,33 @@
   nav ul {
     width: 39em;
   }
+
+  .card {
+    flex-direction: column-reverse;
+  }
+
+  .imagem-ecoponto {
+    margin-bottom: 45px;
+  }
+
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-content p {
+    text-align: center;
+  }
+
+  .campo-descarte {
+    margin-top: 35px;
+  }
+
+  #titulo-descarte {
+    margin-right: 20em;
+  }
 }
 
 @media (max-width: 615px) {
@@ -915,6 +948,10 @@
   #bairro {
     padding-right: 145px;
   }
+
+  #titulo-descarte {
+    margin-right: 16em;
+  }
 }
 
 @media (max-width: 580px) {
@@ -976,7 +1013,7 @@
   }
 
   #titulo-descarte {
-    margin-right: 17em;
+    margin-right: 14em;
   }
 
   .footer-container input[type="email"] {
@@ -1021,7 +1058,7 @@
 
   #h1-info,
   #p-info {
-    margin-left: 175px;
+    margin-left: 205px;
   }
 
   .form-conteiner {
@@ -1031,16 +1068,88 @@
   .card {
     display: flex;
     flex-direction: column;
+    margin: 20px 40px;
   }
 
   .card-content {
-    margin-left: 2em;
     margin-bottom: 1em;
   }
 
   #titulo-descarte {
     margin-top: 1em;
     margin-right: 13em;
+  }
+
+  #p-info {
+    width: 50%;
+  }
+
+  .form-conteiner {
+    padding: 10px;
+    flex-direction: row;
+    width: 300px;
+  }
+
+  .cep-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 15px;
+    max-width: 100%;
+  }
+
+  .cep-rua {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .rua-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 15px 0 0 15px;
+  }
+
+  .bairro-form {
+    margin-left: 15px;
+  }
+
+  #cep,
+  #rua,
+  #bairro {
+    padding-right: 64px;
+  }
+
+  .btn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .btn-lupa {
+    margin: 30px 18px 0 0;
+  }
+
+  .campo-descarte {
+    margin-top: -25px;
+  }
+}
+
+@media (max-width: 455px) {
+  #titulo-descarte {
+    margin-right: 10em;
+  }
+
+  .footer-container input[type="email"] {
+    width: 240px;
+  }
+
+  .redes-sociais,
+  .geral,
+  .contato {
+    width: 370px;
+    height: auto;
   }
 }
 
@@ -1199,6 +1308,7 @@
   #ecopontos {
     max-width: 80%;
     height: 25em;
+    margin-bottom: 6em;
   }
 
   .info-box {
@@ -1300,18 +1410,16 @@
   }
 
   .card-content p {
-    margin-left: 50px;
     max-width: 80%;
     margin-top: 15px;
   }
 
-  #info-ecoponto,
-  #nome-ecoponto {
-    margin-left: 50px;
-  }
-
   .imagem-ecoponto {
     margin: 15px 0;
+  }
+
+  .campo-descarte {
+    margin-top: 16px;
   }
 
   .footer-container {
@@ -1322,24 +1430,10 @@
     flex-direction: column;
   }
 
-  .geral {
-    margin-left: 0;
-  }
-
+  .geral,
   .redes-sociais,
   .contato {
-    margin-top: 30px;
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .redes-sociais,
-  .geral {
-    width: 270px;
-  }
-
-  .contato {
-    width: 277px;
+    width: 310px;
   }
 
   .footer-container .descricao-footer ul {
@@ -1370,5 +1464,98 @@
 
   .footer-container .logo {
     width: 100%;
+  }
+}
+
+@media (max-width: 330px) {
+  .imagem-fundo {
+    height: 33em;
+  }
+
+  .imagem-inicial {
+    width: 280px;
+  }
+
+  .internos-inicial {
+    width: 3em;
+    right: 7em;
+    top: 4em;
+  }
+
+  .brilho-inicial {
+    width: 1em;
+    right: 7em;
+    top: 13em;
+  }
+
+  .monitor-inicial {
+    width: 3em;
+    right: 7em;
+    top: 21em;
+  }
+
+  .roxo-inicial {
+    width: 3em;
+    left: 6em;
+    top: 10em;
+  }
+
+  .brilho-inicial2 {
+    width: 1em;
+    left: 7em;
+    top: 24em;
+  }
+
+  .teclado-inicial {
+    width: 3em;
+    left: 5em;
+    top: 27em;
+  }
+
+  #titulo-inicial {
+    font-size: 3em;
+  }
+
+  #texto-inicial {
+    font-size: 0.9em;
+  }
+
+  #titulo1 {
+    margin: 140px 0 10px 0px;
+  }
+
+  #texto1 {
+    margin: 20px 90px -40px 100px;
+  }
+
+  .ramEmpe {
+    width: 18em;
+    margin: -79px 0 0 0;
+  }
+
+  .form-conteiner {
+    width: 250px;
+  }
+
+  #cep,
+  #rua,
+  #bairro {
+    padding-right: 15px;
+  }
+
+  .cep-form,
+  .rua-form,
+  .bairro-form {
+    margin-left: 10px;
+  }
+
+  .email {
+    margin: 0 25px;
+  }
+
+  .geral,
+  .redes-sociais,
+  .contato {
+    width: 260px;
   }
 }

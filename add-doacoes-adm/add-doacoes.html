@@ -26,10 +26,10 @@
     <nav>
       <ul class="links">
         <li class="user">
-            <a href="../perfil-adm/perfil.html" id="user-btn">
-              <img src="./img/perfilADM.svg" class="foto-perfil" alt="Foto de perfil do usuário" />
-              <p class="nome-usuario">Usuário</p>
-            </a>
+          <a href="../perfil-adm/perfil.html" id="user-btn">
+            <img src="./img/perfilADM.svg" class="foto-perfil" alt="Foto de perfil do usuário" />
+            <p class="nome-usuario">Usuário</p>
+          </a>
         </li>
         <li>
           <a href="../dashboard-adm/dashboard.html">
@@ -96,7 +96,7 @@
       <form action="" class="form-doacoes">
         <div class="grupo1">
           <div class="campo-form">
-            <label for="nome"  class="titulo-form">Nome Completo</label>
+            <label for="nome" class="titulo-form">Nome Completo</label>
             <input id="nome-add" type="name">
           </div>
 
@@ -129,13 +129,28 @@
           </div>
 
           <div class="campo-form">
-            <label for="componente" class="titulo-form">Tipo de componente</label>
-            <select name="tipo-componente" id="tipo-componente">
-              <option value="Interno">Interno</option>
-              <option value="Periferico">Periférico</option>
-              <option value="Estrutura">Estrutura</option>
-              <option value="Resfriamento">Resfriamento</option>
-            </select>
+            <div class="custom-select">
+              <label for="componente" class="titulo-form">Tipo de componente</label>
+              <div class="selected-option">
+                <img id="selected-image" src="" alt="" style="display: none;">
+                <span style="font-size: 14px;">Selecione uma opção</span>
+              </div>
+              <div class="options">
+                <div class="option" data-value="Interno" data-image="./img/icon-interno.svg">
+                  <img src="./img/icon-interno.svg" alt="Interno"> Interno
+                </div>
+                <div class="option" data-value="Periférico" data-image="./img/icon-periferico.svg">
+                  <img src="./img/icon-periferico.svg" alt="Periférico"> Periférico
+                </div>
+                <div class="option" data-value="Estrutura" data-image="./img/icon-estrutura.svg">
+                  <img src="./img/icon-estrutura.svg" alt="Estrutura"> Estrutura
+                </div>
+                <div class="option" data-value="Resfriamento" data-image="./img/icon-resfriamento.svg">
+                  <img src="./img/icon-resfriamento.svg" alt="Resfriamento"> Resfriamento
+                </div>
+              </div>
+              <input type="hidden" name="selected-option" id="selected-option">
+            </div>
           </div>
 
           <div class="campo-form">
@@ -164,6 +179,7 @@
 
   <script src="./js/sidebar.js"></script>
   <script src="./js/ddd.js"></script>
+  <script src="./js/select.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-auth-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-database-compat.js"></script>

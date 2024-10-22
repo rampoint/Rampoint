@@ -1,0 +1,50 @@
+@media (max-width: 1920px) {
+  .fundo-titulo {
+    width: 100vw;
+  }
+}
+
+@media (max-width: 1175px) {
+  .botoes {
+    left: 49em;
+  }
+
+  .grupo1,
+  .grupo2,
+  .campo-descricao {
+    margin-left: 70px;
+  }
+}
+
+@media (max-width: 1120px) {
+  .campo-titulo {
+    margin: 110px 50px 40px 40px;
+  }
+
+  .botoes {
+    left: 45em;
+  }
+
+  .grupo1,
+  .grupo2,
+  .campo-descricao {
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 1100px) {
+  #qtd_peca {
+    width: 10em;
+  }
+}
+
+@media (max-width: 1035px) {
+  .grupo2 {
+    flex-wrap: wrap;
+    width: 85%;
+  }
+
+  .botoes {
+    left: 42em;
+  }
+}

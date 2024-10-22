@@ -1,5 +1,4 @@
 @import url(../css/font.css);
-
 @import url(../css/cores.css);
 
 * {
@@ -11,8 +10,16 @@ body {
   background-color: #f8f8ff;
 }
 
-/* começo imagem inicial */
+.link-home {
+  margin-left: -25px;
+}
 
+.link-home:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* começo imagem inicial */
 .imagem-fundo {
   display: flex;
   flex-direction: column;
@@ -93,7 +100,6 @@ body {
 }
 
 /* começo lado esquerdo */
-
 .medalha-vermelha {
   position: relative;
   top: 5em;
@@ -126,11 +132,9 @@ body {
   right: 13em;
   z-index: -1;
 }
-
 /* final lado esquerdo */
 
 /* começo lado direito */
-
 .brilho-roxo {
   position: relative;
   bottom: 12em;
@@ -147,7 +151,7 @@ body {
 .medalha-amarela {
   position: relative;
   bottom: 15em;
-  left: 30em;
+  left: 27em;
 }
 
 .brilho-vermelho {
@@ -167,9 +171,8 @@ body {
 .medalha-roxa {
   position: relative;
   bottom: 15em;
-  left: 25em;
+  left: 24em;
 }
-
 /* final lado direito */
 
 .medalha-vermelha,
@@ -189,6 +192,7 @@ body {
   0% {
     transform: translateY(0px);
   }
+
   100% {
     transform: translateY(20px);
   }
@@ -198,6 +202,7 @@ body {
   0% {
     transform: scale(1);
   }
+
   100% {
     transform: scale(1.2);
   }
@@ -207,18 +212,18 @@ body {
   0% {
     transform: rotate(0deg);
   }
+
   50% {
     transform: rotate(4deg);
   }
+
   100% {
     transform: rotate(0deg);
   }
 }
-
 /* final imagem inicial */
 
 /* começo dos textos */
-
 #titulo1 {
   font-family: "Blinker-extrabold";
   color: var(--verde);
@@ -235,7 +240,8 @@ body {
 }
 
 #scrollTarget {
-  padding-top: 9.5em; /* para compensar o menu fixo */
+  padding-top: 9.5em;
+  /* para compensar o menu fixo */
 }
 
 .cupons {
@@ -268,11 +274,9 @@ body {
   margin-left: 12em;
   width: 50%;
 }
-
 /* final dos textos */
 
 /* começo dos cards dos cupons */
-
 .card-cupons {
   display: flex;
   justify-content: center;
@@ -331,7 +335,7 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: auto;
+  overflow: none;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -429,7 +433,7 @@ body {
 }
 
 .modal-content-dourado .curiosidade {
-  height: 8em;
+  height: 9em;
   background-color: #ffce1e;
   border-radius: 25px;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
@@ -461,14 +465,13 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
 }
 
 .brilho-vidro {
   width: 5em;
   position: relative;
   right: 11em;
-  top: 9em;
+  top: 8em;
 }
 
 .titulo-vidro {
@@ -476,7 +479,7 @@ body {
   color: #027a8d;
   font-size: 30px;
   position: relative;
-  top: -3em;
+  bottom: 4em;
 }
 
 .texto-vidro {
@@ -484,19 +487,19 @@ body {
   color: #027a8d;
   font-size: 18px;
   position: relative;
-  top: -5em;
+  bottom: 6.5em;
 }
 
 .modal-content-vidro .ramcoin {
   margin: 15px 0;
   position: relative;
-  top: -5em;
-  left: 1.5em;
+  top: -7em;
+  left: 2em;
 }
 
 .cupom-vidro {
-  width: 50%;
-  margin-left: 45px;
+  width: 45%;
+  margin-left: 0px;
 }
 
 .modal-content-vidro .lojas {
@@ -504,15 +507,15 @@ body {
   flex-direction: row;
   gap: 15px;
   position: relative;
-  bottom: 6em;
-  left: 1em;
+  bottom: 8em;
+  left: 2em;
 }
 
 .modal-content-vidro .texto-lojas {
   font-family: "Poppins-bold";
   color: #027a8d;
   position: relative;
-  bottom: 7em;
+  top: -6.5em;
 }
 
 .modal-content-vidro .curiosidade {
@@ -523,7 +526,7 @@ body {
   padding: 10px;
   margin-right: 5em;
   position: relative;
-  bottom: 8em;
+  top: -5em;
 }
 
 .modal-content-vidro .texto-curiosidade {
@@ -539,7 +542,7 @@ body {
   width: 35%;
   position: relative;
   left: 3em;
-  bottom: 7em;
+  top: -5em;
   z-index: 2;
 }
 /* final modal vidro */
@@ -565,7 +568,7 @@ body {
   color: #2b5121;
   font-size: 30px;
   position: relative;
-  top: 1.5em;
+  top: 0.7em;
 }
 
 .texto-golias {
@@ -573,13 +576,13 @@ body {
   color: #2b5121;
   font-size: 18px;
   position: relative;
-  top: 0;
+  top: -1em;
 }
 
 .mancha-verde1 {
   position: relative;
   right: 11em;
-  top: 3em;
+  top: 1em;
 }
 
 .mancha-verde2 {
@@ -588,10 +591,15 @@ body {
   bottom: 2em;
 }
 
+.cupom-golias {
+  width: 40%;
+  margin-left: 25px;
+}
+
 .modal-content-golias .ramcoin {
   margin: 15px 0;
   position: relative;
-  top: -1em;
+  top: -3em;
   left: 1.5em;
 }
 
@@ -600,7 +608,7 @@ body {
   flex-direction: row;
   gap: 15px;
   position: relative;
-  bottom: 2em;
+  bottom: 3.5em;
   left: 1em;
 }
 
@@ -608,7 +616,7 @@ body {
   font-family: "Poppins-bold";
   color: #2b5121;
   position: relative;
-  bottom: 3em;
+  top: -1em;
 }
 
 .modal-content-golias .curiosidade {
@@ -619,7 +627,7 @@ body {
   padding: 10px;
   margin-right: 5em;
   position: relative;
-  bottom: 2em;
+  top: 1em;
 }
 
 .modal-content-golias .texto-curiosidade {
@@ -635,10 +643,9 @@ body {
   width: 35%;
   position: relative;
   left: 3em;
-  bottom: 2em;
+  top: 1em;
   z-index: 2;
 }
-
 /* final modal golias */
 
 /* começo botão fechar o modal */
@@ -701,7 +708,7 @@ body {
   border-radius: 15px;
   box-shadow: 2px 8px 8px rgba(42, 85, 194, 0.15);
   width: 300px;
-  z-index: 1;
+  z-index: 10;
 }
 
 .textos {
@@ -718,7 +725,6 @@ body {
 .ramcoin:hover .text-block {
   display: block;
 }
-
 /* final ramcoin */
 
 #loja {
@@ -733,11 +739,9 @@ body {
   width: 36em;
   padding: 0 0 20px 15px;
 }
-
 /* final dos cards dos cupons */
 
 /* começo dos cards das empresas */
-
 .section-empresas {
   margin-top: 5em;
 }
@@ -788,11 +792,9 @@ body {
   position: relative;
   bottom: 2em;
 }
-
 /* final dos cards das empresas */
 
 /* começo das medalhas */
-
 .conquistas {
   margin-top: 1em;
 }
@@ -856,7 +858,6 @@ body {
   font-size: 16px;
   width: 100%;
 }
-
 /* final salto tecnologico */
 
 /* começo coração generoso */
@@ -1042,5 +1043,4 @@ body {
   width: 80%;
 }
 /* final raio esperança */
-
 /* final das medalhas */

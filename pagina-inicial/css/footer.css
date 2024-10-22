@@ -175,28 +175,21 @@ input:focus {
 }
 
 /* media do footer */
-@media (max-width: 1210px) {
-  .footer-container {
-    width: 75em;
-  }
-}
-
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
   .footer-container {
     width: 70em;
   }
-}
+} */
 
 @media (max-width: 1000px) {
-
   .geral,
   .redes-sociais {
     margin-right: 3em;
   }
 
-  .contato {
+  /* .contato {
     margin-right: 5em;
-  }
+  } */
 
   .logoBranca {
     display: none;
@@ -204,9 +197,9 @@ input:focus {
 }
 
 @media (max-width: 876px) {
-  .footer-container {
+  /* .footer-container {
     width: 70em;
-  }
+  } */
 
   .geral,
   .redes-sociais {

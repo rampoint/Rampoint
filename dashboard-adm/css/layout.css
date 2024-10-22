@@ -1,4 +1,4 @@
-@media (max-width: 1920px) {
+@media (min-width: 1920px) {
   .fundo-titulo {
     width: 100vw;
   }
@@ -38,10 +38,16 @@
     margin-left: 15em;
   }
 
+  .sidebar.active~.main-content .notificacoes {
+    margin-left: 10em;
+  }
+
   .fundo-notificacoes {
     width: 35em;
     height: 17em;
-    margin-top: 1em;
+    margin-top: 0;
+    scroll-behavior: auto;
+    overflow-y: auto;
   }
 
   .doacoes {
@@ -55,301 +61,43 @@
   }
 }
 
-@media (max-width: 1850px) {
-  .subtitulo {
-    margin-top: 1em;
-  }
-
-  .grupos {
-    margin-top: 2em;
-  }
-
-  .grafico-coluna {
-    background-color: #fff;
-    width: 690px;
-    height: 700px;
-    border-radius: 15px;
-    margin-top: 15px;
-    padding: 30px 10px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-  }
-
-  #container {
-    width: 650px;
-    height: 650px;
-  }
-
-  .notificacoes {
-    margin-left: 5em;
+@media (max-width: 1855px) {
+  .sidebar.active~.main-content .notificacoes {
+    margin-left: 11em;
   }
 
   .fundo-notificacoes {
-    width: 35em;
-    height: 17em;
-    margin-top: 1em;
-  scroll-behavior: auto;
-  overflow-y: auto;
-
+    margin-top: 0;
   }
+}
 
-  .titulo-notificacoes {
-    position: relative;
-    bottom: 48px;
+@media (max-width: 1785px) {
+  .sidebar.active~.main-content .notificacoes {
+    margin-left: 7em;
   }
+}
 
-  .doacoes {
-    margin-top: 3em;
-  }
-
-  .tabela-doadores {
-    width: 35em;
-    height: 17em;
-    margin-top: 2em;
+@media (max-width: 1730px) {
+  .sidebar.active~.main-content .notificacoes {
+    margin-left: 5em;
   }
 }
 
 @media (max-width: 1700px) {
-  .fundo-titulo {
-    width: 100vw;
+  .campo-titulo {
+    margin: 100px 50px 25px 45px;
   }
 
   .campo-inicial {
-    margin: 0.5em 50px 0 65px;
-  }
-
-  .campo-titulo {
-    margin: 120px 50px 25px 55px;
-  }
-
-  .subtitulo {
-    margin-top: 1em;
-  }
-
-  .grupos {
-    margin-top: 2em;
-  }
-
-  .grafico-coluna {
-    background-color: #fff;
-    width: 690px;
-    height: 700px;
-    border-radius: 15px;
-    margin-top: 15px;
-    padding: 30px 10px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-  }
-
-  #container {
-    width: 650px;
-    height: 650px;
+    margin: 0.5em 50px 0 55px;
   }
 
   .notificacoes {
-    margin-left: 5em;
-  }
-
-  .fundo-notificacoes {
-    width: 35em;
-    height: 17em;
-    margin-top: 1em;
-  }
-
-  .doacoes {
-    margin-top: 3em;
-  }
-
-  .tabela-doadores {
-    width: 35em;
-    height: 17em;
-    margin-top: 2em;
+    margin-left: 10em;
   }
 }
 
-@media (max-width: 1680px) {
-  .fundo-titulo {
-    width: 100vw;
-  }
-
-  .campo-inicial {
-    margin: 0.5em 50px 0 50px;
-  }
-
-  .campo-titulo {
-    margin: 120px 50px 25px 55px;
-  }
-
-  .subtitulo {
-    margin-top: 1em;
-  }
-
-  .grupos {
-    margin-top: 2em;
-  }
-
-  .grafico-coluna {
-    background-color: #fff;
-    width: 620px;
-    height: 700px;
-    border-radius: 15px;
-    margin-top: 15px;
-    padding: 30px 10px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-  }
-
-  #container {
-    width: 590px;
-    height: 650px;
-  }
-
-  .notificacoes {
-    margin-left: 5em;
-  }
-
-  .fundo-notificacoes {
-    width: 35em;
-    height: 17em;
-    margin-top: 1em;
-  }
-
-  .doacoes {
-    margin-top: 3em;
-  }
-
-  .tabela-doadores {
-    width: 35em;
-    height: 17em;
-    margin-top: 2em;
-  }
-}
-
-@media (max-width: 1595px) {
-  .grafico-coluna {
-    width: 600px;
-    height: 690px;
-  }
-
-  #container {
-    width: 520px;
-    height: 600px;
-  }
-
-  .fundo-notificacoes,
-  .tabela-doadores {
-    width: 32em;
-  }
-
-  .titulo-doadores {
-    right: 10em;
-  }
-
-  .horario {
-    left: 3em;
-  }
-
-  .link-doacoes {
-    left: 18em;
-  }
-}
-
-@media (max-width: 1450px) {
-  .fundo-notificacoes,
-  .tabela-doadores {
-    width: 27em;
-  }
-
-  .fundo-notificacoes {
-    height: 19em;
-  }
-
-  .doacoes {
-    margin-top: 1em;
-  }
-
-  .horario {
-    left: 0em;
-  }
-
-  .linha {
-    width: 26em;
-  }
-
-  .titulo-doadores {
-    right: 7.5em;
-  }
-
-  .link-doacoes {
-    left: 15em;
-  }
-}
-
-@media (max-width: 1405px) {
-  body {
-    overflow: auto;
-  }
-
-  .grupos {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .grafico-coluna {
-    height: 570px;
-  }
-
-  #container {
-    width: 560px;
-    height: 510px;
-  }
-
-  .notificacoes {
-    width: 90%;
-    margin-top: 6em;
-    margin-left: 0;
-  }
-
-  .fundo-notificacoes {
-    width: 36em;
-    margin: auto;
-  }
-
-  .sidebar.active ~ .main-content .titulo-notificacoes {
-    right: 20px;
-  }
-
-  .grupo-mensagem {
-    padding: 17px 15px;
-  }
-
-  .horario {
-    left: 8em;
-  }
-
-  .linha {
-    width: 35em;
-  }
-
-  .tabela-doadores {
-    margin: 2em auto;
-    width: 36em;
-  }
-
-  .sidebar.active ~ .main-content .titulo-doadores {
-    right: 352px;
-  }
-
-  .sidebar.active ~ .main-content .link-doacoes {
-    left: 20em;
-  }
-  .link-doacoes {
-    left: 21em;
-  }
-
-  .titulo-doadores {
-    right: 415px;
-  }
-}
-
-@media (max-width: 1235px) {
+/* @media (max-width: 1235px) {
   .sidebar.active ~ .main-content .titulo-doadores {
     right: 289px;
   }
@@ -357,4 +105,4 @@
   .titulo-doadores {
     right: 356px;
   }
-}
+} */

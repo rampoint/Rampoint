@@ -258,7 +258,7 @@ body {
   font-family: "Blinker-extrabold";
   color: var(--verde);
   font-size: 1.5em;
-  margin: 95px 0 0 150px;
+  margin: 95px 0 15px 150px;
 }
 
 #texto1 {

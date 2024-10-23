@@ -164,6 +164,7 @@ body {
   color: #D40000;
   border: none;
 }
+
 /* final estilo modal perfil */
 
 .titulo-doacoes {
@@ -194,15 +195,20 @@ body {
   margin-left: 8em;
 }
 
-.sidebar.active ~ .main-content .grafico-coluna {
+#container,
+#container2 {
+  height: 340px;
+}
+
+.sidebar.active~.main-content .grafico-coluna {
   margin: 2em;
 }
 
-.sidebar.active ~ .main-content .grafico-pizza {
+.sidebar.active~.main-content .grafico-pizza {
   margin: 2em 0;
 }
 
-.sidebar.active ~ .main-content .grupos {
+.sidebar.active~.main-content .grupos {
   margin-left: 2em;
   gap: 3em;
 }

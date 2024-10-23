@@ -24,33 +24,34 @@ body {
 }
 
 .lista-termos {
-    margin:auto;
+  width: 95%;
+  margin: auto;
 }
 
 .titulo-termos {
-    font-family: "Poppins-semibold";
-    color: var(--preto);
-    list-style: none;
-    font-size: 1em;
+  font-family: "Poppins-semibold";
+  color: var(--preto);
+  list-style: none;
+  font-size: 1em;
 }
 
 .texto-termos {
-    font-family: "Poppins-regular";
-    color: var(--preto);
-    list-style: none;
-    font-size: 0.9em;
-    margin-bottom: 1.5em;
+  font-family: "Poppins-regular";
+  color: var(--preto);
+  list-style: none;
+  font-size: 0.9em;
+  margin-bottom: 1.5em;
 }
 
 .data {
-    font-family: "Poppins-regular";
-    color: var(--preto);
-    list-style: none;
-    font-size: 0.9em;
-    margin: 3em 0 2em 0;
+  font-family: "Poppins-regular";
+  color: var(--preto);
+  list-style: none;
+  font-size: 0.9em;
+  margin: 3em 0 2em 0;
 }
 
 #span-preto {
-    font-family: "Poppins-semibold";
-    color: var(--preto);
+  font-family: "Poppins-semibold";
+  color: var(--preto);
 }

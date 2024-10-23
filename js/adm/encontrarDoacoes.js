@@ -17,7 +17,6 @@ usersRef.once("value", (snapshot) => {
     usersChild.once("value", (snapshot) => {
       if (snapshot.exists()) {
         snapshot.forEach((childSnapshot) => {
-          var nome_pecas = childSnapshot.key;
           var dataPeca = childSnapshot.val();
 
           criarTabela(
@@ -29,12 +28,7 @@ usersRef.once("value", (snapshot) => {
             dataPeca.vistoria,
             childSnapshot.key
 
-          );
-        });
-      }
-    });
-  });
-});
+          );});}});});});
 
 function criarTabela(
   nome_peca,

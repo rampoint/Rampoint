@@ -348,7 +348,7 @@ input:focus {
     height: auto;
     display: flex;
     flex-direction: row;
-    margin: 0 25px;
+    margin: 0 85px;
   }
 
   #email {

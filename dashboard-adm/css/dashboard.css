@@ -190,3 +190,91 @@ td {
 tbody tr:hover {
   cursor: pointer;
 }
+
+/* tema claro/escuro */
+.theme-toggle {
+  position: fixed;
+  top: 30px;
+  right: 35px;
+  cursor: pointer;
+}
+
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.light-theme {
+  background-color: #e4e9f7;
+  color: #121212;
+}
+
+.dark-theme {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.main-content.light-theme {
+  background-color: #e4e9f7;
+}
+
+.main-content.dark-theme {
+  background-color: #121212;
+}
+
+.sidebar.light-theme {
+  background-color: #fff;
+}
+
+.sidebar.dark-theme {
+  background-color: #121212;
+  box-shadow: 0 5px 20px rgba(255, 255, 255, 0.1);
+}
+
+.fundo-titulo.light-theme {
+  background-color: #fff;
+}
+
+.fundo-titulo.dark-theme {
+  background-color: #121212;
+  box-shadow: 0 5px 20px rgba(255, 255, 255, 0.1);
+}
+
+.titulo-inicial.light-theme {
+  background-color: transparent;
+  color: #2a55c2;
+}
+
+.titulo-inicial.dark-theme {
+  background-color: transparent;
+  color: #2a55c2;
+}
+
+h3.light-theme {
+  background-color: transparent;
+  color: #121212;
+}
+
+h3.dark-theme {
+  background-color: transparent;
+  color: #fff;
+}
+
+.titulo-notificacoes.light-theme {
+  background-color: transparent;
+  color: #121212;
+}
+
+.titulo-notificacoes.dark-theme {
+  background-color: transparent;
+  color: #fff;
+}
+
+.titulo-doadores.light-theme {
+  background-color: transparent;
+  color: #121212;
+}
+
+.titulo-doadores.dark-theme {
+  background-color: transparent;
+  color: #fff;
+}

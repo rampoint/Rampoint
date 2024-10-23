@@ -62,24 +62,8 @@
 }
 
 @media (max-width: 1855px) {
-  .sidebar.active~.main-content .notificacoes {
-    margin-left: 11em;
-  }
-
   .fundo-notificacoes {
     margin-top: 0;
-  }
-}
-
-@media (max-width: 1785px) {
-  .sidebar.active~.main-content .notificacoes {
-    margin-left: 7em;
-  }
-}
-
-@media (max-width: 1730px) {
-  .sidebar.active~.main-content .notificacoes {
-    margin-left: 5em;
   }
 }
 

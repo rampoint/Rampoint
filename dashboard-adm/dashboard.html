@@ -83,15 +83,19 @@
     </nav>
   </aside>
 
-  <main class="main-content">
+  <main class="main-content light-theme">
     <header class="fundo-titulo">
       <h1 class="titulo-pagina">Dashboard</h1>
+
+      <div class="theme-toggle">
+        <i id="theme-icon" class='bx bx-sun'></i>
+      </div>
     </header>
 
     <section class="campo-titulo">
       <h2 class="titulo-inicial">Visão geral</h2>
     </section>
-    
+
     <section class="campo-inicial">
       <h3 class="subtitulo">Tendência mensal de doações</h3>
       <div class="grupos">
@@ -187,6 +191,7 @@
   <script defer src="./js/setaData.js"></script>
   <script src="./js/grafico.js"></script>
   <script src="./js/animacao-links.js"></script>
+  <script src="./js/mudaTema.js"></script>
 </body>
 <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-auth-compat.js"></script>

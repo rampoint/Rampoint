@@ -53,3 +53,4 @@ function criarTabela(
   // Adiciona a nova linha ao corpo da tabela
   document.getElementsByClassName("fundo-notificacoes")[0].appendChild(novaLinha);
 }
+

@@ -1,6 +1,10 @@
-@media (max-width: 1920px) {
+@media (min-width: 1920px) {
   .fundo-titulo {
     width: 100vw;
+  }
+
+  .grupo {
+    margin-left: 6em;
   }
 
   .campo-titulo {
@@ -33,7 +37,7 @@
     margin: 3em 1.5em 0 3.5em;
   }
 
-  .sidebar.active ~ .main-content .titulo-doacoes {
+  .sidebar.active~.main-content .titulo-doacoes {
     margin: 3em 1.5em 0 3em;
   }
 
@@ -41,15 +45,15 @@
     gap: 5em;
   }
 
-  .sidebar.active ~ .main-content .grupos {
+  .sidebar.active~.main-content .grupos {
     gap: 0;
   }
 
-  .sidebar.active ~ .main-content .grafico-coluna {
+  .sidebar.active~.main-content .grafico-coluna {
     margin-left: 3em;
   }
 
-  .sidebar.active ~ .main-content .grafico-pizza {
+  .sidebar.active~.main-content .grafico-pizza {
     margin-left: 3em;
   }
 }
@@ -72,27 +76,27 @@
     margin-bottom: 1em;
   }
 
-  .sidebar.active ~ .main-content .fundo-perfil {
+  .sidebar.active~.main-content .fundo-perfil {
     width: 40em;
   }
 
-  .sidebar.active ~ .main-content .modalBtn-perfil {
+  .sidebar.active~.main-content .modalBtn-perfil {
     margin-left: 15em;
   }
 
-  .sidebar.active ~ .main-content .campo-titulo {
+  .sidebar.active~.main-content .campo-titulo {
     margin: 100px 50px 25px 48px;
   }
 
-  .sidebar.active ~ .main-content .titulo-doacoes {
+  .sidebar.active~.main-content .titulo-doacoes {
     margin: 3em 1.5em 0 2em;
   }
 
-  .sidebar.active ~ .main-content .grafico-coluna {
+  .sidebar.active~.main-content .grafico-coluna {
     margin: 2em 5em;
   }
 
-  .sidebar.active ~ .main-content .grafico-pizza {
+  .sidebar.active~.main-content .grafico-pizza {
     margin: 2em 5em;
   }
 }

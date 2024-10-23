@@ -175,16 +175,34 @@ body {
   display: flex;
   flex-direction: row;
   margin-bottom: 2em;
+  gap: 6em;
 }
 
 .grafico-coluna,
 .grafico-pizza {
   background-color: #fff;
   width: 500px;
-  height: 500px;
+  height: 430px;
   margin-top: 2em;
   border-radius: 15px;
   margin-left: 5em;
   padding: 45px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.grafico-coluna {
+  margin-left: 8em;
+}
+
+.sidebar.active ~ .main-content .grafico-coluna {
+  margin: 2em;
+}
+
+.sidebar.active ~ .main-content .grafico-pizza {
+  margin: 2em 0;
+}
+
+.sidebar.active ~ .main-content .grupos {
+  margin-left: 2em;
+  gap: 3em;
 }

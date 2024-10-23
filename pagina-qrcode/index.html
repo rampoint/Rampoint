@@ -124,7 +124,8 @@
             </div>
 
             <div class="qrcode-salvar">
-                <div class="imgqrcode"><img id="qrcode__img" src="img/qrcode.svg"></div>
+                <div class="qrcode">
+                    </div>
                 <div class="down-salvar">
                     <button id="download">Download</button><br><br>
                     <img id="image-to-download" src="path/to/image/qrcode.png" alt="Imagem para Download"
@@ -227,6 +228,43 @@
     <script src="../js/firebase-init.js"></script>
     <script src="../js/register.js"></script>
     <script src="../js/logout.js"></script>
+    <script type="text/javascript" src="../js/qrcode.js"></script>
+    <script type="text/javascript" src="../js/qrcode.min.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script type="text/javascript">
+        var qrcode = new QRCode(document.getElementById("qrcode"), {
+            width : 100,
+            height : 100
+        });
+        
+        function makeCode () {		
+            var elText = document.getElementById("inserir-total");
+            
+            if (!elText.value) {
+                alert("Input a text");
+                elText.focus();
+                return;
+            }
+            
+            qrcode.makeCode(elText.value);
+        }
+        
+        makeCode();
+        
+        $("#text").
+            on("blur", function () {
+                makeCode();
+            }).
+            on("keydown", function (e) {
+                if (e.keyCode == 13) {
+                    makeCode();
+                }
+            });
+        </script>
+
+
+
+    
     </div>
 
     </div>

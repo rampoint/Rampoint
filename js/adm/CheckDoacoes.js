@@ -81,7 +81,7 @@ function editarDados(id) {
           email: form.email(),
           qtd: form.Qtd_peca(),
           tipo: form.tipo_componente(),
-          vistoria:'Teste',
+          vistoria:'Realizada',
           desc: form.desc_doacao(),
         })
         .then(() => {

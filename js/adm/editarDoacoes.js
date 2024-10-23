@@ -1,6 +1,6 @@
-function editarDados(id) {
+-function editarDados(id) {
   window.location.href =
-    "../../check-vistoria-adm/check-vistoria.html?id=" + id;
+    "../../editar-doacoes-adm/editar-doacoes.html?id=" + id;
 }
 
 function pegarIdUrl() {
@@ -48,13 +48,8 @@ function acharDoacaoUrl(uid) {
 }
 
 function mostrarDados(data) {
-  document.getElementById("nome-placeholder").value = data.nome;
-  document.getElementById("email-placeholder").value = data.email;
-  // document.getElementById('telefone-placeholder').placeholder = data.tel
-  document.getElementById("tipo-placeholder").innerHTML = data.tipo;
-  document.getElementById("qtd-placeholder").value = data.qtd;
-  document.getElementById("search").value = data.nome_peca;
-  document.getElementById("descricao-peca").value = data.desc;
+  document.getElementById("nome-placeholder").value = 'receba';
+
 }
 
 const form = {

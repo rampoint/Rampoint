@@ -2,23 +2,27 @@ document.addEventListener("DOMContentLoaded", () => {
   const themeIcon = document.getElementById("theme-icon");
   const mainContent = document.querySelector(".main-content");
   const sidebar = document.querySelector(".sidebar");
+  const spanLogo = document.querySelector(".span-logo");
+  const nameUser = document.querySelector(".nome-usuario");
+  const linkSidebar = document.querySelectorAll(".nav-item");
+  const iconSidebar = document.querySelectorAll("i");
 
   const tituloPagina = document.querySelector(".titulo-pagina");
   const fundoTitulo = document.querySelector(".fundo-titulo");
 
   const titulo1 = document.querySelector(".titulo-inicial");
   const subtitulo = document.querySelector(".subtitulo");
-  
+
   const tituloDoadores = document.querySelector(".titulo-doadores");
   const fundoGrafico = document.querySelector(".grafico-coluna");
-  
+
   const tituloNotf = document.querySelector(".titulo-notificacoes");
   const fundoNotf = document.querySelector(".fundo-notificacoes");
   const tituloMsg = document.querySelectorAll(".titulo-mensagem");
   const mensagens = document.querySelectorAll(".mensagem");
   const spanMensagens = document.querySelectorAll(".span-mensagem");
   const horaMsg = document.querySelectorAll(".horario");
-  
+
   const linkDoacao = document.querySelector(".link-doacoes");
   const tabelaDoacoes = document.querySelector(".tabela-doadores");
   const titulotabela = document.querySelectorAll("th");
@@ -137,6 +141,12 @@ document.addEventListener("DOMContentLoaded", () => {
     sidebar.classList.remove("light-theme");
     sidebar.classList.add("dark-theme");
 
+    spanLogo.classList.remove("light-theme");
+    spanLogo.classList.add("dark-theme");
+
+    nameUser.classList.remove("light-theme");
+    nameUser.classList.add("dark-theme");
+
     tituloPagina.classList.remove("light-theme");
     tituloPagina.classList.add("dark-theme");
 
@@ -166,6 +176,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
     tabelaDoacoes.classList.remove("light-theme");
     tabelaDoacoes.classList.add("dark-theme");
+
+    iconSidebar.forEach((icon) => {
+      icon.classList.remove("light-theme");
+      icon.classList.add("dark-theme");
+    });
+
+    linkSidebar.forEach((link) => {
+      link.classList.remove("light-theme");
+      link.classList.add("dark-theme");
+    });
 
     mensagens.forEach((mensagem) => {
       mensagem.classList.remove("light-theme");
@@ -211,6 +231,12 @@ document.addEventListener("DOMContentLoaded", () => {
     sidebar.classList.toggle("dark-theme");
     sidebar.classList.toggle("light-theme");
 
+    nameUser.classList.toggle("dark-theme");
+    nameUser.classList.toggle("light-theme");
+
+    spanLogo.classList.toggle("dark-theme");
+    spanLogo.classList.toggle("light-theme");
+
     tituloPagina.classList.toggle("dark-theme");
     tituloPagina.classList.toggle("light-theme");
 
@@ -241,6 +267,16 @@ document.addEventListener("DOMContentLoaded", () => {
     tabelaDoacoes.classList.toggle("dark-theme");
     tabelaDoacoes.classList.toggle("light-theme");
 
+    iconSidebar.forEach((icon) => {
+      icon.classList.toggle("dark-theme");
+      icon.classList.toggle("light-theme");
+    });
+
+    linkSidebar.forEach((link) => {
+      link.classList.toggle("dark-theme");
+      link.classList.toggle("light-theme");
+    });
+
     titulotabela.forEach((th) => {
       th.classList.toggle("dark-theme");
       th.classList.toggle("light-theme");
@@ -250,7 +286,6 @@ document.addEventListener("DOMContentLoaded", () => {
       td.classList.toggle("dark-theme");
       td.classList.toggle("light-theme");
     });
-
 
     mensagens.forEach((mensagem) => {
       mensagem.classList.toggle("dark-theme");

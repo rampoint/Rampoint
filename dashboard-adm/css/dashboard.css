@@ -227,6 +227,22 @@ body.dark-theme {
   box-shadow: 0 5px 20px rgba(255, 255, 255, 0.1);
 }
 
+.span-logo.dark-theme {
+  color: #f8f8f8;
+}
+
+.nome-usuario.dark-theme {
+  color: #f8f8f8;
+}
+
+i.dark-theme {
+  color: #f8f8f8;
+}
+
+.nav-item.dark-theme {
+  color: #f8f8f8;
+}
+
 .titulo-pagina.light-theme {
   color: #121212;
 }

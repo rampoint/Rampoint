@@ -152,20 +152,6 @@ body {
   opacity: 1;
 }
 
-#ram,
-#point {
-  font-family: "Batangas";
-  font-size: 34px;
-}
-
-#ram {
-  color: var(--azul);
-}
-
-#point {
-  color: var(--preto);
-}
-
 .sidebar.active .top .logo {
   opacity: 1;
 }

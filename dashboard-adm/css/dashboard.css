@@ -47,6 +47,7 @@
 #container {
   width: 450px;
   height: 450px;
+  background-color: transparent;
 }
 
 /* notificacoes */
@@ -105,6 +106,7 @@
 }
 
 .mensagem {
+  color: #000;
   margin-top: 5px;
 }
 
@@ -139,7 +141,7 @@
   color: #121212;
   position: relative;
   top: 1.5em;
-  right: 10.5em;
+  right: 10.2em;
 }
 
 .link-doacoes {
@@ -149,6 +151,7 @@
   position: relative;
   top: 0.5em;
   left: 18em;
+  content: '';
 }
 
 .link-doacoes:hover {
@@ -191,7 +194,7 @@ tbody tr:hover {
   cursor: pointer;
 }
 
-/* tema claro/escuro */
+/* tema claro-escuro */
 .theme-toggle {
   position: fixed;
   top: 30px;
@@ -204,25 +207,19 @@ body {
 }
 
 .light-theme {
-  background-color: #e4e9f7;
   color: #121212;
 }
 
 .dark-theme {
-  background-color: #121212;
-  color: #ffffff;
+  color: #fff;
 }
 
-.main-content.light-theme {
-  background-color: #e4e9f7;
+body.dark-theme {
+  background-color: #121212;
 }
 
 .main-content.dark-theme {
   background-color: #121212;
-}
-
-.sidebar.light-theme {
-  background-color: #fff;
 }
 
 .sidebar.dark-theme {
@@ -230,8 +227,12 @@ body {
   box-shadow: 0 5px 20px rgba(255, 255, 255, 0.1);
 }
 
-.fundo-titulo.light-theme {
-  background-color: #fff;
+.titulo-pagina.light-theme {
+  color: #121212;
+}
+
+.titulo-pagina.dark-theme {
+  color: #DADADC;
 }
 
 .fundo-titulo.dark-theme {
@@ -246,27 +247,17 @@ body {
 
 .titulo-inicial.dark-theme {
   background-color: transparent;
-  color: #2a55c2;
-}
-
-h3.light-theme {
-  background-color: transparent;
-  color: #121212;
+  color: #8EAEFF;
 }
 
 h3.dark-theme {
   background-color: transparent;
-  color: #fff;
-}
-
-.titulo-notificacoes.light-theme {
-  background-color: transparent;
-  color: #121212;
+  color: #DADADC;
 }
 
 .titulo-notificacoes.dark-theme {
   background-color: transparent;
-  color: #fff;
+  color: #DADADC;
 }
 
 .titulo-doadores.light-theme {
@@ -276,5 +267,49 @@ h3.dark-theme {
 
 .titulo-doadores.dark-theme {
   background-color: transparent;
-  color: #fff;
+  color: #DADADC;
+}
+
+.grafico-coluna.dark-theme {
+  background-color: #282828;
+}
+
+.fundo-notificacoes.dark-theme {
+  background-color: #282828;
+}
+
+.titulo-mensagem.dark-theme {
+  color: #DADADC;
+}
+
+.mensagem.dark-theme {
+  color: #DADADC;
+}
+
+.span-mensagem.dark-theme {
+  color: rgba(218, 218, 220, 0.67);
+}
+
+.link-doacoes.light-theme {
+  color: #2a55c2;
+}
+
+.link-doacoes.dark-theme {
+  color: #8EAEFF;
+}
+
+.tabela-doadores.dark-theme {
+  background-color: #282828;
+}
+
+th.dark-theme {
+  color: #DADADC;
+}
+
+tr.dark-theme {
+  color: #DADADC;
+}
+
+td.dark-theme {
+  color: #DADADC;
 }

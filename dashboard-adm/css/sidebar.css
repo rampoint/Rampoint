@@ -22,6 +22,16 @@ body {
   align-items: center;
 }
 
+.titulo-logo {
+  font-family: "Batangas";
+  font-size: xx-large;
+  color: #2A55C2;
+}
+
+.span-logo {
+  color: #121212;
+}
+
 .sidebar {
   top: 0;
   left: 0;

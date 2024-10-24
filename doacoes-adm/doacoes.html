@@ -1,178 +1,158 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/doacoes.css" />
-    <link rel="stylesheet" href="./css/sidebar.css" />
-    <link rel="stylesheet" href="./css/layout.css" />
-    <title>Doações</title>
 
-    <link
-      rel="shortcut icon"
-      href="./img/rostoCirculo.png"
-      type="image/x-icon"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/doacoes.css" />
+  <link rel="stylesheet" href="./css/sidebar.css" />
+  <link rel="stylesheet" href="./css/layout.css" />
+  <title>Doações</title>
 
-    <!-- icon -->
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-  </head>
+  <link rel="shortcut icon" href="./img/rostoCirculo.png" type="image/x-icon" />
 
-  <body>
-    <aside class="sidebar">
-      <div class="top">
-        <div class="logo">
-          <img src="./img/logo.svg" class="imagem-logo" alt="" />
-        </div>
-        <img src="./img/seta.svg" id="btn" alt="" />
+  <!-- icon -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <aside class="sidebar">
+    <div class="top">
+      <div class="logo">
+        <h1 class="titulo-logo">ram<span class="span-logo">poınt.</span></h1>
       </div>
+      <img src="./img/seta.svg" id="btn" alt="" />
+    </div>
 
-      <nav>
-        <ul class="links">
-          <li class="user">
-            <a href="../perfil-adm/perfil.html" id="user-btn">
-              <img
-                src="./img/perfilADM.svg"
-                class="foto-perfil"
-                alt="Foto de perfil do usuário"
-              />
-              <p class="nome-usuario">Usuário</p>
-            </a>
-          </li>
-          <li>
-            <a href="../dashboard-adm/dashboard.html">
-              <i class="bx bx-grid-alt"></i>
-              <span class="nav-item">Dashboard</span>
-            </a>
-          </li>
-          <li>
-            <a href="../add-doacoes-adm/add-doacoes.html">
-              <i class="bx bx-list-plus"></i>
-              <span class="nav-item">Adicionar doações</span>
-            </a>
-          </li>
-          <li>
-            <a href="../doacoes-adm/doacoes.html">
-              <i class="bx bx-spreadsheet"></i>
-              <span class="nav-item">Doações</span>
-            </a>
-          </li>
-          <li>
-            <a href="../vistoria-adm/vistorias-pendentes.html">
-              <i class="bx bx-list-check"></i>
-              <span class="nav-item">Vistorias pendentes</span>
-            </a>
-          </li>
-          <li>
-            <a href="../historico-adm/historico.html">
-              <i class="bx bx-time-five"></i>
-              <span class="nav-item">Histórico</span>
-            </a>
-          </li>
-          <li>
-            <a href="../notificacoes-adm/notificacoes.html">
-              <i class="bx bx-bell"></i>
-              <span class="nav-item">Notificações</span>
-            </a>
-          </li>
-          <li>
-            <a href="../perfil-adm/perfil.html">
-              <i class="bx bx-cog"></i>
-              <span class="nav-item">Configurações</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="sair">
-              <i class="bx bx-log-out"></i>
-              <span class="nav-item">Sair</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </aside>
+    <nav>
+      <ul class="links">
+        <li class="user">
+          <a href="../perfil-adm/perfil.html" id="user-btn">
+            <img src="./img/perfilADM.svg" class="foto-perfil" alt="Foto de perfil do usuário" />
+            <p class="nome-usuario">Usuário</p>
+          </a>
+        </li>
+        <li>
+          <a href="../dashboard-adm/dashboard.html">
+            <i class="bx bx-grid-alt"></i>
+            <span class="nav-item">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="../add-doacoes-adm/add-doacoes.html">
+            <i class="bx bx-list-plus"></i>
+            <span class="nav-item">Adicionar doações</span>
+          </a>
+        </li>
+        <li>
+          <a href="../doacoes-adm/doacoes.html">
+            <i class="bx bx-spreadsheet"></i>
+            <span class="nav-item">Doações</span>
+          </a>
+        </li>
+        <li>
+          <a href="../vistoria-adm/vistorias-pendentes.html">
+            <i class="bx bx-list-check"></i>
+            <span class="nav-item">Vistorias pendentes</span>
+          </a>
+        </li>
+        <li>
+          <a href="../historico-adm/historico.html">
+            <i class="bx bx-time-five"></i>
+            <span class="nav-item">Histórico</span>
+          </a>
+        </li>
+        <li>
+          <a href="../notificacoes-adm/notificacoes.html">
+            <i class="bx bx-bell"></i>
+            <span class="nav-item">Notificações</span>
+          </a>
+        </li>
+        <li>
+          <a href="../perfil-adm/perfil.html">
+            <i class="bx bx-cog"></i>
+            <span class="nav-item">Configurações</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="sair">
+            <i class="bx bx-log-out"></i>
+            <span class="nav-item">Sair</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </aside>
 
-    <main class="main-content">
-      <header class="fundo-titulo">
-        <h1 class="titulo-pagina">Doações</h1>
-      </header>
+  <main class="main-content light-theme">
+    <header class="fundo-titulo">
+      <h1 class="titulo-pagina">Doações</h1>
 
-      <section class="campo-titulo">
-        <h2 class="titulo-inicial">Doações registradas</h2>
-        <div class="btn">
-          <select name="filtro" id="btn-filtrar">
-            <option value="" disabled selected class="placeholder">
-              Filtrar
-            </option>
-            <option value="todas">Todas</option>
-            <option value="realizada">Realizada</option>
-            <option value="pendente">Pendente</option>
-          </select>
-        </div>
-      </section>
+      <div class="theme-toggle">
+        <i id="theme-icon" class='bx bx-sun'></i>
+      </div>
+    </header>
 
-      <section class="campo-inicial">
-        <div class="fundo-doacoes">
-          <div class="tabela-container">
-            <table class="tabela-doacoes">
-              <thead>
-                <tr>
-                  <th>Peça</th>
-                  <th>Tipo de componente</th>
-                  <th>Nome do doador</th>
-                  <th>Email</th>
-                  <th>Qtd. Total</th>
-                  <th>Vistoria</th>
-                  <th></th>
-                </tr>
-              </thead>
-              <tbody id="tbody">
-                <!-- placa de video -->
-                <tr>
-                  <td>
-                    <div class="peca">
-                      <img
-                        src="./img/placa-de-video.svg"
-                        id="placa-de-video"
-                        alt="Imagem de uma placa de vídeo"
-                      />
-                      <p class="nome-peca">Placa de vídeo</p>
-                    </div>
-                  </td>
-                  <td>
-                    <button class="tipo-interno">Interno</button>
-                  </td>
-                  <td>
-                    <p class="nome">Giovana</p>
-                  </td>
-                  <td>
-                    <p class="email">giovana@gmail.com</p>
-                  </td>
-                  <td>
-                    <p class="qtd-total">2</p>
-                  </td>
-                  <td>
-                    <button class="vistoria-Realizada">
-                      <img src="./img/Realizada.svg" alt="" />
-                      Realizada
-                    </button>
-                  </td>
-                  <td>
-                    <img
-                      src="img/excluir.png"
-                      id="excluir_editar"
-                      alt=""
-                      srcset=""
-                    />
-                    <img
-                      src="img/editar.png"
-                      id="lapis_editar"
-                      alt=""
-                      srcset=""
-                    />
-                    <!-- <button class="opcoes" onclick="openModal('optionsModal1')">
+    <section class="campo-titulo">
+      <h2 class="titulo-inicial">Doações registradas</h2>
+      <div class="btn">
+        <select name="filtro" id="btn-filtrar">
+          <option value="" disabled selected class="placeholder">
+            Filtrar
+          </option>
+          <option value="todas">Todas</option>
+          <option value="realizada">Realizada</option>
+          <option value="pendente">Pendente</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="campo-inicial">
+      <div class="fundo-doacoes">
+        <div class="tabela-container">
+          <table class="tabela-doacoes">
+            <thead>
+              <tr>
+                <th>Peça</th>
+                <th>Tipo de componente</th>
+                <th>Nome do doador</th>
+                <th>Email</th>
+                <th>Qtd. Total</th>
+                <th>Vistoria</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="tbody">
+              <!-- placa de video -->
+              <tr>
+                <td>
+                  <div class="peca">
+                    <img src="./img/placa-de-video.svg" id="placa-de-video" alt="Imagem de uma placa de vídeo" />
+                    <p class="nome-peca">Placa de vídeo</p>
+                  </div>
+                </td>
+                <td>
+                  <button class="tipo-interno">Interno</button>
+                </td>
+                <td>
+                  <p class="nome">Giovana</p>
+                </td>
+                <td>
+                  <p class="email">giovana@gmail.com</p>
+                </td>
+                <td>
+                  <p class="qtd-total">2</p>
+                </td>
+                <td>
+                  <button class="vistoria-Realizada">
+                    <img src="./img/Realizada.svg" alt="" />
+                    Realizada
+                  </button>
+                </td>
+                <td>
+                  <img src="img/excluir.png" id="excluir_editar" alt="" srcset="" />
+                  <img src="img/editar.png" id="lapis_editar" alt="" srcset="" />
+                  <!-- <button class="opcoes" onclick="openModal('optionsModal1')">
                   <img src="./img/more.svg" alt="Mais opções">
                 </button>
 
@@ -188,132 +168,113 @@
                     </ul>
                   </div>
                 </div> -->
-                  </td>
-                </tr>
+                </td>
+              </tr>
 
-                <!-- teclado -->
-                <tr>
-                  <td>
-                    <div class="peca">
-                      <img
-                        src="./img/teclado.svg"
-                        id="teclado"
-                        alt="Imagem de um teclado"
-                      />
-                      <p class="nome-peca">Teclado</p>
+              <!-- teclado -->
+              <tr>
+                <td>
+                  <div class="peca">
+                    <img src="./img/teclado.svg" id="teclado" alt="Imagem de um teclado" />
+                    <p class="nome-peca">Teclado</p>
+                  </div>
+                </td>
+                <td>
+                  <button class="tipo-periferico">Periférico</button>
+                </td>
+                <td>
+                  <p class="nome">Ana Julia</p>
+                </td>
+                <td>
+                  <p class="email">anajulia@gmail.com</p>
+                </td>
+                <td>
+                  <p class="qtd-total">1</p>
+                </td>
+                <td>
+                  <button class="vistoria-Realizada">
+                    <img src="./img/Realizada.svg" alt="" />
+                    Realizada
+                  </button>
+                </td>
+                <td>
+                  <button class="opcoes" onclick="openModal('optionsModal2')">
+                    <img src="./img/more.svg" alt="Mais opções" />
+                  </button>
+
+                  <!-- Modal Principal -->
+                  <div id="optionsModal2" class="modal">
+                    <div class="modal-content">
+                      <ul>
+                        <li>
+                          <button class="modal-button edit-button" onclick="editOption()">
+                            <img src="./img/icon-editar.svg" id="icon-modal" alt="ícone de um lápis" />Editar
+                          </button>
+                        </li>
+                        <li>
+                          <button class="modal-button delete-button"
+                            onclick="openDeleteConfirmModal('deleteConfirmModal2')">
+                            <img src="./img/icon-deletar.svg" id="icon-modal" alt="ícone de uma lixeira" />Excluir
+                          </button>
+                        </li>
+                      </ul>
                     </div>
-                  </td>
-                  <td>
-                    <button class="tipo-periferico">Periférico</button>
-                  </td>
-                  <td>
-                    <p class="nome">Ana Julia</p>
-                  </td>
-                  <td>
-                    <p class="email">anajulia@gmail.com</p>
-                  </td>
-                  <td>
-                    <p class="qtd-total">1</p>
-                  </td>
-                  <td>
-                    <button class="vistoria-Realizada">
-                      <img src="./img/Realizada.svg" alt="" />
-                      Realizada
-                    </button>
-                  </td>
-                  <td>
-                    <button class="opcoes" onclick="openModal('optionsModal2')">
-                      <img src="./img/more.svg" alt="Mais opções" />
-                    </button>
+                  </div>
+                </td>
+              </tr>
 
-                    <!-- Modal Principal -->
-                    <div id="optionsModal2" class="modal">
-                      <div class="modal-content">
-                        <ul>
-                          <li>
-                            <button
-                              class="modal-button edit-button"
-                              onclick="editOption()"
-                            >
-                              <img
-                                src="./img/icon-editar.svg"
-                                id="icon-modal"
-                                alt="ícone de um lápis"
-                              />Editar
-                            </button>
-                          </li>
-                          <li>
-                            <button
-                              class="modal-button delete-button"
-                              onclick="openDeleteConfirmModal('deleteConfirmModal2')"
-                            >
-                              <img
-                                src="./img/icon-deletar.svg"
-                                id="icon-modal"
-                                alt="ícone de uma lixeira"
-                              />Excluir
-                            </button>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
+              <!-- memoria ram -->
+              <tr>
+                <td>
+                  <div class="peca">
+                    <img src="./img/memoria-RAM.svg" id="memoria-ram" alt="Imagem de uma memória ram" />
+                    <p class="nome-peca">Memória RAM</p>
+                  </div>
+                </td>
+                <td>
+                  <button class="tipo-interno">Interno</button>
+                </td>
+                <td>
+                  <p class="nome">Jacques</p>
+                </td>
+                <td>
+                  <p class="email">jacquessigma@gmail.com</p>
+                </td>
+                <td>
+                  <p class="qtd-total">3</p>
+                </td>
+                <td>
+                  <button class="vistoria-Pendente">
+                    <img src="./img/Pendente.svg" alt="" />
+                    Pendente
+                  </button>
+                </td>
+                <td>
+                  <button class="opcoes" onclick="openModal('optionsModal2')">
+                    <img src="./img/more.svg" alt="Mais opções" />
+                  </button>
 
-                <!-- memoria ram -->
-                <tr>
-                  <td>
-                    <div class="peca">
-                      <img
-                        src="./img/memoria-RAM.svg"
-                        id="memoria-ram"
-                        alt="Imagem de uma memória ram"
-                      />
-                      <p class="nome-peca">Memória RAM</p>
-                    </div>
-                  </td>
-                  <td>
-                    <button class="tipo-interno">Interno</button>
-                  </td>
-                  <td>
-                    <p class="nome">Jacques</p>
-                  </td>
-                  <td>
-                    <p class="email">jacquessigma@gmail.com</p>
-                  </td>
-                  <td>
-                    <p class="qtd-total">3</p>
-                  </td>
-                  <td>
-                    <button class="vistoria-Pendente">
-                      <img src="./img/Pendente.svg" alt="" />
-                      Pendente
-                    </button>
-                  </td>
-                  <td>
-                    <button class="opcoes" onclick="openModal('optionsModal2')">
-                      <img src="./img/more.svg" alt="Mais opções" />
-                    </button>
-
-                    <!-- Modal Principal -->
-                    <!-- teste -->
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+                  <!-- Modal Principal -->
+                  <!-- teste -->
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
+  </main>
 
-    <script src="./js/sidebar.js"></script>
-    <script defer src="./js/btn-filtrar.js"></script>
-    <script defer src="./js/btn-opcoes.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-auth-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-database-compat.js"></script>
-    <script src="../js/firebase-init.js"></script>
-    <script src="../js/adm/encontrarDoacoes.js"></script>
-    <script src="../js/adm/editarDoacoes.js"></script>
-  </body>
+  <script src="./js/sidebar.js"></script>
+  <script defer src="./js/btn-filtrar.js"></script>
+  <script defer src="./js/btn-opcoes.js"></script>
+  <script src="./js/mudaTema.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-database-compat.js"></script>
+  <script src="../js/firebase-init.js"></script>
+  <script src="../js/adm/encontrarDoacoes.js"></script>
+  <script src="../js/adm/editarDoacoes.js"></script>
+</body>
+
 </html>

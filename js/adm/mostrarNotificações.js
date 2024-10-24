@@ -51,7 +51,7 @@ function criarTabela(id, data, hora, desc, estrutura, email_doador, nome_doador,
             </div>
         </div>
         <div class="btn-vistoria">
-            <button class="verify-button">Verificar</button>
+            <button onclick=editarDados('${id}') class="verify-button">Verificar</button>
         </div>`;
 
     const novaNotificacao = document.createElement('div');

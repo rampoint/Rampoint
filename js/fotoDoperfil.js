@@ -17,7 +17,7 @@ function pegarValorFotoFeliz() {
   userRef
     .set({
       fotoPerfil:
-        "https://firebasestorage.googleapis.com/v0/b/rampoint-81352.appspot.com/o/imagens%2FGroup%20525.svg?alt=media&token=964936c0-bfcf-4ba4-afa5-6c397715b692",
+        "https://firebasestorage.googleapis.com/v0/b/rampoint-81352.appspot.com/o/imagens%2Fram-feliz.svg?alt=media&token=392bc095-1e4f-4bda-8411-69144c0637bc",
       fotoMensage: ram,
       cor_foto: "#FEBF1F",
       cor_texto: "#FFC01E",
@@ -48,7 +48,7 @@ function pegarValorFotoEmocionado() {
   userRef
     .set({
       fotoPerfil:
-        "https://firebasestorage.googleapis.com/v0/b/rampoint-81352.appspot.com/o/imagens%2FGroup%20526.svg?alt=media&token=0f273e2b-4392-468a-9819-a7378ef88957",
+        "https://firebasestorage.googleapis.com/v0/b/rampoint-81352.appspot.com/o/imagens%2Fram-emocionado.svg?alt=media&token=fbd804eb-2504-460d-afa5-eeee0fe541ee",
       fotoMensage: ram + genero(),
       cor_foto: "#9D4EDD",
       cor_texto: "#9D4EDD",
@@ -73,7 +73,7 @@ function pegarValorFotoTriste() {
   userRef
     .set({
       fotoPerfil:
-        "https://firebasestorage.googleapis.com/v0/b/rampoint-81352.appspot.com/o/imagens%2FGroup%20515.svg?alt=media&token=adfc3f86-6e04-4160-baa1-c0e38ffa7117",
+        "https://firebasestorage.googleapis.com/v0/b/rampoint-81352.appspot.com/o/imagens%2Fram-triste.svg?alt=media&token=83dbe215-0aee-40a7-b9e1-3d66ec59063c",
       fotoMensage: ram,
       cor_foto: "#0076AC",
       cor_texto: "#0076AC",
@@ -99,7 +99,7 @@ function pegarValorFotoEntediado() {
   userRef
     .set({
       fotoPerfil:
-        "https://firebasestorage.googleapis.com/v0/b/rampoint-81352.appspot.com/o/imagens%2FGroup%20517.svg?alt=media&token=dee8203f-843f-421a-b955-395ff4407476",
+        "https://firebasestorage.googleapis.com/v0/b/rampoint-81352.appspot.com/o/imagens%2Fram-entediado.svg?alt=media&token=d4d91ef9-49d9-4466-936e-dd905281adca",
       fotoMensage: ram + genero(),
       cor_foto: "#808080",
       cor_texto: "#808080",
@@ -125,7 +125,7 @@ function pegarValorFotoFurioso() {
   userRef
     .set({
       fotoPerfil:
-        "https://firebasestorage.googleapis.com/v0/b/rampoint-81352.appspot.com/o/imagens%2FGroup%20519.svg?alt=media&token=83bd63a2-ab4f-4ef1-9141-7534da8f3ab7",
+        "https://firebasestorage.googleapis.com/v0/b/rampoint-81352.appspot.com/o/imagens%2Fram-furioso.svg?alt=media&token=73cff9a4-e17d-4bd8-b339-46e6ff6b19bf",
       fotoMensage: ram + genero(),
       cor_foto: "#E10531",
       cor_texto: "#850014",
@@ -152,7 +152,7 @@ function pegarValorFotoApaixonado() {
   userRef
     .set({
       fotoPerfil:
-        "https://firebasestorage.googleapis.com/v0/b/rampoint-81352.appspot.com/o/imagens%2FGroup%20524.svg?alt=media&token=d101ece0-987f-45a8-9631-a29763acd20a",
+        "https://firebasestorage.googleapis.com/v0/b/rampoint-81352.appspot.com/o/imagens%2Fram-apaixonado.svg?alt=media&token=1a353a16-1b52-4f7f-b298-ac8102d95896",
       fotoMensage: ram + genero(),
       cor_foto: "#FF9090",
       cor_texto: "#E6322B",
@@ -178,7 +178,7 @@ function pegarValorFotoPadrao() {
   userRef
     .set({
       fotoPerfil:
-        "https://firebasestorage.googleapis.com/v0/b/rampoint-81352.appspot.com/o/imagens%2FGroup%20518.svg?alt=media&token=f876fea9-e991-472d-bd42-83fca4132ed1",
+        "https://firebasestorage.googleapis.com/v0/b/rampoint-81352.appspot.com/o/imagens%2Fram-padrao.svg?alt=media&token=566f17ad-1a3d-4a0d-a148-d3a84e2715c7",
       fotoMensage: ram,
       cor_foto: "#61D243",
       cor_texto: "#499036",
@@ -204,7 +204,7 @@ function pegarValorFotoNomood() {
   userRef
     .set({
       fotoPerfil:
-        "https://firebasestorage.googleapis.com/v0/b/rampoint-81352.appspot.com/o/imagens%2FGroup%20526.svg?alt=media&token=0f273e2b-4392-468a-9819-a7378ef88957",
+        "https://firebasestorage.googleapis.com/v0/b/rampoint-81352.appspot.com/o/imagens%2Fsem-mood.svg?alt=media&token=5ffcf05a-e0f3-47c9-92f9-5a63e6296e2b",
       fotoMensage: ram,
       cor_foto: "#808080",
     })
@@ -242,7 +242,7 @@ function genero() {
 }
 
 // Aguarda o carregamento completo do DOM
-  document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
   const buttons = document.querySelectorAll(".btn-mood");
 
   buttons.forEach((button) => {

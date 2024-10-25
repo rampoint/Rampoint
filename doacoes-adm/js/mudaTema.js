@@ -12,60 +12,135 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const titulo1 = document.querySelector(".titulo-inicial");
 
-  if (localStorage.getItem("theme") === "dark") {
-    document.body.classList.remove("light-theme");
-    document.body.classList.add("dark-theme");
+  const btnFiltro = document.querySelector("#btn-filtrar");
+  const btn = document.querySelector(".btn");
+  const optionFiltro = document.querySelectorAll(".option");
 
+  const fundoTabela = document.querySelector(".fundo-doacoes");
+  const tituloTabela = document.querySelectorAll(".tituloThead");
+  const linhaTabela = document.querySelectorAll(".trbody");
+
+  const tipoInterno = document.querySelectorAll(".tipo-interno");
+  const tipoPeriferico = document.querySelectorAll(".tipo-periferico");
+  const tipoEstrutura = document.querySelectorAll(".tipo-estrutura");
+
+  const vistoriaRealizada = document.querySelectorAll(".vistoria-Realizada");
+  const vistoriaPendente = document.querySelectorAll(".vistoria-Pendente");
+
+  const iconExcluir = document.querySelectorAll("#excluir_editar");
+  const iconLapis = document.querySelectorAll("#lapis_editar");
+
+  const aplicarTemaEscuro = () => {
+    document.body.classList.add("dark-theme");
+    
     mainContent.classList.add("dark-theme");
     sidebar.classList.add("dark-theme");
     spanLogo.classList.add("dark-theme");
     nameUser.classList.add("dark-theme");
-
+    
     iconSidebar.forEach((icon) => icon.classList.add("dark-theme"));
     linkSidebar.forEach((link) => link.classList.add("dark-theme"));
 
-    tituloPagina.classList.remove("light-theme");
     tituloPagina.classList.add("dark-theme");
-
-    fundoTitulo.classList.remove("light-theme");
     fundoTitulo.classList.add("dark-theme");
-
-    titulo1.classList.remove("light-theme");
     titulo1.classList.add("dark-theme");
+    btnFiltro.classList.add("dark-theme");
+    btn.classList.add("dark-theme");
+
+    optionFiltro.forEach((option) => option.classList.add("dark-theme"));
+    fundoTabela.classList.add("dark-theme");
+    tituloTabela.forEach((title) => title.classList.add("dark-theme"));
+    linhaTabela.forEach((line) => line.classList.add("dark-theme"));
+
+    tipoInterno.forEach((typeIn) => typeIn.classList.add("dark-theme"));
+    tipoPeriferico.forEach((typePer) => typePer.classList.add("dark-theme"));
+    tipoEstrutura.forEach((typeEst) => typeEst.classList.add("dark-theme"));
+
+    vistoriaRealizada.forEach((vistoriaRes) => {
+      vistoriaRes.classList.remove("light-theme");
+      vistoriaRes.classList.add("dark-theme");
+    });
+
+    vistoriaPendente.forEach((vistoriaPen) => {
+      vistoriaPen.classList.remove("light-theme");
+      vistoriaPen.classList.add("dark-theme");
+    });
+
+    iconExcluir.forEach((excluir) => {
+      excluir.classList.remove("light-theme");
+      excluir.classList.add("dark-theme");
+    });
+
+    iconLapis.forEach((lapis) => {
+      lapis.classList.remove("light-theme");
+      lapis.classList.add("dark-theme");
+    });
 
     themeIcon.classList.remove("bx-sun");
     themeIcon.classList.add("bx-moon");
+  };
+
+  const aplicarTemaClaro = () => {
+    document.body.classList.remove("dark-theme");
+    
+    mainContent.classList.remove("dark-theme");
+    sidebar.classList.remove("dark-theme");
+    spanLogo.classList.remove("dark-theme");
+    nameUser.classList.remove("dark-theme");
+    
+    iconSidebar.forEach((icon) => icon.classList.remove("dark-theme"));
+    linkSidebar.forEach((link) => link.classList.remove("dark-theme"));
+
+    tituloPagina.classList.remove("dark-theme");
+    fundoTitulo.classList.remove("dark-theme");
+    titulo1.classList.remove("dark-theme");
+    btnFiltro.classList.remove("dark-theme");
+    btn.classList.remove("dark-theme");
+
+    optionFiltro.forEach((option) => option.classList.remove("dark-theme"));
+    fundoTabela.classList.remove("dark-theme");
+    tituloTabela.forEach((title) => title.classList.remove("dark-theme"));
+    linhaTabela.forEach((line) => line.classList.remove("dark-theme"));
+
+    tipoInterno.forEach((typeIn) => typeIn.classList.remove("dark-theme"));
+    tipoPeriferico.forEach((typePer) => typePer.classList.remove("dark-theme"));
+    tipoEstrutura.forEach((typeEst) => typeEst.classList.remove("dark-theme"));
+
+    vistoriaRealizada.forEach((vistoriaRes) => {
+      vistoriaRes.classList.add("light-theme");
+      vistoriaRes.classList.remove("dark-theme");
+    });
+
+    vistoriaPendente.forEach((vistoriaPen) => {
+      vistoriaPen.classList.add("light-theme");
+      vistoriaPen.classList.remove("dark-theme");
+    });
+
+    iconExcluir.forEach((excluir) => {
+      excluir.classList.add("light-theme");
+      excluir.classList.remove("dark-theme");
+    });
+
+    iconLapis.forEach((lapis) => {
+      lapis.classList.add("light-theme");
+      lapis.classList.remove("dark-theme");
+    });
+
+    themeIcon.classList.add("bx-sun");
+    themeIcon.classList.remove("bx-moon");
+  };
+
+  if (localStorage.getItem("theme") === "dark") {
+    aplicarTemaEscuro();
   }
 
   themeIcon.addEventListener("click", () => {
-    document.body.classList.toggle("dark-theme");
-    document.body.classList.toggle("light-theme");
-
-    mainContent.classList.toggle("dark-theme");
-    sidebar.classList.toggle("dark-theme");
-    spanLogo.classList.toggle("dark-theme");
-    nameUser.classList.toggle("dark-theme");
-
-    iconSidebar.forEach((icon) => icon.classList.toggle("dark-theme"));
-    linkSidebar.forEach((link) => link.classList.toggle("dark-theme"));
-
-    tituloPagina.classList.toggle("dark-theme");
-    tituloPagina.classList.toggle("light-theme");
-
-    fundoTitulo.classList.toggle("dark-theme");
-    fundoTitulo.classList.toggle("light-theme");
-
-    titulo1.classList.toggle("dark-theme");
-    titulo1.classList.toggle("light-theme");
-
-    if (themeIcon.classList.contains("bx-sun")) {
-      themeIcon.classList.remove("bx-sun");
-      themeIcon.classList.add("bx-moon");
-      localStorage.setItem("theme", "dark");
-    } else {
-      themeIcon.classList.remove("bx-moon");
-      themeIcon.classList.add("bx-sun");
+    if (document.body.classList.contains("dark-theme")) {
+      aplicarTemaClaro();
       localStorage.setItem("theme", "light");
+    } else {
+      aplicarTemaEscuro();
+      localStorage.setItem("theme", "dark");
     }
   });
 });

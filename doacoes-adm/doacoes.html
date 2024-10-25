@@ -100,9 +100,9 @@
           <option value="" disabled selected class="placeholder">
             Filtrar
           </option>
-          <option value="todas">Todas</option>
-          <option value="realizada">Realizada</option>
-          <option value="pendente">Pendente</option>
+          <option value="todas" class="option">Todas</option>
+          <option value="realizada" class="option">Realizada</option>
+          <option value="pendente" class="option">Pendente</option>
         </select>
       </div>
     </section>
@@ -113,12 +113,12 @@
           <table class="tabela-doacoes">
             <thead>
               <tr>
-                <th>Peça</th>
-                <th>Tipo de componente</th>
-                <th>Nome do doador</th>
-                <th>Email</th>
-                <th>Qtd. Total</th>
-                <th>Vistoria</th>
+                <th class="tituloThead">Peça</th>
+                <th class="tituloThead">Tipo de componente</th>
+                <th class="tituloThead">Nome do doador</th>
+                <th class="tituloThead">Email</th>
+                <th class="tituloThead">Qtd. Total</th>
+                <th class="tituloThead">Vistoria</th>
                 <th></th>
               </tr>
             </thead>
@@ -145,29 +145,13 @@
                 </td>
                 <td>
                   <button class="vistoria-Realizada">
-                    <img src="./img/Realizada.svg" alt="" />
+                    <i class='bx bx-check-circle' style='color:#508D3F; font-size: 20px;'  ></i>
                     Realizada
                   </button>
                 </td>
                 <td>
-                  <img src="img/excluir.png" id="excluir_editar" alt="" srcset="" />
-                  <img src="img/editar.png" id="lapis_editar" alt="" srcset="" />
-                  <!-- <button class="opcoes" onclick="openModal('optionsModal1')">
-                  <img src="./img/more.svg" alt="Mais opções">
-                </button>
-
-                 Modal Principal
-                <div id="optionsModal1" class="modal">
-                  <div class="modal-content">
-                    <ul>
-                      <li><a href="#" class="modal-button edit-button" onclick="editOption()"><img
-                            src="./img/icon-editar.svg" id="icon-modal" alt="ícone de um lápis">Editar</a></li>
-                      <li><button class="modal-button delete-button"
-                          onclick="openDeleteConfirmModal('deleteConfirmModal1')"><img src="./img/icon-deletar.svg"
-                            id="icon-modal" alt="ícone de uma lixeira">Excluir</button></li>
-                    </ul>
-                  </div>
-                </div> -->
+                  <i class='bx bx-trash-alt' id="excluir_editar"></i>
+                  <i class='bx bx-edit-alt' id="lapis_editar"></i>
                 </td>
               </tr>
 
@@ -193,33 +177,13 @@
                 </td>
                 <td>
                   <button class="vistoria-Realizada">
-                    <img src="./img/Realizada.svg" alt="" />
+                    <i class='bx bx-check-circle' style='color:#508D3F; font-size: 20px;'  ></i>
                     Realizada
                   </button>
                 </td>
                 <td>
-                  <button class="opcoes" onclick="openModal('optionsModal2')">
-                    <img src="./img/more.svg" alt="Mais opções" />
-                  </button>
-
-                  <!-- Modal Principal -->
-                  <div id="optionsModal2" class="modal">
-                    <div class="modal-content">
-                      <ul>
-                        <li>
-                          <button class="modal-button edit-button" onclick="editOption()">
-                            <img src="./img/icon-editar.svg" id="icon-modal" alt="ícone de um lápis" />Editar
-                          </button>
-                        </li>
-                        <li>
-                          <button class="modal-button delete-button"
-                            onclick="openDeleteConfirmModal('deleteConfirmModal2')">
-                            <img src="./img/icon-deletar.svg" id="icon-modal" alt="ícone de uma lixeira" />Excluir
-                          </button>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
+                  <i class='bx bx-trash-alt' id="excluir_editar"></i>
+                  <i class='bx bx-edit-alt' id="lapis_editar"></i>
                 </td>
               </tr>
 
@@ -245,17 +209,13 @@
                 </td>
                 <td>
                   <button class="vistoria-Pendente">
-                    <img src="./img/Pendente.svg" alt="" />
+                    <i class='bx bx-info-circle' style='color:#d40000; font-size: 20px;'  ></i>
                     Pendente
                   </button>
                 </td>
                 <td>
-                  <button class="opcoes" onclick="openModal('optionsModal2')">
-                    <img src="./img/more.svg" alt="Mais opções" />
-                  </button>
-
-                  <!-- Modal Principal -->
-                  <!-- teste -->
+                  <i class='bx bx-trash-alt' id="excluir_editar"></i>
+                  <i class='bx bx-edit-alt' id="lapis_editar"></i>
                 </td>
               </tr>
             </tbody>
@@ -267,7 +227,6 @@
 
   <script src="./js/sidebar.js"></script>
   <script defer src="./js/btn-filtrar.js"></script>
-  <script defer src="./js/btn-opcoes.js"></script>
   <script src="./js/mudaTema.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-auth-compat.js"></script>

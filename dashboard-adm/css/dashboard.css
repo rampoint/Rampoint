@@ -223,8 +223,7 @@ body.dark-theme {
 }
 
 .sidebar.dark-theme {
-  background-color: #121212;
-  box-shadow: 0 5px 20px rgba(255, 255, 255, 0.1);
+  background-color: #282828;
 }
 
 .span-logo.dark-theme {
@@ -252,8 +251,7 @@ i.dark-theme {
 }
 
 .fundo-titulo.dark-theme {
-  background-color: #121212;
-  box-shadow: 0 5px 20px rgba(255, 255, 255, 0.1);
+  background-color: #282828;
 }
 
 .titulo-inicial.light-theme {

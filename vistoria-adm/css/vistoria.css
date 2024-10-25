@@ -144,8 +144,77 @@
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-
 #tbody {
   scroll-behavior: auto;
   overflow-y: auto;
+}
+
+/* tema claro/escuro */
+.theme-toggle {
+  position: fixed;
+  top: 30px;
+  right: 35px;
+  cursor: pointer;
+}
+
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.light-theme {
+  color: #121212;
+}
+
+.dark-theme {
+  color: #fff;
+}
+
+body.dark-theme {
+  background-color: #121212;
+}
+
+.main-content.dark-theme {
+  background-color: #121212;
+}
+
+.sidebar.dark-theme {
+  background-color: #282828;
+}
+
+.span-logo.dark-theme {
+  color: #f8f8f8;
+}
+
+.nome-usuario.dark-theme {
+  color: #f8f8f8;
+}
+
+i.dark-theme {
+  color: #f8f8f8;
+}
+
+.nav-item.dark-theme {
+  color: #f8f8f8;
+}
+
+.titulo-pagina.light-theme {
+  color: #121212;
+}
+
+.titulo-pagina.dark-theme {
+  color: #DADADC;
+}
+
+.fundo-titulo.dark-theme {
+  background-color: #282828;
+}
+
+.titulo-inicial.light-theme {
+  background-color: transparent;
+  color: #2a55c2;
+}
+
+.titulo-inicial.dark-theme {
+  background-color: transparent;
+  color: #8EAEFF;
 }

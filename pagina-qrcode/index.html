@@ -16,7 +16,7 @@
 
 </head>
 
-<body>
+<body onload="exibirDadosUsuario()">
     <script>
         function showSidebar() {
             const sidebar = document.querySelector('.sidebar')
@@ -31,24 +31,26 @@
     <nav>
         <ul class="sidebar">
             <li onclick=hideSidebar()><a href="#"><img id="fechar" src="img/fechar.svg" alt="fechar nav"></a></li>
-            <li id="perfil-sidebar"><img src="img/perfil2.svg" alt="" srcset=""></li>
-            <div class="menus">
-                <li><a href="../pagina-inicial/inicial.html" id="menuMobile">HOME</a></li>
-                <li><a href="../pagina-play/play.html" id="menuMobile">PLAY</a></li>
-                <li><a href="../pagina-inicial/inicial.html" id="ecoponto menuMobile">ECOPONTOS</a></li>
-                <li><a href="../pagina-materiais/materiais.html" id="menuMobile">MATERIAIS</a></li>
-                <li><a href="../pagina-qrcode/index.html" id="menuMobile">QR-CODE</a></li>
-                <li><a href="../pagina-faq/faq.html" id="menuMobile">FALE CONOSCO</a></li>
-            </div>
+            <li id="perfil-sidebar"><img src="img/perfil2.svg" alt="" srcset="">
+                <div class="menus">
+            <li><a href="../pagina-inicial/inicial.html" id="menuMobile">HOME</a></li>
+            <li><a href="../pagina-play/play.html" id="menuMobile">PLAY</a></li>
+            <li><a href="../pagina-inicial/inicial.html" id="ecoponto menuMobile">ECOPONTOS</a></li>
+            <li><a href="../pagina-materiais/materiais.html" id="menuMobile">MATERIAIS</a></li>
+            <li><a href="../pagina-qrcode/index.html" id="menuMobile">QR-CODE</a></li>
+            <li><a href="../pagina-faq/faq.html" id="menuMobile">FALE CONOSCO</a></li>
             <div class="footer-logo">
                 <img src="./img/logoBranca.svg" id="footer-logo" alt="">
             </div>
-
             </div>
+            </li>
         </ul>
         <ul>
-            <li id="logo-nav"><img src="img/ram.svg" alt="ram">
-                <h1 style="color: black;"><b style="color:#7ad761; margin-left: 10px;">ram</b>point.</h1>
+            <li id="logo-nav">
+                <a href="../pagina-inicial/inicial.html" class="link-home">
+                    <img src="img/ram.svg" alt="ram">
+                    <h1 style="color: black;"><b style="color:#7ad761; margin-left: 10px;">ram</b>poınt.</h1>
+                </a>
             <li class="hideOnMobile"><a href="../pagina-inicial/inicial.html">HOME</a>
             <li class="hideOnMobile"><a href="../pagina-play/play.html">PLAY</a>
             <li class="hideOnMobile"><a href="#" id="ecoponto">ECOPONTOS</a>
@@ -125,7 +127,7 @@
 
             <div class="qrcode-salvar">
                 <div class="qrcode">
-                    </div>
+                </div>
                 <div class="down-salvar">
                     <button id="download">Download</button><br><br>
                     <img id="image-to-download" src="path/to/image/qrcode.png" alt="Imagem para Download"
@@ -175,7 +177,7 @@
             </div>
         </div>
 
-        
+
     </div>
 
     <footer class="footer-container">
@@ -233,24 +235,24 @@
     <script src="../js/jquery.min.js"></script>
     <script type="text/javascript">
         var qrcode = new QRCode(document.getElementById("qrcode"), {
-            width : 100,
-            height : 100
+            width: 100,
+            height: 100
         });
-        
-        function makeCode () {		
+
+        function makeCode() {
             var elText = document.getElementById("inserir-total");
-            
+
             if (!elText.value) {
                 alert("Input a text");
                 elText.focus();
                 return;
             }
-            
+
             qrcode.makeCode(elText.value);
         }
-        
+
         makeCode();
-        
+
         $("#text").
             on("blur", function () {
                 makeCode();
@@ -260,11 +262,11 @@
                     makeCode();
                 }
             });
-        </script>
+    </script>
 
 
 
-    
+
     </div>
 
     </div>

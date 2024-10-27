@@ -1,5 +1,4 @@
 @import url(../css/font.css);
-
 @import url(../css/cores.css);
 
 * {
@@ -9,6 +8,16 @@
 body {
   background-color: var(--branco);
 }
+
+.link-home {
+  margin-left: -25px;
+}
+
+.link-home:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 
 .termos {
   display: flex;

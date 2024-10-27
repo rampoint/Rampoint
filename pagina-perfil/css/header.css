@@ -94,7 +94,7 @@ nav a:hover {
   position: fixed;
   top: 0;
   right: 0;
-  height: 65vh;
+  height: 98vh;
   width: 250px;
   background-color: var(--azul);
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
@@ -127,20 +127,20 @@ nav a:hover {
 }
 
 .footer-logo {
-  margin-top: 6em;
+  margin-top: 10em;
   
 }
 
 @media (max-width: 670px) {
   .footer-logo{
-    margin-top: 5em;
+    margin-top:5em;
   }
 }
 /* Dispositivos móveis em modo paisagem (tela horizontal) */
 @media (max-width: 767px) {
   /* Estilos aqui */
   .footer-logo{
-    margin-top: 6em;
+    margin-top:3em;
   }
 }
 
@@ -152,6 +152,11 @@ nav a:hover {
 .menus {
 margin-top:60px;
 }
+
+
+
+
+
 
 #footer-logo {
   padding: 0;

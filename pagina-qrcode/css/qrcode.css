@@ -6,6 +6,15 @@ body {
   background-color: var(--branco);
 }
 
+.link-home {
+  margin-left: -25px;
+}
+
+.link-home:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .qrcode {
   width: 90em;
   height: 60em;
@@ -220,6 +229,7 @@ body {
   cursor: pointer;
   margin-left: 30px;
 }
+
 .codigo-l2 form {
   display: flex;
   width: 50%;
@@ -278,6 +288,7 @@ body {
   left: 23em;
   height: 1em;
 }
+
 @media (max-width: 670px) {
   .moedas-direita {
     display: none;
@@ -401,6 +412,7 @@ body {
   0% {
     transform: translateY(0px);
   }
+
   100% {
     transform: translateY(20px);
   }
@@ -410,6 +422,7 @@ body {
   0% {
     transform: scale(1);
   }
+
   100% {
     transform: scale(1.2);
   }
@@ -419,15 +432,18 @@ body {
   0% {
     transform: rotate(0deg);
   }
+
   50% {
     transform: rotate(4deg);
   }
+
   100% {
     transform: rotate(0deg);
   }
 }
 
 @media (min-width: 320px) and (max-width: 421px) {
+
   /* footer */
   .footer-container {
     width: 100%;
@@ -477,5 +493,6 @@ body {
   .copyright {
     margin: 5em 5em 0 5em;
   }
+
   /* footer */
 }

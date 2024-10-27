@@ -10,6 +10,16 @@ body {
   background-color: var(--branco);
 }
 
+.link-home {
+  margin-left: -25px;
+}
+
+.link-home:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
 /* começo imagem inicial */
 .imagem-fundo {
   display: flex;

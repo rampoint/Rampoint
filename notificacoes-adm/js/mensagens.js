@@ -10,9 +10,9 @@ function showDetails(index) {
     });
   });
 
-  if (index === "Metal Gear") {
-    details.style.display = "block";
-  } else {
-    details.style.display = "none";
-  }
+  // if (index === "Metal Gear") {
+  //   details.style.display = "block";
+  // } else {
+  //   details.style.display = "none";
+  // }
 }

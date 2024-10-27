@@ -58,7 +58,7 @@ hr {
   align-items: center;
 }
 
-.mensagem{
+.mensagem {
   display: none;
 }
 
@@ -70,13 +70,22 @@ hr {
   background: none;
   border: none;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 12px;
+}
+
+.seta-mensagem i {
+  color: #363538;
+  font-size: 32px;
 }
 
 .mensagem-detalhes {
   width: 60%;
   padding: 20px;
   margin-left: 20px;
-  display: none; 
+  display: none;
   border-radius: 5px;
 }
 
@@ -159,4 +168,90 @@ hr {
 
 .verify-button:hover {
   background-color: #0056b3;
+}
+
+/* tema claro/escuro */
+.theme-toggle {
+  position: fixed;
+  top: 30px;
+  right: 35px;
+  cursor: pointer;
+}
+
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.light-theme {
+  color: #121212;
+}
+
+.dark-theme {
+  color: #fff;
+}
+
+body.dark-theme {
+  background-color: #121212;
+}
+
+.main-content.dark-theme {
+  background-color: #121212;
+}
+
+.sidebar.dark-theme {
+  background-color: #282828;
+}
+
+.span-logo.dark-theme {
+  color: #f8f8f8;
+}
+
+.nome-usuario.dark-theme {
+  color: #f8f8f8;
+}
+
+i.dark-theme {
+  color: #f8f8f8;
+}
+
+.nav-item.dark-theme {
+  color: #f8f8f8;
+}
+
+.titulo-pagina.light-theme {
+  color: #121212;
+}
+
+.titulo-pagina.dark-theme {
+  color: #DADADC;
+}
+
+.fundo-titulo.dark-theme {
+  background-color: #282828;
+}
+
+.mensagens h2.light-theme {
+  background-color: transparent;
+  color: #2a55c2;
+}
+
+.mensagens h2.dark-theme {
+  background-color: transparent;
+  color: #8EAEFF;
+}
+
+.mensagem-info p.dark-theme {
+  color: #DADADC;
+}
+
+.seta-mensagem i.dark-theme {
+  color: #DADADC;
+}
+
+.coluna-mensagem h3.dark-theme {
+  color: #DADADC;
+}
+
+.data-hora.dark-theme {
+  color: #DADADC;
 }

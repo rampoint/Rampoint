@@ -19,7 +19,6 @@ body {
 }
 
 /* começo da imagem inicial */
-
 .imagem-fundo {
   display: flex;
   flex-direction: row;
@@ -336,8 +335,6 @@ body {
   grid-area: texto-ram;
 }
 /* fim grid */
-
-/* form sem meme */
 
 /* começo link header ecoponto */
 #ecopontos {

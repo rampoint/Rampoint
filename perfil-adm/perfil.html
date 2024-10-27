@@ -18,7 +18,7 @@
   <aside class="sidebar">
     <div class="top">
       <div class="logo">
-        <img src="./img/logo.svg" class="imagem-logo" alt="" />
+        <h1 class="titulo-logo">ram<span class="span-logo">poınt.</span></h1>
       </div>
       <img src="./img/seta.svg" id="btn" alt="" />
     </div>
@@ -26,10 +26,10 @@
     <nav>
       <ul class="links">
         <li class="user">
-            <a href="../perfil-adm/perfil.html" id="user-btn">
-              <img src="./img/perfilADM.svg" class="foto-perfil" alt="Foto de perfil do usuário" />
-              <p class="nome-usuario">Usuário</p>
-            </a>
+          <a href="../perfil-adm/perfil.html" id="user-btn">
+            <img src="./img/perfilADM.svg" class="foto-perfil" alt="Foto de perfil do usuário" />
+            <p class="nome-usuario">Usuário</p>
+          </a>
         </li>
         <li>
           <a href="../dashboard-adm/dashboard.html">
@@ -83,9 +83,13 @@
     </nav>
   </aside>
 
-  <main class="main-content">
+  <main class="main-content light-theme">
     <header class="fundo-titulo">
       <h1 class="titulo-pagina">Configurações</h1>
+
+      <div class="theme-toggle">
+        <i id="theme-icon" class='bx bx-sun'></i>
+      </div>
     </header>
 
     <section class="campo-titulo">
@@ -168,10 +172,11 @@
     </section>
   </main>
 
-  <script defer src="./js/sidebar.js"></script>
-  <script defer src="./js/grafico.js"></script>
-  <script defer src="./js/grafico-pizza.js"></script>
-  <script defer src="./js/editar-perfil.js"></script>
+  <script src="./js/sidebar.js"></script>
+  <script src="./js/grafico.js"></script>
+  <script src="./js/grafico-pizza.js"></script>
+  <script src="./js/editar-perfil.js"></script>
+  <script src="./js/mudaTema.js"></script>
 </body>
 <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-auth-compat.js"></script>

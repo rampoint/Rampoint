@@ -2,7 +2,7 @@ const switchModal = () => {
   const modal = document.querySelector(".modal-perfil");
   modal.style.display = modal.style.display === "block" ? "none" : "block";
   document.body.style.overflow =
-    modal.style.display === "block" ? "hidden" : ""; // Bloqueia a rolagem da página principal quando o modal está aberto
+    modal.style.display === "block" ? "hidden" : ""; 
 };
 
 document

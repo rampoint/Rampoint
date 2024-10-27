@@ -71,12 +71,12 @@ body {
 .modal-perfil {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 1000;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .content-perfil {
@@ -122,11 +122,11 @@ body {
   font-family: "Poppins-regular";
   background-color: #e9e9e9;
   width: 18em;
-  height: 2em;
+  height: 2.5em;
   margin-top: 1em;
   border: none;
   border-radius: 15px;
-  padding: 5px;
+  padding: 10px;
   outline: none;
 }
 
@@ -168,6 +168,7 @@ body {
 /* final estilo modal perfil */
 
 .titulo-doacoes {
+  color: #2a55c2;
   font-family: "Blinker-semibold";
   margin: 3em 1.5em 0 1.5em;
 }
@@ -211,4 +212,128 @@ body {
 .sidebar.active~.main-content .grupos {
   margin-left: 2em;
   gap: 3em;
+}
+
+/* tema claro/escuro */
+.theme-toggle {
+  position: fixed;
+  top: 30px;
+  right: 35px;
+  cursor: pointer;
+}
+
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.light-theme {
+  color: #121212;
+}
+
+.dark-theme {
+  color: #fff;
+}
+
+body.dark-theme {
+  background-color: #121212;
+}
+
+.main-content.dark-theme {
+  background-color: #121212;
+}
+
+.sidebar.dark-theme {
+  background-color: #282828;
+}
+
+.span-logo.dark-theme {
+  color: #f8f8f8;
+}
+
+.nome-usuario.dark-theme {
+  color: #f8f8f8;
+}
+
+i.dark-theme {
+  color: #f8f8f8;
+}
+
+.nav-item.dark-theme {
+  color: #f8f8f8;
+}
+
+.titulo-pagina.light-theme {
+  color: #121212;
+}
+
+.titulo-pagina.dark-theme {
+  color: #DADADC;
+}
+
+.fundo-titulo.dark-theme {
+  background-color: #282828;
+}
+
+.titulo-inicial.light-theme {
+  background-color: transparent;
+  color: #2a55c2;
+}
+
+.titulo-inicial.dark-theme {
+  background-color: transparent;
+  color: #8EAEFF;
+}
+
+.fundo-perfil.dark-theme {
+  background-color: #282828;
+}
+
+.nome-adm.dark-theme {
+  color: #DADADC;
+}
+
+.email-adm.dark-theme {
+  color: #DADADC;
+}
+
+.modalBtn-perfil.dark-theme {
+  color: #DADADC;
+}
+
+.titulo-doacoes.light-theme {
+  background-color: transparent;
+  color: #2a55c2;
+}
+
+.titulo-doacoes.dark-theme {
+  background-color: transparent;
+  color: #8EAEFF;
+}
+
+.grafico-coluna.dark-theme {
+  background-color: #282828;
+}
+
+.grafico-pizza.dark-theme {
+  background-color: #282828;
+}
+
+.modal-perfil.dark-theme {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.content-perfil.dark-theme {
+  background-color: #282828;
+}
+
+label.dark-theme {
+  color: #DADADC;
+}
+
+input.dark-theme {
+  background-color: rgba(21, 21, 21, 0.5);
+}
+
+.excluir-conta.dark-theme {
+  color: #FF7171;
 }

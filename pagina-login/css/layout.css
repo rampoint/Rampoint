@@ -39,20 +39,66 @@
 }
 
 @media (max-width: 775px) {
+  body {
+    background-color: #f8f8ff;
+    background: linear-gradient(to right, #f8f8ff, #f8f8ff);
+  }
+
   .container {
-    width: 45em;
+    width: 100%;
+    height: 100%;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .toggle-container {
+    width: 100%;
+    height: 16em;
+    top: 0;
+    left: 0;
+    border-radius: 0;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+  }
+
+  .toggle-right {
+    height: 130%;
+  }
+
+  .logo {
+    position: relative;
+    bottom: 15em;
+    right: 15em;
+  }
+
+  .vitoria-regia {
+    margin-top: 5px;
+    margin-bottom: 35px;
+  }
+
+  .container p {
+    margin: 15px 0;
+  }
+
+  .form-container {
+    margin-top: 6em;
   }
 
   .sign-in {
-    display: none;
-  }
-
-  .sign-up {
     opacity: 1;
     width: 100%;
   }
 
-  .toggle-container {
+  .email,
+  .senha {
+    width: 80%;
+  }
+
+  .senha {
+    margin-top: 2em;
+  }
+
+  .sign-up {
     display: none;
   }
 
@@ -66,13 +112,8 @@
     width: 100%;
   }
 
-  #genero {
-    padding: 20px 10px;
-  }
-
-  .genero::after {
-    top: 23.5em;
-    right: 32em;
+  #register {
+    display: none;
   }
 
   .link-cadastro {
@@ -87,175 +128,107 @@
   }
 }
 
-@media (max-width: 735px) {
-  .container {
-    width: 42em;
-  }
-
-  .genero::after {
-    right: 30em;
+@media (max-width: 656px) {
+  .logo {
+    right: 13em;
   }
 }
 
-@media (max-width: 680px) {
-  .container {
-    width: 40em;
-  }
-
-  .genero::after {
-    right: 29em;
+@media (max-width: 616px) {
+  .logo {
+    right: 12em;
   }
 }
 
-@media (max-width: 645px) {
-  .container {
-    width: 38em;
-    height: 45em;
-    margin: 15px auto;
+@media (max-width: 556px) {
+  .logo {
+    right: 11em;
   }
 
-  .genero::after {
-    right: 27em;
-  }
-}
-
-@media (max-width: 630px) {
-  .container {
-    width: 36em;
-  }
-
-  .genero::after {
-    right: 26em;
+  .toggle-container {
+    border-bottom-left-radius: 120px;
+    border-bottom-right-radius: 120px;
   }
 }
 
-@media (max-width: 595px) {
-  .container {
-    width: 34em;
-  }
-
-  .genero::after {
-    right: 25em;
+@media (max-width: 516px) {
+  .logo {
+    right: 10em;
   }
 }
 
-@media (max-width: 555px) {
-  .container {
-    width: 32em;
+@media (max-width: 486px) {
+  .logo {
+    width: 102px;
+    bottom: 14em;
+    right: 9em;
   }
 
-  .genero::after {
-    right: 23em;
-  }
-}
-
-@media (max-width: 525px) {
-  .container {
-    width: 30em;
-  }
-
-  .genero::after {
-    right: 22em;
+  .toggle-container {
+    height: 210px;
   }
 }
 
-@media (max-width: 495px) {
-  .container {
-    width: 28em;
+@media (max-width: 426px) {
+  .logo {
+    bottom: 13em;
+    right: 8em;
   }
 
-  .genero::after {
-    top: 23.5em;
-    right: 20.3em;
-  }
-}
-
-@media (max-width: 455px) {
-  .container {
-    width: 26em;
+  .vitoria-regia {
+    width: 102px;
+    margin-bottom: 20px;
   }
 
-  .genero::after {
-    right: 19.3em;
+  .toggle-container {
+    height: 210px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 386px) {
   .container {
-    width: 24em;
-  }
-
-  .genero::after {
-    right: 18.3em;
-  }
-}
-
-@media (max-width: 405px) {
-  body {
-    height: auto;
     overflow: scroll;
   }
 
-  .container {
-    width: 23em;
+  .sign-in {
+    height: 120%;
   }
 
-  .genero::after {
-    top: 27em;
-    right: 17em;
-  }
-}
-
-
-@media (max-width: 375px) {
-  .container {
-    width: 22em;
-  }
-
-  .genero::after {
-    right: 17em;
+  .logo {
+    width: 82px;
+    right: 7em;
   }
 }
 
-@media (max-width: 365px) {
-  .container {
-    width: 21em;
-    height: 65em;
+@media (max-width: 361px) {
+  .sign-in {
+    height: 125%;
+  }
+}
+
+@media (max-width: 356px) {
+  .toggle-container {
+    border-bottom-left-radius: 90px;
+    border-bottom-right-radius: 90px;
+  }
+}
+
+@media (max-width: 326px) {
+  .toggle-container {
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+  }
+}
+
+@media (max-width: 321px) {
+  .logo {
+    right: 6.5em;
   }
 
-  form {
-    width: 100%;
-  }
-
-  .nome,
-  .telefone,
-  .genero,
-  .nascimento,
+  .email,
   .senha {
     width: 100%;
-  }
-
-  .grupo {
-    flex-direction: column;
-    width: 90%;
-  }
-
-  .genero::after {
-    top: 40em;
-    right: 6em;
-  }
-
-  .termos {
-    width: 85%;
-  }
-
-  .form-container button {
-    width: 80%;
-  }
-}
-
-@media (max-width: 345px) {
-  .container {
-    width: 19em;
   }
 }

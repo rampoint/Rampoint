@@ -218,3 +218,26 @@ i.dark-theme {
   background-color: transparent;
   color: #8EAEFF;
 }
+
+.fundo-doacoes.dark-theme {
+  background-color: #282828;
+}
+
+.tituloThead.dark-theme {
+  color: #DADADC;
+}
+
+.tipo-interno.dark-theme {
+  background-color: #CEB828;
+  color: #282828;
+}
+
+.tipo-periferico.dark-theme {
+  background-color: #4764B0;
+  color: #DADADC;
+}
+
+.tipo-estrutura.dark-theme {
+  background-color: #913EC7;
+  color: #DADADC;
+}

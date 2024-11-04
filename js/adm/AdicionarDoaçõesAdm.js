@@ -29,6 +29,7 @@ function adicionarDoacao() {
         data:formDoacoes.data_doacao(),
         hora_doacao:formDoacoes.hora_doacao(),
         desc:formDoacoes.desc_doacao(),
+        
         vistoria:'Pendente'
           // Atualiza o novo campo com o novo valor
         })

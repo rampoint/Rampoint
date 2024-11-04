@@ -15,3 +15,4 @@ document.getElementById('download').addEventListener('click', function() {
   // Remove o link após o download
   document.body.removeChild(a);
 });
+

@@ -192,6 +192,7 @@ input:focus {
 }
 
 @media (max-width: 876px) {
+
   .geral,
   .redes-sociais {
     margin-right: 0;
@@ -287,6 +288,12 @@ input:focus {
 
   .footer-container .logo {
     width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-container input[type="email"] {
+    width: 310px;
   }
 }
 

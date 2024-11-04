@@ -157,6 +157,30 @@
   }
 }
 
+@media (max-width: 1205px) {
+
+  .medalha-vermelha,
+  .medalha-verde {
+    right: 22em;
+  }
+
+  #titulo1 {
+    margin: -0.1em 0 0.5em 6em;
+  }
+
+  #texto1 {
+    margin-left: 10.5em;
+  }
+
+  #titulo2 {
+    margin: 3em 0 0 5em;
+  }
+
+  #texto2 {
+    width: auto;
+    margin-left: 10em;
+  }
+}
 
 @media (max-width: 1085px) {
   #titulo1 {
@@ -172,7 +196,6 @@
   }
 
   #texto2 {
-    width: 65%;
     margin-left: 9.5em;
   }
 }
@@ -214,6 +237,10 @@
     margin-left: 15px;
   }
 
+  .sidebar {
+    height: 79vh;
+  }
+
   nav a:visited {
     text-decoration: none;
     transition: color 1.5s ease-out 1ms;
@@ -244,7 +271,7 @@
   }
 
   #scrollTarget #texto1 {
-    margin-left: 9em;
+    margin: auto;
   }
 }
 
@@ -260,8 +287,523 @@
   }
 }
 
-@media (max-width: 480px) {}
+@media (max-width: 830px) {
+  #titulo-inicial {
+    width: 50%;
+  }
 
-@media (min-width: 320px) and (max-width: 435px) {}
+  #titulo2 {
+    margin: 3em 0 15px 3.5em;
+  }
 
-@media (max-width: 330px) {}
+  #texto2 {
+    margin-left: 7.5em;
+  }
+
+  .section-empresas {
+    text-align: center;
+  }
+
+  .section-empresas #titulo1 {
+    margin: 0;
+    margin-bottom: 25px;
+  }
+
+  #texto1 {
+    margin-left: 8em;
+  }
+
+  .conquistas #titulo1 {
+    margin: 0;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 805px) {
+
+  .medalha-vermelha,
+  .medalha-verde {
+    right: 19em;
+  }
+
+  .medalha-verde {
+    top: 12em;
+  }
+
+  .medalha-azul {
+    bottom: 19em;
+    left: 16em;
+  }
+
+  .medalha-amarela {
+    left: 20em;
+  }
+
+  .medalha-roxa {
+    bottom: 11em;
+    left: 16em;
+  }
+}
+
+@media (max-width: 775px) {
+  #titulo2 {
+    margin: 3em 0 15px 2.5em;
+  }
+
+  #texto2 {
+    margin-left: 5.5em;
+  }
+
+  .section-empresas #texto1 {
+    width: 80%;
+    margin-left: 6em;
+  }
+
+  .conquistas #texto1 {
+    width: 75%;
+  }
+}
+
+@media (max-width: 745px) {
+  #texto-inicial {
+    width: 70%;
+  }
+
+  .medalha-amarela {
+    left: 18em;
+  }
+
+  .brilho-vermelho {
+    bottom: 17em;
+    left: 13em;
+  }
+}
+
+@media (max-width: 715px) {
+  .medalha-verde {
+    top: 14em;
+    right: 17em;
+  }
+
+  .medalha-vermelha {
+    right: 17em;
+  }
+}
+
+@media (max-width: 700px) {
+  #titulo2 {
+    margin: 3em 0 15px 1em;
+  }
+
+  #texto2 {
+    margin-left: 3.5em;
+  }
+
+  .item1,
+  .item2,
+  .item3 {
+    width: 10em;
+    height: 10em;
+  }
+
+  .btn-cupom {
+    margin-left: 9em;
+  }
+
+  .section-empresas #texto1 {
+    width: 80%;
+    margin-left: 4em;
+  }
+
+  .card-empresa {
+    width: 11em;
+  }
+
+  #endereco-empresas {
+    width: 11em;
+  }
+
+  .conquistas #texto1 {
+    width: 85%;
+    margin-left: 5em;
+  }
+}
+
+@media (max-width: 675px) {
+  .medalha-amarela {
+    left: 16em;
+  }
+
+  .brilho-vermelho {
+    display: none;
+  }
+
+  .brilho-amarelo2 {
+    bottom: 13em;
+  }
+
+  .fundo-medalha-salto,
+  .fundo-medalha-coracao,
+  .fundo-medalha-explosao,
+  .fundo-medalha-engrenagem,
+  .fundo-medalha-raio {
+    width: 35em;
+  }
+
+  .fundo-medalha-explosao .texto {
+    width: 85%;
+  }
+}
+
+@media (max-width: 655px) {
+  .medalha-vermelha {
+    top: 2em;
+    right: 15em;
+  }
+
+  .medalha-verde {
+    top: 13em;
+    right: 15em;
+  }
+
+  .brilho-verde {
+    top: -2em;
+    right: 13em;
+  }
+
+  .brilho-azul {
+    top: -1em;
+    right: 11em;
+  }
+
+  .medalha-amarela {
+    bottom: 16em;
+    left: 16em;
+  }
+
+  .brilho-amarelo2 {
+    bottom: 16em;
+  }
+
+  .medalha-roxa {
+    bottom: 12em;
+    left: 14em;
+  }
+
+  #titulo-inicial {
+    top: 3.5em;
+  }
+
+  #texto-inicial {
+    top: 20.5em;
+  }
+
+  .card-cupons {
+    gap: 1em;
+  }
+
+  #empresas {
+    align-items: center;
+    flex-wrap: wrap;
+    width: auto;
+  }
+
+  .conquistas #texto1 {
+    margin-left: 4em;
+  }
+
+  .card-empresa {
+    margin: 80px 10px 0 10px;
+  }
+}
+
+@media (max-width: 630px) {
+  #titulo-inicial {
+    width: 55%;
+  }
+
+  #texto-inicial {
+    width: 75%;
+  }
+
+  .medalha-amarela {
+    left: 15.5em;
+  }
+}
+
+@media (max-width: 600px) {
+  #titulo-inicial {
+    font-size: 75px;
+  }
+
+  #texto-inicial {
+    top: 18.5em;
+  }
+
+  .medalha-azul {
+    left: 13em;
+  }
+
+  .brilho-roxo {
+    bottom: 11em;
+    left: 9em;
+  }
+
+  .brilho-verde {
+    top: -4em;
+  }
+
+  .brilho-azul {
+    top: -3em;
+  }
+
+  .brilho-amarelo2 {
+    bottom: 12em;
+  }
+
+  .medalha-amarela {
+    bottom: 18em;
+    left: 14.5em;
+  }
+
+  .medalha-azul {
+    bottom: 20em;
+  }
+
+  .fundo-medalha-salto,
+  .fundo-medalha-coracao,
+  .fundo-medalha-explosao,
+  .fundo-medalha-engrenagem,
+  .fundo-medalha-raio {
+    width: 30em;
+  }
+
+  .img-vitoria-regia,
+  .img-raio2 {
+    display: none;
+  }
+}
+
+@media (max-width: 580px) {
+
+  .medalha-vermelha,
+  .medalha-verde,
+  .medalha-azul,
+  .medalha-amarela,
+  .medalha-roxa {
+    width: 80px;
+  }
+
+  .medalha-vermelha {
+    top: -3em;
+    right: 13em;
+  }
+
+  .brilho-amarelo {
+    right: 9em;
+  }
+
+  .medalha-verde {
+    top: 11em;
+    right: 13em;
+  }
+
+  .medalha-amarela {
+    bottom: 17em;
+  }
+
+  .brilho-amarelo2 {
+    left: 8em;
+    bottom: 9em;
+  }
+
+  .card-cupons {
+    flex-wrap: wrap;
+  }
+
+  .cupons {
+    height: 35em;
+  }
+}
+
+@media (max-width: 540px) {
+  #titulo-inicial {
+    font-size: 65px;
+  }
+
+  #texto-inicial {
+    top: 16.5em;
+  }
+
+  .brilho-verde {
+    top: -6em;
+    right: 12em;
+  }
+
+  .brilho-azul {
+    top: -4em;
+  }
+
+  .medalha-azul {
+    left: 11em;
+  }
+
+  .medalha-amarela {
+    bottom: 18em;
+    left: 13em;
+  }
+
+  .brilho-amarelo2 {
+    left: 7em;
+    bottom: 11em;
+  }
+
+  .medalha-roxa {
+    left: 12em;
+  }
+}
+
+@media (max-width: 505px) {
+  .medalha-vermelha {
+    right: 11em;
+  }
+
+  .brilho-amarelo {
+    right: 7.5em;
+  }
+
+  .medalha-verde {
+    top: 10em;
+    right: 11em;
+  }
+
+  .medalha-amarela {
+    bottom: 17em;
+    left: 12.5em;
+  }
+
+  .brilho-amarelo2 {
+    bottom: 10em;
+  }
+
+  .fundo-medalha-salto,
+  .fundo-medalha-coracao,
+  .fundo-medalha-explosao,
+  .fundo-medalha-engrenagem,
+  .fundo-medalha-raio {
+    width: 28em;
+  }
+
+  .column-textos {
+    margin-left: 2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .imagem-fundo {
+    height: 20em;
+  }
+
+  #titulo-inicial {
+    top: 4.5em;
+    font-size: 55px;
+  }
+
+  .medalha-vermelha {
+    top: 1em;
+  }
+
+  .brilho-verde {
+    top: -4em;
+    right: 9em;
+  }
+
+  .brilho-azul {
+    top: -3em;
+  }
+
+  .brilho-roxo {
+    bottom: 9em;
+    left: 7em;
+  }
+
+  .medalha-azul {
+    left: 10em;
+    bottom: 17em;
+  }
+
+  .medalha-amarela {
+    bottom: 16em;
+    left: 11.5em;
+  }
+
+  .medalha-roxa {
+    bottom: 13em;
+    left: 11em;
+  }
+
+  .modal-content-dourado,
+  .modal-content-vidro,
+  .modal-content-golias {
+    width: 23em;
+  }
+
+  .campo-curiosidade {
+    width: 33em;
+  }
+
+  #ram-dourado {
+    width: 30%;
+    left: 3em;
+    bottom: 2em;
+  }
+
+  .modal-content-dourado .curiosidade {
+    height: 11em;
+  }
+
+  #estrelas {
+    right: 11em;
+  }
+
+  .brilho-vidro {
+    right: 9em;
+    top: 7em;
+  }
+
+  .modal-content-vidro .curiosidade {
+    height: 10em;
+    top: -4.5em;
+  }
+
+  .modal-content-golias .curiosidade {
+    height: 10em;
+    top: 1.5em;
+  }
+}
+
+@media (max-width: 460px) {
+  .cupons {
+    height: auto;
+  }
+
+  #texto2 {
+    margin-left: 2.5em;
+  }
+
+  .fundo-medalha-salto,
+  .fundo-medalha-coracao,
+  .fundo-medalha-explosao,
+  .fundo-medalha-engrenagem,
+  .fundo-medalha-raio {
+    width: 25em;
+    height: 18em;
+  }
+
+  .titulo-salto {
+    font-size: 26px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 421px) {}

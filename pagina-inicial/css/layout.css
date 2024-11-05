@@ -238,10 +238,8 @@
   }
 
   nav ul {
-    width: auto;
     justify-content: space-between;
-    position: static;
-    padding-left: 0;
+    position: fixed;
   }
 
   nav a {
@@ -277,7 +275,7 @@
   }
 
   .imagem-fundo {
-    margin-top: 2em;
+    margin-top: 7em;
   }
 
   .imagem-inicial {
@@ -366,10 +364,6 @@
     display: block;
   }
 
-  nav ul {
-    width: 55em;
-  }
-
   nav a {
     padding-right: 30px;
   }
@@ -407,9 +401,6 @@
 }
 
 @media (max-width: 876px) {
-  nav ul {
-    width: 52em;
-  }
 
   .imagem-fundo,
   .info-box {
@@ -447,12 +438,6 @@
   }
 }
 
-@media (max-width: 820px) {
-  nav ul {
-    width: 48em;
-  }
-}
-
 @media (max-width: 795px) {
 
   #titulo1,
@@ -467,9 +452,6 @@
 }
 
 @media (max-width: 775px) {
-  nav ul {
-    width: 46em;
-  }
 
   .imagem-fundo,
   .container-grid,
@@ -508,10 +490,6 @@
 }
 
 @media (max-width: 725px) {
-  nav ul {
-    width: 44em;
-  }
-
   .sidebar {
     right: 0.5em;
   }
@@ -618,10 +596,6 @@
 }
 
 @media (max-width: 710px) {
-  nav ul {
-    width: auto;
-  }
-
   .container {
     display: flex;
     flex-direction: column;
@@ -781,11 +755,8 @@
 }
 
 @media (max-width: 655px) {
-  nav ul {
-    width: 40em;
-  }
-
   .imagem-fundo {
+    margin-top: 8em;
     margin-bottom: 6em;
   }
 
@@ -816,10 +787,6 @@
 }
 
 @media (max-width: 640px) {
-  nav ul {
-    width: 39em;
-  }
-
   .card {
     flex-direction: column-reverse;
   }
@@ -849,20 +816,12 @@
 }
 
 @media (max-width: 615px) {
-  nav ul {
-    width: 38em;
-  }
-
   .imagem-ram {
     margin-left: 4em;
   }
 }
 
 @media (max-width: 605px) {
-  nav ul {
-    width: 37em;
-  }
-
   #texto-inicial {
     width: 65%;
     margin: 25px 135px;
@@ -904,10 +863,6 @@
 }
 
 @media (max-width: 596px) {
-  nav ul {
-    width: 36em;
-  }
-
   .cep-rua,
   .bairro-form {
     margin-left: 5px;
@@ -928,12 +883,6 @@
 
   .footer-container input[type="email"] {
     width: 310px;
-  }
-}
-
-@media (max-width: 580px) {
-  nav ul {
-    width: auto;
   }
 }
 
@@ -1140,7 +1089,7 @@
     margin: 0;
     width: 100%;
     height: 35em;
-    margin-top: 1em;
+    margin-top: 4em;
   }
 
   .internos-inicial {

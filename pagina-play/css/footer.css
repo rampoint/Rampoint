@@ -175,6 +175,12 @@ input:focus {
 }
 
 /* media do footer */
+/* @media (max-width: 1024px) {
+  .footer-container {
+    width: 70em;
+  }
+} */
+
 @media (max-width: 1000px) {
 
   .geral,
@@ -182,9 +188,9 @@ input:focus {
     margin-right: 3em;
   }
 
-  .contato {
+  /* .contato {
     margin-right: 5em;
-  }
+  } */
 
   .logoBranca {
     display: none;
@@ -192,13 +198,12 @@ input:focus {
 }
 
 @media (max-width: 876px) {
+  /* .footer-container {
+    width: 70em;
+  } */
 
   .geral,
   .redes-sociais {
-    margin-right: 0;
-  }
-
-  .contato {
     margin-right: 0;
   }
 }
@@ -232,7 +237,6 @@ input:focus {
 
   .footer-container .descricao-footer ul {
     list-style-type: none;
-    padding: 0px 5px;
   }
 
   .descricao-footer {
@@ -274,7 +278,6 @@ input:focus {
 
   .footer-container .descricao-footer ul {
     list-style-type: none;
-    padding: 0px 5px;
   }
 
   .descricao-footer {
@@ -291,25 +294,9 @@ input:focus {
   }
 }
 
-@media (max-width: 600px) {
-  .footer-container input[type="email"] {
-    width: 310px;
-  }
-}
-
 @media (max-width: 530px) {
   .footer-container input[type="email"] {
     width: 300px;
-  }
-}
-
-@media (max-width: 480px) {
-
-  .redes-sociais,
-  .geral,
-  .contato {
-    width: 380px;
-    height: auto;
   }
 }
 
@@ -343,7 +330,6 @@ input:focus {
 
   .footer-container .descricao-footer ul {
     list-style-type: none;
-    padding: 0px 5px;
   }
 
   .descricao-footer {
@@ -360,7 +346,7 @@ input:focus {
     height: auto;
     display: flex;
     flex-direction: row;
-    margin: 0 25px;
+    margin: 0 85px;
   }
 
   #email {

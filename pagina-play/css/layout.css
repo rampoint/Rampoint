@@ -146,6 +146,7 @@
 @media (max-width: 1266px) {
   .imagem-inicial {
     width: auto;
+    margin-top: 3em;
   }
 
   #titulo-inicial {
@@ -211,8 +212,7 @@
 
   nav ul {
     justify-content: space-between;
-    position: static;
-    padding-left: 0;
+    position: fixed;
   }
 
   nav a {
@@ -238,7 +238,9 @@
   }
 
   .sidebar {
-    height: 79vh;
+    height: 65vh;
+    right: 0;
+    z-index: 100000;
   }
 
   nav a:visited {
@@ -806,4 +808,8 @@
   }
 }
 
-@media (min-width: 320px) and (max-width: 421px) {}
+@media (min-width: 320px) and (max-width: 421px) {
+  .sidebar {
+    height: 40em;
+  }
+}

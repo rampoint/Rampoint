@@ -651,7 +651,7 @@ body {
 #content1 .ramcoin {
   position: absolute;
   bottom: 3em;
-  left: 37em;
+  left: 35em;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -680,8 +680,8 @@ body {
   position: relative;
   bottom: 2em;
   left: 2em;
-  width: 15em;
-  height: 15em;
+  width: 240px;
+  height: 240px;
 }
 
 .textos-baias {
@@ -941,7 +941,7 @@ body {
   width: 50%;
   position: relative;
   top: 0;
-  left: 14em;
+  left: 12.5em;
   text-align: start;
 }
 

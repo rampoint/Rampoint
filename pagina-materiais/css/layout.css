@@ -1107,26 +1107,277 @@
   .fundo-dissipadores,
   .fundo-filtro,
   .fundo-cooler {
-    height: 32em;
+    width: 34em;
   }
 
-  .titulo-gabinete {
-    top: 20px;
-    right: 95px;
+  .titulo-gabinete,
+  .titulo-baias,
+  .titulo-slots,
+  .titulo-organizador,
+  .titulo-painel,
+  .titulo-gpu,
+  .titulo-placa-mae,
+  .titulo-cpu,
+  .titulo-hdd,
+  .titulo-psu,
+  .titulo-monitor,
+  .titulo-teclado,
+  .titulo-mouse,
+  .titulo-alto-falante,
+  .titulo-ventoinhas,
+  .titulo-dissipadores,
+  .titulo-filtro,
+  .titulo-cooler {
+    margin: 0;
     bottom: 0;
   }
 
+  .titulo-gabinete {
+    top: 85px;
+    left: 10px;
+  }
+
+  .titulo-baias {
+    top: 80px;
+    left: 157px;
+  }
+
+  .titulo-hdd {
+    width: 50%;
+    top: 40px;
+    left: 155px;
+  }
+
+  .titulo-slots {
+    width: 50%;
+    top: 95px;
+    left: 155px;
+  }
+
+  .titulo-organizador {
+    width: 50%;
+    top: 85px;
+    left: 155px;
+  }
+
+  .titulo-painel {
+    width: 50%;
+    top: 75px;
+    left: 155px;
+  }
+
+  .titulo-gpu {
+    top: 60px;
+    left: 157px;
+  }
+
+  .titulo-placa-mae {
+    top: 50px;
+    left: 143px;
+  }
+
+  .titulo-psu {
+    width: 50%;
+    top: 60px;
+    left: 150px;
+  }
+
+  .titulo-cpu {
+    top: 60px;
+    left: 150px;
+  }
+
+  .titulo-monitor,
+  .titulo-teclado,
+  .titulo-mouse,
+  .titulo-alto-falante {
+    top: 80px;
+    left: 160px;
+  }
+
+  .titulo-ventoinhas,
+  .titulo-dissipadores,
+  .titulo-filtro {
+    top: 40px;
+    left: 160px;
+  }
+
+  .titulo-cooler {
+    top: 60px;
+    left: 160px;
+  }
+
   .p-gabinete {
-    width: 80%;
-    top: 2em;
-    left: -55px;
-    line-height: 30px;
+    top: 8em;
+    left: 10.5em;
+    line-height: 26px;
+  }
+
+  .p-baias {
+    width: 51%;
+    top: 6.5em;
+    left: 10.5em;
+    line-height: 26px;
+  }
+
+  .p-slots {
+    width: 51%;
+    top: 7.5em;
+    left: 10.5em;
+    line-height: 26px;
+  }
+
+  .p-organizador {
+    width: 52%;
+    top: 6.5em;
+    left: 10.5em;
+    line-height: 26px;
+  }
+
+  .p-painel {
+    width: 49%;
+    top: 5.5em;
+    left: 10.5em;
+    line-height: 26px;
+  }
+
+  .p-gpu {
+    width: 49%;
+    top: 5.5em;
+    left: 10em;
+    line-height: 26px;
+  }
+
+  .p-placa-mae {
+    top: 75px;
+    left: 9.5em;
+  }
+
+  .p-memoria-ram {
+    top: 65px;
+    left: 9em;
+  }
+
+  .p-hdd {
+    top: 3.5em;
+    left: 10.5em;
+    line-height: 26px;
+  }
+
+  .p-psu {
+    top: 5em;
+    left: 9.5em;
+    line-height: 26px;
+  }
+
+  .p-cpu {
+    top: 5em;
+    left: 10em;
+    line-height: 26px;
+  }
+
+  .p-monitor,
+  .p-teclado,
+  .p-mouse,
+  .p-alto-falante {
+    top: 7em;
+    left: 10em;
+    line-height: 26px;
+  }
+
+  .p-ventoinhas,
+  .p-dissipadores,
+  .p-filtro {
+    top: 3em;
+    left: 10em;
+    line-height: 26px;
+  }
+
+  .p-cooler {
+    top: 5em;
+    left: 10em;
+    line-height: 26px;
   }
 
   .img-estrutura {
-    left: 2em;
-    bottom: 1em;
-    width: 14em;
+    bottom: 3em;
+    left: 1em;
+    width: 236px;
+    height: 240px;
+  }
+
+  .img-baias {
+    width: 220px;
+  }
+
+  .img-painel,
+  .img-gpu {
+    width: 216px;
+    height: 240px;
+  }
+
+  .img-placa-mae {
+    left: 1.5em;
+    width: 230px;
+    height: 240px;
+  }
+
+  .img-memoria-ram {
+    left: 1em;
+    width: 240px;
+    height: 240px;
+  }
+
+  .img-hdd,
+  .img-psu,
+  .img-cpu,
+  .img-teclado,
+  .img-mouse,
+  .img-alto-falante {
+    width: 220px;
+    height: 240px;
+  }
+
+  .img-ventoinhas {
+    width: 240px;
+    height: 240px;
+    bottom: 2em;
+  }
+
+  .img-dissipadores {
+    width: 220px;
+    height: 240px;
+    bottom: 2em;
+  }
+
+  #content1 .ramcoin,
+  #content2 .ramcoin,
+  #content3 .ramcoin,
+  #content4 .ramcoin,
+  #content5 .ramcoin,
+  #content6 .ramcoin,
+  #content7 .ramcoin,
+  #content8 .ramcoin,
+  #content9 .ramcoin,
+  #content10 .ramcoin,
+  #content11 .ramcoin,
+  #content12 .ramcoin,
+  #content13 .ramcoin,
+  #content14 .ramcoin,
+  #content15 .ramcoin,
+  #content16 .ramcoin,
+  #content17 .ramcoin,
+  #content18 .ramcoin,
+  #content19 .ramcoin {
+    left: 20em;
+    bottom: 22.5em;
+    flex-direction: row-reverse;
+    margin-top: 0;
+  }
+
+  .qtd-ramcoin {
+    margin-left: 5px;
+    margin-right: 0;
   }
 }
 
@@ -1308,14 +1559,6 @@
     margin-top: 3em;
   }
 
-  .interno-inicial,
-  .monitor,
-  .teclado,
-  .icone-roxo {
-    width: 5%;
-    position: relative;
-  }
-
   .interno-inicial {
     bottom: 3em;
     right: 9em;
@@ -1334,15 +1577,6 @@
   .icone-roxo {
     top: 2em;
     left: 9em;
-  }
-
-  .brilho-amarelo,
-  .brilho-verde,
-  .brilho-azul,
-  .brilho-roxo,
-  .brilho-vermelho {
-    width: 1%;
-    position: relative;
   }
 
   .brilho-amarelo {
@@ -1492,14 +1726,6 @@
     margin-top: 3em;
   }
 
-  .interno-inicial,
-  .monitor,
-  .teclado,
-  .icone-roxo {
-    width: 5%;
-    position: relative;
-  }
-
   .interno-inicial {
     bottom: 3em;
     right: 9em;
@@ -1518,15 +1744,6 @@
   .icone-roxo {
     top: 2em;
     left: 9em;
-  }
-
-  .brilho-amarelo,
-  .brilho-verde,
-  .brilho-azul,
-  .brilho-roxo,
-  .brilho-vermelho {
-    width: 1%;
-    position: relative;
   }
 
   .brilho-amarelo {

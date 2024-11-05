@@ -182,6 +182,7 @@ input:focus {
 } */
 
 @media (max-width: 1000px) {
+
   .geral,
   .redes-sociais {
     margin-right: 3em;
@@ -236,7 +237,6 @@ input:focus {
 
   .footer-container .descricao-footer ul {
     list-style-type: none;
-    padding: 0px 5px;
   }
 
   .descricao-footer {

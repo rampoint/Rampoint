@@ -141,6 +141,7 @@
 }
 
 @media (max-width: 1800px) {
+
   #content1 .ramcoin,
   #content2 .ramcoin,
   #content3 .ramcoin,
@@ -164,7 +165,111 @@
   }
 }
 
-@media (max-width: 1665px) {
+@media (max-width: 1735px) {
+
+  #content1 .ramcoin,
+  #content2 .ramcoin,
+  #content3 .ramcoin,
+  #content4 .ramcoin,
+  #content5 .ramcoin,
+  #content6 .ramcoin,
+  #content7 .ramcoin,
+  #content8 .ramcoin,
+  #content9 .ramcoin,
+  #content10 .ramcoin,
+  #content11 .ramcoin,
+  #content12 .ramcoin,
+  #content13 .ramcoin,
+  #content14 .ramcoin,
+  #content15 .ramcoin,
+  #content16 .ramcoin,
+  #content17 .ramcoin,
+  #content18 .ramcoin,
+  #content19 .ramcoin {
+    left: 41em;
+  }
+}
+
+@media (max-width: 1670px) {
+
+  #content1 .ramcoin,
+  #content2 .ramcoin,
+  #content3 .ramcoin,
+  #content4 .ramcoin,
+  #content5 .ramcoin,
+  #content6 .ramcoin,
+  #content7 .ramcoin,
+  #content8 .ramcoin,
+  #content9 .ramcoin,
+  #content10 .ramcoin,
+  #content11 .ramcoin,
+  #content12 .ramcoin,
+  #content13 .ramcoin,
+  #content14 .ramcoin,
+  #content15 .ramcoin,
+  #content16 .ramcoin,
+  #content17 .ramcoin,
+  #content18 .ramcoin,
+  #content19 .ramcoin {
+    left: 40em;
+  }
+}
+
+@media (max-width: 1600px) {
+
+  #content1 .ramcoin,
+  #content2 .ramcoin,
+  #content3 .ramcoin,
+  #content4 .ramcoin,
+  #content5 .ramcoin,
+  #content6 .ramcoin,
+  #content7 .ramcoin,
+  #content8 .ramcoin,
+  #content9 .ramcoin,
+  #content10 .ramcoin,
+  #content11 .ramcoin,
+  #content12 .ramcoin,
+  #content13 .ramcoin,
+  #content14 .ramcoin,
+  #content15 .ramcoin,
+  #content16 .ramcoin,
+  #content17 .ramcoin,
+  #content18 .ramcoin,
+  #content19 .ramcoin {
+    left: 39em;
+  }
+}
+
+@media (max-width: 1560px) {
+
+  #content1 .ramcoin,
+  #content2 .ramcoin,
+  #content3 .ramcoin,
+  #content4 .ramcoin,
+  #content5 .ramcoin,
+  #content6 .ramcoin,
+  #content7 .ramcoin,
+  #content8 .ramcoin,
+  #content9 .ramcoin,
+  #content10 .ramcoin,
+  #content11 .ramcoin,
+  #content12 .ramcoin,
+  #content13 .ramcoin,
+  #content14 .ramcoin,
+  #content15 .ramcoin,
+  #content16 .ramcoin,
+  #content17 .ramcoin,
+  #content18 .ramcoin,
+  #content19 .ramcoin {
+    left: 38em;
+  }
+}
+
+@media (max-width: 1475px) {
+  #texto-inicial {
+    width: 26%;
+  }
+
   #content1 .ramcoin,
   #content2 .ramcoin,
   #content3 .ramcoin,
@@ -189,6 +294,7 @@
 }
 
 @media (max-width: 1425px) {
+
   #content1 .ramcoin,
   #content2 .ramcoin,
   #content3 .ramcoin,
@@ -212,7 +318,17 @@
   }
 }
 
+@media (max-width: 1395px) {
+  #texto-inicial {
+    width: 27%;
+  }
+}
+
 @media (max-width: 1365px) {
+  #texto-inicial {
+    width: 28%;
+  }
+
   #content1 .ramcoin,
   #content2 .ramcoin,
   #content3 .ramcoin,
@@ -236,10 +352,48 @@
   }
 }
 
-@media (max-width: 1235px) {
-  nav ul {
-    width: 77em;
+@media (max-width: 1305px) {
+
+  #content1 .ramcoin,
+  #content2 .ramcoin,
+  #content3 .ramcoin,
+  #content4 .ramcoin,
+  #content5 .ramcoin,
+  #content6 .ramcoin,
+  #content7 .ramcoin,
+  #content8 .ramcoin,
+  #content9 .ramcoin,
+  #content10 .ramcoin,
+  #content11 .ramcoin,
+  #content12 .ramcoin,
+  #content13 .ramcoin,
+  #content14 .ramcoin,
+  #content15 .ramcoin,
+  #content16 .ramcoin,
+  #content17 .ramcoin,
+  #content18 .ramcoin,
+  #content19 .ramcoin {
+    left: 34em;
   }
+}
+
+@media (max-width: 1295px) {
+  #texto-inicial {
+    width: 29%;
+  }
+
+  .imagem-inicial {
+    width: auto;
+  }
+}
+
+@media (max-width: 1250px) {
+  #texto-inicial {
+    width: 30%;
+  }
+}
+
+@media (max-width: 1235px) {
 
   #content1 .ramcoin,
   #content2 .ramcoin,
@@ -265,16 +419,8 @@
 }
 
 @media (max-width: 1200px) {
-  nav ul {
-    width: 75em;
-  }
-
   .imagem-fundo {
     width: 90%;
-  }
-
-  .img-fundo {
-    margin-left: 6em;
   }
 
   #titulo-inicial {
@@ -283,7 +429,7 @@
   }
 
   #texto-inicial {
-    width: 40%;
+    width: 35%;
     left: 55%;
   }
 
@@ -300,7 +446,6 @@
   }
 
   .brilho-azul {
-    bottom: 27em;
     right: 9em;
   }
 
@@ -313,21 +458,67 @@
   }
 
   .brilho-amarelo2 {
-    bottom: 37em;
     left: 11em;
   }
 
   .botao {
-    width: 80%;
     left: 4em;
-    bottom: 42em;
+  }
+
+  #titulo1 {
+    margin: 1em 0 0.5em 7em;
+  }
+
+  #texto1 {
+    margin-left: 13.3em;
   }
 }
 
-@media (max-width: 1116px) {
-  nav ul {
-    width: 67em;
+@media (max-width: 1175px) {
+  .imagem-fundo {
+    width: 95%;
   }
+
+  #texto-inicial {
+    width: 40%;
+  }
+
+  .img-fundo {
+    top: 16em;
+    left: 9em;
+  }
+
+  #titulo-inicial,
+  #texto-inicial {
+    left: 52%;
+  }
+
+  .interno-inicial,
+  .monitor {
+    right: 19em;
+  }
+
+  .brilho-verde {
+    right: 14em;
+  }
+
+  .brilho-azul {
+    bottom: 4em;
+  }
+
+  .brilho-vermelho {
+    bottom: 18em;
+    left: 17em;
+  }
+}
+
+@media (max-width: 1155px) {
+  #texto1 {
+    width: 72%;
+  }
+}
+
+@media (max-width: 1140px) {
 
   #content1 .ramcoin,
   #content2 .ramcoin,
@@ -348,17 +539,54 @@
   #content17 .ramcoin,
   #content18 .ramcoin,
   #content19 .ramcoin {
-    left: 30em;
+    left: 32em;
   }
 }
 
-@media (max-width: 1066px) {
-  nav ul {
-    width: 65em;
+@media (max-width: 1105px) {
+
+  #titulo-inicial,
+  #texto-inicial {
+    left: 54%;
   }
 
-  .carrossel-container {
-    margin: 100px 320px;
+  .botao {
+    left: 2em;
+  }
+
+  #texto1 {
+    width: 70%;
+  }
+}
+
+@media (max-width: 1095px) {
+
+  #content1 .ramcoin,
+  #content2 .ramcoin,
+  #content3 .ramcoin,
+  #content4 .ramcoin,
+  #content5 .ramcoin,
+  #content6 .ramcoin,
+  #content7 .ramcoin,
+  #content8 .ramcoin,
+  #content9 .ramcoin,
+  #content10 .ramcoin,
+  #content11 .ramcoin,
+  #content12 .ramcoin,
+  #content13 .ramcoin,
+  #content14 .ramcoin,
+  #content15 .ramcoin,
+  #content16 .ramcoin,
+  #content17 .ramcoin,
+  #content18 .ramcoin,
+  #content19 .ramcoin {
+    left: 31em;
+  }
+}
+
+@media (max-width: 1065px) {
+  #texto-inicial {
+    width: 45%;
   }
 
   #content1 .ramcoin,
@@ -399,27 +627,11 @@
     text-align: center;
     width: 50%;
   }
-
-  .descricao-footer {
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 40px;
-    max-width: 100%;
-  }
-
-  .copyright {
-    margin-left: 80px;
-  }
 }
 
-@media (max-width: 990px) {
+@media (max-width: 1015px) {
   .hideOnMobile {
     display: none;
-  }
-
-  .sidebar {
-    margin-left: auto;
-    margin-right: 4em;
   }
 
   .menu-button {
@@ -427,7 +639,6 @@
   }
 
   nav ul {
-    width: 60em;
     justify-content: space-between;
     position: static;
     padding-left: 0;
@@ -449,6 +660,12 @@
     display: none;
   }
 
+  .sidebar {
+    height: 65vh;
+    right: 0;
+    z-index: 100000;
+  }
+
   nav a:visited {
     text-decoration: none;
     transition: color 1.5s ease-out 1ms;
@@ -459,6 +676,43 @@
     text-decoration-line: underline;
   }
 
+  .botao {
+    width: 0;
+    display: none;
+  }
+
+  .imagem-fundo {
+    top: 0em;
+  }
+
+  #scrollTarget {
+    padding-top: 2em;
+  }
+
+  #titulo1 {
+    margin: 1em 0 0.5em 5em;
+  }
+
+  #texto1 {
+    margin-left: 9.5em;
+    width: 75%;
+  }
+
+  #titulo-inicial,
+  #texto-inicial {
+    left: 53%;
+  }
+
+  .teclado {
+    left: 23em;
+  }
+
+  .icone-roxo {
+    left: 23em;
+  }
+}
+
+@media (max-width: 990px) {
   .imagem-fundo {
     width: 70%;
   }
@@ -483,8 +737,8 @@
   }
 
   .brilho-amarelo {
-    bottom: 31em;
-    right: 2.5em;
+    right: 1em;
+    bottom: 13em;
   }
 
   .monitor {
@@ -496,7 +750,6 @@
   }
 
   .brilho-azul {
-    bottom: 22em;
     right: 3em;
   }
 
@@ -509,13 +762,12 @@
   }
 
   .brilho-vermelho {
-    bottom: 40em;
-    left: 24em;
+    left: 23em;
+    bottom: 20em;
   }
 
   .brilho-amarelo2 {
-    bottom: 35em;
-    left: 22em;
+    left: 18em;
   }
 
   .icone-roxo {
@@ -527,7 +779,6 @@
   }
 
   #scrollTarget {
-    width: 45em;
     margin: auto 75px;
   }
 
@@ -538,10 +789,6 @@
   #texto1 {
     margin-left: 2em;
     width: 100%;
-  }
-
-  .carrossel-container {
-    margin: 80px 230px;
   }
 
   #content1 .ramcoin,
@@ -565,35 +812,50 @@
   #content19 .ramcoin {
     left: 28em;
   }
+}
 
-  .logoBranca {
-    display: none;
+@media (max-width: 895px) {
+  #titulo-inicial {
+    width: 75%;
+  }
+
+  #scrollTarget {
+    margin: auto 55px;
+  }
+
+  #texto1 {
+    width: 94%;
   }
 }
 
 @media (max-width: 865px) {
-  body {
-    overflow-x: hidden;
-  }
-
-  nav ul {
-    width: auto;
-  }
-
-  .sidebar {
-    right: 2em;
-  }
-
-  .img-fundo {
-    left: 10em;
-  }
-
   #titulo-inicial {
     width: 80%;
   }
 
-  .carrossel-container {
-    margin: 100px 210px;
+  #texto-inicial {
+    width: 70%;
+  }
+
+  .interno-inicial,
+  .monitor {
+    right: 11em;
+  }
+
+  .brilho-verde {
+    right: 6em;
+  }
+
+  .teclado {
+    left: 27em;
+  }
+
+  .brilho-amarelo2 {
+    left: 16em;
+  }
+
+  .icone-roxo {
+    left: 27em;
   }
 
   #content1 .ramcoin,
@@ -619,73 +881,91 @@
   }
 }
 
-@media (max-width: 710px) {
-  body,
-  .container {
-    overflow-x: hidden;
-  }
-  .sidebar {
-    right: 8em;
-  }
-
-  .img-fundo {
-    width: 25em;
-    left: 8em;
-  }
-
+@media (max-width: 790px) {
   #titulo-inicial {
     width: 90%;
   }
 
-  #texto-inicial {
-    width: 80%;
-  }
-
-  .brilho-amarelo {
-    bottom: 28em;
-    right: 0.5em;
-  }
-
-  .brilho-verde {
-    right: 8em;
-  }
-
-  .brilho-azul {
-    bottom: 18em;
-  }
-
-  .brilho-roxo {
-    left: 14em;
-  }
-
-  .teclado {
-    left: 23em;
+  .img-fundo {
+    left: 11em;
   }
 
   .brilho-amarelo2 {
-    bottom: 29em;
-    left: 14em;
+    bottom: 15em;
+    left: 13em;
   }
 
+  .brilho-roxo {
+    left: 15em;
+  }
+
+  .brilho-vermelho {
+    left: 22em;
+    bottom: 22em;
+  }
+
+  .teclado,
   .icone-roxo {
-    left: 23em;
+    left: 25em;
   }
 
-  #scrollTarget {
-    width: 35em;
-    margin: auto 45px;
-  }
-
-  .carrossel-container {
-    margin: 100px 180px;
-  }
-
-  .menu {
+  .fundo-gabinete,
+  .fundo-baias,
+  .fundo-slots,
+  .fundo-organizador,
+  .fundo-painel,
+  .fundo-gpu,
+  .fundo-placa-mae,
+  .fundo-memoria-ram,
+  .fundo-hdd,
+  .fundo-psu,
+  .fundo-cpu,
+  .fundo-monitor,
+  .fundo-teclado,
+  .fundo-mouse,
+  .fundo-alto-falante,
+  .fundo-ventoinhas,
+  .fundo-dissipadores,
+  .fundo-filtro,
+  .fundo-cooler {
     width: 38em;
   }
 
-  .sub-buttons-container {
-    width: 35em;
+  #content1 .ramcoin,
+  #content2 .ramcoin,
+  #content3 .ramcoin,
+  #content4 .ramcoin,
+  #content5 .ramcoin,
+  #content6 .ramcoin,
+  #content7 .ramcoin,
+  #content8 .ramcoin,
+  #content9 .ramcoin,
+  #content10 .ramcoin,
+  #content11 .ramcoin,
+  #content12 .ramcoin,
+  #content13 .ramcoin,
+  #content14 .ramcoin,
+  #content15 .ramcoin,
+  #content16 .ramcoin,
+  #content17 .ramcoin,
+  #content18 .ramcoin,
+  #content19 .ramcoin {
+    left: 25em;
+  }
+}
+
+@media (max-width: 725px) {
+  #texto-inicial {
+    width: 85%;
+  }
+
+  .brilho-verde {
+    right: 7em;
+  }
+
+  .teclado,
+  .icone-roxo {
+    left: 24em;
   }
 
   .fundo-gabinete,
@@ -766,45 +1046,91 @@
   .img-cooler {
     bottom: 2em;
   }
+}
 
-  .footer-container {
+@media (max-width: 695px) {
+  #titulo-inicial {
     width: 100%;
-    display: flex;
-    flex-direction: column;
+    font-size: 70px;
   }
 
-  .geral,
-  .redes-sociais,
-  .contato {
-    margin-left: 0;
-    margin-top: 30px;
-    width: 270px;
-    height: auto;
+  #texto-inicial {
+    top: 58%;
   }
 
-  .descricao-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    margin-left: 2em;
+  .interno-inicial,
+  .monitor,
+  .teclado,
+  .icone-roxo {
+    width: 80px;
   }
 
-  .logo {
-    width: 100%;
+  .interno-inicial,
+  .monitor {
+    right: 10em;
   }
 
-  .copyright {
-    margin: 5em;
+  .brilho-amarelo {
+    bottom: 14em;
+  }
+
+  .brilho-vermelho {
+    left: 20em;
+    bottom: 21em;
+  }
+
+  .icone-roxo {
+    bottom: 17em;
+    left: 22em;
+  }
+
+  #texto1 {
+    width: 95%;
+  }
+
+  .fundo-gabinete,
+  .fundo-baias,
+  .fundo-slots,
+  .fundo-organizador,
+  .fundo-painel,
+  .fundo-gpu,
+  .fundo-placa-mae,
+  .fundo-memoria-ram,
+  .fundo-hdd,
+  .fundo-psu,
+  .fundo-cpu,
+  .fundo-monitor,
+  .fundo-teclado,
+  .fundo-mouse,
+  .fundo-alto-falante,
+  .fundo-ventoinhas,
+  .fundo-dissipadores,
+  .fundo-filtro,
+  .fundo-cooler {
+    height: 32em;
+  }
+
+  .titulo-gabinete {
+    top: 20px;
+    right: 95px;
+    bottom: 0;
+  }
+
+  .p-gabinete {
+    width: 80%;
+    top: 2em;
+    left: -55px;
+    line-height: 30px;
+  }
+
+  .img-estrutura {
+    left: 2em;
+    bottom: 1em;
+    width: 14em;
   }
 }
 
 @media (max-width: 610px) {
-  nav ul {
-    width: 38em;
-  }
-
   #titulo-inicial {
     width: 6em;
   }
@@ -940,35 +1266,6 @@
   #content18 .ramcoin,
   #content19 .ramcoin {
     left: 19em;
-  }
-
-  .footer-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .footer-container input[type="email"] {
-    width: 310px;
-  }
-
-  .geral,
-  .redes-sociais,
-  .contato {
-    margin-left: 55px;
-    margin-top: 30px;
-  }
-
-  .descricao-footer {
-    margin-left: 1em;
-  }
-
-  .logo {
-    width: 100%;
-  }
-
-  .copyright {
-    margin: 5em;
   }
 }
 
@@ -1142,195 +1439,200 @@
   .circulo-estrutura {
     background: #9d4edd;
   }
+
   .circulo-internos {
     background: #f89701;
   }
+
   .circulo-perifericos {
     background: #2a55c2;
   }
+
   .circulo-resfriamento {
     background: #61d243;
   }
+}
 
-  /* Footer */
-  .footer-container {
-    width: 100%;
+@media (max-width: 421px) {
+  .container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
   }
 
-  .geral,
-  .redes-sociais,
-  .contato {
-    margin-left: 55px;
-    margin-top: 30px;
-  }
-
-  .descricao-footer {
+  /* Imagem inicial */
+  .imagem-fundo {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 20em;
+    margin: 0;
   }
 
-  .email {
-    width: 200px;
-    margin: 5px 65px;
-    display: flex;
-  }
-
-  .logo {
-    width: 100%;
-  }
-
-  .copyright {
-    margin: 5em;
-  }
-}
-
-/* Tablets em modo retrato (tela vertical) */
-@media (max-width: 768px) {
-  /* Estilos aqui */
-  .flor img {
-    visibility: hidden;
-  }
-
-  .logoBranca-small {
-    display: block;
-    width: 150px;
-  }
-
-  p {
-    margin-bottom: 10px;
-  }
-}
-
-@media (max-width: 895px) {
-  .hideOnMobile {
-    display: none;
-  }
-  .menu-button {
-    display: block;
-  }
-  nav ul {
-    justify-content: space-between;
-    position: static;
-    padding-left: 0;
-  }
-
-  nav a {
-    padding-right: 30px;
-  }
-
-  #logo {
-    margin-left: 20px;
-  }
-
-  #logo-nav {
-    margin-left: 20px;
-  }
-  #perfil {
+  .img-fundo,
+  .botao,
+  .brilho-amarelo2 {
     display: none;
   }
 
-  nav a:visited {
-    text-decoration: none;
-    transition: color 1.5s ease-out 1ms;
-  }
-
-  nav a:hover {
-    color: var(--branco);
-    text-decoration-line: underline;
-  }
-}
-
-/* Tablets em modo paisagem (tela horizontal) */
-@media (max-width: 1024px) {
-  /* Estilos aqui */
-  header {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  #perfil {
-    float: left;
-    display: none;
-  }
-
-  #drop {
-    display: block;
-  }
-
-  .info-box {
-    width: auto;
+  #titulo-inicial {
+    font-size: 3em;
+    width: 85%;
+    margin-bottom: 50px;
     text-align: center;
-    width: 50%;
   }
 
-  .descricao-footer {
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 40px;
-    max-width: 100%;
+  #texto-inicial {
+    width: 75%;
+    text-align: center;
+    margin-top: 3em;
   }
 
-  .copyright {
-    margin-left: 80px;
-  }
-}
-
-/* Laptops pequenos */
-@media (max-width: 1280px) {
-  /* Estilos aqui */
-  .logoBranca {
-    display: none;
-  }
-}
-
-/* Laptops e desktops */
-@media (max-width: 1440px) {
-  /* Estilos aqui */
-}
-
-@media (min-width: 1920px) {
-  .menu {
-    width: 45em;
-    margin: auto;
-    padding: 20px;
-    background-color: rgba(234, 236, 240, 0.5);
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    align-items: center;
-  }
-
-  .ramcoin {
-    position: absolute;
-    bottom: 3em;
-    left: 42em;
-    margin-top: 25px;
-  }
-
-  /* Adjustments for text */
-  .p-gabinete,
-  .p-baias,
-  .p-slots,
-  .p-organizador,
-  .p-painel,
-  .p-hdd,
-  .p-cpu {
-    font-size: 15px;
-    width: 50%;
+  .interno-inicial,
+  .monitor,
+  .teclado,
+  .icone-roxo {
+    width: 5%;
     position: relative;
-    top: 1em;
-    left: 13em;
   }
 
-  /* Estrutura-specific */
-  .titulo-estrutura,
-  .titulo-internos,
-  .titulo-perifericos,
-  .titulo-resfriamento {
-    font-size: 16px;
+  .interno-inicial {
+    bottom: 3em;
+    right: 9em;
+  }
+
+  .monitor {
+    top: 11em;
+    right: 9em;
+  }
+
+  .teclado {
+    bottom: 13em;
+    left: 9em;
+  }
+
+  .icone-roxo {
+    top: 2em;
+    left: 9em;
+  }
+
+  .brilho-amarelo,
+  .brilho-verde,
+  .brilho-azul,
+  .brilho-roxo,
+  .brilho-vermelho {
+    width: 1%;
+    position: relative;
+  }
+
+  .brilho-amarelo {
+    bottom: 2em;
+    right: 1em;
+  }
+
+  .brilho-verde {
+    top: 3em;
+    right: 11em;
+  }
+
+  .brilho-azul,
+  .brilho-roxo {
+    top: 5em;
+    right: 10em;
+  }
+
+  .brilho-vermelho {
+    bottom: 5em;
+    left: 11em;
+  }
+
+  #scrollTarget {
+    text-align: center;
+    margin-top: 5em;
+  }
+
+  #texto1 {
+    width: 80%;
+    margin: 0 3em;
+  }
+
+  .carrossel-container {
+    width: 45%;
+    margin: 50px auto 100px;
+  }
+
+  .menu {
+    width: 20em;
+  }
+
+  .sub-buttons-container {
+    width: 30em;
+    flex-wrap: wrap;
+  }
+
+  .sub-buttons {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+  }
+
+  .text-block {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 30%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 2px 8px 8px rgba(42, 85, 194, 0.15);
+    width: 300px;
+    z-index: 1;
+    text-align: center;
+  }
+
+  .ramcoin:hover .text-block {
+    display: block;
+  }
+
+  .texto-ramcoin {
+    font-size: 13px;
+    margin-left: 5px;
+  }
+
+  .circulo-estrutura,
+  .circulo-internos,
+  .circulo-perifericos,
+  .circulo-resfriamento {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-10%, -15%);
+    border-radius: 50%;
+    width: 15em;
+    height: 15em;
+    z-index: 1;
+  }
+
+  .circulo-estrutura {
+    background: #9d4edd;
+  }
+
+  .circulo-internos {
+    background: #f89701;
+  }
+
+  .circulo-perifericos {
+    background: #2a55c2;
+  }
+
+  .circulo-resfriamento {
+    background: #61d243;
   }
 }

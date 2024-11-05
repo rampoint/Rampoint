@@ -94,7 +94,7 @@ nav a:hover {
   position: fixed;
   top: 0;
   right: 0;
-  height: 98vh;
+  height: 65vh;
   width: 250px;
   background-color: var(--azul);
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
@@ -130,7 +130,7 @@ nav a:hover {
 }
 
 .footer-logo {
-  margin-top: 10em;
+  margin-top: 6em;
 
 }
 
@@ -145,7 +145,7 @@ nav a:hover {
 
   /* Estilos aqui */
   .footer-logo {
-    margin-top: 3em;
+    margin-top: 6em;
   }
 }
 
@@ -157,11 +157,6 @@ nav a:hover {
 .menus {
   margin-top: 60px;
 }
-
-
-
-
-
 
 #footer-logo {
   padding: 0;

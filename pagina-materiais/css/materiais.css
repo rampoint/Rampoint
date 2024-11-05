@@ -19,7 +19,6 @@ body {
   cursor: pointer;
 }
 
-
 /* começo imagem inicial */
 .imagem-fundo {
   margin-top: 10px;
@@ -39,17 +38,19 @@ body {
   justify-content: center;
   align-items: center;
   height: 35em;
-  width: 80em;
+  width: 100%;
 }
 
 .img-fundo {
-  margin-top: 33em;
+  position: relative;
+  left: 10em;
+  top: 15em;
 }
 
 #titulo-inicial {
   font-family: "Blinker-extrabold";
   color: var(--preto);
-  font-size: 5em;
+  font-size: 80px;
   width: 40%;
   line-height: 0.9em;
   text-align: center;
@@ -90,7 +91,7 @@ body {
   width: 100%;
   height: 35em;
   position: relative;
-  bottom: 40em;
+  bottom: 20em;
 }
 
 #btn {
@@ -108,71 +109,68 @@ body {
 }
 
 /* começo lado esquerdo */
-
 .interno-inicial {
   position: relative;
-  bottom: 30em;
+  bottom: 10em;
   right: 22em;
 }
 
 .brilho-amarelo {
   position: relative;
-  bottom: 35em;
+  bottom: 12em;
   right: 9.5em;
 }
 
 .brilho-verde {
   position: relative;
-  bottom: 29em;
+  bottom: 8em;
   right: 16em;
 }
 
 .brilho-azul {
   position: relative;
-  bottom: 26em;
-  right: 12em;
+  bottom: 6em;
+  right: 14em;
 }
 
 .monitor {
   position: relative;
-  bottom: 21em;
+  top: 2em;
+  bottom: 0;
   right: 22em;
 }
-
 /* final lado esquerdo */
 
 /* começo lado direito */
-
 .brilho-roxo {
   position: relative;
-  bottom: 47em;
+  bottom: 25em;
   left: 10em;
 }
 
 .teclado {
   position: relative;
-  bottom: 47em;
+  bottom: 28em;
   left: 22em;
 }
 
 .brilho-vermelho {
   position: relative;
-  bottom: 40em;
+  bottom: 20em;
   left: 17em;
 }
 
 .brilho-amarelo2 {
   position: relative;
-  bottom: 35em;
+  bottom: 13em;
   left: 9em;
 }
 
 .icone-roxo {
   position: relative;
-  bottom: 41em;
+  bottom: 20em;
   left: 25em;
 }
-
 /* final lado direito */
 
 .interno-inicial,
@@ -219,23 +217,21 @@ body {
     transform: rotate(0deg);
   }
 }
-
 /* final imagem inicial */
 
 /* começo textos */
-
 #titulo1 {
   font-family: "Blinker-extrabold";
   color: var(--verde);
-  font-size: 1.7em;
+  font-size: 27px;
   margin: 1em 0 0.5em 8em;
 }
 
 #texto1 {
   font-family: "Poppins-regular";
   color: var(--preto);
-  margin-left: 15em;
-  font-size: 0.9em;
+  margin-left: 15.3em;
+  font-size: 14px;
   width: 70%;
 }
 
@@ -244,34 +240,15 @@ body {
   /* para compensar o menu fixo */
 }
 
-@media (max-width: 768px) {
-
-  /* Estilos aqui */
-  #titulo1 {
-    margin: 0em 0 0.5em 0em;
-    text-align: center;
-  }
-
-  #texto1 {
-    font-family: "Poppins-regular";
-    color: var(--preto);
-    margin: 0;
-    font-size: 0.9em;
-    width: 100%;
-    text-align: center;
-  }
-}
-
 .perifericos {
   margin-top: 3em;
 }
-
 /* final textos */
 
 /* começo carrossel-materiais  */
 .carrossel-container {
   width: 50%;
-  margin: 100px auto 100px auto;
+  margin: 100px auto;
   position: relative;
   display: flex;
   align-items: center;
@@ -395,7 +372,7 @@ body {
   justify-content: center;
   position: relative;
   overflow: hidden;
-  width: 60em;
+  width: 100%;
   flex-wrap: wrap;
 }
 
@@ -681,7 +658,6 @@ body {
   justify-content: end;
   margin-top: 25px;
 }
-
 /* final estrutura gabinete */
 
 /* começo estrutura baias de drive */
@@ -742,7 +718,6 @@ body {
   justify-content: end;
   margin-top: 35px;
 }
-
 /* final estrutura baias de drive */
 
 /* começo estrutura slots */
@@ -804,7 +779,6 @@ body {
   justify-content: end;
   margin-top: 25px;
 }
-
 /* final estrutura slots */
 
 /* começo estrutura organizador */
@@ -863,7 +837,6 @@ body {
   justify-content: end;
   margin-top: 25px;
 }
-
 /* final estrutura organizador */
 
 /* começo estrutura painel */
@@ -922,7 +895,6 @@ body {
   justify-content: end;
   margin-top: 25px;
 }
-
 /* final estrutura painel */
 /* final imagem estrutura */
 
@@ -983,7 +955,6 @@ body {
   justify-content: end;
   margin-top: 25px;
 }
-
 /* final gpu */
 
 /* começo placa mae */
@@ -1043,7 +1014,6 @@ body {
   justify-content: end;
   margin-top: 25px;
 }
-
 /* final placa mae */
 
 /* começo memória ram */
@@ -1102,7 +1072,6 @@ body {
   justify-content: end;
   margin-top: 25px;
 }
-
 /* final memoria ram */
 
 /* começo hdd/sdd */
@@ -1161,7 +1130,6 @@ body {
   justify-content: end;
   margin-top: 25px;
 }
-
 /* final hdd/sdd */
 
 /* começo psu */
@@ -1220,7 +1188,6 @@ body {
   justify-content: end;
   margin-top: 25px;
 }
-
 /* final psu */
 
 /* começo cpu */
@@ -1279,7 +1246,6 @@ body {
   justify-content: end;
   margin-top: 25px;
 }
-
 /* final cpu */
 /* final imagem internos */
 
@@ -1340,7 +1306,6 @@ body {
   justify-content: end;
   margin-top: 25px;
 }
-
 /* final monitor */
 
 /* começo teclado */
@@ -1399,7 +1364,6 @@ body {
   justify-content: end;
   margin-top: 25px;
 }
-
 /* final teclado */
 
 /* começo mouse */
@@ -1458,7 +1422,6 @@ body {
   justify-content: end;
   margin-top: 25px;
 }
-
 /* final mouse */
 
 /* começo alto falante */
@@ -1517,7 +1480,6 @@ body {
   justify-content: end;
   margin-top: 25px;
 }
-
 /* final alto falante */
 /* final imagem perifericos */
 
@@ -1578,7 +1540,6 @@ body {
   justify-content: end;
   margin-top: 25px;
 }
-
 /* final ventoinhas */
 
 /* começo dissipadores */
@@ -1637,7 +1598,6 @@ body {
   justify-content: end;
   margin-top: 25px;
 }
-
 /* final dissipadores */
 
 /* começo filtro de poeira */
@@ -1696,7 +1656,6 @@ body {
   justify-content: end;
   margin-top: 25px;
 }
-
 /* final filtro de poeira */
 
 /* começo cooler */
@@ -1755,270 +1714,6 @@ body {
   justify-content: end;
   margin-top: 25px;
 }
-
 /* final cooler */
 /* final imagem resfriamento */
 /* final carrossel-materiais */
-
-@media (max-width: 421px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-  }
-
-  /* Imagem inicial */
-  .imagem-fundo {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 20em;
-    margin: 0;
-  }
-
-  .img-fundo,
-  .botao,
-  .brilho-amarelo2 {
-    display: none;
-  }
-
-  #titulo-inicial {
-    font-size: 3em;
-    width: 85%;
-    margin-bottom: 50px;
-    text-align: center;
-  }
-
-  #texto-inicial {
-    width: 75%;
-    text-align: center;
-    margin-top: 3em;
-  }
-
-  .interno-inicial,
-  .monitor,
-  .teclado,
-  .icone-roxo {
-    width: 5%;
-    position: relative;
-  }
-
-  .interno-inicial {
-    bottom: 3em;
-    right: 9em;
-  }
-
-  .monitor {
-    top: 11em;
-    right: 9em;
-  }
-
-  .teclado {
-    bottom: 13em;
-    left: 9em;
-  }
-
-  .icone-roxo {
-    top: 2em;
-    left: 9em;
-  }
-
-  .brilho-amarelo,
-  .brilho-verde,
-  .brilho-azul,
-  .brilho-roxo,
-  .brilho-vermelho {
-    width: 1%;
-    position: relative;
-  }
-
-  .brilho-amarelo {
-    bottom: 2em;
-    right: 1em;
-  }
-
-  .brilho-verde {
-    top: 3em;
-    right: 11em;
-  }
-
-  .brilho-azul,
-  .brilho-roxo {
-    top: 5em;
-    right: 10em;
-  }
-
-  .brilho-vermelho {
-    bottom: 5em;
-    left: 11em;
-  }
-
-  #scrollTarget {
-    text-align: center;
-    margin-top: 5em;
-  }
-
-  #texto1 {
-    width: 80%;
-    margin: 0 3em;
-  }
-
-  .carrossel-container {
-    width: 45%;
-    margin: 50px auto 100px;
-  }
-
-  .menu {
-    width: 20em;
-  }
-
-  .sub-buttons-container {
-    width: 30em;
-    flex-wrap: wrap;
-  }
-
-  .sub-buttons {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    gap: 5px;
-    justify-content: center;
-  }
-
-  .text-block {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 30%;
-    transform: translateX(-50%);
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 15px;
-    box-shadow: 2px 8px 8px rgba(42, 85, 194, 0.15);
-    width: 300px;
-    z-index: 1;
-    text-align: center;
-  }
-
-  .ramcoin:hover .text-block {
-    display: block;
-  }
-
-  .texto-ramcoin {
-    font-size: 13px;
-    margin-left: 5px;
-  }
-
-  .circulo-estrutura,
-  .circulo-internos,
-  .circulo-perifericos,
-  .circulo-resfriamento {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translate(-10%, -15%);
-    border-radius: 50%;
-    width: 15em;
-    height: 15em;
-    z-index: 1;
-  }
-
-  .circulo-estrutura {
-    background: #9d4edd;
-  }
-
-  .circulo-internos {
-    background: #f89701;
-  }
-
-  .circulo-perifericos {
-    background: #2a55c2;
-  }
-
-  .circulo-resfriamento {
-    background: #61d243;
-  }
-
-  /* Footer */
-  .footer-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .geral,
-  .redes-sociais,
-  .contato {
-    margin-left: 55px;
-    margin-top: 30px;
-  }
-
-  .descricao-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-
-  .email {
-    width: 200px;
-    margin: 5px 65px;
-    display: flex;
-  }
-
-  .logo {
-    width: 100%;
-  }
-
-  .copyright {
-    margin: 5em;
-  }
-}
-
-
-@media (min-width: 1920px) {
-  .menu {
-    width: 45em;
-    margin: auto;
-    padding: 20px;
-    background-color: rgba(234, 236, 240, 0.5);
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    align-items: center;
-  }
-
-  .ramcoin {
-    position: absolute;
-    bottom: 3em;
-    left: 42em;
-    margin-top: 25px;
-  }
-
-  /* Adjustments for text */
-  .p-gabinete,
-  .p-baias,
-  .p-slots,
-  .p-organizador,
-  .p-painel,
-  .p-hdd,
-  .p-cpu {
-    font-size: 15px;
-    width: 50%;
-    position: relative;
-    top: 1em;
-    left: 13em;
-  }
-
-  /* Estrutura-specific */
-  .titulo-estrutura,
-  .titulo-internos,
-  .titulo-perifericos,
-  .titulo-resfriamento {
-    font-size: 16px;
-  }
-}

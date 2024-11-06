@@ -112,8 +112,13 @@
           <div class="campo-form">
             <label for="telefone" id="telefone" class="titulo-form">Telefone</label>
             <div class="select-telefone">
-              <input type="tel">
+              <input type="tel" id="tel">
             </div>
+          </div>
+
+          <div class="campo-form">
+            <label for="cod" id="codigo" class="titulo-form">Codigo</label>
+              <input type="text" onchange="pegarCod()" id="cod">
           </div>
         </div>
 
@@ -140,17 +145,20 @@
                 <span style="font-size: 14px;">Selecione uma opção</span>
               </div>
               <div class="options">
+                <div class="option" data-value="" id="tipo-img" >
+                  <img src="./img/icon-Interno.svg" id="tipo-text" alt="Interno"> 
+                </div>
                 <div class="option" data-value="Interno" data-image="./img/icon-interno.svg">
-                  <img src="./img/icon-interno.svg" alt="Interno"> Interno
+                  <img src="./img/icon-Interno.svg" alt="Interno"> Interno
                 </div>
                 <div class="option" data-value="Periférico" data-image="./img/icon-periferico.svg">
-                  <img src="./img/icon-periferico.svg" alt="Periférico"> Periférico
+                  <img src="./img/icon-Periferico.svg" alt="Periférico"> Periférico
                 </div>
                 <div class="option" data-value="Estrutura" data-image="./img/icon-estrutura.svg">
-                  <img src="./img/icon-estrutura.svg" alt="Estrutura"> Estrutura
+                  <img src="./img/icon-Estrutura.svg" alt="Estrutura"> Estrutura
                 </div>
                 <div class="option" data-value="Resfriamento" data-image="./img/icon-resfriamento.svg">
-                  <img src="./img/icon-resfriamento.svg" alt="Resfriamento"> Resfriamento
+                  <img src="./img/icon-Resfriamento.svg" alt="Resfriamento"> Resfriamento
                 </div>
               </div>
               <input type="hidden" name="selected-option" id="selected-option">

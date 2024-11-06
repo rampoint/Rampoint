@@ -7,7 +7,8 @@ const formDoacoes = {
   tipo_componente: () => document.getElementById('tipo-componente').value,
   data_doacao: () => document.getElementById('data_doacao').value,
   hora_doacao: () => document.getElementById('hora_doacao').value,
-  desc_doacao: () => document.getElementById('descricao-peca').value
+  desc_doacao: () => document.getElementById('descricao-peca').value,
+  cod:() => document.getElementById('cod').value
 };
 
 function adicionarDoacao() {
@@ -47,4 +48,24 @@ function adicionarDoacao() {
       alert("Email não encontrado")
     }
   });
+}
+
+function pegarCod(){
+  var cod = formDoacoes.cod()
+  console.log(cod)
+  const usersRefCod = database.ref('doacoes/'+ cod);
+  usersRefCod.on('value', (snapshot) => {
+    const data = snapshot.val()
+    var tipo = data.tipo
+    document.getElementById("nome-add").value = data.nome;
+    document.getElementById("email-add").value = data.email;
+    document.getElementById('tel').value = data.tel
+    document.getElementById("qtd_peca").value = data.qtd;
+    document.getElementById("search").value = data.nome_peca;
+    document.getElementById("descricao-peca").value = data.desc;
+    document.getElementById("tipo-img").innerHTML = data.tipo;
+    document.getElementById("tipo-text").src = `./img/icon-${tipo}.svg`;
+
+    
+  })
 }

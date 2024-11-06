@@ -18,7 +18,7 @@
   <aside class="sidebar">
     <div class="top">
       <div class="logo">
-        <img src="./img/logo.svg" class="imagem-logo" alt="" />
+        <h1 class="titulo-logo">ram<span class="span-logo">poınt.</span></h1>
       </div>
       <img src="./img/seta.svg" id="btn" alt="" />
     </div>
@@ -26,10 +26,10 @@
     <nav>
       <ul class="links">
         <li class="user">
-            <a href="../perfil-adm/perfil.html" id="user-btn">
-              <img src="./img/perfilADM.svg" class="foto-perfil" alt="Foto de perfil do usuário" />
-              <p class="nome-usuario">Usuário</p>
-            </a>
+          <a href="../perfil-adm/perfil.html" id="user-btn">
+            <img src="./img/perfilADM.svg" class="foto-perfil" alt="Foto de perfil do usuário" />
+            <p class="nome-usuario">Usuário</p>
+          </a>
         </li>
         <li>
           <a href="../dashboard-adm/dashboard.html">
@@ -83,9 +83,13 @@
     </nav>
   </aside>
 
-  <main class="main-content">
+  <main class="main-content light-theme">
     <header class="fundo-titulo">
       <h1 class="titulo-pagina">Vistoria</h1>
+
+      <div class="theme-toggle">
+        <i id="theme-icon" class='bx bx-sun'></i>
+      </div>
     </header>
 
     <section class="campo-titulo">
@@ -93,77 +97,93 @@
     </section>
 
     <section class="campo-inicial">
-   
-        <div class="grupo1">
-          <div class="campo-form">
-            <label for="nome" id="nome" class="titulo-form">Nome Completo</label>
-            <input type="text" id="nome-placeholder" placeholder="Nome do doador">
-          </div>
-
-          <div class="campo-form">
-            <label for="email" id="email-add" class="titulo-form">Email</label>
-            <input type="email" id="email-placeholder" placeholder="Email do doador">
-          </div>
-
-          <div class="campo-form">
-            <label for="telefone" id="telefone" class="titulo-form">Telefone</label>
-            <div class="select-telefone">
-              <input type="tel" id="telefone-placeholder" placeholder="Telefone do doador">
-            </div>
-          </div>
+      <div class="grupo1">
+        <div class="campo-form">
+          <label for="nome" id="nome" class="titulo-form">Nome Completo</label>
+          <input type="text" id="nome-placeholder" placeholder="Nome do doador">
         </div>
 
-        <div class="grupo2">
-          <div class="campo-form">
-            <label for="nome-peca" class="titulo-form">Nome da(s) peça(s)</label>
-            <div class="select-peca">
-              <input type="search" id="search" placeholder="Peça doada">
-              <img src="./img/add-peca.svg" class="icon-add" alt="Ícone para adicionar mais peças">
-            </div>
+        <div class="campo-form">
+          <label for="email" id="email-add" class="titulo-form">Email</label>
+          <input type="email" id="email-placeholder" placeholder="Email do doador">
+        </div>
 
+        <div class="campo-form">
+          <label for="telefone" id="telefone" class="titulo-form">Telefone</label>
+          <div class="select-telefone">
+            <input type="tel" id="telefone-placeholder" placeholder="Telefone do doador">
+          </div>
+        </div>
+      </div>
+
+      <div class="grupo2">
+        <div class="campo-form">
+          <label for="nome-peca" class="titulo-form">Nome da(s) peça(s)</label>
+          <div class="select-peca">
+            <input type="search" id="search" placeholder="Peça doada">
+            <img src="./img/add-peca.svg" class="icon-add" alt="Ícone para adicionar mais peças">
           </div>
 
-          <div class="campo-form">
-            <label for="qtd-peca" class="titulo-form">Qtd. de peça(s)</label>
-            <input type="number" id="qtd-placeholder" placeholder="Qtd. doada">
-          </div>
+        </div>
 
-          <div class="campo-form">
+        <div class="campo-form">
+          <label for="qtd-peca" class="titulo-form">Qtd. de peça(s)</label>
+          <input type="number" id="qtd-placeholder" placeholder="Qtd. doada">
+        </div>
+
+        <div class="campo-form">
+          <div class="custom-select">
             <label for="componente" class="titulo-form">Tipo de componente</label>
-            <select name="tipo-componente" id="tipo-componente">
-              <option id="tipo-placeholder"></option>
-              <option value="interno">Interno</option>
-              <option value="periferico">Periférico</option>
-              <option value="estrutura">Estrutura</option>
-              <option value="resfriamento">Resfriamento</option>
-            </select>
-          </div>
-
-          <div class="campo-form">
-            <label for="data"  class="titulo-form">Data</label>
-            <input type="date" id="data_doacao" class="data">
-          </div>
-          <div class="campo-form">
-            <label for="hora"  class="titulo-form">Hora</label>
-            <input type="time" id="hora_doacao" class="hora">
+            <div class="selected-option">
+              <img id="selected-image" src="" alt="" style="display: none;">
+              <span style="font-size: 14px;" id='selected-text'>Selecione uma opção</span>
+            </div>
+            <div class="options">
+              <div class="option" data-value="Interno" data-image="./img/icon-interno.svg">
+                <img src="./img/icon-interno.svg" alt="Interno"> Interno
+              </div>
+              <div class="option" data-value="Periférico" data-image="./img/icon-periferico.svg">
+                <img src="./img/icon-periferico.svg" alt="Periférico"> Periférico
+              </div>
+              <div class="option" data-value="Estrutura" data-image="./img/icon-estrutura.svg">
+                <img src="./img/icon-estrutura.svg" alt="Estrutura"> Estrutura
+              </div>
+              <div class="option" data-value="Resfriamento" data-image="./img/icon-resfriamento.svg">
+                <img src="./img/icon-resfriamento.svg" alt="Resfriamento"> Resfriamento
+              </div>
+            </div>
+            <input type="hidden" name="selected-option" id="selected-option">
           </div>
         </div>
 
-        <div class="campo-descricao">
-          <label for="descricao" class="titulo-form">Descrição:</label>
-          <textarea name="descricao-peca" id="descricao-peca" cols="10" rows="15" placeholder="Descrição sobre a peça"></textarea>
+        <div class="campo-form">
+          <label for="data" class="titulo-form">Data</label>
+          <input type="date" id="data_doacao" class="data">
         </div>
+        <div class="campo-form">
+          <label for="hora" class="titulo-form">Hora</label>
+          <input type="time" id="hora_doacao" class="hora">
+        </div>
+      </div>
 
-        <div class="botoes">
-          <button onclick="atualizarVistoria()" type="button" class="btn-salvar">Confirmar vistoria</button>
-          <button href="../doacoes-adm/doacoes.html" class="btn-cancelar">Cancelar</button>
-        </div>
-      
+      <div class="campo-descricao">
+        <label for="descricao" class="titulo-form">Descrição:</label>
+        <textarea name="descricao-peca" id="descricao-peca" cols="10" rows="15"
+          placeholder="Descrição sobre a peça"></textarea>
+      </div>
+
+      <div class="botoes">
+        <button onclick="atualizarVistoria()" type="button" class="btn-salvar">Confirmar vistoria</button>
+        <button href="../doacoes-adm/doacoes.html" class="btn-cancelar">Cancelar</button>
+      </div>
+
     </section>
   </main>
 
   <script src="./js/sidebar.js"></script>
   <script src="./js/ddd.js"></script>
+  <script src="./js/select.js"></script>
+  <script src="./js/mudaTema.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-auth-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-database-compat.js"></script>

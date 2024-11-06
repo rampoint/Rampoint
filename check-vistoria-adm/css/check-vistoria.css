@@ -82,11 +82,11 @@ input {
   background-image: url('data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMDAwMDAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MCA0MCI+PHBhdGggZD0iTTEzIDE2bDcgNiA3LTYgMSAxLTggOC04LTh6Ii8+PC9zdmc+');
   background-repeat: no-repeat;
   background-position: right 10px center;
-  background-size: 12px; 
+  background-size: 12px;
 }
 
 #ddd-select::-ms-expand {
-  display: none; 
+  display: none;
 }
 
 
@@ -143,7 +143,7 @@ input {
 }
 
 #descricao-peca {
-  background-color: #EEEEEE;
+  background-color: #F8F8FF;
   font-family: "Poppins-regular";
   border: none;
   outline: none;
@@ -187,4 +187,164 @@ input {
   width: 15em;
   height: 3em;
   cursor: pointer;
+}
+
+.custom-select {
+  position: relative;
+  width: 250px;
+}
+
+input,
+.selected-option {
+  background-color: var(--branco);
+  font-family: "Poppins-regular";
+  width: 15em;
+  height: 2.2em;
+  margin-top: 5px;
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+  gap: 5px;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.selected-option {
+  height: 1.9em;
+  padding-left: 10px;
+}
+
+.options {
+  font-family: "Poppins-regular";
+  display: none;
+  border: 1px solid #ccc;
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  z-index: 1;
+}
+
+.option {
+  font-size: 14px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.option img {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.option:hover {
+  background-color: #f0f0f0;
+}
+
+/* tema claro/escuro */
+.theme-toggle {
+  position: fixed;
+  top: 30px;
+  right: 35px;
+  cursor: pointer;
+}
+
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.light-theme {
+  color: #121212;
+}
+
+.dark-theme {
+  color: #fff;
+}
+
+body.dark-theme {
+  background-color: #121212;
+}
+
+.main-content.dark-theme {
+  background-color: #121212;
+}
+
+.sidebar.dark-theme {
+  background-color: #282828;
+}
+
+.span-logo.dark-theme {
+  color: #f8f8f8;
+}
+
+.nome-usuario.dark-theme {
+  color: #f8f8f8;
+}
+
+i.dark-theme {
+  color: #f8f8f8;
+}
+
+.nav-item.dark-theme {
+  color: #f8f8f8;
+}
+
+.titulo-pagina.light-theme {
+  color: #121212;
+}
+
+.titulo-pagina.dark-theme {
+  color: #DADADC;
+}
+
+.fundo-titulo.dark-theme {
+  background-color: #282828;
+}
+
+.titulo-inicial.light-theme {
+  background-color: transparent;
+  color: #2a55c2;
+}
+
+.titulo-inicial.dark-theme {
+  background-color: transparent;
+  color: #8EAEFF;
+}
+
+.titulo-form.dark-theme {
+  background-color: transparent;
+  color: #DADADC;
+}
+
+input.dark-theme {
+  background-color: #282828;
+}
+
+.selected-option.dark-theme {
+  background-color: #282828;
+}
+
+.options.dark-theme {
+  background-color: #282828;
+  border: #282828;
+}
+
+.dark-theme .option:hover {
+  background-color: #333333;
+}
+
+#descricao-peca.dark-theme {
+  background-color: #282828;
+}
+
+.btn-cancelar.light-theme {
+  color: #121212;
+}
+
+.btn-cancelar.dark-theme {
+  color: #fff;
 }

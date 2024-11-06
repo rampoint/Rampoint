@@ -342,12 +342,12 @@ input:focus {
   }
 
   .email {
-    width: 200px;
+    width: 280px;
     height: auto;
     display: flex;
     flex-direction: row;
-    margin: 0 85px;
-  }
+    margin: 0 45px;
+}
 
   #email {
     height: 20px;

@@ -28,14 +28,44 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
+  // Funções de acessibilidade para os 4 primeiros botões
+  const changeFontSize = () => document.body.style.fontSize = 'larger';
+  const changeFontFamily = () => document.body.style.fontFamily = 'Arial, sans-serif';
+  const changeLineHeight = () => document.body.style.lineHeight = '1.8';
+  const changeLetterSpacing = () => document.body.style.letterSpacing = '2px';
+
   const clearAccessibility = () => {
     document.body.style.fontSize = "";
     document.body.style.fontFamily = "";
     document.body.style.lineHeight = "";
     document.body.style.letterSpacing = "";
-    document.body.style.filter = "";
   };
 
   const clearBtn = document.getElementById("clearAccessibility");
   clearBtn.addEventListener("click", clearAccessibility);
+
+  const groupButtons = document.querySelectorAll('.group-btn');
+
+  groupButtons.forEach((button, index) => {
+    button.addEventListener('click', function (event) {
+      event.preventDefault();
+
+      switch (index) {
+        case 0:
+          changeFontSize();
+          break;
+        case 1:
+          changeFontFamily();
+          break;
+        case 2:
+          changeLineHeight();
+          break;
+        case 3:
+          changeLetterSpacing();
+          break;
+        default:
+          break;
+      }
+    });
+  });
 });

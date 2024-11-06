@@ -247,6 +247,7 @@ body {
 #perfil {
   width: 45px;
 }
+
 /* final da imagem inicial */
 
 /* começo dos textos */
@@ -283,6 +284,7 @@ body {
 .span-preto {
   font-family: "Poppins-bold";
 }
+
 /* fim dos textos */
 
 /* começo grid */
@@ -338,6 +340,7 @@ body {
 .texto-ram {
   grid-area: texto-ram;
 }
+
 /* fim grid */
 
 /* começo link header ecoponto */
@@ -530,6 +533,7 @@ input {
 .btn-lupa:hover {
   border-bottom: none;
 }
+
 /* colocar endereco final */
 
 /* começo cards de descarte */
@@ -579,11 +583,10 @@ input {
   color: #121212;
 }
 
-.imagem-ecoponto {
-  width: 300px;
-  height: auto;
+#map {
+  width: 400px;
+  height: 300px;
   border-radius: 20px;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 25%);
 }
 
 .card-content {

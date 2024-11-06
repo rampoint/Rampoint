@@ -85,6 +85,7 @@ body {
   0% {
     transform: translateY(0px);
   }
+
   100% {
     transform: translateY(20px);
   }
@@ -94,6 +95,7 @@ body {
   0% {
     transform: scale(1);
   }
+
   100% {
     transform: scale(1.2);
   }
@@ -103,9 +105,11 @@ body {
   0% {
     transform: rotate(0deg);
   }
+
   50% {
     transform: rotate(4deg);
   }
+
   100% {
     transform: rotate(0deg);
   }
@@ -240,9 +244,10 @@ body {
   color: var(--branco);
 }
 
-#perfil{
+#perfil {
   width: 45px;
 }
+
 /* final da imagem inicial */
 
 /* começo dos textos */
@@ -279,6 +284,7 @@ body {
 .span-preto {
   font-family: "Poppins-bold";
 }
+
 /* fim dos textos */
 
 /* começo grid */
@@ -334,6 +340,7 @@ body {
 .texto-ram {
   grid-area: texto-ram;
 }
+
 /* fim grid */
 
 /* começo link header ecoponto */
@@ -514,15 +521,20 @@ input {
 }
 
 .btn-lupa {
-  background-color: var(--azul);
+  background-color: #46C4FF;
   border: none;
+  border-bottom: 5px solid #0076AC;
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 25%);
   cursor: pointer;
   margin: 0 0 0 25px;
 }
+
+.btn-lupa:hover {
+  border-bottom: none;
+}
+
 /* colocar endereco final */
 
 /* começo cards de descarte */

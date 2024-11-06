@@ -1381,76 +1381,45 @@
   }
 }
 
-@media (max-width: 610px) {
-  #titulo-inicial {
-    width: 6em;
-  }
-
-  #texto-inicial {
-    width: 90%;
-  }
-
-  .interno-inicial {
-    right: 8em;
-    bottom: 28em;
-  }
-
-  .brilho-verde {
-    right: 9em;
-    bottom: 24em;
-  }
-
-  .brilho-azul,
-  .brilho-vermelho {
-    display: none;
-  }
-
-  .brilho-amarelo {
-    bottom: 29em;
-    right: 0;
-  }
-
-  .brilho-amarelo2 {
-    bottom: 28em;
-  }
-
-  .monitor {
-    right: 8em;
-    bottom: 12em;
+@media (max-width: 655px) {
+  .img-fundo {
+    width: 25em;
   }
 
   .brilho-roxo {
-    left: 12em;
+    bottom: 21em;
   }
 
   .teclado {
-    left: 20em;
+    left: 22em;
+    bottom: 25em;
   }
 
   .icone-roxo {
-    bottom: 31em;
+    bottom: 15em;
+    left: 22em;
+  }
+
+  .brilho-amarelo2 {
+    bottom: 13em;
+  }
+}
+
+@media (max-width: 625px) {
+  #titulo1 {
+    margin: 1em 0 0.5em 0;
+  }
+
+  #texto1 {
+    margin-left: 0;
+  }
+
+  .teclado {
+    left: 21em;
+  }
+
+  .icone-roxo {
     left: 20em;
-  }
-
-  #scrollTarget {
-    width: 33em;
-    margin: auto 15px;
-  }
-
-  .carrossel-container {
-    margin: 100px 150px;
-  }
-
-  .menu {
-    width: 32em;
-  }
-
-  .main-buttons {
-    width: 34em;
-  }
-
-  .sub-buttons {
-    margin-top: 5px;
   }
 
   .fundo-gabinete,
@@ -1473,28 +1442,7 @@
   .fundo-filtro,
   .fundo-cooler {
     width: 32em;
-  }
-
-  .titulo-gabinete {
-    width: 10em;
-    top: 5px;
-    left: 185px;
-    bottom: 0;
-  }
-
-  .titulo-gabinete {
-    width: 12em;
-    top: 35px;
-    left: 132px;
-    bottom: 0;
-  }
-
-  .p-gabinete {
-    font-size: 15px;
-    width: 50%;
-    position: relative;
-    top: 4em;
-    left: 10em;
+    height: 27em;
   }
 
   #content1 .ramcoin,
@@ -1517,6 +1465,144 @@
   #content18 .ramcoin,
   #content19 .ramcoin {
     left: 19em;
+    bottom: 24.5em;
+  }
+
+  .titulo-baias {
+    left: 145px;
+  }
+
+  .titulo-slots {
+    top: 80px;
+    left: 145px;
+  }
+
+  .titulo-organizador {
+    top: 70px;
+    left: 140px;
+  }
+
+  .titulo-painel {
+    top: 75px;
+    left: 145px;
+  }
+
+  .titulo-gpu {
+    top: 80px;
+    left: 145px;
+  }
+
+  .titulo-placa-mae {
+    top: 70px;
+  }
+
+  .titulo-placa-mae {
+    top: 55px;
+  }
+
+  .titulo-monitor,
+  .titulo-teclado,
+  .titulo-mouse,
+  .titulo-alto-falante {
+    left: 144px;
+  }
+
+  .titulo-ventoinhas,
+  .titulo-dissipadores,
+  .titulo-filtro {
+    left: 143px;
+  }
+
+  .titulo-filtro {
+    top: 60px;
+  }
+
+  .p-gabinete,
+  .p-baias,
+  .p-painel {
+    left: 9.5em;
+  }
+
+  .p-organizador {
+    left: 9.5em;
+    top: 5.5em;
+  }
+
+  .p-slots {
+    top: 6.5em;
+    left: 9.5em;
+  }
+
+  .p-gpu {
+    top: 7.5em;
+    left: 9em;
+  }
+
+  .p-placa-mae {
+    width: 52%;
+    top: 95px;
+  }
+
+  .p-memoria-ram {
+    top: 70px;
+  }
+
+  .p-monitor,
+  .p-teclado,
+  .p-mouse,
+  .p-alto-falante,
+  .p-ventoinhas,
+  .p-dissipadores,
+  .p-filtro {
+    left: 9em;
+  }
+
+  .p-filtro {
+    top: 6em;
+  }
+
+  .circulo-estrutura,
+  .circulo-internos,
+  .circulo-perifericos,
+  .circulo-resfriamento {
+    transform: translate(-10%, -10%);
+  }
+}
+
+@media (max-width: 610px) {
+  #titulo-inicial {
+    width: 6em;
+  }
+
+  #texto-inicial {
+    width: 90%;
+  }
+
+  .interno-inicial,
+  .monitor {
+    right: 9em;
+  }
+
+  .brilho-roxo {
+    left: 10em;
+  }
+
+  .teclado {
+    left: 20em;
+  }
+
+  .brilho-amarelo2 {
+    left: 9em;
+  }
+
+  .icone-roxo {
+    left: 19em;
+  }
+}
+
+@media (max-width: 580px) {
+  .img-fundo {
+    left: 8em;
   }
 }
 

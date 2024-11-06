@@ -28,7 +28,7 @@ async function nearbySearch() {
       radius: 500,
     },
     // optional parameters
-    includedPrimaryTypes: ["restaurantes"],
+    includedPrimaryTypes: ["resta"],
     maxResultCount: 5,
     rankPreference: SearchNearbyRankPreference.POPULARITY,
     language: "pt-BR",

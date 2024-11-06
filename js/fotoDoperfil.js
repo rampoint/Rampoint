@@ -21,7 +21,7 @@ function pegarValorFotoFeliz() {
       fotoMensage: ram,
       cor_foto: "#FEBF1F",
       cor_texto: "#FFC01E",
-      cor_texto_fundo: "rgb(255, 192, 30, 0.30) 0px 5px 20px",
+      cor_texto_fundo: " 0px 5px 20px rgb(255, 192, 30, 0.30) ",
     })
     .then(() => {
       mostrarPopupAlteracaoMood(img);

@@ -18,6 +18,7 @@ const Form = {
     document.getElementById("erro-senha-obrigatorio"),
   erro_nao_corresponde: () => document.getElementById("erro-nao-corresponde"),
   cadastrar_button: () => document.getElementById("cadastrar"),
+  cep: () => document.getElementById('cep')
 };
 
 const form_usuario = {
@@ -86,7 +87,9 @@ function saveUserData(uid, email) {
   const dataNascimento = Form.data().value;
   const genero = Form.genero().value;
   const database = firebase.database();
+  const cep = Form.cep().value
   const userRef = database.ref("users/" + uid);
+   
 
   userRef
     .set({
@@ -96,6 +99,7 @@ function saveUserData(uid, email) {
       tel: telefone,
       genero: genero,
       createdAt: firebase.database.ServerValue.TIMESTAMP,
+      cep:cep,
     })
     .then(() => {
       console.log("Dados do usuário salvos com sucesso!");
@@ -218,13 +222,14 @@ function exibirDadosUsuario(users) {
     document.getElementById("nome_modal").style.color = users.fotoPerfil.cor_texto;
     document.getElementById("nome_modal").innerHTML = users.nome;
     document.getElementById("content-sem-perfil").style.backgroundColor = users.fotoPerfil.cor_foto;
-    document.getElementById("medalha-azul").style.display = users.medalhas.azul.display;
-    document.getElementById("medalha-azul-img").src = users.medalhas.azul.img;
     document.getElementById("nome_modal").innerHTML = users.nome;
     document.getElementById('genero-mudar').value = users.genero;
     document.getElementById('container-perfil').style.boxShadow = users.fotoPerfil.cor_texto_fundo;
+    document.getElementsByClassName('container-conquistas')[0].style.boxShadow = users.fotoPerfil.cor_texto_fundo; 
     document.getElementsByClassName('toggle-option active')[0].style.backgroundColor = users.fotoPerfil.cor_texto
     document.getElementsByClassName('toggle-option active')[1].style.backgroundColor = users.fotoPerfil.cor_texto
+    document.getElementById("medalha-azul-img").src = users.medalhas.azul.img;
+    document.getElementById("medalha-azul").style.display = users.medalhas.azul.display;
   } else {
     document.getElementById("nome_modal").innerHTML = users.nome;
     document.getElementById("content-sem-perfil").style.backgroundColor =

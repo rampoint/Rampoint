@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const dataMsg = document.querySelectorAll(".data-hora");
   const descricaoMsg = document.querySelectorAll(".descricao");
   const conteudoDescricao = document.querySelectorAll(".conteudo-descricao");
-  const infoMsg = document.querySelector(".info h4");
+  const infoMsg = document.querySelectorAll(".info h4, .info p"); // Seleção combinada para h4 e p
 
   const aplicarTemaEscuro = () => {
     document.body.classList.add("dark-theme");
@@ -40,7 +40,9 @@ document.addEventListener("DOMContentLoaded", () => {
     dataMsg.forEach(date => date.classList.add("dark-theme"));
     descricaoMsg.forEach(descricao => descricao.classList.add("dark-theme"));
     conteudoDescricao.forEach(conteudo => conteudo.classList.add("dark-theme"));
-    infoMsg.classList.add("dark-theme");
+    
+    // Aplicando classe dark-theme em info h4 e p
+    infoMsg.forEach(info => info.classList.add("dark-theme"));
 
     themeIcon.classList.replace("bx-sun", "bx-moon");
   };
@@ -65,7 +67,9 @@ document.addEventListener("DOMContentLoaded", () => {
     dataMsg.forEach(date => date.classList.remove("dark-theme"));
     descricaoMsg.forEach(descricao => descricao.classList.remove("dark-theme"));
     conteudoDescricao.forEach(conteudo => conteudo.classList.remove("dark-theme"));
-    infoMsg.classList.remove("dark-theme");
+    
+    // Removendo classe dark-theme em info h4 e p
+    infoMsg.forEach(info => info.classList.remove("dark-theme"));
 
     themeIcon.classList.replace("bx-moon", "bx-sun");
   };

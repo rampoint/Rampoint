@@ -122,22 +122,6 @@ hr {
   margin: 25px 0;
 }
 
-.info h4 {
-  font-family: "Blinker-regular";
-  color: var(--azul);
-  margin-bottom: 10px;
-}
-
-.span-preto {
-  font-family: "Blinker-regular";
-  color: #000;
-}
-
-.info p {
-  font-family: "Blinker-regular";
-  color: rgba(0, 0, 0, 0.75);
-}
-
 .btn-vistoria {
   display: flex;
   flex-direction: row;
@@ -271,10 +255,32 @@ i.dark-theme {
   color: rgba(255, 255, 255, 0.75);
 }
 
+.info h4 {
+  font-family: "Blinker-regular";
+  color: var(--azul);
+  margin-bottom: 10px;
+}
+
+.span-preto {
+  font-family: "Blinker-regular";
+}
+
+.info p {
+  font-family: "Blinker-regular";
+}
+
 .info h4.light-theme {
   color: #2a55c2;
 }
 
 .info h4.dark-theme {
   color: #8EAEFF;
+}
+
+.info p.light-theme {
+  color: #000;
+}
+
+.info p.dark-theme {
+  color: rgba(255, 255, 255, 0.75);
 }

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distância até Ecoponto</title>
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvvanoz7U50-4faMR7NRMsBcc0CfOnCZY&callback=initMap"
+    async defer></script>
+    <style>
+        /* Estilo básico para o mapa */
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<h3>Distância até o Ecoponto mais Próximo</h3>
+<div id="map"></div>
+<p id="distancia"></p>
+
+<script>
+    function initMap() {
+        // Define a localização de Pirapora do Bom Jesus
+        const piraporaLocation = { lat: -23.5807, lng: -47.5294 }; // Coordenadas aproximadas
+
+        // Cria um novo mapa
+        const map = new google.maps.Map(document.getElementById("map"), {
+            center: piraporaLocation,
+            zoom: 13,
+        });
+
+        // Cria um marcador para Pirapora do Bom Jesus
+        const marker = new google.maps.Marker({
+            position: piraporaLocation,
+            map: map,
+            title: "Pirapora do Bom Jesus"
+        });
+
+        // Define o serviço de busca de lugares
+        const service = new google.maps.places.PlacesService(map);
+
+        // Configura a requisição para buscar ecopontos
+        const request = {
+            location: piraporaLocation,
+            radius: '5000', // Raio em metros
+            type: ['point_of_interest'], // Tipo de lugar
+            keyword: 'ecoponto' // Palavra-chave para filtrar ecopontos
+        };
+
+        // Faz a busca por lugares
+        service.nearbySearch(request, (results, status) => {
+            if (status === google.maps.places.PlacesServiceStatus.OK) {
+                if (results.length > 0) {
+                    const ecopontoMaisProximo = results[0]; // Pega o primeiro ecoponto encontrado
+                    createMarker(ecopontoMaisProximo); // Cria um marcador no mapa
+
+                    // Calcula a distância até o ecoponto mais próximo
+                    calcularDistancia(piraporaLocation, ecopontoMaisProximo.geometry.location);
+                } else {
+                    document.getElementById("distancia").innerText = "Nenhum ecoponto encontrado.";
+                }
+            } else {
+                console.error('Erro ao buscar ecopontos:', status);
+            }
+        });
+
+        // Função para criar marcadores no mapa
+        function createMarker(place) {
+            const marker = new google.maps.Marker({
+                map: map,
+                position: place.geometry.location,
+                title: place.name,
+            });
+
+            // Adiciona um evento de clique para exibir informações sobre o lugar
+            google.maps.event.addListener(marker, 'click', () => {
+                const infowindow = new google.maps.InfoWindow();
+                infowindow.setContent(place.name);
+                infowindow.open(map, marker);
+            });
+        }
+
+        // Função para calcular a distância entre dois pontos
+        function calcularDistancia(origem, destino) {
+            const distanceService = new google.maps.DistanceMatrixService();
+            distanceService.getDistanceMatrix({
+                origins: [origem],
+                destinations: [destino],
+                travelMode: google.maps.TravelMode.DRIVING,
+                unitSystem: google.maps.UnitSystem.METRIC,
+            }, (response, status) => {
+                if (status === google.maps.DistanceMatrixStatus.OK) {
+                    const distancia = response.rows[0].elements[0].distance.text; // Pega a distância
+                    document.getElementById("distancia").innerText = "Distância até o ecoponto mais próximo: " + distancia; // Exibe no HTML
+                } else {
+                    console.error('Erro ao calcular a distância:', status);
+                }
+            });
+        }
+    }
+
+    // Inicializa o mapa quando a página carrega
+    window.onload = initMap;
+</script>
+
+</body>
+</html>

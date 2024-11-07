@@ -225,9 +225,7 @@ function exibirDadosUsuario(users) {
     document.getElementById("nome_modal").innerHTML = users.nome;
     document.getElementById('genero-mudar').value = users.genero;
     document.getElementById('container-perfil').style.boxShadow = users.fotoPerfil.cor_texto_fundo;
-    document.getElementsByClassName('container-conquistas')[0].style.boxShadow = users.fotoPerfil.cor_texto_fundo; 
-    document.getElementsByClassName('toggle-option active')[0].style.backgroundColor = users.fotoPerfil.cor_texto
-    document.getElementsByClassName('toggle-option active')[1].style.backgroundColor = users.fotoPerfil.cor_texto
+    document.getElementsByClassName('container-conquistas')[0].style.boxShadow = users.fotoPerfil.cor_texto_fundo;
     document.getElementById("medalha-azul-img").src = users.medalhas.azul.img;
     document.getElementById("medalha-azul").style.display = users.medalhas.azul.display;
   } else {

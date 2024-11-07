@@ -110,11 +110,6 @@ hr {
   margin-bottom: 10px;
 }
 
-.mensagem-content .descricao {
-  font-family: "Blinker-semibold";
-  color: rgba(0, 0, 0, 0.67);
-}
-
 .conteudo-descricao {
   font-family: "Blinker-regular";
   color: rgba(0, 0, 0, 0.67);
@@ -254,4 +249,32 @@ i.dark-theme {
 
 .data-hora.dark-theme {
   color: #DADADC;
+}
+
+.descricao {
+  font-family: "Blinker-semibold";
+}
+
+.descricao.light-theme {
+  color: #000;
+}
+
+.descricao.dark-theme {
+  color: #DADADC;
+}
+
+.conteudo-descricao.light-theme {
+  color: rgba(0, 0, 0, 0.67);
+}
+
+.conteudo-descricao.dark-theme {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.info h4.light-theme {
+  color: #2a55c2;
+}
+
+.info h4.dark-theme {
+  color: #8EAEFF;
 }

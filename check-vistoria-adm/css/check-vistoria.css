@@ -130,9 +130,12 @@ input {
   outline: none;
 }
 
-.data,
+.data{
+  width: 11em;
+}
+
 .hora {
-  width: 10em;
+  width: 6em;
 }
 
 .campo-descricao {
@@ -198,7 +201,7 @@ input,
 .selected-option {
   background-color: var(--branco);
   font-family: "Poppins-regular";
-  width: 15em;
+  width: 16em;
   height: 2.2em;
   margin-top: 5px;
   padding: 5px;

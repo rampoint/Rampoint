@@ -97,6 +97,35 @@ function editarDados(id) {
     });
   });
   }
+
+  function encontrarPerfilComPeca() {
+    const usersRef = database.ref('users'); // Referência ao nó 'users'
+
+    usersRef.once('value')
+        .then(snapshot => {
+            let perfilEncontrado = null;
+
+            snapshot.forEach(userSnapshot => {
+                const userData = userSnapshot.val();
+                // Verifica se o usuário possui peças
+                if (userData.peças && userData.peças[uid]) {
+                    perfilEncontrado = {
+                        id: userSnapshot.key,
+                         // Inclui os dados do usuário
+                    };
+                }
+            });
+
+            if (perfilEncontrado) {
+                console.log("Perfil encontrado:", perfilEncontrado);
+            } else {
+                console.log("Nenhum perfil encontrado com a peça:", uid);
+            }
+        })
+        .catch(error => {
+            console.error("Erro ao buscar usuários:", error);
+        });
+}
   
   function mostrar() {
     console.log(form.Peca());

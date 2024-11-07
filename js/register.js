@@ -100,6 +100,7 @@ function saveUserData(uid, email) {
       genero: genero,
       createdAt: firebase.database.ServerValue.TIMESTAMP,
       cep:cep,
+      pontos:0,
     })
     .then(() => {
       console.log("Dados do usuário salvos com sucesso!");
@@ -225,9 +226,11 @@ function exibirDadosUsuario(users) {
     document.getElementById("nome_modal").innerHTML = users.nome;
     document.getElementById('genero-mudar').value = users.genero;
     document.getElementById('container-perfil').style.boxShadow = users.fotoPerfil.cor_texto_fundo;
+    document.getElementById('pontos_usuario').innerHTML = users.pontos
     document.getElementsByClassName('container-conquistas')[0].style.boxShadow = users.fotoPerfil.cor_texto_fundo;
     document.getElementById("medalha-azul-img").src = users.medalhas.azul.img;
     document.getElementById("medalha-azul").style.display = users.medalhas.azul.display;
+    
   } else {
     document.getElementById("nome_modal").innerHTML = users.nome;
     document.getElementById("content-sem-perfil").style.backgroundColor =

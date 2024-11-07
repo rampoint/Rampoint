@@ -327,16 +327,16 @@ input.dark-theme {
   background-color: #282828;
 }
 
-.selected-option.dark-theme {
+#tipo-componente.dark-theme {
   background-color: #282828;
 }
 
-.options.dark-theme {
+option.dark-theme {
   background-color: #282828;
   border: #282828;
 }
 
-.dark-theme .option:hover {
+.dark-theme option:hover {
   background-color: #333333;
 }
 

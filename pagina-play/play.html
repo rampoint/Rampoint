@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/btn-acessibilidade.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/play.css">
     <link rel="stylesheet" href="./css/layout.css">
@@ -88,8 +89,74 @@
         </ul>
     </nav>
 
-    <div class="container">
+    <div id="accessibilityBtn" class="accessibility-btn">
+        <span class="icon">
+            <img src="./img/icon-acessibilidade.svg" alt="Ícone de Acessibilidade" class="icon">
+        </span>
+        <span class="text">Recursos Assistivos</span>
+    </div>
 
+    <div id="accessibilityMenu" class="accessibility-menu">
+        <h3 class="title-accessibility-menu">Controle de fonte</h3>
+        <div class="row-group">
+            <div class="group-btn">
+                <img src="./img/btn-acessibilidade/Aa.svg" alt="">
+                <h4 class="title-group">Tamanho da fonte</h4>
+            </div>
+            <div class="group-btn">
+                <img src="./img/btn-acessibilidade/Aa.svg" alt="">
+                <h4 class="title-group">Fonte</h4>
+            </div>
+            <div class="group-btn">
+                <img src="./img/btn-acessibilidade/espaco-linhas.svg" alt="">
+                <h4 class="title-group">Espaço entre linhas</h4>
+            </div>
+            <div class="group-btn">
+                <img src="./img/btn-acessibilidade/espaco-letras.svg" alt="">
+                <h4 class="title-group">Espaço entre letras</h4>
+            </div>
+        </div>
+
+        <h3 class="title-accessibility-menu">Auxílio de Leitura</h3>
+        <div class="row-group">
+            <div class="group-btn">
+                <img src="./img/btn-acessibilidade/leitor-sites.svg" alt="">
+                <h4 class="title-group">Leitor de Sites</h4>
+            </div>
+            <div class="group-btn">
+                <img src="./img/btn-acessibilidade/modo-leitura.svg" alt="">
+                <h4 class="title-group">Modo de Leitura</h4>
+            </div>
+            <div class="group-btn">
+                <img src="./img/btn-acessibilidade/mascara-leitura.svg" alt="">
+                <h4 class="title-group">Máscara de leitura</h4>
+            </div>
+            <div class="group-btn">
+                <img src="./img/btn-acessibilidade/lupa.svg" alt="">
+                <h4 class="title-group">Lupa</h4>
+            </div>
+        </div>
+
+        <h3 class="title-accessibility-menu">Controle de cor</h3>
+        <div class="row-group">
+            <div class="group-btn">
+                <img src="./img/btn-acessibilidade/contraste.svg" alt="">
+                <h4 class="title-group">Contraste</h4>
+            </div>
+            <div class="group-btn">
+                <img src="./img/btn-acessibilidade/saturacao.svg" alt="">
+                <h4 class="title-group">Saturação</h4>
+            </div>
+        </div>
+
+        <div class="clear-accessibility">
+            <button id="clearAccessibility" class="btn-clear">
+                <img src="./img/btn-acessibilidade/icon-clear.svg" alt="">Desabilitar todas alterações no site
+            </button>
+        </div>
+    </div>
+
+    <div class="container">
         <section class="imagem-fundo">
             <div class="imagem-inicial">
                 <h1 id="titulo-inicial">VAMOS COMEÇAR?</h1>
@@ -432,6 +499,8 @@
         <script defer src="./js/modal.js"></script>
         <script defer src="./js/scrollModal.js"></script>
         <script defer src="./js/modalCupom.js"></script>
+        <script src="./js/btn-acessibilidade.js"></script>
+
         <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-app-compat.js"></script>
         <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-auth-compat.js"></script>
         <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-database-compat.js"></script>

@@ -231,12 +231,6 @@
     display: none;
   }
 
-  .sidebar li {
-    width: 100%;
-    margin-top: 20px;
-    margin-left: 15px;
-  }
-
   .sidebar {
     height: 65vh;
     right: 0;
@@ -382,7 +376,7 @@
   }
 }
 
-@media (max-width: 715px) {
+@media (max-width: 720px) {
   .medalha-verde {
     top: 14em;
     right: 17em;
@@ -489,7 +483,7 @@
   }
 
   .medalha-roxa {
-    bottom: 12em;
+    bottom: 11em;
     left: 14em;
   }
 
@@ -534,7 +528,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 610px) {
   #titulo-inicial {
     font-size: 75px;
   }
@@ -543,34 +537,46 @@
     top: 18.5em;
   }
 
-  .medalha-azul {
-    left: 13em;
-  }
-
-  .brilho-roxo {
-    bottom: 11em;
-    left: 9em;
+  .medalha-vermelha,
+  .medalha-verde,
+  .medalha-azul,
+  .medalha-amarela,
+  .medalha-roxa {
+    width: 80px;
   }
 
   .brilho-verde {
-    top: -4em;
+    top: 0;
+    right: 12em;
   }
 
   .brilho-azul {
-    top: -3em;
+    top: 6em;
+    right: 7em;
   }
 
-  .brilho-amarelo2 {
+  .brilho-roxo {
     bottom: 12em;
-  }
-
-  .medalha-amarela {
-    bottom: 18em;
-    left: 14.5em;
+    left: 5em;
   }
 
   .medalha-azul {
-    bottom: 20em;
+    left: 11em;
+    bottom: 17em;
+  }
+
+  .medalha-amarela {
+    bottom: 15em;
+    left: 14.5em;
+  }
+
+  .brilho-amarelo2 {
+    bottom: 8em;
+    left: 6em;
+  }
+
+  .medalha-roxa {
+    bottom: 10em;
   }
 
   .fundo-medalha-salto,
@@ -588,18 +594,12 @@
 }
 
 @media (max-width: 580px) {
-
-  .medalha-vermelha,
-  .medalha-verde,
-  .medalha-azul,
-  .medalha-amarela,
-  .medalha-roxa {
-    width: 80px;
+  .medalha-vermelha {
+    right: 14em;
   }
 
-  .medalha-vermelha {
-    top: -3em;
-    right: 13em;
+  .brilho-verde {
+    top: -1em;
   }
 
   .brilho-amarelo {
@@ -607,17 +607,31 @@
   }
 
   .medalha-verde {
-    top: 11em;
+    top: 12em;
     right: 13em;
   }
 
+  .brilho-roxo {
+    bottom: 13em;
+    left: 4em;
+  }
+
+  .medalha-azul {
+    left: 10em;
+    bottom: 18em;
+  }
+
   .medalha-amarela {
-    bottom: 17em;
+    bottom: 16em;
   }
 
   .brilho-amarelo2 {
     left: 8em;
     bottom: 9em;
+  }
+
+  .medalha-roxa {
+    bottom: 11em;
   }
 
   .card-cupons {
@@ -636,15 +650,28 @@
 
   #texto-inicial {
     top: 16.5em;
+    width: 64%;
+  }
+
+  .medalha-vermelha {
+    right: 13em;
   }
 
   .brilho-verde {
-    top: -6em;
+    top: -2em;
     right: 12em;
   }
 
   .brilho-azul {
-    top: -4em;
+    top: 4em;
+  }
+
+  .medalha-verde {
+    top: 10em;
+  }
+
+  .brilho-roxo {
+    bottom: 14em;
   }
 
   .medalha-azul {
@@ -652,27 +679,34 @@
   }
 
   .medalha-amarela {
-    bottom: 18em;
+    bottom: 16em;
     left: 13em;
   }
 
   .brilho-amarelo2 {
     left: 7em;
-    bottom: 11em;
+    bottom: 10em;
   }
 
   .medalha-roxa {
     left: 12em;
+    bottom: 12em;
   }
 }
 
-@media (max-width: 505px) {
+@media (max-width: 510px) {
   .medalha-vermelha {
-    right: 11em;
+    right: 12em;
   }
 
   .brilho-amarelo {
+    bottom: 2em;
     right: 7.5em;
+  }
+
+  .brilho-azul {
+    top: 4em;
+    right: 6em;
   }
 
   .medalha-verde {
@@ -680,8 +714,16 @@
     right: 11em;
   }
 
+  .brilho-roxo {
+    bottom: 16em;
+  }
+
+  .medalha-azul {
+    bottom: 19em;
+  }
+
   .medalha-amarela {
-    bottom: 17em;
+    bottom: 15em;
     left: 12.5em;
   }
 
@@ -712,17 +754,37 @@
     font-size: 55px;
   }
 
+  #texto-inicial {
+    width: 75%;
+  }
+
   .medalha-vermelha {
     top: 1em;
+    right: 11em;
+  }
+
+  .brilho-amarelo {
+    bottom: 1em;
+    right: 6.5em;
+  }
+
+  .medalha-verde {
+    top: 9em;
+    right: 11em;
   }
 
   .brilho-verde {
-    top: -4em;
-    right: 9em;
+    top: -2em;
+    right: 10em;
   }
 
   .brilho-azul {
-    top: -3em;
+    top: 4em;
+    right: 4em;
+  }
+
+  .brilho-amarelo2 {
+    left: 4em;
   }
 
   .brilho-roxo {
@@ -749,6 +811,13 @@
   .modal-content-vidro,
   .modal-content-golias {
     width: 23em;
+  }
+
+  .modal-content-dourado .ramcoin {
+    margin: 15px 0;
+    position: relative;
+    top: 7px;
+    left: 1.5em;
   }
 
   .campo-curiosidade {
@@ -794,22 +863,879 @@
     margin-left: 2.5em;
   }
 
-  .fundo-medalha-salto,
-  .fundo-medalha-coracao,
-  .fundo-medalha-explosao,
-  .fundo-medalha-engrenagem,
-  .fundo-medalha-raio {
-    width: 25em;
+  .section-empresas #texto1 {
+    margin: auto;
+  }
+
+  .conquistas {
+    width: auto;
+  }
+
+  .conquistas #texto1 {
+    width: 75%;
+    text-align: center;
+    margin: auto;
+  }
+
+  /* começo salto tecnologico */
+  .fundo-medalha-salto {
+    width: 22em;
     height: 18em;
+    margin-top: 3em;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img-salto {
+    width: 6.5em;
+    position: relative;
+    bottom: 2em;
+    left: 1em;
+  }
+
+  .img-vitoria-regia {
+    display: none;
+  }
+
+  .column-textos {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3em;
+    margin-top: 1em;
   }
 
   .titulo-salto {
-    font-size: 26px;
+    width: 60%;
+    position: relative;
+    bottom: 80px;
+    left: 3.5em;
+  }
+
+  .fundo-medalha-salto .objetivo {
+    width: 70%;
+    position: relative;
+    bottom: 5em;
+    left: 1em;
+  }
+
+  .fundo-medalha-salto .texto {
+    position: relative;
+    bottom: 4em;
+    right: 1em;
+  }
+
+  /* final salto tecnologico */
+
+  /* começo coração generoso */
+  .fundo-medalha-coracao {
+    background-color: #ffb5c3;
+    width: 22em;
+    height: 16em;
+    margin-top: 7em;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img-coracao {
+    width: 8em;
+    position: relative;
+    bottom: 13em;
+    left: 13em;
+  }
+
+  .fundo-medalha-coracao .titulo-coracao {
+    position: relative;
+    top: 0.2em;
+    right: 1em;
+  }
+
+  .fundo-medalha-coracao .objetivo {
+    position: relative;
+    top: 2em;
+    right: 1em;
+  }
+
+  .fundo-medalha-coracao .texto {
+    position: relative;
+    top: 3em;
+    right: 1.5em;
+  }
+
+  /*final coração generoso */
+
+  /* começo explosão eletronica */
+  .fundo-medalha-explosao {
+    width: 22em;
+    height: 18em;
+    margin-top: 4em;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img-explosao {
+    width: 8em;
+    position: relative;
+    bottom: 2.5em;
+    left: -0.5em;
+  }
+
+  .fundo-medalha-explosao .titulo-explosao {
+    width: 60%;
+    position: relative;
+    bottom: 7em;
+    left: 5em;
+  }
+
+  .fundo-medalha-explosao .objetivo {
+    width: 80%;
+    position: relative;
+    bottom: 6em;
+    left: 3em;
+  }
+
+  .fundo-medalha-explosao .column-textos {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    margin-top: 1em;
+  }
+
+  .fundo-medalha-explosao .texto {
+    position: relative;
+    bottom: 5em;
+    left: 2em;
+    width: 85%;
+  }
+
+  /* final explosão eletronica */
+
+  /* começo engrenagem solidaria */
+  .fundo-medalha-engrenagem {
+    width: 22em;
+    height: 16em;
+    margin-top: 6em;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img-engrenagem {
+    width: 8em;
+    position: relative;
+    bottom: 15em;
+    left: 14em;
+  }
+
+  .fundo-medalha-engrenagem .titulo-engrenagem {
+    position: relative;
+    right: 1em;
+  }
+
+  .fundo-medalha-engrenagem .objetivo {
+    position: relative;
+    top: 2em;
+    right: 0;
+    left: 0.5em;
+  }
+
+  .fundo-medalha-engrenagem .texto {
+    position: relative;
+    top: 3em;
+    right: 1.5em;
+  }
+
+  /* final engrenagem solidaria */
+
+  /* começo raio esperança */
+  .fundo-medalha-raio {
+    width: 22em;
+    height: 18em;
+    margin-top: 4em;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img-raio {
+    width: 6.5em;
+    position: relative;
+    bottom: 2em;
+    left: 1em;
+  }
+
+  .brilho-esperanca {
+    width: 4em;
+    position: relative;
+    top: -2em;
+    right: 0;
+    left: 0;
+  }
+
+  .img-raio2 {
+    display: none;
+  }
+
+  .fundo-medalha-raio .column-textos {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    margin-top: 1em;
+  }
+
+  .titulo-raio {
+    width: 60%;
+    position: relative;
+    bottom: 7em;
+    left: 6em;
+  }
+
+  .fundo-medalha-raio .objetivo {
+    width: 40%;
+    position: relative;
+    bottom: 8em;
+    left: 8em;
+  }
+
+  .fundo-medalha-raio .texto {
+    position: relative;
+    bottom: 6em;
+    left: 2em;
+    width: 88%;
+  }
+
+  /* final raio esperança */
+}
+
+@media (max-width: 440px) {
+  #texto-inicial {
+    width: 76%;
+  }
+
+  .medalha-vermelha {
+    right: 10em;
+  }
+
+  .medalha-verde {
+    top: 11em;
+    right: 10em;
+  }
+
+  .brilho-amarelo {
+    bottom: 2em;
+    right: 3.5em;
+  }
+
+  .medalha-amarela {
+    left: 10.5em;
+  }
+
+  .medalha-roxa {
+    bottom: 11em;
+    left: 9em;
   }
 }
 
-@media (min-width: 320px) and (max-width: 421px) {
-  .sidebar {
-    height: 40em;
+@media (max-width: 420px) {}
+
+@media (max-width: 320px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
   }
+
+  /* imagem inicial */
+  .imagem-fundo {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    height: 15em;
+  }
+
+  #titulo-inicial {
+    font-size: 4em;
+    width: 30%;
+    margin: 0 0 50px 0;
+  }
+
+  #texto-inicial {
+    width: 30%;
+    text-align: center;
+    position: relative;
+    top: 16em;
+  }
+
+  .botao {
+    opacity: 0;
+    display: none;
+  }
+
+  #scrollTarget {
+    margin-top: 5em;
+    padding-top: 9.5em;
+    /* para compensar o menu fixo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* começo lado esquerdo */
+  .medalha-vermelha {
+    width: 3em;
+    position: relative;
+    top: -2em;
+    right: 10em;
+  }
+
+  .medalha-verde {
+    width: 3em;
+    position: relative;
+    top: 9em;
+    right: 8em;
+  }
+
+  .brilho-amarelo {
+    position: relative;
+    bottom: 0.5em;
+    right: 7em;
+    z-index: -1;
+  }
+
+  .brilho-verde {
+    width: 1em;
+    position: relative;
+    top: -1em;
+    right: 11em;
+    z-index: -1;
+  }
+
+  .brilho-azul {
+    width: 1em;
+    position: relative;
+    top: 4em;
+    right: 11em;
+    z-index: -1;
+  }
+
+  /* final lado esquerdo */
+
+  /* começo lado direito */
+  .brilho-roxo {
+    width: 1em;
+    position: relative;
+    bottom: 10em;
+    left: 5em;
+    z-index: -1;
+  }
+
+  .medalha-azul {
+    width: 3em;
+    position: relative;
+    bottom: 15em;
+    left: 0em;
+  }
+
+  .medalha-amarela {
+    width: 3em;
+    position: relative;
+    bottom: 14em;
+    left: 10em;
+  }
+
+  .brilho-vermelho {
+    width: 1em;
+    position: relative;
+    bottom: 15em;
+    left: 7em;
+    z-index: -1;
+  }
+
+  .brilho-amarelo2 {
+    position: relative;
+    bottom: 10em;
+    left: 10em;
+    z-index: -1;
+  }
+
+  .medalha-roxa {
+    width: 3em;
+    position: relative;
+    bottom: 6em;
+    left: 8em;
+  }
+
+  /* final lado direito */
+
+  /* imagem inicial */
+  #titulo1 {
+    font-family: "Blinker-extrabold";
+    color: var(--verde);
+    font-size: 1.7em;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #texto1 {
+    font-family: "Poppins-regular";
+    color: var(--preto);
+    font-size: 1em;
+    margin-left: 0;
+    text-align: center;
+    width: 80%;
+  }
+
+  .section-empresas,
+  .conquistas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .conquistas #texto1 {
+    width: 70%;
+  }
+
+  .cupons {
+    width: 650px;
+    height: 55em;
+    padding: 2em;
+  }
+
+  #titulo2 {
+    margin: 1em 0 0 6em;
+  }
+
+  #texto2 {
+    margin-left: 10em;
+    width: 60%;
+  }
+
+  /* começo dos cards dos cupons */
+  .card-cupons {
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0;
+    gap: 1em;
+  }
+
+  #titulo-card {
+    font-size: 1.3em;
+  }
+
+  .item1,
+  .item2,
+  .item3 {
+    padding: 10px;
+    width: 10em;
+    height: 12em;
+  }
+
+  #cupom-dourado {
+    width: 10em;
+  }
+
+  .btn-cupom {
+    margin-left: 8em;
+    margin-top: -1em;
+  }
+
+  #empresas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2em 0 3em 0;
+    flex-wrap: nowrap;
+  }
+
+  .card-empresa {
+    margin: 80px 10px 0 10px;
+  }
+
+  /* final dos cards dos cupons */
+
+  /* Modal Content */
+  /* começo modal dourado */
+  .modal-content-dourado {
+    width: 20em;
+    height: 30em;
+    overflow: hidden;
+  }
+
+  .titulo-dourado {
+    top: 1.5em;
+  }
+
+  .texto-dourado {
+    top: 2.5em;
+  }
+
+  .estrela-dourada {
+    right: 8em;
+  }
+
+  .estrela-dourada2 {
+    width: 9%;
+    position: relative;
+    left: 8em;
+    top: 0.5em;
+  }
+
+  .texto-lojas {
+    font-family: "Poppins-bold";
+    color: #f89701;
+    margin: -20px 35px;
+  }
+
+  .modal-content-dourado .lojas {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    position: relative;
+    bottom: 6em;
+    left: -1em;
+  }
+
+  .modal-content-dourado #loja {
+    width: 27%;
+  }
+
+  .cupom-dourado {
+    width: 45%;
+    margin-left: 20px;
+  }
+
+  #estrelas {
+    position: relative;
+    right: 10em;
+    top: 2em;
+    margin-bottom: 1em;
+  }
+
+  #ram-dourado {
+    width: 20%;
+    position: relative;
+    left: 3em;
+    bottom: 0;
+    z-index: 2;
+  }
+
+  .modal-content-dourado .curiosidade {
+    width: 16.5em;
+    height: 8em;
+    margin-right: 5em;
+    position: relative;
+    bottom: 1em;
+  }
+
+  .texto-curiosidade {
+    font-family: "Poppins-bold";
+    color: #745f12;
+    text-align: right;
+    margin-left: 15px;
+  }
+
+  /* final modal dourado */
+
+  /* começo modal vidro */
+  .modal-content-vidro {
+    background-color: #dffbff;
+    margin: 6em auto;
+    padding: 20px;
+    border-radius: 25px;
+    width: 27em;
+    max-width: 600px;
+    height: 30em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .brilho-vidro {
+    width: 5em;
+    position: relative;
+    right: 11em;
+    top: 9em;
+  }
+
+  .titulo-vidro {
+    font-family: "Blinker-extrabold";
+    color: #027a8d;
+    font-size: 30px;
+    position: relative;
+    top: -3em;
+  }
+
+  .texto-vidro {
+    font-family: "Blinker-bold";
+    color: #027a8d;
+    font-size: 18px;
+    position: relative;
+    top: -5em;
+  }
+
+  .modal-content-vidro .ramcoin {
+    margin: 15px 0;
+    position: relative;
+    top: -5em;
+    left: 1.5em;
+  }
+
+  .cupom-vidro {
+    width: 50%;
+    margin-left: 45px;
+  }
+
+  .modal-content-vidro .lojas {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    position: relative;
+    bottom: 6em;
+    left: 1em;
+  }
+
+  .modal-content-vidro .texto-lojas {
+    font-family: "Poppins-bold";
+    color: #027a8d;
+    position: relative;
+    bottom: 7em;
+  }
+
+  .modal-content-vidro .curiosidade {
+    height: 8em;
+    background-color: #027a8d;
+    border-radius: 25px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-right: 5em;
+    position: relative;
+    bottom: 5em;
+  }
+
+  .modal-content-vidro .texto-curiosidade {
+    font-family: "Poppins-bold";
+    color: #dffbff;
+    text-align: right;
+    margin-left: 10px;
+    position: relative;
+    bottom: 0.5em;
+  }
+
+  #ram-vidro {
+    width: 35%;
+    position: relative;
+    left: 3em;
+    bottom: 5em;
+    z-index: 2;
+  }
+
+  /* final modal vidro */
+
+  /* começo modal golias */
+  .modal-content-golias {
+    background-color: #c7fbb9;
+    margin: 6em auto;
+    padding: 20px;
+    border-radius: 25px;
+    width: 27em;
+    max-width: 600px;
+    height: 30em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .titulo-golias {
+    font-family: "Blinker-extrabold";
+    color: #2b5121;
+    font-size: 30px;
+    position: relative;
+    top: 1.5em;
+  }
+
+  .texto-golias {
+    font-family: "Blinker-bold";
+    color: #2b5121;
+    font-size: 18px;
+    position: relative;
+    top: 0;
+  }
+
+  .mancha-verde1 {
+    position: relative;
+    right: 11em;
+    top: 3em;
+  }
+
+  .mancha-verde2 {
+    position: relative;
+    left: 11em;
+    bottom: 2em;
+  }
+
+  .modal-content-golias .ramcoin {
+    margin: 15px 0;
+    position: relative;
+    top: -1em;
+    left: 1.5em;
+  }
+
+  .modal-content-golias .lojas {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    position: relative;
+    bottom: 3em;
+    left: 1em;
+  }
+
+  .modal-content-golias .texto-lojas {
+    font-family: "Poppins-bold";
+    color: #2b5121;
+    position: relative;
+    bottom: 3em;
+  }
+
+  .modal-content-golias .curiosidade {
+    height: 8em;
+    background-color: #579445;
+    border-radius: 25px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-right: 5em;
+    position: relative;
+    bottom: 0;
+  }
+
+  .modal-content-golias .texto-curiosidade {
+    font-family: "Poppins-bold";
+    color: #d3ffc8;
+    text-align: right;
+    margin-left: 10px;
+    position: relative;
+    bottom: 0.5em;
+  }
+
+  #ram-golias {
+    width: 35%;
+    position: relative;
+    left: 3em;
+    bottom: 0;
+    z-index: 2;
+  }
+
+  /* final modal golias */
+
+  /* começo botão fechar o modal */
+  .close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--cinza);
+    font-size: 20px;
+    position: absolute;
+    top: 25px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid var(--cinza);
+    background-color: transparent;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #555;
+    border-color: #555;
+    text-decoration: none;
+  }
+
+  /* final botão fechar o modal */
+
+  /* começo ramcoin */
+  .itens {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ramcoin {
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 15px 0;
+    position: relative;
+    top: 1em;
+  }
+
+  .qtd-ramcoin {
+    font-family: "Blinker-bold";
+    color: #417932;
+    margin-left: 5px;
+  }
+
+  .text-block {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 30%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 2px 8px 8px rgba(42, 85, 194, 0.15);
+    width: 300px;
+    z-index: 1;
+  }
+
+  .textos {
+    font-family: "Poppins-semibold";
+    color: var(--azul);
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+  }
+
+  .ramcoin:hover .text-block {
+    display: block;
+  }
+
+  /* final ramcoin */
+
+  #loja {
+    width: 20%;
+  }
+
+  .campo-curiosidade {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 36em;
+    padding: 0 0 20px 15px;
+  }
+
+  /* final dos cards dos cupons */
 }

@@ -292,6 +292,10 @@ input:focus {
   .footer-container .logo {
     width: 100%;
   }
+
+  .footer-container input[type="email"] {
+    width: 310px;
+  }
 }
 
 @media (max-width: 530px) {
@@ -342,11 +346,11 @@ input:focus {
   }
 
   .email {
-    width: 200px;
+    width: 280px;
     height: auto;
     display: flex;
     flex-direction: row;
-    margin: 0 85px;
+    margin: 0 45px;
   }
 
   #email {

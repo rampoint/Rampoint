@@ -107,14 +107,17 @@ nav a:hover {
   margin: 10px 10px 10px 10px;
   font-family: "Batangas";
 }
+
 .sidebar li {
   width: 100%;
   margin-top: 0px;
 }
+
 .sidebar a {
   width: 100%;
   color: var(--branco);
 }
+
 .menu-button {
   display: none;
 }
@@ -127,20 +130,19 @@ nav a:hover {
 }
 
 .footer-logo {
-  margin-top: 10em;
-  
+  margin-top: 6em;
+
 }
 
 @media (max-width: 670px) {
-  .footer-logo{
-    margin-top:5em;
+  .footer-logo {
+    margin-top: 5em;
   }
 }
-/* Dispositivos móveis em modo paisagem (tela horizontal) */
+
 @media (max-width: 767px) {
-  /* Estilos aqui */
-  .footer-logo{
-    margin-top:3em;
+  .footer-logo {
+    margin-top: 3em;
   }
 }
 
@@ -150,13 +152,8 @@ nav a:hover {
 }
 
 .menus {
-margin-top:60px;
+  margin-top: 60px;
 }
-
-
-
-
-
 
 #footer-logo {
   padding: 0;
@@ -168,7 +165,6 @@ margin-top:60px;
 }
 
 /* modal sem perfil */
-
 .modalBtn {
   border: none;
   cursor: pointer;
@@ -220,7 +216,7 @@ margin-top:60px;
   font-family: "Poppins-medium";
 }
 
-.texto-perfil{
+.texto-perfil {
   padding: 0;
 }
 
@@ -293,7 +289,6 @@ margin-top:60px;
 }
 
 .content-sem-perfil {
-
   margin-top: 4em;
   margin-left: 73em;
   padding: 0;
@@ -307,7 +302,8 @@ margin-top:60px;
   flex-direction: column;
   align-items: center;
 }
-#perfil{
+
+#perfil {
   width: 45px;
 }
 
@@ -325,7 +321,7 @@ margin-top:60px;
   align-items: center;
   justify-content: center;
   margin-top: -40px;
-  
+
 }
 
 /* .fundo {

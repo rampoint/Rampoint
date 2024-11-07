@@ -61,8 +61,10 @@ function criarTabela(
             </button>
         </td>
       <td>
-                <img src="img/excluir.png" id="excluir_editar" onclick="excluirDoacao('${key}')" alt="" srcset="">
-                <img src="img/editar.png" id="lapis_editar" onclick="editarDados('${key}')" alt="" srcset="">
+      
+                  <a onclick="excluirDoacao('${key}')"><i class='bx bx-trash-alt' id="excluir_editar"></i></a>
+                  <a onclick="editarDados('${key}')"<i class='bx bx-edit-alt'
+                      id="lapis_editar"></i></a>
         </td>`;
 
   // Adiciona a nova linha ao corpo da tabela

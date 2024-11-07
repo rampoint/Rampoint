@@ -1,6 +1,6 @@
 function initMap() {
   // Define a localização do centro de Barueri
-  const barueriLocation = { lat: -23.5015, lng: -46.8757 }; // Coordenadas aproximadas do centro
+  const barueriLocation = { lat: -23.5119535, lng: -46.8649492190 }; // Coordenadas aproximadas do centro
 
   // Cria um novo mapa
   const map = new google.maps.Map(document.getElementById("map"), {

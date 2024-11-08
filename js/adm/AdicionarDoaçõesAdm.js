@@ -30,7 +30,7 @@ function adicionarDoacao() {
         data:formDoacoes.data_doacao(),
         hora_doacao:formDoacoes.hora_doacao(),
         desc:formDoacoes.desc_doacao(),
-        
+        pontos:mostrarValor()*formDoacoes.Qtd_peca(),
         vistoria:'Pendente'
           // Atualiza o novo campo com o novo valor
         })
@@ -68,4 +68,25 @@ function pegarCod(){
 
     
   })
+}
+
+function mostrarValor(){
+  const input = document.getElementById('search').value;
+  const options = document.querySelectorAll('#Pecas option');
+  let valorEncontrado = null;
+
+  options.forEach(option => {
+      if (input === option.value) {
+          valorEncontrado = option.textContent;
+          return valorEncontrado // Retorna a quantidade em ramcoins
+      }
+  });
+
+  if (valorEncontrado) {
+       console.log(`O valor para "${input}" é: ${valorEncontrado} ramcoins.`);
+       return valorEncontrado
+
+  } else {
+      console.log('Componente não encontrado.');
+  }
 }

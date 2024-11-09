@@ -50,8 +50,9 @@ function acharDoacaoUrl(uid) {
 function mostrarDados(data) {
   document.getElementById("nome-placeholder").value = data.nome;
   document.getElementById("email-placeholder").value = data.email;
-  // document.getElementById('telefone-placeholder').placeholder = data.tel
-  document.getElementById("tipo-placeholder").innerHTML = data.tipo;
+  document.getElementById('telefone-placeholder').innerHTML = data.tel
+  document.getElementById("tipo-placeholder").innerText = data.tipo;
+  document.getElementById("tipo-placeholder").value = data.tipo;
   document.getElementById("qtd-placeholder").value = data.qtd;
   document.getElementById("search").value = data.nome_peca;
   document.getElementById("descricao-peca").value = data.desc;
@@ -87,6 +88,7 @@ function atualizarVistoria() {
             })
             .then(() => {
               console.log("Atualizado com sucesso!");
+              encontrarPerfilComPeca()
             })
             .catch((error) => {
               console.error("Erro ao atualizar:", error);
@@ -121,7 +123,7 @@ function encontrarPerfilComPeca() {
           // Incrementa 500 pontos no campo 'pontos'
           const userRef = database.ref('users/' + userSnapshot.key + '/pontos');
           userRef.transaction(currentPoints => {
-            return (currentPoints || 0) + 500; // Incrementa 500, assume 0 se não existir
+            return (currentPoints || 0) + mostrarValor()*form.Qtd_peca(); // Incrementa 500, assume 0 se não existir
           })
           .then(() => {
             console.log("500 pontos adicionados ao perfil:", perfilEncontrado.nome);
@@ -151,4 +153,25 @@ function mostrar() {
   console.log(form.hora_doacao());
   console.log(form.nome());
   console.log(form.tipo_componente());
+}
+
+function mostrarValor(){
+  const input = document.getElementById('search').value;
+  const options = document.querySelectorAll('#Pecas option');
+  let valorEncontrado = null;
+
+  options.forEach(option => {
+      if (input === option.value) {
+          valorEncontrado = option.textContent;
+          return valorEncontrado // Retorna a quantidade em ramcoins
+      }
+  });
+
+  if (valorEncontrado) {
+       console.log(`O valor para "${input}" é: ${valorEncontrado} ramcoins.`);
+       return valorEncontrado
+
+  } else {
+      console.log('Componente não encontrado.');
+  }
 }

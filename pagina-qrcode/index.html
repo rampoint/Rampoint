@@ -121,7 +121,7 @@
                     </div>
                 </form>
                 <div class="botaoC">
-                    <button id="gerar-button" onclick="makeCode()">Concluído</button>
+                    <button id="gerar-button" onclick="verificarPontos()">Concluído</button>
                 </div>
             </div>
 
@@ -225,30 +225,57 @@
     <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-auth-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-database-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-firestore-compat.js"></script>
     <script src="../js/firebase-init.js"></script>
     <script src="../js/register.js"></script>
     <script src="../js/logout.js"></script>
+    <script type="text/javascript" src="../js/qrcode_cupom.js"></script>
     <script type="text/javascript" src="../js/qrcode.js"></script>
     <script type="text/javascript" src="../js/qrcode.min.js"></script>
     <script src="../js/jquery.min.js"></script>
 
     <script type="text/javascript">
-        var qrcode = new QRCode("qrcode", {
-
-            width: 150,
-            height: 150,
-            colorDark: "#000000",
-            colorLight: "#ffffff",
-            correctLevel: QRCode.CorrectLevel.H
-        });
-
-        function makeCode() {
-            var elText = document.getElementById("inserir-total");
-
-            qrcode.makeCode(elText.value);
+        function verificarPontos() {
+            firebase.auth().onAuthStateChanged((user) => {
+                if (user) {
+                    globalUserId = user.uid;
+                    console.log(globalUserId)
+                    calcularPontos(globalUserId)
+                } else {
+                    console.log("Nenhum usuário logado.");
+                }
+            });
         }
-    
+        function calcularPontos(uid) {
+            firebase.database().ref('users/' + uid).once('value').then((snapshot) => {
+                if (snapshot.exists()) {
+                    const dadosUsuario = snapshot.val();
+                    console.log(snapshot.val())
+                    makeCode(dadosUsuario.pontos)
+                }
+            })
+                .catch((error) => {
+                    console.error("Erro ao buscar dados do usuário:", error);
+                })
+        }
+        function makeCode(pontos) {
+
+            var qrcode = new QRCode("qrcode", {
+                width: 150,
+                height: 150,
+                colorDark: "#000000",
+                colorLight: "#ffffff",
+                correctLevel: QRCode.CorrectLevel.H
+            });
+            var pontosQrcode = document.getElementById("inserir-total");
+            var cupom = pontos - pontosQrcode < 0
+            if (cupom < 0) {
+                console.log('dá não filho')
+            } else {
+                qrcode.makeCode(cupom);
+            }
+
+
+        }
     </script>
     </div>
     </div>

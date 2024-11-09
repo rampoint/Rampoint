@@ -192,8 +192,6 @@ function buscarDadosUsuario(globalUserId) {
     .then((snapshot) => {
       if (snapshot.exists()) {
         const dadosUsuario = snapshot.val();
-        console.log("Dados do usuário:", dadosUsuario);
-        exibirDadosUsuario(dadosUsuario);
       }
     })
     .catch((error) => {
@@ -206,8 +204,8 @@ function exibirDadosUsuario(users) {
   var currentPage = window.location.href;
   // Verifica se a URL contém uma string específica
   if (currentPage.includes("/pagina-perfil/")) {
-    document.getElementById("nome_usuario").innerText = users.nome;
-    document.getElementById("email_usuario").innerText = users.email;
+    document.getElementById("nome_usuario").innerHTML = users.nome;
+    document.getElementById("email_usuario").innerHTML = users.email;
     document.getElementById("emocao_usuario").style.color = users.fotoPerfil.cor_texto;
     document.getElementById("emocao_usuario").innerHTML = users.fotoPerfil.fotoMensage;
     document.getElementById("foto-perfil").src = users.fotoPerfil.fotoPerfil;

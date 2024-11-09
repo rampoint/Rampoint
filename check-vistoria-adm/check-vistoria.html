@@ -125,7 +125,33 @@
         <div class="campo-form">
           <label for="nome-peca" class="titulo-form">Nome da(s) peça(s)</label>
           <div class="select-peca">
-            <input type="search" id="search" placeholder="Peça doada">
+            <input list="Pecas" type="search" id="search" placeholder="Buscar por peça" onchange="mostrarValor()">
+              <datalist id="Pecas">
+                <option value="Placa-mãe">300</option>
+                <option value="Processador">500</option>
+                <option value="Memória RAM">200</option>
+                <option value="Placa de vídeo">1000</option>
+                <option value="Disco rígido">200</option>
+                <option value="SSD">200</option>
+                <option value="Fonte de Alimentação">150</option>
+                <option value="Coolers / Ventoinhas ">150</option>
+                <option value="Monitor">400</option>
+                <option value="Teclado">100</option>
+                <option value="Mouse">100</option>
+                <option value="Impressora">200</option>
+                <option value="Alto-falantes">100</option>
+                <option value="Fones de ouvido">150</option>
+                <option value="Câmera">200</option>
+                <option value="Gabinete básico">70</option>
+                <option value="Gabinete intermediário">150</option>
+                <option value="Gabinete avançado/premium">300</option>
+                <option value="Baia de drive">50</option>
+                <option value="Slots de expansão">50</option>
+                <option value="Organizador de cabos">50</option>
+                <option value="Painel frontal e portas">100</option>
+                <option value="Dissipador">100</option>
+                <option value="Filtro de poeira">100</option>
+            </datalist>
             <img src="./img/add-peca.svg" class="icon-add" alt="Ícone para adicionar mais peças">
           </div>
 
@@ -139,6 +165,7 @@
         <div class="campo-form">
           <label for="componente" class="titulo-form">Tipo de componente</label>
           <select name="tipo-componente" id="tipo-componente">
+            <option id="tipo-placeholder" value=""></option>
             <option value="Interno">Interno</option>
             <option value="Periferico">Periférico</option>
             <option value="Estrutura">Estrutura</option>

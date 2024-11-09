@@ -192,6 +192,7 @@ function buscarDadosUsuario(globalUserId) {
     .then((snapshot) => {
       if (snapshot.exists()) {
         const dadosUsuario = snapshot.val();
+        exibirDadosUsuario(dadosUsuario)
       }
     })
     .catch((error) => {
@@ -231,12 +232,10 @@ function exibirDadosUsuario(users) {
     
   } else {
     document.getElementById("nome_modal").innerHTML = users.nome;
-    document.getElementById("content-sem-perfil").style.backgroundColor =
-      users.fotoPerfil.cor_foto;
+    document.getElementById("content-sem-perfil").style.backgroundColor = users.fotoPerfil.cor_foto;
     document.getElementById("perfil").src = users.fotoPerfil.fotoPerfil;
     document.getElementById("foto-perfil").src = users.fotoPerfil.fotoPerfil;
-    document.getElementById("nome_modal").style.color =
-      users.fotoPerfil.cor_texto;
+    document.getElementById("nome_modal").style.color = users.fotoPerfil.cor_texto;
   }
 }
 

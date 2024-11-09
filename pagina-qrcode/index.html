@@ -104,6 +104,7 @@
                 <div class="inserir">
                     <p class="titulo-form">Inserir pontos:</p>
                     <input id="inserir-total" placeholder="TOTAL: 2000" type="text">
+                    
                 </div>
             </div>
             <div class="codigo-l2">
@@ -249,15 +250,26 @@
             firebase.database().ref('users/' + uid).once('value').then((snapshot) => {
                 if (snapshot.exists()) {
                     const dadosUsuario = snapshot.val();
-                    console.log(snapshot.val())
-                    makeCode(dadosUsuario.pontos)
+                    console.log(snapshot.val().pontos)
+                    makeCode(dadosUsuario.pontos,uid)
                 }
             })
                 .catch((error) => {
                     console.error("Erro ao buscar dados do usuário:", error);
                 })
         }
-        function makeCode(pontos) {
+
+        function atualizarPontos(restante,uid){
+            firebase.database().ref('users/' + uid).update({
+                pontos:restante
+            }
+            ).then(() => {
+                console.log('Atualizou os pontos')
+            }).catch((error) => {
+                console.log(error +'deu não')
+            })
+        }
+        function makeCode(pontos,uid) {
 
             var qrcode = new QRCode("qrcode", {
                 width: 150,
@@ -266,12 +278,15 @@
                 colorLight: "#ffffff",
                 correctLevel: QRCode.CorrectLevel.H
             });
-            var pontosQrcode = document.getElementById("inserir-total");
-            var cupom = pontos - pontosQrcode < 0
+            var pontosQrcode = document.getElementById("inserir-total").value;
+            
+            var cupom = pontos - pontosQrcode
+            
             if (cupom < 0) {
                 console.log('dá não filho')
             } else {
                 qrcode.makeCode(cupom);
+                atualizarPontos(cupom,uid)
             }
 
 

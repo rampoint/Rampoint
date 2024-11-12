@@ -16,6 +16,7 @@
   display: flex;
   margin-top: 6em;
   margin-left: 1em;
+  
 }
 
 .mensagens {
@@ -24,6 +25,7 @@
   background-color: none;
   padding: 20px;
   border-right: 1px solid rgba(0, 0, 0, 0.15);
+  overflow: scroll;
 }
 
 .mensagens h2 {

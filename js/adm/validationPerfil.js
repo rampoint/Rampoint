@@ -17,6 +17,8 @@ function buscarDadosUsuario(globalUserId) {
         if (snapshot.exists()) {
           const dadosUsuario = snapshot.val();
           exibirDadosUsuario(dadosUsuario)
+          localStorage.setItem("nomeAdm",dadosUsuario.nome)
+          console.log(localStorage.getItem('nomeAdm'))
         }
       })
       .catch((error) => {
@@ -31,5 +33,4 @@ function exibirDadosUsuario(users) {
       document.getElementById('nome').value = users.nome
       document.getElementById('email').value = users.nome
   }
-  
   

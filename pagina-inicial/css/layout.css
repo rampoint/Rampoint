@@ -510,10 +510,6 @@
 }
 
 @media (max-width: 725px) {
-  .sidebar {
-    right: 0.5em;
-  }
-
   .imagem-inicial {
     width: 22em;
     margin-left: 6em;
@@ -1363,10 +1359,6 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
-  }
-
-  .sidebar {
-    height: 40em;
   }
 
   .imagem-fundo {

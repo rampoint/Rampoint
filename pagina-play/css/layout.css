@@ -736,7 +736,7 @@
   .fundo-medalha-explosao,
   .fundo-medalha-engrenagem,
   .fundo-medalha-raio {
-    width: 28em;
+    width: 29em;
   }
 
   .column-textos {
@@ -820,6 +820,11 @@
     left: 1.5em;
   }
 
+  .modal-content-dourado .texto-lojas {
+    bottom: 22px;
+    left: 5px;
+  }
+
   .campo-curiosidade {
     width: 33em;
   }
@@ -852,6 +857,14 @@
     height: 10em;
     top: 1.5em;
   }
+
+  .fundo-medalha-salto,
+  .fundo-medalha-coracao,
+  .fundo-medalha-explosao,
+  .fundo-medalha-engrenagem,
+  .fundo-medalha-raio {
+    width: 28.3em;
+  }
 }
 
 @media (max-width: 460px) {
@@ -880,7 +893,7 @@
   /* começo salto tecnologico */
   .fundo-medalha-salto {
     width: 22em;
-    height: 18em;
+    height: 16em;
     margin-top: 3em;
     border-radius: 30px;
     display: flex;
@@ -908,21 +921,21 @@
   .titulo-salto {
     width: 60%;
     position: relative;
-    bottom: 80px;
-    left: 3.5em;
+    bottom: 105px;
+    left: 4em;
   }
 
   .fundo-medalha-salto .objetivo {
     width: 70%;
     position: relative;
-    bottom: 5em;
+    bottom: 4em;
     left: 1em;
   }
 
   .fundo-medalha-salto .texto {
     position: relative;
-    bottom: 4em;
-    right: 1em;
+    bottom: 3em;
+    right: 0em;
   }
 
   /* final salto tecnologico */
@@ -939,31 +952,31 @@
   }
 
   .img-coracao {
-    width: 8em;
+    width: 9em;
     position: relative;
-    bottom: 13em;
+    bottom: 12em;
     left: 13em;
   }
 
   .fundo-medalha-coracao .titulo-coracao {
     position: relative;
-    top: 0.2em;
+    top: 0.5em;
     right: 1em;
   }
 
   .fundo-medalha-coracao .objetivo {
     position: relative;
-    top: 2em;
+    top: 2.5em;
     right: 1em;
   }
 
   .fundo-medalha-coracao .texto {
     position: relative;
-    top: 3em;
+    top: 4em;
     right: 1.5em;
   }
 
-  /*final coração generoso */
+  /* final coração generoso */
 
   /* começo explosão eletronica */
   .fundo-medalha-explosao {
@@ -978,15 +991,15 @@
   .img-explosao {
     width: 8em;
     position: relative;
-    bottom: 2.5em;
+    bottom: 3.5em;
     left: -0.5em;
   }
 
   .fundo-medalha-explosao .titulo-explosao {
     width: 60%;
     position: relative;
-    bottom: 7em;
-    left: 5em;
+    bottom: 6.5em;
+    left: 5.5em;
   }
 
   .fundo-medalha-explosao .objetivo {
@@ -1023,7 +1036,7 @@
   }
 
   .img-engrenagem {
-    width: 8em;
+    width: 9em;
     position: relative;
     bottom: 15em;
     left: 14em;
@@ -1031,19 +1044,21 @@
 
   .fundo-medalha-engrenagem .titulo-engrenagem {
     position: relative;
+    top: 0.5em;
     right: 1em;
   }
 
   .fundo-medalha-engrenagem .objetivo {
+    width: 75%;
     position: relative;
-    top: 2em;
+    top: 3em;
     right: 0;
     left: 0.5em;
   }
 
   .fundo-medalha-engrenagem .texto {
     position: relative;
-    top: 3em;
+    top: 4em;
     right: 1.5em;
   }
 
@@ -1086,22 +1101,22 @@
   }
 
   .titulo-raio {
-    width: 60%;
+    width: 55%;
     position: relative;
-    bottom: 7em;
+    bottom: 6.5em;
     left: 6em;
   }
 
   .fundo-medalha-raio .objetivo {
     width: 40%;
     position: relative;
-    bottom: 8em;
-    left: 8em;
+    bottom: 7em;
+    left: 7em;
   }
 
   .fundo-medalha-raio .texto {
     position: relative;
-    bottom: 6em;
+    bottom: 5em;
     left: 2em;
     width: 88%;
   }
@@ -1111,11 +1126,24 @@
 
 @media (max-width: 440px) {
   #texto-inicial {
-    width: 76%;
+    width: 90%;
+  }
+
+  .medalha-vermelha,
+  .medalha-verde,
+  .medalha-azul,
+  .medalha-amarela,
+  .medalha-roxa {
+    width: 70px;
   }
 
   .medalha-vermelha {
     right: 10em;
+  }
+
+  .brilho-amarelo {
+    right: 4.5em;
+    bottom: 3em;
   }
 
   .medalha-verde {
@@ -1123,263 +1151,105 @@
     right: 10em;
   }
 
-  .brilho-amarelo {
-    bottom: 2em;
-    right: 3.5em;
+  .medalha-azul {
+    left: 3em;
+    bottom: 16em;
   }
 
-  .medalha-amarela {
-    left: 10.5em;
-  }
-
-  .medalha-roxa {
-    bottom: 11em;
-    left: 9em;
-  }
-}
-
-@media (max-width: 420px) {}
-
-@media (max-width: 320px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-  }
-
-  /* imagem inicial */
-  .imagem-fundo {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    width: 100%;
-    height: 15em;
-  }
-
-  #titulo-inicial {
-    font-size: 4em;
-    width: 30%;
-    margin: 0 0 50px 0;
-  }
-
-  #texto-inicial {
-    width: 30%;
-    text-align: center;
-    position: relative;
-    top: 16em;
-  }
-
-  .botao {
-    opacity: 0;
+  .brilho-roxo {
     display: none;
   }
 
-  #scrollTarget {
-    margin-top: 5em;
-    padding-top: 9.5em;
-    /* para compensar o menu fixo */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  /* começo lado esquerdo */
-  .medalha-vermelha {
-    width: 3em;
-    position: relative;
-    top: -2em;
-    right: 10em;
-  }
-
-  .medalha-verde {
-    width: 3em;
-    position: relative;
-    top: 9em;
-    right: 8em;
-  }
-
-  .brilho-amarelo {
-    position: relative;
-    bottom: 0.5em;
-    right: 7em;
-    z-index: -1;
-  }
-
-  .brilho-verde {
-    width: 1em;
-    position: relative;
-    top: -1em;
-    right: 11em;
-    z-index: -1;
+  .medalha-amarela {
+    bottom: 17em;
+    left: 9.5em;
   }
 
   .brilho-azul {
-    width: 1em;
-    position: relative;
-    top: 4em;
-    right: 11em;
-    z-index: -1;
-  }
-
-  /* final lado esquerdo */
-
-  /* começo lado direito */
-  .brilho-roxo {
-    width: 1em;
-    position: relative;
-    bottom: 10em;
-    left: 5em;
-    z-index: -1;
-  }
-
-  .medalha-azul {
-    width: 3em;
-    position: relative;
-    bottom: 15em;
-    left: 0em;
-  }
-
-  .medalha-amarela {
-    width: 3em;
-    position: relative;
-    bottom: 14em;
-    left: 10em;
-  }
-
-  .brilho-vermelho {
-    width: 1em;
-    position: relative;
-    bottom: 15em;
-    left: 7em;
-    z-index: -1;
+    top: 5em;
   }
 
   .brilho-amarelo2 {
-    position: relative;
-    bottom: 10em;
-    left: 10em;
-    z-index: -1;
+    bottom: 6em;
   }
 
   .medalha-roxa {
-    width: 3em;
-    position: relative;
-    bottom: 6em;
-    left: 8em;
+    bottom: 8em;
+    left: 10em;
   }
 
-  /* final lado direito */
-
-  /* imagem inicial */
-  #titulo1 {
-    font-family: "Blinker-extrabold";
-    color: var(--verde);
-    font-size: 1.7em;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .modal-content-dourado,
+  .modal-content-vidro,
+  .modal-content-golias {
+    width: 21em;
   }
 
-  #texto1 {
-    font-family: "Poppins-regular";
-    color: var(--preto);
-    font-size: 1em;
-    margin-left: 0;
-    text-align: center;
-    width: 80%;
+  .modal-content-dourado .lojas {
+    left: -1em;
   }
 
-  .section-empresas,
-  .conquistas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  .modal-content-dourado .texto-lojas {
+    bottom: 10px;
+    left: -8px;
   }
 
-  .conquistas #texto1 {
-    width: 70%;
+  .cupom-dourado {
+    margin-left: -12px;
   }
 
-  .cupons {
-    width: 650px;
-    height: 55em;
-    padding: 2em;
+  .estrela-dourada2 {
+    top: 15px;
   }
 
-  #titulo2 {
-    margin: 1em 0 0 6em;
+  #estrelas {
+    right: 10em;
   }
 
-  #texto2 {
-    margin-left: 10em;
-    width: 60%;
+  .campo-curiosidade {
+    width: 31em;
   }
 
-  /* começo dos cards dos cupons */
-  .card-cupons {
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding: 0;
-    gap: 1em;
+  #ram-dourado {
+    left: 3em;
   }
 
-  #titulo-card {
-    font-size: 1.3em;
+  .brilho-vidro {
+    right: 8em;
+    top: 6em;
   }
 
-  .item1,
-  .item2,
-  .item3 {
-    padding: 10px;
-    width: 10em;
-    height: 12em;
+  #ram-vidro {
+    width: 32%;
   }
 
-  #cupom-dourado {
-    width: 10em;
+  .mancha-verde1 {
+    right: 10em;
   }
 
-  .btn-cupom {
-    margin-left: 8em;
-    margin-top: -1em;
+  .mancha-verde2 {
+    left: 10em;
   }
 
-  #empresas {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 2em 0 3em 0;
-    flex-wrap: nowrap;
+  #ram-golias {
+    width: 32%;
+  }
+}
+
+@media (max-width: 400px) {
+
+  .medalha-vermelha,
+  .medalha-verde {
+    right: 9em;
   }
 
-  .card-empresa {
-    margin: 80px 10px 0 10px;
+  .medalha-roxa {
+    left: 9em;
   }
 
-  /* final dos cards dos cupons */
-
-  /* Modal Content */
-  /* começo modal dourado */
-  .modal-content-dourado {
-    width: 20em;
-    height: 30em;
-    overflow: hidden;
-  }
-
-  .titulo-dourado {
-    top: 1.5em;
-  }
-
-  .texto-dourado {
-    top: 2.5em;
+  .modal-content-dourado,
+  .modal-content-vidro,
+  .modal-content-golias {
+    width: 18em;
   }
 
   .estrela-dourada {
@@ -1387,355 +1257,447 @@
   }
 
   .estrela-dourada2 {
-    width: 9%;
-    position: relative;
+    top: 2em;
     left: 8em;
-    top: 0.5em;
-  }
-
-  .texto-lojas {
-    font-family: "Poppins-bold";
-    color: #f89701;
-    margin: -20px 35px;
-  }
-
-  .modal-content-dourado .lojas {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    position: relative;
-    bottom: 6em;
-    left: -1em;
-  }
-
-  .modal-content-dourado #loja {
-    width: 27%;
-  }
-
-  .cupom-dourado {
-    width: 45%;
-    margin-left: 20px;
   }
 
   #estrelas {
-    position: relative;
-    right: 10em;
-    top: 2em;
-    margin-bottom: 1em;
+    right: 8em;
   }
 
-  #ram-dourado {
-    width: 20%;
-    position: relative;
-    left: 3em;
-    bottom: 0;
-    z-index: 2;
+  #loja {
+    width: 70px;
+  }
+
+  .cupom-dourado {
+    margin-left: 3px;
+  }
+
+  .modal-content-dourado,
+  .modal-content-vidro,
+  .modal-content-golias {
+    height: 34em;
+  }
+
+  .modal-content-dourado .texto-lojas {
+    left: -19px;
+  }
+
+  .modal-content-dourado .campo-curiosidade {
+    width: 17em;
+    height: 14em;
+    flex-direction: column;
+    padding: 0;
+    padding-bottom: 40px;
   }
 
   .modal-content-dourado .curiosidade {
-    width: 16.5em;
-    height: 8em;
-    margin-right: 5em;
-    position: relative;
+    margin-right: 0;
+  }
+
+  #ram-dourado {
+    width: 120px;
+    left: 3em;
     bottom: 1em;
   }
 
-  .texto-curiosidade {
-    font-family: "Poppins-bold";
-    color: #745f12;
-    text-align: right;
-    margin-left: 15px;
-  }
-
-  /* final modal dourado */
-
-  /* começo modal vidro */
-  .modal-content-vidro {
-    background-color: #dffbff;
-    margin: 6em auto;
-    padding: 20px;
-    border-radius: 25px;
-    width: 27em;
-    max-width: 600px;
-    height: 30em;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .brilho-vidro {
-    width: 5em;
-    position: relative;
-    right: 11em;
-    top: 9em;
-  }
-
-  .titulo-vidro {
-    font-family: "Blinker-extrabold";
-    color: #027a8d;
-    font-size: 30px;
-    position: relative;
-    top: -3em;
-  }
-
-  .texto-vidro {
-    font-family: "Blinker-bold";
-    color: #027a8d;
-    font-size: 18px;
-    position: relative;
-    top: -5em;
-  }
-
-  .modal-content-vidro .ramcoin {
-    margin: 15px 0;
-    position: relative;
-    top: -5em;
-    left: 1.5em;
-  }
-
-  .cupom-vidro {
-    width: 50%;
-    margin-left: 45px;
-  }
-
   .modal-content-vidro .lojas {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    position: relative;
-    bottom: 6em;
-    left: 1em;
+    gap: 6px;
+    left: 1.5em;
   }
 
   .modal-content-vidro .texto-lojas {
-    font-family: "Poppins-bold";
-    color: #027a8d;
-    position: relative;
-    bottom: 7em;
+    left: -5px;
+  }
+
+  .modal-content-vidro .campo-curiosidade {
+    width: 17em;
+    height: 14em;
+    flex-direction: column;
+    padding: 0;
+    padding-bottom: 40px;
+  }
+
+  .brilho-vidro {
+    right: 6.5em;
+    top: 7em;
   }
 
   .modal-content-vidro .curiosidade {
-    height: 8em;
-    background-color: #027a8d;
-    border-radius: 25px;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    margin-right: 5em;
-    position: relative;
-    bottom: 5em;
-  }
-
-  .modal-content-vidro .texto-curiosidade {
-    font-family: "Poppins-bold";
-    color: #dffbff;
-    text-align: right;
-    margin-left: 10px;
-    position: relative;
-    bottom: 0.5em;
+    top: -5.5em;
+    margin-right: 0
   }
 
   #ram-vidro {
-    width: 35%;
-    position: relative;
+    width: 120px;
     left: 3em;
-    bottom: 5em;
-    z-index: 2;
-  }
-
-  /* final modal vidro */
-
-  /* começo modal golias */
-  .modal-content-golias {
-    background-color: #c7fbb9;
-    margin: 6em auto;
-    padding: 20px;
-    border-radius: 25px;
-    width: 27em;
-    max-width: 600px;
-    height: 30em;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .titulo-golias {
-    font-family: "Blinker-extrabold";
-    color: #2b5121;
-    font-size: 30px;
-    position: relative;
-    top: 1.5em;
+    top: -70px;
+    bottom: 0;
+    transform: rotate(30deg);
   }
 
   .texto-golias {
-    font-family: "Blinker-bold";
-    color: #2b5121;
-    font-size: 18px;
-    position: relative;
-    top: 0;
+    width: 80%;
+    text-align: center;
   }
 
   .mancha-verde1 {
-    position: relative;
-    right: 11em;
-    top: 3em;
+    right: 8.5em;
   }
 
   .mancha-verde2 {
-    position: relative;
-    left: 11em;
-    bottom: 2em;
+    left: 8em;
   }
 
-  .modal-content-golias .ramcoin {
-    margin: 15px 0;
-    position: relative;
-    top: -1em;
-    left: 1.5em;
+  .modal-content-golias .campo-curiosidade {
+    width: 17em;
+    height: 10em;
+    flex-direction: column;
+    padding: 0;
+    padding-bottom: 70px;
   }
 
-  .modal-content-golias .lojas {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    position: relative;
-    bottom: 3em;
-    left: 1em;
-  }
-
-  .modal-content-golias .texto-lojas {
-    font-family: "Poppins-bold";
-    color: #2b5121;
-    position: relative;
-    bottom: 3em;
+  .cupom-golias {
+    margin-left: 0;
   }
 
   .modal-content-golias .curiosidade {
-    height: 8em;
-    background-color: #579445;
-    border-radius: 25px;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    margin-right: 5em;
-    position: relative;
-    bottom: 0;
+    margin-right: 0
   }
 
-  .modal-content-golias .texto-curiosidade {
-    font-family: "Poppins-bold";
-    color: #d3ffc8;
-    text-align: right;
-    margin-left: 10px;
-    position: relative;
-    bottom: 0.5em;
+  .modal-content-golias .texto-lojas {
+    top: -39px;
+    left: -5px;
   }
 
   #ram-golias {
-    width: 35%;
-    position: relative;
-    left: 3em;
+    width: 125px;
     bottom: 0;
-    z-index: 2;
+    top: 220px;
+    left: -108px;
+  }
+}
+
+@media (max-width: 380px) {
+
+  .fundo-medalha-salto,
+  .fundo-medalha-coracao,
+  .fundo-medalha-explosao,
+  .fundo-medalha-engrenagem,
+  .fundo-medalha-raio {
+    width: 20em;
   }
 
-  /* final modal golias */
-
-  /* começo botão fechar o modal */
-  .close {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--cinza);
-    font-size: 20px;
-    position: absolute;
-    top: 25px;
-    right: 15px;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: 2px solid var(--cinza);
-    background-color: transparent;
-    text-align: center;
-    cursor: pointer;
+  .img-salto {
+    width: 5.5em;
   }
 
-  .close:hover,
-  .close:focus {
-    color: #555;
-    border-color: #555;
-    text-decoration: none;
+  .titulo-salto {
+    width: 66%;
+    bottom: 95px;
   }
 
-  /* final botão fechar o modal */
-
-  /* começo ramcoin */
-  .itens {
-    display: flex;
-    flex-direction: column;
+  .column-textos {
+    margin-left: 2em;
   }
 
-  .ramcoin {
-    width: 250px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 15px 0;
-    position: relative;
-    top: 1em;
+  .fundo-medalha-salto .objetivo {
+    width: 80%;
   }
 
-  .qtd-ramcoin {
-    font-family: "Blinker-bold";
-    color: #417932;
-    margin-left: 5px;
+  .fundo-medalha-coracao {
+    margin-top: 5em;
   }
 
-  .text-block {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 30%;
-    transform: translateX(-50%);
-    background-color: #ffffff;
-    padding: 10px;
-    border-radius: 15px;
-    box-shadow: 2px 8px 8px rgba(42, 85, 194, 0.15);
-    width: 300px;
-    z-index: 1;
+  .img-coracao {
+    width: 7em;
+    bottom: 11em;
   }
 
-  .textos {
-    font-family: "Poppins-semibold";
-    color: var(--azul);
-    font-size: 12px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-left: 10px;
+  .fundo-medalha-coracao .titulo-coracao {
+    right: 0em;
   }
 
-  .ramcoin:hover .text-block {
-    display: block;
+  .fundo-medalha-coracao .objetivo {
+    right: 0em;
   }
 
-  /* final ramcoin */
-
-  #loja {
-    width: 20%;
+  .fundo-medalha-coracao .texto {
+    right: 11px;
   }
 
-  .campo-curiosidade {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 36em;
-    padding: 0 0 20px 15px;
+  .img-explosao {
+    width: 7em;
   }
 
-  /* final dos cards dos cupons */
+  .fundo-medalha-explosao .titulo-explosao {
+    width: 65%;
+    bottom: 6em;
+    left: 4.5em;
+  }
+
+  .fundo-medalha-explosao .objetivo {
+    width: 85%;
+    left: 2em;
+  }
+
+  .fundo-medalha-explosao .texto {
+    bottom: 4em;
+    left: 22px;
+    width: 90%;
+  }
+
+  .img-engrenagem {
+    width: 7em;
+    bottom: 14em;
+    left: 14em;
+  }
+
+  .fundo-medalha-engrenagem .titulo-engrenagem {
+    right: 0em;
+  }
+
+  .fundo-medalha-engrenagem .texto {
+    right: 0;
+  }
+
+  .img-raio {
+    width: 5.5em;
+  }
+
+  .titulo-raio {
+    width: 65%;
+    bottom: 6em;
+    left: 5em;
+  }
+}
+
+@media (max-width: 375px) {
+  .medalha-amarela {
+    left: 9em;
+  }
+}
+
+@media (max-width: 360px) {
+
+  .medalha-vermelha,
+  .medalha-verde {
+    right: 8em;
+  }
+
+  .brilho-verde {
+    right: 9em;
+  }
+
+  .medalha-azul {
+    bottom: 16.5em;
+  }
+
+  .medalha-amarela {
+    bottom: 18em;
+    left: 8.5em;
+  }
+
+  .brilho-amarelo2 {
+    left: 4em;
+  }
+
+  .medalha-roxa {
+    left: 8em;
+  }
+}
+
+@media (max-width: 320px) {
+
+  .medalha-vermelha,
+  .medalha-verde,
+  .medalha-azul,
+  .medalha-amarela,
+  .medalha-roxa {
+    width: 60px;
+  }
+
+  .medalha-verde {
+    right: 7.5em;
+  }
+
+  .brilho-verde {
+    right: 7em;
+  }
+
+  .medalha-amarela {
+    bottom: 17em;
+    left: 7.5em;
+  }
+
+  .brilho-amarelo2 {
+    bottom: 4em;
+  }
+
+  .medalha-roxa {
+    bottom: 6em;
+    left: 7em;
+  }
+
+  .modal-content-dourado,
+  .modal-content-vidro,
+  .modal-content-golias {
+    width: 16em;
+    margin: 6em 1em;
+  }
+
+  .estrela-dourada2 {
+    left: 7.5em;
+  }
+
+  .cupom-dourado {
+    margin-left: 0;
+  }
+
+  #estrelas {
+    right: 7em;
+  }
+
+  .modal-content-dourado .lojas {
+    gap: 9px;
+  }
+
+  .modal-content-dourado .campo-curiosidade {
+    padding-bottom: 20px;
+  }
+
+  .brilho-vidro {
+    right: 5.5em;
+    top: 6em;
+  }
+
+  .modal-content-vidro .ramcoin {
+    margin: 25px 0;
+    top: -7.5em;
+  }
+
+  .cupom-vidro {
+    width: 39%;
+  }
+
+  .modal-content-vidro .texto-lojas {
+    top: -6.5em;
+  }
+
+  .mancha-verde1 {
+    right: 8em;
+  }
+
+  .mancha-verde2 {
+    left: 7em;
+  }
+
+  #ram-golias {
+    width: 125px;
+    bottom: 0;
+    top: 40px;
+    left: -88px;
+  }
+
+  .modal-content-golias .lojas {
+    gap: 6px;
+  }
+
+  .fundo-medalha-salto,
+  .fundo-medalha-coracao,
+  .fundo-medalha-explosao,
+  .fundo-medalha-engrenagem,
+  .fundo-medalha-raio {
+    width: 18em;
+  }
+
+  .titulo-salto {
+    width: 60%;
+    bottom: 95px;
+    left: 100px;
+  }
+
+  .fundo-medalha-salto .objetivo {
+    width: 90%;
+    bottom: 4em;
+  }
+
+  .fundo-medalha-salto .texto {
+    width: 90%;
+    bottom: 3em;
+  }
+
+  .fundo-medalha-coracao .titulo-coracao {
+    width: 50%;
+  }
+
+  .img-coracao {
+    bottom: 13em;
+    left: 11em;
+  }
+
+  .fundo-medalha-coracao .texto {
+    top: 2em;
+  }
+
+  .fundo-medalha-coracao .objetivo {
+    top: 1.8em;
+    right: 0.5em;
+  }
+
+  .fundo-medalha-explosao .titulo-explosao {
+    width: 45%;
+    left: 5em;
+  }
+
+  .fundo-medalha-explosao .objetivo {
+    bottom: 7em;
+    left: 1.5em;
+  }
+
+  .fundo-medalha-explosao .texto {
+    bottom: 6em;
+  }
+
+  .fundo-medalha-engrenagem .titulo-engrenagem {
+    width: 50%;
+  }
+
+  .img-engrenagem {
+    left: 11em;
+  }
+
+  .fundo-medalha-engrenagem .objetivo {
+    width: 85%;
+    top: 2em;
+    left: 0;
+  }
+
+  .fundo-medalha-engrenagem .texto {
+    top: 3em;
+  }
+
+  .fundo-medalha-raio {
+    height: 15em;
+  }
+
+  .img-raio {
+    width: 4.5em;
+    bottom: 1em;
+    left: 5px;
+  }
+
+  .brilho-esperanca {
+    top: -1em;
+  }
+
+  .titulo-raio {
+    bottom: 5.5em;
+    left: 4em;
+  }
+
+  .fundo-medalha-raio .objetivo {
+    width: 50%;
+    bottom: 6.5em;
+  }
 }

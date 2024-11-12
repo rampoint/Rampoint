@@ -411,7 +411,9 @@ body {
 .modal-content-dourado .texto-lojas {
   font-family: "Poppins-bold";
   color: #f89701;
-  margin: -20px 35px;
+  position: relative;
+  bottom: 15px;
+  left: 15px;
 }
 
 .cupom-dourado {
@@ -517,7 +519,8 @@ body {
   font-family: "Poppins-bold";
   color: #027a8d;
   position: relative;
-  top: -6.5em;
+  top: -7.5em;
+  left: 20px;
 }
 
 .modal-content-vidro .curiosidade {
@@ -618,7 +621,7 @@ body {
   font-family: "Poppins-bold";
   color: #2b5121;
   position: relative;
-  top: -1em;
+  top: -3em;
 }
 
 .modal-content-golias .curiosidade {
@@ -730,7 +733,7 @@ body {
 /* final ramcoin */
 
 #loja {
-  width: 20%;
+  width: 80px;
 }
 
 .campo-curiosidade {

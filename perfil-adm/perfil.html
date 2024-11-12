@@ -100,8 +100,8 @@
       <div class="fundo-perfil">
         <img src="./img/foto-perfil.svg" class="foto-perfil-adm" alt="Foto de perfil do administrador">
         <div class="dados-adm">
-          <h3 class="nome-adm">Leticia</h3>
-          <p class="email-adm">leticia@gmail.com</p>
+          <h3 class="nome-adm" id="nome-adm">Leticia</h3>
+          <p class="email-adm" id="email-adm" >leticia@gmail.com</p>
         </div>
         <!-- modal editar perfil -->
         <div class="modal-perfil">
@@ -113,7 +113,7 @@
               <div class="grupo">
                 <div class="campo-form">
                   <label for="nome">Nome</label>
-                  <input type="name" name="nome" id="nome">
+                  <input type="name"  name="nome" id="nome">
                 </div>
                 <div class="campo-form">
                   <label for="telefone">Telefone</label>
@@ -183,5 +183,6 @@
 <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-database-compat.js"></script>
 <script src="../js/firebase-init.js"></script>
 <script src="../js/adm/dashboardPerfil.js"></script>
+<script src="../js/adm/validationPerfil.js"></script>
 
 </html>

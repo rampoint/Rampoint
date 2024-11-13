@@ -10,14 +10,15 @@ usersRef.once('value', (snapshot) => {
                 snapshot.forEach((childSnapshot) => {
                     var nome_pecas = childSnapshot.key;
                     var dataPeca = childSnapshot.val();
-                    criarTabela(nome_pecas, dataPeca.data, dataPeca.hora_doacao, dataPeca.desc, dataPeca.tipo, dataPeca.email, dataPeca.nome, dataPeca.qtd);
+                    criarTabela(nome_pecas, dataPeca.data, dataPeca.hora_doacao, dataPeca.desc, dataPeca.tipo, dataPeca.email, dataPeca.nome,dataPeca.nome_peca,dataPeca.qtd,dataPeca.nomeAdm);
                 });
             }
         });
     });
 });
 
-function criarTabela(id, data, hora, desc, estrutura, email_doador, nome_doador, nome_peca, qtd) {
+function criarTabela(id, data, hora, desc, estrutura, email_doador, nome_doador, nome_peca, qtd,adm) {
+    console.log(adm)
     const novaNotificacaoDesc = document.createElement('div');
     novaNotificacaoDesc.classList.add('mensagem-detalhes');
     novaNotificacaoDesc.id = `detalhes-${id}`;
@@ -61,7 +62,7 @@ function criarTabela(id, data, hora, desc, estrutura, email_doador, nome_doador,
             <div class="mensagem-info">
                 <img src="./img/check.svg" alt="Ícone de um check">
                 <img src="./img/foto-adm.svg" alt="">
-                <p>${nome_doador} adicionou uma nova doação</p>
+                <p>${adm} adicionou uma nova doação</p>
             </div>
             <div class="seta-mensagem">
                 <button><img src="./img/seta-mensagem.svg" alt=""></button>

@@ -22,17 +22,34 @@ const app = firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth();
 const db = firebase.firestore();
 
-
 function login() {
   firebase
     .auth()
     .signInWithEmailAndPassword(form.email().value, form.senha().value)
-    .then((response) => {
-      window.location.href = "../pagina-inicial/inicial.html";
+    .then((userCredential) => {
+      redirecionar(userCredential)
+      
     })
     .catch((error) => {
       alert(getErrorCode(error));
     });
+}
+
+function redirecionar(){
+  firebase.auth().onAuthStateChanged((user) => {
+    if (user) {
+      var uid = user.uid;
+      console.log(uid)
+      firebase.database().ref().child('users/'+uid).child('cargo').get().then((snapshot) => {
+         
+        if(snapshot.exists()){
+          window.location.href = '../dashboard-adm/dashboard.html'
+        }else{window.location.href = '../pagina-inicialLogado/inicial-logado.html'}
+      })
+    } else {
+      
+    }
+  });
 }
 
 function getErrorCode(error) {

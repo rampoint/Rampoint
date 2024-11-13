@@ -339,3 +339,15 @@ option.dark-theme {
 .btn-cancelar.dark-theme {
   color: #fff;
 }
+#editar_add{
+  width: 30%;
+  margin: auto;
+  position: fixed;
+  top: -120px;
+  /* Começa fora da tela */
+  left: 50%;
+  transform: translateX(-50%);
+  transition: top 0.5s ease;
+  /* Transição suave para a animação */
+  
+}

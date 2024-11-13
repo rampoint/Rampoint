@@ -26,7 +26,8 @@ usersRef.once("value", (snapshot) => {
             dataPeca.nome,
             dataPeca.qtd,
             dataPeca.vistoria,
-            childSnapshot.key
+            childSnapshot.key,
+            id
 
           );});}});});});
 
@@ -37,7 +38,8 @@ function criarTabela(
   nome_doador,
   qtd,
   vistoria,
-  key
+  key,
+  idUser
 ) {
   const novaLinha = document.createElement("tr");
 
@@ -62,7 +64,7 @@ function criarTabela(
         </td>
       <td>
       
-                  <a onclick="excluirDoacao('${key}')"><i class='bx bx-trash-alt' id="excluir_editar"></i></a>
+                  <a onclick="excluirDoacao('${key}','${idUser}')"><i class='bx bx-trash-alt' id="excluir_editar"></i></a>
                   <a onclick="editarDados('${key}')"<i class='bx bx-edit-alt'
                       id="lapis_editar"></i></a>
         </td>`;
@@ -71,16 +73,15 @@ function criarTabela(
   document.getElementById("tbody").appendChild(novaLinha);
 }
 
-function excluirDoacao(id) {
-  usersRef.once("value", (snapshot) => {
-    snapshot.forEach((childSnapshot) => {
-      var ids = childSnapshot.key;
-    database.ref('users/'+ids+'/peças/'+id).remove().then(() =>{
+function excluirDoacao(id,idUser) {
+  console.log(id)
+  console.log(idUser)
+    firebase.database().ref('users/'+idUser+'/peças/'+id).remove().then(() =>{
         alert('doação removida com sucesso')
     })
-})
-  })
 }
+  
+
 
 
 function pegarIdUrl(){

@@ -68,7 +68,7 @@ function atualizarDados() {
           desc: form.desc_doacao(),
         })
         .then(() => {
-          alert('Atualizado com sucesso!');
+          mostrarPopupEditado()
         })
         .catch((error) => {
           console.error('Erro ao atualizar:', error);
@@ -88,4 +88,15 @@ function mostrar() {
   console.log(form.email());
   console.log(form.nome());
   console.log(form.tipo_componente());
+}
+
+function mostrarPopupEditado() {
+  const popup = document.getElementById("editar_add");
+  // Faz o pop-up deslizar para baixo
+  popup.style.top = "100px"; // Ajuste a posição conforme necessário
+
+  // Após 3 segundos, faz o pop-up deslizar de volta para cima
+  setTimeout(() => {
+    popup.style.top = "-120px"; // Volta para fora da tela
+  }, 3000); // 3000 milissegundos = 3 segundos
 }

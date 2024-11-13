@@ -1,10 +1,14 @@
-@media (min-width: 1919px) {
+@media (min-width: 1920px) {
   .fundo-titulo {
     width: 100vw;
   }
 
   .campo-inicial {
     margin: 0.5em 50px 0 85px;
+  }
+
+  .sidebar ul li {
+    height: 90px;
   }
 
   .campo-titulo {
@@ -38,7 +42,74 @@
     margin-left: 15em;
   }
 
-  .sidebar.active~.main-content .notificacoes {
+  .sidebar.active ~ .main-content .notificacoes {
+    margin-left: 10em;
+  }
+
+  .fundo-notificacoes {
+    width: 35em;
+    height: 17em;
+    margin-top: 0;
+    scroll-behavior: auto;
+    overflow-y: auto;
+  }
+
+  .doacoes {
+    margin-top: 3em;
+  }
+
+  .tabela-doadores {
+    width: 35em;
+    height: 17em;
+    margin-top: 2em;
+  }
+}
+
+@media (max-width: 1920px) {
+  .fundo-titulo {
+    width: 100vw;
+  }
+
+  .campo-inicial {
+    margin: 0.5em 50px 0 85px;
+  }
+
+  .sidebar ul li {
+    height: 90px;
+  }
+
+  .campo-titulo {
+    margin: 120px 50px 25px 55px;
+  }
+
+  .subtitulo {
+    margin-top: 0;
+  }
+
+  .grupos {
+    margin-top: 1em;
+  }
+
+  .grafico-coluna {
+    background-color: #fff;
+    width: 690px;
+    height: 680px;
+    border-radius: 15px;
+    margin-top: 15px;
+    padding: 30px 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  #container {
+    width: 650px;
+    height: 620px;
+  }
+
+  .notificacoes {
+    margin-left: 15em;
+  }
+
+  .sidebar.active ~ .main-content .notificacoes {
     margin-left: 10em;
   }
 

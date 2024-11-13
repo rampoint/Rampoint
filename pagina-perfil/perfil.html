@@ -45,6 +45,13 @@
     <div class="modal-Mood" id="alteracao_popup_Mood">
         <img src="" id="alteracao_Mood" alt="">
     </div>
+    <div id="exclusaoModel">
+        <img id="alerta_del" src="img/info-circle.svg" alt="">
+        <h1>Você tem certeza que deseja excluir a conta?</h1>
+        <input id="sim_button" onclick="apagandoUsuario()" value="Sim" type="button">
+        <input id="nao_button" onclick="fecharPop()" value="Não" type="button">
+        <div id="ldBar"></div>
+    </div>
 
     <nav>
         <ul class="sidebar">
@@ -108,9 +115,9 @@
     </nav>
 
     <div class="container">
-        
+
         <g id="body">
-            
+
             <g class="spots">
                 <g class="top-spots" opacity="0.9">
                     <path fill="#1E1E1E"
@@ -183,6 +190,7 @@
 
 
         <section class="campo-perfil">
+
             <div id="container-perfil" class="container-perfil">
                 <div class="bloco-perfil">
                     <img id="foto-usuario" src="img/user.svg" alt="Foto de perfil do usuário">
@@ -263,7 +271,8 @@
                             </div>
                             <div class="botoes">
                                 <!-- num mexe aqui nao -->
-                                <a href="#" onclick="apagandoUsuario()" class="excluir-conta">Excluir minha conta</a>
+                                <a href="#" onclick="mostrarPopupexcluir()" class="excluir-conta">Excluir minha
+                                    conta</a>
                                 <button onclick="mudarDados()" id="button_salvar" class="btn-salvar">Salvar</button>
                                 <!-- po mexer -->
 
@@ -465,6 +474,7 @@
                 </div>
             </div>
         </section>
+
 
         <footer class="footer-container">
             <h2>Quer ser nosso parceiro?</h2>

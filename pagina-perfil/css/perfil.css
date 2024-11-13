@@ -1123,3 +1123,51 @@ body {
   /* Transição suave para a animação */
   z-index: 100000;
 }
+#exclusaoModel{
+  background-color: white;
+  width: 550px;
+  font-family: "Poppins-bold";
+  font-size:7px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 70px;
+  border-radius: 10px;
+  position: fixed;
+  top: -120px;
+  /* Começa fora da tela */
+  left: 50%;
+  transform: translateX(-50%);
+  transition: top 0.5s ease;
+  z-index: 100000;
+}
+#exclusaoModel h1{
+  margin-left: 10px;
+}
+
+#sim_button{
+  color: white;
+  background-color:var(--azul);
+  padding: 3px 25px 3px 25px;
+  border-radius: 35px;
+  border: transparent;
+  font-family: "Poppins-bold";
+  margin-left:10px;
+  cursor: pointer;
+}
+
+#nao_button{
+  color: black;
+  background-color:white;
+  padding: 3px 25px 3px 25px;
+  border-radius: 35px;
+  border: var(--azul);
+  font-family: "Poppins-bold";
+  border: solid var(--azul) 1.5px;
+  margin-left:10px;
+  cursor: pointer;
+}
+#alerta_del{
+margin-left: 10px;
+}

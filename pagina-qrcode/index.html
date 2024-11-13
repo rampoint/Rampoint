@@ -176,7 +176,119 @@
                 <div class="shadow-moeda-roxa"></div>
             </div>
         </div>
-
+        <main class="main-content light-theme">
+    
+            <header class="fundo-titulo">
+              <h1 class="titulo-pagina">Adicionar doações</h1>
+        
+              <div class="theme-toggle">
+                <i id="theme-icon" class='bx bx-sun'></i>
+              </div>
+            </header>
+        
+            <section class="campo-titulo">
+              <h2 class="titulo-inicial">Informações gerais</h2>
+            </section>
+        
+            <section class="campo-inicial">
+              <img src="img/doacaoAdicionada.svg" alt="" id="doacao_add" srcset="">
+              <form action="" class="form-doacoes">
+                <div class="grupo1">
+                  <div class="campo-form">
+                    <label for="nome" class="titulo-form">Nome Completo</label>
+                    <input id="nome-add" type="name">
+                  </div>
+        
+                  <div class="campo-form">
+                    <label for="email" id="email" class="titulo-form">Email</label>
+                    <input id="email-add" type="email">
+                  </div>
+        
+                  <div class="campo-form">
+                    <label for="telefone" id="telefone" class="titulo-form">Telefone</label>
+                    <div class="select-telefone">
+                      <input type="tel" id="tel">
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="grupo2">
+                  <div class="campo-form">
+                    <label for="nome-peca" class="titulo-form">Nome da(s) peça(s)</label>
+                    <div class="select-peca">
+                      <input list="Pecas" type="search" id="search" placeholder="Buscar por peça" onchange="mostrarValor()">
+                      <datalist id="Pecas">
+                        <option value="Placa-mãe">300</option>
+                        <option value="Processador">500</option>
+                        <option value="Memória RAM">200</option>
+                        <option value="Placa de vídeo">1000</option>
+                        <option value="Disco rígido">200</option>
+                        <option value="SSD">200</option>
+                        <option value="Fonte de Alimentação">150</option>
+                        <option value="Coolers / Ventoinhas ">150</option>
+                        <option value="Monitor">400</option>
+                        <option value="Teclado">100</option>
+                        <option value="Mouse">100</option>
+                        <option value="Impressora">200</option>
+                        <option value="Alto-falantes">100</option>
+                        <option value="Fones de ouvido">150</option>
+                        <option value="Câmera">200</option>
+                        <option value="Gabinete básico">70</option>
+                        <option value="Gabinete intermediário">150</option>
+                        <option value="Gabinete avançado/premium">300</option>
+                        <option value="Baia de drive">50</option>
+                        <option value="Slots de expansão">50</option>
+                        <option value="Organizador de cabos">50</option>
+                        <option value="Painel frontal e portas">100</option>
+                        <option value="Dissipador">100</option>
+                        <option value="Filtro de poeira">100</option>
+                    </datalist>
+                    </div>
+        
+                  </div>
+        
+                  <div class="campo-form">
+                    <label for="qtd-peca" class="titulo-form">Qtd. de peça(s)</label>
+                    <input id="qtd_peca" type="number">
+                  </div>
+        
+                  <div class="campo-form">
+                    <label for="componente" class="titulo-form">Tipo de componente</label>
+                    <select name="tipo-componente" id="tipo-componente">
+                      <option id="tipo-placeholder" value=""></option>
+                      <option value="Interno">Interno</option>
+                      <option value="Periferico">Periférico</option>
+                      <option value="Estrutura">Estrutura</option>
+                      <option value="Resfriamento">Resfriamento</option>
+                    </select>
+                  </div>
+        
+                  <div class="campo-form">
+                    <label for="data" class="titulo-form">Data</label>
+                    <input type="date" class="data" id="data_doacao">
+                  </div>
+                  <div class="campo-form">
+                    <label for="hora" class="titulo-form">Hora</label>
+                    <input type="time" class="hora" id="hora_doacao">
+                  </div>
+                </div>
+        
+                <div class="campo-descricao">
+                  <label for="descricao" class="titulo-form">Descrição:</label>
+                  <textarea name="descricao-peca" id="descricao-peca" cols="10" rows="15"
+                    placeholder="Descrição sobre a peça"></textarea>
+                </div>
+        
+                <div class="botoes">
+                  <button onclick="criarUsuarioDoacao()" type="button" class="btn-salvar">Gerar Codigo</button>
+                  <div class="campo-form">
+                    <label for="data" class="titulo-form">Seu codigo</label>
+                    <input type="text" id="codigo">
+                  </div>
+                </div>
+              </form>
+            </section>
+          </main>
 
     </div>
 
@@ -229,6 +341,7 @@
     <script src="../js/firebase-init.js"></script>
     <script src="../js/register.js"></script>
     <script src="../js/logout.js"></script>
+    <script src="../js/adm/AdicionarDoaçõesAdmTeste.js"></script>
     <script type="text/javascript" src="../js/qrcode_cupom.js"></script>
     <script type="text/javascript" src="../js/qrcode.js"></script>
     <script type="text/javascript" src="../js/qrcode.min.js"></script>

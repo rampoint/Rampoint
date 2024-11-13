@@ -3,6 +3,10 @@
     width: 100vw;
   }
 
+  .sidebar ul li {
+    height: 90px;
+  }
+
   .grupo {
     margin-left: 6em;
   }
@@ -16,6 +20,52 @@
     gap: 10em;
     margin: auto;
   }
+
+  .grafico-coluna {
+    margin-left: 0;
+  }  
+
+  .titulo-doacoes {
+    margin: 3em 1.5em 0 5.5em;
+  }
+
+  .grafico-coluna,
+  .grafico-pizza {
+    height: 400px;
+  }
+
+  #container,
+  #container2 {
+    height: 340px;
+  }
+}
+
+@media (max-width: 1920px) {
+  .fundo-titulo {
+    width: 100vw;
+  }
+
+  .sidebar ul li {
+    height: 90px;
+  }
+
+  .grupo {
+    margin-left: 6em;
+  }
+
+  .campo-titulo {
+    margin: 100px 50px 25px 65px;
+  }
+
+  .grupos {
+    justify-content: center;
+    gap: 10em;
+    margin: auto;
+  }
+
+  .grafico-coluna {
+    margin-left: 0;
+  }  
 
   .titulo-doacoes {
     margin: 3em 1.5em 0 5.5em;

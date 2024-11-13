@@ -21,11 +21,10 @@
 
 .mensagens {
   width: 40%;
-  height: 38em;
+  height: 600px;
   background-color: none;
   padding: 20px;
   border-right: 1px solid rgba(0, 0, 0, 0.15);
-  overflow: scroll;
 }
 
 .mensagens h2 {

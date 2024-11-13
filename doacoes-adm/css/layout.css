@@ -1,3 +1,23 @@
+@media (min-width: 1920px) {
+  .fundo-titulo {
+    width: 100vw;
+  }
+
+  .sidebar ul li {
+    height: 90px;
+  }
+}
+
+@media (max-width: 1920px) {
+  .fundo-titulo {
+    width: 100vw;
+  }
+  
+  .sidebar ul li {
+    height: 90px;
+  }
+}
+
 @media (min-width: 1600px) {
   .fundo-titulo {
     width: 100vw;

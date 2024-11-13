@@ -136,6 +136,7 @@ body {
   0% {
     transform: translateY(0px);
   }
+
   100% {
     transform: translateY(20px);
   }
@@ -145,6 +146,7 @@ body {
   0% {
     transform: scale(1);
   }
+
   100% {
     transform: scale(1.2);
   }
@@ -154,13 +156,16 @@ body {
   0% {
     transform: rotate(0deg);
   }
+
   50% {
     transform: rotate(4deg);
   }
+
   100% {
     transform: rotate(0deg);
   }
 }
+
 /* final imagem inicial */
 
 /* começo textos */
@@ -182,6 +187,7 @@ body {
 .perifericos {
   margin-top: 3em;
 }
+
 /* final textos */
 
 /* começo campo de duvida */
@@ -213,8 +219,23 @@ body {
   padding: 10px 20px;
   border: none;
   border-radius: 30px;
-  background-color: var(--azul);
+  background-color: #46C4FF;
   cursor: pointer;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  border-bottom: 4px solid #0076AC;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+#btn img {
+  position: relative;
+  bottom: 1px;
+}
+
+#btn:hover {
+  border-bottom: none;
 }
 /* final campo de duvida */
 
@@ -331,8 +352,9 @@ body {
   margin-bottom: 0.5em;
 }
 
-.accordion-header.active + .accordion-body {
-  max-height: 850px; /* Ajuste conforme necessário para acomodar o conteúdo */
+.accordion-header.active+.accordion-body {
+  max-height: 850px;
+  /* Ajuste conforme necessário para acomodar o conteúdo */
   opacity: 1;
 }
 
@@ -351,6 +373,7 @@ body {
 .accordion-header.active .arrow-icon {
   color: var(--azul);
 }
+
 /* final das 'perguntas' */
 
 /* começo do forms de feedback */
@@ -443,8 +466,14 @@ body {
   margin: 1em 1em 0.5em 0;
 }
 
+#btn-feedback img {
+  position: relative;
+  top: 1px;
+  right: 1px;
+}
+
 #btn-enviar {
-  background-color: var(--azul);
+  background-color: #46C4FF;
   border: none;
   border-radius: 25px;
   width: 40px;
@@ -453,11 +482,17 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.15);
   position: relative;
   right: 1em;
   bottom: 5em;
   cursor: pointer;
+  border-bottom: 4px solid #0076AC;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+#btn-enviar:hover {
+  border-bottom: none;
 }
 
 /* final do forms de feedback */

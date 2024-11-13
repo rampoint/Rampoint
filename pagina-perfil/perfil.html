@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="./css/perfil.css">
     <link rel="stylesheet" href="./css/layout.css">
 
+    <!-- icons -->
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet">
+
     <!-- links do calendario -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
@@ -31,7 +34,7 @@
             sidebar.style.display = 'none'
         }
     </script>
-     <div class="modal" id="alteracao_popup">
+    <div class="modal" id="alteracao_popup">
         <img src="img/notf perfil.svg" id="alteracao_popUp" alt="">
     </div>
 
@@ -127,7 +130,7 @@
             <div class="inicio">
                 <div class="moedas-esquerda">
                     <div class="moeda-verde">
-                            
+
                         <img src="./img/moeda-verde.svg" alt="Ícone moeda-verde" id="moeda-verde">
                         <div class="shadow"></div>
                     </div>
@@ -387,8 +390,21 @@
 
                                 </div>
                                 <div class="area-excluir">
+                                    <i class='bx bx-down-arrow-circle' style='color:#2a55c2'></i>
                                     <button class="btn-excluir">EXCLUIR</button>
                                     <p class="mensagem-cupom">Cupom prestes à expirar</p>
+                                </div>
+
+                                <!-- Modal -->
+                                <div id="modal-excluir" class="modal-excluir">
+                                    <div class="modal-content">
+                                        <span class="close">&times;</span>
+                                        <div class="linha-modal"></div>
+                                        <h2>Você tem certeza que deseja excluir o cupom?</h2>
+                                        <p>Seus pontos irão voltar para o perfil</p>
+                                        <button id="confirmar-excluir" class="btn-confirmar">Sim, excluir</button>
+                                        <button id="cancelar-excluir" class="btn-cancelar">Cancelar</button>
+                                    </div>
                                 </div>
                             </li>
                             <hr id="linha">
@@ -400,8 +416,21 @@
 
                                 </div>
                                 <div class="area-excluir">
+                                    <i class='bx bx-down-arrow-circle' style='color:#2a55c2'></i>
                                     <button class="btn-excluir">EXCLUIR</button>
                                     <p class="mensagem-cupom">Cupom prestes à expirar</p>
+                                </div>
+
+                                <!-- Modal -->
+                                <div id="modal-excluir" class="modal-excluir">
+                                    <div class="modal-content">
+                                        <span class="close">&times;</span>
+                                        <div class="linha-modal"></div>
+                                        <h2>Você tem certeza que deseja excluir o cupom?</h2>
+                                        <p>Seus pontos irão voltar para o perfil</p>
+                                        <button id="confirmar-excluir" class="btn-confirmar">Sim, excluir</button>
+                                        <button id="cancelar-excluir" class="btn-cancelar">Cancelar</button>
+                                    </div>
                                 </div>
                             </li>
                             <hr id="linha">
@@ -413,8 +442,21 @@
 
                                 </div>
                                 <div class="area-excluir">
+                                    <i class='bx bx-down-arrow-circle' style='color:#2a55c2'></i>
                                     <button class="btn-excluir">EXCLUIR</button>
                                     <p class="mensagem-cupom">Cupom prestes à expirar</p>
+                                </div>
+
+                                <!-- Modal -->
+                                <div id="modal-excluir" class="modal-excluir">
+                                    <div class="modal-content">
+                                        <span class="close">&times;</span>
+                                        <div class="linha-modal"></div>
+                                        <h2>Você tem certeza que deseja excluir o cupom?</h2>
+                                        <p>Seus pontos irão voltar para o perfil</p>
+                                        <button id="confirmar-excluir" class="btn-confirmar">Sim, excluir</button>
+                                        <button id="cancelar-excluir" class="btn-cancelar">Cancelar</button>
+                                    </div>
                                 </div>
                             </li>
                             <hr id="linha">
@@ -462,15 +504,15 @@
                 </div>
             </div>
             <p class="copyright">Copyright &copy; 2024 Rampoint</p>
-
         </footer>
 
 
-        <script defer src="./js/modal.js"></script>
-        <script defer src="./js/scroll.js"></script>
-        <script defer src="./js/toggle.js"></script>
-        <script defer src="./js/modalPerfil.js"></script>
-        <script defer src="./js/modal-mood.js"></script>
+        <script src="./js/modal.js"></script>
+        <script src="./js/scroll.js"></script>
+        <script src="./js/toggle.js"></script>
+        <script src="./js/modalPerfil.js"></script>
+        <script src="./js/modal-mood.js"></script>
+        <script src="./js/modal-excluirCupom.js"></script>
         <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-app-compat.js"></script>
         <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-auth-compat.js"></script>
         <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-database-compat.js"></script>

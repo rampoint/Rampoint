@@ -865,6 +865,10 @@
   .fundo-medalha-raio {
     width: 28.3em;
   }
+
+  #ram-vidro {
+    top: -4em;
+  }
 }
 
 @media (max-width: 460px) {
@@ -1233,6 +1237,14 @@
   #ram-golias {
     width: 32%;
   }
+
+  .cupom-vidro {
+    margin-left: 0;
+  }
+
+  .cupom-golias {
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 400px) {
@@ -1312,10 +1324,11 @@
 
   .modal-content-vidro .campo-curiosidade {
     width: 17em;
-    height: 14em;
+    height: 10em;
     flex-direction: column;
     padding: 0;
-    padding-bottom: 40px;
+    padding-bottom: 70px;
+    margin-top: 0;
   }
 
   .brilho-vidro {
@@ -1329,11 +1342,11 @@
   }
 
   #ram-vidro {
-    width: 120px;
-    left: 3em;
-    top: -70px;
+    width: 100px;
+    left: -122px;
+    top: 120px;
     bottom: 0;
-    transform: rotate(30deg);
+    transform: rotate(346deg);
   }
 
   .texto-golias {
@@ -1355,6 +1368,7 @@
     flex-direction: column;
     padding: 0;
     padding-bottom: 70px;
+    margin-top: -2em;
   }
 
   .cupom-golias {
@@ -1595,7 +1609,6 @@
   #ram-golias {
     width: 125px;
     bottom: 0;
-    top: 40px;
     left: -88px;
   }
 
@@ -1699,5 +1712,13 @@
   .fundo-medalha-raio .objetivo {
     width: 50%;
     bottom: 6.5em;
+  }
+
+  #ram-vidro {
+    width: 100px;
+    left: -105px;
+    top: 143px;
+    bottom: 0;
+    transform: rotate(326deg);
   }
 }

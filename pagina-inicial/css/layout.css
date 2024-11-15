@@ -943,6 +943,18 @@
 }
 
 @media (max-width: 500px) {
+  .sidebar {
+    height: 70vh;
+  }
+
+  .footer-logo {
+    margin-bottom: 2em;
+  }
+
+  #footer-logo {
+    width: 130px;
+  }
+
   #texto-inicial {
     width: 55%;
   }

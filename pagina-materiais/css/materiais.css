@@ -139,6 +139,7 @@ body {
   bottom: 0;
   right: 22em;
 }
+
 /* final lado esquerdo */
 
 /* começo lado direito */
@@ -171,6 +172,7 @@ body {
   bottom: 20em;
   left: 25em;
 }
+
 /* final lado direito */
 
 .interno-inicial,
@@ -217,6 +219,7 @@ body {
     transform: rotate(0deg);
   }
 }
+
 /* final imagem inicial */
 
 /* começo textos */
@@ -243,6 +246,7 @@ body {
 .perifericos {
   margin-top: 3em;
 }
+
 /* final textos */
 
 /* começo carrossel-materiais  */
@@ -658,6 +662,7 @@ body {
   justify-content: end;
   margin-top: 25px;
 }
+
 /* final estrutura gabinete */
 
 /* começo estrutura baias de drive */
@@ -718,6 +723,7 @@ body {
   justify-content: end;
   margin-top: 35px;
 }
+
 /* final estrutura baias de drive */
 
 /* começo estrutura slots */
@@ -779,6 +785,7 @@ body {
   justify-content: end;
   margin-top: 25px;
 }
+
 /* final estrutura slots */
 
 /* começo estrutura organizador */
@@ -837,6 +844,7 @@ body {
   justify-content: end;
   margin-top: 25px;
 }
+
 /* final estrutura organizador */
 
 /* começo estrutura painel */
@@ -895,6 +903,7 @@ body {
   justify-content: end;
   margin-top: 25px;
 }
+
 /* final estrutura painel */
 /* final imagem estrutura */
 
@@ -955,6 +964,7 @@ body {
   justify-content: end;
   margin-top: 25px;
 }
+
 /* final gpu */
 
 /* começo placa mae */
@@ -1014,6 +1024,7 @@ body {
   justify-content: end;
   margin-top: 25px;
 }
+
 /* final placa mae */
 
 /* começo memória ram */
@@ -1057,7 +1068,7 @@ body {
   color: var(--preto);
   width: 50%;
   position: relative;
-  top: 0;
+  top: 1em;
   left: 12.3em;
   text-align: start;
 }
@@ -1072,6 +1083,7 @@ body {
   justify-content: end;
   margin-top: 25px;
 }
+
 /* final memoria ram */
 
 /* começo hdd/sdd */
@@ -1130,6 +1142,7 @@ body {
   justify-content: end;
   margin-top: 25px;
 }
+
 /* final hdd/sdd */
 
 /* começo psu */
@@ -1188,6 +1201,7 @@ body {
   justify-content: end;
   margin-top: 25px;
 }
+
 /* final psu */
 
 /* começo cpu */
@@ -1246,6 +1260,7 @@ body {
   justify-content: end;
   margin-top: 25px;
 }
+
 /* final cpu */
 /* final imagem internos */
 
@@ -1306,6 +1321,7 @@ body {
   justify-content: end;
   margin-top: 25px;
 }
+
 /* final monitor */
 
 /* começo teclado */
@@ -1364,6 +1380,7 @@ body {
   justify-content: end;
   margin-top: 25px;
 }
+
 /* final teclado */
 
 /* começo mouse */
@@ -1422,6 +1439,7 @@ body {
   justify-content: end;
   margin-top: 25px;
 }
+
 /* final mouse */
 
 /* começo alto falante */
@@ -1480,6 +1498,7 @@ body {
   justify-content: end;
   margin-top: 25px;
 }
+
 /* final alto falante */
 /* final imagem perifericos */
 
@@ -1540,6 +1559,7 @@ body {
   justify-content: end;
   margin-top: 25px;
 }
+
 /* final ventoinhas */
 
 /* começo dissipadores */
@@ -1598,6 +1618,7 @@ body {
   justify-content: end;
   margin-top: 25px;
 }
+
 /* final dissipadores */
 
 /* começo filtro de poeira */
@@ -1656,6 +1677,7 @@ body {
   justify-content: end;
   margin-top: 25px;
 }
+
 /* final filtro de poeira */
 
 /* começo cooler */
@@ -1714,6 +1736,7 @@ body {
   justify-content: end;
   margin-top: 25px;
 }
+
 /* final cooler */
 /* final imagem resfriamento */
 /* final carrossel-materiais */

@@ -72,7 +72,7 @@ function register() {
       let uid = userCredential.user.uid;
       saveUserData(uid, email);
       setTimeout(() => {
-        window.location.href = "../../pagina-inicial/inicial.html";
+        window.location.href = "../pagina-inicialLogado/inicial-logado.html";
       }, 3000);
     })
     .catch((error) => {

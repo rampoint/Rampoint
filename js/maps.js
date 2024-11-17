@@ -1,7 +1,8 @@
 let map;
 
 function initMap(lat, long) {
-  const barueri = { lat,long}; // Coordenadas de Barueri
+  const barueri = { lat: lat, lng: long };
+  console.log(barueri); // Coordenadas de Barueri
   map = new google.maps.Map(document.getElementById("map"), {
     zoom: 12,
     center: barueri,
@@ -9,10 +10,10 @@ function initMap(lat, long) {
 
   const request = {
     location: barueri,
-    radius: "5000", // Raio em metros para buscar ecopontos
+    radius: "3000", // Raio em metros para buscar ecopontos
     keyword: "ecoponto", // Palavra-chave para busca
   };
-
+  document.getElementById("lugares").innerHTML = "";
   const service = new google.maps.places.PlacesService(map);
   service.nearbySearch(request, (results, status) => {
     if (status === google.maps.places.PlacesServiceStatus.OK) {
@@ -61,7 +62,7 @@ function createMarker(place) {
   // Adiciona a imagem se disponível
   if (place.photos && place.photos.length > 0) {
     const photoUrl = place.photos[0].getUrl({ maxWidth: 200 }); // Obtém a URL da primeira foto
-    contentString += `<img src="${photoUrl}" alt="Foto de ${place.name}">`;
+    contentString += `<img src="${photoUrl}" class="imagem-ecoponto" alt="Foto de ${place.name}">`;
   } else {
     contentString += "<p>Imagem não disponível</p>";
   }
@@ -78,20 +79,25 @@ function criarTabelaMapa(ecoponto) {
   // Cria um novo elemento <section>
   var lugar = document.createElement("section");
   lugar.classList.add("card");
-
   // Adiciona o conteúdo HTML ao lugar
   lugar.innerHTML = `
     <div class="card-content">
         <h1 id="info-ecoponto">Ecoponto</h1>
         <h1 id="nome-ecoponto">${ecoponto.name}</h1>
-        <p id="texto-endereco"><span id="endereco">Endereço:</span> ${ecoponto.formatted_address}</p>
-        <p><span id="telefone">Telefone:</span> <span class="numero">${ecoponto.formatted_phone_number}</span></p>
+        <p id="texto-endereco"><span id="endereco">Endereço:</span> ${
+          ecoponto.formatted_address
+        }</p>
+        <p><span id="telefone">Telefone:</span> <span class="numero">${
+          ecoponto.formatted_phone_number
+            ? ecoponto.formatted_phone_number
+            : "Telefone não disponível"
+        }</span></p>
     </div>
 `;
 
   // Verifica se há fotos e adiciona a imagem
   if (ecoponto.photos && ecoponto.photos.length > 0) {
-    const photoUrl = ecoponto.photos[0].getUrl({ maxWidth: 200 }); // Obtém a URL da primeira foto
+    const photoUrl = ecoponto.photos[0].getUrl({ width: 500, height: 150 }); // Obtém a URL da primeira foto
     const img = document.createElement("img"); // Cria um novo elemento <img>
     img.src = photoUrl; // Define a URL da imagem
     img.classList.add("imagem-ecoponto"); // Adiciona a classe à imagem
@@ -115,8 +121,28 @@ function limpa_formulário_cep() {
 function meu_callback(conteudo) {
   if (!("erro" in conteudo)) {
     // Atualiza os campos com os valores.
+
     document.getElementById("rua").value = conteudo.logradouro;
     document.getElementById("bairro").value = conteudo.bairro;
+
+    const geocoder = new google.maps.Geocoder();
+
+    // Faz a busca usando o nome do local
+    geocoder.geocode({ address: conteudo.localidade }, (results, status) => {
+      if (status === google.maps.GeocoderStatus.OK) {
+        // Exibe o primeiro resultado encontrado
+        const endereco = results[0].formatted_address;
+        const latitude = results[0].geometry.location.lat();
+        const longitude = results[0].geometry.location.lng();
+        console.log(latitude);
+        console.log(longitude);
+        initMap(latitude, longitude);
+      } else {
+        document.getElementById("resultado").innerHTML =
+          "Nenhum resultado encontrado.";
+        console.error("Erro ao buscar endereço:", status);
+      }
+    });
   } else {
     // CEP não encontrado.
     limpa_formulário_cep();
@@ -157,21 +183,4 @@ function pesquisacep(valor) {
     // cep sem valor, limpa formulário.
     limpa_formulário_cep();
   }
-
-  // Exemplo de CEP
-  const apiKey = "AIzaSyAvvanoz7U50-4faMR7NRMsBcc0CfOnCZY";
-  fetch(
-    `https://maps.googleapis.com/maps/api/geocode/json?address=${cep}&key=${apiKey}`
-  )
-    .then((response) => response.json())
-    .then((data) => {
-      if (data.results.length > 0) {
-        const location = data.results[0].geometry.location;
-        console.log(location); // { lat: ..., lng: ... }
-        initMap(location.lat, location.lng);
-      } else {
-        console.error("Nenhum resultado encontrado para o CEP:"+cep);
-      }
-    })
-    .catch((error) => console.error("Erro ao buscar coordenadas:", error));
 }

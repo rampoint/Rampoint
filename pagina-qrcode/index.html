@@ -96,17 +96,17 @@
                 enviado no seu email.</p>
         </div>
         <div class="qrcode-box">
-            <div class="codigo-l1">
-                <!-- <div class="colocar">
+            <!--  <div class="codigo-l1">
+                 <div class="colocar">
                     <p class="titulo-form">Coloque seu codigo aqui:</p>
                     <input type="text">
-                </div> -->
+                </div>
                 <div class="inserir">
                     <p class="titulo-form">Inserir pontos:</p>
                     <input id="inserir-total" placeholder="TOTAL: 2000" type="text">
-                    
-                </div>
-            </div>
+
+                </div> 
+            </div> -->
             <div class="codigo-l2">
                 <form>
                     <p class="titulo-form">Escolha a loja parceira:</p>
@@ -121,15 +121,47 @@
                         <i id="seta-form"><img src="img/setaform.svg" alt="seta"></i>
                     </div>
                 </form>
-                <div class="botaoC">
-                    <button id="gerar-button" onclick="verificarPontos()">Concluído</button>
+                <div class="ramcoin">
+                    <p id="pontos_usuario" class="qtd-ramcoin">0</p>
+                    <img src="./img/ramcoin.svg" class="moeda-ramcoin" alt="Ícone moeda 'Ramcoin'">
+                    <div class="text-block">
+                        <div class="textos">
+                            <img src="./img/ramcoin.svg" alt="">
+                            <p class="texto-ramcoin">Ramcoin é a moeda da rampoint utilizada para você acumular e
+                                trocar por um cupom. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="p-info-l2">Você só pode resgatar um cupom por vez!</p>
+
+            <div class="grupo-cupons">
+                <div class="select-cupom">
+                    <button onclick="" value="cupom-golias" class="btn-mood" id="cupom-golias">
+                        <h3 class="titulo-cupom">RAM GOLIAS</h3>
+                        <img src="./img/cupom-golias.svg" id="cupom-golias" alt="Imagem cupom 'Rã Golias'">
+                    </button>
+                </div>
+                <div class="select-cupom">
+                    <button onclick="" value="cupom-vidro" class="btn-mood" id="cupom-vidro">
+                        <h3 class="titulo-cupom">RAM DE VIDRO</h3>
+                        <img src="./img/cupom-vidro.svg" alt="Imagem cupom 'Rã de Vidro'">
+                    </button>
+                </div>
+                <div class="select-cupom">
+                    <button onclick="" value="cupom-dourado" class="btn-mood" id="cupom-dourado">
+                        <h3 class="titulo-cupom">RAM DOURADA</h3>
+                        <img src="./img/cupom-dourado.svg" id="cupom-dourado" alt="Imagem cupom 'Rã Dourada'">
+                    </button>
                 </div>
             </div>
 
             <div class="qrcode-salvar">
                 <div id="qrcode"></div>
                 <div class="down-salvar">
-                    <button id="download">Download</button><br><br>
+                    <button id="gerar-button" onclick="verificarPontos()">Concluído</button>
+                    <button id="download">Download</button>
                     <img id="image-to-download" src="path/to/image/qrcode.png" alt="Imagem para Download"
                         style="display:none;">
 
@@ -176,120 +208,112 @@
                 <div class="shadow-moeda-roxa"></div>
             </div>
         </div>
-        <main class="main-content light-theme">
-    
-            <header class="fundo-titulo">
-              <h1 class="titulo-pagina">Adicionar doações</h1>
-        
-              <div class="theme-toggle">
-                <i id="theme-icon" class='bx bx-sun'></i>
-              </div>
-            </header>
-        
-            <section class="campo-titulo">
-              <h2 class="titulo-inicial">Informações gerais</h2>
-            </section>
-        
-            <section class="campo-inicial">
-              <img src="img/doacaoAdicionada.svg" alt="" id="doacao_add" srcset="">
-              <form action="" class="form-doacoes">
-                <div class="grupo1">
-                  <div class="campo-form">
-                    <label for="nome" class="titulo-form">Nome Completo</label>
-                    <input id="nome-add" type="name">
-                  </div>
-        
-                  <div class="campo-form">
-                    <label for="email" id="email" class="titulo-form">Email</label>
-                    <input id="email-add" type="email">
-                  </div>
-        
-                  <div class="campo-form">
-                    <label for="telefone" id="telefone" class="titulo-form">Telefone</label>
-                    <div class="select-telefone">
-                      <input type="tel" id="tel">
-                    </div>
-                  </div>
-                </div>
-        
-                <div class="grupo2">
-                  <div class="campo-form">
-                    <label for="nome-peca" class="titulo-form">Nome da(s) peça(s)</label>
-                    <div class="select-peca">
-                      <input list="Pecas" type="search" id="search" placeholder="Buscar por peça" onchange="mostrarValor()">
-                      <datalist id="Pecas">
-                        <option value="Placa-mãe">300</option>
-                        <option value="Processador">500</option>
-                        <option value="Memória RAM">200</option>
-                        <option value="Placa de vídeo">1000</option>
-                        <option value="Disco rígido">200</option>
-                        <option value="SSD">200</option>
-                        <option value="Fonte de Alimentação">150</option>
-                        <option value="Coolers / Ventoinhas ">150</option>
-                        <option value="Monitor">400</option>
-                        <option value="Teclado">100</option>
-                        <option value="Mouse">100</option>
-                        <option value="Impressora">200</option>
-                        <option value="Alto-falantes">100</option>
-                        <option value="Fones de ouvido">150</option>
-                        <option value="Câmera">200</option>
-                        <option value="Gabinete básico">70</option>
-                        <option value="Gabinete intermediário">150</option>
-                        <option value="Gabinete avançado/premium">300</option>
-                        <option value="Baia de drive">50</option>
-                        <option value="Slots de expansão">50</option>
-                        <option value="Organizador de cabos">50</option>
-                        <option value="Painel frontal e portas">100</option>
-                        <option value="Dissipador">100</option>
-                        <option value="Filtro de poeira">100</option>
-                    </datalist>
-                    </div>
-        
-                  </div>
-        
-                  <div class="campo-form">
-                    <label for="qtd-peca" class="titulo-form">Qtd. de peça(s)</label>
-                    <input id="qtd_peca" type="number">
-                  </div>
-        
-                  <div class="campo-form">
-                    <label for="componente" class="titulo-form">Tipo de componente</label>
-                    <select name="tipo-componente" id="tipo-componente">
-                      <option id="tipo-placeholder" value=""></option>
-                      <option value="Interno">Interno</option>
-                      <option value="Periferico">Periférico</option>
-                      <option value="Estrutura">Estrutura</option>
-                      <option value="Resfriamento">Resfriamento</option>
-                    </select>
-                  </div>
-        
-                  <div class="campo-form">
-                    <label for="data" class="titulo-form">Data</label>
-                    <input type="date" class="data" id="data_doacao">
-                  </div>
-                  <div class="campo-form">
-                    <label for="hora" class="titulo-form">Hora</label>
-                    <input type="time" class="hora" id="hora_doacao">
-                  </div>
-                </div>
-        
-                <div class="campo-descricao">
-                  <label for="descricao" class="titulo-form">Descrição:</label>
-                  <textarea name="descricao-peca" id="descricao-peca" cols="10" rows="15"
-                    placeholder="Descrição sobre a peça"></textarea>
-                </div>
-        
-                <div class="botoes">
-                  <button onclick="criarUsuarioDoacao()" type="button" class="btn-salvar">Gerar Codigo</button>
-                  <div class="campo-form">
-                    <label for="data" class="titulo-form">Seu codigo</label>
-                    <input type="text" id="codigo">
-                  </div>
-                </div>
-              </form>
-            </section>
-          </main>
 
+        <div class="info-box-doacoes">
+            <h1 class="h1-info">Adicionar doação</h1>
+            <p class="p-info">Informações gerais</p>
+        </div>
+
+        <section class="campo-inicial">
+            <img src="img/doacaoAdicionada.svg" alt="" id="doacao_add" srcset="">
+            <form action="" class="form-doacoes">
+                <div class="grupo1">
+                    <div class="campo-form">
+                        <label for="nome" class="titulo-form">Nome Completo</label>
+                        <input id="nome-add" type="name">
+                    </div>
+
+                    <div class="campo-form">
+                        <label for="email" id="email" class="titulo-form">Email</label>
+                        <input id="email-add" type="email">
+                    </div>
+
+                    <div class="campo-form">
+                        <label for="telefone" id="telefone" class="titulo-form">Telefone</label>
+                        <div class="select-telefone">
+                            <input type="tel" id="tel">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grupo2">
+                    <div class="campo-form">
+                        <label for="nome-peca" class="titulo-form">Nome da(s) peça(s)</label>
+                        <div class="select-peca">
+                            <input list="Pecas" type="search" id="search" placeholder="Buscar por peça"
+                                onchange="mostrarValor()">
+                            <datalist id="Pecas">
+                                <option value="Placa-mãe">300</option>
+                                <option value="Processador">500</option>
+                                <option value="Memória RAM">200</option>
+                                <option value="Placa de vídeo">1000</option>
+                                <option value="Disco rígido">200</option>
+                                <option value="SSD">200</option>
+                                <option value="Fonte de Alimentação">150</option>
+                                <option value="Coolers / Ventoinhas ">150</option>
+                                <option value="Monitor">400</option>
+                                <option value="Teclado">100</option>
+                                <option value="Mouse">100</option>
+                                <option value="Impressora">200</option>
+                                <option value="Alto-falantes">100</option>
+                                <option value="Fones de ouvido">150</option>
+                                <option value="Câmera">200</option>
+                                <option value="Gabinete básico">70</option>
+                                <option value="Gabinete intermediário">150</option>
+                                <option value="Gabinete avançado/premium">300</option>
+                                <option value="Baia de drive">50</option>
+                                <option value="Slots de expansão">50</option>
+                                <option value="Organizador de cabos">50</option>
+                                <option value="Painel frontal e portas">100</option>
+                                <option value="Dissipador">100</option>
+                                <option value="Filtro de poeira">100</option>
+                            </datalist>
+                        </div>
+                    </div>
+
+                    <div class="campo-form">
+                        <label for="qtd-peca" class="titulo-form">Qtd. de peça(s)</label>
+                        <input id="qtd_peca" type="number">
+                    </div>
+
+                    <div class="campo-form">
+                        <label for="componente" class="titulo-form">Tipo de componente</label>
+                        <select name="tipo-componente" id="tipo-componente">
+                            <option id="tipo-placeholder" value=""></option>
+                            <option value="Interno">Interno</option>
+                            <option value="Periferico">Periférico</option>
+                            <option value="Estrutura">Estrutura</option>
+                            <option value="Resfriamento">Resfriamento</option>
+                        </select>
+                    </div>
+
+                    <div class="campo-form">
+                        <label for="data" class="titulo-form">Data</label>
+                        <input type="date" class="data" id="data_doacao">
+                    </div>
+                    <div class="campo-form">
+                        <label for="hora" class="titulo-form">Hora</label>
+                        <input type="time" class="hora" id="hora_doacao">
+                    </div>
+                </div>
+
+                <div class="campo-descricao">
+                    <label for="descricao" class="titulo-form">Descrição:</label>
+                    <textarea name="descricao-peca" id="descricao-peca" cols="10" rows="15"
+                        placeholder="Descrição sobre a peça">
+                    </textarea>
+
+                    <div class="botoes">
+                        <div class="campo-form">
+                            <label for="data" class="titulo-form">Seu codigo</label>
+                            <input type="text" id="codigo">
+                        </div>
+                        <button onclick="criarUsuarioDoacao()" type="button" class="btn-salvar">Gerar Codigo</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <!-- </main> -->
     </div>
 
     <footer class="footer-container">
@@ -330,8 +354,8 @@
             </div>
         </div>
         <p class="copyright">Copyright &copy; 2024 Rampoint</p>
-
     </footer>
+
     <script src="./js/modal.js"></script>
     <script src="./js/scroll-modal.js"></script>
     <script src="./js/animacao-btnQrcode.js"></script>
@@ -364,7 +388,7 @@
                 if (snapshot.exists()) {
                     const dadosUsuario = snapshot.val();
                     console.log(snapshot.val().pontos)
-                    makeCode(dadosUsuario.pontos,uid)
+                    makeCode(dadosUsuario.pontos, uid)
                 }
             })
                 .catch((error) => {
@@ -372,17 +396,17 @@
                 })
         }
 
-        function atualizarPontos(restante,uid){
+        function atualizarPontos(restante, uid) {
             firebase.database().ref('users/' + uid).update({
-                pontos:restante
+                pontos: restante
             }
             ).then(() => {
                 console.log('Atualizou os pontos')
             }).catch((error) => {
-                console.log(error +'deu não')
+                console.log(error + 'deu não')
             })
         }
-        function makeCode(pontos,uid) {
+        function makeCode(pontos, uid) {
 
             var qrcode = new QRCode("qrcode", {
                 width: 150,
@@ -392,14 +416,14 @@
                 correctLevel: QRCode.CorrectLevel.H
             });
             var pontosQrcode = document.getElementById("inserir-total").value;
-            
+
             var cupom = pontos - pontosQrcode
-            
+
             if (cupom < 0) {
                 console.log('dá não filho')
             } else {
                 qrcode.makeCode(cupom);
-                atualizarPontos(cupom,uid)
+                atualizarPontos(cupom, uid)
             }
 
 

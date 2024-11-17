@@ -104,7 +104,7 @@
     position: relative;
     left: 3em;
   }
-  
+
   .info-box {
     margin-top: 90px;
   }
@@ -230,6 +230,7 @@
   .hideOnMobile {
     display: none;
   }
+
   .menu-button {
     display: block;
   }
@@ -291,6 +292,7 @@
 }
 
 @media (min-width: 320px) and (max-width: 421px) {
+
   /* footer */
   .footer-container {
     width: 100%;
@@ -340,11 +342,13 @@
   .copyright {
     margin: 5em 5em 0 5em;
   }
+
   /* footer */
 }
 
 /* Dispositivos móveis médios (em pé) */
 @media (max-width: 375px) {
+
   /* Estilos aqui */
   .flor img {
     visibility: hidden;
@@ -358,6 +362,7 @@
 
 /* Dispositivos móveis grandes (em pé) */
 @media (max-width: 425px) {
+
   /* Estilos aqui */
   .footer-container .logo {
     margin: 0;
@@ -390,6 +395,7 @@
     margin-top: 40px;
     max-width: 100%;
   }
+
   /*   
   .geral, .contato {
     margin: 70px;
@@ -490,5 +496,66 @@
   nav a:hover {
     color: var(--branco);
     text-decoration-line: underline;
+  }
+}
+
+@media (max-width: 455px) {
+  .footer-container input[type="email"] {
+    width: 250px;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer-container input[type="email"] {
+    width: 210px;
+  }
+
+  .redes-sociais,
+  .geral,
+  .contato {
+    width: 330px;
+  }
+}
+
+@media (max-width: 360px) {
+  .footer-container input[type="email"] {
+    width: 190px;
+  }
+
+  .redes-sociais,
+  .geral,
+  .contato {
+    width: 300px;
+  }
+}
+
+@media (max-width: 340px) {
+  .footer-container input[type="email"] {
+    width: 160px;
+  }
+
+  .redes-sociais,
+  .geral,
+  .contato {
+    width: 270px;
+  }
+}
+
+@media (max-width: 330px) {
+
+  #cep,
+  #rua,
+  #bairro {
+    padding-right: 15px;
+  }
+
+  .cep-form,
+  .rua-form,
+  .bairro-form {
+    margin-left: 10px;
+  }
+
+  .footer-container input[type="email"] {
+    width: 140px;
   }
 }

@@ -94,7 +94,7 @@ nav a:hover {
   position: fixed;
   top: 0;
   right: 0;
-  height: 98vh;
+  height: 65vh;
   width: 250px;
   background-color: var(--azul);
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
@@ -107,14 +107,17 @@ nav a:hover {
   margin: 10px 10px 10px 10px;
   font-family: "Batangas";
 }
+
 .sidebar li {
   width: 100%;
   margin-top: 0px;
 }
+
 .sidebar a {
   width: 100%;
   color: var(--branco);
 }
+
 .menu-button {
   display: none;
 }
@@ -127,20 +130,22 @@ nav a:hover {
 }
 
 .footer-logo {
-  margin-top: 10em;
-  
+  margin-top: 6em;
+
 }
 
 @media (max-width: 670px) {
-  .footer-logo{
-    margin-top:5em;
+  .footer-logo {
+    margin-top: 5em;
   }
 }
+
 /* Dispositivos móveis em modo paisagem (tela horizontal) */
 @media (max-width: 767px) {
+
   /* Estilos aqui */
-  .footer-logo{
-    margin-top:3em;
+  .footer-logo {
+    margin-top: 6em;
   }
 }
 
@@ -150,13 +155,8 @@ nav a:hover {
 }
 
 .menus {
-margin-top:60px;
+  margin-top: 60px;
 }
-
-
-
-
-
 
 #footer-logo {
   padding: 0;
@@ -220,7 +220,7 @@ margin-top:60px;
   font-family: "Poppins-medium";
 }
 
-.texto-perfil{
+.texto-perfil {
   padding: 0;
 }
 
@@ -271,6 +271,7 @@ margin-top:60px;
   width: 90px;
   margin-bottom: 1em;
 }
+
 /* modal sem perfil */
 
 .modalBtn {
@@ -307,7 +308,8 @@ margin-top:60px;
   flex-direction: column;
   align-items: center;
 }
-#perfil{
+
+#perfil {
   width: 45px;
 }
 
@@ -325,7 +327,7 @@ margin-top:60px;
   align-items: center;
   justify-content: center;
   margin-top: -40px;
-  
+
 }
 
 /* .fundo {

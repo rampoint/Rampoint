@@ -182,6 +182,7 @@ input:focus {
 } */
 
 @media (max-width: 1000px) {
+
   .geral,
   .redes-sociais {
     margin-right: 3em;
@@ -236,7 +237,6 @@ input:focus {
 
   .footer-container .descricao-footer ul {
     list-style-type: none;
-    padding: 0px 5px;
   }
 
   .descricao-footer {
@@ -278,7 +278,6 @@ input:focus {
 
   .footer-container .descricao-footer ul {
     list-style-type: none;
-    padding: 0px 5px;
   }
 
   .descricao-footer {
@@ -314,7 +313,35 @@ input:focus {
   }
 }
 
-@media (min-width: 320px) and (max-width: 435px) {
+@media (max-width: 395px) {
+  .footer-container input[type="email"] {
+    width: 180px;
+  }
+
+  .email {
+    margin: 0 15px;
+  }
+
+  .geral,
+  .redes-sociais,
+  .contato {
+    width: 260px;
+  }
+}
+
+@media (max-width: 335px) {
+  .email {
+    margin: 0 15px;
+  }
+
+  .geral,
+  .redes-sociais,
+  .contato {
+    width: 260px;
+  }
+}
+
+@media (max-width: 320px) {
   .footer-container {
     width: 100%;
     height: auto;
@@ -326,12 +353,11 @@ input:focus {
   .geral,
   .redes-sociais,
   .contato {
-    width: 310px;
+    width: 260px;
   }
 
   .footer-container .descricao-footer ul {
     list-style-type: none;
-    padding: 0px 5px;
   }
 
   .descricao-footer {
@@ -344,11 +370,11 @@ input:focus {
   }
 
   .email {
-    width: 200px;
+    width: 280px;
     height: auto;
     display: flex;
     flex-direction: row;
-    margin: 0 85px;
+    margin: 0 15px;
   }
 
   #email {
@@ -357,17 +383,5 @@ input:focus {
 
   .footer-container .logo {
     width: 100%;
-  }
-}
-
-@media (max-width: 330px) {
-  .email {
-    margin: 0 25px;
-  }
-
-  .geral,
-  .redes-sociais,
-  .contato {
-    width: 260px;
   }
 }

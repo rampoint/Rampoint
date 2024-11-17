@@ -1,99 +1,177 @@
-function initMap() {
-  // Define a localização do centro de Barueri
-  const barueriLocation = { lat: -23.5119535, lng: -46.8649492190 }; // Coordenadas aproximadas do centro
+let map;
 
-  // Cria um novo mapa
-  const map = new google.maps.Map(document.getElementById("map"), {
-      center: barueriLocation,
-      zoom: 13,
+function initMap(lat, long) {
+  const barueri = { lat,long}; // Coordenadas de Barueri
+  map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 12,
+    center: barueri,
   });
 
-  // Cria um marcador para o centro de Barueri
-  const marker = new google.maps.Marker({
-      position: barueriLocation,
-      map: map,
-      title: "Centro de Barueri"
-  });
-
-  // Define o serviço de busca de lugares
-  const service = new google.maps.places.PlacesService(map);
-
-  // Configura a requisição para buscar ecopontos
   const request = {
-      location: barueriLocation,
-      radius: '50000', // Raio em metros
-      type: ['point_of_interest'], // Tipo de lugar
-      keyword: 'ecoponto' // Palavra-chave para filtrar ecopontos
+    location: barueri,
+    radius: "5000", // Raio em metros para buscar ecopontos
+    keyword: "ecoponto", // Palavra-chave para busca
   };
 
-  // Faz a busca por lugares
+  const service = new google.maps.places.PlacesService(map);
   service.nearbySearch(request, (results, status) => {
-      if (status === google.maps.places.PlacesServiceStatus.OK) {
-          if (results.length > 0) {
-              const ecopontoMaisProximo = results[0]; // Pega o primeiro ecoponto encontrado
-              createMarker(ecopontoMaisProximo); // Cria um marcador no mapa
-
-              // Calcula a distância até o ecoponto mais próximo
-              calcularDistancia(barueriLocation, ecopontoMaisProximo.geometry.location);
-
-              // Obtém o endereço formatado do ecoponto
-              obterEndereco(ecopontoMaisProximo.place_id);
-          } else {
-              document.getElementById("distancia").innerText = "Nenhum ecoponto encontrado.";
-          }
-      } else {
-          console.error('Erro ao buscar ecopontos:', status);
+    if (status === google.maps.places.PlacesServiceStatus.OK) {
+      for (let i = 0; i < results.length; i++) {
+        getPlaceDetails(results[i]);
       }
+    } else {
+      console.error("Erro ao buscar ecopontos:", status);
+    }
+  });
+}
+
+function getPlaceDetails(place) {
+  const service = new google.maps.places.PlacesService(map);
+  service.getDetails({ placeId: place.place_id }, (details, status) => {
+    if (status === google.maps.places.PlacesServiceStatus.OK) {
+      createMarker(details);
+      criarTabelaMapa(details);
+    } else {
+      console.error("Erro ao obter detalhes do lugar:", status);
+    }
+  });
+}
+
+function createMarker(place) {
+  const marker = new google.maps.Marker({
+    map: map,
+    position: place.geometry.location,
+    title: place.name,
   });
 
-  // Função para criar marcadores no mapa
-  function createMarker(place) {
-      const marker = new google.maps.Marker({
-          map: map,
-          position: place.geometry.location,
-          title: place.name,
-      });
+  const infowindow = new google.maps.InfoWindow();
+  let contentString = `<div class="infowindow-content">
+                            <strong>${place.name}</strong><br>
+                            ${
+                              place.formatted_address
+                                ? place.formatted_address
+                                : "Endereço não disponível"
+                            }<br>
+                            ${
+                              place.formatted_phone_number
+                                ? place.formatted_phone_number
+                                : "Telefone não disponível"
+                            }<br>`;
 
-      // Adiciona um evento de clique para exibir informações sobre o lugar
-      google.maps.event.addListener(marker, 'click', () => {
-          const infowindow = new google.maps.InfoWindow();
-          infowindow.setContent(place.name);
-          infowindow.open(map, marker);
-      });
+  // Adiciona a imagem se disponível
+  if (place.photos && place.photos.length > 0) {
+    const photoUrl = place.photos[0].getUrl({ maxWidth: 200 }); // Obtém a URL da primeira foto
+    contentString += `<img src="${photoUrl}" alt="Foto de ${place.name}">`;
+  } else {
+    contentString += "<p>Imagem não disponível</p>";
   }
 
-  // Função para calcular a distância entre dois pontos
-  function calcularDistancia(origem, destino) {
-      const distanceService = new google.maps.DistanceMatrixService();
-      distanceService.getDistanceMatrix({
-          origins: [origem],
-          destinations: [destino],
-          travelMode: google.maps.TravelMode.DRIVING,
-          unitSystem: google.maps.UnitSystem.METRIC,
-      }, (response, status) => {
-          if (status === google.maps.DistanceMatrixStatus.OK) {
-              const distanciaEmMetros = response.rows[0].elements[0].distance.value; // Pega a distância em metros
-              const distanciaEmKm = (distanciaEmMetros / 1000).toFixed(2); // Converte para quilômetros e formata com duas casas decimais
-              document.getElementById("distancia").innerText = "Distância até o ecoponto mais próximo: " + distanciaEmKm + " km"; // Exibe no HTML
-          } else {
-              console.error('Erro ao calcular a distância:', status);
-          }
-      });
+  contentString += "</div>";
+
+  google.maps.event.addListener(marker, "click", () => {
+    infowindow.setContent(contentString);
+    infowindow.open(map, marker);
+  });
+}
+
+function criarTabelaMapa(ecoponto) {
+  // Cria um novo elemento <section>
+  var lugar = document.createElement("section");
+  lugar.classList.add("card");
+
+  // Adiciona o conteúdo HTML ao lugar
+  lugar.innerHTML = `
+    <div class="card-content">
+        <h1 id="info-ecoponto">Ecoponto</h1>
+        <h1 id="nome-ecoponto">${ecoponto.name}</h1>
+        <p id="texto-endereco"><span id="endereco">Endereço:</span> ${ecoponto.formatted_address}</p>
+        <p><span id="telefone">Telefone:</span> <span class="numero">${ecoponto.formatted_phone_number}</span></p>
+    </div>
+`;
+
+  // Verifica se há fotos e adiciona a imagem
+  if (ecoponto.photos && ecoponto.photos.length > 0) {
+    const photoUrl = ecoponto.photos[0].getUrl({ maxWidth: 200 }); // Obtém a URL da primeira foto
+    const img = document.createElement("img"); // Cria um novo elemento <img>
+    img.src = photoUrl; // Define a URL da imagem
+    img.classList.add("imagem-ecoponto"); // Adiciona a classe à imagem
+    lugar.appendChild(img); // Adiciona a imagem ao lugar
   }
 
-  // Função para obter o endereço formatado do ecoponto usando seu place_id
-  function obterEndereco(placeId) {
-      const geocoder = new google.maps.Geocoder();
-      geocoder.geocode({ placeId: placeId }, (results, status) => {
-          if (status === google.maps.GeocoderStatus.OK && results[0]) {
-              const enderecoFormatado = results[0].formatted_address; // Pega o endereço formatado
-              document.getElementById("texto-endereco").innerText = "Endereço do ecoponto mais próximo: " + enderecoFormatado; // Exibe no HTML
-          } else {
-              console.error('Erro ao obter o endereço:', status);
-          }
-      });
+  // Adiciona o lugar ao contêiner com o ID 'lugares'
+  document.getElementById("lugares").appendChild(lugar);
+}
+
+document.getElementById("cep").addEventListener("blur", function () {
+  pesquisacep(this.value);
+});
+
+function limpa_formulário_cep() {
+  // Limpa valores do formulário de cep.
+  document.getElementById("rua").value = "";
+  document.getElementById("bairro").value = "";
+}
+
+function meu_callback(conteudo) {
+  if (!("erro" in conteudo)) {
+    // Atualiza os campos com os valores.
+    document.getElementById("rua").value = conteudo.logradouro;
+    document.getElementById("bairro").value = conteudo.bairro;
+  } else {
+    // CEP não encontrado.
+    limpa_formulário_cep();
+    alert("CEP não encontrado.");
   }
 }
 
-// Inicializa o mapa quando a página carrega
-window.onload = initMap;
+function pesquisacep(valor) {
+  // Nova variável "cep" somente com dígitos.
+  var cep = valor.replace(/\D/g, "");
+
+  // Verifica se o campo cep possui valor informado.
+  if (cep != "") {
+    // Expressão regular para validar o CEP.
+    var validacep = /^[0-9]{8}$/;
+
+    // Valida o formato do CEP.
+    if (validacep.test(cep)) {
+      // Preenche os campos com "..." enquanto consulta webservice.
+      document.getElementById("rua").value = "...";
+      document.getElementById("bairro").value = "...";
+
+      // Cria um elemento javascript.
+      var script = document.createElement("script");
+
+      // Sincroniza com o callback.
+      script.src =
+        "https://viacep.com.br/ws/" + cep + "/json/?callback=meu_callback";
+
+      // Insere script no documento e carrega o conteúdo.
+      document.body.appendChild(script);
+    } else {
+      // cep é inválido.
+      limpa_formulário_cep();
+      alert("Formato de CEP inválido.");
+    }
+  } else {
+    // cep sem valor, limpa formulário.
+    limpa_formulário_cep();
+  }
+
+  // Exemplo de CEP
+  const apiKey = "AIzaSyAvvanoz7U50-4faMR7NRMsBcc0CfOnCZY";
+  fetch(
+    `https://maps.googleapis.com/maps/api/geocode/json?address=${cep}&key=${apiKey}`
+  )
+    .then((response) => response.json())
+    .then((data) => {
+      if (data.results.length > 0) {
+        const location = data.results[0].geometry.location;
+        console.log(location); // { lat: ..., lng: ... }
+        initMap(location.lat, location.lng);
+      } else {
+        console.error("Nenhum resultado encontrado para o CEP:"+cep);
+      }
+    })
+    .catch((error) => console.error("Erro ao buscar coordenadas:", error));
+}

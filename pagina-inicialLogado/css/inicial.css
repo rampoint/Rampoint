@@ -719,3 +719,10 @@ input {
   justify-content: center;
   flex-direction: column;
 }
+
+#map {
+  width: 60%;
+  height: 300px;
+  border-radius: 20px;
+  margin: auto;
+}

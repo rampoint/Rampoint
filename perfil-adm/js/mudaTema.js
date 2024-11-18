@@ -101,6 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   const applyTheme = (theme) => {
+    console.log(theme);
     document.body.classList.toggle("dark-theme", theme === "dark");
     document.body.classList.toggle("light-theme", theme === "light");
 
@@ -138,6 +139,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
     themeIcon.classList.toggle("bx-moon", theme === "dark");
     themeIcon.classList.toggle("bx-sun", theme !== "dark");
+    var alteracao = document.querySelector(`#alteracao_popup_light`);
+    var outro = document.querySelector(`#alteracao_popup_dark`);
+    if (theme == "light") {
+      outro.classList.remove("-active");
+      alteracao.classList.toggle("-active");
+    } else {
+      var alteracao = document.querySelector(`#alteracao_popup_light`);
+      var outro = document.querySelector(`#alteracao_popup_dark`);
+      alteracao.classList.remove("-active");
+      outro.classList.toggle("-active");
+    }
 
     updateGraficoBackground(theme);
     localStorage.setItem("theme", theme);

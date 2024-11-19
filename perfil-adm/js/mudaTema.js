@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
     return {
       doacoesPorMes: months,
       usuariosPorMes: newUsers,
-      pecasPorTipo: Object.entries(pecasPorTipo).map(([name, value]) => ({
+      pecasPorTipo: Object  .entries(pecasPorTipo).map(([name, value]) => ({
         name,
         y: value,
         z: 90 + Math.random() * 50

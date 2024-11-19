@@ -1,5 +1,20 @@
-// Firebase Authentication and User Management
-// Utility Functions
+
+function formatarData(data) {
+  const dia = String(data.getDate()).padStart(2, '0'); // Pega o dia e adiciona zero à esquerda se necessário
+  const mes = String(data.getMonth() + 1).padStart(2, '0'); // Pega o mês (0-11) e adiciona 1
+  const ano = data.getFullYear(); // Pega o ano completo
+
+  return `${dia}/${mes}/${ano}`; // Retorna a data no formato dd/mm/yyyy
+}
+
+// Obtém a data atual do computador
+const dataAtual = new Date();
+// Formata a data
+const dataFormatada = formatarData(dataAtual);
+// Exibe a data na tela
+
+
+
 const Form = {
   email: () => document.getElementById("email-cadastro"),
   senha: () => document.getElementById("senha-cadastro"),
@@ -101,6 +116,7 @@ function saveUserData(uid, email) {
       createdAt: firebase.database.ServerValue.TIMESTAMP,
       cep:cep,
       pontos:0,
+      dataCriacao:dataFormatada
     })
     .then(() => {
       console.log("Dados do usuário salvos com sucesso!");

@@ -2225,7 +2225,7 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 455px) {
   .brilho-vermelho {
     display: none;
   }
@@ -2665,7 +2665,7 @@
   }
 }
 
-@media (max-width: 410px) {
+@media (max-width: 420px) {
   .img-fundo {
     left: 4em;
   }
@@ -2700,6 +2700,128 @@
   .fundo-filtro,
   .fundo-cooler {
     width: 18em;
+    height: 45em;
+  }
+
+  #content6 .ramcoin {
+    left: 9.8em;
+    bottom: 3.5em;
+  }
+
+  .img-estrutura {
+    bottom: 3em;
+  }
+
+  .img-baias {
+    bottom: 1em;
+  }
+
+  .img-painel,
+  .img-gpu {
+    width: 170px;
+    left: 4em;
+    bottom: 1em;
+  }
+
+  .img-organizador {
+    bottom: 0em;
+    width: 14em;
+    height: 14em;
+  }
+
+  .img-placa-mae,
+  .img-psu {
+    left: 3em;
+    width: 200px;
+    bottom: 1em;
+  }
+
+  .img-hdd {
+    width: 180px;
+    bottom: 1em;
+  }
+
+  .img-monitor {
+    bottom: 2em;
+  }
+
+  .img-teclado {
+    bottom: 1em;
+    width: 190px;
+  }
+
+  .img-mouse {
+    width: 180px;
+  }
+
+  .img-alto-falante {
+    bottom: 2em;
+  }
+
+  .img-ventoinhas {
+    bottom: 2em;
+    width: 210px;
+  }
+
+  #content17 .circulo-resfriamento {
+    transform: translate(-20%, 55%);
+  }
+
+  .img-dissipadores {
+    height: 130px;
+    bottom: -15px;
+  }
+
+  .titulo-baias {
+    left: 70px;
+  }
+
+  .titulo-slots {
+    left: 45px;
+  }
+
+  .titulo-organizador,
+  .titulo-painel {
+    left: 20px;
+  }
+
+  .titulo-gpu {
+    left: 30px;
+  }
+
+  .titulo-placa-mae {
+    left: 85px;
+  }
+
+  .titulo-memoria-ram {
+    left: 70px;
+  }
+
+  .titulo-cpu {
+    left: 40px;
+  }
+
+  .titulo-monitor,
+  .titulo-teclado,
+  .titulo-mouse {
+    left: 100px;
+  }
+
+  .titulo-alto-falante {
+    left: 70px;
+  }
+
+  .titulo-ventoinhas,
+  .titulo-dissipadores {
+    left: 80px;
+  }
+
+  .titulo-filtro {
+    left: 60px;
+  }
+
+  .titulo-cooler {
+    left: 110px;
   }
 }
 

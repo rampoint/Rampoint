@@ -327,7 +327,36 @@ function exibirDadosUsuario(users) {
 }
 
 function pegarCupons(users){
-  
+
+  var containerCupom = document.createElement('li')
+  containerCupom.classList.add('conjunto-cupons')
+  containerCupom.innerHTML = `<img src="../pagina-qrcode/img/" alt="">
+                                <div class="lista-textos2">
+                                    <p class="titulo-cupom-amarelo">CUPOM RAM DOURADA</p>
+                                    <p class="porcentagem-cupom-amarelo">30%</p>
+
+                                </div>
+                                <div class="area-excluir">
+                                    <i class='bx bx-down-arrow-circle' style='color:#2a55c2'></i>
+                                    <button class="btn-excluir">EXCLUIR</button>
+                                    <p class="mensagem-cupom">Cupom prestes à expirar</p>
+                                </div>
+
+                                <!-- Modal -->
+                                <div id="modal-excluir" class="modal-excluir">
+                                    <div class="modal-content">
+                                        <span class="close">&times;</span>
+                                        <div class="linha-modal"></div>
+                                        <h2>Você tem certeza que deseja excluir o cupom?</h2>
+                                        <p>Seus pontos irão voltar para o perfil</p>
+                                        <button id="confirmar-excluir" class="btn-confirmar">Sim, excluir</button>
+                                        <button id="cancelar-excluir" class="btn-cancelar">Cancelar</button>
+                                    </div>
+                                </div>`
+}
+
+function descobrirCupom(users){
+
 }
 
 function mudarDados() {

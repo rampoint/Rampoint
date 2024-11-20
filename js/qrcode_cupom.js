@@ -116,8 +116,6 @@ function salvarCupom() {
 }
 
 function pegarPorcentagem(pts){
-  
-
   if(pts >= 1000){
     return 30
   }
@@ -129,7 +127,6 @@ function pegarPorcentagem(pts){
     return 10
   }
 }
-
 function pegarNome(){
   const cupomText = document.querySelector(".grupo-cupons .titulo-cupom");
   const cupomNome = cupomText.innerHTML;

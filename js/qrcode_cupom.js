@@ -85,10 +85,50 @@ function makeCode(pontos, uid) {
   }
 }
 
+
 function salvarCupom() {
   const imgElement = document.querySelector("#qrcode img");
-  // Obtém o valor do atributo 'src'
   const imgSrc = imgElement.getAttribute("src");
-  // Exibe o valor no console
-  console.log(imgSrc); // Saída: data:image/png;base64,iVBORw0KGgoAAAANSUhEU...
+  console.log(imgSrc); 
+  const cupomAtivo = document.querySelector(".grupo-cupons .select-cupom.active");
+  const pontosQrcode = cupomAtivo.getAttribute("value");
+  const cupomText = document.querySelector(".grupo-cupons .titulo-cupom");
+  const cupomNome = cupomText.innerHTML;
+
+
+  firebase.auth().onAuthStateChanged((user) => {
+    if (user) {
+      globalUserId = user.uid;
+      console.log(globalUserId)
+      firebase.database().ref('users/'+globalUserId+'/cupons').set({
+        nome_cupom:cupomNome,
+        porcentagem:pegarPorcentagem(pontosQrcode),
+        qrCode:imgSrc
+      }).then(() => {
+        console.log('cupom salvo')
+      }).catch((error) => {
+         console.error(error) 
+      } )
+    } else {
+      alert('Faça o login')
+    }
+  })
+}
+
+function pegarPorcentagem(pts){
+  if(pts >= 1000){
+    return 30
+  }
+  else 
+  if(pts >= 500){
+    return 20
+  }else 
+  if(pts >= 250){
+    return 10
+  }
+}
+function pegarNome(){
+  const cupomText = document.querySelector(".grupo-cupons .titulo-cupom");
+  const cupomNome = cupomText.innerHTML;
+  console.log(pontosQrcode)
 }

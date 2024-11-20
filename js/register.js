@@ -1,7 +1,6 @@
-
 function formatarData(data) {
-  const dia = String(data.getDate()).padStart(2, '0'); // Pega o dia e adiciona zero à esquerda se necessário
-  const mes = String(data.getMonth() + 1).padStart(2, '0'); // Pega o mês (0-11) e adiciona 1
+  const dia = String(data.getDate()).padStart(2, "0"); // Pega o dia e adiciona zero à esquerda se necessário
+  const mes = String(data.getMonth() + 1).padStart(2, "0"); // Pega o mês (0-11) e adiciona 1
   const ano = data.getFullYear(); // Pega o ano completo
 
   return `${dia}/${mes}/${ano}`; // Retorna a data no formato dd/mm/yyyy
@@ -12,8 +11,6 @@ const dataAtual = new Date();
 // Formata a data
 const dataFormatada = formatarData(dataAtual);
 // Exibe a data na tela
-
-
 
 const Form = {
   email: () => document.getElementById("email-cadastro"),
@@ -33,7 +30,7 @@ const Form = {
     document.getElementById("erro-senha-obrigatorio"),
   erro_nao_corresponde: () => document.getElementById("erro-nao-corresponde"),
   cadastrar_button: () => document.getElementById("cadastrar"),
-  cep: () => document.getElementById('cep')
+  cep: () => document.getElementById("cep"),
 };
 
 const form_usuario = {
@@ -102,9 +99,8 @@ function saveUserData(uid, email) {
   const dataNascimento = Form.data().value;
   const genero = Form.genero().value;
   const database = firebase.database();
-  const cep = Form.cep().value
+  const cep = Form.cep().value;
   const userRef = database.ref("users/" + uid);
-   
 
   userRef
     .set({
@@ -114,9 +110,9 @@ function saveUserData(uid, email) {
       tel: telefone,
       genero: genero,
       createdAt: firebase.database.ServerValue.TIMESTAMP,
-      cep:cep,
-      pontos:0,
-      dataCriacao:dataFormatada
+      cep: cep,
+      pontos: 0,
+      dataCriacao: dataFormatada,
     })
     .then(() => {
       console.log("Dados do usuário salvos com sucesso!");
@@ -208,7 +204,7 @@ function buscarDadosUsuario(globalUserId) {
     .then((snapshot) => {
       if (snapshot.exists()) {
         const dadosUsuario = snapshot.val();
-        exibirDadosUsuario(dadosUsuario)
+        exibirDadosUsuario(dadosUsuario);
       }
     })
     .catch((error) => {
@@ -221,38 +217,146 @@ function exibirDadosUsuario(users) {
   var currentPage = window.location.href;
   // Verifica se a URL contém uma string específica
   if (currentPage.includes("/pagina-perfil/")) {
+
     document.getElementById("nome_usuario").innerHTML = users.nome;
     document.getElementById("email_usuario").innerHTML = users.email;
-    document.getElementById("emocao_usuario").style.color = users.fotoPerfil.cor_texto;
-    document.getElementById("emocao_usuario").innerHTML = users.fotoPerfil.fotoMensage;
-    document.getElementById("foto-perfil").src = users.fotoPerfil.fotoPerfil;
-    document.getElementById("perfil").src = users.fotoPerfil.fotoPerfil;
+    try {
+      document.getElementById("emocao_usuario").style.color =
+        users.fotoPerfil.cor_texto;
+    } catch (error) {
+      console.error("Erro ao definir cor do texto da emoção:", error.message);
+    }
+    try {
+      document.getElementById("emocao_usuario").innerHTML =
+        users.fotoPerfil.fotoMensage;
+    } catch (error) {
+      console.error("Erro ao definir mensagem da emoção:", error.message);
+    }
+    try {
+      document.getElementById("foto-perfil").src = users.fotoPerfil.fotoPerfil;
+    } catch (error) {
+      console.error("Erro ao definir a foto do perfil:", error.message);
+    }
+
+    try {
+      document.getElementById("perfil").src = users.fotoPerfil.fotoPerfil;
+    } catch (error) {
+      console.error("Erro ao definir a imagem do perfil:", error.message);
+    }
+
     document.getElementById("nome-mudar").placeholder = users.nome;
     document.getElementById("email-mudar").placeholder = users.email;
     document.getElementById("telefone-mudar").placeholder = users.tel;
     document.getElementById("nome-mudar").value = users.nome;
-    document.getElementById("foto-usuario").src = users.fotoPerfil.fotoPerfil;
-    document.getElementById("foto_mudar").src = users.fotoPerfil.fotoPerfil;
+    try {
+      document.getElementById("foto-usuario").src = users.fotoPerfil.fotoPerfil;
+    } catch (error) {
+      console.error("Erro ao definir a foto do usuário:", error.message);
+    }
+
+    try {
+      document.getElementById("foto_mudar").src = users.fotoPerfil.fotoPerfil;
+    } catch (error) {
+      console.error("Erro ao definir a foto para mudar:", error.message);
+    }
     document.getElementById("email-mudar").value = users.email;
     document.getElementById("telefone-mudar").value = users.tel;
-    document.getElementById("nome_modal").style.color = users.fotoPerfil.cor_texto;
+    try {
+      document.getElementById("nome_modal").style.color =
+        users.fotoPerfil.cor_texto;
+    } catch (error) {
+      console.error("Erro ao definir cor do nome no modal:", error.message);
+    }
     document.getElementById("nome_modal").innerHTML = users.nome;
-    document.getElementById("content-sem-perfil").style.backgroundColor = users.fotoPerfil.cor_foto;
+    try {
+      document.getElementById("content-sem-perfil").style.backgroundColor =
+        users.fotoPerfil.cor_foto;
+    } catch (error) {
+      console.error(
+        "Erro ao definir cor de fundo do conteúdo sem perfil:",
+        error.message
+      );
+    }
     document.getElementById("nome_modal").innerHTML = users.nome;
-    document.getElementById('genero-mudar').value = users.genero;
-    document.getElementById('container-perfil').style.boxShadow = users.fotoPerfil.cor_texto_fundo;
-    document.getElementById('pontos_usuario').innerHTML = users.pontos
-    document.getElementsByClassName('container-conquistas')[0].style.boxShadow = users.fotoPerfil.cor_texto_fundo;
-    document.getElementById("medalha-azul-img").src = users.medalhas.azul.img;
-    document.getElementById("medalha-azul").style.display = users.medalhas.azul.display;
-    
+    document.getElementById("genero-mudar").value = users.genero;
+    try {
+      document.getElementById("container-perfil").style.boxShadow =
+        users.fotoPerfil.cor_texto_fundo;
+    } catch (error) {
+      console.error(
+        "Erro ao definir boxShadow do container de perfil:",
+        error.message
+      );
+    }
+    document.getElementById("pontos_usuario").innerHTML = users.pontos;
+    try {
+      const containerConquistas = document.getElementsByClassName(
+        "container-conquistas"
+      )[0];
+      if (containerConquistas) {
+        // Verifica se o elemento existe
+        containerConquistas.style.boxShadow = users.fotoPerfil.cor_texto_fundo;
+      }
+    } catch (error) {
+      console.error("Erro ao definir boxShadow das conquistas:", error.message);
+    }
+
+    try {
+      document.getElementById("medalha-azul-img").src = users.medalhas.azul.img;
+    } catch (error) {
+      console.error("Erro ao definir imagem da medalha azul:", error.message);
+    }
+
+    try {
+      document.getElementById("medalha-azul").style.display =
+        users.medalhas.azul.display;
+    } catch (error) {
+      console.error("Erro ao exibir medalha azul:", error.message);
+    }
+
+
   } else {
     document.getElementById("nome_modal").innerHTML = users.nome;
-    document.getElementById("content-sem-perfil").style.backgroundColor = users.fotoPerfil.cor_foto;
+    document.getElementById("content-sem-perfil").style.backgroundColor =
+      users.fotoPerfil.cor_foto;
     document.getElementById("perfil").src = users.fotoPerfil.fotoPerfil;
     document.getElementById("foto-perfil").src = users.fotoPerfil.fotoPerfil;
-    document.getElementById("nome_modal").style.color = users.fotoPerfil.cor_texto;
+    document.getElementById("nome_modal").style.color =
+      users.fotoPerfil.cor_texto;
   }
+}
+
+function pegarCupons(users){
+
+  var containerCupom = document.createElement('li')
+  containerCupom.classList.add('conjunto-cupons')
+  containerCupom.innerHTML = `<img src="../pagina-qrcode/img/" alt="">
+                                <div class="lista-textos2">
+                                    <p class="titulo-cupom-amarelo">CUPOM RAM DOURADA</p>
+                                    <p class="porcentagem-cupom-amarelo">30%</p>
+
+                                </div>
+                                <div class="area-excluir">
+                                    <i class='bx bx-down-arrow-circle' style='color:#2a55c2'></i>
+                                    <button class="btn-excluir">EXCLUIR</button>
+                                    <p class="mensagem-cupom">Cupom prestes à expirar</p>
+                                </div>
+
+                                <!-- Modal -->
+                                <div id="modal-excluir" class="modal-excluir">
+                                    <div class="modal-content">
+                                        <span class="close">&times;</span>
+                                        <div class="linha-modal"></div>
+                                        <h2>Você tem certeza que deseja excluir o cupom?</h2>
+                                        <p>Seus pontos irão voltar para o perfil</p>
+                                        <button id="confirmar-excluir" class="btn-confirmar">Sim, excluir</button>
+                                        <button id="cancelar-excluir" class="btn-cancelar">Cancelar</button>
+                                    </div>
+                                </div>`
+}
+
+function descobrirCupom(users){
+
 }
 
 function mudarDados() {
@@ -267,37 +371,35 @@ function mudarDados() {
       genero: genero_mudanca,
     })
     .then(() => {
-      mostrarPopupAlteracao()
+      mostrarPopupAlteracao();
       adicionarMedalhas();
     });
 }
 
-
-
 function adicionarMedalhas() {
   const userRef = firebase.database().ref("users/" + globalUserId);
   userRef
-  .child("medalhas/azul")
-  .set({
-    nome: "Engrenagem Solidária",
-    display: "flex",
-    descricao: "Personalizou perfil",
-    img: "https://firebasestorage.googleapis.com/v0/b/rampoint-81352.appspot.com/o/medalhas%2Fmedalha%20azul.svg?alt=media&token=c7134715-8121-44cb-9823-9a013761513d",
-  })
-  .then(() => {
-    setTimeout(() => {
-      mostrarPopupMedalhaAzul() // Volta para fora da tela
-  }, 3000)
+    .child("medalhas/azul")
+    .set({
+      nome: "Engrenagem Solidária",
+      display: "flex",
+      descricao: "Personalizou perfil",
+      img: "https://firebasestorage.googleapis.com/v0/b/rampoint-81352.appspot.com/o/medalhas%2Fmedalha%20azul.svg?alt=media&token=c7134715-8121-44cb-9823-9a013761513d",
+    })
+    .then(() => {
+      setTimeout(() => {
+        mostrarPopupMedalhaAzul(); // Volta para fora da tela
+      }, 3000);
     })
     .catch((error) => {
       console.log("Error:" + error);
     });
-  }
+}
 
-  function apagandoUsuario() {
-    const user = firebase.auth().currentUser;
-    
-    user
+function apagandoUsuario() {
+  const user = firebase.auth().currentUser;
+
+  user
     .delete()
     .then(() => {
       alert("apagado");
@@ -307,10 +409,10 @@ function adicionarMedalhas() {
       alert("nao apagado" + error.code);
       // ...
     });
-    
-    const userRef = firebase.database().ref("users/" + globalUserId);
-    
-    userRef
+
+  const userRef = firebase.database().ref("users/" + globalUserId);
+
+  userRef
     .remove()
     .then(() => {
       alert("Excluido");
@@ -318,28 +420,27 @@ function adicionarMedalhas() {
     .catch((error) => {
       alert("conta nao excluida");
     });
-  }
-  
-  function mostrarPopupAlteracao() {
-    const popup = document.getElementById('alteracao_popup');
-    
-    // Faz o pop-up deslizar para baixo
-    popup.style.top = '20px'; // Ajuste a posição conforme necessário
-  
-    // Após 3 segundos, faz o pop-up deslizar de volta para cima
-    setTimeout(() => {
-        popup.style.top = '-120px'; // Volta para fora da tela
-    }, 3000); // 3000 milissegundos = 3 segundos
-  }
-  function mostrarPopupMedalhaAzul() {
-    const popup = document.getElementById('alteracao_popup_azul');
-    
-    // Faz o pop-up deslizar para baixo
-    popup.style.top = '20px'; // Ajuste a posição conforme necessário
-  
-    // Após 3 segundos, faz o pop-up deslizar de volta para cima
-    setTimeout(() => {
-        popup.style.top = '-120px'; // Volta para fora da tela
-    }, 3000); // 3000 milissegundos = 3 segundos
-  }
-  
+}
+
+function mostrarPopupAlteracao() {
+  const popup = document.getElementById("alteracao_popup");
+
+  // Faz o pop-up deslizar para baixo
+  popup.style.top = "20px"; // Ajuste a posição conforme necessário
+
+  // Após 3 segundos, faz o pop-up deslizar de volta para cima
+  setTimeout(() => {
+    popup.style.top = "-120px"; // Volta para fora da tela
+  }, 3000); // 3000 milissegundos = 3 segundos
+}
+function mostrarPopupMedalhaAzul() {
+  const popup = document.getElementById("alteracao_popup_azul");
+
+  // Faz o pop-up deslizar para baixo
+  popup.style.top = "20px"; // Ajuste a posição conforme necessário
+
+  // Após 3 segundos, faz o pop-up deslizar de volta para cima
+  setTimeout(() => {
+    popup.style.top = "-120px"; // Volta para fora da tela
+  }, 3000); // 3000 milissegundos = 3 segundos
+}

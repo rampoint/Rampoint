@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const firebaseConfig = {
-    apiKey: "AIzaSyDUzAILjPJy3zoUVWkD7U4YdI6MDh_QlS4",
+    apiKey: "AIzaSyDUzAILLjPJy3zoUVWkD7U4YdI6MDh_QlS4",
     authDomain: "rampoint-81352.firebaseapp.com",
     databaseURL: "https://rampoint-81352-default-rtdb.firebaseio.com",
     projectId: "rampoint-81352",
@@ -11,32 +11,12 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   // Inicialização do Firebase
-  firebase.initializeApp(firebaseConfig);
   const database = firebase.database();
 
-  // Processo de elementos para tema
-  const themeIcon = document.getElementById("theme-icon");
-  const elementsToToggle = [
-    document.body,
-    document.querySelector(".main-content"),
-    document.querySelector(".sidebar"),
-    document.querySelector(".span-logo"),
-    document.querySelector(".nome-usuario"),
-    document.querySelector(".titulo-pagina"),
-    document.querySelector(".fundo-titulo"),
-    document.querySelector(".titulo-inicial"),
-    document.querySelector(".subtitulo"),
-    document.querySelector(".titulo-notificacoes"),
-    document.querySelector(".titulo-doadores"),
-    document.querySelector(".grafico-coluna"),
-    document.querySelector(".fundo-notificacoes"),
-    document.querySelector(".link-doacoes"),
-    document.querySelector(".tabela-doadores")
-  ];
-
+  // Função para processar dados do Firebase
   const processFirebaseData = (data) => {
-    const months = Array(12).fill(0);
-    const newUsers = Array(12).fill(0);
+    const months = Array(12).fill(0); // Array para contar doações por mês
+    const newUsers = Array(12).fill(0); // Array para contar novos usuários por mês
     const pecasPorTipo = {
       Interno: 0,
       Resfriamento: 0,
@@ -44,16 +24,24 @@ document.addEventListener("DOMContentLoaded", () => {
       Periférico: 0
     };
 
+    // Processar dados dos usuários
     Object.values(data.users || {}).forEach(user => {
-      const [dia, mes, ano] = user.dataCriacao.split('/');
-      const mesIndex = parseInt(mes) - 1;
-      newUsers[mesIndex]++;
+      // Verifica se dataCriacao está definido e é uma string
+      if (user.dataCriacao && typeof user.dataCriacao === 'string') {
+        const [dia, mes, ano] = user.dataCriacao.split('/');
+        const mesIndex = parseInt(mes) - 1; // Arrays são 0-based
+        newUsers[mesIndex]++;
+      } else {
+        console.warn(`dataCriacao indefinido ou inválido para o usuário: ${JSON.stringify(user)}`);
+      }
 
+      // Processar peças do usuário
       Object.values(user.peças || {}).forEach(peca => {
         const pecaData = new Date(peca.data);
         const pecaMes = pecaData.getMonth();
         months[pecaMes]++;
 
+        // Contar peças por tipo
         if (pecasPorTipo.hasOwnProperty(peca.tipo)) {
           pecasPorTipo[peca.tipo] += parseInt(peca.qtd);
         }
@@ -71,6 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
   };
 
+  // Função para buscar dados do Firebase
   const fetchFirebaseData = () => {
     const usersRef = database.ref('users');
     
@@ -87,6 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   };
 
+  // Função para atualizar os gráficos com os dados processados
   const updateCharts = (theme, data) => {
     Highcharts.chart("container", {
       chart: {
@@ -142,7 +132,26 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   };
 
-  // Tema e elementos para toggle
+  // Theme Toggle Setup
+  const themeIcon = document.getElementById("theme-icon");
+  const elementsToToggle = [
+    document.body,
+    document.querySelector(".main-content"),
+    document.querySelector(".sidebar"),
+    document.querySelector(".span-logo"),
+    document.querySelector(".nome-usuario"),
+    document.querySelector(".titulo-pagina"),
+    document.querySelector(".fundo-titulo"),
+    document.querySelector(".titulo-inicial"),
+    document.querySelector(".subtitulo"),
+    document.querySelector(".titulo-notificacoes"),
+    document.querySelector(".titulo-doadores"),
+    document.querySelector(".grafico-coluna"),
+    document.querySelector(".fundo-notificacoes"),
+    document.querySelector(".link-doacoes"),
+    document.querySelector(".tabela-doadores")
+  ];
+
   const iconSidebar = document.querySelectorAll("i");
   const linkSidebar = document.querySelectorAll(".nav-item");
   const titulotabela = document.querySelectorAll("th");
@@ -183,25 +192,22 @@ document.addEventListener("DOMContentLoaded", () => {
       themeIcon.classList.toggle("bx-moon", theme === "dark");
     }
 
-    return { theme };
+    localStorage.setItem("theme", theme);
+    fetchFirebaseData(); // Refresh chart on theme change
   };
 
-  // Configuração inicial do tema
+  // Initial theme setup
   const savedTheme = localStorage.getItem("theme") || "light";
-  const initialThemeState = applyTheme(savedTheme);
+  applyTheme(savedTheme);
 
-  // Evento de alternância de tema
+  // Theme toggle event listener
   if (themeIcon) {
     themeIcon.addEventListener("click", () => {
       const currentTheme = localStorage.getItem("theme") === "dark" ? "light" : "dark";
-      const themeState = applyTheme(currentTheme);
-      localStorage.setItem("theme", currentTheme);
-      
-      // Atualizar gráfico com dados atuais
-      fetchFirebaseData();
+      applyTheme(currentTheme);
     });
   }
 
-  // Busca inicial de dados
+  // Initial data fetch
   fetchFirebaseData();
 });

@@ -75,11 +75,10 @@ body {
 
 .info-box {
   font-family: "Poppins-medium", sans-serif;
-  margin: auto;
   width: 65%;
   display: flex;
   flex-direction: column;
-  margin-top: 80px;
+  margin-top: 100px;
 }
 
 .h1-info {
@@ -106,8 +105,6 @@ body {
   flex-direction: column;
   padding-top: 20px;
   width: 42%;
-  max-width: 800px;
-  min-width: 400px;
   height: 600px;
   align-items: center;
 }
@@ -188,6 +185,7 @@ body {
 .codigo-l2 {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   width: 100%;
 }
 
@@ -220,11 +218,18 @@ body {
   font-family: "Poppins-semibold";
   color: var(--azul);
   font-size: 14px;
+  margin-top: 15px;
+}
+
+.qrcode-box div .ramcoin {
+  margin-right: 45px;
 }
 
 .ramcoin {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   position: relative;
-  left: 200px;
 }
 
 .text-block {
@@ -258,12 +263,6 @@ body {
 
 .ramcoin:hover .text-block {
   display: block;
-}
-
-.ramcoin {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
 }
 
 .qtd-ramcoin {
@@ -558,7 +557,6 @@ body {
 /* area de add doacao */
 .info-box-doacoes {
   font-family: "Poppins-medium", sans-serif;
-  margin: auto;
   width: 65%;
   display: flex;
   flex-direction: column;
@@ -784,8 +782,7 @@ body {
   width: 250px;
 }
 
-.selected-option,
-#descricao-peca {
+.selected-option{
   background-color: rgba(42, 85, 194, 0.07);
   font-family: "Poppins-regular";
   width: 16em;

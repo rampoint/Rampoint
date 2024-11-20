@@ -46,7 +46,7 @@
   }
 
   .info-box {
-    margin-top: 90px;
+    margin-top: 100px;
   }
 
   .codigo-l1 {
@@ -106,15 +106,11 @@
   }
 
   .info-box {
-    margin-top: 90px;
+    margin-top: 100px;
   }
 }
 
-@media (max-width: 1580px) {
-  .content-sem-perfil {
-    margin-right: 4em;
-  }
-
+@media (max-width: 1600px) {
   .brilho-verde {
     left: 6em;
     right: 0;
@@ -142,360 +138,245 @@
   }
 }
 
-@media (max-width: 1280px) {
-  .brilho-verde {
-    left: 9em;
-  }
-
-  .moeda-verde {
-    bottom: 6em;
-    left: 2em;
-    right: 0;
-  }
-
-  .moeda-amarela {
-    top: 1em;
-    left: 3em;
-    right: 0em;
-  }
-
-  #brilho-amarelo {
-    top: 4em;
-    right: 7em;
-  }
-
-  #estrela {
-    right: 0;
-    left: 2em;
-    top: 5.5em;
-  }
-
-  #brilho-roxo {
-    left: -2em;
-    bottom: 6em;
-  }
-
-  .moeda-verde2 {
-    left: -4em;
-  }
-
-  .moeda-roxa {
-    left: -2em;
-  }
-
-  .qrcode-box input {
-    width: 11em;
-  }
-
-  .codigo-l2 select {
-    margin-left: 0px;
+@media (max-width: 1350px) {
+  .qrcode-box {
+    width: 45%;
   }
 }
 
-@media (max-width: 1024px) {
-  .nav ul {
-    width: 45em;
+@media (max-width: 1280px) {
+  .moedas-esquerda {
+    right: 18em;
   }
 
-  #drop {
+  .grupo-cupons {
+    gap: 0px;
+  }
+}
+
+@media (max-width: 1215px) {
+  .qrcode-box {
+    width: 50%;
+  }
+
+  .moedas-esquerda {
+    right: 22em;
+  }
+}
+
+@media (max-width: 1160px) {
+  .qrcode-box {
+    width: 50%;
+  }
+
+  .moedas-esquerda {
+    right: 20em;
+  }
+
+  .moedas-direita {
+    left: 21em;
+  }
+}
+
+@media (max-width: 1075px) {
+  .qrcode-box {
+    width: 55%;
+  }
+
+  .moedas-direita {
+    bottom: 14em;
+  }
+}
+
+@media (max-width: 1035px) {
+  .moedas-esquerda {
+    right: 19em;
+  }
+
+  .moedas-direita {
+    left: 18em;
+  }
+
+  #brilho-roxo {
+    left: 15px;
+  }
+}
+
+@media (max-width: 1015px) {
+  .hideOnMobile {
+    display: none;
+  }
+
+  .menu-button {
     display: block;
   }
 
-  .qrcode-box input {
-    width: 9em;
+  nav ul {
+    justify-content: space-between;
+    position: fixed;
   }
 
-  .codigo-l2 select {
-    margin-left: -39px;
-    width: 13em;
+  nav a {
+    padding-right: 30px;
   }
 
-  .descricao-footer {
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 40px;
-    max-width: 100%;
+  #logo {
+    margin-left: 20px;
   }
 
-  .copyright {
-    margin-left: 80px;
+  #logo-nav {
+    margin-left: 20px;
+  }
+
+  #perfil {
+    display: none;
+  }
+
+  .sidebar {
+    height: 65vh;
+    right: 0;
+    z-index: 100000;
+  }
+
+  nav a:visited {
+    text-decoration: none;
+    transition: color 1.5s ease-out 1ms;
+  }
+
+  nav a:hover {
+    color: var(--branco);
+    text-decoration-line: underline;
+  }
+
+  #moeda-verde {
+    width: 110px;
+  }
+
+  .shadow {
+    width: 90px;
+  }
+
+  #brilho-amarelo {
+    right: 16em;
+  }
+
+  #moeda-roxa {
+    width: 110px;
+  }
+
+  .shadow-moeda-roxa {
+    margin-left: 7px;
   }
 }
 
 @media (max-width: 985px) {
-  body {
-    overflow-x: hidden;
+  .qrcode-box {
+    width: 60%;
   }
 
-  .hideOnMobile {
-    display: none;
+  #brilho-amarelo {
+    right: 235px;
   }
+}
 
-  .menu-button {
-    display: block;
-  }
-
-  nav ul {
-    width: 57em;
-    justify-content: space-between;
-    position: static;
-    padding-left: 0;
-  }
-
-  nav a {
-    padding-right: 30px;
-  }
-
-  #logo {
-    margin-left: 20px;
-  }
-
-  #logo-nav {
-    margin-left: 20px;
-  }
-
-  #perfil {
-    display: none;
-  }
-
-  nav a:visited {
-    text-decoration: none;
-    transition: color 1.5s ease-out 1ms;
-  }
-
-  nav a:hover {
-    color: var(--branco);
-    text-decoration-line: underline;
-  }
-
-  .sidebar {
-    height: 75vh;
-    right: 4em;
-  }
-
-  .codigo-l2 select {
-    margin-left: 15px;
-    width: 13em;
+@media (max-width: 955px) {
+  .moeda-verde {
+    right: 3em;
   }
 
   .moeda-roxa {
-    left: -5em;
+    left: 0;
+  }
+
+  .moeda-verde2 {
+    left: -20px;
   }
 
   #brilho-roxo {
-    left: -7em;
-  }
-
-  .footer-logo {
-    margin-top: 40%;
+    left: -5px;
   }
 }
 
-@media (min-width: 320px) and (max-width: 421px) {
-
-  /* footer */
-  .footer-container {
-    width: 100%;
-    height: auto;
-    position: none;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .geral {
-    margin-top: 35px;
-    margin-left: 55px;
-  }
-
-  .redes-sociais,
-  .contato {
-    margin-top: 30px;
-    margin-left: 55px;
-  }
-
-  .footer-container .descricao-footer ul {
-    list-style-type: none;
-    padding: 0px 5px;
-  }
-
-  .descricao-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0px;
-    width: 100%;
-  }
-
-  .email {
-    width: 200px;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    margin: 5px 65px;
-  }
-
-  .footer-container .logo {
-    width: 100%;
-  }
-
-  .copyright {
-    margin: 5em 5em 0 5em;
-  }
-
-  /* footer */
-}
-
-/* Dispositivos móveis médios (em pé) */
-@media (max-width: 375px) {
-
-  /* Estilos aqui */
-  .flor img {
-    visibility: hidden;
-  }
-
-  .email {
-    display: flex;
-    flex-wrap: wrap;
+@media (max-width: 925px) {
+  #brilho-amarelo {
+    right: 215px;
   }
 }
 
-/* Dispositivos móveis grandes (em pé) */
-@media (max-width: 425px) {
-
-  /* Estilos aqui */
-  .footer-container .logo {
-    margin: 0;
-    bottom: 20px;
-    flex-direction: column;
-  }
-
-  .flor img {
-    visibility: hidden;
-  }
-
-  .flor img {
-    visibility: hidden;
-  }
-
-  .email {
-    display: flex;
-    flex-direction: row;
-    margin-left: 10px;
-  }
-
-  .footer-container .descricao-footer {
-    margin-top: 0;
-    display: block;
-  }
-
-  .descricao-footer {
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 40px;
-    max-width: 100%;
-  }
-
-  /*   
-  .geral, .contato {
-    margin: 70px;
-
-  }
- */
-  .endereco {
-    max-width: 100%;
-  }
-
-  .footer-container button {
-    margin-right: 10px;
-  }
-
-  .logoBranca-small {
-    width: 150px;
-  }
-
-  h3 {
-    margin-top: 15px;
-  }
-}
-
-/* quebrando a linha da imagem */
-
-@media (max-width: 670px) {
-  .flor img {
-    visibility: hidden;
-  }
-
-  .codigo-l1 {
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .codigo-l2 {
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-
+@media (max-width: 910px) {
   .moedas-esquerda {
-    display: none;
+    right: 17em;
   }
 
   .moedas-direita {
-    display: none;
+    left: 16em;
   }
 
-  .codigo-l2 form {
-    display: block;
-    margin-right: 1em;
+  .brilho-verde {
+    left: 5em;
   }
 
-  .qrcode-salvar {
-    flex-direction: column;
+  #estrela {
+    top: 5em;
+  }
+
+  #brilho-roxo {
+    left: 25px;
+    bottom: 8em;
+  }
+
+  .moeda-roxa {
+    left: -20px;
+  }
+
+  .campo-inicial {
+    width: 720px;
+  }
+
+  #nome-add,
+  #email-add,
+  .select-telefone input,
+  .select-peca,
+  #qtd_peca {
+    width: 14em;
+  }
+
+  #codigo {
+    width: 12em;
+  }
+
+  #descricao-peca {
+    max-width: 25em;
+    min-width: 25em;
+  }
+
+  .botoes {
+    left: 430px;
   }
 }
 
-/* header layout */
-@media (max-width: 895px) {
-  .hideOnMobile {
-    display: none;
+@media (max-width: 875px) {
+  .qrcode-box {
+    width: 65%;
   }
 
-  .menu-button {
-    display: block;
+  .moeda-verde {
+    right: 2em;
   }
 
-  nav ul {
-    justify-content: space-between;
-    position: static;
-    padding-left: 0;
+  .brilho-verde {
+    bottom: 11em;
   }
 
-  nav a {
-    padding-right: 30px;
+  #brilho-amarelo {
+    top: 3em;
   }
+}
 
-  #logo {
-    margin-left: 20px;
-  }
-
-  #logo-nav {
-    margin-left: 20px;
-  }
-
-  #perfil {
-    display: none;
-  }
-
-  nav a:visited {
-    text-decoration: none;
-    transition: color 1.5s ease-out 1ms;
-  }
-
-  nav a:hover {
-    color: var(--branco);
-    text-decoration-line: underline;
+@media (max-width: 845px) {
+  .moeda-verde2 {
+    top: 10px;
+    left: -70px;
   }
 }
 
@@ -558,4 +439,11 @@
   .footer-container input[type="email"] {
     width: 140px;
   }
+}
+
+@media (min-width: 320px) and (max-width: 420px) {
+  .sidebar {
+    height: 45em;
+  }
+
 }

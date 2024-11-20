@@ -1,44 +1,68 @@
-// Inicializa o Firebase (substitua as credenciais pelo seu projeto)
+function formatarData(data) {
+    const dia = String(data.getDate()).padStart(2, '0');
+    const mes = String(data.getMonth() + 1).padStart(2, '0'); // Meses são 0-indexados
+    const ano = data.getFullYear();
+    return `${dia}/${mes}/${ano}`;
+}
 
-// Função para buscar e listar doações por mês com quantidade e tipo da peça
-function listarQuantidadeTipoPorMes() {
-    database.ref('doacoes').once('value').then(snapshot => {
-        const doacoes = snapshot.val();
-        const doacoesPorMes = {};
+// Função para contar usuários por mês
+function contarUsuariosPorMes() {
+    const usuariosRef = database.ref('users');
 
-        // Agrupa as doações por mês
-        for (const key in doacoes) {
-            const doacao = doacoes[key];
-            const dataDoacao = new Date(doacao.data);
-            const mes = dataDoacao.getMonth() + 1; // Mês em formato 1-12
-            
-            // Inicializa o mês se não existir
-            if (!doacoesPorMes[mes]) {
-                doacoesPorMes[mes] = [];
+    usuariosRef.once('value', (snapshot) => {
+        const usuariosPorMes = {};
+
+        snapshot.forEach((usuarioSnapshot) => {
+            const usuario = usuarioSnapshot.val();
+            const mesCriacao = formatarData(new Date(usuario.dataCriacao));
+
+            // Contar usuários por mês
+            if (!usuariosPorMes[mesCriacao]) {
+                usuariosPorMes[mesCriacao] = 0;
             }
+            usuariosPorMes[mesCriacao]++;
+        });
 
-            // Adiciona a quantidade e tipo da peça ao mês correspondente
-            doacoesPorMes[mes].push({
-                qtd: doacao.qtd,
-                tipo: doacao.tipo
-            });
+        // Exibir resultados de usuários no console
+        console.log('Usuários por Mês:');
+        for (const mes in usuariosPorMes) {
+            console.log(`${mes}: ${usuariosPorMes[mes]} usuário(s)`);
         }
-
-        // Exibe as quantidades e tipos agrupados por mês
-        for (let mes = 1; mes <= 12; mes++) {
-            console.log(`\nMês ${mes}:`);
-            if (doacoesPorMes[mes]) {
-                doacoesPorMes[mes].forEach(doacao => {
-                    console.log(`- Quantidade: ${doacao.qtd}, Tipo: ${doacao.tipo}`);
-                });
-            } else {
-                console.log("Nenhuma doação registrada.");
-            }
-        }
-    }).catch(error => {
-        console.error("Erro ao buscar doações:", error);
     });
 }
 
-// Chama a função para listar as quantidades e tipos por mês
-listarQuantidadeTipoPorMes();
+// Função para contar peças por mês
+function contarPecasPorMes() {
+    const usuariosRef = database.ref('users');
+
+    usuariosRef.once('value', (snapshot) => {
+        const pecasPorMes = {};
+
+        snapshot.forEach((usuarioSnapshot) => {
+            const usuario = usuarioSnapshot.val();
+
+            // Contar peças por mês
+            if (usuario.peças) {
+                for (const pecaId in usuario.peças) {
+                    const peca = usuario.peças[pecaId];
+                    const mesPeca = formatarData(new Date(peca.data));
+
+                    if (!pecasPorMes[mesPeca]) {
+                        pecasPorMes[mesPeca] = 0;
+                    }
+                    pecasPorMes[mesPeca] += parseInt(peca.qtd, 10); // Adiciona a quantidade da peça
+                }
+            }
+        });
+
+        // Exibir resultados de peças no console
+        console.log('Peças por Mês:');
+        for (const mes in pecasPorMes) {
+            console.log(`${mes}: ${pecasPorMes[mes]} peça(s)`);
+        }
+    });
+}
+
+// Chamar as funções
+contarUsuariosPorMes();
+contarPecasPorMes();

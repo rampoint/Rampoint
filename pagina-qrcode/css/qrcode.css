@@ -303,7 +303,9 @@ body {
 .select-cupom img {
   width: 100px;
 }
-
+.select-cupom.active img {
+  width: 100px;
+}
 #seta-form {
   position: relative;
   left: -28px;
@@ -830,4 +832,17 @@ body {
 
 .option:hover {
   background-color: #f0f0f0;
+}
+.select-cupom.active {
+  background-color: var(--azul);
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  border-radius: 35px;
+  width: 150px;
+  height: 140px;
+  box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.13) inset;
+  border: solid 5px;
+  border-color: var(--verde);
+  
 }

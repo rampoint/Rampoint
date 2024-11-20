@@ -15,6 +15,12 @@
 </head>
 
 <body>
+  <div class="alteracao" id="alteracao_popup_dark">
+    <img src="img/perfil_editado_dark.svg" alt="" srcset="">
+  </div>
+  <div class="alteracao" id="alteracao_popup_light">
+    <img src="img/perfil_editado.svg" alt="" srcset="">
+  </div>
   <aside class="sidebar">
     <div class="top">
       <div class="logo">
@@ -100,8 +106,8 @@
       <div class="fundo-perfil">
         <img src="./img/foto-perfil.svg" class="foto-perfil-adm" alt="Foto de perfil do administrador">
         <div class="dados-adm">
-          <h3 class="nome-adm" id="nome-adm">Leticia</h3>
-          <p class="email-adm" id="email-adm" >leticia@gmail.com</p>
+          <h3 class="nome-adm" id="nome-adm"></h3>
+          <p class="email-adm" id="email-adm" ></p>
         </div>
         <!-- modal editar perfil -->
         <div class="modal-perfil">
@@ -113,17 +119,17 @@
               <div class="grupo">
                 <div class="campo-form">
                   <label for="nome">Nome</label>
-                  <input type="name"  name="nome" id="nome">
+                  <input type="name"  name="nome" id="nome_adm">
                 </div>
                 <div class="campo-form">
                   <label for="telefone">Telefone</label>
-                  <input type="tel" name="telefone" id="telefone">
+                  <input type="tel" name="telefone" id="telefone_adm">
                 </div>
               </div>
               <div class="grupo">
                 <div class="campo-form">
                   <label for="email-adm">Email</label>
-                  <input type="email" name="email-adm" id="email-adm">
+                  <input type="email" name="email-adm" id="email_adm">
                 </div>
                 <div class="campo-form">
                   <label for="senha">Senha</label>
@@ -132,7 +138,7 @@
               </div>
               <div class="grupo">
                 <div class="botoes">
-                  <button class="btn-salvar">Salvar</button>
+                  <button onclick="atualizarDados()" class="btn-salvar">Salvar</button>
                   <button class="excluir-conta">Excluir conta</button>
                 </div>
               </div>
@@ -151,7 +157,6 @@
           <script src="https://code.highcharts.com/modules/exporting.js"></script>
           <script src="https://code.highcharts.com/modules/export-data.js"></script>
           <script src="https://code.highcharts.com/modules/accessibility.js"></script>
-
           <figure class="highcharts-figure">
             <div id="container"></div>
           </figure>
@@ -172,8 +177,6 @@
   </main>
 
   <script src="./js/sidebar.js"></script>
-  <script src="./js/grafico.js"></script>
-  <script src="./js/grafico-pizza.js"></script>
   <script src="./js/editar-perfil.js"></script>
   <script src="./js/mudaTema.js"></script>
 </body>
@@ -181,7 +184,8 @@
 <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-auth-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-database-compat.js"></script>
 <script src="../js/firebase-init.js"></script>
-<script src="../js/adm/dashboardPerfil.js"></script>
+ <script src="../js/adm/dashboardPerfil.js"></script>
 <script src="../js/adm/validationPerfil.js"></script>
+
 
 </html>

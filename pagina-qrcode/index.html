@@ -137,22 +137,22 @@
             <p class="p-info-l2">Você só pode resgatar um cupom por vez!</p>
 
             <div class="grupo-cupons">
-                <div class="select-cupom">
-                    <button onclick="" value="cupom-golias" class="btn-mood" id="cupom-golias">
+                <div class="select-cupom" value="250" id="cupom-golias">
+                    <button onclick=""  class="btn-mood" >
                         <h3 class="titulo-cupom">RAM GOLIAS</h3>
                         <img src="./img/cupom-golias.svg" id="cupom-golias" alt="Imagem cupom 'Rã Golias'">
                     </button>
                 </div>
-                <div class="select-cupom">
-                    <button onclick="" value="cupom-vidro" class="btn-mood" id="cupom-vidro">
+                <div class="select-cupom" value="500" id="cupom-vidro">
+                    <button onclick=""  class="btn-mood" >
                         <h3 class="titulo-cupom">RAM DE VIDRO</h3>
                         <img src="./img/cupom-vidro.svg" alt="Imagem cupom 'Rã de Vidro'">
                     </button>
                 </div>
-                <div class="select-cupom">
-                    <button onclick="" value="cupom-dourado" class="btn-mood" id="cupom-dourado">
+                <div class="select-cupom active" value="1000" id="cupom-dourado">
+                    <button onclick=""  class="btn-mood" >
                         <h3 class="titulo-cupom">RAM DOURADA</h3>
-                        <img src="./img/cupom-dourado.svg" id="cupom-dourado" alt="Imagem cupom 'Rã Dourada'">
+                        <img src="./img/cupom-dourado.svg"  alt="Imagem cupom 'Rã Dourada'">
                     </button>
                 </div>
             </div>
@@ -370,65 +370,6 @@
     <script type="text/javascript" src="../js/qrcode.js"></script>
     <script type="text/javascript" src="../js/qrcode.min.js"></script>
     <script src="../js/jquery.min.js"></script>
-
-    <script type="text/javascript">
-        function verificarPontos() {
-            firebase.auth().onAuthStateChanged((user) => {
-                if (user) {
-                    globalUserId = user.uid;
-                    console.log(globalUserId)
-                    calcularPontos(globalUserId)
-                } else {
-                    console.log("Nenhum usuário logado.");
-                }
-            });
-        }
-        function calcularPontos(uid) {
-            firebase.database().ref('users/' + uid).once('value').then((snapshot) => {
-                if (snapshot.exists()) {
-                    const dadosUsuario = snapshot.val();
-                    console.log(snapshot.val().pontos)
-                    makeCode(dadosUsuario.pontos, uid)
-                }
-            })
-                .catch((error) => {
-                    console.error("Erro ao buscar dados do usuário:", error);
-                })
-        }
-
-        function atualizarPontos(restante, uid) {
-            firebase.database().ref('users/' + uid).update({
-                pontos: restante
-            }
-            ).then(() => {
-                console.log('Atualizou os pontos')
-            }).catch((error) => {
-                console.log(error + 'deu não')
-            })
-        }
-        function makeCode(pontos, uid) {
-
-            var qrcode = new QRCode("qrcode", {
-                width: 150,
-                height: 150,
-                colorDark: "#000000",
-                colorLight: "#ffffff",
-                correctLevel: QRCode.CorrectLevel.H
-            });
-            var pontosQrcode = document.getElementById("inserir-total").value;
-
-            var cupom = pontos - pontosQrcode
-
-            if (cupom < 0) {
-                console.log('dá não filho')
-            } else {
-                qrcode.makeCode(cupom);
-                atualizarPontos(cupom, uid)
-            }
-
-
-        }
-    </script>
     </div>
     </div>
 </body>

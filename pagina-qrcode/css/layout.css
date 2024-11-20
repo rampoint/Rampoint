@@ -337,7 +337,8 @@
   #email-add,
   .select-telefone input,
   .select-peca,
-  #qtd_peca {
+  #qtd_peca,
+  #tipo-componente {
     width: 14em;
   }
 
@@ -373,12 +374,168 @@
   }
 }
 
-@media (max-width: 845px) {
+@media (max-width: 850px) {
+  .moeda-amarela {
+    right: 3em;
+  }
+
+  #estrela {
+    top: 6em;
+    right: 3em;
+  }
+
+  #brilho-amarelo {
+    right: 185px;
+  }
+
   .moeda-verde2 {
-    top: 10px;
-    left: -70px;
+    top: 20px;
+    left: -50px;
+  }
+
+  .moeda-roxa {
+    left: -30px;
+  }
+
+  #moeda-roxa {
+    width: 100px;
+  }
+
+  .shadow-moeda-roxa {
+    width: 80px;
   }
 }
+
+@media (max-width: 820px) {
+  .moeda-verde {
+    right: 1em;
+  }
+
+  .moedas-direita {
+    left: 14em;
+  }
+
+  .moeda-roxa {
+    left: 0;
+  }
+
+  #brilho-roxo {
+    left: 55px;
+  }
+
+  .moeda-verde2 {
+    left: -20px;
+  }
+
+  .campo-inicial {
+    width: 610px;
+  }
+
+  .campo-descricao {
+    margin-left: 20px;
+  }
+
+  #nome-add,
+  #email-add,
+  .select-telefone input,
+  #qtd_peca,
+  #tipo-componente {
+    width: 12em;
+  }
+
+  .select-peca {
+    width: 10em;
+  }
+
+  #descricao-peca {
+    max-width: 20em;
+    min-width: 20em;
+  }
+
+  .botoes {
+    left: 370px;
+  }
+}
+
+@media (max-width: 790px) {
+  .qrcode-box {
+    width: 70%;
+  }
+
+  .moedas-esquerda {
+    right: 16em;
+  }
+
+  .moeda-verde {
+    right: 2em;
+  }
+
+  #moeda-verde {
+    width: 100px;
+  }
+
+  .shadow {
+    width: 80px;
+  }
+
+  .brilho-verde {
+    left: 3em;
+  }
+
+  .moedas-direita {
+    left: 13em;
+  }
+
+  .moeda-roxa {
+    left: 20px;
+  }
+}
+
+@media (max-width: 760px) {
+  .moedas-esquerda {
+    right: 15em;
+  }
+
+  .moedas-direita {
+    left: 12em;
+  }
+}
+
+@media (max-width: 740px) {
+  .qrcode-box {
+    width: 75%;
+  }
+
+  #moeda-verde {
+    width: 80px;
+  }
+
+  .shadow {
+    width: 60px;
+  }
+
+  .moeda-verde {
+    right: 34px;
+  }
+
+  #brilho-amarelo {
+    right: 175px;
+  }
+
+  #brilho-roxo {
+    left: 75px;
+  }
+
+  #moeda-roxa {
+    width: 90px;
+  }
+
+  .shadow-moeda-roxa {
+    width: 70px;
+  }
+}
+
+@media (max-width: 725px) {}
 
 @media (max-width: 455px) {
   .footer-container input[type="email"] {

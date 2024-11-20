@@ -594,11 +594,20 @@ body {
 .grupo2 {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   margin-top: 3em;
   gap: 10px;
+}
+
+.grupo3 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3em;
+  gap: 50px;
 }
 
 .campo-form {

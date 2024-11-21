@@ -20,12 +20,28 @@ cupomDourado.addEventListener("click", () => {
   cupomVidro.classList.remove("active");
 });
 
+firebase.auth().onAuthStateChanged((user) => {
+  if (user) {
+    globalUserId = user.uid;
+    console.log(globalUserId);
+    firebase.database().ref('users/'+globalUserId).once('value').then((snapshot) =>{
+      var data = snapshot.val()
+      document.getElementById('pontos_usuario').innerHTML = data.pontos
+    })
+    
+    // Seleciona a div com a classe 'active'
+  } else {
+    console.log("Nenhum usuário logado.");
+  }
+})
+
 function verificarPontos() {
   firebase.auth().onAuthStateChanged((user) => {
     if (user) {
       globalUserId = user.uid;
       console.log(globalUserId);
       calcularPontos(globalUserId);
+      
       // Seleciona a div com a classe 'active'
     } else {
       console.log("Nenhum usuário logado.");
@@ -129,11 +145,6 @@ function pegarPorcentagem(pts){
   if(pts >= 250){
     return 10
   }
-}
-function pegarNome(){
-  const cupomText = document.querySelector(".grupo-cupons .titulo-cupom");
-  const cupomNome = cupomText.innerHTML;
-  console.log(pontosQrcode)
 }
 
 function gerarCodigoAleatorio(tamanho = 10) {

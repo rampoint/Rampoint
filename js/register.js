@@ -118,7 +118,7 @@ function saveUserData(uid, email) {
       console.log("Dados do usuário salvos com sucesso!");
     })
     .catch((error) => {
-      console.error("Erro ao salvar dados do usuário:", error);
+      console.log("Erro ao salvar dados do usuário:", error);
     });
 }
 
@@ -208,7 +208,7 @@ function buscarDadosUsuario(globalUserId) {
       }
     })
     .catch((error) => {
-      console.error("Erro ao buscar dados do usuário:", error);
+      console.log("Erro ao buscar dados do usuário:", error);
     });
 }
 
@@ -224,24 +224,24 @@ function exibirDadosUsuario(users) {
       document.getElementById("emocao_usuario").style.color =
         users.fotoPerfil.cor_texto;
     } catch (error) {
-      console.error("Erro ao definir cor do texto da emoção:", error.message);
+      console.log("Erro ao definir cor do texto da emoção:", error.message);
     }
     try {
       document.getElementById("emocao_usuario").innerHTML =
         users.fotoPerfil.fotoMensage;
     } catch (error) {
-      console.error("Erro ao definir mensagem da emoção:", error.message);
+      console.log("Erro ao definir mensagem da emoção:", error.message);
     }
     try {
       document.getElementById("foto-perfil").src = users.fotoPerfil.fotoPerfil;
     } catch (error) {
-      console.error("Erro ao definir a foto do perfil:", error.message);
+      console.log("Erro ao definir a foto do perfil:", error.message);
     }
 
     try {
       document.getElementById("perfil").src = users.fotoPerfil.fotoPerfil;
     } catch (error) {
-      console.error("Erro ao definir a imagem do perfil:", error.message);
+      console.log("Erro ao definir a imagem do perfil:", error.message);
     }
 
     document.getElementById("nome-mudar").placeholder = users.nome;
@@ -251,13 +251,13 @@ function exibirDadosUsuario(users) {
     try {
       document.getElementById("foto-usuario").src = users.fotoPerfil.fotoPerfil;
     } catch (error) {
-      console.error("Erro ao definir a foto do usuário:", error.message);
+      console.log("Erro ao definir a foto do usuário:", error.message);
     }
 
     try {
       document.getElementById("foto_mudar").src = users.fotoPerfil.fotoPerfil;
     } catch (error) {
-      console.error("Erro ao definir a foto para mudar:", error.message);
+      console.log("Erro ao definir a foto para mudar:", error.message);
     }
     document.getElementById("email-mudar").value = users.email;
     document.getElementById("telefone-mudar").value = users.tel;
@@ -265,14 +265,14 @@ function exibirDadosUsuario(users) {
       document.getElementById("nome_modal").style.color =
         users.fotoPerfil.cor_texto;
     } catch (error) {
-      console.error("Erro ao definir cor do nome no modal:", error.message);
+      console.log("Erro ao definir cor do nome no modal:", error.message);
     }
     document.getElementById("nome_modal").innerHTML = users.nome;
     try {
       document.getElementById("content-sem-perfil").style.backgroundColor =
         users.fotoPerfil.cor_foto;
     } catch (error) {
-      console.error(
+      console.log(
         "Erro ao definir cor de fundo do conteúdo sem perfil:",
         error.message
       );
@@ -283,7 +283,7 @@ function exibirDadosUsuario(users) {
       document.getElementById("container-perfil").style.boxShadow =
         users.fotoPerfil.cor_texto_fundo;
     } catch (error) {
-      console.error(
+      console.log(
         "Erro ao definir boxShadow do container de perfil:",
         error.message
       );
@@ -298,22 +298,22 @@ function exibirDadosUsuario(users) {
         containerConquistas.style.boxShadow = users.fotoPerfil.cor_texto_fundo;
       }
     } catch (error) {
-      console.error("Erro ao definir boxShadow das conquistas:", error.message);
+      console.log("Erro ao definir boxShadow das conquistas:", error.message);
     }
 
     try {
       document.getElementById("medalha-azul-img").src = users.medalhas.azul.img;
     } catch (error) {
-      console.error("Erro ao definir imagem da medalha azul:", error.message);
+      console.log("Erro ao definir imagem da medalha azul:", error.message);
     }
 
     try {
       document.getElementById("medalha-azul").style.display =
         users.medalhas.azul.display;
     } catch (error) {
-      console.error("Erro ao exibir medalha azul:", error.message);
+      console.log("Erro ao exibir medalha azul:", error.message);
     }
-
+    pegarCupons()
 
   } else {
     document.getElementById("nome_modal").innerHTML = users.nome;

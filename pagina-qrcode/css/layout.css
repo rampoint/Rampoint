@@ -871,6 +871,14 @@
 }
 
 @media (max-width: 515px) {
+  .sidebar {
+    height: 70vh;
+  }
+
+  .footer-logo {
+    margin-bottom: 2em;
+  }
+
   #moeda-verde {
     width: 60px;
   }

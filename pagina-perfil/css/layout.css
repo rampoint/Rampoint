@@ -55,13 +55,12 @@
   }
 }
 
-/* monitor da sala */
-@media (max-width: 1919px) and (min-width: 1025px) {
+@media (max-width: 1920px) {
   .content-sem-perfil {
     margin-left: auto;
     margin-right: 4em;
   }
-  
+
   .bloco-ramcoin {
     margin-left: 16em;
   }
@@ -94,18 +93,71 @@
   }
 }
 
-@media (max-width: 768px) {
-  
+@media (max-width: 1015px) {
+  .hideOnMobile {
+    display: none;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  nav ul {
+    justify-content: space-between;
+    position: fixed;
+  }
+
+  nav a {
+    padding-right: 30px;
+  }
+
+  #logo {
+    margin-left: 20px;
+  }
+
+  #logo-nav {
+    margin-left: 20px;
+  }
+
+  #perfil {
+    display: none;
+  }
+
+  .sidebar {
+    height: 65vh;
+    right: 0;
+    z-index: 100000;
+  }
+
+  nav a:visited {
+    text-decoration: none;
+    transition: color 1.5s ease-out 1ms;
+  }
+
+  nav a:hover {
+    color: var(--branco);
+    text-decoration-line: underline;
+  }
+
+  .footer-logo {
+    margin-top: 40%;
+  }
 }
 
-@media (max-width: 425px) {
-  
+@media (max-width: 768px) {}
+
+@media (max-width: 510px) {
+  .sidebar {
+    height: 70vh;
+  }
+
+  .footer-logo {
+    margin-bottom: 2em;
+  }
 }
 
-@media (max-width: 375px) {
-  
-}
+@media (max-width: 425px) {}
 
-@media (max-width: 320px) {
-  
-}
+@media (max-width: 375px) {}
+
+@media (max-width: 320px) {}

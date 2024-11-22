@@ -55,7 +55,10 @@
     <nav>
         <ul class="sidebar">
             <li onclick=hideSidebar()><a href="#"><img id="fechar" src="img/fechar.svg" alt="fechar nav"></a></li>
-            <li id="perfil-sidebar"><img src="img/perfil2.svg" alt="" srcset="">
+            <li id="perfil-sidebar">
+                <i class='bx bx-chevron-down' id="open-modal-small"
+                    style="color: #fff; font-size: 20px; margin-right: 5px;"></i>
+                <img src="img/perfil2.svg" alt="" srcset="">
                 <div class="menus">
             <li><a href="../pagina-inicial/inicial.html" id="menuMobile">HOME</a></li>
             <li><a href="../pagina-play/play.html" id="menuMobile">PLAY</a></li>
@@ -69,6 +72,7 @@
             </div>
             </li>
         </ul>
+
         <ul>
             <li id="logo-nav">
                 <a href="../pagina-inicial/inicial.html" class="link-home">
@@ -114,9 +118,7 @@
     </nav>
 
     <div class="container">
-
         <g id="body">
-
             <g class="spots">
                 <g class="top-spots" opacity="0.9">
                     <path fill="#1E1E1E"
@@ -189,7 +191,6 @@
 
 
         <section class="campo-perfil">
-
             <div id="container-perfil" class="container-perfil">
                 <div class="bloco-perfil">
                     <img id="foto-usuario" src="img/user.svg" alt="Foto de perfil do usuário">

@@ -258,6 +258,10 @@ input:focus {
     flex-direction: column;
   }
 
+  .footer-container input[type="email"] {
+    width: 310px;
+  }
+
   .geral {
     margin-left: 0;
   }

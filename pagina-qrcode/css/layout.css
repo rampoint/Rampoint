@@ -432,7 +432,7 @@
   }
 
   .campo-descricao {
-    margin-left: 20px;
+    margin-left: 30px;
   }
 
   #nome-add,
@@ -453,7 +453,7 @@
   }
 
   .botoes {
-    left: 370px;
+    left: 350px;
   }
 }
 
@@ -488,6 +488,12 @@
 
   .moeda-roxa {
     left: 20px;
+  }
+}
+
+@media (max-width: 785px) {
+  .text-block {
+    width: 240px;
   }
 }
 
@@ -535,15 +541,542 @@
   }
 }
 
-@media (max-width: 725px) {}
+@media (max-width: 725px) {
+  .brilho-verde {
+    left: 2em;
+  }
+
+  .moeda-verde {
+    right: 10px;
+  }
+
+  .shadow,
+  .shadow-moeda-roxa {
+    position: relative;
+    z-index: -1;
+  }
+
+  #brilho-amarelo {
+    right: 165px;
+  }
+
+  .moeda-roxa {
+    left: -10px;
+  }
+
+  #moeda-roxa {
+    z-index: 1;
+  }
+}
+
+@media (max-width: 700px) {
+  .qrcode-box {
+    height: 760px;
+  }
+
+  .grupo-cupons {
+    flex-wrap: wrap;
+  }
+
+  .info-box,
+  .info-box-doacoes {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .p-info {
+    text-align: center;
+  }
+
+  .down-salvar {
+    left: 40px;
+  }
+
+  .moeda-verde {
+    right: -10px;
+  }
+
+  .moeda-verde2 {
+    top: 30px;
+  }
+
+  #brilho-roxo {
+    left: 55px;
+  }
+
+  .moeda-roxa {
+    left: -20px;
+  }
+}
+
+@media (max-width: 685px) {
+  .moedas-esquerda {
+    right: 13em;
+  }
+
+  .brilho-verde {
+    left: 1em;
+  }
+
+  #brilho-amarelo {
+    right: 175px;
+  }
+
+  .moeda-verde {
+    right: 20px;
+  }
+
+  .moedas-direita {
+    left: 10em;
+  }
+
+  #brilho-roxo {
+    left: 85px;
+  }
+
+  .moeda-roxa {
+    left: 10px;
+  }
+}
+
+@media (max-width: 655px) {
+  .moedas-esquerda {
+    right: 12em;
+  }
+
+  #brilho-amarelo {
+    right: 185px;
+  }
+
+  .moeda-amarela {
+    right: 4em;
+  }
+
+  #moeda-verde2 {
+    width: 90px;
+  }
+
+  .shadow-moeda2 {
+    width: 80px;
+  }
+
+  #moeda-roxa {
+    width: 80px;
+  }
+
+  .shadow-moeda-roxa {
+    width: 60px;
+  }
+
+  .campo-inicial {
+    width: 560px;
+  }
+
+  #nome-add,
+  #email-add,
+  .select-telefone input,
+  #qtd_peca,
+  #tipo-componente,
+  #codigo {
+    width: 11em;
+  }
+
+  .botoes {
+    left: 330px;
+  }
+}
+
+@media (max-width: 635px) {
+  .moedas-direita {
+    left: 9em;
+  }
+
+  .moeda-amarela {
+    right: 3em;
+  }
+
+  #brilho-amarelo {
+    right: 170px;
+  }
+}
+
+@media (max-width: 605px) {
+  .qrcode-box {
+    width: 70%;
+  }
+
+  .brilho-verde {
+    left: 60px;
+  }
+
+  .moeda-verde {
+    right: 10px;
+  }
+
+  #brilho-amarelo {
+    top: 1em;
+    right: 160px;
+  }
+
+  #brilho-roxo {
+    left: 55px;
+  }
+
+  .moeda-roxa {
+    left: 5px;
+  }
+
+  .campo-inicial {
+    width: 460px;
+    height: 770px;
+  }
+
+  .grupo1,
+  .grupo2 {
+    flex-wrap: wrap;
+  }
+
+  .grupo1 {
+    margin-top: -40px;
+  }
+
+  .grupo3 {
+    margin-top: 40px;
+  }
+
+  #nome-add,
+  #email-add,
+  .select-telefone input,
+  #qtd_peca,
+  #tipo-componente,
+  #codigo {
+    width: 14em;
+  }
+
+  #descricao-peca {
+    max-width: 28em;
+    min-width: 28em;
+  }
+
+  .botoes {
+    left: 0px;
+    bottom: -35px;
+  }
+}
+
+@media (max-width: 575px) {
+  .moeda-verde {
+    right: 0;
+  }
+
+  .moeda-amarela {
+    right: 1em;
+  }
+
+  #brilho-amarelo {
+    top: 3em;
+    right: 140px;
+  }
+
+  #estrela {
+    right: 0;
+  }
+
+  .moedas-direita {
+    left: 8em;
+  }
+}
+
+@media (max-width: 560px) {
+  .qrcode-box {
+    height: 900px;
+  }
+
+  .text-block {
+    width: 220px;
+  }
+
+  .moeda-verde {
+    right: -10px;
+  }
+
+  .moeda-roxa {
+    left: -5px;
+  }
+}
+
+@media (max-width: 535px) {
+  .qrcode-box {
+    height: 975px;
+  }
+
+  .codigo-l2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .qrcode-box div .ramcoin {
+    margin-top: 35px;
+    margin-right: 0;
+  }
+
+  .text-block {
+    width: 290px;
+    top: 90%;
+    left: 30%;
+  }
+
+  .moedas-direita {
+    left: 7em;
+  }
+
+  .moeda-roxa {
+    left: 5px;
+  }
+
+  #brilho-roxo {
+    left: 65px;
+  }
+
+  .moeda-verde {
+    right: -20px;
+  }
+
+  #brilho-amarelo {
+    right: 130px;
+  }
+
+  .moeda-amarela {
+    right: -10px;
+  }
+
+  .campo-inicial {
+    width: 430px;
+  }
+
+  #nome-add,
+  #email-add,
+  .select-telefone input,
+  #qtd_peca,
+  #tipo-componente,
+  #codigo {
+    width: 12em;
+  }
+
+  #descricao-peca {
+    max-width: 25em;
+    min-width: 25em;
+  }
+}
+
+@media (max-width: 515px) {
+  #moeda-verde {
+    width: 60px;
+  }
+
+  .shadow {
+    width: 45px;
+    margin-left: 10px;
+  }
+
+  #brilho-amarelo {
+    right: 105px;
+  }
+
+  #brilho-roxo {
+    left: 50px;
+  }
+
+  #moeda-roxa {
+    width: 60px;
+  }
+
+  .shadow-moeda-roxa {
+    width: 45px;
+  }
+}
+
+@media (max-width: 495px) {
+  .moedas-esquerda {
+    right: 11em;
+  }
+
+  .moedas-direita {
+    left: 6em;
+  }
+}
+
+@media (max-width: 470px) {
+  .brilho-verde {
+    left: 70px;
+  }
+
+  .moeda-verde {
+    right: -30px;
+  }
+
+  .campo-inicial {
+    width: 390px;
+  }
+
+  #descricao-peca {
+    max-width: 22em;
+    min-width: 22em;
+  }
+}
 
 @media (max-width: 455px) {
+  .qrcode-box {
+    width: 75%;
+  }
+
+  #moeda-verde2 {
+    width: 80px;
+  }
+
+  .shadow-moeda2 {
+    width: 70px;
+  }
+
+  .moeda-roxa {
+    top: 70px;
+    left: -20px;
+  }
+
+  .moeda-verde {
+    top: -20px;
+    right: -40px;
+  }
+
+  .moeda-amarela {
+    top: 30px;
+    right: -50px;
+  }
+
+  #estrela {
+    right: -50px;
+  }
+
+  .brilho-verde,
+  #brilho-roxo,
+  #brilho-amarelo {
+    opacity: 0;
+  }
+
   .footer-container input[type="email"] {
     width: 250px;
   }
 }
 
+@media (max-width: 440px) {
+  .moedas-direita {
+    left: 4em;
+  }
+
+  .moeda-verde {
+    opacity: 0;
+  }
+
+  .moeda-amarela {
+    right: -30px;
+  }
+
+  .moeda-verde2 {
+    left: 0;
+  }
+
+  .moeda-roxa {
+    left: 10px;
+  }
+
+  .campo-inicial {
+    width: 360px;
+  }
+
+  #nome-add,
+  #email-add,
+  .select-telefone input,
+  #qtd_peca,
+  #tipo-componente,
+  #codigo {
+    width: 10em;
+  }
+
+  .grupo3 {
+    gap: 30px;
+  }
+
+  #descricao-peca {
+    max-width: 20em;
+    min-width: 20em;
+  }
+}
+
+@media (max-width: 410px) {
+  .moeda-roxa {
+    left: 0;
+  }
+}
+
 @media (max-width: 400px) {
+  .qrcode-box {
+    width: 80%;
+    height: 1005px;
+  }
+
+  .p-info-l2 {
+    width: 80%;
+    text-align: center;
+  }
+
+  .moeda-amarela {
+    right: -10px;
+  }
+
+  #estrela {
+    right: -30px;
+  }
+
+  .down-salvar {
+    left: 30px;
+  }
+
+  .campo-inicial {
+    width: 300px;
+    height: 960px;
+  }
+
+  #nome-add,
+  #email-add,
+  .select-telefone input,
+  #qtd_peca,
+  #tipo-componente,
+  #codigo,
+  .data,
+  .hora {
+    width: 17em;
+  }
+
+  .select-peca {
+    width: 14em;
+  }
+
+  .grupo2 {
+    margin-top: 20px;
+    gap: 25px;
+  }
+
+  .grupo3 {
+    flex-direction: column;
+    margin-top: 15px;
+  }
+
+  #descricao-peca {
+    max-width: 16em;
+    min-width: 16em;
+  }
+
   .footer-container input[type="email"] {
     width: 210px;
   }
@@ -552,6 +1085,16 @@
   .geral,
   .contato {
     width: 330px;
+  }
+}
+
+@media (max-width: 370px) {
+  .moeda-amarela {
+    right: -20px;
+  }
+
+  .moedas-direita {
+    left: 2em;
   }
 }
 
@@ -564,6 +1107,38 @@
   .geral,
   .contato {
     width: 300px;
+  }
+}
+
+@media (max-width: 350px) {
+
+  .info-box,
+  .info-box-doacoes {
+    width: 85%;
+  }
+
+  .moeda-amarela {
+    right: -30px;
+  }
+
+  .campo-inicial {
+    width: 280px;
+  }
+
+  #nome-add,
+  #email-add,
+  .select-telefone input,
+  #qtd_peca,
+  #tipo-componente,
+  #codigo,
+  .data,
+  .hora {
+    width: 15em;
+  }
+
+  #descricao-peca {
+    max-width: 15em;
+    min-width: 15em;
   }
 }
 
@@ -580,27 +1155,9 @@
 }
 
 @media (max-width: 330px) {
-
-  #cep,
-  #rua,
-  #bairro {
-    padding-right: 15px;
-  }
-
-  .cep-form,
-  .rua-form,
-  .bairro-form {
-    margin-left: 10px;
-  }
-
   .footer-container input[type="email"] {
     width: 140px;
   }
 }
 
-@media (min-width: 320px) and (max-width: 420px) {
-  .sidebar {
-    height: 45em;
-  }
-
-}
+@media (min-width: 320px) and (max-width: 420px) {}

@@ -887,6 +887,202 @@
   }
 }
 
-@media (max-width: 490px) {}
+@media (max-width: 490px) {
+  #titulo-inicial {
+    width: 80%;
+    right: 50px;
+  }
 
-@media (max-width: 320px) {}
+  .formulario-feedback {
+    width: 21em;
+  }
+
+  #email-feedback {
+    width: 24em;
+  }
+
+  #feedback {
+    max-width: 24em;
+    min-width: 24em;
+  }
+
+  #ram-sentado {
+    right: 26em;
+  }
+}
+
+@media (max-width: 475px) {
+  #titulo-inicial {
+    width: 93%;
+    right: 15px;
+  }
+
+  #texto-inicial {
+    right: 45px;
+  }
+}
+
+@media (max-width: 455px) {
+  .campo2 #texto1 {
+    width: 80%;
+    margin: 25px auto 0 auto;
+  }
+
+  #ram-sentado {
+    right: 25em;
+  }
+}
+
+@media (max-width: 435px) {
+  .lado-direito {
+    left: 9em;
+    bottom: 21em;
+  }
+
+  #pesquisa {
+    width: 19em;
+  }
+
+  .campo3 {
+    margin-top: 18em;
+  }
+}
+
+@media (max-width: 425px) {
+  .formulario-feedback {
+    width: 19em;
+  }
+
+  #email-feedback {
+    width: 21em;
+  }
+
+  #feedback {
+    max-width: 21em;
+    min-width: 21em;
+  }
+
+  #ram-sentado {
+    right: 23em;
+  }
+}
+
+@media (max-width: 415px) {
+  .lado-direito {
+    left: 8em;
+  }
+
+  #titulo-inicial {
+    font-size: 50px;
+    bottom: 190px;
+  }
+
+  #texto-inicial {
+    top: 38em;
+  }
+
+  .campo1 {
+    margin-top: 1em;
+  }
+
+  .faq-sidebar {
+    width: 85%;
+  }
+
+  #ram-sentado {
+    right: 22em;
+  }
+}
+
+@media (max-width: 385px) {
+  .campo3 {
+    margin-top: 21em;
+  }
+}
+
+@media (max-width: 375px) {
+  .lado-esquerdo {
+    left: -7em;
+  }
+
+  .lado-direito {
+    left: 7em;
+  }
+
+  #pesquisa {
+    width: 17em;
+  }
+
+  #titulo-pergunta {
+    width: 89%;
+  }
+
+  .campo3 {
+    margin-top: 24em;
+  }
+}
+
+@media (max-width: 370px) {
+  #titulo-inicial {
+    font-size: 45px;
+    bottom: 220px;
+  }
+
+  #texto-inicial {
+    top: 36em;
+    right: 35px;
+  }
+
+  #titulo-pergunta {
+    width: 80%;
+  }
+
+  .campo3 {
+    margin-top: 27em;
+  }
+
+  .formulario-feedback {
+    width: 16em;
+  }
+
+  #email-feedback {
+    width: 18em;
+  }
+
+  #feedback {
+    max-width: 18em;
+    min-width: 18em;
+  }
+
+  #ram-sentado {
+    right: 20em;
+  }
+}
+
+@media (max-width: 340px) {
+  .lado-esquerdo {
+    left: -6em;
+  }
+
+  .lado-direito {
+    left: 6em;
+  }
+
+  #pesquisa {
+    width: 15em;
+  }
+
+  #ram-sentado {
+    right: 19em;
+  }
+}
+
+@media (max-width: 330px) {
+  .lado-direito {
+    bottom: 19em;
+  }
+
+  .campo3 {
+    margin-top: 28em;
+  }
+}

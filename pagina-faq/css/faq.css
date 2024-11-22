@@ -287,7 +287,7 @@ body {
 
 .faq-sidebar {
   width: 25%;
-  padding: 2em 1em 2em 0em;
+  padding: 2em 0;
   margin: 0 5em 0 -8em;
 }
 
@@ -452,7 +452,6 @@ body {
 #email-feedback::placeholder {
   font-family: "Poppins-semibold";
   color: rgba(42, 85, 194, 0.4);
-  font-size: 16px;
 }
 
 #feedback::placeholder {

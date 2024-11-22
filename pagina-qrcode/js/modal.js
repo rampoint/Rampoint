@@ -18,3 +18,12 @@ const switchModal = () => {
       switchModal()
     }
   }
+
+  function mostrarPopupSalvo() {
+    const popup = document.getElementById("qrcodeSalvo");
+    popup.style.top = "20px";
+    setTimeout(() => {
+      popup.style.top = "-120px"; 
+    }, 3000); 
+  }
+  

@@ -122,7 +122,8 @@ function salvarCupom() {
       firebase.database().ref('users/'+globalUserId+'/cupons/'+codigoAleatorio).set({
         nome_cupom:cupomNome,
         porcentagem:pegarPorcentagem(pontosQrcode),
-        qrCode:imgSrc
+        qrCode:imgSrc,
+        pontos:pontosQrcode,
       }).then(() => {
         console.log('cupom salvo')
       }).catch((error) => {

@@ -24,7 +24,7 @@ function pegarCupons() {
                                             </div>
                                             <div class="area-excluir">
                                                 <a href="${data.qrCode}" download class='bx bx-down-arrow-circle' style='color:#2a55c2'></a>
-                                                <button onclick="excluircupom('${codigoCupom}')" class="btn-excluir">EXCLUIR</button>
+                                                <button onclick="excluircupom('${codigoCupom}','${data.pontos}')" class="btn-excluir">EXCLUIR</button>
                                                 <p class="mensagem-cupom">Cupom prestes à expirar</p>
                                             </div>
             
@@ -60,18 +60,52 @@ function transformarString(texto) {
     return textoFormatado;
 }
 
-function excluircupom(cupom){
-    firebase.auth().onAuthStateChanged((user) => {
-        if (user) {
-          globalUserId = user.uid;
+function excluircupom(cupom, pontos) {
+  firebase.auth().onAuthStateChanged((user) => {
+      if (user) {
+          const globalUserId = user.uid;
+
+          // Remove o cupom
           firebase
-            .database()
-            .ref("users/" + globalUserId + "/cupons/"+cupom).remove().then(() => {
-                console.log('deleto amigo')
-            }).catch((erro) => {
-                console.log(erro)
-            })
-        }
-    
-})    
+              .database()
+              .ref("users/" + globalUserId + "/cupons/" + cupom)
+              .remove()
+              .then(() => {
+                  console.log('Cupom deletado com sucesso.');
+              })
+              .catch((erro) => {
+                  console.error('Erro ao deletar cupom:', erro);
+              });
+
+          // Recupera os pontos do usuário
+          firebase
+              .database()
+              .ref("users/" + globalUserId)
+              .once('value')
+              .then((snapshot) => {
+                  const pontosFirebase = snapshot.val().pontos;  
+                  const pontosSalvos = Number(pontosFirebase); // Converte para número
+                  // Verifica se a conversão foi bem-sucedida
+                  if (isNaN(pontosSalvos)) {
+                      console.error('Pontos existentes não são um número válido.');
+                      return; // Sai da função se a conversão falhar
+                  }
+                  const pontosAtualizado = pontosSalvos + Number(pontos); // Converte 'pontos' para número
+                  // Atualiza os pontos no banco de dados
+                  firebase
+                      .database()
+                      .ref("users/" + globalUserId)
+                      .update({ pontos: pontosAtualizado })
+                      .then(() => {
+                          console.log('Pontos atualizados:', pontosAtualizado);
+                      })
+                      .catch((error) => {
+                          console.error('Erro ao atualizar pontos:', error);
+                      });
+              })
+              .catch((error) => {
+                  console.error('Erro ao recuperar dados do usuário:', error);
+              });
+      }
+  });
 }

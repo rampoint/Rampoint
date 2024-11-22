@@ -287,10 +287,8 @@ document.addEventListener("DOMContentLoaded", () => {
 function mostrarPopupexcluir(){
   const popup = document.getElementById("exclusaoModel");
   
-  popup.style.top = "70px";
-  
+  popup.style.top = "70px"; 
 }
-
 function fecharPop(){
   const popup = document.getElementById("exclusaoModel");
   

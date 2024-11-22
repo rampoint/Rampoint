@@ -354,42 +354,7 @@
   }
 }
 
-/* header layout */
 @media (max-width: 900px) {
-  .hideOnMobile {
-    display: none;
-  }
-
-  .menu-button {
-    display: block;
-  }
-
-  nav a {
-    padding-right: 30px;
-  }
-
-  #logo {
-    margin-left: 20px;
-  }
-
-  #logo-nav {
-    margin-left: 20px;
-  }
-
-  #perfil {
-    display: none;
-  }
-
-  nav a:visited {
-    text-decoration: none;
-    transition: color 1.5s ease-out 1ms;
-  }
-
-  nav a:hover {
-    color: var(--branco);
-    text-decoration-line: underline;
-  }
-
   .imagem-inicial {
     margin-left: 13em;
   }
@@ -866,10 +831,6 @@
   #titulo-descarte {
     margin-right: 20em;
   }
-
-  .footer-container input[type="email"] {
-    width: 310px;
-  }
 }
 
 @media (max-width: 596px) {
@@ -1077,10 +1038,6 @@
   #titulo-descarte {
     margin-right: 10em;
   }
-
-  .footer-container input[type="email"] {
-    width: 250px;
-  }
 }
 
 @media (max-width: 425px) {
@@ -1138,16 +1095,6 @@
   #titulo-descarte {
     margin-right: 8em;
   }
-
-  .footer-container input[type="email"] {
-    width: 210px;
-  }
-
-  .redes-sociais,
-  .geral,
-  .contato {
-    width: 330px;
-  }
 }
 
 @media (max-width: 380px) {
@@ -1200,16 +1147,6 @@
   #rua,
   #bairro {
     padding-right: 34px;
-  }
-
-  .footer-container input[type="email"] {
-    width: 190px;
-  }
-
-  .redes-sociais,
-  .geral,
-  .contato {
-    width: 300px;
   }
 }
 

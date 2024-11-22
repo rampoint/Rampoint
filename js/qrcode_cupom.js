@@ -20,12 +20,28 @@ cupomDourado.addEventListener("click", () => {
   cupomVidro.classList.remove("active");
 });
 
+firebase.auth().onAuthStateChanged((user) => {
+  if (user) {
+    globalUserId = user.uid;
+    console.log(globalUserId);
+    firebase.database().ref('users/'+globalUserId).once('value').then((snapshot) =>{
+      var data = snapshot.val()
+      document.getElementById('pontos_usuario').innerHTML = data.pontos
+    })
+    
+    // Seleciona a div com a classe 'active'
+  } else {
+    console.log("Nenhum usuário logado.");
+  }
+})
+
 function verificarPontos() {
   firebase.auth().onAuthStateChanged((user) => {
     if (user) {
       globalUserId = user.uid;
       console.log(globalUserId);
       calcularPontos(globalUserId);
+      
       // Seleciona a div com a classe 'active'
     } else {
       console.log("Nenhum usuário logado.");
@@ -89,18 +105,21 @@ function makeCode(pontos, uid) {
 function salvarCupom() {
   const imgElement = document.querySelector("#qrcode img");
   const imgSrc = imgElement.getAttribute("src");
-  console.log(imgSrc); 
+  
   const cupomAtivo = document.querySelector(".grupo-cupons .select-cupom.active");
   const pontosQrcode = cupomAtivo.getAttribute("value");
-  const cupomText = document.querySelector(".grupo-cupons .titulo-cupom");
-  const cupomNome = cupomText.innerHTML;
+  const cupomText = document.querySelector(".grupo-cupons .select-cupom.active .titulo-cupom");
+  const cupomNome = cupomText.getAttribute('id');
+  const codigoAleatorio = gerarCodigoAleatorio()
+  console.log(cupomNome)
 
 
   firebase.auth().onAuthStateChanged((user) => {
+
     if (user) {
       globalUserId = user.uid;
       console.log(globalUserId)
-      firebase.database().ref('users/'+globalUserId+'/cupons').set({
+      firebase.database().ref('users/'+globalUserId+'/cupons/'+codigoAleatorio).set({
         nome_cupom:cupomNome,
         porcentagem:pegarPorcentagem(pontosQrcode),
         qrCode:imgSrc
@@ -127,8 +146,16 @@ function pegarPorcentagem(pts){
     return 10
   }
 }
-function pegarNome(){
-  const cupomText = document.querySelector(".grupo-cupons .titulo-cupom");
-  const cupomNome = cupomText.innerHTML;
-  console.log(pontosQrcode)
+
+function gerarCodigoAleatorio(tamanho = 10) {
+  const caracteres =
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+  let codigo = "";
+
+  for (let i = 0; i < tamanho; i++) {
+    const indiceAleatorio = Math.floor(Math.random() * caracteres.length);
+    codigo += caracteres[indiceAleatorio];
+  }
+
+  return codigo;
 }

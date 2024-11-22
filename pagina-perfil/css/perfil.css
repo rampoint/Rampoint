@@ -829,6 +829,7 @@ body {
   flex-direction: row;
   margin: 0.9em 1em 0.5em 1em;
   padding: 0.5em 0;
+  
 }
 
 #medalha-azul {
@@ -938,15 +939,15 @@ body {
 
 .titulo-medalha-roxa,
 .titulo-medalha-azul,
-.titulo-cupom-amarelo,
-.titulo-cupom-azul,
-.titulo-cupom-verde {
+.titulo-ram-amarelo,
+.titulo-ram-vidro,
+.titulo-ram-golias {
   font-family: "Blinker-extrabold";
   font-size: 1.2em;
 }
 
-.titulo-cupom-amarelo,
-.titulo-cupom-azul,
+.titulo-ram-amarelo,
+.titulo-ram-vidro,
 .titulo-cupom-verde {
   width: 10em;
 }
@@ -965,25 +966,25 @@ body {
   margin-bottom: 10px;
 }
 
-.titulo-cupom-amarelo,
-.porcentagem-cupom-amarelo {
+.titulo-ram-amarelo,
+.porcentagem-ram-amarelo {
   color: #f89701;
 }
 
-.titulo-cupom-azul,
-.porcentagem-cupom-azul {
+.titulo-ram-vidro,
+.porcentagem-ram-vidro {
   color: #00354e;
 }
 
-.titulo-cupom-verde,
-.porcentagem-cupom-verde {
+.titulo-ram-golias,
+.porcentagem-ram-golias{
   color: #417932;
   width: 165px;
 }
 
-.porcentagem-cupom-amarelo,
-.porcentagem-cupom-azul,
-.porcentagem-cupom-verde {
+.porcentagem-ram-amarelo,
+.porcentagem-ram-vidro,
+.porcentagem-ram-golias {
   font-family: "Poppins-bold";
   font-size: 1em;
 }

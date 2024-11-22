@@ -273,6 +273,7 @@ body {
   font-family: "Poppins-regular";
   color: var(--preto);
   width: 95%;
+  text-align: start;
 }
 
 .faq-container {

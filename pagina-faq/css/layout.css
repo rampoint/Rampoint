@@ -1,7 +1,7 @@
 @media (min-width: 1920px) {
   .content-sem-perfil {
     margin-left: auto;
-    margin-right: 4em;
+    margin-right: 5em;
   }
 
   .img-fundo {
@@ -24,7 +24,7 @@
 @media (max-width: 1920px) {
   .content-sem-perfil {
     margin-left: auto;
-    margin-right: 4em;
+    margin-right: 5em;
   }
 
   .img-fundo {
@@ -44,17 +44,39 @@
   }
 }
 
-@media (max-width: 1410px) {
+@media (max-width: 1425px) {
+  #titulo1 {
+    margin: 1em 0 0.5em 5em;
+  }
+
+  #texto1 {
+    margin: 1em 0 0.9em 8.5em;
+  }
+
+  .lista-suporte {
+    margin-left: 9em;
+  }
+
   #titulo-inicial {
     width: 29%;
   }
+}
 
-  .imagem-inicial {
-    width: 70em;
+@media (max-width: 1385px) {
+  .faq-container {
+    margin-left: 7em;
+  }
+
+  .faq-sidebar {
+    margin: 0 2em 0 -8em;
+  }
+
+  .container-feedback {
+    margin-left: 8em;
   }
 }
 
-@media (max-width: 1367px) {
+@media (max-width: 1370px) {
   #titulo-inicial {
     width: 30%;
     right: 856px;
@@ -93,7 +115,7 @@
   }
 }
 
-@media (max-width: 1338px) {
+@media (max-width: 1340px) {
   #titulo-inicial {
     width: 33%;
     right: 743px;
@@ -110,6 +132,12 @@
   }
 }
 
+@media (max-width: 1280px) {
+  .imagem-inicial {
+    width: auto;
+  }
+}
+
 @media (max-width: 1200px) {
   #titulo-inicial {
     width: 34%;
@@ -120,20 +148,20 @@
     right: 46em;
   }
 
+  #titulo1 {
+    margin: 1em 0 0.5em 4em;
+  }
+
+  #texto1 {
+    margin: 1em 0 0.9em 6.7em;
+  }
+
   .faq-container {
     margin-left: 4em;
   }
 }
 
 @media (max-width: 1195px) {
-  nav ul {
-    width: 97%;
-  }
-
-  .imagem-inicial {
-    width: 70em;
-  }
-
   .lado-direito {
     bottom: 23em;
   }
@@ -148,11 +176,12 @@
   }
 
   .container-feedback {
-    margin-left: 13em;
+    margin-top: 35px;
+    margin-left: 8em;
   }
 }
 
-@media (max-width: 1166px) {
+@media (max-width: 1170px) {
   #titulo-inicial {
     width: 35%;
   }
@@ -162,7 +191,7 @@
   }
 }
 
-@media (max-width: 1133px) {
+@media (max-width: 1140px) {
   #titulo-inicial {
     width: 36%;
     right: 633px;
@@ -185,10 +214,6 @@
 }
 
 @media (max-width: 1080px) {
-  .imagem-inicial {
-    width: 63em;
-  }
-
   #titulo-inicial {
     width: 38%;
     right: 560px;
@@ -228,7 +253,7 @@
   }
 }
 
-@media (max-width: 995px) {
+@media (max-width: 1015px) {
   .hideOnMobile {
     display: none;
   }
@@ -239,21 +264,29 @@
 
   nav ul {
     justify-content: space-between;
-    position: static;
-    padding-left: 0;
+    position: fixed;
   }
 
   nav a {
     padding-right: 30px;
   }
 
-  #logo,
+  #logo {
+    margin-left: 20px;
+  }
+
   #logo-nav {
     margin-left: 20px;
   }
 
   #perfil {
     display: none;
+  }
+
+  .sidebar {
+    height: 65vh;
+    right: 0;
+    z-index: 100000;
   }
 
   nav a:visited {
@@ -266,10 +299,6 @@
     text-decoration-line: underline;
   }
 
-  .sidebar {
-    height: 75vh;
-  }
-
   #titulo-inicial {
     width: 41%;
   }
@@ -280,6 +309,10 @@
 
   #texto1 {
     margin: 1em 0 0.9em 7.2em;
+  }
+
+  .faq-container {
+    margin-left: 2em;
   }
 
   .container-feedback {
@@ -295,7 +328,108 @@
   }
 }
 
-@media (min-width: 320px) and (max-width: 421px) {
+@media (max-width: 975px) {
+  #texto-inicial {
+    width: 40%;
+    right: 33em;
+  }
+
+  .img-fundo {
+    margin-left: 29em;
+  }
+
+  .lado-direito {
+    left: 23em;
+  }
+}
+
+@media (max-width: 970px) {
+  #titulo-inicial {
+    width: 44%;
+    right: 490px;
+  }
+
+  #texto-inicial {
+    right: 32em;
+  }
+}
+
+@media (max-width: 950px) {
+  .arrow-icon {
+    margin-right: 1em;
+  }
+}
+
+@media (max-width: 925px) {
+  #titulo-inicial {
+    width: 43%;
+    font-size: 75px;
+    right: 470px;
+  }
+
+  #texto-inicial {
+    right: 31em;
+  }
+
+  #titulo1 {
+    margin: 1em 0 0.5em 3em;
+  }
+
+  #texto1 {
+    margin: 1em 0 0.9em 5.2em;
+  }
+
+  .faq-sidebar {
+    margin: 0 3em 0 -1em;
+  }
+
+  .container-feedback {
+    margin-left: 9em;
+  }
+
+  .lista-suporte {
+    margin-left: 5.5em;
+  }
+}
+
+@media (max-width: 905px) {
+  #texto-inicial {
+    right: 30em;
+  }
+
+  .lado-direito {
+    bottom: 21em;
+  }
+}
+
+@media (max-width: 900px) {
+  #titulo-inicial {
+    right: 450px;
+  }
+
+  #texto-inicial {
+    width: 41%;
+    right: 29em;
+  }
+}
+
+@media (max-width: 880px) {
+  #titulo-inicial {
+    width: 42%;
+    font-size: 70px;
+    right: 440px;
+    bottom: 250px;
+  }
+
+  #texto-inicial {
+    top: 21em;
+    right: 28em;
+  }
+}
+
+@media (max-width: 865px) {}
+
+@media (max-width: 320px) {
   .img-fundo {
     width: 73em;
     position: relative;
@@ -305,7 +439,7 @@
   }
 
   #titulo-inicial {
-    font-size: 1em;
+    font-size: 16px;
     width: 2%;
     line-height: 0.9em;
     position: absolute;

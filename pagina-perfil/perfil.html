@@ -133,7 +133,6 @@
             <div class="inicio">
                 <div class="moedas-esquerda">
                     <div class="moeda-verde">
-
                         <img src="./img/moeda-verde.svg" alt="Ícone moeda-verde" id="moeda-verde">
                         <div class="shadow"></div>
                     </div>
@@ -166,7 +165,7 @@
 
                 <div class="moedas-direita">
                     <img src="./img/brilho-amarelo.svg" alt="Ícone brilho-amarelo" id="brilho-amarelo2">
-                    <div class="moeda-verde">
+                    <div class="moeda-verde2">
                         <img src="./img/moeda-verde3.svg" alt="Ícone moeda-verde" id="moeda-verde2">
                         <div class="shadow-moeda-verde"></div>
                     </div>
@@ -420,13 +419,17 @@
                                 <!-- Modal -->
                                 <div id="modal-excluir" class="modal-excluir">
                                     <div class="modal-content">
-                                        <img id="alerta_del" src="img/info-circle.svg" alt="">
-                                        <div class="coluna-texto">
-                                            <h2>Você tem certeza que deseja excluir o cupom?</h2>
-                                            <p>Seus pontos irão voltar para o perfil</p>
+                                        <div class="linha-texto">
+                                            <img id="alerta_del" src="img/info-circle.svg" alt="">
+                                            <div class="coluna-texto">
+                                                <h2>Você tem certeza que deseja excluir o cupom?</h2>
+                                                <p>Seus pontos irão voltar para o perfil</p>
+                                            </div>
                                         </div>
-                                        <input id="sim_button" value="Sim" type="button">
-                                        <input id="nao_button" value="Não" type="button">
+                                        <div class="botoesModal">
+                                            <input id="sim_button" value="Sim" type="button">
+                                            <input id="nao_button" value="Não" type="button">
+                                        </div>
                                     </div>
                                 </div>
 
@@ -509,7 +512,6 @@
             </div>
             <p class="copyright">Copyright &copy; 2024 Rampoint</p>
         </footer>
-
 
         <script src="./js/modal.js"></script>
         <script src="./js/scroll.js"></script>

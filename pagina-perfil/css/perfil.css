@@ -875,15 +875,35 @@ body {
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
-  width: 620px;
   text-align: center;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  width: 600px;
+  border-radius: 10px;
+  z-index: 100000;
+  box-shadow: 0 5px 20px rgba(42, 85, 194, 0.15);
 }
 
 .modal-content #alerta_del {
   width: 40px;
+}
+
+.botoesModal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.modal-content #sim_button,
+.modal-content #nao_button {
+  width: 100px;
+}
+
+.linha-texto {
+  display: flex;
+  flex-direction: row;
 }
 
 .coluna-texto {
@@ -906,26 +926,6 @@ body {
   text-align: start;
   margin-left: 15px;
   margin-top: 5px;
-}
-
-.btn-confirmar {
-  background-color: #d9534f;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 10px;
-}
-
-.btn-cancelar {
-  background-color: #5bc0de;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 10px;
 }
 
 .btn-excluir {

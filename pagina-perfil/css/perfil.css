@@ -1114,7 +1114,7 @@ body {
 
 #exclusaoModel {
   background-color: white;
-  width: 550px;
+  width: 600px;
   font-family: "Poppins-bold";
   font-size: 7px;
   display: flex;
@@ -1130,6 +1130,7 @@ body {
   transform: translateX(-50%);
   transition: top 0.5s ease;
   z-index: 100000;
+  box-shadow: 0 5px 20px rgba(42, 85, 194, 0.15);
 }
 
 #exclusaoModel h1 {

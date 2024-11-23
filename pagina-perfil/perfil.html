@@ -41,10 +41,32 @@
         <img src="" id="alteracao_Mood" alt="">
     </div>
     <div id="exclusaoModel">
-        <img id="alerta_del" src="img/info-circle.svg" alt="">
-        <h1>Você tem certeza que deseja excluir a conta?</h1>
-        <input id="sim_button" onclick="apagandoUsuario()" value="Sim" type="button">
-        <input id="nao_button" onclick="fecharPop()" value="Não" type="button">
+        <div class="linha-texto">
+            <img id="alerta_del" src="img/info-circle.svg" alt="">
+            <div class="coluna-texto">
+                <h1>Você tem certeza que deseja excluir a conta?</h1>
+            </div>
+        </div>
+        <div class="botoesModal">
+            <input id="sim_button" onclick="apagandoUsuario()" value="Sim" type="button">
+            <input id="nao_button" onclick="fecharPop()" value="Não" type="button">
+        </div>
+    </div>
+
+    <div id="modal-excluir" class="modal-excluir">
+        <div class="modal-content">
+            <div class="linha-texto">
+                <img id="alerta_del" src="img/info-circle.svg" alt="">
+                <div class="coluna-texto">
+                    <h2>Você tem certeza que deseja excluir o cupom?</h2>
+                    <p>Seus pontos irão voltar para o perfil</p>
+                </div>
+            </div>
+            <div class="botoesModal">
+                <input id="sim_button" value="Sim" type="button">
+                <input id="nao_button" value="Não" type="button">
+            </div>
+        </div>
     </div>
 
     <nav>

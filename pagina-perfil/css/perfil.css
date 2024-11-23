@@ -684,6 +684,12 @@ body {
   filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
+.select-mood {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .select-mood h4 {
   font-family: "Poppins-extrabold";
   margin-top: 10px;
@@ -868,7 +874,7 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   justify-content: center;
   align-items: center;
-  z-index: 1000;
+  z-index: 10000;
 }
 
 .modal-content {
@@ -1155,6 +1161,10 @@ body {
 
 #exclusaoModel h1 {
   margin-left: 10px;
+}
+
+#exclusaoModel .botoesModal {
+  margin-top: 0;
 }
 
 #sim_button {

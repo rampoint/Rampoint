@@ -37,7 +37,7 @@ body {
 #titulo-inicial {
   font-family: "Blinker-extrabold";
   color: var(--preto);
-  font-size: 4em;
+  font-size: 64px;
   width: 5em;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 }
@@ -45,8 +45,8 @@ body {
 #texto-inicial {
   font-family: "Poppins-regular";
   color: var(--preto);
-  font-size: 0.9em;
-  width: 80%;
+  font-size: 14px;
+  width: 60%;
   text-align: center;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
   padding: 0;
@@ -56,18 +56,22 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  right: 50px;
 }
 
 .moedas-esquerda {
   display: flex;
   flex-direction: row;
-  margin: 0 5em;
+  position: relative;
+  right: 100px;
 }
 
 .moedas-direita {
   display: flex;
   flex-direction: row;
-  margin: 0 5em 0 10em;
+  position: relative;
+  left: 100px;
 }
 
 #moeda-verde,
@@ -285,7 +289,7 @@ body {
 .nome-usuario {
   font-family: "Poppins-extrabold";
   color: var(--preto);
-  font-size: 1.2em;
+  font-size: 19px;
   margin: 0;
   margin-bottom: 0.2em;
 }
@@ -293,7 +297,7 @@ body {
 .email-usuario {
   font-family: "Poppins-medium";
   color: #535252;
-  font-size: 0.9em;
+  font-size: 14px;
   margin: 0;
   margin-bottom: 0.2em;
 }
@@ -301,7 +305,7 @@ body {
 .emocao-usuario {
   font-family: "Poppins-extrabold";
   color: #9c4edc;
-  font-size: 1.2em;
+  font-size: 19px;
   margin: 0;
   margin-top: 0.1em;
 }
@@ -502,7 +506,6 @@ body {
   -webkit-appearance: none;
   -moz-appearance: none;
   cursor: pointer;
-  /* Cursor de mão */
 }
 
 .select-icon {
@@ -532,25 +535,6 @@ body {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-}
-
-.flatpickr-calendar {
-  font-family: "Poppins-regular";
-  font-size: 12px;
-}
-
-.flatpickr-day {
-  font-weight: 400;
-  color: #333;
-}
-
-.flatpickr-months {
-  font-size: 12px;
-}
-
-.flatpickr-weekday {
-  font-size: 12px;
-  color: #666;
 }
 
 #senha-mudar,
@@ -645,9 +629,9 @@ body {
 }
 
 .content-mood .icon-x {
-  position: absolute;
-  top: 8em;
-  right: 20em;
+  position: relative;
+  top: 10px;
+  left: 400px;
   cursor: pointer;
 }
 
@@ -655,7 +639,6 @@ body {
   font-family: "Blinker-extrabold";
   color: var(--preto);
   text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.1);
-  margin-top: 1em;
 }
 
 .texto-mood {
@@ -819,17 +802,22 @@ body {
 .titulo-content {
   font-family: "Poppins-bold";
   color: var(--preto);
-  font-size: 1em;
+  font-size: 16px;
   margin: 1em 3em;
 }
 
-.conjunto-medalhas,
 .conjunto-cupons {
   display: flex;
   flex-direction: row;
   margin: 0.9em 1em 0.5em 1em;
   padding: 0.5em 0;
-  
+}
+
+.conjunto-medalhas {
+  display: flex;
+  flex-direction: row;
+  margin: 5px 0;
+  padding: 0.5em 0;
 }
 
 #medalha-azul {
@@ -864,7 +852,7 @@ body {
 
 .area-excluir {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   align-items: flex-end;
   margin: 1em 1em 0em 14em;
 }
@@ -932,7 +920,6 @@ body {
   width: 13em;
   font-family: "Poppins-semibold";
   color: #333333;
-  margin: 1em 0 0em 0;
 }
 
 /* ^ cupons ^ */
@@ -943,7 +930,7 @@ body {
 .titulo-ram-vidro,
 .titulo-ram-golias {
   font-family: "Blinker-extrabold";
-  font-size: 1.2em;
+  font-size: 19px;
 }
 
 .titulo-ram-amarelo,
@@ -977,7 +964,7 @@ body {
 }
 
 .titulo-ram-golias,
-.porcentagem-ram-golias{
+.porcentagem-ram-golias {
   color: #417932;
   width: 165px;
 }
@@ -986,13 +973,13 @@ body {
 .porcentagem-ram-vidro,
 .porcentagem-ram-golias {
   font-family: "Poppins-bold";
-  font-size: 1em;
+  font-size: 16px;
 }
 
 .meta-medalha-roxa,
 .meta-medalha-azul {
   font-family: "Poppins-bold";
-  font-size: 0.9em;
+  font-size: 14px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -1007,7 +994,7 @@ body {
   content: url(../img/brilho-roxo.svg);
   position: absolute;
   left: 0;
-  font-size: 1.2em;
+  font-size: 19px;
   line-height: 1.5;
 }
 
@@ -1015,7 +1002,7 @@ body {
   content: url(../img/brilho-azul.svg);
   position: absolute;
   left: 0;
-  font-size: 1.2em;
+  font-size: 19px;
   line-height: 1.5;
 }
 
@@ -1028,7 +1015,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px;
+  margin: 40px 20px 20px 20px;
 }
 
 .toggle-button {
@@ -1124,11 +1111,12 @@ body {
   /* Transição suave para a animação */
   z-index: 100000;
 }
-#exclusaoModel{
+
+#exclusaoModel {
   background-color: white;
   width: 550px;
   font-family: "Poppins-bold";
-  font-size:7px;
+  font-size: 7px;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -1143,32 +1131,34 @@ body {
   transition: top 0.5s ease;
   z-index: 100000;
 }
-#exclusaoModel h1{
+
+#exclusaoModel h1 {
   margin-left: 10px;
 }
 
-#sim_button{
+#sim_button {
   color: white;
-  background-color:var(--azul);
+  background-color: var(--azul);
   padding: 3px 25px 3px 25px;
   border-radius: 35px;
   border: transparent;
   font-family: "Poppins-bold";
-  margin-left:10px;
+  margin-left: 10px;
   cursor: pointer;
 }
 
-#nao_button{
+#nao_button {
   color: black;
-  background-color:white;
+  background-color: white;
   padding: 3px 25px 3px 25px;
   border-radius: 35px;
   border: var(--azul);
   font-family: "Poppins-bold";
   border: solid var(--azul) 1.5px;
-  margin-left:10px;
+  margin-left: 10px;
   cursor: pointer;
 }
-#alerta_del{
-margin-left: 10px;
+
+#alerta_del {
+  margin-left: 10px;
 }

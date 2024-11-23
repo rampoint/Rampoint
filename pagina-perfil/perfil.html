@@ -13,11 +13,6 @@
     <!-- icons -->
     <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet">
 
-    <!-- links do calendario -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/pt.js"></script>
-
     <link rel="shortcut icon" href="./img/rostoCirculo.png" type="image/x-icon">
     <title>Perfil</title>
 
@@ -243,7 +238,6 @@
                                                 <option value="masculino">Masculino</option>
                                                 <option value="prifiro-nao-informar">Prefiro não informar</option>
                                             </select>
-                                            <!-- <img src="./img/Icon.svg" class="select-icon" alt="Icon"> -->
                                         </div>
                                     </div>
 
@@ -258,13 +252,7 @@
                                         </div>
                                         <div class="campo-form">
                                             <label for="nascimento">Nascimento</label>
-                                            <input type="text" id="nascimento">
-                                            <script>
-                                                flatpickr("#nascimento", {
-                                                    dateFormat: "d/m/Y",
-                                                    locale: "pt"
-                                                });
-                                            </script>
+                                            <input type="date" id="nascimento">
                                         </div>
                                     </div>
                                 </div>
@@ -397,7 +385,7 @@
 
                                 </div>
                                 <div class="area-excluir">
-                                    <i class='bx bx-down-arrow-circle' style='color:#2a55c2'></i>
+                                    <i class='bx bx-down-arrow-circle' style='color:#2a55c2; font-size: 18px; position: relative; right: 5px; margin-bottom: 15px; cursor: pointer;'></i>
                                     <button class="btn-excluir">EXCLUIR</button>
                                     <p class="mensagem-cupom">Cupom prestes à expirar</p>
                                 </div>
@@ -423,7 +411,8 @@
 
                                 </div>
                                 <div class="area-excluir">
-                                    <i class='bx bx-down-arrow-circle' style='color:#2a55c2'></i>
+                                    <i class='bx bx-down-arrow-circle'
+                                        style='color:#2a55c2; font-size: 18px; position: relative; right: 5px; margin-bottom: 15px; cursor: pointer;'></i>
                                     <button class="btn-excluir">EXCLUIR</button>
                                     <p class="mensagem-cupom">Cupom prestes à expirar</p>
                                 </div>
@@ -449,7 +438,8 @@
 
                                 </div>
                                 <div class="area-excluir">
-                                    <i class='bx bx-down-arrow-circle' style='color:#2a55c2'></i>
+                                    <i class='bx bx-down-arrow-circle'
+                                        style='color:#2a55c2; font-size: 18px; position: relative; right: 5px; margin-bottom: 15px; cursor: pointer;'></i>
                                     <button class="btn-excluir">EXCLUIR</button>
                                     <p class="mensagem-cupom">Cupom prestes à expirar</p>
                                 </div>

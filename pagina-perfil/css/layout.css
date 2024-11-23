@@ -44,15 +44,6 @@
   .btn-salvar {
     left: 20em;
   }
-
-  .content-mood {
-    margin-bottom: 13em;
-  }
-
-  .content-mood .icon-x {
-    top: 14em;
-    right: 33em;
-  }
 }
 
 @media (max-width: 1920px) {
@@ -70,26 +61,154 @@
   }
 }
 
+@media (max-width: 1445px) {
+  #lapis {
+    right: -60px;
+    bottom: 20px;
+  }
+
+  .modalBtn-perfil {
+    position: relative;
+    right: -2em;
+  }
+}
+
+@media (max-width: 1365px) {
+  .moedas-esquerda {
+    right: 50px;
+  }
+
+  .moedas-direita {
+    left: 50px;
+  }
+}
+
+@media (max-width: 1350px) {
+  .content-perfil {
+    width: 70%;
+  }
+
+  #lapis {
+    right: 30px;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 1235px) {
+  #lapis {
+    right: -60px;
+    bottom: 20px;
+  }
+}
+
+@media (max-width: 1225px) {
+  .moedas-esquerda {
+    right: 20px;
+  }
+
+  .moedas-direita {
+    left: 10px;
+  }
+
+  .excluir-conta {
+    right: 16em;
+  }
+}
+
+@media (max-width: 1175px) {
+  .moedas-esquerda {
+    right: 0;
+  }
+
+  .moedas-direita {
+    left: 0;
+  }
+
+  .content-perfil {
+    width: 80%;
+  }
+
+  #lapis {
+    right: 30px;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 1145px) {
+  .moedas-direita {
+    left: -20px;
+  }
+}
+
+@media (max-width: 1125px) {
+  #moeda-verde {
+    width: 100px;
+  }
+
+  .shadow {
+    width: 90px;
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 1115px) {
+  .moedas-direita {
+    left: -10px;
+  }
+}
+
+@media (max-width: 1090px) {
+  .moedas-esquerda {
+    right: -20px;
+  }
+
+  .moedas-direita {
+    left: -30px;
+  }
+}
+
+@media (max-width: 1085px) {
+  #texto-inicial {
+    width: 65%;
+  }
+
+  .container-texto {
+    right: 30px;
+  }
+
+  .moeda-amarela {
+    position: relative;
+    right: 15px;
+  }
+
+  .briho-amarelo {
+    position: relative;
+    right: 25px;
+  }
+
+  #lapis {
+    right: -60px;
+    bottom: 20px;
+  }
+}
+
+@media (max-width: 1045px) {
+  #texto-inicial {
+    width: 68%;
+  }
+
+  #moeda-azul {
+    width: 95px;
+  }
+
+  .shadow-moeda-azul {
+    width: 80px;
+  }
+}
+
 @media (max-width: 1024px) {
   #drop {
     display: block;
-  }
-
-  .info-box {
-    width: auto;
-    text-align: center;
-    width: 50%;
-  }
-
-  .descricao-footer {
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 40px;
-    max-width: 100%;
-  }
-
-  .copyright {
-    margin-left: 80px;
   }
 }
 
@@ -139,12 +258,376 @@
     text-decoration-line: underline;
   }
 
-  .footer-logo {
-    margin-top: 40%;
+  .content-perfil {
+    width: 85%;
+  }
+
+  .content-mood {
+    margin-bottom: 23em;
   }
 }
 
-@media (max-width: 768px) {}
+@media (max-width: 1005px) {
+  #lapis {
+    right: 30px;
+    bottom: 0;
+  }
+
+  #nome-mudar,
+  #email-mudar {
+    width: 210px;
+  }
+
+  #genero-mudar {
+    width: 155px;
+  }
+
+  #nascimento {
+    width: 10em;
+  }
+
+  #texto-inicial {
+    width: 73%;
+  }
+
+  .container-texto {
+    right: 40px;
+  }
+}
+
+@media (max-width: 985px) {
+  #moeda-verde {
+    width: 80px;
+  }
+
+  .shadow {
+    width: 70px;
+  }
+
+  #moeda-amarela {
+    width: 60px;
+  }
+
+  .shadow-moeda-amarela {
+    width: 50px;
+    margin-left: 5px;
+  }
+
+  #moeda-azul {
+    width: 85px;
+  }
+
+  .shadow-moeda-azul {
+    width: 70px;
+  }
+
+  #moeda-verde2 {
+    width: 75px;
+  }
+
+  .shadow-moeda-verde {
+    width: 65px;
+  }
+}
+
+@media (max-width: 965px) {
+  .content-mood {
+    width: 50em;
+  }
+
+  .content-mood .icon-x {
+    left: 380px;
+  }
+}
+
+@media (max-width: 955px) {
+  #lapis {
+    right: -60px;
+    bottom: 20px;
+  }
+
+  .excluir-conta {
+    right: 15em;
+  }
+
+  .container-perfil {
+    width: 45em;
+  }
+
+  .bloco-ramcoin {
+    margin-left: 11em;
+  }
+
+  .container-conquistas {
+    width: 45em;
+  }
+
+  #linha {
+    width: 40em;
+  }
+
+  .area-excluir {
+    margin: 1em 1em 0em 9em;
+  }
+}
+
+@media (max-width: 925px) {
+  .moedas-direita {
+    left: -10px;
+  }
+
+  .container-texto {
+    right: 20px;
+  }
+}
+
+@media (max-width: 905px) {
+  .info-perfil {
+    width: 95%;
+  }
+
+  .btn-salvar {
+    left: 14em;
+  }
+}
+
+@media (max-width: 875px) {
+  #texto-inicial {
+    width: 82%;
+  }
+
+  .moedas-direita {
+    left: 10px;
+  }
+
+  #brilho-amarelo3 {
+    margin-left: 0;
+  }
+
+  .content-mood {
+    width: 46em;
+  }
+
+  .content-mood .icon-x {
+    left: 350px;
+  }
+}
+
+@media (max-width: 855px) {
+  .moedas-esquerda {
+    right: 0;
+  }
+
+  #titulo-inicial {
+    font-size: 55px;
+  }
+
+  #texto-inicial {
+    width: 87%;
+  }
+
+  .moeda-azul {
+    position: relative;
+    right: 25px;
+  }
+
+  .info-perfil {
+    width: 90%;
+    height: 24em;
+    flex-direction: column;
+  }
+
+  .usuario {
+    margin: 10px auto;
+    top: 0;
+  }
+
+  #lapis {
+    right: 30px;
+    bottom: 0;
+  }
+
+  .grupo1,
+  .grupo2 {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .botoes {
+    bottom: 90px;
+  }
+
+  .excluir-conta {
+    right: 160px;
+  }
+
+  .btn-salvar {
+    left: 12em;
+  }
+
+  .content-mood {
+    margin-bottom: 18em;
+  }
+}
+
+@media (max-width: 825px) {
+  .moeda-pequena {
+    position: relative;
+    bottom: 15px;
+  }
+
+  .moeda-amarela {
+    right: 25px;
+  }
+
+  .briho-amarelo {
+    right: 40px;
+  }
+
+  #brilho-amarelo3 {
+    position: relative;
+    right: 15px;
+  }
+
+  .container-texto {
+    right: 35px;
+  }
+
+  #texto-inicial {
+    width: 92%;
+  }
+
+  .content-mood {
+    width: 43em;
+  }
+
+  .content-mood .icon-x {
+    left: 330px;
+  }
+
+  .container-perfil {
+    width: 40em;
+  }
+
+  #foto-usuario {
+    width: 120px;
+  }
+
+  .bloco-ramcoin {
+    margin-left: 6em;
+  }
+
+  .container-conquistas {
+    width: 40em;
+  }
+
+  #linha {
+    width: 35em;
+  }
+
+  #conquistasButton,
+  #cuponsButton {
+    width: 12em;
+  }
+
+  .area-excluir {
+    margin: 1em 1em 0em 4em;
+  }
+
+  .conjunto-medalhas img {
+    width: 85px;
+  }
+
+  .conjunto-cupons img {
+    width: 55px;
+  }
+}
+
+@media (max-width: 785px) {
+
+  #nome-mudar,
+  #email-mudar {
+    width: 150px;
+  }
+
+  .excluir-conta {
+    right: 130px;
+  }
+
+  .btn-salvar {
+    left: 9em;
+  }
+}
+
+@media (max-width: 765px) {
+  #moeda-verde {
+    width: 70px;
+  }
+
+  .shadow {
+    width: 60px;
+  }
+
+  #moeda-verde2 {
+    width: 65px;
+  }
+
+  .shadow-moeda-verde {
+    width: 55px;
+  }
+
+  #moeda-azul {
+    width: 75px;
+  }
+
+  .shadow-moeda-azul {
+    width: 60px;
+  }
+}
+
+@media (max-width: 735px) {
+  .bloco-ramcoin {
+    margin-left: 2em;
+  }
+
+  .container-perfil {
+    width: 35em;
+  }
+
+  .container-conquistas {
+    width: 35em;
+  }
+
+  #conquistasButton,
+  #cuponsButton {
+    width: 10em;
+  }
+
+  #linha {
+    width: 30em;
+  }
+
+  .area-excluir {
+    margin: 1em 1em 0em 0em;
+  }
+
+  .mensagem-cupom {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 725px) {
+  #titulo-inicial {
+    font-size: 45px;
+  }
+
+  #senha-mudar,
+  #telefone-mudar {
+    width: 9em;
+  }
+}
+
+@media (max-width: 685px) {}
 
 @media (max-width: 510px) {
   .sidebar {

@@ -875,17 +875,37 @@ body {
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
-  width: 300px;
+  width: 620px;
   text-align: center;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: row;
 }
 
-.close {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  font-size: 20px;
-  cursor: pointer;
+.modal-content #alerta_del {
+  width: 40px;
+}
+
+.coluna-texto {
+  display: flex;
+  flex-direction: column;
+}
+
+.coluna-texto h2 {
+  font-family: "Poppins-medium";
+  font-size: 16px;
+  margin-top: 0;
+  margin-left: 15px;
+  text-align: start;
+}
+
+.coluna-texto p {
+  font-family: "Poppins-semibold";
+  color: #E94364;
+  font-size: 14px;
+  text-align: start;
+  margin-left: 15px;
+  margin-top: 5px;
 }
 
 .btn-confirmar {

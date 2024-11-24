@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Adiciona elementos apenas se não existirem
     if (!document.getElementById(magnifier.id)) {
       const fragment = document.createDocumentFragment();
-      fragment.append(hiddenArea, magnifier);
+      fragment.append(hiddenArea, magnifier );
       document.body.appendChild(fragment);
     }
 

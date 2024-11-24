@@ -140,3 +140,151 @@
     margin: 10px 0 10px 15px;
     cursor: pointer;
 }
+
+/* leitor */
+#leitor-status,
+#leitor-text {
+    font-family: "Poppins-regular";
+}
+
+/* modo de leitura */
+body {
+    background-color: #ffffff;
+    color: #333333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.modo-escuro {
+    background-color: #121212;
+    color: #f8f8f8;
+}
+
+nav ul {
+    transition: background-color 0.3s ease;
+}
+
+body.modo-escuro nav ul {
+    background-color: #121212;
+}
+
+body.modo-escuro span {
+    color: #f8f8ff;
+}
+
+nav a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+body.modo-escuro nav a {
+    color: #DADADC;
+}
+
+body.modo-escuro .sidebar {
+    background-color: #19316F;
+}
+
+body .fundo {
+    background-color: #f8f8ff;
+}
+
+body.modo-escuro .fundo {
+    background-color: #282828;
+}
+
+.linha {
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+body.modo-escuro .linha {
+    background-color: rgba(255, 255, 255, 0.35);
+}
+
+.cadastro {
+    color: #000;
+}
+
+body.modo-escuro .cadastro {
+    color: #DADADC;
+}
+
+.login {
+    color: #D40000;
+}
+
+body.modo-escuro .login {
+    color: #FF4141;
+}
+
+.icon-sidebar path {
+    fill: #000;
+}
+
+body.modo-escuro .icon-sidebar path {
+    fill: #DADADC;
+}
+
+body.modo-escuro .p-info,
+body.modo-escuro .titulo-form {
+    color: #DADADC;
+}
+
+body.modo-escuro .qrcode-box {
+    background-color: #282828;
+}
+
+body.modo-escuro .codigo-l2 select {
+    background-color: rgba(188, 207, 255, 0.1);
+}
+
+body.modo-escuro .p-info-l2 {
+    color: rgba(137, 170, 255, 0.85);
+}
+
+body.modo-escuro .text-block {
+    background-color: #282828;
+    box-shadow: 0px 5px 8px rgba(20, 34, 69, 0.5);
+}
+
+body.modo-escuro .texto-ramcoin {
+    color: rgba(137, 170, 255, 0.85);
+}
+
+body.modo-escuro .qrcode-box button,
+body.modo-escuro .select-cupom {
+    background-color: #19316F;
+}
+
+body.modo-escuro #gerar-button {
+    background-color: #61A44F;
+    border-bottom: 5px solid #2B571F;
+}
+
+body.modo-escuro #gerar-button:hover {
+    border-bottom: none;
+  }
+
+body.modo-escuro .footer-container {
+    background-color: #19316F;
+}
+
+body.modo-escuro footer h2,
+body.modo-escuro footer p,
+body.modo-escuro footer span,
+body.modo-escuro footer li,
+body.modo-escuro .descricao-footer a,
+body.modo-escuro .btn-enviar,
+body.modo-escuro #geral-titulo,
+body.modo-escuro #redes_sociais-titulo,
+body.modo-escuro #contato-titulo {
+    color: #DADADC;
+}
+
+body.modo-escuro .footer-container input[type="email"] {
+    background-color: #DADADC;
+}
+
+body.modo-escuro .footer-container button {
+    background-color: #359CCC;
+    color: #DADADC;
+}

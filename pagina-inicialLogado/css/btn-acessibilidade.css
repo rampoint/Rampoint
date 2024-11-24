@@ -293,6 +293,10 @@ body.modo-escuro .btn-lupa {
     border-bottom: 5px solid #19316F;
 }
 
+body.modo-escuro .btn-lupa:hover {
+    border-bottom: none;
+}
+
 body.modo-escuro #info-ecoponto,
 body.modo-escuro #nome-ecoponto,
 body.modo-escuro #texto-endereco,

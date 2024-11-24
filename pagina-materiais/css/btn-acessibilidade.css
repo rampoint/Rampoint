@@ -317,7 +317,7 @@ body.modo-escuro .text-block {
 }
 
 body.modo-escuro .texto-ramcoin {
-    color: #4764B0;
+    color: rgba(137, 170, 255, 0.85);
 }
 
 body.modo-escuro .footer-container {

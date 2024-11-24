@@ -19,6 +19,11 @@
 </head>
 
 <body onload="exibirDadosUsuario()">
+    <div id="reading-mask-container" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 9999;">
+        <div id="top-mask" style="position: absolute; left: 0; top: 0; width: 100%; height: 40%; background: rgba(0, 0, 0, 0.75);"></div>
+        <div id="reading-line" style="position: absolute; left: 0; height: 80px; width: 100%; background: transparent;"></div>
+        <div id="bottom-mask" style="position: absolute; left: 0; bottom: 0; width: 100%; height: 40%; background: rgba(0, 0, 0, 0.75);"></div>
+      </div>
     <script>
         function showSidebar() {
             const sidebar = document.querySelector('.sidebar')
@@ -133,7 +138,7 @@
                 <img src="./img/btn-acessibilidade/modo-leitura.svg" alt="">
                 <h4 class="title-group">Modo de Leitura</h4>
             </div>
-            <div class="group-btn">
+            <div id="mascara-toggle" class="group-btn">
                 <img src="./img/btn-acessibilidade/mascara-leitura.svg" alt="">
                 <h4 class="title-group">Máscara de leitura</h4>
             </div>
@@ -374,10 +379,11 @@
         <script src="../js/firebase-init.js"></script>
         <script src="../js/register.js"></script>
         <script src="../js/logout.js"></script>
-        <script
+        <script src="../js/acessibilidade.js"></script>
+        <!-- <script
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvvanoz7U50-4faMR7NRMsBcc0CfOnCZY&callback=initMap"
             async defer></script>
-        <script src="../js/maps.js"></script>
+        <script src="../js/maps.js"></script> -->
 
     </div>
 </body>

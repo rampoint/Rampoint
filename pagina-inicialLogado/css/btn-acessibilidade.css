@@ -363,6 +363,10 @@ body.modo-escuro #contato-titulo {
     color: #DADADC;
 }
 
+body.modo-escuro #email {
+    color: #282828;
+}
+
 body.modo-escuro .footer-container input[type="email"] {
     background-color: #DADADC;
 }

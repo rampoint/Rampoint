@@ -140,3 +140,178 @@
     margin: 10px 0 10px 15px;
     cursor: pointer;
 }
+
+/* leitor */
+#leitor-status,
+#leitor-text {
+    font-family: "Poppins-regular";
+}
+
+/* modo de leitura */
+body {
+    background-color: #ffffff;
+    color: #333333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.modo-escuro {
+    background-color: #121212;
+    color: #f8f8f8;
+}
+
+nav ul {
+    transition: background-color 0.3s ease;
+}
+
+body.modo-escuro nav ul {
+    background-color: #121212;
+}
+
+body.modo-escuro span {
+    color: #f8f8ff;
+}
+
+nav a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+body.modo-escuro nav a {
+    color: #DADADC;
+}
+
+body.modo-escuro .sidebar {
+    background-color: #19316F;
+}
+
+body .fundo {
+    background-color: #f8f8ff;
+}
+
+body.modo-escuro .fundo {
+    background-color: #282828;
+}
+
+.linha {
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+body.modo-escuro .linha {
+    background-color: rgba(255, 255, 255, 0.35);
+}
+
+.cadastro {
+    color: #000;
+}
+
+body.modo-escuro .cadastro {
+    color: #DADADC;
+}
+
+.login {
+    color: #D40000;
+}
+
+body.modo-escuro .login {
+    color: #FF4141;
+}
+
+.icon-sidebar path {
+    fill: #000;
+}
+
+body.modo-escuro .icon-sidebar path {
+    fill: #DADADC;
+}
+
+body.modo-escuro #titulo-inicial,
+body.modo-escuro #texto-inicial,
+body.modo-escuro #span-preto,
+body.modo-escuro #texto1,
+body.modo-escuro #titulo2,
+body.modo-escuro .faq-sidebar a,
+body.modo-escuro #titulo-pergunta,
+body.modo-escuro #texto-pergunta,
+body.modo-escuro #campo-email,
+body.modo-escuro #campo-feedback,
+body.modo-escuro .contato-suporte,
+body.modo-escuro #pesquisa {
+    color: #DADADC;
+}
+
+body.modo-escuro .faq-sidebar a.active,
+body.modo-escuro #titulo-accordion,
+body.modo-escuro .accordion-header.active #titulo-pergunta,
+body.modo-escuro #span-azul {
+    color: #46C4FF;
+}
+
+body.modo-escuro .accordion-item {
+    border-bottom: 1px solid rgba(160, 160, 160, 0.3);
+}
+
+body.modo-escuro #pesquisa {
+    background-color: rgba(55, 57, 61, 0.5);
+}
+
+body.modo-escuro #btn {
+    background-color: #2A55C2;
+    border-bottom: 5px solid #19316F;
+}
+
+body.modo-escuro #btn:hover {
+    border-bottom: none;
+}
+
+body.modo-escuro .formulario-feedback {
+    background-color: #282828;
+}
+
+body.modo-escuro #email-feedback,
+body.modo-escuro #feedback {
+    color: #DADADC;
+    background-color: rgba(188, 207, 255, 0.1);
+}
+
+body.modo-escuro #email-feedback::placeholder,
+body.modo-escuro #feedback::placeholder {
+    color: rgba(188, 207, 255, 0.4);
+}
+
+body.modo-escuro #btn-enviar {
+    background-color: #2A55C2;
+    border-bottom: 5px solid #19316F;
+}
+
+body.modo-escuro #btn-enviar:hover {
+    border-bottom: none;
+}
+
+body.modo-escuro .footer-container {
+    background-color: #19316F;
+}
+
+body.modo-escuro footer h2,
+body.modo-escuro footer p,
+body.modo-escuro footer span,
+body.modo-escuro footer li,
+body.modo-escuro .descricao-footer a,
+body.modo-escuro .btn-enviar,
+body.modo-escuro #geral-titulo,
+body.modo-escuro #redes_sociais-titulo,
+body.modo-escuro #contato-titulo {
+    color: #DADADC;
+}
+
+body.modo-escuro #email {
+    color: #282828;
+}
+
+body.modo-escuro .footer-container input[type="email"] {
+    background-color: #DADADC;
+}
+
+body.modo-escuro .footer-container button {
+    background-color: #359CCC;
+    color: #DADADC;
+}

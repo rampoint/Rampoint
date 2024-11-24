@@ -145,3 +145,122 @@ document.addEventListener('DOMContentLoaded', function() {
     magnifier.style.willChange = 'transform';
     magnifier.style.backfaceVisibility = 'hidden';
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Elementos do DOM
+    const leitorButton = document.getElementById('leitor-acs');
+    const leitorContainer = document.getElementById('leitor-container');
+    const leitorText = document.getElementById('leitor-text');
+    const leitorStatus = document.getElementById('leitor-status');
+    const pauseButton = document.getElementById('leitor-pause');
+    const stopButton = document.getElementById('leitor-stop');
+
+    // Se o container não existir no DOM, adiciona
+    if (!document.getElementById('leitor-container')) {
+        document.body.appendChild(leitorContainer);
+    }
+
+    // Verifica se todos os elementos necessários existem
+    if (!leitorButton || !leitorContainer || !leitorText || !pauseButton || !stopButton) {
+        console.error('Elementos necessários não encontrados');
+        return;
+    }
+
+    let isActive = false;
+    let isPaused = false;
+    let currentUtterance = null;
+    let selectedText = '';
+    const synthesis = window.speechSynthesis;
+
+    // Configuração do sintetizador de voz
+    function setupVoice() {
+        const utterance = new SpeechSynthesisUtterance();
+        // Tenta encontrar uma voz em português
+        const voices = synthesis.getVoices();
+        const ptVoice = voices.find(voice => voice.lang.includes('pt'));
+        if (ptVoice) {
+            utterance.voice = ptVoice;
+        }
+        utterance.lang = 'pt-BR';
+        utterance.rate = 1;
+        utterance.pitch = 1;
+        return utterance;
+    }
+
+    // Função para iniciar a leitura
+    function startReading(text) {
+        if (synthesis.speaking) {
+            synthesis.cancel();
+        }
+
+        if (text) {
+            currentUtterance = setupVoice();
+            currentUtterance.text = text;
+            synthesis.speak(currentUtterance);
+            leitorText.textContent = text;
+            isPaused = false;
+            updatePauseButtonText();
+        }
+    }
+
+    // Função para atualizar o texto do botão de pausa
+    function updatePauseButtonText() {
+        pauseButton.textContent = isPaused ? 'Continuar' : 'Pausar';
+    }
+
+    // Manipulador de seleção de texto
+    function handleTextSelection() {
+        if (!isActive) return;
+        
+        const selection = window.getSelection();
+        selectedText = selection.toString().trim();
+        
+        if (selectedText) {
+            startReading(selectedText);
+        }
+    }
+
+    // Toggle do leitor
+    function toggleLeitor() {
+        isActive = !isActive;
+        leitorContainer.style.display = isActive ? 'block' : 'none';
+        leitorButton.style.backgroundColor = isActive ? '#7ad761' : '';
+
+        if (isActive) {
+            document.addEventListener('mouseup', handleTextSelection);
+        } else {
+            document.removeEventListener('mouseup', handleTextSelection);
+            synthesis.cancel();
+        }
+    }
+
+    // Eventos dos botões
+    leitorButton.addEventListener('click', toggleLeitor);
+
+    pauseButton.addEventListener('click', () => {
+        if (synthesis.speaking) {
+            if (isPaused) {
+                synthesis.resume();
+            } else {
+                synthesis.pause();
+            }
+            isPaused = !isPaused;
+            updatePauseButtonText();
+        }
+    });
+
+    stopButton.addEventListener('click', () => {
+        synthesis.cancel();
+        leitorText.textContent = 'Selecione um texto para começar a leitura';
+        isPaused = false;
+        updatePauseButtonText();
+    });
+
+    // Estilo inicial do botão
+    leitorButton.style.cursor = 'pointer';
+
+    // Carregar vozes quando disponíveis
+    synthesis.addEventListener('voiceschanged', () => {
+        setupVoice();
+    });
+});

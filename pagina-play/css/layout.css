@@ -247,9 +247,9 @@
     text-decoration-line: underline;
   }
 
-  /* .accessibility-btn {
+  .accessibility-btn {
     display: none;
-  } */
+  }
 
   .imagem-fundo {
     height: 25em;

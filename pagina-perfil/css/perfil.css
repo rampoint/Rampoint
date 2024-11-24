@@ -623,7 +623,7 @@ body {
   padding: 20px;
   border-radius: 25px;
   width: 56em;
-  height: 28em;
+  height: auto;
   text-align: center;
   margin-bottom: 3em;
 }
@@ -644,6 +644,7 @@ body {
 .texto-mood {
   font-family: "Poppins-medium";
   color: var(--preto);
+  margin-top: 5px;
 }
 
 .span-preto {
@@ -793,7 +794,8 @@ body {
   flex-direction: column;
   align-items: center;
   width: 50em;
-  height: 35em;
+  height: auto;
+  padding-bottom: 25px;
   border-radius: 30px;
   box-shadow: 0 5px 20px rgba(157, 78, 221, 0.15);
 }
@@ -1028,7 +1030,7 @@ body {
   content: url(../img/brilho-azul.svg);
   position: absolute;
   left: 0;
-  font-size: 19px;
+  font-size: 17px;
   line-height: 1.5;
 }
 
@@ -1093,7 +1095,7 @@ body {
 #alteracao_popup {
   width: 360px;
   position: fixed;
-  top: -120px;
+  top: -150px;
   /* Começa fora da tela */
   left: 50%;
   transform: translateX(-50%);

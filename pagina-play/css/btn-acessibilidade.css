@@ -167,16 +167,11 @@ body.modo-escuro nav ul {
     background-color: #121212;
 }
 
-body span {
-    color: #000;
-}
-
 body.modo-escuro span {
     color: #f8f8ff;
 }
 
 nav a {
-    color: #000;
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -251,11 +246,11 @@ body.modo-escuro #btn {
 }
 
 body.modo-escuro .cupons {
-    background-color: #4764B0;
+    background-color: #142245;
 }
 
 body.modo-escuro #titulo2 {
-    color: #19316F;
+    color: rgba(137, 170, 255, 0.85);
     list-style: url(../img/Vector2-dark.svg);
 }
 
@@ -292,7 +287,7 @@ body.modo-escuro .card-empresa {
 
 body.modo-escuro #titulo-empresas,
 body.modo-escuro #endereco-empresas {
-    color: #19316F;
+    color: #142245;
 }
 
 body.modo-escuro footer h2,
@@ -305,6 +300,10 @@ body.modo-escuro #geral-titulo,
 body.modo-escuro #redes_sociais-titulo,
 body.modo-escuro #contato-titulo {
     color: #DADADC;
+}
+
+body.modo-escuro #email {
+    color: #282828;
 }
 
 body.modo-escuro .footer-container input[type="email"] {

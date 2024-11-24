@@ -140,3 +140,211 @@
     margin: 10px 0 10px 15px;
     cursor: pointer;
 }
+
+/* leitor */
+#leitor-status,
+#leitor-text {
+    font-family: "Poppins-regular";
+}
+
+/* modo de leitura */
+body {
+    background-color: #ffffff;
+    color: #333333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.modo-escuro {
+    background-color: #121212;
+    color: #f8f8f8;
+}
+
+nav ul {
+    transition: background-color 0.3s ease;
+}
+
+body.modo-escuro nav ul {
+    background-color: #121212;
+}
+
+body.modo-escuro span {
+    color: #f8f8ff;
+}
+
+nav a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+body.modo-escuro nav a {
+    color: #DADADC;
+}
+
+body.modo-escuro .sidebar {
+    background-color: #19316F;
+}
+
+body .fundo {
+    background-color: #f8f8ff;
+}
+
+body.modo-escuro .fundo {
+    background-color: #282828;
+}
+
+.linha {
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+body.modo-escuro .linha {
+    background-color: rgba(255, 255, 255, 0.35);
+}
+
+.cadastro {
+    color: #000;
+}
+
+body.modo-escuro .cadastro {
+    color: #DADADC;
+}
+
+.login {
+    color: #D40000;
+}
+
+body.modo-escuro .login {
+    color: #FF4141;
+}
+
+.icon-sidebar path {
+    fill: #000;
+}
+
+body.modo-escuro .icon-sidebar path {
+    fill: #DADADC;
+}
+
+body.modo-escuro #titulo-inicial {
+    color: #DADADC;
+}
+
+body.modo-escuro #texto-inicial,
+body.modo-escuro #texto-inicial #span-preto {
+    color: #DADADC;
+}
+
+body.modo-escuro #texto1 {
+    color: #DADADC;
+}
+
+body.modo-escuro #texto1 #span-preto {
+    color: #DADADC;
+}
+
+body.modo-escuro #btn {
+    background-color: #19316F;
+}
+
+body.modo-escuro .menu {
+    background-color: rgba(40, 40, 40, 0.5);
+}
+
+body.modo-escuro .main-btn,
+body.modo-escuro .sub-btn {
+    background-color: rgba(222, 222, 225, 0.1);
+    color: #8B8B8B;
+}
+
+body.modo-escuro .fundo-gabinete,
+body.modo-escuro .fundo-baias,
+body.modo-escuro .fundo-slots,
+body.modo-escuro .fundo-organizador,
+body.modo-escuro .fundo-painel,
+body.modo-escuro .fundo-gpu,
+body.modo-escuro .fundo-placa-mae,
+body.modo-escuro .fundo-memoria-ram,
+body.modo-escuro .fundo-hdd,
+body.modo-escuro .fundo-psu,
+body.modo-escuro .fundo-cpu,
+body.modo-escuro .fundo-monitor,
+body.modo-escuro .fundo-teclado,
+body.modo-escuro .fundo-mouse,
+body.modo-escuro .fundo-alto-falante,
+body.modo-escuro .fundo-ventoinhas,
+body.modo-escuro .fundo-dissipadores,
+body.modo-escuro .fundo-filtro,
+body.modo-escuro .fundo-cooler {
+    background-color: #121212;
+}
+
+body.modo-escuro .titulo-perifericos,
+body.modo-escuro .titulo-monitor,
+body.modo-escuro .titulo-teclado,
+body.modo-escuro .titulo-mouse,
+body.modo-escuro .titulo-alto-falante {
+    color: #C0D2FF;
+}
+
+body.modo-escuro .span-azul {
+    color: #C0D2FF;
+}
+
+body.modo-escuro .p-gabinete,
+body.modo-escuro .p-baias,
+body.modo-escuro .p-slots,
+body.modo-escuro .p-organizador,
+body.modo-escuro .p-painel,
+body.modo-escuro .p-hdd,
+body.modo-escuro .p-cpu,
+body.modo-escuro .p-gpu,
+body.modo-escuro .p-placa-mae,
+body.modo-escuro .p-memoria-ram,
+body.modo-escuro .p-psu,
+body.modo-escuro .p-monitor,
+body.modo-escuro .p-teclado,
+body.modo-escuro .p-mouse,
+body.modo-escuro .p-alto-falante,
+body.modo-escuro .p-ventoinhas,
+body.modo-escuro .p-dissipadores,
+body.modo-escuro .p-filtro,
+body.modo-escuro .p-cooler {
+    color: #DADADC;
+}
+
+body.modo-escuro .text-block {
+    background-color: #282828;
+    box-shadow: 0px 5px 8px rgba(20, 34, 69, 0.5);
+}
+
+body.modo-escuro .texto-ramcoin {
+    color: rgba(137, 170, 255, 0.85);
+}
+
+body.modo-escuro .footer-container {
+    background-color: #19316F;
+}
+
+body.modo-escuro footer h2,
+body.modo-escuro footer p,
+body.modo-escuro footer span,
+body.modo-escuro footer li,
+body.modo-escuro .descricao-footer a,
+body.modo-escuro .btn-enviar,
+body.modo-escuro #geral-titulo,
+body.modo-escuro #redes_sociais-titulo,
+body.modo-escuro #contato-titulo {
+    color: #DADADC;
+}
+
+body.modo-escuro #email {
+    color: #282828;
+}
+
+body.modo-escuro .footer-container input[type="email"] {
+    background-color: #DADADC;
+}
+
+body.modo-escuro .footer-container button {
+    background-color: #359CCC;
+    color: #DADADC;
+}

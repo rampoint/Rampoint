@@ -247,6 +247,10 @@
     text-decoration-line: underline;
   }
 
+  .accessibility-btn {
+    display: none;
+  }
+
   .imagem-fundo {
     height: 25em;
     margin-bottom: 2em;

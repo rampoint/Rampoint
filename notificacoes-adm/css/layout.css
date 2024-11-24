@@ -12,7 +12,7 @@
   }
 }
 
-@media (max-width: 1920px) {
+/* @media (max-width: 1920px) {
   .fundo-titulo {
     width: 100vw;
   }
@@ -24,9 +24,9 @@
   .mensagens {
     height: 850px;
   }
-}
+} */
 
-/* 
+
 @media (min-width: 1600px) {
   .fundo-titulo {
     width: 100vw;
@@ -44,9 +44,3 @@
     width: 100vw;
   }
 }
-
-@media (min-width: 1900px) {
-  .fundo-titulo {
-    width: 100vw;
-  }
-} */

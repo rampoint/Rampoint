@@ -65,7 +65,7 @@
   }
 }
 
-@media (max-width: 1920px) {
+/* @media (max-width: 1920px) {
   .fundo-titulo {
     width: 100vw;
   }
@@ -130,7 +130,7 @@
     height: 17em;
     margin-top: 2em;
   }
-}
+} */
 
 @media (max-width: 1855px) {
   .fundo-notificacoes {

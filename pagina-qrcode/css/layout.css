@@ -248,6 +248,10 @@
     text-decoration-line: underline;
   }
 
+  .accessibility-btn {
+    display: none;
+  }
+
   #moeda-verde {
     width: 110px;
   }

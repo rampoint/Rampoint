@@ -270,6 +270,10 @@
     text-decoration-line: underline;
   }
 
+  .accessibility-btn {
+    display: none;
+  }
+
   .content-perfil {
     width: 85%;
   }

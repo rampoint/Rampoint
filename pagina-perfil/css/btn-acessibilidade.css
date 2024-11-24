@@ -22,13 +22,6 @@
     border-bottom-left-radius: 15px;
 }
 
-.icon {
-    width: 2em;
-    text-align: center;
-    z-index: 1;
-    margin: 10px 3px 8px 3px;
-}
-
 .text {
     font-family: "Poppins-bold";
     display: none;
@@ -215,6 +208,39 @@ body.modo-escuro .cadastro {
 body.modo-escuro .login {
     color: #FF4141;
 }
+
+/* botao acessibilidade */
+.icon {
+    width: 30px;
+    text-align: center;
+    z-index: 1;
+    margin: 10px 3px 8px 3px;
+}
+
+body.modo-escuro .accessibility-menu.active,
+body.modo-escuro .accessibility-btn.menu-open {
+    background-color: #121212;
+}
+
+body.modo-escuro .title-accessibility-menu {
+    color: #C0D2FF;
+}
+
+body.modo-escuro .group-btn,
+body.modo-escuro .btn-clear {
+    background-color: #282828;
+}
+
+body.modo-escuro .title-group,
+body.modo-escuro .btn-clear {
+    color: #DADADC;
+}
+
+.icon-X {
+    color: #C0D2FF;
+}
+
+/* botao acessibilidade */
 
 .icon-sidebar path {
     fill: #000;

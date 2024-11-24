@@ -1,3 +1,201 @@
+// IIFE para encapsulamento
+(() => {
+  const NS = 'accessibility_magnifier_' + Math.random().toString(36).slice(2, 9);
+  
+  // Criação otimizada dos elementos
+  const createEl = (tag, styles) => {
+    const el = document.createElement(tag);
+    Object.assign(el.style, styles);
+    return el;
+  };
+
+  const createElements = () => {
+    // Estilos base compartilhados
+    const baseStyles = {
+      position: 'fixed',
+      width: '150px',
+      height: '150px',
+      borderRadius: '50%',
+      pointerEvents: 'none',
+      display: 'none'
+    };
+
+    const magnifier = createEl('div', {
+      ...baseStyles,
+      border: '2px solid #666',
+      overflow: 'hidden',
+      zIndex: '2147483647',
+      boxShadow: '0 0 10px rgba(0,0,0,0.3)',
+      willChange: 'transform',
+      backfaceVisibility: 'hidden',
+      background: 'white'
+    });
+    magnifier.id = `${NS}_magnifier`;
+
+    const magnifierContent = createEl('div', {
+      position: 'absolute',
+      transformOrigin: 'top left',
+      pointerEvents: 'none',
+      background: 'white'
+    });
+    magnifierContent.id = `${NS}_content`;
+
+    const hiddenArea = createEl('div', {
+      ...baseStyles,
+      zIndex: '2147483646',
+      background: 'white'
+    });
+    hiddenArea.id = `${NS}_hidden_area`;
+
+    const lupaToggle = createEl('button', {
+      position: 'fixed',
+      bottom: '20px',
+      right: '20px',
+      width: '50px',
+      height: '50px',
+      borderRadius: '50%',
+      border: 'none',
+      background: '#fff',
+      boxShadow: '0 2px 5px rgba(0,0,0,0.2)',
+      cursor: 'pointer',
+      zIndex: '2147483648',
+      fontSize: '20px',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      transition: 'background-color 0.3s',
+      pointerEvents: 'auto'
+    });
+    lupaToggle.id = `${NS}_toggle`;
+    lupaToggle.innerHTML = '🔍';
+
+    magnifier.appendChild(magnifierContent);
+    return { magnifier, magnifierContent, hiddenArea };
+  };
+
+  // Inicialização
+  const init = () => {
+    const elements = createElements();
+    const { magnifier, magnifierContent, hiddenArea} = elements;
+    
+    // Adiciona elementos apenas se não existirem
+    if (!document.getElementById(magnifier.id)) {
+      const fragment = document.createDocumentFragment();
+      fragment.append(hiddenArea, magnifier);
+      document.body.appendChild(fragment);
+    }
+
+    // Cache de elementos e valores frequentemente usados
+    const state = {
+      isActive: false,
+      zoomLevel: 1.5,
+      size: 150,
+      halfSize: 75,
+      pageSize: {
+        width: 0,
+        height: 0
+      },
+      rafId: null
+    };
+
+    // Atualiza dimensões da página
+    const updatePageSize = () => {
+      state.pageSize = {
+        width: Math.max(
+          document.documentElement.scrollWidth,
+          document.body.scrollWidth,
+          document.documentElement.offsetWidth
+        ),
+        height: Math.max(
+          document.documentElement.scrollHeight,
+          document.body.scrollHeight,
+          document.documentElement.offsetHeight
+        )
+      };
+    };
+
+    // Otimização com RequestAnimationFrame
+    const updateMagnifier = (e) => {
+      if (!state.isActive) return;
+      
+      state.rafId = requestAnimationFrame(() => {
+        const scrollX = window.pageXOffset || document.documentElement.scrollLeft;
+        const scrollY = window.pageYOffset || document.documentElement.scrollTop;
+        
+        const x = e.pageX - scrollX;
+        const y = e.pageY - scrollY;
+        const left = `${x - state.halfSize}px`;
+        const top = `${y - state.halfSize}px`;
+
+        // Atualiza posições
+        Object.assign(magnifier.style, { left, top });
+        Object.assign(hiddenArea.style, { left, top });
+        
+        // Atualiza conteúdo apenas se necessário
+        if (!magnifierContent.innerHTML) {
+          updatePageSize();
+          Object.assign(magnifierContent.style, {
+            width: `${state.pageSize.width}px`,
+            height: `${state.pageSize.height}px`
+          });
+          
+          const clone = document.documentElement.cloneNode(true);
+          // Remove elementos da lupa do clone
+          [magnifier.id, hiddenArea.id].forEach(id => {
+            const el = clone.querySelector(`#${id}`);
+            el?.remove();
+          });
+          magnifierContent.innerHTML = clone.outerHTML;
+        }
+
+        // Atualiza transformação
+        magnifierContent.style.transform = `
+          translate(${-e.pageX * state.zoomLevel + state.halfSize}px,
+                   ${-e.pageY * state.zoomLevel + state.halfSize}px)
+          scale(${state.zoomLevel})
+        `;
+      });
+    };
+
+    // Toggle otimizado
+    const handleToggle = (e) => {
+      e.stopPropagation();
+      state.isActive = !state.isActive;
+      const display = state.isActive ? 'block' : 'none';
+      
+      magnifier.style.display = display;
+      hiddenArea.style.display = display;
+      
+
+      if (state.isActive) {
+        magnifierContent.innerHTML = '';
+        document.addEventListener('mousemove', updateMagnifier, { passive: true });
+      } else {
+        document.removeEventListener('mousemove', updateMagnifier);
+        cancelAnimationFrame(state.rafId);
+      }
+    };
+
+    // Event listeners
+    document.getElementById('lupa-acs').addEventListener('click', handleToggle);
+    
+    // Cleanup
+    window[`${NS}_cleanup`] = () => {
+      document.removeEventListener('mousemove', updateMagnifier);
+      cancelAnimationFrame(state.rafId);
+      [magnifier, hiddenArea].forEach(el => el.remove());
+      delete window[`${NS}_cleanup`];
+    };
+  };
+
+  // Inicializa quando o DOM estiver pronto
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init, { once: true });
+  } else {
+    init();
+  }
+})();
+
 document.addEventListener("DOMContentLoaded", function () {
   // Elementos da máscara de leitura
   const readingMaskContainer = document.getElementById(

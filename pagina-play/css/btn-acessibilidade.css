@@ -299,6 +299,26 @@ body.modo-escuro .close {
     border: 2px solid #989898;
 }
 
+body.modo-escuro .fundo-medalha-salto {
+    background-color: rgba(198, 240, 172, 0.85);
+}
+
+body.modo-escuro .fundo-medalha-coracao {
+    background-color: rgba(255, 181, 195, 0.85);
+}
+
+body.modo-escuro .fundo-medalha-explosao {
+    background-color: rgba(228, 194, 255, 0.85);
+}
+
+body.modo-escuro .fundo-medalha-engrenagem {
+    background-color: rgba(186, 232, 254, 0.85);
+}
+
+body.modo-escuro .fundo-medalha-raio {
+    background-color: rgba(255, 240, 146, 0.85);
+}
+
 body.modo-escuro .footer-container {
     background-color: #19316F;
 }

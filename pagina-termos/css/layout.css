@@ -12,35 +12,9 @@
   }
 }
 
-@media (max-width: 1024px) {
-  #drop {
-    display: block;
-  }
-
-  .info-box {
-    width: auto;
-    text-align: center;
-    width: 50%;
-  }
-
-  .descricao-footer {
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 40px;
-    max-width: 100%;
-  }
-
-  .copyright {
-    margin-left: 80px;
-  }
-}
-
-@media (max-width: 995px) {
+@media (max-width: 1015px) {
   .hideOnMobile {
     display: none;
-  }
-  nav ul {
-    position: static;
   }
 
   .menu-button {
@@ -49,7 +23,7 @@
 
   nav ul {
     justify-content: space-between;
-    padding-left: 0;
+    position: fixed;
   }
 
   nav a {
@@ -68,6 +42,12 @@
     display: none;
   }
 
+  .sidebar {
+    height: 65vh;
+    right: 0;
+    z-index: 100000;
+  }
+
   nav a:visited {
     text-decoration: none;
     transition: color 1.5s ease-out 1ms;
@@ -77,87 +57,72 @@
     color: var(--branco);
     text-decoration-line: underline;
   }
-
-  .logoBranca {
-    display: none;
-  }
 }
 
-@media (max-width: 695px) {
-  .descricao-footer {
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 40px;
-    max-width: 100%;
-  }
-
-  .footer-container input[type="email"] {
-    width: 360px;
-  }
-
-  .geral,
-  .redes-sociais,
-  .contato {
-    margin-top: 1em;
-    width: 490px;
-  }
-}
-
-@media (max-width: 530px) {
-  .footer-container input[type="email"] {
-    width: 300px;
-  }
-
-  .geral,
-  .redes-sociais,
-  .contato {
-    width: 420px;
-  }
-}
-
-@media (max-width: 435px) {
+@media (max-width: 795px) {
   .lista-termos {
-    padding: 0 25px;
-  }
-  .footer-container input[type="email"] {
-    width: 250px;
-  }
-
-  .geral,
-  .redes-sociais,
-  .contato {
-    width: 320px;
+    width: 90%;
+    padding: 0;
   }
 }
 
-@media (max-width: 320px) {
-  .footer-container {
-    width: 320px;
-    height: auto;
-    position: none;
+@media (max-width: 665px) {
+  .titulo {
+    font-size: 54px;
   }
 
-  .flor img {
-    visibility: hidden;
+  .texto-termos {
+    width: 95%;
+  }
+}
+
+@media (max-width: 535px) {
+  .titulo {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 510px) {
+  .sidebar {
+    height: 70vh;
   }
 
-  h2 {
-    margin: 0;
+  .footer-logo {
+    margin-bottom: 2em;
   }
 
-  h3 {
-    margin-top: 15px;
+  #footer-logo {
+    width: 130px;
   }
+}
 
-  .email {
-    width: 200px;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    margin-left: 30px;
+@media (max-width: 495px) {
+  .titulo {
+    margin: 3em auto 2em auto;
   }
+}
 
-  .footer-container .logo {
-    width: 80px;
+@media (max-width: 485px) {
+  .titulo {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 445px) {
+  .titulo {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 405px) {
+  .titulo {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 335px) {
+  .titulo {
+    font-size: 30px;
+    margin: 4em auto 2em auto;
   }
 }

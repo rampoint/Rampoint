@@ -229,7 +229,8 @@ body.modo-escuro .titulo-form {
     color: #DADADC;
 }
 
-body.modo-escuro .qrcode-box {
+body.modo-escuro .qrcode-box,
+body.modo-escuro .campo-inicial {
     background-color: #282828;
 }
 
@@ -260,9 +261,28 @@ body.modo-escuro #gerar-button {
     border-bottom: 5px solid #2B571F;
 }
 
-body.modo-escuro #gerar-button:hover {
+body.modo-escuro #download,
+body.modo-escuro #salvar {
+    background-color: #1680B1;
+    border-bottom: 5px solid #054867;
+}
+
+body.modo-escuro #gerar-button:hover,
+body.modo-escuro #download:hover,
+body.modo-escuro #salvar:hover {
     border-bottom: none;
-  }
+}
+
+body.modo-escuro .shadow,
+body.modo-escuro .shadow-moeda-amarela,
+body.modo-escuro .shadow-moeda2,
+body.modo-escuro .shadow-moeda-roxa {
+    background-color: #282828;
+}
+
+body.modo-escuro input {
+    color: #f8f8ff;
+}
 
 body.modo-escuro .footer-container {
     background-color: #19316F;

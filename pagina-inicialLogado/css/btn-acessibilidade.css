@@ -280,6 +280,7 @@ body.modo-escuro label {
 
 body.modo-escuro input {
     background-color: rgba(188, 207, 255, 0.1);
+    color: #f8f8ff;
 }
 
 body.modo-escuro #cep::placeholder,

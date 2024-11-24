@@ -238,10 +238,8 @@
   }
 
   nav ul {
-    width: auto;
     justify-content: space-between;
-    position: static;
-    padding-left: 0;
+    position: fixed;
   }
 
   nav a {
@@ -281,7 +279,7 @@
   } */
 
   .imagem-fundo {
-    margin-top: 2em;
+    margin-top: 7em;
   }
 
   .imagem-inicial {
@@ -360,46 +358,7 @@
   }
 }
 
-/* header layout */
 @media (max-width: 900px) {
-  .hideOnMobile {
-    display: none;
-  }
-
-  .menu-button {
-    display: block;
-  }
-
-  nav ul {
-    width: 55em;
-  }
-
-  nav a {
-    padding-right: 30px;
-  }
-
-  #logo {
-    margin-left: 20px;
-  }
-
-  #logo-nav {
-    margin-left: 20px;
-  }
-
-  #perfil {
-    display: none;
-  }
-
-  nav a:visited {
-    text-decoration: none;
-    transition: color 1.5s ease-out 1ms;
-  }
-
-  nav a:hover {
-    color: var(--branco);
-    text-decoration-line: underline;
-  }
-
   .imagem-inicial {
     margin-left: 13em;
   }
@@ -411,13 +370,15 @@
 }
 
 @media (max-width: 876px) {
-  nav ul {
-    width: 52em;
-  }
 
   .imagem-fundo,
   .info-box {
     margin: 5em 2em;
+  }
+
+  #ecopontos {
+    margin-top: 0;
+    padding: 60px 20px;
   }
 
   .container-grid {
@@ -451,12 +412,6 @@
   }
 }
 
-@media (max-width: 820px) {
-  nav ul {
-    width: 48em;
-  }
-}
-
 @media (max-width: 795px) {
 
   #titulo1,
@@ -471,14 +426,14 @@
 }
 
 @media (max-width: 775px) {
-  nav ul {
-    width: 46em;
-  }
 
   .imagem-fundo,
-  .container-grid,
-  .info-box {
+  .container-grid {
     margin: 5em 0;
+  }
+
+  .info-box {
+    margin: 0;
   }
 
   .imagem-inicial {
@@ -509,17 +464,21 @@
   #titulo-descarte {
     margin-right: 28em;
   }
+
+  .card {
+    flex-direction: column;
+  }
+
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+  }
 }
 
 @media (max-width: 725px) {
-  nav ul {
-    width: 44em;
-  }
-
-  .sidebar {
-    right: 0.5em;
-  }
-
   .imagem-inicial {
     width: 22em;
     margin-left: 6em;
@@ -609,7 +568,7 @@
   }
 
   #ecopontos {
-    padding: 20px 0;
+    padding: 110px 0 50px 0;
   }
 
   .card {
@@ -622,10 +581,6 @@
 }
 
 @media (max-width: 710px) {
-  nav ul {
-    width: auto;
-  }
-
   .container {
     display: flex;
     flex-direction: column;
@@ -642,6 +597,7 @@
     margin: 0;
     width: 100%;
     height: 30em;
+    margin-top: 5em;
     margin-bottom: 23em;
   }
 
@@ -695,12 +651,12 @@
     font-size: 74px;
     width: 100%;
     line-height: 0.8em;
-    margin: 15px;
+    margin: 15px auto;
   }
 
   #texto-inicial {
     width: 75%;
-    margin: 25px 105px;
+    margin: 25px auto;
     font-size: 20px;
   }
 
@@ -785,11 +741,8 @@
 }
 
 @media (max-width: 655px) {
-  nav ul {
-    width: 40em;
-  }
-
   .imagem-fundo {
+    margin-top: 8em;
     margin-bottom: 6em;
   }
 
@@ -820,23 +773,8 @@
 }
 
 @media (max-width: 640px) {
-  nav ul {
-    width: 39em;
-  }
-
-  .card {
-    flex-direction: column-reverse;
-  }
-
   .imagem-ecoponto {
     margin-bottom: 45px;
-  }
-
-  .card-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
 
   .card-content p {
@@ -853,23 +791,19 @@
 }
 
 @media (max-width: 615px) {
-  nav ul {
-    width: 38em;
-  }
-
   .imagem-ram {
     margin-left: 4em;
   }
 }
 
 @media (max-width: 605px) {
-  nav ul {
-    width: 37em;
+  #titulo-inicial {
+    margin: 15px auto;
   }
 
   #texto-inicial {
     width: 65%;
-    margin: 25px 135px;
+    margin: 25px auto;
   }
 
   .imagem-ram {
@@ -887,19 +821,15 @@
 
   #cep,
   #rua {
-    padding-right: 15px;
+    padding-right: 5px;
   }
 
   #bairro {
-    padding-right: 175px;
+    padding-right: 135px;
   }
 
   .card {
-    width: 540px;
-  }
-
-  .imagem-ecoponto {
-    width: 280px;
+    width: auto;
   }
 
   #titulo-descarte {
@@ -908,9 +838,6 @@
 }
 
 @media (max-width: 596px) {
-  nav ul {
-    width: 36em;
-  }
 
   .cep-rua,
   .bairro-form {
@@ -929,23 +856,9 @@
   #titulo-descarte {
     margin-right: 16em;
   }
-
-  .footer-container input[type="email"] {
-    width: 310px;
-  }
-}
-
-@media (max-width: 580px) {
-  nav ul {
-    width: auto;
-  }
 }
 
 @media (max-width: 530px) {
-  .imagem-fundo {
-    margin: 1em 5em 6em 6em;
-  }
-
   .imagem-ram {
     margin: 0 4.5em;
   }
@@ -985,20 +898,28 @@
     padding-right: 95px;
   }
 
-  .card {
-    width: 500px;
-  }
-
-  .imagem-ecoponto {
-    width: 250px;
-  }
-
   #titulo-descarte {
     margin-right: 14em;
   }
 }
 
-@media (max-width: 490px) {
+@media (max-width: 500px) {
+  .sidebar {
+    height: 70vh;
+  }
+
+  .footer-logo {
+    margin-bottom: 2em;
+  }
+
+  #footer-logo {
+    width: 130px;
+  }
+
+  #titulo-inicial {
+    font-size: 64px;
+  }
+
   .imagem-inicial {
     width: 25em;
   }
@@ -1045,7 +966,7 @@
   .card {
     display: flex;
     flex-direction: column;
-    margin: 20px 40px;
+    margin: 20px auto;
   }
 
   .card-content {
@@ -1053,7 +974,7 @@
   }
 
   #titulo-descarte {
-    margin-top: 1em;
+    margin-top: 2em;
     margin-right: 13em;
   }
 
@@ -1117,283 +1038,181 @@
   #titulo-descarte {
     margin-right: 10em;
   }
-
-  .footer-container input[type="email"] {
-    width: 250px;
-  }
 }
 
-@media (min-width: 320px) and (max-width: 435px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-  }
-
-  .sidebar {
-    height: 45em;
-  }
-
+@media (max-width: 425px) {
   .imagem-fundo {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    width: 100%;
-    height: 35em;
-    margin-top: 1em;
+    margin-top: 4em;
   }
 
-  .internos-inicial {
-    position: relative;
-    right: 8em;
-    top: 5em;
+  #titulo-inicial {
+    font-size: 54px;
   }
 
-  .brilho-inicial {
-    position: relative;
-    right: 8em;
-    top: 15em;
-    z-index: -1;
+  .imagem-inicial {
+    width: 22em;
   }
 
   .monitor-inicial {
-    position: relative;
+    top: 27em;
+  }
+
+  .brilho-inicial2 {
+    top: 30em;
+  }
+
+  .teclado-inicial {
+    top: 37em;
+  }
+
+  .card-content p {
+    max-width: 70%;
+  }
+
+  #map {
+    width: 330px;
+  }
+}
+
+@media (max-width: 400px) {
+  #texto1 {
+    max-width: 60%;
+  }
+
+  #h1-info,
+  #p-info {
+    margin-left: 225px;
+  }
+
+  #p-info {
+    width: 45%;
+  }
+
+  #titulo-descarte {
+    margin-right: 8em;
+  }
+}
+
+@media (max-width: 380px) {
+  .imagem-inicial {
+    width: 20em;
+  }
+
+  .brilho-inicial {
+    right: 8em;
+  }
+
+  .monitor-inicial {
     right: 8em;
     top: 25em;
   }
 
   .roxo-inicial {
-    position: relative;
-    left: 8em;
-    top: 15em;
+    top: 14em;
   }
 
   .brilho-inicial2 {
-    position: relative;
-    left: 8em;
-    top: 29em;
-    z-index: -1;
+    top: 28em;
   }
 
   .teclado-inicial {
-    position: relative;
-    left: 8em;
     top: 35em;
   }
 
-  .imagem-inicial {
-    width: 350px;
-    margin: 0 0 12em 0;
-    z-index: -1;
-  }
-
-  .inicio {
-    width: 25em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    bottom: 10em;
-  }
-
-  #titulo-inicial {
-    font-size: 4em;
-    width: 90%;
-    margin: 0 0 15px 0;
-    text-align: center;
-  }
-
-  #texto-inicial {
-    width: 75%;
-    margin: 0;
-    text-align: center;
-    font-size: 1em;
-  }
-
-  .botao {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 25px;
-    gap: 15px;
-    margin-left: 16em;
-  }
-
-  .container-grid {
-    margin-top: -50px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  #texto1 {
-    margin: 20px 70px -40px 70px;
-    text-align: center;
-  }
-
-  #texto2 {
-    margin: 20px 70px;
-    text-align: center;
-  }
-
-  #titulo1 {
-    text-align: center;
-    font-size: 1.7em;
-    margin: 280px 0 10px 0px;
-  }
-
-  #titulo2 {
-    text-align: center;
-    font-size: 1.5em;
-    margin: 0px 0 0 0px;
-  }
-
-  .imagem-medalha {
-    width: 100%;
-    height: 50%;
-  }
-
-  #medalhas {
-    width: 350px;
-    margin-left: 60px;
-  }
-
-  .imagem-ram {
-    margin-left: 65px;
-  }
-
   .ramEmpe {
-    width: 20em;
-    margin: 0;
+    width: 22em;
   }
+}
 
-  .texto-ram {
-    position: relative;
-    bottom: 5em;
-  }
-
-  #ecopontos {
-    max-width: 80%;
-    height: 25em;
-    margin-bottom: 6em;
-  }
-
-  .info-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
-  }
-
+@media (max-width: 360px) {
   #h1-info {
-    text-align: center;
-    width: 15em;
+    margin: 15px auto;
   }
 
   #p-info {
+    width: 35%;
     text-align: center;
-    width: 15em;
-    margin-bottom: 30px;
-  }
-
-  #h1-info,
-  #p-info {
-    margin-left: 0;
+    margin: 15px auto;
   }
 
   .form-conteiner {
-    padding: 10px;
-    flex-direction: row;
     width: 270px;
-  }
-
-  input {
-    width: 200px;
-    height: 35px;
-    max-width: 100%;
-    margin-right: 0px;
-  }
-
-  .cep-form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: 20px;
-    max-width: 100%;
-  }
-
-  .cep-rua {
-    display: flex;
-    flex-direction: column;
-    margin-left: 0;
-  }
-
-  .rua-form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 15px 0 0 20px;
   }
 
   #cep,
   #rua,
   #bairro {
-    padding-right: 25px;
+    padding-right: 34px;
+  }
+}
+
+@media (max-width: 355px) {
+  #titulo-descarte {
+    margin-right: 6em;
+  }
+}
+
+@media (max-width: 340px) {
+  .imagem-inicial {
+    width: 18em;
   }
 
-  .bairro-form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: 20px;
+  .internos-inicial {
+    right: 7em;
+    top: 4em;
   }
 
-  .btn {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+  .brilho-inicial {
+    right: 7em;
   }
 
-  .btn-lupa {
-    margin: 30px 0 0 50px;
+  .monitor-inicial {
+    right: 7em;
+    top: 23em;
+  }
+
+  .brilho-inicial2 {
+    top: 25em;
+  }
+
+  .teclado-inicial {
+    left: 7em;
+    top: 33em;
+  }
+
+  #titulo1 {
+    margin: 210px 0 10px 0px;
+  }
+
+  .ramEmpe {
+    width: 20em;
+    height: 18em;
+  }
+
+  #map {
+    width: 270px;
   }
 
   #titulo-descarte {
-    width: 100%;
-    margin: 0;
-    margin-left: 105px;
+    margin: 45px auto 0 auto;
   }
 
-  .card {
-    max-width: 750px;
-    width: 100%;
-    margin: 20px auto;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
+  .footer-container input[type="email"] {
+    width: 160px;
   }
 
-  .card-content p {
-    max-width: 80%;
-    margin-top: 15px;
-  }
-
-  .imagem-ecoponto {
-    margin: 15px 0;
-  }
-
-  .campo-descarte {
-    margin-top: 16px;
+  .redes-sociais,
+  .geral,
+  .contato {
+    width: 270px;
   }
 }
 
 @media (max-width: 330px) {
+  .imagem-fundo {
+    margin: 0em 5em 6em 6em;
+  }
+
   .imagem-fundo {
     height: 33em;
   }
@@ -1456,7 +1275,7 @@
 
   .ramEmpe {
     width: 18em;
-    margin: -79px 0 0 0;
+    margin: 0;
   }
 
   .form-conteiner {
@@ -1473,5 +1292,224 @@
   .rua-form,
   .bairro-form {
     margin-left: 10px;
+  }
+
+  .footer-container input[type="email"] {
+    width: 140px;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .imagem-fundo {
+    margin: 5em 5em 6em 6em;
+  }
+
+  .imagem-fundo {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    height: 35em;
+    margin-top: 6em;
+  }
+
+  .monitor-inicial,
+  .brilho-inicial2 {
+    top: 20em;
+  }
+
+  .teclado-inicial {
+    left: 6em;
+    top: 26em;
+  }
+
+  .imagem-inicial {
+    margin: 0 0 12em 0;
+  }
+
+  .inicio {
+    width: 25em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 10em;
+  }
+
+  #texto-inicial {
+    width: 75%;
+    margin: 0;
+    text-align: center;
+    font-size: 1em;
+  }
+
+  .botao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    gap: 15px;
+    margin-left: 16em;
+  }
+
+  .container-grid {
+    margin-top: -50px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #texto1 {
+    margin: 20px 70px -40px 70px;
+    text-align: center;
+  }
+
+  #texto2 {
+    margin: 20px 70px;
+    text-align: center;
+  }
+
+  #titulo1 {
+    text-align: center;
+    font-size: 1.7em;
+    margin: 160px 0 10px 0px;
+  }
+
+  #titulo2 {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0px 0 0 0px;
+  }
+
+  .imagem-medalha {
+    width: 100%;
+    height: 50%;
+  }
+
+  #medalhas {
+    width: 350px;
+    margin-left: 60px;
+  }
+
+  .texto-ram {
+    position: relative;
+    bottom: 5em;
+  }
+
+  #ecopontos {
+    max-width: 80%;
+    height: 25em;
+    margin-bottom: 6em;
+  }
+
+  .info-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+  }
+
+  #p-info {
+    text-align: center;
+    width: 15em;
+    margin-bottom: 30px;
+  }
+
+  #h1-info,
+  #p-info {
+    margin-left: 0;
+  }
+
+  .form-conteiner {
+    padding: 10px;
+    flex-direction: row;
+    width: 240px;
+  }
+
+  input {
+    width: 160px;
+    height: 35px;
+    max-width: 100%;
+    margin-right: 0px;
+  }
+
+  .cep-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+    max-width: 100%;
+  }
+
+  .cep-rua {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .rua-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 15px 0 0 20px;
+  }
+
+  #cep,
+  #rua,
+  #bairro {
+    padding-right: 25px;
+  }
+
+  .bairro-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+  }
+
+  .btn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .btn-lupa {
+    margin: 30px 0 0 50px;
+  }
+
+  #titulo-descarte {
+    margin: 0;
+  }
+
+  .card {
+    margin: 20px auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .card-content p {
+    max-width: 80%;
+    margin-top: 15px;
+  }
+
+  .campo-descarte {
+    margin-top: 16px;
+  }
+
+  #map {
+    width: 80%;
   }
 }

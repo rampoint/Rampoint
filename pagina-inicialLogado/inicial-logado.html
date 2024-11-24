@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="./css/inicial.css">
     <link rel="stylesheet" href="./css/layout.css">
 
+    <!-- icon -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
     <link rel="shortcut icon" href="./img/rostoCirculo.png" type="image/x-icon">
     <title>Página Inicial</title>
 </head>
@@ -30,7 +33,11 @@
     <nav>
         <ul class="sidebar">
             <li onclick=hideSidebar()><a href="#"><img id="fechar" src="img/fechar.svg" alt="fechar nav"></a></li>
-            <li id="perfil-sidebar"><img src="img/perfil2.svg" alt="" srcset="">
+            <li id="perfil-sidebar">
+                <i class='bx bx-chevron-down' id="open-modal-small"
+                    style="color: #fff; font-size: 20px; margin-right: 5px;"></i>
+                <a href="../pagina-perfil/perfil.html" style="padding: 0;"><img src="img/perfil2.svg" id="foto-perfil"
+                        alt="Foto de perfil" style="width: 50px;"></a>
                 <div class="menus">
             <li><a href="../pagina-inicial/inicial.html" id="menuMobile">HOME</a></li>
             <li><a href="../pagina-play/play.html" id="menuMobile">PLAY</a></li>
@@ -38,17 +45,21 @@
             <li><a href="../pagina-materiais/materiais.html" id="menuMobile">MATERIAIS</a></li>
             <li><a href="../pagina-qrcode/index.html" id="menuMobile">QR-CODE</a></li>
             <li><a href="../pagina-faq/faq.html" id="menuMobile">FALE CONOSCO</a></li>
+            <li><a a href="../pagina-login/index.html" onclick="logout()" id="menuMobile">SAIR</a></li>
             <div class="footer-logo">
                 <img src="./img/logoBranca.svg" id="footer-logo" alt="">
             </div>
             </div>
             </li>
         </ul>
+
         <ul>
             <li id="logo-nav">
                 <a href="../pagina-inicial/inicial.html" class="link-home">
                     <img src="img/ram.svg" alt="ram">
-                    <h1 style="color: black;"><b style="color:#7ad761; margin-left: 10px;">ram</b>poınt.</h1>
+                    <h1 style="color: black;">
+                        <b style="color:#7ad761; margin-left: 10px;">ram</b><span>poınt.</span>
+                    </h1>
                 </a>
             <li class="hideOnMobile"><a href="../pagina-inicial/inicial.html">HOME</a>
             <li class="hideOnMobile"><a href="../pagina-play/play.html">PLAY</a>
@@ -67,11 +78,11 @@
                             <p class="texto-perfil" id="nome_modal"></p>
                             <div class="grupo">
                                 <hr class="linha">
-                                <a class="cadastro" href="../pagina-perfil/perfil.html"><span style="color: black;">Ir
-                                        para perfil</span></a>
+                                <a class="cadastro" href="../pagina-perfil/perfil.html">
+                                    <span">Ir para perfil</span>
+                                </a>
                                 <hr class="linha">
-                                <a href="../pagina-login/index.html" onclick="logout()" class="login"><span
-                                        style="color: red;">Sair</span></a>
+                                <a href="../pagina-login/index.html" onclick="logout()" class="login">Sair</a>
                             </div>
                         </div>
                     </div>
@@ -81,8 +92,8 @@
                     <img id="perfil" src="img/perfil.svg" alt="perfil">
                 </button>
             </li>
-            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
-                        height="26" viewBox="0 96 960 960" width="26">
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg class="icon-sidebar"
+                        xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
                         <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
                     </svg></a></li>
         </ul>
@@ -102,10 +113,10 @@
                 <img src="./img/btn-acessibilidade/Aa.svg" alt="">
                 <h4 class="title-group">Tamanho da fonte</h4>
             </div>
-            <div class="group-btn">
+            <!-- <div class="group-btn">
                 <img src="./img/btn-acessibilidade/Aa.svg" alt="">
                 <h4 class="title-group">Fonte</h4>
-            </div>
+            </div> -->
             <div class="group-btn">
                 <img src="./img/btn-acessibilidade/espaco-linhas.svg" alt="">
                 <h4 class="title-group">Espaço entre linhas</h4>
@@ -118,22 +129,22 @@
 
         <h3 class="title-accessibility-menu">Auxílio de Leitura</h3>
         <div class="row-group">
-            <div class="group-btn">
+            <div id="leitor-acs" class="group-btn">
                 <img src="./img/btn-acessibilidade/leitor-sites.svg" alt="">
                 <h4 class="title-group">Leitor de Sites</h4>
             </div>
-            <div class="group-btn">
+            <div class="group-btn modo-leitura-btn">
                 <img src="./img/btn-acessibilidade/modo-leitura.svg" alt="">
                 <h4 class="title-group">Modo de Leitura</h4>
             </div>
-            <div class="group-btn">
+            <div id="mascara-toggle" class="group-btn">
                 <img src="./img/btn-acessibilidade/mascara-leitura.svg" alt="">
                 <h4 class="title-group">Máscara de leitura</h4>
             </div>
-            <div class="group-btn">
+            <!-- <div id="lupa-acs" class="group-btn">
                 <img src="./img/btn-acessibilidade/lupa.svg" alt="">
                 <h4 class="title-group">Lupa</h4>
-            </div>
+            </div> -->
         </div>
 
         <h3 class="title-accessibility-menu">Controle de cor</h3>
@@ -243,16 +254,16 @@
     <div id="map"></div>
     <br>
     <div id="lugares">
-    <section class="card">
-        <div class="card-content">
-            <h1 id="info-ecoponto">Ecoponto</h1>
-            <h1 id="nome-ecoponto">Prefeitura de Barueri</h1>
-            <p id="texto-endereco"><span id="endereco">Endereço:</span> Av. Iracema, 620 - Jardim Iracema,
-                Barueri - SP, 06440-010
-            </p>
-            <p><span id="telefone">Telefone:</span> <span class="numero">(11) 93938-3945</span></p>
-        </div><img src="./img/ecoponto.svg" class="imagem-ecoponto" alt="Imagem do Ecoponto de Barueri">
-        </div>
+        <section class="card">
+            <div class="card-content">
+                <h1 id="info-ecoponto">Ecoponto</h1>
+                <h1 id="nome-ecoponto">Prefeitura de Barueri</h1>
+                <p id="texto-endereco"><span id="endereco">Endereço:</span> Av. Iracema, 620 - Jardim Iracema,
+                    Barueri - SP, 06440-010
+                </p>
+                <p><span id="telefone">Telefone:</span> <span class="numero">(11) 93938-3945</span></p>
+            </div><img src="./img/ecoponto.svg" class="imagem-ecoponto" alt="Imagem do Ecoponto de Barueri">
+    </div>
     </section>
 
     <div class="campo-descarte">
@@ -262,8 +273,7 @@
                 <div class="card-group">
                     <div class="card-text">
                         <p>Madeira</p>
-                        <img src="./img/icon-madeira.svg" alt="">
-                        </img>
+                        <img src="./img/icon-madeira.svg" id="iconMadeira" alt="Imagem de madeira">
                     </div>
                 </div>
             </div>
@@ -271,8 +281,7 @@
                 <div class="card-group">
                     <div class="card-text">
                         <p>Pneu</p>
-                        <img src="./img/icon-pneu.svg" alt="">
-                        </img>
+                        <img src="./img/icon-pneu.svg" id="iconPneu" alt="">
                     </div>
                 </div>
             </div>
@@ -280,8 +289,7 @@
                 <div class="card-group">
                     <div class="card-text">
                         <p>Reciclável</p>
-                        <img src="./img/icon-reciclavel.svg" alt="">
-                        </img>
+                        <img src="./img/icon-reciclavel.svg" id="iconReciclavel" alt="">
                     </div>
                 </div>
             </div>
@@ -289,8 +297,7 @@
                 <div class="card-group">
                     <div class="card-text">
                         <p>Metal</p>
-                        <img src="./img/icon-metal.svg" alt="">
-                        </img>
+                        <img src="./img/icon-metal.svg" id="iconMetal" alt="">
                     </div>
                 </div>
             </div>
@@ -298,14 +305,13 @@
                 <div class="card-group">
                     <div class="card-text">
                         <p>Eletrônico</p>
-                        <img src="img/icon-eletronico.svg" alt="">
-                        </img>
+                        <img src="img/icon-eletronico.svg" id="iconEletronico" alt="">
                     </div>
                 </div>
             </div>
         </section>
     </div>
-</div>y
+
     <footer class="footer-container">
         <h2>Quer ser nosso parceiro?</h2>
         <p>Envie-nos seu email!</p>
@@ -344,7 +350,6 @@
             </div>
         </div>
         <p class="copyright">Copyright &copy; 2024 Rampoint</p>
-
     </footer>
 
     <script defer src="./js/modal.js"></script>

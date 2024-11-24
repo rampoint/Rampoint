@@ -140,3 +140,234 @@
     margin: 10px 0 10px 15px;
     cursor: pointer;
 }
+
+/* leitor */
+#leitor-status,
+#leitor-text {
+    font-family: "Poppins-regular";
+}
+
+/* modo de leitura */
+body {
+    background-color: #ffffff;
+    color: #333333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.modo-escuro {
+    background-color: #121212;
+    color: #f8f8f8;
+}
+
+nav ul {
+    transition: background-color 0.3s ease;
+}
+
+body.modo-escuro nav ul {
+    background-color: #121212;
+}
+
+body span {
+    color: #000;
+}
+
+body.modo-escuro span {
+    color: #f8f8ff;
+}
+
+nav a {
+    color: #2a55c2;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+body.modo-escuro nav a {
+    color: #DADADC;
+}
+
+body.modo-escuro .sidebar {
+    background-color: #19316F;
+}
+
+body .fundo {
+    background-color: #f8f8ff;
+}
+
+body.modo-escuro .fundo {
+    background-color: #282828;
+}
+
+.linha {
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+body.modo-escuro .linha {
+    background-color: rgba(255, 255, 255, 0.35);
+}
+
+.cadastro {
+    color: #000;
+}
+
+body.modo-escuro .cadastro {
+    color: #DADADC;
+}
+
+.login {
+    color: #D40000;
+}
+
+body.modo-escuro .login {
+    color: #FF4141;
+}
+
+.icon-sidebar path {
+    fill: #000;
+}
+
+body.modo-escuro .icon-sidebar path {
+    fill: #DADADC;
+}
+
+body.modo-escuro #titulo-inicial {
+    color: #DADADC;
+}
+
+body.modo-escuro #texto-inicial {
+    color: #DADADC;
+}
+
+body.modo-escuro #cadastro {
+    background-color: #61A44F;
+    border-bottom: 5px solid #2B571F;
+}
+
+.btn-cadastro {
+    color: #f8f8ff;
+}
+
+body.modo-escuro .btn-cadastro {
+    color: #f8f8ff;
+}
+
+body.modo-escuro #login {
+    background-color: #1680B1;
+    border-bottom: 5px solid #054867;
+}
+
+.btn-login {
+    color: #f8f8ff;
+}
+
+body.modo-escuro .btn-login {
+    color: #f8f8ff;
+}
+
+body.modo-escuro #texto1 {
+    color: #DADADC;
+}
+
+body.modo-escuro #texto2 {
+    color: #DADADC;
+}
+
+body.modo-escuro #p-info {
+    color: #DADADC;
+}
+
+body.modo-escuro .form-conteiner {
+    background-color: #282828;
+}
+
+body.modo-escuro label {
+    color: #f8f8ff;
+}
+
+body.modo-escuro input {
+    background-color: rgba(188, 207, 255, 0.1);
+}
+
+body.modo-escuro #cep::placeholder,
+body.modo-escuro #rua::placeholder,
+body.modo-escuro #bairro::placeholder {
+    color: rgba(188, 207, 255, 0.4);
+}
+
+body.modo-escuro .btn-lupa {
+    background-color: #2A55C2;
+    border-bottom: 5px solid #19316F;
+}
+
+body.modo-escuro #info-ecoponto,
+body.modo-escuro #nome-ecoponto,
+body.modo-escuro #texto-endereco,
+body.modo-escuro #endereco,
+body.modo-escuro #telefone,
+body.modo-escuro #titulo-descarte {
+    color: #DADADC;
+}
+
+body.modo-escuro .area-madeira {
+    background-color: #913EC7;
+}
+
+body.modo-escuro .area-madeira p {
+    color: #4C0588;
+}
+
+body.modo-escuro .area-pneu {
+    background-color: #1680B1;
+}
+
+body.modo-escuro .area-pneu p {
+    color: #003F5C;
+}
+
+body.modo-escuro .area-reciclavel {
+    background-color: #61A44F;
+}
+
+body.modo-escuro .area-reciclavel p {
+    color: #26491D;
+}
+
+body.modo-escuro .area-metal {
+    background-color: #CEB828;
+}
+
+body.modo-escuro .area-metal p {
+    color: #8D5805;
+}
+
+body.modo-escuro .area-eletronico {
+    background-color: #AF0023;
+}
+
+body.modo-escuro .area-eletronico p {
+    color: #39000B;
+}
+
+body.modo-escuro .footer-container {
+    background-color: #19316F;
+}
+
+body.modo-escuro footer h2,
+body.modo-escuro footer p,
+body.modo-escuro footer span,
+body.modo-escuro footer li,
+body.modo-escuro .descricao-footer a,
+body.modo-escuro .btn-enviar,
+body.modo-escuro #geral-titulo,
+body.modo-escuro #redes_sociais-titulo,
+body.modo-escuro #contato-titulo {
+    color: #DADADC;
+}
+
+body.modo-escuro .footer-container input[type="email"] {
+    background-color: #DADADC;
+}
+
+body.modo-escuro .footer-container button {
+    background-color: #359CCC;
+    color: #DADADC;
+}

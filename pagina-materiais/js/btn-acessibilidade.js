@@ -148,6 +148,15 @@ document.addEventListener("DOMContentLoaded", function () {
             : "./img/btn-acessibilidade/A+.svg";
       }
     });
+
+    // Alterando a imagem de fundo com base no tema
+    const imgFundo = document.querySelector(".img-fundo");
+    if (imgFundo) {
+      imgFundo.src =
+        theme === "escuro"
+          ? "./img/imagem-fundo-dark.svg"
+          : "./img/imagem-fundo.svg";
+    }
   };
 
   // Função que aplica o tema e altera as imagens
@@ -155,7 +164,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.body.classList.toggle("modo-escuro", theme === "escuro");
     document.body.classList.toggle("modo-claro", theme === "claro");
 
-    // Atualizar imagens dos botões
+    // Atualizar imagens dos botões e a imagem de fundo
     changeButtonImages(theme);
 
     localStorage.setItem("modoLeitura", theme); // Salva o tema no localStorage

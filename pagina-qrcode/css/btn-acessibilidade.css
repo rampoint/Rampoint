@@ -234,7 +234,17 @@ body.modo-escuro .campo-inicial {
     background-color: #282828;
 }
 
-body.modo-escuro .codigo-l2 select {
+body.modo-escuro .codigo-l2 select,
+body.modo-escuro #nome-add,
+body.modo-escuro #email-add,
+body.modo-escuro .select-telefone input,
+body.modo-escuro .select-peca,
+body.modo-escuro #qtd_peca,
+body.modo-escuro #codigo,
+body.modo-escuro #tipo-componente,
+body.modo-escuro .data,
+body.modo-escuro .hora,
+body.modo-escuro #descricao-peca {
     background-color: rgba(188, 207, 255, 0.1);
 }
 
@@ -262,14 +272,16 @@ body.modo-escuro #gerar-button {
 }
 
 body.modo-escuro #download,
-body.modo-escuro #salvar {
+body.modo-escuro #salvar,
+body.modo-escuro .btn-salvar {
     background-color: #1680B1;
     border-bottom: 5px solid #054867;
 }
 
 body.modo-escuro #gerar-button:hover,
 body.modo-escuro #download:hover,
-body.modo-escuro #salvar:hover {
+body.modo-escuro #salvar:hover,
+body.modo-escuro .btn-salvar:hover {
     border-bottom: none;
 }
 
@@ -280,7 +292,8 @@ body.modo-escuro .shadow-moeda-roxa {
     background-color: #282828;
 }
 
-body.modo-escuro input {
+body.modo-escuro input,
+body.modo-escuro textarea {
     color: #f8f8ff;
 }
 

@@ -61,10 +61,10 @@ document.addEventListener("DOMContentLoaded", function () {
         case 2:
           changeLetterSpacing();
           break;
-        case 6: // Contraste
+        case 7: // Contraste
           toggleContrast();
           break;
-        case 7: // Saturação
+        case 8: // Saturação
           toggleSaturation();
           break;
         default:

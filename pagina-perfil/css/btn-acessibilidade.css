@@ -140,3 +140,202 @@
     margin: 10px 0 10px 15px;
     cursor: pointer;
 }
+
+/* leitor */
+#leitor-status,
+#leitor-text {
+    font-family: "Poppins-regular";
+}
+
+/* modo de leitura */
+body {
+    background-color: #ffffff;
+    color: #333333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.modo-escuro {
+    background-color: #121212;
+    color: #f8f8f8;
+}
+
+nav ul {
+    transition: background-color 0.3s ease;
+}
+
+body.modo-escuro nav ul {
+    background-color: #121212;
+}
+
+body.modo-escuro span {
+    color: #f8f8ff;
+}
+
+nav a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+body.modo-escuro nav a {
+    color: #DADADC;
+}
+
+body.modo-escuro .sidebar {
+    background-color: #19316F;
+}
+
+body .fundo {
+    background-color: #f8f8ff;
+}
+
+body.modo-escuro .fundo {
+    background-color: #282828;
+}
+
+.linha {
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+body.modo-escuro .linha {
+    background-color: rgba(255, 255, 255, 0.35);
+}
+
+.cadastro {
+    color: #000;
+}
+
+body.modo-escuro .cadastro {
+    color: #DADADC;
+}
+
+.login {
+    color: #D40000;
+}
+
+body.modo-escuro .login {
+    color: #FF4141;
+}
+
+.icon-sidebar path {
+    fill: #000;
+}
+
+body.modo-escuro .icon-sidebar path {
+    fill: #DADADC;
+}
+
+body.modo-escuro #titulo-inicial,
+body.modo-escuro #texto-inicial,
+body.modo-escuro .nome-usuario,
+body.modo-escuro .modalBtn-perfil,
+body.modo-escuro .titulo-editar,
+body.modo-escuro .campo-form label,
+body.modo-escuro .titulo-mood,
+body.modo-escuro .texto-mood,
+body.modo-escuro .titulo-content,
+body.modo-escuro #exclusaoModel h1,
+body.modo-escuro .coluna-texto h2 {
+    color: #DADADC;
+}
+
+body.modo-escuro .email-usuario {
+    color: #A6A6A6;
+}
+
+body.modo-escuro .text-block {
+    background-color: #282828;
+    box-shadow: 0px 5px 8px rgba(20, 34, 69, 0.5);
+}
+
+body.modo-escuro .texto-ramcoin {
+    color: rgba(137, 170, 255, 0.85);
+}
+
+body.modo-escuro .shadow,
+body.modo-escuro .shadow-moeda-pequena,
+body.modo-escuro .shadow-moeda-amarela,
+body.modo-escuro .shadow-moeda-verde,
+body.modo-escuro .shadow-moeda-azul,
+body.modo-escuro .container-perfil,
+body.modo-escuro .info-perfil,
+body.modo-escuro .container-conquistas,
+body.modo-escuro #exclusaoModel,
+body.modo-escuro .modal-content {
+    background-color: #282828;
+}
+
+body.modo-escuro .content-perfil,
+body.modo-escuro .content-mood {
+    background-color: #121212;
+}
+
+body.modo-escuro #nome-mudar,
+body.modo-escuro #email-mudar,
+body.modo-escuro #senha-mudar,
+body.modo-escuro #telefone-mudar,
+body.modo-escuro #genero-mudar,
+body.modo-escuro #nascimento {
+    background-color: rgba(188, 207, 255, 0.1);
+    color: #DADADC;
+}
+
+body.modo-escuro .excluir-conta,
+body.modo-escuro .btn-excluir {
+    color: #FF4141;
+}
+
+body.modo-escuro .btn-salvar {
+    background-color: #63AD4F;
+}
+
+body.modo-escuro .footer-container {
+    background-color: #19316F;
+}
+
+body.modo-escuro .titulo-ram-vidro,
+body.modo-escuro .porcentagem-ram-vidro {
+    color: #0076AC;
+}
+
+body.modo-escuro .titulo-ram-golias,
+body.modo-escuro .porcentagem-ram-golias {
+    color: #499036;
+}
+
+body.modo-escuro .bx-down-arrow-circle:before {
+    color: #FFFFFF;
+}
+
+body.modo-escuro .mensagem-cupom {
+    color: #E4E4E4;
+}
+
+body.modo-escuro #nao_button {
+    color: #fff;
+    background-color: transparent;
+}
+
+body.modo-escuro footer h2,
+body.modo-escuro footer p,
+body.modo-escuro footer span,
+body.modo-escuro footer li,
+body.modo-escuro .descricao-footer a,
+body.modo-escuro .btn-enviar,
+body.modo-escuro #geral-titulo,
+body.modo-escuro #redes_sociais-titulo,
+body.modo-escuro #contato-titulo {
+    color: #DADADC;
+}
+
+body.modo-escuro #email {
+    color: #282828;
+}
+
+body.modo-escuro .footer-container input[type="email"] {
+    background-color: #DADADC;
+}
+
+body.modo-escuro .footer-container button {
+    background-color: #359CCC;
+    color: #DADADC;
+}

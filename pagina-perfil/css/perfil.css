@@ -47,6 +47,7 @@ body {
   color: var(--preto);
   font-size: 14px;
   width: 60%;
+  margin-right: 10px;
   text-align: center;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
   padding: 0;

@@ -71,7 +71,7 @@ nav a:hover {
 #perfil-sidebar {
   display: flex;
   align-items: center;
-  margin-left: 150px;
+  margin-left: 160px;
   margin-top: 50px;
 }
 
@@ -84,11 +84,6 @@ nav a:hover {
 #menuMobile {
   font-family: "Poppins-semibold";
 }
-
-/*    
-  nav li:first-child{
-    margin-right: 280px;
-  }  */
 
 .sidebar {
   position: fixed;
@@ -131,7 +126,6 @@ nav a:hover {
 
 .footer-logo {
   margin-top: 6em;
-
 }
 
 @media (max-width: 670px) {
@@ -140,10 +134,7 @@ nav a:hover {
   }
 }
 
-/* Dispositivos móveis em modo paisagem (tela horizontal) */
 @media (max-width: 767px) {
-
-  /* Estilos aqui */
   .footer-logo {
     margin-top: 6em;
   }
@@ -294,7 +285,6 @@ nav a:hover {
 }
 
 .content-sem-perfil {
-
   margin-top: 4em;
   margin-left: 73em;
   padding: 0;
@@ -390,7 +380,6 @@ nav a:hover {
   color: var(--branco);
   padding: 0;
   margin: 15px 0 20px 0;
-
 }
 
 .texto-perfil {

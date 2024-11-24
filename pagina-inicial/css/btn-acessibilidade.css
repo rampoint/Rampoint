@@ -167,10 +167,6 @@ body.modo-escuro nav ul {
     background-color: #121212;
 }
 
-body span {
-    color: #000;
-}
-
 body.modo-escuro span {
     color: #f8f8ff;
 }

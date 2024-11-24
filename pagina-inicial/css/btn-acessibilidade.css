@@ -176,7 +176,7 @@ body.modo-escuro span {
 }
 
 nav a {
-    color: #2a55c2;
+    color: #000;
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -371,3 +371,5 @@ body.modo-escuro .footer-container button {
     background-color: #359CCC;
     color: #DADADC;
 }
+
+/* contraste e saturacao */

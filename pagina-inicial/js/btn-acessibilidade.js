@@ -37,6 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.body.style.fontSize = "";
     document.body.style.lineHeight = "";
     document.body.style.letterSpacing = "";
+    document.body.style.filter = ""; // Resetando filtros de contraste e saturação
   };
 
   const clearBtn = document.getElementById("clearAccessibility");
@@ -60,11 +61,37 @@ document.addEventListener("DOMContentLoaded", function () {
         case 2:
           changeLetterSpacing();
           break;
+        case 6: // Contraste
+          toggleContrast();
+          break;
+        case 7: // Saturação
+          toggleSaturation();
+          break;
         default:
           break;
       }
     });
   });
+
+  // Função para alterar o contraste
+  const toggleContrast = () => {
+    const currentFilter = document.body.style.filter;
+    if (currentFilter.includes("contrast")) {
+      document.body.style.filter = ""; // Resetando o contraste
+    } else {
+      document.body.style.filter = "contrast(200%)"; // Aplicando o contraste
+    }
+  };
+
+  // Função para alterar a saturação
+  const toggleSaturation = () => {
+    const currentFilter = document.body.style.filter;
+    if (currentFilter.includes("saturate")) {
+      document.body.style.filter = ""; // Resetando a saturação
+    } else {
+      document.body.style.filter = "saturate(2)"; // Aplicando saturação
+    }
+  };
 
   // Modo leitura
   const modoLeituraBtn = document.querySelector(".modo-leitura-btn");

@@ -41,7 +41,7 @@
     <div id="leitor-container"
         style="display: none; position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background: #333; color: white; padding: 15px; border-radius: 8px; z-index: 9999; width: 80%; max-width: 600px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
-            <span id="leitor-status">Leitor de Tela Ativo</span>
+            <span id="leitor-status" style="color: #fff;">Leitor de Tela Ativo</span>
             <div style="display: flex; gap: 10px;">
                 <button id="leitor-pause"
                     style="background: #7ad761; border: none; padding: 5px 10px; border-radius: 4px; color: #f8f8ff; cursor: pointer;">Pausar</button>
@@ -68,8 +68,8 @@
             <li id="perfil-sidebar">
                 <i class='bx bx-chevron-down' id="open-modal-small"
                     style="color: #fff; font-size: 20px; margin-right: 5px;"></i>
-                <a href="../pagina-perfil/perfil.html" style="padding: 0;"><img src="img/perfil2.svg" id="foto-perfil" alt="Foto de perfil"
-                        style="width: 50px;"></a>
+                <a href="../pagina-perfil/perfil.html" style="padding: 0;"><img src="img/perfil2.svg" id="foto-perfil"
+                        alt="Foto de perfil" style="width: 50px;"></a>
                 <div class="menus">
             <li><a href="../pagina-inicial/inicial.html" id="menuMobile">HOME</a></li>
             <li><a href="../pagina-play/play.html" id="menuMobile">PLAY</a></li>
@@ -181,12 +181,13 @@
 
         <h3 class="title-accessibility-menu">Controle de cor</h3>
         <div class="row-group">
-            <div class="group-btn">
-                <img src="./img/btn-acessibilidade/contraste.svg" alt="">
+            <div class="group-btn" id="contrasteBtn">
+                <img src="./img/btn-acessibilidade/contraste.svg" alt="Contraste">
                 <h4 class="title-group">Contraste</h4>
             </div>
-            <div class="group-btn">
-                <img src="./img/btn-acessibilidade/saturacao.svg" alt="">
+
+            <div class="group-btn" id="saturacaoBtn">
+                <img src="./img/btn-acessibilidade/saturacao.svg" alt="Saturação">
                 <h4 class="title-group">Saturação</h4>
             </div>
         </div>

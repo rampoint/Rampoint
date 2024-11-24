@@ -19,6 +19,38 @@
 </head>
 
 <body onload="exibirDadosUsuario()">
+    <!-- acessibilidades-começo -->
+    <!-- mascara -->
+    <div id="reading-mask-container"
+        style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 9999;">
+        <div id="top-mask"
+            style="position: absolute; left: 0; top: 0; width: 100%; height: 40%; background: rgba(0, 0, 0, 0.75);">
+        </div>
+        <div id="reading-line" style="position: absolute; left: 0; height: 80px; width: 100%; background: transparent;">
+        </div>
+        <div id="bottom-mask"
+            style="position: absolute; left: 0; bottom: 0; width: 100%; height: 40%; background: rgba(0, 0, 0, 0.75);">
+        </div>
+    </div>
+    <!-- lupa 
+    <div id="magnifier"
+        style="display: none; position: fixed; width: 150px; height: 150px; border: 2px solid #7ad761; border-radius: 50%; pointer-events: none; z-index: 9999; overflow: hidden;">
+        <div id="magnifier-content" style="position: absolute; left: 0; top: 0; transform-origin: center center;"></div>
+    </div> -->
+    <!-- Leitor -->
+    <div id="leitor-container"
+        style="display: none; position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background: #333; color: white; padding: 15px; border-radius: 8px; z-index: 9999; width: 80%; max-width: 600px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+            <span id="leitor-status" style="color: #fff;">Leitor de Tela Ativo</span>
+            <div style="display: flex; gap: 10px;">
+                <button id="leitor-pause"
+                    style="background: #7ad761; border: none; padding: 5px 10px; border-radius: 4px; color: #f8f8ff; cursor: pointer;">Pausar</button>
+                <button id="leitor-stop"
+                    style="background: #ff4444; border: none; padding: 5px 10px; border-radius: 4px; color: #f8f8ff; cursor: pointer;">Parar</button>
+            </div>
+        </div>
+        <div id="leitor-text" style="margin-top: 10px; font-size: 14px;">Selecione um texto para começar a leitura</div>
+    </div>
     <script>
         function showSidebar() {
             const sidebar = document.querySelector('.sidebar')
@@ -365,6 +397,7 @@
     <script src="../js/firebase-init.js"></script>
     <script src="../js/register.js"></script>
     <script src="../js/logout.js"></script>
+    <script src="../js/acessibilidade.js"></script>
     <script async
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvvanoz7U50-4faMR7NRMsBcc0CfOnCZY&libraries=places&callback=initMap"></script>
     <script src="../js/maps.js"></script>

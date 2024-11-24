@@ -28,26 +28,26 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Funções de acessibilidade para os 4 primeiros botões
-  const changeFontSize = () => document.body.style.fontSize = 'larger';
-  const changeFontFamily = () => document.body.style.fontFamily = 'Arial, sans-serif';
-  const changeLineHeight = () => document.body.style.lineHeight = '1.8';
-  const changeLetterSpacing = () => document.body.style.letterSpacing = '2px';
+  // Funções de acessibilidade para os botões
+  const changeFontSize = () => (document.body.style.fontSize = "larger");
+  const changeLineHeight = () => (document.body.style.lineHeight = "1.8");
+  const changeLetterSpacing = () => (document.body.style.letterSpacing = "2px");
 
   const clearAccessibility = () => {
     document.body.style.fontSize = "";
-    document.body.style.fontFamily = "";
     document.body.style.lineHeight = "";
     document.body.style.letterSpacing = "";
   };
 
   const clearBtn = document.getElementById("clearAccessibility");
-  clearBtn.addEventListener("click", clearAccessibility);
+  if (clearBtn) {
+    clearBtn.addEventListener("click", clearAccessibility);
+  }
 
-  const groupButtons = document.querySelectorAll('.group-btn');
+  const groupButtons = document.querySelectorAll(".group-btn");
 
   groupButtons.forEach((button, index) => {
-    button.addEventListener('click', function (event) {
+    button.addEventListener("click", function (event) {
       event.preventDefault();
 
       switch (index) {
@@ -55,12 +55,9 @@ document.addEventListener("DOMContentLoaded", function () {
           changeFontSize();
           break;
         case 1:
-          changeFontFamily();
-          break;
-        case 2:
           changeLineHeight();
           break;
-        case 3:
+        case 2:
           changeLetterSpacing();
           break;
         default:
@@ -68,4 +65,102 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+
+  // Modo leitura
+  const modoLeituraBtn = document.querySelector(".modo-leitura-btn");
+  const elementsToToggle = [document.body];
+
+  const applyTheme = (theme) => {
+    elementsToToggle.forEach((el) => {
+      if (el) {
+        el.classList.toggle("modo-escuro", theme === "escuro");
+        el.classList.toggle("modo-claro", theme === "claro");
+      }
+    });
+
+    // Alterar a imagem do modo escuro e claro
+    const imagemInicial = document.querySelector(".imagem-inicial");
+    if (imagemInicial) {
+      imagemInicial.src =
+        theme === "escuro"
+          ? "./img/imagem-inicial-dark.svg"
+          : "./img/imagem-inicial.svg";
+    }
+
+    // Alterar a imagem das medalhas
+    const medalhasImagem = document.getElementById("medalhas");
+    if (medalhasImagem) {
+      medalhasImagem.src =
+        theme === "escuro" ? "./img/medalhas-dark.svg" : "./img/medalhas.svg";
+    }
+
+    // Alterar a imagem do mascote Ram
+    const ramEmpeImagem = document.querySelector(".ramEmpe");
+    if (ramEmpeImagem) {
+      ramEmpeImagem.src =
+        theme === "escuro" ? "./img/ramEmpe-dark.svg" : "./img/ramEmpe.svg";
+    }
+
+    // Alterar a imagem do ícone de madeira
+    const iconMadeira = document.querySelector("#iconMadeira");
+    if (iconMadeira) {
+      iconMadeira.src =
+        theme === "escuro"
+          ? "./img/icon-madeira-dark.svg"
+          : "./img/icon-madeira.svg";
+    }
+
+    // Alterar a imagem do ícone de pneu
+    const iconPneu = document.querySelector("#iconPneu");
+    if (iconPneu) {
+      iconPneu.src =
+        theme === "escuro" ? "./img/icon-pneu-dark.svg" : "./img/icon-pneu.svg";
+    }
+
+    // Alterar a imagem do ícone reciclável
+    const iconReciclavel = document.querySelector("#iconReciclavel");
+    if (iconReciclavel) {
+      iconReciclavel.src =
+        theme === "escuro"
+          ? "./img/icon-reciclavel-dark.svg"
+          : "./img/icon-reciclavel.svg";
+    }
+
+    // Alterar a imagem do ícone de metal
+    const iconMetal = document.querySelector("#iconMetal");
+    if (iconMetal) {
+      iconMetal.src =
+        theme === "escuro"
+          ? "./img/icon-metal-dark.svg"
+          : "./img/icon-metal.svg";
+    }
+
+    // Alterar a imagem do ícone eletrônico
+    const iconEletronico = document.querySelector("iconEletronico");
+    if (iconEletronico) {
+      iconEletronico.src =
+        theme === "escuro"
+          ? "./img/icon-eletronico-dark.svg"
+          : "./img/icon-eletronico.svg";
+    }
+
+    localStorage.setItem("modoLeitura", theme);
+  };
+
+  const carregarModoLeitura = () => {
+    const modoSalvo = localStorage.getItem("modoLeitura") || "claro";
+    applyTheme(modoSalvo);
+  };
+
+  const toggleModoLeitura = () => {
+    const isDarkMode = document.body.classList.contains("modo-escuro");
+    const newTheme = isDarkMode ? "claro" : "escuro";
+    applyTheme(newTheme);
+  };
+
+  if (modoLeituraBtn) {
+    modoLeituraBtn.addEventListener("click", toggleModoLeitura);
+  }
+
+  carregarModoLeitura();
 });

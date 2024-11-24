@@ -20,26 +20,36 @@
 
 <body onload="exibirDadosUsuario()">
     <!-- acessibilidades-começo -->
-     <!-- mascara -->
-    <div id="reading-mask-container" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 9999;">
-        <div id="top-mask" style="position: absolute; left: 0; top: 0; width: 100%; height: 40%; background: rgba(0, 0, 0, 0.75);"></div>
-        <div id="reading-line" style="position: absolute; left: 0; height: 80px; width: 100%; background: transparent;"></div>
-        <div id="bottom-mask" style="position: absolute; left: 0; bottom: 0; width: 100%; height: 40%; background: rgba(0, 0, 0, 0.75);"></div>
-      </div>
-      <!-- lupa -->
-      <div id="magnifier" style="display: none; position: fixed; width: 150px; height: 150px; border: 2px solid #7ad761; border-radius: 50%; pointer-events: none; z-index: 9999; overflow: hidden;">
+    <!-- mascara -->
+    <div id="reading-mask-container"
+        style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 9999;">
+        <div id="top-mask"
+            style="position: absolute; left: 0; top: 0; width: 100%; height: 40%; background: rgba(0, 0, 0, 0.75);">
+        </div>
+        <div id="reading-line" style="position: absolute; left: 0; height: 80px; width: 100%; background: transparent;">
+        </div>
+        <div id="bottom-mask"
+            style="position: absolute; left: 0; bottom: 0; width: 100%; height: 40%; background: rgba(0, 0, 0, 0.75);">
+        </div>
+    </div>
+    <!-- lupa 
+    <div id="magnifier"
+        style="display: none; position: fixed; width: 150px; height: 150px; border: 2px solid #7ad761; border-radius: 50%; pointer-events: none; z-index: 9999; overflow: hidden;">
         <div id="magnifier-content" style="position: absolute; left: 0; top: 0; transform-origin: center center;"></div>
-      </div>
-      <!-- Leitor -->
-      <div id="leitor-container" style="display: none; position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background: #333; color: white; padding: 15px; border-radius: 8px; z-index: 9999; width: 80%; max-width: 600px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+    </div> -->
+    <!-- Leitor -->
+    <div id="leitor-container"
+        style="display: none; position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background: #333; color: white; padding: 15px; border-radius: 8px; z-index: 9999; width: 80%; max-width: 600px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
             <span id="leitor-status">Leitor de Tela Ativo</span>
             <div style="display: flex; gap: 10px;">
-                <button id="leitor-pause" style="background: #7ad761; border: none; padding: 5px 10px; border-radius: 4px; color: white; cursor: pointer;">Pausar</button>
-                <button id="leitor-stop" style="background: #ff4444; border: none; padding: 5px 10px; border-radius: 4px; color: white; cursor: pointer;">Parar</button>
+                <button id="leitor-pause"
+                    style="background: #7ad761; border: none; padding: 5px 10px; border-radius: 4px; color: #f8f8ff; cursor: pointer;">Pausar</button>
+                <button id="leitor-stop"
+                    style="background: #ff4444; border: none; padding: 5px 10px; border-radius: 4px; color: #f8f8ff; cursor: pointer;">Parar</button>
             </div>
         </div>
-        <div id="leitor-text" style="margin-top: 10px; font-size: 16px;">Selecione um texto para começar a leitura</div>
+        <div id="leitor-text" style="margin-top: 10px; font-size: 14px;">Selecione um texto para começar a leitura</div>
     </div>
     <script>
         function showSidebar() {
@@ -58,7 +68,8 @@
             <li id="perfil-sidebar">
                 <i class='bx bx-chevron-down' id="open-modal-small"
                     style="color: #fff; font-size: 20px; margin-right: 5px;"></i>
-                <img src="img/perfil2.svg" alt="" srcset="">
+                <a href="../pagina-perfil/perfil.html" style="padding: 0;"><img src="img/perfil2.svg" id="foto-perfil" alt="Foto de perfil"
+                        style="width: 50px;"></a>
                 <div class="menus">
             <li><a href="../pagina-inicial/inicial.html" id="menuMobile">HOME</a></li>
             <li><a href="../pagina-play/play.html" id="menuMobile">PLAY</a></li>
@@ -66,6 +77,7 @@
             <li><a href="../pagina-materiais/materiais.html" id="menuMobile">MATERIAIS</a></li>
             <li><a href="../pagina-qrcode/index.html" id="menuMobile">QR-CODE</a></li>
             <li><a href="../pagina-faq/faq.html" id="menuMobile">FALE CONOSCO</a></li>
+            <li><a a href="../pagina-login/index.html" onclick="logout()" id="menuMobile">SAIR</a></li>
             <div class="footer-logo">
                 <img src="./img/logoBranca.svg" id="footer-logo" alt="">
             </div>
@@ -77,7 +89,9 @@
             <li id="logo-nav">
                 <a href="../pagina-inicial/inicial.html" class="link-home">
                     <img src="img/ram.svg" alt="ram">
-                    <h1 style="color: black;"><b style="color:#7ad761; margin-left: 10px;">ram</b>poınt.</h1>
+                    <h1 style="color: black;">
+                        <b style="color:#7ad761; margin-left: 10px;">ram</b><span>poınt.</span>
+                    </h1>
                 </a>
             <li class="hideOnMobile"><a href="../pagina-inicial/inicial.html">HOME</a>
             <li class="hideOnMobile"><a href="../pagina-play/play.html">PLAY</a>
@@ -96,11 +110,11 @@
                             <p class="texto-perfil" id="nome_modal"></p>
                             <div class="grupo">
                                 <hr class="linha">
-                                <a class="cadastro" href="../pagina-perfil/perfil.html"><span style="color: black;">Ir
-                                        para perfil</span></a>
+                                <a class="cadastro" href="../pagina-perfil/perfil.html">
+                                    <span">Ir para perfil</span>
+                                </a>
                                 <hr class="linha">
-                                <a href="../pagina-login/index.html" onclick="logout()" class="login"><span
-                                        style="color: red;">Sair</span></a>
+                                <a href="../pagina-login/index.html" onclick="logout()" class="login">Sair</a>
                             </div>
                         </div>
                     </div>
@@ -110,8 +124,8 @@
                     <img id="perfil" src="img/perfil.svg" alt="perfil">
                 </button>
             </li>
-            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
-                        height="26" viewBox="0 96 960 960" width="26">
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg class="icon-sidebar"
+                        xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
                         <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
                     </svg></a></li>
         </ul>
@@ -131,10 +145,10 @@
                 <img src="./img/btn-acessibilidade/Aa.svg" alt="">
                 <h4 class="title-group">Tamanho da fonte</h4>
             </div>
-            <div class="group-btn">
+            <!-- <div class="group-btn">
                 <img src="./img/btn-acessibilidade/Aa.svg" alt="">
                 <h4 class="title-group">Fonte</h4>
-            </div>
+            </div> -->
             <div class="group-btn">
                 <img src="./img/btn-acessibilidade/espaco-linhas.svg" alt="">
                 <h4 class="title-group">Espaço entre linhas</h4>
@@ -151,7 +165,7 @@
                 <img src="./img/btn-acessibilidade/leitor-sites.svg" alt="">
                 <h4 class="title-group">Leitor de Sites</h4>
             </div>
-            <div class="group-btn">
+            <div class="group-btn modo-leitura-btn">
                 <img src="./img/btn-acessibilidade/modo-leitura.svg" alt="">
                 <h4 class="title-group">Modo de Leitura</h4>
             </div>
@@ -159,10 +173,10 @@
                 <img src="./img/btn-acessibilidade/mascara-leitura.svg" alt="">
                 <h4 class="title-group">Máscara de leitura</h4>
             </div>
-            <div id="lupa-acs" class="group-btn">
+            <!-- <div id="lupa-acs" class="group-btn">
                 <img src="./img/btn-acessibilidade/lupa.svg" alt="">
                 <h4 class="title-group">Lupa</h4>
-            </div>
+            </div> -->
         </div>
 
         <h3 class="title-accessibility-menu">Controle de cor</h3>
@@ -298,8 +312,7 @@
                     <div class="card-group">
                         <div class="card-text">
                             <p>Madeira</p>
-                            <img src="./img/icon-madeira.svg" alt="">
-                            </img>
+                            <img src="./img/icon-madeira.svg" id="iconMadeira" alt="Imagem de madeira">
                         </div>
                     </div>
                 </div>
@@ -307,8 +320,7 @@
                     <div class="card-group">
                         <div class="card-text">
                             <p>Pneu</p>
-                            <img src="./img/icon-pneu.svg" alt="">
-                            </img>
+                            <img src="./img/icon-pneu.svg" id="iconPneu" alt="">
                         </div>
                     </div>
                 </div>
@@ -316,8 +328,7 @@
                     <div class="card-group">
                         <div class="card-text">
                             <p>Reciclável</p>
-                            <img src="./img/icon-reciclavel.svg" alt="">
-                            </img>
+                            <img src="./img/icon-reciclavel.svg" id="iconReciclavel" alt="">
                         </div>
                     </div>
                 </div>
@@ -325,8 +336,7 @@
                     <div class="card-group">
                         <div class="card-text">
                             <p>Metal</p>
-                            <img src="./img/icon-metal.svg" alt="">
-                            </img>
+                            <img src="./img/icon-metal.svg" id="iconMetal" alt="">
                         </div>
                     </div>
                 </div>
@@ -334,8 +344,7 @@
                     <div class="card-group">
                         <div class="card-text">
                             <p>Eletrônico</p>
-                            <img src="img/icon-eletronico.svg" alt="">
-                            </img>
+                            <img src="img/icon-eletronico.svg" id="iconEletronico" alt="">
                         </div>
                     </div>
                 </div>

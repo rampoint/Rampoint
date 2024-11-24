@@ -62,3 +62,86 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.appendChild(readingMaskContainer);
     }
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Criar elementos necessários
+    const magnifier = document.getElementById('magnifier');
+    const magnifierContent = document.getElementById('magnifier-content');
+    const lupaToggle = document.getElementById('lupa-acs');
+
+    // Se os elementos não existirem, criar o magnifier
+    if (!document.getElementById('magnifier')) {
+        document.body.appendChild(magnifier);
+    }
+
+    // Verificar se todos os elementos necessários existem
+    if (!magnifier || !magnifierContent || !lupaToggle) {
+        console.error('Elementos necessários não encontrados');
+        return;
+    }
+
+    let isActive = false;
+    const ZOOM_LEVEL = 1.5; // Nível de zoom da lupa
+
+    // Estilo do cursor e interatividade do botão
+    lupaToggle.style.cursor = 'pointer';
+
+    function updateMagnifier(e) {
+        if (!isActive) return;
+
+        const x = e.clientX;
+        const y = e.clientY;
+        const magnifierSize = 150; // Tamanho da lupa
+
+        // Atualizar posição da lupa
+        magnifier.style.left = `${x - magnifierSize/2}px`;
+        magnifier.style.top = `${y - magnifierSize/2}px`;
+
+        // Atualizar conteúdo ampliado
+        magnifierContent.style.width = `${document.documentElement.scrollWidth}px`;
+        magnifierContent.style.height = `${document.documentElement.scrollHeight}px`;
+        magnifierContent.style.transform = `translate(${-x * ZOOM_LEVEL + magnifierSize/2}px, ${-y * ZOOM_LEVEL + magnifierSize/2}px) scale(${ZOOM_LEVEL})`;
+
+        // Copiar o conteúdo da página
+        if (!magnifierContent.innerHTML) {
+            const clone = document.documentElement.cloneNode(true);
+            // Remover a própria lupa do clone para evitar recursão
+            const cloneMagnifier = clone.querySelector('#magnifier');
+            if (cloneMagnifier) {
+                cloneMagnifier.remove();
+            }
+            magnifierContent.innerHTML = clone.outerHTML;
+        }
+    }
+
+    function toggleMagnifier() {
+        isActive = !isActive;
+        magnifier.style.display = isActive ? 'block' : 'none';
+        
+        // Estilo do botão quando ativo
+        if (isActive) {
+            lupaToggle.style.backgroundColor = '#7ad761';
+            document.addEventListener('mousemove', updateMagnifier);
+            // Limpar o conteúdo ao ativar
+            magnifierContent.innerHTML = '';
+        } else {
+            lupaToggle.style.backgroundColor = '';
+            document.removeEventListener('mousemove', updateMagnifier);
+            // Limpar o conteúdo ao desativar
+            magnifierContent.innerHTML = '';
+        }
+    }
+
+    // Adicionar listener de clique ao botão
+    lupaToggle.addEventListener('click', toggleMagnifier);
+
+    // Estilo inicial da lupa
+    magnifier.style.boxShadow = '0 0 10px rgba(0,0,0,0.3)';
+    magnifierContent.style.position = 'absolute';
+    magnifierContent.style.transformOrigin = 'top left';
+
+    // Impedir que a lupa afete o layout
+    magnifier.style.pointerEvents = 'none';
+    magnifier.style.willChange = 'transform';
+    magnifier.style.backfaceVisibility = 'hidden';
+});

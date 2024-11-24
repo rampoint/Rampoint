@@ -172,7 +172,6 @@ body.modo-escuro span {
 }
 
 nav a {
-    color: #000;
     text-decoration: none;
     transition: color 0.3s ease;
 }

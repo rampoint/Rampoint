@@ -360,3 +360,12 @@ body.modo-escuro .footer-container button {
     background-color: #359CCC;
     color: #DADADC;
 }
+
+body.modo-escuro .text-block {
+    background-color: #282828;
+    box-shadow: 0px 5px 8px rgba(20, 34, 69, 0.5);
+}
+
+body.modo-escuro .texto-ramcoin {
+    color: rgba(137, 170, 255, 0.85);
+}

@@ -1,5 +1,6 @@
 function editarDados(id) {
-  window.location.href = "../../editar-doacoes-adm/editar-doacoes.html?id=" + id;
+  window.location.href =
+    "../../editar-doacoes-adm/editar-doacoes.html?id=" + id;
 }
 
 function pegarIdUrl() {
@@ -12,20 +13,23 @@ acharDoacaoUrl(uid);
 
 function acharDoacaoUrl(uid) {
   const userRef = firebase.database().ref("users");
-  
+
   userRef.once("value").then((childSnapshot) => {
     childSnapshot.forEach((snapshot) => {
       const pieceRef = userRef.child(`${snapshot.key}/peças/${uid}`);
-      pieceRef.once("value").then((snapshot) => {
-        if (snapshot.exists()) {
-          const Dados = snapshot.val();
-          mostrarDados(Dados);
-        } else {
-          console.log("Peça não encontrada.");
-        }
-      }).catch((error) => {
-        console.error("Erro ao buscar dados:", error);
-      });
+      pieceRef
+        .once("value")
+        .then((snapshot) => {
+          if (snapshot.exists()) {
+            const Dados = snapshot.val();
+            mostrarDados(Dados);
+          } else {
+            console.log("Peça não encontrada.");
+          }
+        })
+        .catch((error) => {
+          console.error("Erro ao buscar dados:", error);
+        });
     });
   });
 }
@@ -49,34 +53,32 @@ const form = {
 };
 
 function atualizarDados() {
-
   const userRef = firebase.database().ref("users");
 
-
   userRef.once("value").then((childSnapshot) => {
-
     childSnapshot.forEach((snapshot) => {
       const pieceRef = userRef.child(`${snapshot.key}/peças/${uid}`);
-      pieceRef.once('value').then((snapshot) => {
-        if(snapshot.exists()){
-        pieceRef.update({
-          nome_peca: form.Peca(),
-          nome: form.nome(),
-          email: form.email(),
-          qtd: form.Qtd_peca(),
-          tipo: form.tipo_componente(),
-          desc: form.desc_doacao(),
-        })
-        .then(() => {
-          mostrarPopupEditado()
-        })
-        .catch((error) => {
-          console.error('Erro ao atualizar:', error);
-        })}else{
-          console.log('ta aqui nao')
+      pieceRef.once("value").then((snapshot) => {
+        if (snapshot.exists()) {
+          pieceRef
+            .update({
+              nome_peca: form.Peca(),
+              nome: form.nome(),
+              email: form.email(),
+              qtd: form.Qtd_peca(),
+              tipo: form.tipo_componente(),
+              desc: form.desc_doacao(),
+            })
+            .then(() => {
+              mostrarPopupEditado();
+            })
+            .catch((error) => {
+              console.error("Erro ao atualizar:", error);
+            });
+        } else {
+          console.log("ta aqui nao");
         }
-      })
-      
+      });
     });
   });
 }

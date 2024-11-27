@@ -330,8 +330,16 @@ i.dark-theme {
   color: #FFBCBC;
 }
 
+#lapis_editar.light-theme {
+  color: #121212;
+}
+
 #lapis_editar.dark-theme {
   color: #DADADC;
+}
+
+#excluir_editar.light-theme {
+  color: #121212;
 }
 
 #excluir_editar.dark-theme {

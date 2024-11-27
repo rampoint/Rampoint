@@ -102,16 +102,10 @@
 .mensagem,
 .horario {
   font-family: "Blinker-regular";
-  color: #121212;
 }
 
 .mensagem {
-  color: #000;
   margin-top: 5px;
-}
-
-.span-mensagem {
-  color: rgba(0, 0, 0, 0.67);
 }
 
 .horario {
@@ -169,7 +163,7 @@ th,
 td {
   padding: 10px 15px;
   text-align: left;
-  
+
 }
 
 th {
@@ -183,7 +177,6 @@ td {
   font-family: "Poppins-regular";
   font-weight: 100;
   font-size: 0.9em;
-  color: #808080;
   position: relative;
 }
 
@@ -293,16 +286,28 @@ h3.dark-theme {
   background-color: #282828;
 }
 
+.titulo-mensagem.light-theme {
+  color: rgb(18, 18, 18);
+}
+
 .titulo-mensagem.dark-theme {
   color: #DADADC;
+}
+
+.mensagem.light-theme {
+  color: rgb(18, 18, 18);
 }
 
 .mensagem.dark-theme {
   color: #DADADC;
 }
 
+.span-mensagem.light-theme {
+  color: rgba(0, 0, 0, 0.67);
+}
+
 .span-mensagem.dark-theme {
-  color: rgba(218, 218, 220, 0.67);
+  color: #DADADC;
 }
 
 .link-doacoes.light-theme {
@@ -325,6 +330,32 @@ tr.dark-theme {
   color: #DADADC;
 }
 
+td.light-theme {
+  color: #121212;
+}
+
 td.dark-theme {
   color: #DADADC;
+}
+
+.fundo-notificacoes::-webkit-scrollbar {
+  width: 12px;
+}
+
+.fundo-notificacoes::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+.fundo-notificacoes::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 20px;
+}
+
+.fundo-notificacoes.dark-theme::-webkit-scrollbar-track {
+  background-color: #282828;
+}
+
+.fundo-notificacoes.dark-theme::-webkit-scrollbar-thumb {
+  background-color: #121212;
+  border: 3px solid #282828;
 }

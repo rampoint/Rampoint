@@ -21,22 +21,26 @@ document.addEventListener("DOMContentLoaded", () => {
       Interno: 0,
       Resfriamento: 0,
       Estrutura: 0,
-      Periférico: 0
+      Periférico: 0,
     };
 
     // Processar dados dos usuários
-    Object.values(data.users || {}).forEach(user => {
+    Object.values(data.users || {}).forEach((user) => {
       // Verifica se dataCriacao está definido e é uma string
-      if (user.dataCriacao && typeof user.dataCriacao === 'string') {
-        const [dia, mes, ano] = user.dataCriacao.split('/');
+      if (user.dataCriacao && typeof user.dataCriacao === "string") {
+        const [dia, mes, ano] = user.dataCriacao.split("/");
         const mesIndex = parseInt(mes) - 1; // Arrays são 0-based
         newUsers[mesIndex]++;
       } else {
-        console.warn(`dataCriacao indefinido ou inválido para o usuário: ${JSON.stringify(user)}`);
+        console.warn(
+          `dataCriacao indefinido ou inválido para o usuário: ${JSON.stringify(
+            user
+          )}`
+        );
       }
 
       // Processar peças do usuário
-      Object.values(user.peças || {}).forEach(peca => {
+      Object.values(user.peças || {}).forEach((peca) => {
         const pecaData = new Date(peca.data);
         const pecaMes = pecaData.getMonth();
         months[pecaMes]++;
@@ -54,20 +58,23 @@ document.addEventListener("DOMContentLoaded", () => {
       pecasPorTipo: Object.entries(pecasPorTipo).map(([name, value]) => ({
         name,
         y: value,
-        z: 90 + Math.random() * 50
-      }))
+        z: 90 + Math.random() * 50,
+      })),
     };
   };
 
   // Função para buscar dados do Firebase
   const fetchFirebaseData = () => {
-    const usersRef = database.ref('users');
-    
-    usersRef.once('value')
+    const usersRef = database.ref("users");
+
+    usersRef
+      .once("value")
       .then((snapshot) => {
         if (snapshot.exists()) {
           const processedData = processFirebaseData({ users: snapshot.val() });
-          const currentTheme = document.body.classList.contains("dark-theme") ? "dark" : "light";
+          const currentTheme = document.body.classList.contains("dark-theme")
+            ? "dark"
+            : "light";
           updateCharts(currentTheme, processedData);
         }
       })
@@ -89,7 +96,20 @@ document.addEventListener("DOMContentLoaded", () => {
         align: "left",
       },
       xAxis: {
-        categories: ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"],
+        categories: [
+          "Jan",
+          "Fev",
+          "Mar",
+          "Abr",
+          "Mai",
+          "Jun",
+          "Jul",
+          "Ago",
+          "Set",
+          "Out",
+          "Nov",
+          "Dez",
+        ],
         labels: {
           style: {
             color: theme === "dark" ? "#718EBF" : "#718ebf",
@@ -146,10 +166,11 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector(".subtitulo"),
     document.querySelector(".titulo-notificacoes"),
     document.querySelector(".titulo-doadores"),
+    document.querySelector(".titulo-mensagem"),
     document.querySelector(".grafico-coluna"),
     document.querySelector(".fundo-notificacoes"),
     document.querySelector(".link-doacoes"),
-    document.querySelector(".tabela-doadores")
+    document.querySelector(".tabela-doadores"),
   ];
 
   const iconSidebar = document.querySelectorAll("i");
@@ -163,25 +184,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const applyTheme = (theme) => {
     const collections = [
-      titulotabela, 
-      conteudoTabela, 
-      iconSidebar, 
-      linkSidebar, 
-      mensagens, 
-      spanMensagens, 
-      tituloMsg, 
-      horaMsg
+      titulotabela,
+      conteudoTabela,
+      iconSidebar,
+      linkSidebar,
+      mensagens,
+      spanMensagens,
+      tituloMsg,
+      horaMsg,
     ];
 
-    elementsToToggle.forEach(el => {
+    elementsToToggle.forEach((el) => {
       if (el) {
         el.classList.remove(theme === "dark" ? "light-theme" : "dark-theme");
         el.classList.add(theme === "dark" ? "dark-theme" : "light-theme");
       }
     });
 
-    collections.forEach(collection => {
-      collection.forEach(item => {
+    collections.forEach((collection) => {
+      collection.forEach((item) => {
         item.classList.remove(theme === "dark" ? "light-theme" : "dark-theme");
         item.classList.add(theme === "dark" ? "dark-theme" : "light-theme");
       });
@@ -203,11 +224,51 @@ document.addEventListener("DOMContentLoaded", () => {
   // Theme toggle event listener
   if (themeIcon) {
     themeIcon.addEventListener("click", () => {
-      const currentTheme = localStorage.getItem("theme") === "dark" ? "light" : "dark";
+      const currentTheme =
+        localStorage.getItem("theme") === "dark" ? "light" : "dark";
       applyTheme(currentTheme);
     });
   }
 
   // Initial data fetch
   fetchFirebaseData();
+});
+
+const applyTheme = (theme) => {
+  document.body.classList.toggle("modo-escuro", theme === "escuro");
+  document.body.classList.toggle("modo-claro", theme === "claro");
+  localStorage.setItem("modoLeitura", theme);
+
+  const modoLeituraBtn = document.querySelector(".modo-leitura-btn");
+  if (modoLeituraBtn) {
+    if (theme === "escuro") {
+      modoLeituraBtn.classList.remove("bx-sun");
+      modoLeituraBtn.classList.add("bx-moon");
+      modoLeituraBtn.style.color = "#ffffff";
+    } else {
+      modoLeituraBtn.classList.remove("bx-moon");
+      modoLeituraBtn.classList.add("bx-sun");
+      modoLeituraBtn.style.color = "";
+    }
+  }
+};
+
+const carregarModoLeitura = () => {
+  const modoSalvo = localStorage.getItem("modoLeitura") || "claro";
+  applyTheme(modoSalvo);
+};
+
+const toggleModoLeitura = () => {
+  const isDarkMode = document.body.classList.contains("modo-escuro");
+  const newTheme = isDarkMode ? "claro" : "escuro";
+  applyTheme(newTheme);
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+  const modoLeituraBtn = document.querySelector(".modo-leitura-btn");
+  if (modoLeituraBtn) {
+    modoLeituraBtn.addEventListener("click", toggleModoLeitura);
+  }
+
+  carregarModoLeitura();
 });

@@ -88,9 +88,9 @@ function exibirPecas(userId, pecas) {
   pecas.forEach((peca) => {
     const novaLinha = document.createElement("tr");
     novaLinha.innerHTML = `
-  <td style="color: white;">${peca.nome}</td>
-  <td style="color: white;">${peca.nome_peca}</td>
-  <td style="color: white;">${peca.data}</td>
+  <td>${peca.nome}</td>
+  <td>${peca.nome_peca}</td>
+  <td>${peca.data}</td>
   `;
 
     // Adiciona a nova linha ao corpo da tabela

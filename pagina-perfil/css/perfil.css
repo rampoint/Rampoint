@@ -1093,6 +1093,32 @@ body {
 
 /* popUps */
 
+.fundo-popUp {
+  background-color: #fff;
+  box-shadow: 0px 5px 20px rgba(42, 85, 194, 0.15);
+  width: auto;
+  height: 70px;
+  padding: 10px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rowPopUp {
+  display: flex;
+  flex-direction: row;
+}
+
+.bx-check-circle {
+  color: #499136;
+}
+
+.textoPopUp {
+  font-family: "Poppins-medium";
+  margin-left: 10px;
+}
+
 #alteracao_popup {
   width: 360px;
   position: fixed;
@@ -1107,19 +1133,40 @@ body {
   z-index: 100000;
 }
 
-
 #alteracao_popup_azul {
-  width: 360px;
   position: fixed;
   top: -120px;
   /* Começa fora da tela */
-  left: 40%;
+  left: 50%;
   transform: translateX(-50%);
   padding: 20px;
   border-radius: 5px;
   transition: top 0.5s ease;
   /* Transição suave para a animação */
   z-index: 100000;
+}
+
+.fundo-popUpAzul {
+  background-color: #fff;
+  box-shadow: 0px 5px 20px rgba(42, 85, 194, 0.15);
+  width: 490px;
+  height: 45px;
+  padding: 10px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rowPopUpAzul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.span-notfAzul {
+  font-family: "Poppins-bold";
+  color: #1F9DD3;
 }
 
 #foto_mudar {

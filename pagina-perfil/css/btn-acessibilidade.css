@@ -319,6 +319,11 @@ body.modo-escuro #nascimento {
     color: #DADADC;
 }
 
+body.modo-escuro #genero-mudar option {
+    background-color: #282828;
+    color: #DADADC;
+}
+
 body.modo-escuro .excluir-conta,
 body.modo-escuro .btn-excluir {
     color: #FF4141;
@@ -378,4 +383,17 @@ body.modo-escuro .footer-container input[type="email"] {
 body.modo-escuro .footer-container button {
     background-color: #359CCC;
     color: #DADADC;
+}
+
+body.modo-escuro .fundo-popUp,
+body.modo-escuro .fundo-popUpAzul {
+    background-color: #282828;
+}
+
+body.modo-escuro .bx-check-circle {
+    color: #ABF47D;
+}
+
+body.modo-escuro .span-notfAzul {
+    color: #46C4FF;
 }

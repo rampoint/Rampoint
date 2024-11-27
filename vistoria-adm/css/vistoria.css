@@ -241,3 +241,27 @@ i.dark-theme {
   background-color: #913EC7;
   color: #DADADC;
 }
+
+/* Estilos do scrollbar padrão */
+.fundo-doacoes::-webkit-scrollbar {
+  width: 12px;
+}
+
+.fundo-doacoes::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+.fundo-doacoes::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 20px;
+}
+
+/* Estilos para o tema escuro */
+.fundo-doacoes.dark-theme::-webkit-scrollbar-track {
+  background-color: #282828;
+}
+
+.fundo-doacoes.dark-theme::-webkit-scrollbar-thumb {
+  background-color: #121212;
+  border: 3px solid #282828;
+}

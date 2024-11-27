@@ -84,7 +84,7 @@
   </aside>
 
   <main class="main-content light-theme">
-    
+
     <header class="fundo-titulo">
       <h1 class="titulo-pagina">Adicionar doações</h1>
 
@@ -98,7 +98,13 @@
     </section>
 
     <section class="campo-inicial">
-      <img src="img/doacaoAdicionada.svg" alt="" id="doacao_add" srcset="">
+      <div class="fundo-popUp-doacao" id="doacao_add">
+        <div class="rowPopUp">
+          <i class='bx bx-check-circle' style='color:#2a55c2; font-size: 26px;'></i>
+          <p class="textoPopUp">Doação adicionada com sucesso!</p>
+        </div>
+      </div>
+      <!-- <img src="img/doacaoAdicionada.svg" alt="" id="doacao_add" srcset=""> -->
       <form action="" class="form-doacoes">
         <div class="grupo1">
           <div class="campo-form">
@@ -154,7 +160,7 @@
                 <option value="Painel frontal e portas">100</option>
                 <option value="Dissipador">100</option>
                 <option value="Filtro de poeira">100</option>
-            </datalist>
+              </datalist>
               <img src="./img/add-peca.svg" class="icon-add" alt="Ícone para adicionar mais peças">
             </div>
 

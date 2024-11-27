@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const nameUser = document.querySelector(".nome-usuario");
   const linkSidebar = document.querySelectorAll(".sidebar ul li a .nav-item");
   const iconSidebar = document.querySelectorAll("i");
+  const fundoPopUp = document.querySelector(".fundo-popUp-doacao");
 
   const tituloPagina = document.querySelector(".titulo-pagina");
   const fundoTitulo = document.querySelector(".fundo-titulo");
@@ -44,6 +45,8 @@ document.addEventListener("DOMContentLoaded", () => {
     
     btnCancelar.classList.add("dark-theme");
 
+    fundoPopUp.classList.add("dark-theme");
+
     themeIcon.classList.replace("bx-sun", "bx-moon");
   }
 
@@ -69,6 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
     textarea.classList.toggle("dark-theme");
 
     btnCancelar.classList.toggle("dark-theme");
+    fundoPopUp.classList.toggle("dark-theme");
 
     if (themeIcon.classList.contains("bx-sun")) {
       themeIcon.classList.replace("bx-sun", "bx-moon");

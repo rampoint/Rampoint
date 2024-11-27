@@ -683,10 +683,6 @@
     text-decoration-line: underline;
   }
 
-  .accessibility-btn {
-    display: none;
-  }
-
   .botao {
     width: 0;
     display: none;

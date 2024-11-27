@@ -57,10 +57,6 @@
     color: var(--branco);
     text-decoration-line: underline;
   }
-
-  .accessibility-btn {
-    display: none;
-  }
 }
 
 @media (max-width: 795px) {

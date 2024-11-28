@@ -160,3 +160,22 @@ function gerarCodigoAleatorio(tamanho = 10) {
 
   return codigo;
 }
+
+document.getElementById('download').addEventListener('click', function() {
+  // Obtém a imagem do QR Code
+  const qrcodeImage = document.querySelector('#qrcode img').src;
+  
+  // Cria um link temporário
+  const link = document.createElement('a');
+  link.href = qrcodeImage; // Define o URL da imagem
+  link.download = qrcodeImage; // Define o nome do arquivo para download
+  
+  // Adiciona o link ao corpo do documento (necessário para Firefox)
+  document.body.appendChild(link);
+  
+  // Simula um clique no link para iniciar o download
+  link.click();
+  
+  // Remove o link do documento
+  document.body.removeChild(link);
+});

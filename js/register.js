@@ -190,11 +190,14 @@ let globalUserId = null;
 firebase.auth().onAuthStateChanged((user) => {
   if (user) {
     globalUserId = user.uid;
+    localStorage.setItem('idUsuario', globalUserId)
     buscarDadosUsuario(user.uid);
   } else {
     console.log("Nenhum usuário logado.");
   }
 });
+
+const uid = localStorage.getItem('idUsuario')
 
 function buscarDadosUsuario(globalUserId) {
   const dbRef = firebase.database().ref("users/" + globalUserId);
@@ -218,6 +221,12 @@ function exibirDadosUsuario(users) {
   // Verifica se a URL contém uma string específica
   if (currentPage.includes("/pagina-perfil/")) {
 
+    try {
+      document.getElementById("fotoPerfilMobile").src = users.fotoPerfil.fotoPerfil
+        users.fotoPerfil.cor_texto;
+    } catch (error) {
+      console.log("Erro ao definir cor do texto da emoção:", error.message);
+    }
     document.getElementById("nome_usuario").innerHTML = users.nome;
     document.getElementById("email_usuario").innerHTML = users.email;
     try {
@@ -326,38 +335,33 @@ function exibirDadosUsuario(users) {
   }
 }
 
-function pegarCupons(users){
 
-  var containerCupom = document.createElement('li')
-  containerCupom.classList.add('conjunto-cupons')
-  containerCupom.innerHTML = `<img src="../pagina-qrcode/img/" alt="">
-                                <div class="lista-textos2">
-                                    <p class="titulo-cupom-amarelo">CUPOM RAM DOURADA</p>
-                                    <p class="porcentagem-cupom-amarelo">30%</p>
+function pegarMedalhas(){
+  firebase.database().ref(`users/${uid}/peças`).once('value', (snapshot) => {
+    snapshot.forEach((childSnapshot) => {
+      var qtdPeças =+ 1
+      if(qtdPeças > 0){
+        adicionarMedalhaSalto()
+      }
+    })
+  })
+}
+ 
+function adicionarMedalhaSalto(){
+  var li = document.createElement('li')
+  li.classList.add('conjunto-medalhas')
 
+  li.innerHTML = `
+  <li class="conjunto-medalhas" id="medalha-azul">
+                                <img id="medalha-azul-img" src="" alt="">
+                                <div class="lista-textos">
+                                    <p class="titulo-medalha-azul">Engrenagem Solidária</p>
+                                    <p class="meta-medalha-azul">Personalizou o perfil</p>
                                 </div>
-                                <div class="area-excluir">
-                                    <i class='bx bx-down-arrow-circle' style='color:#2a55c2'></i>
-                                    <button class="btn-excluir">EXCLUIR</button>
-                                    <p class="mensagem-cupom">Cupom prestes à expirar</p>
-                                </div>
-
-                                <!-- Modal -->
-                                <div id="modal-excluir" class="modal-excluir">
-                                    <div class="modal-content">
-                                        <span class="close">&times;</span>
-                                        <div class="linha-modal"></div>
-                                        <h2>Você tem certeza que deseja excluir o cupom?</h2>
-                                        <p>Seus pontos irão voltar para o perfil</p>
-                                        <button id="confirmar-excluir" class="btn-confirmar">Sim, excluir</button>
-                                        <button id="cancelar-excluir" class="btn-cancelar">Cancelar</button>
-                                    </div>
-                                </div>`
+                            </li>
+                            <hr id="linha">`
 }
 
-function descobrirCupom(users){
-
-}
 
 function mudarDados() {
   const nome_mudanca = document.getElementById("nome-mudar").value;

@@ -957,14 +957,16 @@ body {
 .titulo-medalha-azul,
 .titulo-ram-amarelo,
 .titulo-ram-vidro,
+.titulo-medalha-verde,
+.titulo-medalha-vermelho,
+.titulo-medalha-amarelo
 .titulo-ram-golias {
   font-family: "Blinker-extrabold";
   font-size: 19px;
 }
 
 .titulo-ram-amarelo,
-.titulo-ram-vidro,
-.titulo-cupom-verde {
+.titulo-ram-vidro{
   width: 10em;
 }
 
@@ -978,8 +980,26 @@ body {
   color: #0076ac;
 }
 
+.titulo-medalha-vermelho,
+.meta-medalha-vermelho {
+  color: #6B0015;
+}
+
+.titulo-medalha-verde,
+.meta-medalha-verde {
+  color: #2B5121;
+}
+
 .titulo-medalha-azul {
   margin-bottom: 10px;
+}
+
+.titulo-medalha-verde {
+  margin-bottom: 10px;
+}
+
+#medalha-img{
+  width: 110px;
 }
 
 .titulo-ram-amarelo,
@@ -1006,7 +1026,10 @@ body {
 }
 
 .meta-medalha-roxa,
-.meta-medalha-azul {
+.meta-medalha-azul,
+.meta-medalha-verde,
+.meta-medalha-vermelho,
+.meta-medalha-amarelo {
   font-family: "Poppins-bold";
   font-size: 14px;
   text-align: center;
@@ -1014,10 +1037,17 @@ body {
 }
 
 .meta-medalha-roxa,
-.meta-medalha-azul {
+.meta-medalha-azul,
+.meta-medalha-vermelho,
+.meta-medalha-amarelo {
   position: relative;
   padding-left: 20px;
 }
+
+.meta-medalha-verde{
+  position: relative;
+}
+
 
 .meta-medalha-roxa::before {
   content: url(../img/brilho-roxo.svg);
@@ -1026,6 +1056,15 @@ body {
   font-size: 19px;
   line-height: 1.5;
 }
+
+.meta-medalha-verde::before {
+  content: url(../img/brilho-verde.svg);
+  position: absolute;
+  left: 0;
+  font-size: 19px;
+  line-height: 1.5;
+}
+
 
 .meta-medalha-azul::before {
   content: url(../img/brilho-azul.svg);

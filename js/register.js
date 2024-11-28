@@ -338,28 +338,49 @@ function exibirDadosUsuario(users) {
 
 function pegarMedalhas(){
   firebase.database().ref(`users/${uid}/peças`).once('value', (snapshot) => {
-    snapshot.forEach((childSnapshot) => {
-      var qtdPeças =+ 1
-      if(qtdPeças > 0){
-        adicionarMedalhaSalto()
-      }
+    const count = snapshot.numChildren();
+    if(count == 1){
+      adicionarMedalhaSalto()
+    } else if(count >= 3){
+      adicionarMedalhaRaio()
+      adicionarMedalhaSalto()
+    }
     })
-  })
-}
+  }
+
  
 function adicionarMedalhaSalto(){
   var li = document.createElement('li')
   li.classList.add('conjunto-medalhas')
+  li.setAttribute('id', 'medalha-verde')
 
   li.innerHTML = `
-  <li class="conjunto-medalhas" id="medalha-azul">
-                                <img id="medalha-azul-img" src="" alt="">
-                                <div class="lista-textos">
-                                    <p class="titulo-medalha-azul">Engrenagem Solidária</p>
-                                    <p class="meta-medalha-azul">Personalizou o perfil</p>
-                                </div>
-                            </li>
-                            <hr id="linha">`
+      <img id="medalha-img" src="./../pagina-perfil/img/medalha verde.svg" alt="">
+       <div class="lista-textos">
+        <p class="titulo-medalha-verde">Salto Tecnológico</p>
+         <p class="meta-medalha-verde">Doe uma vez</p>
+         </div>
+         </li>
+      `
+
+document.getElementById('lista-medalhas').appendChild(li)
+}
+
+function adicionarMedalhaRaio(){
+  var li = document.createElement('li')
+  li.classList.add('conjunto-medalhas')
+  li.setAttribute('id', 'medalha-amarelo')
+
+  li.innerHTML = `
+      <img id="medalha-img" src="./../pagina-perfil/img/medalha amarelo.svg" alt="">
+       <div class="lista-textos">
+        <p class="titulo-medalha-amarela">Raio da esperança</p>
+         <p class="meta-medalha-amarela">Doe 3 vezes</p>
+         </div>
+         </li>
+      `
+
+document.getElementById('lista-medalhas').appendChild(li)
 }
 
 

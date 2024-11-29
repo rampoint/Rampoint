@@ -322,7 +322,7 @@ function exibirDadosUsuario(users) {
     } catch (error) {
       console.log("Erro ao exibir medalha azul:", error.message);
     }
-    pegarCupons()
+    pegarMedalhas()
 
   } else {
     document.getElementById("nome_modal").innerHTML = users.nome;
@@ -339,15 +339,40 @@ function exibirDadosUsuario(users) {
 function pegarMedalhas(){
   firebase.database().ref(`users/${uid}/peças`).once('value', (snapshot) => {
     const count = snapshot.numChildren();
+    console.log(count)
     if(count == 1){
       adicionarMedalhaSalto()
     } else if(count >= 3){
       adicionarMedalhaRaio()
-      adicionarMedalhaSalto()
+      adicionarMedalhaSalto() 
     }
     })
+
+    firebase.database().ref(`users/${uid}`).once('value', (snapshot) => {
+      const pontos = snapshot.val().pontos;
+      console.log(pontos)
+      if(pontos > 1900){
+        adicionarMedalhaEletronica()
+      }
+      })
   }
 
+function adicionarMedalhaEletronica(){
+  var li = document.createElement('li')
+  li.classList.add('conjunto-medalhas')
+  li.setAttribute('id', 'medalha-roxa')
+
+  li.innerHTML = `
+      <img id="medalha-img" src="./../pagina-perfil/img/medalha roxa.svg" alt="">
+       <div class="lista-textos">
+        <p class="titulo-medalha-roxa">Explosão Eletrônica</p>
+         <p class="meta-medalha-roxa" >Atinja 200 ramcoins</p>
+         </div>
+         </li>
+      `
+
+document.getElementById('lista-medalhas').appendChild(li)
+}
  
 function adicionarMedalhaSalto(){
   var li = document.createElement('li')
@@ -358,7 +383,7 @@ function adicionarMedalhaSalto(){
       <img id="medalha-img" src="./../pagina-perfil/img/medalha verde.svg" alt="">
        <div class="lista-textos">
         <p class="titulo-medalha-verde">Salto Tecnológico</p>
-         <p class="meta-medalha-verde">Doe uma vez</p>
+         <p class="meta-medalha-verde" id="medalha-verde-frase" >Doe uma vez</p>
          </div>
          </li>
       `
@@ -372,7 +397,7 @@ function adicionarMedalhaRaio(){
   li.setAttribute('id', 'medalha-amarelo')
 
   li.innerHTML = `
-      <img id="medalha-img" src="./../pagina-perfil/img/medalha amarelo.svg" alt="">
+      <img id="medalha-img" src="../pagina-perfil/img/medalha amarela.svg" alt="">
        <div class="lista-textos">
         <p class="titulo-medalha-amarela">Raio da esperança</p>
          <p class="meta-medalha-amarela">Doe 3 vezes</p>
@@ -402,6 +427,9 @@ function mudarDados() {
 }
 
 function adicionarMedalhas() {
+
+  // firebase.database().ref('users/'+globalUserId+'/medalhas')
+
   const userRef = firebase.database().ref("users/" + globalUserId);
   userRef
     .child("medalhas/azul")

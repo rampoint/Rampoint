@@ -1089,6 +1089,14 @@ body {
   line-height: 1.5;
 }
 
+.meta-medalha-vermelho::before {
+  content: url(../img/brilho-vermelho.svg);
+  position: absolute;
+  left: 0;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
 #linha {
   width: 45em;
   color: rgba(0, 0, 0, 0.35);
@@ -1296,4 +1304,8 @@ body {
 
 #alerta_del {
   margin-left: 10px;
+}
+
+#lista-medalhas-vermelha{
+  display: none;
 }

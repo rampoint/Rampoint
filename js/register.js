@@ -227,8 +227,17 @@ function exibirDadosUsuario(users) {
     } catch (error) {
       console.log("Erro ao definir cor do texto da emoção:", error.message);
     }
-    document.getElementById("nome_usuario").innerHTML = users.nome;
-    document.getElementById("email_usuario").innerHTML = users.email;
+    try {
+      document.getElementById("nome_usuario").innerHTML = users.nome;
+    } catch (error) {
+      console.log("Erro ao definir cor do texto da emoção:", error.message);
+    }
+    try {
+      document.getElementById("email_usuario").innerHTML = users.email;
+    } catch (error) {
+      console.log("Erro ao definir cor do texto da emoção:", error.message);
+    }
+
     try {
       document.getElementById("emocao_usuario").style.color =
         users.fotoPerfil.cor_texto;
@@ -322,6 +331,13 @@ function exibirDadosUsuario(users) {
     } catch (error) {
       console.log("Erro ao exibir medalha azul:", error.message);
     }
+
+    try {
+      document.getElementById("lista-medalhas-vermelha").style.display =
+        users.medalhas.vermelha.display;
+    } catch (error) {
+      console.log("Erro ao exibir medalha azul:", error.message);
+    }
     pegarMedalhas()
 
   } else {
@@ -366,7 +382,7 @@ function adicionarMedalhaEletronica(){
       <img id="medalha-img" src="./../pagina-perfil/img/medalha roxa.svg" alt="">
        <div class="lista-textos">
         <p class="titulo-medalha-roxa">Explosão Eletrônica</p>
-         <p class="meta-medalha-roxa" >Atinja 200 ramcoins</p>
+         <p class="meta-medalha-roxa" >Atinja 2000 ramcoins</p>
          </div>
          </li>
       `
@@ -408,6 +424,26 @@ function adicionarMedalhaRaio(){
 document.getElementById('lista-medalhas').appendChild(li)
 }
 
+function adicionarMedalhaCoracao(){
+  firebase.database().ref('users/'+globalUserId+'/cupons').once('value').then((snapshot) => {
+    if(snapshot.exists()){
+      const userRef = firebase.database().ref("users/" + globalUserId);
+      userRef
+        .child("medalhas/vermelha")
+        .set({
+          display: "flex",
+        })
+        .then(() => {
+          
+        })
+        .catch((error) => {
+          console.log("Error:" + error);
+        });
+    }else{
+      console.log('não tem cupom')
+    }
+  })
+}
 
 function mudarDados() {
   const nome_mudanca = document.getElementById("nome-mudar").value;
@@ -428,25 +464,31 @@ function mudarDados() {
 
 function adicionarMedalhas() {
 
-  // firebase.database().ref('users/'+globalUserId+'/medalhas')
+  firebase.database().ref('users/'+globalUserId+'/medalhas').once('value').then((snapshot) => {
+    if(!snapshot.exists()){
+      const userRef = firebase.database().ref("users/" + globalUserId);
+      userRef
+        .child("medalhas/azul")
+        .set({
+          nome: "Engrenagem Solidária",
+          display: "flex",
+          descricao: "Personalizou perfil",
+          img: "https://firebasestorage.googleapis.com/v0/b/rampoint-81352.appspot.com/o/medalhas%2Fmedalha%20azul.svg?alt=media&token=c7134715-8121-44cb-9823-9a013761513d",
+        })
+        .then(() => {
+          setTimeout(() => {
+            mostrarPopupMedalhaAzul(); // Volta para fora da tela
+          }, 3000);
+        })
+        .catch((error) => {
+          console.log("Error:" + error);
+        });
+    }else{
+      console.log('ja tem medalha')
+    }
+  })
 
-  const userRef = firebase.database().ref("users/" + globalUserId);
-  userRef
-    .child("medalhas/azul")
-    .set({
-      nome: "Engrenagem Solidária",
-      display: "flex",
-      descricao: "Personalizou perfil",
-      img: "https://firebasestorage.googleapis.com/v0/b/rampoint-81352.appspot.com/o/medalhas%2Fmedalha%20azul.svg?alt=media&token=c7134715-8121-44cb-9823-9a013761513d",
-    })
-    .then(() => {
-      setTimeout(() => {
-        mostrarPopupMedalhaAzul(); // Volta para fora da tela
-      }, 3000);
-    })
-    .catch((error) => {
-      console.log("Error:" + error);
-    });
+  
 }
 
 function apagandoUsuario() {
@@ -490,7 +532,7 @@ function mostrarPopupMedalhaAzul() {
   const popup = document.getElementById("alteracao_popup_azul");
 
   // Faz o pop-up deslizar para baixo
-  popup.style.top = "20px"; // Ajuste a posição conforme necessário
+  popup.style.top = "180px"; // Ajuste a posição conforme necessário
 
   // Após 3 segundos, faz o pop-up deslizar de volta para cima
   setTimeout(() => {

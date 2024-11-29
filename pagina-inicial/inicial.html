@@ -288,64 +288,69 @@
 
             </div>
         </section>
-
-       <!-- <section class="card">
-             <div class="card-content">
+    </div>
+    <div id="map"></div>
+    <br>
+    <div id="lugares">
+        <section class="card">
+            <div class="card-content">
                 <h1 id="info-ecoponto">Ecoponto</h1>
                 <h1 id="nome-ecoponto">Prefeitura de Barueri</h1>
                 <p id="texto-endereco"><span id="endereco">Endereço:</span> Av. Iracema, 620 - Jardim Iracema,
                     Barueri - SP, 06440-010
                 </p>
                 <p><span id="telefone">Telefone:</span> <span class="numero">(11) 93938-3945</span></p>
-            </div> 
-            <div id="map"></div>
-        </section>-->
+            </div>
+            <img src="./img/ecoponto.svg" class="imagem-ecoponto" alt="Imagem do Ecoponto de Barueri">
+        </section>
+    </div>
 
-        <!-- <div class="campo-descarte">
-            <h3 id="titulo-descarte">Descarte disponível:</h3>
-            <section class="cards">
-                <div class="card-wrapper area-madeira">
-                    <div class="card-group">
-                        <div class="card-text">
-                            <p>Madeira</p>
-                            <img src="./img/icon-madeira.svg" id="iconMadeira" alt="Imagem de madeira">
-                        </div>
+
+    <!-- <div class="campo-descarte">
+        <h3 id="titulo-descarte">Descarte disponível:</h3>
+        <section class="cards">
+            <div class="card-wrapper area-madeira">
+                <div class="card-group">
+                    <div class="card-text">
+                        <p>Madeira</p>
+                        <img src="./img/icon-madeira.svg" id="iconMadeira" alt="Imagem de madeira">
                     </div>
                 </div>
-                <div class="card-wrapper area-pneu">
-                    <div class="card-group">
-                        <div class="card-text">
-                            <p>Pneu</p>
-                            <img src="./img/icon-pneu.svg" id="iconPneu" alt="">
-                        </div>
+            </div>
+            <div class="card-wrapper area-pneu">
+                <div class="card-group">
+                    <div class="card-text">
+                        <p>Pneu</p>
+                        <img src="./img/icon-pneu.svg" id="iconPneu" alt="">
                     </div>
                 </div>
-                <div class="card-wrapper area-reciclavel">
-                    <div class="card-group">
-                        <div class="card-text">
-                            <p>Reciclável</p>
-                            <img src="./img/icon-reciclavel.svg" id="iconReciclavel" alt="">
-                        </div>
+            </div>
+            <div class="card-wrapper area-reciclavel">
+                <div class="card-group">
+                    <div class="card-text">
+                        <p>Reciclável</p>
+                        <img src="./img/icon-reciclavel.svg" id="iconReciclavel" alt="">
                     </div>
                 </div>
-                <div class="card-wrapper area-metal">
-                    <div class="card-group">
-                        <div class="card-text">
-                            <p>Metal</p>
-                            <img src="./img/icon-metal.svg" id="iconMetal" alt="">
-                        </div>
+            </div>
+            <div class="card-wrapper area-metal">
+                <div class="card-group">
+                    <div class="card-text">
+                        <p>Metal</p>
+                        <img src="./img/icon-metal.svg" id="iconMetal" alt="">
                     </div>
                 </div>
-                <div class="card-wrapper area-eletronico">
-                    <div class="card-group">
-                        <div class="card-text">
-                            <p>Eletrônico</p>
-                            <img src="img/icon-eletronico.svg" id="iconEletronico" alt="">
-                        </div>
+            </div>
+            <div class="card-wrapper area-eletronico">
+                <div class="card-group">
+                    <div class="card-text">
+                        <p>Eletrônico</p>
+                        <img src="img/icon-eletronico.svg" id="iconEletronico" alt="">
                     </div>
                 </div>
-            </section>
-        </div> -->
+            </div>
+        </section>
+    </div> -->
 
         <footer class="footer-container">
             <h2>Quer ser nosso parceiro?</h2>
@@ -402,10 +407,9 @@
         <script src="../js/register.js"></script>
         <script src="../js/logout.js"></script>
         <script src="../js/acessibilidade.js"></script>
-        <!-- <script
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvvanoz7U50-4faMR7NRMsBcc0CfOnCZY&callback=initMap"
-            async defer></script>
-        <script src="../js/maps.js"></script> -->
+        <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvvanoz7U50-4faMR7NRMsBcc0CfOnCZY&libraries=places"></script>
+        <script src="../js/maps.js"></script> -
 
     </div>
 </body>

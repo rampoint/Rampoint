@@ -1,24 +1,34 @@
 let map;
+let existingPlaceIds = new Set(); // Set para controlar lugares já adicionados
 
 function initMap(lat, long) {
-  const barueri = { lat: lat, lng: long };
-  console.log(barueri); // Coordenadas de Barueri
+  const local = { lat: lat, lng: long };
+  console.log(local); // Coordenadas de local
   map = new google.maps.Map(document.getElementById("map"), {
     zoom: 12,
-    center: barueri,
+    center: local,
   });
 
+  // Limpa o Set quando inicializa um novo mapa
+  existingPlaceIds.clear();
+  
   const request = {
-    location: barueri,
+    location: local,
     radius: "3000", // Raio em metros para buscar ecopontos
     keyword: "ecoponto", // Palavra-chave para busca
   };
+  
+  // Limpa a lista de lugares existentes
   document.getElementById("lugares").innerHTML = "";
+  
   const service = new google.maps.places.PlacesService(map);
   service.nearbySearch(request, (results, status) => {
     if (status === google.maps.places.PlacesServiceStatus.OK) {
       for (let i = 0; i < results.length; i++) {
-        getPlaceDetails(results[i]);
+        // Verifica se o lugar já foi adicionado
+        if (!existingPlaceIds.has(results[i].place_id)) {
+          getPlaceDetails(results[i]);
+        }
       }
     } else {
       console.error("Erro ao buscar ecopontos:", status);
@@ -30,8 +40,12 @@ function getPlaceDetails(place) {
   const service = new google.maps.places.PlacesService(map);
   service.getDetails({ placeId: place.place_id }, (details, status) => {
     if (status === google.maps.places.PlacesServiceStatus.OK) {
-      createMarker(details);
-      criarTabelaMapa(details);
+      // Verifica novamente se o lugar já foi adicionado
+      if (!existingPlaceIds.has(details.place_id)) {
+        existingPlaceIds.add(details.place_id); // Adiciona o ID ao Set
+        createMarker(details);
+        criarTabelaMapa(details);
+      }
     } else {
       console.error("Erro ao obter detalhes do lugar:", status);
     }
@@ -46,18 +60,14 @@ function createMarker(place) {
   });
 
   const infowindow = new google.maps.InfoWindow();
+  // Create directions URL
+  const directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(place.formatted_address)}&destination_place_id=${place.place_id}`;
+  
   let contentString = `<div class="infowindow-content">
                             <strong>${place.name}</strong><br>
-                            ${
-                              place.formatted_address
-                                ? place.formatted_address
-                                : "Endereço não disponível"
-                            }<br>
-                            ${
-                              place.formatted_phone_number
-                                ? place.formatted_phone_number
-                                : "Telefone não disponível"
-                            }<br>`;
+                            ${place.formatted_address ? place.formatted_address : "Endereço não disponível"}<br>
+                            ${place.formatted_phone_number ? place.formatted_phone_number : "Telefone não disponível"}<br>
+                            <a href="${directionsUrl}" target="_blank" class="directions-link">Como chegar</a><br>`;
 
   // Adiciona a imagem se disponível
   if (place.photos && place.photos.length > 0) {
@@ -76,35 +86,36 @@ function createMarker(place) {
 }
 
 function criarTabelaMapa(ecoponto) {
+  // Create directions URL
+  const directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(ecoponto.formatted_address)}&destination_place_id=${ecoponto.place_id}`;
+  
   // Cria um novo elemento <section>
   var lugar = document.createElement("section");
   lugar.classList.add("card");
+  lugar.setAttribute('data-place-id', ecoponto.place_id); // Adiciona o place_id como atributo
+  
   // Adiciona o conteúdo HTML ao lugar
   lugar.innerHTML = `
     <div class="card-content">
         <h1 id="info-ecoponto">Ecoponto</h1>
         <h1 id="nome-ecoponto">${ecoponto.name}</h1>
-        <p id="texto-endereco"><span id="endereco">Endereço:</span> ${
-          ecoponto.formatted_address
-        }</p>
+        <p id="texto-endereco"><span id="endereco">Endereço:</span> ${ecoponto.formatted_address}</p>
         <p><span id="telefone">Telefone:</span> <span class="numero">${
-          ecoponto.formatted_phone_number
-            ? ecoponto.formatted_phone_number
-            : "Telefone não disponível"
+          ecoponto.formatted_phone_number ? ecoponto.formatted_phone_number : "Telefone não disponível"
         }</span></p>
+        <a href="${directionsUrl}" target="_blank" class="directions-link">Como chegar</a>
     </div>
-`;
+  `;
 
   // Verifica se há fotos e adiciona a imagem
   if (ecoponto.photos && ecoponto.photos.length > 0) {
-    const photoUrl = ecoponto.photos[0].getUrl({ width: 500, height: 150 }); // Obtém a URL da primeira foto
-    const img = document.createElement("img"); // Cria um novo elemento <img>
-    img.src = photoUrl; // Define a URL da imagem
-    img.classList.add("imagem-ecoponto"); // Adiciona a classe à imagem
-    lugar.appendChild(img); // Adiciona a imagem ao lugar
+    const photoUrl = ecoponto.photos[0].getUrl({ width: 500, height: 150 });
+    const img = document.createElement("img");
+    img.src = photoUrl;
+    img.classList.add("imagem-ecoponto");
+    lugar.appendChild(img);
   }
 
-  // Adiciona o lugar ao contêiner com o ID 'lugares'
   document.getElementById("lugares").appendChild(lugar);
 }
 
@@ -121,7 +132,6 @@ function limpa_formulário_cep() {
 function meu_callback(conteudo) {
   if (!("erro" in conteudo)) {
     // Atualiza os campos com os valores.
-
     document.getElementById("rua").value = conteudo.logradouro;
     document.getElementById("bairro").value = conteudo.bairro;
 
@@ -184,3 +194,50 @@ function pesquisacep(valor) {
     limpa_formulário_cep();
   }
 }
+
+function obterGeolocalizacao() {
+  // Verifica se o navegador suporta geolocalização
+  if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+          function(position) {
+              // Obtém a latitude e longitude
+              const latitude = position.coords.latitude;
+              const longitude = position.coords.longitude;
+
+              // Chama a função para usar a API do Google Maps com as coordenadas
+              usarApiGeolocation(latitude, longitude);
+          },
+          function(error) {
+              console.error("Erro ao obter a geolocalização: ", error);
+          }
+      );
+  } else {
+      console.error("Geolocalização não é suportada por este navegador.");
+  }
+}
+
+function getGeolocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        const lat = position.coords.latitude;
+        const long = position.coords.longitude;
+        initMap(lat, long); // Inicializa o mapa com a localização do usuário
+      },
+      () => handleLocationError(true)
+    );
+  } else {
+    handleLocationError(false);
+  }
+}
+
+function handleLocationError(browserHasGeolocation) {
+  console.error(
+    browserHasGeolocation
+      ? "Erro: O serviço de geolocalização falhou."
+      : "Erro: Seu navegador não suporta geolocalização."
+  );
+}
+
+// Chama a função de geolocalização quando o DOM estiver carregado
+document.addEventListener("DOMContentLoaded", getGeolocation);

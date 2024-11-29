@@ -717,3 +717,21 @@ input {
   justify-content: center;
   flex-direction: column;
 }
+
+#map {
+  width: 60%;
+  height: 300px;
+  border-radius: 20px;
+  margin: auto;
+}
+
+.imagem-ecoponto {
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 25%);
+  
+}
+  .directions-link{
+    font-family: "Blinker-extrabold"; 
+  }

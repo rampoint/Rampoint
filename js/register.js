@@ -192,6 +192,8 @@ firebase.auth().onAuthStateChanged((user) => {
     globalUserId = user.uid;
     localStorage.setItem('idUsuario', globalUserId)
     buscarDadosUsuario(user.uid);
+    
+
   } else {
     console.log("Nenhum usuário logado.");
   }

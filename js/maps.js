@@ -227,11 +227,14 @@ function getGeolocation() {
       () => handleLocationError(true)
     );
   } else {
+
     handleLocationError(false);
+
   }
 }
 
 function handleLocationError(browserHasGeolocation) {
+  mostrarPopupSemLocalizacao()
   console.error(
     browserHasGeolocation
       ? "Erro: O serviço de geolocalização falhou."
@@ -241,3 +244,16 @@ function handleLocationError(browserHasGeolocation) {
 
 // Chama a função de geolocalização quando o DOM estiver carregado
 document.addEventListener("DOMContentLoaded", getGeolocation);
+
+function mostrarPopupSemLocalizacao() {
+  const popup = document.getElementById("alteracao_popup");
+
+  // Faz o pop-up deslizar para baixo
+  popup.style.top = "90px"; // Ajuste a posição conforme necessário
+
+  // Após 3 segundos, faz o pop-up deslizar de volta para cima
+  setTimeout(() => {
+    popup.style.top = "-120px"; // Volta para fora da tela
+  }, 3000); // 3000 milissegundos = 3 segundos
+}
+

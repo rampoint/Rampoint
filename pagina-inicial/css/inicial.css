@@ -730,8 +730,40 @@ input {
   height: auto;
   border-radius: 20px;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 25%);
-  
+
 }
-  .directions-link{
-    font-family: "Blinker-extrabold"; 
-  }
+
+.directions-link {
+  font-family: "Blinker-extrabold";
+}
+
+#alteracao_popup {
+  width: 360px;
+  position: fixed;
+  top: -150px;
+  /* Começa fora da tela */
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 20px;
+  border-radius: 5px;
+  transition: top 0.5s ease;
+  /* Transição suave para a animação */
+  z-index: 100000;
+}
+
+body.modo-escuro .fundo-popUp,
+body.modo-escuro .fundo-popUpAzul {
+  background-color: #282828;
+}
+.rowPopUp {
+  display: flex;
+  flex-direction: row;
+}
+body.modo-escuro .bx-check-circle {
+  color: #ABF47D;
+}
+.textoPopUp {
+  font-family: "Poppins-medium";
+  margin-left: 10px;
+  color: var(--azul);
+}

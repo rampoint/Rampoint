@@ -30,7 +30,6 @@ function criarTabela(nome_peca, estrutura, email_doador, nome_doador, qtd, id) {
     novaLinha.innerHTML = ` 
     <td>
       <div class="peca">
-        <img src="./img/gabinete.svg" id="gabinete" alt="Imagem de um gabinete">
         <p class="nome-peca" style="margin-left: 1em;">${nome_peca}</p>
       </div>
     </td>

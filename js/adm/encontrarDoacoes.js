@@ -46,11 +46,13 @@ function criarTabela(
   idUser
 ) {
   const novaLinha = document.createElement("tr");
+  
+  // Atribuindo um ID único à linha para facilitar a remoção
+  novaLinha.setAttribute('id', `peca-${key}`);
 
   novaLinha.innerHTML = `
         <td>
             <div class="peca">
-                <img src="./img/gabinete.svg" id="gabinete" alt="Imagem de um gabinete">
                 <p class="nome-peca">${nome_peca}</p>
             </div>
         </td>
@@ -78,12 +80,24 @@ function criarTabela(
 function excluirDoacao(id, idUser) {
   console.log(id);
   console.log(idUser);
+  
+  // Remover do banco de dados
   firebase
     .database()
     .ref("users/" + idUser + "/peças/" + id)
     .remove()
     .then(() => {
-      alert("doação removida com sucesso");
+
+      
+      // Remover a linha da tabela
+      const linhaParaRemover = document.getElementById(`peca-${id}`);
+      if (linhaParaRemover) {
+        linhaParaRemover.remove();
+      }
+    })
+    .catch((error) => {
+      console.error("Erro ao remover doação:", error);
+      alert("Erro ao remover a doação.");
     });
 }
 

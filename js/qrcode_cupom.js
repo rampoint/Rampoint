@@ -91,10 +91,14 @@ function makeCode(pontos, uid) {
   const cupomAtivo = document.querySelector(
     ".grupo-cupons .select-cupom.active"
   );
+
   const pontosQrcode = cupomAtivo.getAttribute("value");
+  if (pontosQrcode > pontos){
+    alert("vc nao possui a quantidade de pontos necessaria")
+  }
   var cupom = pontos - pontosQrcode;
   if (cupom < 0) {
-    console.log("dá não filho");
+    console.log("Não é possie");
   } else {
     qrcode.makeCode(cupom);
     atualizarPontos(cupom, uid);

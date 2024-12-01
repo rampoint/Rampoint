@@ -9,7 +9,9 @@ document.addEventListener("DOMContentLoaded", () => {
       document.querySelector(".cadastro").href = "../pagina-login/index.html";
       document.querySelector(".login").href = "../pagina-login/index.html";
       document.querySelector(".login").removeEventListener('onclick', logout)
-      
+      document.querySelector('.perfil-mobile').style.display = 'none'
+      document.querySelector('.sair-mobile').style.display = 'none'
+      document.getElementById('open-modal-small').style.display = 'none'
     }
   });
 });

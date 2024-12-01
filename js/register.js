@@ -341,6 +341,7 @@ function exibirDadosUsuario(users) {
       console.log("Erro ao exibir medalha azul:", error.message);
     }
     pegarMedalhas()
+    pegarCupons()
 
   } else {
     document.getElementById("nome_modal").innerHTML = users.nome;
@@ -364,6 +365,7 @@ function pegarMedalhas(){
       adicionarMedalhaRaio()
       adicionarMedalhaSalto() 
     }
+
     })
 
     firebase.database().ref(`users/${uid}`).once('value', (snapshot) => {
@@ -373,6 +375,7 @@ function pegarMedalhas(){
         adicionarMedalhaEletronica()
       }
       })
+    adicionarMedalhaCoracao()
   }
 
 function adicionarMedalhaEletronica(){

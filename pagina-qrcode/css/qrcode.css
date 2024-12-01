@@ -224,6 +224,9 @@ body {
   width: 100%;
 }
 
+#error-cupom{
+  display: none;
+}
 .qrcode-box div .ramcoin {
   margin-right: 45px;
 }

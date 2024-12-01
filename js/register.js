@@ -344,13 +344,38 @@ function exibirDadosUsuario(users) {
     pegarCupons()
 
   } else {
-    document.getElementById("nome_modal").innerHTML = users.nome;
-    document.getElementById("content-sem-perfil").style.backgroundColor =
+    try {
+      document.getElementById("nome_modal").innerHTML = users.nome;
+    } catch (error) {
+      console.log("Erro ao exibir medalha azul:", error.message);
+    }
+    try {
+      document.getElementById("content-sem-perfil").style.backgroundColor =
       users.fotoPerfil.cor_foto;
-    document.getElementById("perfil").src = users.fotoPerfil.fotoPerfil;
-    document.getElementById("foto-perfil").src = users.fotoPerfil.fotoPerfil;
-    document.getElementById("nome_modal").style.color =
+    } catch (error) {
+      console.log("Erro ao exibir medalha azul:", error.message);
+    }try {
+      document.getElementById("perfil").src = users.fotoPerfil.fotoPerfil;
+    } catch (error) {
+      console.log("Erro ao exibir medalha azul:", error.message);
+    }try {
+      document.getElementById("foto-perfil").src = users.fotoPerfil.fotoPerfil;
+    } catch (error) {
+      console.log("Erro ao exibir medalha azul:", error.message);
+    }try {
+      document.getElementById("nome_modal").style.color =
       users.fotoPerfil.cor_texto;
+    } catch (error) {
+      console.log("Erro ao exibir medalha azul:", error.message);
+    }
+    const imagemPerfil = document.querySelector('#perfil-sidebar img'); // Seleciona a imagem dentro do elemento com id 'perfil-sidebar'
+    if (imagemPerfil) {
+        imagemPerfil.src = users.fotoPerfil.fotoPerfil; // Altera o atributo src da imagem
+    }
+
+
+
+
   }
 }
 

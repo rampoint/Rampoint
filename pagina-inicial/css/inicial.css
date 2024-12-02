@@ -754,7 +754,8 @@ input {
 }
 
 body.modo-escuro .fundo-popUp,
-body.modo-escuro .fundo-popUpAzul {
+body.modo-escuro .fundo-popUpAzul,
+body.modo-escuro #alteracao_popup {
   background-color: #282828;
 }
 

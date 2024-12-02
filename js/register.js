@@ -160,6 +160,7 @@ function isFormValid() {
   const email = Form.email().value;
   const senha = Form.senha().value;
   const confirmarSenha = Form.confirmarSenha().value;
+  
 
   return (
     email &&
@@ -169,6 +170,14 @@ function isFormValid() {
     senha === confirmarSenha &&
     VerificarData()
   );
+}
+function isTermosChecked() {
+  const termos = document.getElementById("termos-condicoes");
+  if (termos.checked) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 function VerificarData() {
@@ -190,16 +199,14 @@ let globalUserId = null;
 firebase.auth().onAuthStateChanged((user) => {
   if (user) {
     globalUserId = user.uid;
-    localStorage.setItem('idUsuario', globalUserId)
+    localStorage.setItem("idUsuario", globalUserId);
     buscarDadosUsuario(user.uid);
-    
-
   } else {
     console.log("Nenhum usuário logado.");
   }
 });
 
-const uid = localStorage.getItem('idUsuario')
+const uid = localStorage.getItem("idUsuario");
 
 function buscarDadosUsuario(globalUserId) {
   const dbRef = firebase.database().ref("users/" + globalUserId);
@@ -222,10 +229,10 @@ function exibirDadosUsuario(users) {
   var currentPage = window.location.href;
   // Verifica se a URL contém uma string específica
   if (currentPage.includes("/pagina-perfil/")) {
-
     try {
-      document.getElementById("fotoPerfilMobile").src = users.fotoPerfil.fotoPerfil
-        users.fotoPerfil.cor_texto;
+      document.getElementById("fotoPerfilMobile").src =
+        users.fotoPerfil.fotoPerfil;
+      users.fotoPerfil.cor_texto;
     } catch (error) {
       console.log("Erro ao definir cor do texto da emoção:", error.message);
     }
@@ -340,9 +347,8 @@ function exibirDadosUsuario(users) {
     } catch (error) {
       console.log("Erro ao exibir medalha azul:", error.message);
     }
-    pegarMedalhas()
-    pegarCupons()
-
+    pegarMedalhas();
+    pegarCupons();
   } else {
     try {
       document.getElementById("nome_modal").innerHTML = users.nome;
@@ -351,62 +357,65 @@ function exibirDadosUsuario(users) {
     }
     try {
       document.getElementById("content-sem-perfil").style.backgroundColor =
-      users.fotoPerfil.cor_foto;
+        users.fotoPerfil.cor_foto;
     } catch (error) {
       console.log("Erro ao exibir medalha azul:", error.message);
-    }try {
+    }
+    try {
       document.getElementById("perfil").src = users.fotoPerfil.fotoPerfil;
     } catch (error) {
       console.log("Erro ao exibir medalha azul:", error.message);
-    }try {
+    }
+    try {
       document.getElementById("foto-perfil").src = users.fotoPerfil.fotoPerfil;
     } catch (error) {
       console.log("Erro ao exibir medalha azul:", error.message);
-    }try {
+    }
+    try {
       document.getElementById("nome_modal").style.color =
-      users.fotoPerfil.cor_texto;
+        users.fotoPerfil.cor_texto;
     } catch (error) {
       console.log("Erro ao exibir medalha azul:", error.message);
     }
-    const imagemPerfil = document.querySelector('#perfil-sidebar img'); // Seleciona a imagem dentro do elemento com id 'perfil-sidebar'
+    const imagemPerfil = document.querySelector("#perfil-sidebar img"); // Seleciona a imagem dentro do elemento com id 'perfil-sidebar'
     if (imagemPerfil) {
-        imagemPerfil.src = users.fotoPerfil.fotoPerfil; // Altera o atributo src da imagem
+      imagemPerfil.src = users.fotoPerfil.fotoPerfil; // Altera o atributo src da imagem
     }
-
-
-
-
   }
 }
 
-
-function pegarMedalhas(){
-  firebase.database().ref(`users/${uid}/peças`).once('value', (snapshot) => {
-    const count = snapshot.numChildren();
-    console.log(count)
-    if(count == 1){
-      adicionarMedalhaSalto()
-    } else if(count >= 3){
-      adicionarMedalhaRaio()
-      adicionarMedalhaSalto() 
-    }
-
-    })
-
-    firebase.database().ref(`users/${uid}`).once('value', (snapshot) => {
-      const pontos = snapshot.val().pontos;
-      console.log(pontos)
-      if(pontos > 1900){
-        adicionarMedalhaEletronica()
+function pegarMedalhas() {
+  firebase
+    .database()
+    .ref(`users/${uid}/peças`)
+    .once("value", (snapshot) => {
+      const count = snapshot.numChildren();
+      console.log(count);
+      if (count == 1) {
+        adicionarMedalhaSalto();
+      } else if (count >= 3) {
+        adicionarMedalhaRaio();
+        adicionarMedalhaSalto();
       }
-      })
-    adicionarMedalhaCoracao()
-  }
+    });
 
-function adicionarMedalhaEletronica(){
-  var li = document.createElement('li')
-  li.classList.add('conjunto-medalhas')
-  li.setAttribute('id', 'medalha-roxa')
+  firebase
+    .database()
+    .ref(`users/${uid}`)
+    .once("value", (snapshot) => {
+      const pontos = snapshot.val().pontos;
+      console.log(pontos);
+      if (pontos > 1900) {
+        adicionarMedalhaEletronica();
+      }
+    });
+  adicionarMedalhaCoracao();
+}
+
+function adicionarMedalhaEletronica() {
+  var li = document.createElement("li");
+  li.classList.add("conjunto-medalhas");
+  li.setAttribute("id", "medalha-roxa");
 
   li.innerHTML = `
       <img id="medalha-img" src="./../pagina-perfil/img/medalha roxa.svg" alt="">
@@ -415,15 +424,15 @@ function adicionarMedalhaEletronica(){
          <p class="meta-medalha-roxa" >Atinja 2000 ramcoins</p>
          </div>
          </li>
-      `
+      `;
 
-document.getElementById('lista-medalhas').appendChild(li)
+  document.getElementById("lista-medalhas").appendChild(li);
 }
- 
-function adicionarMedalhaSalto(){
-  var li = document.createElement('li')
-  li.classList.add('conjunto-medalhas')
-  li.setAttribute('id', 'medalha-verde')
+
+function adicionarMedalhaSalto() {
+  var li = document.createElement("li");
+  li.classList.add("conjunto-medalhas");
+  li.setAttribute("id", "medalha-verde");
 
   li.innerHTML = `
       <img id="medalha-img" src="./../pagina-perfil/img/medalha verde.svg" alt="">
@@ -432,15 +441,15 @@ function adicionarMedalhaSalto(){
          <p class="meta-medalha-verde" id="medalha-verde-frase" >Doe uma vez</p>
          </div>
          </li>
-      `
+      `;
 
-document.getElementById('lista-medalhas').appendChild(li)
+  document.getElementById("lista-medalhas").appendChild(li);
 }
 
-function adicionarMedalhaRaio(){
-  var li = document.createElement('li')
-  li.classList.add('conjunto-medalhas')
-  li.setAttribute('id', 'medalha-amarelo')
+function adicionarMedalhaRaio() {
+  var li = document.createElement("li");
+  li.classList.add("conjunto-medalhas");
+  li.setAttribute("id", "medalha-amarelo");
 
   li.innerHTML = `
       <img id="medalha-img" src="../pagina-perfil/img/medalha amarela.svg" alt="">
@@ -449,30 +458,32 @@ function adicionarMedalhaRaio(){
          <p class="meta-medalha-amarela">Doe 3 vezes</p>
          </div>
          </li>
-      `
+      `;
 
-document.getElementById('lista-medalhas').appendChild(li)
+  document.getElementById("lista-medalhas").appendChild(li);
 }
 
-function adicionarMedalhaCoracao(){
-  firebase.database().ref('users/'+globalUserId+'/cupons').once('value').then((snapshot) => {
-    if(snapshot.exists()){
-      const userRef = firebase.database().ref("users/" + globalUserId);
-      userRef
-        .child("medalhas/vermelha")
-        .set({
-          display: "flex",
-        })
-        .then(() => {
-          
-        })
-        .catch((error) => {
-          console.log("Error:" + error);
-        });
-    }else{
-      console.log('não tem cupom')
-    }
-  })
+function adicionarMedalhaCoracao() {
+  firebase
+    .database()
+    .ref("users/" + globalUserId + "/cupons")
+    .once("value")
+    .then((snapshot) => {
+      if (snapshot.exists()) {
+        const userRef = firebase.database().ref("users/" + globalUserId);
+        userRef
+          .child("medalhas/vermelha")
+          .set({
+            display: "flex",
+          })
+          .then(() => {})
+          .catch((error) => {
+            console.log("Error:" + error);
+          });
+      } else {
+        console.log("não tem cupom");
+      }
+    });
 }
 
 function mudarDados() {
@@ -493,32 +504,33 @@ function mudarDados() {
 }
 
 function adicionarMedalhas() {
-
-  firebase.database().ref('users/'+globalUserId+'/medalhas').once('value').then((snapshot) => {
-    if(!snapshot.exists()){
-      const userRef = firebase.database().ref("users/" + globalUserId);
-      userRef
-        .child("medalhas/azul")
-        .set({
-          nome: "Engrenagem Solidária",
-          display: "flex",
-          descricao: "Personalizou perfil",
-          img: "https://firebasestorage.googleapis.com/v0/b/rampoint-81352.appspot.com/o/medalhas%2Fmedalha%20azul.svg?alt=media&token=c7134715-8121-44cb-9823-9a013761513d",
-        })
-        .then(() => {
-          setTimeout(() => {
-            mostrarPopupMedalhaAzul(); // Volta para fora da tela
-          }, 3000);
-        })
-        .catch((error) => {
-          console.log("Error:" + error);
-        });
-    }else{
-      console.log('ja tem medalha')
-    }
-  })
-
-  
+  firebase
+    .database()
+    .ref("users/" + globalUserId + "/medalhas")
+    .once("value")
+    .then((snapshot) => {
+      if (!snapshot.exists()) {
+        const userRef = firebase.database().ref("users/" + globalUserId);
+        userRef
+          .child("medalhas/azul")
+          .set({
+            nome: "Engrenagem Solidária",
+            display: "flex",
+            descricao: "Personalizou perfil",
+            img: "https://firebasestorage.googleapis.com/v0/b/rampoint-81352.appspot.com/o/medalhas%2Fmedalha%20azul.svg?alt=media&token=c7134715-8121-44cb-9823-9a013761513d",
+          })
+          .then(() => {
+            setTimeout(() => {
+              mostrarPopupMedalhaAzul(); // Volta para fora da tela
+            }, 3000);
+          })
+          .catch((error) => {
+            console.log("Error:" + error);
+          });
+      } else {
+        console.log("ja tem medalha");
+      }
+    });
 }
 
 function apagandoUsuario() {

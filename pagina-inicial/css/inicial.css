@@ -760,6 +760,8 @@ body.modo-escuro .fundo-popUpAzul {
 .rowPopUp {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 body.modo-escuro .bx-check-circle {
   color: #ABF47D;

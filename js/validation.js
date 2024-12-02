@@ -133,6 +133,37 @@ function recuperarSenha() {
     });
 }
 
+
+provider.setCustomParameters({
+  // Optional "tenant" parameter in case you are using an Azure AD tenant.
+  // eg. '8eaef023-2b34-4da1-9baa-8bc8c9d6a490' or 'contoso.onmicrosoft.com'
+  // or "common" for tenant-independent tokens.
+  // The default value is "common".
+  tenant: 'https://rampoint-81352.firebaseapp.com/__/auth/handler'
+});
+
+function signInWithMicrosoft() {
+  var provider = new firebase.auth.OAuthProvider('microsoft.com');
+  firebase.auth().signInWithPopup(provider)
+  .then((result) => {
+    // IdP data available in result.additionalUserInfo.profile.
+    // ...
+
+    /** @type {firebase.auth.OAuthCredential} */
+    var credential = result.credential;
+
+    // OAuth access and id tokens can also be retrieved:
+    var accessToken = credential.accessToken;
+    var idToken = credential.idToken;
+    console.log(idToken)
+    console.log(accessToken)
+  })
+  .catch((error) => {
+    console.log(error)
+  });
+
+}
+
 function googleauth() {
   var provider = new firebase.auth.GoogleAuthProvider();
   firebase
@@ -143,27 +174,66 @@ function googleauth() {
       var credential = result.credential;
       var token = credential.accessToken;
       var user = result.user;
+
+      // Obtendo os dados do perfil do usuário
       const nomeGoogle = user.displayName; // Nome do usuário
       const emailGoogle = user.email; // E-mail do usuário
+      const fotoPerfil = user.photoURL; // URL da foto de perfil
+      const uidGoogle = user.uid; // UID do usuário no Firebase
 
-      // IdP data available in result.additionalUserInfo.profile.
-      console.log(nomeGoogle);
-      console.log(emailGoogle);
-      saveUserDataGoogle(uid, emailGoogle);
-      // ...
+      // Exibindo os dados no console
+      console.log('Nome:', nomeGoogle);
+      console.log('E-mail:', emailGoogle);
+      console.log('UID:', uidGoogle);
+      saveUserDataGoogle(uidGoogle, emailGoogle, nomeGoogle);
+      setTimeout(() => {
+        redirecionar()
+      }, 3000);
     })
     .catch((error) => {
-      // Handle Errors here.
+      // Tratar erros aqui.
       var errorCode = error.code;
+      console.error('Código de erro:', errorCode);
       var errorMessage = error.message;
-      // The email of the user's account used.
+      console.error('Mensagem de erro:', errorMessage);
+      
+      // O email da conta usada.
       var email = error.email;
-      // The firebase.auth.AuthCredential type that was used.
+      console.error('Email usado:', email);
+      
+      // O tipo de credencial utilizada.
       var credential = error.credential;
-      // ...
+      console.error('Credencial:', credential);
     });
 }
 
+function saveUserDataGoogle(uid, email, nome) {
+  const telefone = Form.telefone().value; // Supondo que você tenha um formulário para obter esses dados
+  const dataNascimento = Form.data().value;
+  const genero = Form.genero().value;
+  const cep = Form.cep().value;
+  const database = firebase.database();
+
+  const userRef = database.ref("users/" + uid);
+
+  userRef
+    .set({
+      email: email,
+      nome: nome,
+      data: dataNascimento,
+      tel: telefone,
+      genero: genero,
+      createdAt: firebase.database.ServerValue.TIMESTAMP,
+      cep: cep,
+      pontos: 0,
+    })
+    .then(() => {
+      console.log("Dados do usuário salvos com sucesso!");
+    })
+    .catch((error) => {
+      console.error("Erro ao salvar dados do usuário:", error);
+    });
+}
 //dados pegos de forma mais facil
 
 const form = {

@@ -134,14 +134,6 @@ function recuperarSenha() {
 }
 
 
-provider.setCustomParameters({
-  // Optional "tenant" parameter in case you are using an Azure AD tenant.
-  // eg. '8eaef023-2b34-4da1-9baa-8bc8c9d6a490' or 'contoso.onmicrosoft.com'
-  // or "common" for tenant-independent tokens.
-  // The default value is "common".
-  tenant: 'https://rampoint-81352.firebaseapp.com/__/auth/handler'
-});
-
 function signInWithMicrosoft() {
   var provider = new firebase.auth.OAuthProvider('microsoft.com');
   firebase.auth().signInWithPopup(provider)
@@ -188,7 +180,7 @@ function googleauth() {
       saveUserDataGoogle(uidGoogle, emailGoogle, nomeGoogle);
       setTimeout(() => {
         redirecionar()
-      }, 3000);
+      }, 2000);
     })
     .catch((error) => {
       // Tratar erros aqui.

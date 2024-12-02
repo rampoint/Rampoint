@@ -68,8 +68,9 @@ function pegarCod() {
     document.getElementById("qtd_peca").value = data.qtd;
     document.getElementById("search").value = data.nome_peca;
     document.getElementById("descricao-peca").value = data.desc;
-    document.getElementById("tipo-img").innerHTML = data.tipo;
-    document.getElementById("tipo-text").src = `./img/icon-${tipo}.svg`;
+    document.getElementById("tipo-placeholder").innerHTML = data.tipo;
+    document.getElementById("tipo-placeholder").value = data.tipo;
+
   });
 }
 

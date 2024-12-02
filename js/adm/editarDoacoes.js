@@ -37,10 +37,17 @@ function acharDoacaoUrl(uid) {
 function mostrarDados(data) {
   document.getElementById("nome-add").value = data.nome;
   document.getElementById("email-add").value = data.email;
-  document.getElementById("selected-text").innerHTML = data.tipo;
+  try {
+    document.getElementById('telefone-data').innerHTML = data.tel
+  } catch (error) {
+    console.log("Erro ao exibir o telefone:", error.message);
+  }
+
   document.getElementById("qtd_peca").value = data.qtd;
   document.getElementById("search").value = data.nome_peca;
   document.getElementById("descricao-peca").value = data.desc;
+  document.getElementById('placeholder-tipo').innerHTML = data.tipo
+  document.getElementById('placeholder-tipo').value = data.tipo
 }
 
 const form = {
@@ -48,8 +55,9 @@ const form = {
   email: () => document.getElementById("email-add").value,
   Peca: () => document.getElementById("search").value,
   Qtd_peca: () => document.getElementById("qtd_peca").value,
-  tipo_componente: () => document.getElementById("selected-text").innerHTML,
+  tipo_componente: () => document.getElementById("placeholder-tipo").value,
   desc_doacao: () => document.getElementById("descricao-peca").value,
+  tel: () => document.getElementById('telefone-data').value
 };
 
 function atualizarDados() {
@@ -68,6 +76,7 @@ function atualizarDados() {
               qtd: form.Qtd_peca(),
               tipo: form.tipo_componente(),
               desc: form.desc_doacao(),
+              tel:form.tel()
             })
             .then(() => {
               mostrarPopupEditado();
@@ -101,4 +110,8 @@ function mostrarPopupEditado() {
   setTimeout(() => {
     popup.style.top = "-120px"; // Volta para fora da tela
   }, 3000); // 3000 milissegundos = 3 segundos
+}
+
+function voltar(){
+  window.location.href = '../../doacoes-adm/doacoes.html'
 }

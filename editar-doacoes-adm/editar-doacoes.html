@@ -113,7 +113,7 @@
           <div class="campo-form">
             <label for="telefone" id="telefone" class="titulo-form">Telefone</label>
             <div class="select-telefone">
-              <input type="tel">
+              <input id="telefone-data" type="tel">
             </div>
           </div>
 
@@ -140,6 +140,7 @@
           <div class="campo-form">
             <label for="componente" class="titulo-form">Tipo de componente</label>
             <select name="tipo-componente" id="tipo-componente">
+              <option id="placeholder-tipo" value=""></option>
               <option value="Interno">Interno</option>
               <option value="Periferico">Periférico</option>
               <option value="Estrutura">Estrutura</option>
@@ -165,7 +166,7 @@
 
         <div class="botoes">
           <button onclick="atualizarDados()" type="button" class="btn-salvar">Salvar</button>
-          <button class="btn-cancelar">Cancelar</button>
+          <button onclick="voltar()" type="button" class="btn-cancelar">Cancelar</button>
         </div>
       </form>
     </section>

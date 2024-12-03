@@ -572,7 +572,7 @@ function adicionarMedalhaEletronica() {
          <p class="meta-medalha-roxa" >Atinja 2000 ramcoins</p>
          </div>
          </li>
-         <hr>
+         
       `;
 
   document.getElementById("lista-medalhas").appendChild(li);
@@ -583,6 +583,7 @@ function adicionarMedalhaSalto() {
   li.classList.add("conjunto-medalhas");
   li.setAttribute("id", "medalha-verde");
 
+
   li.innerHTML = `
       <img id="medalha-img" src="./../pagina-perfil/img/medalha verde.svg" alt="">
        <div class="lista-textos">
@@ -590,9 +591,7 @@ function adicionarMedalhaSalto() {
          <p class="meta-medalha-verde" id="medalha-verde-frase" >Doe uma vez</p>
          </div>
          </li>
-          <div>
-        <hr>
-        </div>
+          
          `;
 
   document.getElementById("lista-medalhas").appendChild(li);
@@ -609,8 +608,8 @@ function adicionarMedalhaRaio() {
         <p class="titulo-medalha-amarela">Raio da esperança</p>
          <p class="meta-medalha-amarela">Doe 3 vezes</p>
          </div>
-
          </li>
+        
       `;
 
   document.getElementById("lista-medalhas").appendChild(li);

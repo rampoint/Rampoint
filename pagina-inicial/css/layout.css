@@ -269,7 +269,7 @@
   }
 
   .sidebar {
-    height: 65vh;
+    height: 100%;
     right: 0;
     z-index: 100000;
   }
@@ -599,7 +599,7 @@
     width: 100%;
     height: 30em;
     margin-top: 5em;
-    margin-bottom: 23em;
+    margin-bottom: 21em;
   }
 
   .imagem-inicial {
@@ -652,12 +652,12 @@
     font-size: 74px;
     width: 100%;
     line-height: 0.8em;
-    margin: 15px;
+    margin: 15px auto;
   }
 
   #texto-inicial {
     width: 75%;
-    margin: 25px 105px;
+    margin: 25px auto;
     font-size: 20px;
   }
 
@@ -743,7 +743,6 @@
 
 @media (max-width: 655px) {
   .imagem-fundo {
-    margin-top: 8em;
     margin-bottom: 6em;
   }
 
@@ -803,7 +802,6 @@
   }
 
   #texto-inicial {
-    width: 65%;
     margin: 25px auto;
   }
 
@@ -915,20 +913,12 @@
 }
 
 @media (max-width: 500px) {
-  .sidebar {
-    height: 70vh;
-  }
-
   .footer-logo {
     margin-bottom: 2em;
   }
 
   #footer-logo {
     width: 130px;
-  }
-
-  #texto-inicial {
-    width: 55%;
   }
 
   .imagem-inicial {
@@ -1064,6 +1054,18 @@
     width: 260px;
     text-align: center;
   }
+
+  #alteracao_popup {
+    width: 310px;
+  }
+
+  .rowPopUp {
+    text-align: center;
+  }
+
+  .rowPopUp img {
+    width: 65px;
+  }
 }
 
 @media (max-width: 425px) {
@@ -1088,7 +1090,7 @@
   }
 
   #texto-inicial {
-    width: 65%;
+    width: 75%;
   }
 
   .card-content p {
@@ -1120,6 +1122,16 @@
 
   #titulo-descarte {
     margin-right: 8em;
+  }
+}
+
+@media (max-width: 385px) {
+  #alteracao_popup {
+    width: 280px;
+  }
+
+  #texto-inicial {
+    width: 50%;
   }
 }
 
@@ -1174,16 +1186,20 @@
   #bairro {
     padding-right: 34px;
   }
-}
 
-@media (max-width: 355px) {
   #nome-ecoponto {
     width: 90%;
     text-align: center;
   }
 
   #texto-inicial {
-    width: 75%;
+    width: 85%;
+  }
+}
+
+@media (max-width: 345px) {
+  #alteracao_popup {
+    width: 250px;
   }
 }
 

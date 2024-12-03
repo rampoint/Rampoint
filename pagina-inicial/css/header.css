@@ -89,7 +89,8 @@ nav a:hover {
   position: fixed;
   top: 0;
   right: 0;
-  height: 65vh;
+  /* height: 65vh; */
+  height: 100%;
   width: 250px;
   background-color: var(--azul);
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
@@ -98,8 +99,8 @@ nav a:hover {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  border-radius: 20px;
-  margin: 10px 10px 10px 10px;
+  /* border-radius: 20px; */
+  /* margin: 10px 10px 10px 10px; */
   font-family: "Batangas";
 }
 

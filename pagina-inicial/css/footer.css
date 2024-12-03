@@ -175,12 +175,6 @@ input:focus {
 }
 
 /* media do footer */
-/* @media (max-width: 1024px) {
-  .footer-container {
-    width: 70em;
-  }
-} */
-
 @media (max-width: 1000px) {
 
   .geral,
@@ -198,10 +192,6 @@ input:focus {
 }
 
 @media (max-width: 876px) {
-  /* .footer-container {
-    width: 70em;
-  } */
-
   .geral,
   .redes-sociais {
     margin-right: 0;

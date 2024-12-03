@@ -861,7 +861,7 @@
 
 @media (max-width: 540px) {
   .card {
-    width: 470px;
+    width: auto;
   }
 }
 
@@ -1056,6 +1056,13 @@
 @media (max-width: 455px) {
   #titulo-descarte {
     margin-right: 10em;
+  }
+}
+
+@media (max-width: 435px) {
+  #nome-ecoponto {
+    width: 260px;
+    text-align: center;
   }
 }
 

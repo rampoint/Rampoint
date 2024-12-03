@@ -43,7 +43,7 @@ function redirecionar(){
          
         if(snapshot.exists()){
           window.location.href = '../dashboard-adm/dashboard.html'
-        }else{window.location.href = '../pagina-inicialLogado/inicial-logado.html'}
+        }else{window.location.href = '../pagina-inicial/inicial.html'}
       })
     } else {
       

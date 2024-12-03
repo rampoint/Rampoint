@@ -161,9 +161,8 @@ option[disabled] {
 }
 
 .tabela-container {
-  max-height: 400px;
+  max-height: 430px;
   overflow-y: auto;
-  border: 1px solid #ccc;
   border-radius: 5px;
 }
 

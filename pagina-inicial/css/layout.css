@@ -1088,7 +1088,7 @@
   }
 
   #texto-inicial {
-    width: 45%;
+    width: 65%;
   }
 
   .card-content p {
@@ -1180,6 +1180,10 @@
   #nome-ecoponto {
     width: 90%;
     text-align: center;
+  }
+
+  #texto-inicial {
+    width: 75%;
   }
 }
 

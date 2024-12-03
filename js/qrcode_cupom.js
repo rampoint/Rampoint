@@ -143,6 +143,7 @@ function salvarCupom() {
         })
         .then(() => {
           console.log("cupom salvo");
+          popupSalvoQrcode()
         })
         .catch((error) => {
           console.error(error);
@@ -194,3 +195,13 @@ document.getElementById("download").addEventListener("click", function () {
   // Remove o link do documento
   document.body.removeChild(link);
 });
+
+function popupSalvoQrcode(){
+  const popup = document.getElementById("alteracao_popup");
+  // Faz o pop-up deslizar para baixo
+  popup.style.top = "90px"; // Ajuste a posição conforme necessário
+  // Após 3 segundos, faz o pop-up deslizar de volta para cima
+  setTimeout(() => {
+    popup.style.top = "-120px"; // Volta para fora da tela
+  }, 3000); // 3000 milissegundos = 3 segundos
+}

@@ -93,6 +93,12 @@ body {
   margin-bottom: 20px;
 }
 
+.p-info-qrcode {
+  font-family: "Poppins-regular";
+  color: var(--preto);
+  margin-bottom: 20px;
+  font-size: medium;
+}
 /* qr code começo  */
 .qrcode-box {
   display: flex;

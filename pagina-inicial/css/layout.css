@@ -463,6 +463,7 @@
 
   .card {
     flex-direction: column;
+    margin-bottom: 65px;
   }
 
   .card-content {
@@ -471,6 +472,10 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 5px;
+  }
+
+  #texto-endereco {
+    text-align: center;
   }
 }
 
@@ -854,6 +859,12 @@
   }
 }
 
+@media (max-width: 540px) {
+  .card {
+    width: 470px;
+  }
+}
+
 @media (max-width: 530px) {
   .imagem-ram {
     margin: 0 4.5em;
@@ -966,11 +977,13 @@
   .card {
     display: flex;
     flex-direction: column;
-    margin: 20px 40px;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
   }
 
   .card-content {
-    margin-bottom: 1em;
+    margin-bottom: 2em;
   }
 
   #titulo-descarte {
@@ -1031,6 +1044,12 @@
 
   .campo-descarte {
     margin-top: -25px;
+  }
+}
+
+@media (max-width: 495px) {
+  .card {
+    width: auto;
   }
 }
 
@@ -1147,6 +1166,13 @@
   #rua,
   #bairro {
     padding-right: 34px;
+  }
+}
+
+@media (max-width: 355px) {
+  #nome-ecoponto {
+    width: 90%;
+    text-align: center;
   }
 }
 

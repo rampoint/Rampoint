@@ -26,6 +26,7 @@ function pegarValorFotoFeliz() {
     .then(() => {
       mostrarPopupAlteracaoMood(img);
       console.log("foto de perfil enviada");
+      carregarDadosNovamente()
     })
     .catch((error) => {
       console.log("Foto não enviada" + error);
@@ -57,6 +58,7 @@ function pegarValorFotoEmocionado() {
     .then(() => {
       mostrarPopupAlteracaoMood(img);
       console.log("foto de perfil enviada");
+      carregarDadosNovamente()
     })
     .catch((error) => {
       console.log("Foto não enviada" + error);
@@ -82,6 +84,7 @@ function pegarValorFotoTriste() {
     .then(() => {
       mostrarPopupAlteracaoMood(img);
       console.log("foto de perfil enviada");
+      carregarDadosNovamente()
     })
     .catch((error) => {
       console.log("Foto não enviada" + error);
@@ -107,6 +110,7 @@ function pegarValorFotoEntediado() {
     })
     .then(() => {
       mostrarPopupAlteracaoMood(img);
+      carregarDadosNovamente()
       console.log("foto de perfil enviada");
     })
     .catch((error) => {
@@ -133,6 +137,7 @@ function pegarValorFotoFurioso() {
     })
     .then(() => {
       mostrarPopupAlteracaoMood(img);
+      carregarDadosNovamente()
       console.log("foto de perfil enviada");
     })
     .catch((error) => {
@@ -160,6 +165,7 @@ function pegarValorFotoApaixonado() {
     })
     .then(() => {
       mostrarPopupAlteracaoMood(img);
+      carregarDadosNovamente()
       console.log("foto de perfil enviada");
     })
     .catch((error) => {
@@ -187,6 +193,7 @@ function pegarValorFotoPadrao() {
     .then(() => {
       mostrarPopupAlteracaoMood(img);
       console.log("foto de perfil enviada");
+      carregarDadosNovamente()
     })
     .catch((error) => {
       console.log("Foto não enviada" + error);
@@ -210,6 +217,7 @@ function pegarValorFotoNomood() {
     })
     .then(() => {
       console.log("foto de perfil enviada");
+      carregarDadosNovamente()
     })
     .catch((error) => {
       console.log("Foto não enviada" + error);

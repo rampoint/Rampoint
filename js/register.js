@@ -160,7 +160,6 @@ function isFormValid() {
   const email = Form.email().value;
   const senha = Form.senha().value;
   const confirmarSenha = Form.confirmarSenha().value;
-  
 
   return (
     email &&
@@ -222,6 +221,34 @@ function buscarDadosUsuario(globalUserId) {
     .catch((error) => {
       console.log("Erro ao buscar dados do usuário:", error);
     });
+}
+
+function carregarDadosNovamente(){
+  firebase.auth().onAuthStateChanged((user) => {
+    if (user) {
+      globalUserId = user.uid;
+      localStorage.setItem("idUsuario", globalUserId);
+      buscarDadosUsuario(user.uid);
+    } else {
+      console.log("Nenhum usuário logado.");
+    }
+  });
+  function buscarDadosUsuario(globalUserId) {
+    const dbRef = firebase.database().ref("users/" + globalUserId);
+  
+    dbRef
+      .once("value")
+      .then((snapshot) => {
+        if (snapshot.exists()) {
+          const dadosUsuario = snapshot.val();
+          exibirDadosUsuarioNovamente(dadosUsuario);
+        }
+      })
+      .catch((error) => {
+        console.log("Erro ao buscar dados do usuário:", error);
+      });
+  }
+  
 }
 
 function exibirDadosUsuario(users) {
@@ -384,6 +411,127 @@ function exibirDadosUsuario(users) {
   }
 }
 
+function exibirDadosUsuarioNovamente(users){
+  try {
+    document.getElementById("fotoPerfilMobile").src =
+      users.fotoPerfil.fotoPerfil;
+    users.fotoPerfil.cor_texto;
+  } catch (error) {
+    console.log("Erro ao definir cor do texto da emoção:", error.message);
+  }
+  try {
+    document.getElementById("nome_usuario").innerHTML = users.nome;
+  } catch (error) {
+    console.log("Erro ao definir cor do texto da emoção:", error.message);
+  }
+  try {
+    document.getElementById("email_usuario").innerHTML = users.email;
+  } catch (error) {
+    console.log("Erro ao definir cor do texto da emoção:", error.message);
+  }
+
+  try {
+    document.getElementById("emocao_usuario").style.color =
+      users.fotoPerfil.cor_texto;
+  } catch (error) {
+    console.log("Erro ao definir cor do texto da emoção:", error.message);
+  }
+  try {
+    document.getElementById("emocao_usuario").innerHTML =
+      users.fotoPerfil.fotoMensage;
+  } catch (error) {
+    console.log("Erro ao definir mensagem da emoção:", error.message);
+  }
+  try {
+    document.getElementById("foto-perfil").src = users.fotoPerfil.fotoPerfil;
+  } catch (error) {
+    console.log("Erro ao definir a foto do perfil:", error.message);
+  }
+
+  try {
+    document.getElementById("perfil").src = users.fotoPerfil.fotoPerfil;
+  } catch (error) {
+    console.log("Erro ao definir a imagem do perfil:", error.message);
+  }
+
+  document.getElementById("nome-mudar").placeholder = users.nome;
+  document.getElementById("email-mudar").placeholder = users.email;
+  document.getElementById("telefone-mudar").placeholder = users.tel;
+  document.getElementById("nome-mudar").value = users.nome;
+  try {
+    document.getElementById("foto-usuario").src = users.fotoPerfil.fotoPerfil;
+  } catch (error) {
+    console.log("Erro ao definir a foto do usuário:", error.message);
+  }
+
+  try {
+    document.getElementById("foto_mudar").src = users.fotoPerfil.fotoPerfil;
+  } catch (error) {
+    console.log("Erro ao definir a foto para mudar:", error.message);
+  }
+  document.getElementById("email-mudar").value = users.email;
+  document.getElementById("telefone-mudar").value = users.tel;
+  try {
+    document.getElementById("nome_modal").style.color =
+      users.fotoPerfil.cor_texto;
+  } catch (error) {
+    console.log("Erro ao definir cor do nome no modal:", error.message);
+  }
+  document.getElementById("nome_modal").innerHTML = users.nome;
+  try {
+    document.getElementById("content-sem-perfil").style.backgroundColor =
+      users.fotoPerfil.cor_foto;
+  } catch (error) {
+    console.log(
+      "Erro ao definir cor de fundo do conteúdo sem perfil:",
+      error.message
+    );
+  }
+  document.getElementById("nome_modal").innerHTML = users.nome;
+  document.getElementById("genero-mudar").value = users.genero;
+  try {
+    document.getElementById("container-perfil").style.boxShadow =
+      users.fotoPerfil.cor_texto_fundo;
+  } catch (error) {
+    console.log(
+      "Erro ao definir boxShadow do container de perfil:",
+      error.message
+    );
+  }
+  document.getElementById("pontos_usuario").innerHTML = users.pontos;
+  try {
+    const containerConquistas = document.getElementsByClassName(
+      "container-conquistas"
+    )[0];
+    if (containerConquistas) {
+      // Verifica se o elemento existe
+      containerConquistas.style.boxShadow = users.fotoPerfil.cor_texto_fundo;
+    }
+  } catch (error) {
+    console.log("Erro ao definir boxShadow das conquistas:", error.message);
+  }
+
+  try {
+    document.getElementById("medalha-azul-img").src = users.medalhas.azul.img;
+  } catch (error) {
+    console.log("Erro ao definir imagem da medalha azul:", error.message);
+  }
+
+  try {
+    document.getElementById("medalha-azul").style.display =
+      users.medalhas.azul.display;
+  } catch (error) {
+    console.log("Erro ao exibir medalha azul:", error.message);
+  }
+
+  try {
+    document.getElementById("lista-medalhas-vermelha").style.display =
+      users.medalhas.vermelha.display;
+  } catch (error) {
+    console.log("Erro ao exibir medalha azul:", error.message);
+  }
+}
+
 function pegarMedalhas() {
   firebase
     .database()
@@ -424,6 +572,7 @@ function adicionarMedalhaEletronica() {
          <p class="meta-medalha-roxa" >Atinja 2000 ramcoins</p>
          </div>
          </li>
+         <hr>
       `;
 
   document.getElementById("lista-medalhas").appendChild(li);
@@ -441,10 +590,11 @@ function adicionarMedalhaSalto() {
          <p class="meta-medalha-verde" id="medalha-verde-frase" >Doe uma vez</p>
          </div>
          </li>
-
+          <div>
+        <hr>
+        </div>
          `;
 
-   
   document.getElementById("lista-medalhas").appendChild(li);
 }
 
@@ -459,6 +609,7 @@ function adicionarMedalhaRaio() {
         <p class="titulo-medalha-amarela">Raio da esperança</p>
          <p class="meta-medalha-amarela">Doe 3 vezes</p>
          </div>
+
          </li>
       `;
 
@@ -502,6 +653,7 @@ function mudarDados() {
     .then(() => {
       mostrarPopupAlteracao();
       adicionarMedalhas();
+      carregarDadosNovamente()
     });
 }
 

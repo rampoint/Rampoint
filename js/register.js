@@ -441,8 +441,10 @@ function adicionarMedalhaSalto() {
          <p class="meta-medalha-verde" id="medalha-verde-frase" >Doe uma vez</p>
          </div>
          </li>
-      `;
 
+         `;
+
+   
   document.getElementById("lista-medalhas").appendChild(li);
 }
 

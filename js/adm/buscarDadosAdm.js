@@ -22,7 +22,7 @@ function pesquisarUsuario() {
                   const p1 = document.createElement('div'); // Cria um novo item de lista
               p1.setAttribute('id', 'coluna_dados')
               p1.innerHTML = `<div id="nome_doador">
-                            <p style="color: grey;">Nome:<b style="color: black;">${nome_peça.nome}</b> </p>
+                            <p style="color: grey;">Nome: <b style="color: black;">${nome_peça.nome}</b> </p>
                         </div>
                         <div id="coluna_email">
                             <p style="color: grey;">Email: <b style="color: black;">${nome_peça.email}</b></p>

@@ -256,6 +256,7 @@ function exibirDadosUsuario(users) {
   var currentPage = window.location.href;
   // Verifica se a URL contém uma string específica
   if (currentPage.includes("/pagina-perfil/")) {
+    pegarCupons();
     try {
       document.getElementById("fotoPerfilMobile").src =
         users.fotoPerfil.fotoPerfil;
@@ -375,7 +376,7 @@ function exibirDadosUsuario(users) {
       console.log("Erro ao exibir medalha azul:", error.message);
     }
     pegarMedalhas();
-    pegarCupons();
+
   } else {
     try {
       document.getElementById("nome_modal").innerHTML = users.nome;

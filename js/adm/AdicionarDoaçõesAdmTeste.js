@@ -8,6 +8,7 @@ const formDoacoes = {
   data_doacao: () => document.getElementById("data_doacao").value,
   hora_doacao: () => document.getElementById("hora_doacao").value,
   desc_doacao: () => document.getElementById("descricao-peca").value,
+  tel: () => document.getElementById("tel").value,
 };
 
 function gerarCodigoAleatorio(tamanho = 8) {
@@ -40,6 +41,7 @@ function criarUsuarioDoacao() {
       hora_doacao: formDoacoes.hora_doacao(),
       desc: formDoacoes.desc_doacao(),
       vistoria: "Pendente",
+      tel:formDoacoes.tel()
     })
     .then((snapshot) => {
       console.log("foi pa krai");

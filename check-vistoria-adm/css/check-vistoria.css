@@ -351,3 +351,47 @@ option.dark-theme {
 .btn-cancelar.dark-theme {
   color: #fff;
 }
+
+.fundo-popUp-doacao {
+  background-color: #FFFFFF;
+  box-shadow: 0px 5px 20px rgba(42, 85, 194, 0.15);
+  width: auto;
+  height: 70px;
+  padding: 10px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.fundo-popUp-doacao.dark-theme {
+  background-color: #282828;
+  box-shadow: 0px 5px 20px rgba(42, 85, 194, 0.15);
+  width: auto;
+  height: 70px;
+  padding: 10px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.rowPopUp {
+  display: flex;
+  flex-direction: row;
+}
+
+.textoPopUp {
+  font-family: "Poppins-medium";
+  margin-left: 10px;
+}
+
+#doacao_add {
+  margin: auto;
+  position: fixed;
+  top: -120px;
+  /* Começa fora da tela */
+  left: 50%;
+  transform: translateX(-50%);
+  transition: top 0.5s ease;
+  /* Transição suave para a animação */
+
+}

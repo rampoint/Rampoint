@@ -37,7 +37,6 @@ function criarTabela(nome_doador, hora) {
         ${nome_doador}</span>
     </p>
   </div>
-  <p class="horario">${hora}</p>
 </article>
 <div class="linha"></div>`;
 

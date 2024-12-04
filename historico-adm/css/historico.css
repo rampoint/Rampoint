@@ -168,3 +168,22 @@ label.dark-theme {
 input.dark-theme {
  background-color: #151515;
 }
+
+#coluna_dados{
+    background-color: #fff;
+    border-radius: 15px;
+    width: 20em;
+    height: 18em;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    margin-bottom: 20px;
+}
+
+#coluna_dados p{
+  font-size: large;
+  margin-bottom: 10px;
+}

@@ -127,6 +127,7 @@ function encontrarPerfilComPeca() {
           })
           .then(() => {
             console.log("500 pontos adicionados ao perfil:", perfilEncontrado.nome);
+            mostrarPopupAdicionando()
           })
           .catch((error) => {
             console.error("Erro ao incrementar pontos:", error);
@@ -174,4 +175,15 @@ function mostrarValor(){
   } else {
       console.log('Componente não encontrado.');
   }
+}
+
+function mostrarPopupAdicionando() {
+  const popup = document.getElementById("doacao_add");
+  // Faz o pop-up deslizar para baixo
+  popup.style.top = "100px"; // Ajuste a posição conforme necessário
+
+  // Após 3 segundos, faz o pop-up deslizar de volta para cima
+  setTimeout(() => {
+    popup.style.top = "-120px"; // Volta para fora da tela
+  }, 3000); // 3000 milissegundos = 3 segundos
 }

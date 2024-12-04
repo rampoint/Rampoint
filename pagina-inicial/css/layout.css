@@ -269,7 +269,7 @@
   }
 
   .sidebar {
-    height: 100%;
+    height: auto;
     right: 0;
     z-index: 100000;
   }
@@ -744,10 +744,19 @@
 @media (max-width: 655px) {
   .imagem-fundo {
     margin-bottom: 6em;
+    z-index: 100;
+  }
+
+  .container-grid {
+    margin-top: 250px;
+  }
+
+  .texto {
+    margin-top: 50px;
   }
 
   #titulo1 {
-    margin: 280px 0 10px 0px;
+    margin: 0 0 10px 0px;
   }
 
   #h1-info,
@@ -857,9 +866,32 @@
   }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 585px) {
+  #texto-inicial {
+    width: 65%;
+  }
+}
+
+@media (max-width: 565px) {
   .card {
     width: auto;
+  }
+
+  #texto-inicial {
+    width: 65%;
+  }
+
+  .container-grid {
+    margin-top: 250px;
+  }
+
+  .texto {
+    margin-top: 50px;
+  }
+
+  #titulo1 {
+    margin: 0;
+    margin-bottom: 10px;
   }
 }
 
@@ -1041,6 +1073,10 @@
   .card {
     width: auto;
   }
+
+  #texto-inicial {
+    width: 55%;
+  }
 }
 
 @media (max-width: 455px) {
@@ -1090,7 +1126,7 @@
   }
 
   #texto-inicial {
-    width: 75%;
+    width: 45%;
   }
 
   .card-content p {
@@ -1128,10 +1164,6 @@
 @media (max-width: 385px) {
   #alteracao_popup {
     width: 280px;
-  }
-
-  #texto-inicial {
-    width: 50%;
   }
 }
 
@@ -1191,10 +1223,6 @@
     width: 90%;
     text-align: center;
   }
-
-  #texto-inicial {
-    width: 85%;
-  }
 }
 
 @media (max-width: 345px) {
@@ -1233,10 +1261,6 @@
 
   #titulo-inicial {
     font-size: 54px;
-  }
-
-  #titulo1 {
-    margin: 210px 0 10px 0px;
   }
 
   .ramEmpe {
@@ -1314,14 +1338,6 @@
 
   #titulo-inicial {
     font-size: 3em;
-  }
-
-  #texto-inicial {
-    font-size: 0.9em;
-  }
-
-  #titulo1 {
-    margin: 140px 0 10px 0px;
   }
 
   #texto1 {
@@ -1418,9 +1434,7 @@
   }
 
   .container-grid {
-    margin-top: -50px;
-    display: flex;
-    flex-direction: column;
+    margin: 60px;
   }
 
   #texto1 {
@@ -1436,7 +1450,6 @@
   #titulo1 {
     text-align: center;
     font-size: 1.7em;
-    margin: 160px 0 10px 0px;
   }
 
   #titulo2 {

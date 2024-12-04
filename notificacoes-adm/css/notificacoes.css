@@ -82,6 +82,10 @@ hr {
   font-size: 32px;
 }
 
+.scrollMensagem {
+  overflow-y: scroll;
+}
+
 .mensagem-detalhes {
   width: 60%;
   padding: 20px;

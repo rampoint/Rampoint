@@ -232,7 +232,7 @@
   }
 
   .sidebar {
-    height: 65vh;
+    height: auto;
     right: 0;
     z-index: 100000;
   }
@@ -695,10 +695,6 @@
 }
 
 @media (max-width: 510px) {
-  .sidebar {
-    height: 70vh;
-  }
-
   .footer-logo {
     margin-bottom: 2em;
   }
@@ -839,6 +835,10 @@
 
   .campo-curiosidade {
     width: 33em;
+  }
+
+  .cupom-dourado {
+    margin-left: 0;
   }
 
   #ram-dourado {
@@ -1530,6 +1530,116 @@
 
   .medalha-roxa {
     left: 8em;
+  }
+}
+
+@media (max-width: 345px) {
+
+  .fundo-medalha-engrenagem .titulo-engrenagem,
+  .fundo-medalha-coracao .titulo-coracao {
+    right: 5px;
+  }
+
+  .img-engrenagem {
+    left: 13em;
+  }
+
+  .img-coracao {
+    left: 12em;
+  }
+}
+
+@media (max-width: 335px) {
+  .medalha-amarela {
+    left: 7.5em;
+  }
+
+  .fundo-medalha-salto,
+  .fundo-medalha-coracao,
+  .fundo-medalha-explosao,
+  .fundo-medalha-engrenagem,
+  .fundo-medalha-raio {
+    width: 18em;
+  }
+
+  .img-salto,
+  .img-raio {
+    width: 4.5em;
+  }
+
+  .titulo-salto {
+    width: 60%;
+    bottom: 80px;
+  }
+
+  .fundo-medalha-coracao {
+    height: 18em;
+  }
+
+  .fundo-medalha-coracao .titulo-coracao {
+    width: 50%;
+  }
+
+  .fundo-medalha-salto .texto {
+    right: 13px;
+  }
+
+  .img-coracao {
+    width: 6em;
+    left: 11em;
+    bottom: 14em;
+  }
+
+  .fundo-medalha-explosao .titulo-explosao {
+    width: 35%;
+    left: 140px;
+    bottom: 130px;
+  }
+
+  .fundo-medalha-explosao .objetivo {
+    bottom: 6em;
+  }
+
+  .fundo-medalha-explosao .texto {
+    bottom: 5em;
+  }
+
+  .img-explosao {
+    width: 6em;
+  }
+
+  .fundo-medalha-engrenagem {
+    height: 17em;
+  }
+
+  .fundo-medalha-engrenagem .titulo-engrenagem {
+    width: 50%;
+    right: 0;
+  }
+
+  .img-engrenagem {
+    width: 6em;
+    left: 12em;
+    bottom: 14em;
+  }
+
+  .fundo-medalha-engrenagem .objetivo {
+    width: 85%;
+  }
+
+  .fundo-medalha-raio {
+    height: 15em;
+  }
+
+  .fundo-medalha-raio .objetivo {
+    width: 50%;
+    left: 6em;
+  }
+
+  .titulo-raio {
+    width: 65%;
+    bottom: 135px;
+    left: 100px;
   }
 }
 

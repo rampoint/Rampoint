@@ -125,7 +125,8 @@ nav a:hover {
 }
 
 .footer-logo {
-  margin-top: 6em;
+  margin-top: 4em;
+  margin-bottom: 15px;
 }
 
 @media (max-width: 670px) {
@@ -146,7 +147,7 @@ nav a:hover {
 }
 
 .menus {
-  margin-top: 60px;
+  margin-top: 0;
 }
 
 #footer-logo {

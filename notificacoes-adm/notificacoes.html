@@ -95,177 +95,158 @@
         <section id="area-notificacao" class="area-notificacao">
             <div id="mensagens" class="mensagens">
                 <h2>Mensagens</h2>
-                <!-- <div id="mensagens-item" class="mensagens-item" onclick="showDetails(0)">
-                    <div class="mensagem-info">
-                        <img src="./img/check.svg" alt="Ícone de um check">
-                        <img src="./img/foto-adm.svg" alt="">
-                        <p>Sergio adicionou uma nova doação</p>
-                    </div>
-                    <div class="seta-mensagem">
-                        <button><i class='bx bx-chevron-right'></i></button>
-                    </div>
-                </div>
-                <hr>
-                <div class="mensagens-item" onclick="showDetails(1)">
-                    <div class="mensagem-info">
-                        <img src="./img/check.svg" alt="Ícone de um check">
-                        <img src="./img/foto-adm.svg" alt="">
-                        <p>Leticia adicionou uma nova doação</p>
-                    </div>
-                    <div class="seta-mensagem">
-                        <button><i class='bx bx-chevron-right'></i></button>
-                    </div>
-                </div>
-                <hr>
-                <div class="mensagens-item" onclick="showDetails(2)">
-                    <div class="mensagem-info">
-                        <img src="./img/check.svg" alt="Ícone de um check">
-                        <img src="./img/foto-adm.svg" alt="">
-                        <p>Nova vistoria disponível</p>
-                    </div>
-                    <div class="seta-mensagem">
-                        <button><i class='bx bx-chevron-right'></i></button>
-                    </div>
-                </div> -->
             </div>
-
-            <div class="mensagem-detalhes" id="mensagem-detalhes">
-                <div class="mensagem-header">
-                    <img src="./img/foto-adm.svg" alt="Foto de perfil do administrador">
-                    <div class="coluna-mensagem">
-                        <h3>Sergio</h3>
-                        <span class="data-hora">15/10/21, 14:00</span>
+            <div class="scrollMensagem">
+                <div class="mensagem-detalhes" id="mensagem-detalhes">
+                    <div class="mensagem-header">
+                        <img src="./img/foto-adm.svg" alt="Foto de perfil do administrador">
+                        <div class="coluna-mensagem">
+                            <h3>Sergio</h3>
+                            <span class="data-hora">15/10/21, 14:00</span>
+                        </div>
                     </div>
-                </div>
-                <hr>
-                <div class="mensagem-content">
-                    <h2>Nova doação</h2>
-                    <h4 class="descricao">Descrição:</h4>
-                    <p class="conteudo-descricao">is simply dummy text of the printing and typesetting industry. Lorem
-                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
-                        took a galley of type and scrambled it to make a type specimen book.is simply dummy text of the
-                        printing and typesetting </p>
                     <hr>
-                    <div class="info">
-                        <h4>Informações pessoais</h4>
-                        <p><span class="span-preto">Nome do doador:</span> Jacques</p>
-                        <p><span class="span-preto">Email:</span> jacquesmail@gmail.com</p>
-                        <p><span class="span-preto">Telefone:</span> (11) 95432-3214</p>
+                    <div class="mensagem-content">
+                        <h2>Nova doação</h2>
+                        <h4 class="descricao">Descrição:</h4>
+                        <p class="conteudo-descricao">is simply dummy text of the printing and typesetting industry.
+                            Lorem
+                            Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                            printer
+                            took a galley of type and scrambled it to make a type specimen book.is simply dummy text of
+                            the
+                            printing and typesetting </p>
+                        <hr>
+                        <div class="info">
+                            <h4>Informações pessoais</h4>
+                            <p><span class="span-preto">Nome do doador:</span> Jacques</p>
+                            <p><span class="span-preto">Email:</span> jacquesmail@gmail.com</p>
+                            <p><span class="span-preto">Telefone:</span> (11) 95432-3214</p>
+                        </div>
+                        <div class="info">
+                            <h4>Informações da doação</h4>
+                            <p><span class="span-preto">Peça:</span> Memória RAM</p>
+                            <p><span class="span-preto">Tipo de componente:</span> Interno</p>
+                            <p><span class="span-preto">Quantidade:</span> 3</p>
+                        </div>
                     </div>
-                    <div class="info">
-                        <h4>Informações da doação</h4>
-                        <p><span class="span-preto">Peça:</span> Memória RAM</p>
-                        <p><span class="span-preto">Tipo de componente:</span> Interno</p>
-                        <p><span class="span-preto">Quantidade:</span> 3</p>
+                    <div class="btn-vistoria">
+                        <button class="verify-button">Verificar</button>
                     </div>
                 </div>
-                <div class="btn-vistoria">
-                    <button class="verify-button">Verificar</button>
-                </div>
-            </div>
 
-            <div class="mensagem-detalhes" id="mensagem1">
-                <div class="mensagem-header">
-                    <img src="./img/foto-adm.svg" alt="Foto de perfil do administrador">
-                    <div class="coluna-mensagem">
-                        <h3>Sergio</h3>
-                        <span class="data-hora">15/10/21, 14:00</span>
+                <div class="mensagem-detalhes" id="mensagem1">
+                    <div class="mensagem-header">
+                        <img src="./img/foto-adm.svg" alt="Foto de perfil do administrador">
+                        <div class="coluna-mensagem">
+                            <h3>Sergio</h3>
+                            <span class="data-hora">15/10/21, 14:00</span>
+                        </div>
                     </div>
-                </div>
-                <hr>
-                <div class="mensagem-content">
-                    <h2>Nova doação</h2>
-                    <h4 class="descricao">Recebe:</h4>
-                    <p class="conteudo-descricao">is simply dummy text of the printing and typesetting industry. Lorem
-                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
-                        took a galley of type and scrambled it to make a type specimen book.is simply dummy text of the
-                        printing and typesetting </p>
                     <hr>
-                    <div class="info">
-                        <h4>Informações pessoais</h4>
-                        <p><span class="span-preto">Nome do doador:</span> Jacques</p>
-                        <p><span class="span-preto">Email:</span> jacquesmail@gmail.com</p>
-                        <p><span class="span-preto">Telefone:</span> (11) 95432-3214</p>
+                    <div class="mensagem-content">
+                        <h2>Nova doação</h2>
+                        <h4 class="descricao">Recebe:</h4>
+                        <p class="conteudo-descricao">is simply dummy text of the printing and typesetting industry.
+                            Lorem
+                            Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                            printer
+                            took a galley of type and scrambled it to make a type specimen book.is simply dummy text of
+                            the
+                            printing and typesetting </p>
+                        <hr>
+                        <div class="info">
+                            <h4>Informações pessoais</h4>
+                            <p><span class="span-preto">Nome do doador:</span> Jacques</p>
+                            <p><span class="span-preto">Email:</span> jacquesmail@gmail.com</p>
+                            <p><span class="span-preto">Telefone:</span> (11) 95432-3214</p>
+                        </div>
+                        <div class="info">
+                            <h4>Informações da doação</h4>
+                            <p><span class="span-preto">Peça:</span> Memória RAM</p>
+                            <p><span class="span-preto">Tipo de componente:</span> Interno</p>
+                            <p><span class="span-preto">Quantidade:</span> 3</p>
+                        </div>
                     </div>
-                    <div class="info">
-                        <h4>Informações da doação</h4>
-                        <p><span class="span-preto">Peça:</span> Memória RAM</p>
-                        <p><span class="span-preto">Tipo de componente:</span> Interno</p>
-                        <p><span class="span-preto">Quantidade:</span> 3</p>
+                    <div class="btn-vistoria">
+                        <button class="verify-button">Verificar</button>
                     </div>
                 </div>
-                <div class="btn-vistoria">
-                    <button class="verify-button">Verificar</button>
-                </div>
-            </div>
 
-            <div class="mensagem-detalhes" id="mensagem">
-                <div class="mensagem-header">
-                    <img src="./img/foto-adm.svg" alt="Foto de perfil do administrador">
-                    <div class="coluna-mensagem">
-                        <h3>Sergio</h3>
-                        <span class="data-hora">15/10/21, 14:00</span>
+                <div class="mensagem-detalhes" id="mensagem">
+                    <div class="mensagem-header">
+                        <img src="./img/foto-adm.svg" alt="Foto de perfil do administrador">
+                        <div class="coluna-mensagem">
+                            <h3>Sergio</h3>
+                            <span class="data-hora">15/10/21, 14:00</span>
+                        </div>
                     </div>
-                </div>
-                <hr>
-                <div class="mensagem-content">
-                    <h2>Nova doação</h2>
-                    <h4 class="descricao">Descrição:</h4>
-                    <p class="conteudo-descricao">is simply dummy text of the printing and typesetting industry. Lorem
-                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
-                        took a galley of type and scrambled it to make a type specimen book.is simply dummy text of the
-                        printing and typesetting </p>
                     <hr>
-                    <div class="info">
-                        <h4>Informações pessoais</h4>
-                        <p><span class="span-preto">Nome do doador:</span> Jacques</p>
-                        <p><span class="span-preto">Email:</span> jacquesmail@gmail.com</p>
-                        <p><span class="span-preto">Telefone:</span> (11) 95432-3214</p>
+                    <div class="mensagem-content">
+                        <h2>Nova doação</h2>
+                        <h4 class="descricao">Descrição:</h4>
+                        <p class="conteudo-descricao">is simply dummy text of the printing and typesetting industry.
+                            Lorem
+                            Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                            printer
+                            took a galley of type and scrambled it to make a type specimen book.is simply dummy text of
+                            the
+                            printing and typesetting </p>
+                        <hr>
+                        <div class="info">
+                            <h4>Informações pessoais</h4>
+                            <p><span class="span-preto">Nome do doador:</span> Jacques</p>
+                            <p><span class="span-preto">Email:</span> jacquesmail@gmail.com</p>
+                            <p><span class="span-preto">Telefone:</span> (11) 95432-3214</p>
+                        </div>
+                        <div class="info">
+                            <h4>Informações da doação</h4>
+                            <p><span class="span-preto">Peça:</span> Memória RAM</p>
+                            <p><span class="span-preto">Tipo de componente:</span> Interno</p>
+                            <p><span class="span-preto">Quantidade:</span> 3</p>
+                        </div>
                     </div>
-                    <div class="info">
-                        <h4>Informações da doação</h4>
-                        <p><span class="span-preto">Peça:</span> Memória RAM</p>
-                        <p><span class="span-preto">Tipo de componente:</span> Interno</p>
-                        <p><span class="span-preto">Quantidade:</span> 3</p>
+                    <div class="btn-vistoria">
+                        <button class="verify-button">Verificar</button>
                     </div>
                 </div>
-                <div class="btn-vistoria">
-                    <button class="verify-button">Verificar</button>
-                </div>
-            </div>
 
-            <div class="mensagem-detalhes" id="mensagem">
-                <div class="mensagem-header">
-                    <img src="./img/foto-adm.svg" alt="Foto de perfil do administrador">
-                    <div class="coluna-mensagem">
-                        <h3>Sergio</h3>
-                        <span class="data-hora">15/10/21, 14:00</span>
+                <div class="mensagem-detalhes" id="mensagem">
+                    <div class="mensagem-header">
+                        <img src="./img/foto-adm.svg" alt="Foto de perfil do administrador">
+                        <div class="coluna-mensagem">
+                            <h3>Sergio</h3>
+                            <span class="data-hora">15/10/21, 14:00</span>
+                        </div>
                     </div>
-                </div>
-                <hr>
-                <div class="mensagem-content">
-                    <h2>Nova doação</h2>
-                    <h4 class="descricao">oieee</h4>
-                    <p class="conteudo-descricao">is simply dummy text of the printing and typesetting industry. Lorem
-                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
-                        took a galley of type and scrambled it to make a type specimen book.is simply dummy text of the
-                        printing and typesetting </p>
                     <hr>
-                    <div class="info">
-                        <h4>Informações pessoais</h4>
-                        <p><span class="span-preto">Nome do doador:</span> Jacques</p>
-                        <p><span class="span-preto">Email:</span> jacquesmail@gmail.com</p>
-                        <p><span class="span-preto">Telefone:</span> (11) 95432-3214</p>
+                    <div class="mensagem-content">
+                        <h2>Nova doação</h2>
+                        <h4 class="descricao">oieee</h4>
+                        <p class="conteudo-descricao">is simply dummy text of the printing and typesetting industry.
+                            Lorem
+                            Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                            printer
+                            took a galley of type and scrambled it to make a type specimen book.is simply dummy text of
+                            the
+                            printing and typesetting </p>
+                        <hr>
+                        <div class="info">
+                            <h4>Informações pessoais</h4>
+                            <p><span class="span-preto">Nome do doador:</span> Jacques</p>
+                            <p><span class="span-preto">Email:</span> jacquesmail@gmail.com</p>
+                            <p><span class="span-preto">Telefone:</span> (11) 95432-3214</p>
+                        </div>
+                        <div class="info">
+                            <h4>Informações da doação</h4>
+                            <p><span class="span-preto">Peça:</span> Memória RAM</p>
+                            <p><span class="span-preto">Tipo de componente:</span> Interno</p>
+                            <p><span class="span-preto">Quantidade:</span> 3</p>
+                        </div>
                     </div>
-                    <div class="info">
-                        <h4>Informações da doação</h4>
-                        <p><span class="span-preto">Peça:</span> Memória RAM</p>
-                        <p><span class="span-preto">Tipo de componente:</span> Interno</p>
-                        <p><span class="span-preto">Quantidade:</span> 3</p>
+                    <div class="btn-vistoria">
+                        <button class="verify-button">Verificar</button>
                     </div>
-                </div>
-                <div class="btn-vistoria">
-                    <button class="verify-button">Verificar</button>
                 </div>
             </div>
         </section>

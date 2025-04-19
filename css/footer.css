@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "Batangas";
+  src: url(font/batangas-font-family-fontmirror/Batangas\ Bold\ 700.otf);
+}
+
+@font-face {
+  font-family: "Blinker";
+  src: url(font/Blinker/Blinker-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "Blinker-extrabold";
+  src: url(font/Blinker/Blinker-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: "Poppins-extralight";
+  src: url(font/Poppins/Poppins-ExtraLight.ttf);
+}
+
+@font-face {
+  font-family: "Poppins-bold";
+  src: url(font/Poppins/Poppins-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Poppins-medium";
+  src: url(font/Poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Poppins-light";
+  src: url(font/Poppins/Poppins-Light.ttf);
+}
+
+@font-face {
+  font-family: "Poppins-semibold";
+  src: url(font/Poppins/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "Poppins-extrabold";
+  src: url(font/Poppins/Poppins-ExtraBold.ttf);
+}
+
+
+
+:root {
+  --azul: #2a55c2;
+  --azul-claro: #46c4ff;
+  --preto: #121212;
+  --branco: #f8f8ff;
+  --cinza: #cdcdcd;
+}
+
+body,
+h2,
+h3,
+a,
+p,
+li,
+.btn-enviar {
+  color: var(--branco);
+}
+
+body {
+  background-color: var(--branco);
+}
+
+h2 {
+  font-family: "Blinker-extrabold";
+  margin-top: 30px;
+}
+
+p {
+  font-family: "Poppins-semibold";
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+h3,
+.btn-enviar {
+  font-family: "Poppins-extrabold";
+}
